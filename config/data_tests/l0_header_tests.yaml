@@ -1,0 +1,23 @@
+type_checks:
+  character:
+    - identifier
+    - utility
+    - community
+    - purchased_from
+    - other_1_k_wh_type
+    - other_2_k_wh_type
+    - umr_month
+  numeric:
+    - line_no
+  logical:
+    # - other_customers_description
+
+
+constraints:
+  not_null:
+    - identifier
+    - line_no
+  positive_only:
+    - powerhouse_consumption_k_wh
+    - peak_consumption_k_w
+  detect_outliers:

@@ -53,6 +53,19 @@ test_l0_data <- function(path_in, config) {
     if (!passed) all_passed <- FALSE
   }
 
+  # Logical check
+  for (col in config$type_checks$logical) {
+    if (!col %in% names(df)) {
+      cli_alert_danger("Column {.var {col}} is missing.")
+      all_passed <- FALSE
+      next
+    }
+    passed <- run_check(is.logical(df[[col]]),
+                        "{.var {col}} is a logical column",
+                        "{.var {col}} should be logical, but is not")
+    if (!passed) all_passed <- FALSE
+  }
+
   # ─── CONSTRAINT CHECKS ─────────────────────────────────────────────────
   # Not Null check
   for (col in config$constraints$not_null) {
@@ -74,6 +87,28 @@ test_l0_data <- function(path_in, config) {
     }
   }
 
+  # Outlier detection
+  for (col in config$constraints$detect_outliers) {
+    if (col %in% names(df)) {
+
+      col_median <- median(df[[col]], na.rm = TRUE)
+      col_mad    <- mad(df[[col]], na.rm = TRUE)
+
+      # Protect against columns where MAD is 0 (e.g., a column of mostly identical numbers)
+      if (col_mad == 0) col_mad <- 0.001
+
+      # Calculate how many MADs each row is away from the median
+      # A threshold of 3 is standard, but you can change it to 5 for "extreme" anomalies
+      is_within_mad <- abs(df[[col]] - col_median) <= (3 * col_mad)
+
+      passed <- run_check(is_within_mad,
+                          "{.var {col}} has no severe statistical outliers (> 3 MAD)",
+                          "{.var {col}} contains values outside 3 Median Absolute Deviations!")
+
+      if (!passed) all_passed = FALSE
+    }
+  }
+
   # ─── PIPELINE GATEKEEPER ───────────────────────────────────────────────
   if (!all_passed) {
     log_fatal("Data testing failed.")
@@ -86,7 +121,13 @@ test_l0_data <- function(path_in, config) {
 }
 
 
-# test_l0_data(
-#   path_in = 'data/l0/l0_rates_2026-06-12.csv',
-#   config = 'config/data_tests/l0_rates_tests.yaml'
-# )
+test_l0_data(
+  path_in = 'data/l0/l0_rates_2026-06-12.csv',
+  config = 'config/data_tests/l0_rates_tests.yaml'
+)
+
+
+test_l0_data(
+  path_in = 'data/l0/l0_header_2026-06-12.csv',
+  config = 'config/data_tests/l0_header_tests.yaml'
+)

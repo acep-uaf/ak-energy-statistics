@@ -1,4 +1,3 @@
-# Define column existence and data types
 type_checks:
   character:
     - identifier
@@ -13,8 +12,9 @@ type_checks:
     - pce_eligible_com_facil_k_wh
     - pce_eligible_community_k_wh
     - pce_eligible_k_wh_total
+  logical:
 
-# Functional data quality constraints
+
 constraints:
   not_null:
     - identifier
@@ -22,3 +22,4 @@ constraints:
   positive_only:
     - actual_rate
     - residential_rate
+  detect_outliers:
