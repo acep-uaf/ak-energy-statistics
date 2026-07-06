@@ -1,10 +1,11 @@
 library(cli)
 library(logger)
+library(fs)
 library(readr)
 library(yaml)
 
 
-test_l0_data <- function(path_in, config) {
+l1_data_tests <- function(path_in, config, path_out) {
 
   # Setup and helper functions
   options(cli.num_colors = 256)
@@ -115,19 +116,24 @@ test_l0_data <- function(path_in, config) {
     stop("Possible data issues, see above output for specifics.", call. = FALSE)
   }
 
+  dir_create(dirname(path_out))
+  write.csv(df, path_out, row.names = FALSE)
+
   cli_alert_success(
-    col_green("Success! {basename(path_in)} passed all data tests.")
+    col_green("Success! {basename(path_in)} passed all data tests, writing to file as {basename(path_out)}.")
   )
 }
 
 
-test_l0_data(
+l1_data_tests(
   path_in = 'data/l0/l0_rates_2026-06-12.csv',
-  config = 'config/data_tests/l0_rates_tests.yaml'
+  config = 'config/data_tests/l0_rates_tests.yaml',
+  path_out = 'data/l1/l1_rates_2026-06-12.csv'
 )
 
 
-test_l0_data(
+l1_data_tests(
   path_in = 'data/l0/l0_header_2026-06-12.csv',
-  config = 'config/data_tests/l0_header_tests.yaml'
+  config = 'config/data_tests/l0_header_tests.yaml',
+  path_out = 'data/l1/l1_header_2026_06-12.csv'
 )

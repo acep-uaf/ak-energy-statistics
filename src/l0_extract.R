@@ -2,12 +2,13 @@ library(readr)
 library(readxl)
 library(janitor)
 library(stringr)
+library(tools)
 library(fs)
 
 
 l0_extract_xlsx_write_csv <- function(path) {
 
-  date_stamp <- str_split_i(basename(path), '_raw_data', 1)
+  date_stamp <- str_split_i(basename(file_path_sans_ext(path)), 'raw_data_', 2)
 
   raw_header <- read_xlsx(path = path, sheet = 'HeaderData') %>% clean_names()
   raw_rates <- read_xlsx(path = path, sheet = 'RateLineData') %>% clean_names()
@@ -23,4 +24,4 @@ l0_extract_xlsx_write_csv <- function(path) {
 }
 
 
-l0_extract_xlsx_write_csv(path = 'data/raw/2026-06-12_raw_data.xlsx')
+l0_extract_xlsx_write_csv(path = 'data/raw/raw_data_2026-06-12.xlsx')
