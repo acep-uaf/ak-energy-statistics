@@ -1,0 +1,271 @@
+[2026-07-08 14:52:40] [INFO] --- Starting test run for l0_pce_rate_line_2026-06-12.csv ---
+[2026-07-08 14:52:54] [INFO] --- Starting test run for l0_pce_rate_line_2026-06-12.csv ---
+[2026-07-08 14:53:09] [INFO] --- Starting test run for l0_pce_rate_line_2026-06.csv ---
+[2026-07-08 14:53:09] [SUCCESS] `identifier` is a character column
+[2026-07-08 14:53:09] [SUCCESS] `rate_id` is a character column
+[2026-07-08 14:53:09] [SUCCESS] `line_no` is a numeric column
+[2026-07-08 14:53:09] [SUCCESS] `actual_rate` is a numeric column
+[2026-07-08 14:53:09] [SUCCESS] `pro_rata_rate` is a numeric column
+[2026-07-08 14:53:09] [SUCCESS] `check` is a numeric column
+[2026-07-08 14:53:09] [SUCCESS] `residential_rate` is a numeric column
+[2026-07-08 14:53:09] [ERROR] Column 'pce_eligible_residential_k_wh' is missing.
+[2026-07-08 14:53:09] [ERROR] Column 'pce_eligible_com_facil_k_wh' is missing.
+[2026-07-08 14:53:09] [ERROR] Column 'pce_eligible_community_k_wh' is missing.
+[2026-07-08 14:53:09] [ERROR] Column 'pce_eligible_k_wh_total' is missing.
+[2026-07-08 14:53:09] [SUCCESS] `identifier` has no missing values
+[2026-07-08 14:53:09] [SUCCESS] `line_no` has no missing values
+[2026-07-08 14:53:09] [SUCCESS] `actual_rate` has only positive values
+[2026-07-08 14:53:09] [SUCCESS] `residential_rate` has only positive values
+[2026-07-08 14:53:09] [FATAL] FATAL: Data testing failed for l0_pce_rate_line_2026-06.csv
+[2026-07-08 14:56:56] [INFO] --- Starting test run for l0_pce_rate_line_2026-06.csv ---
+[2026-07-08 14:56:56] [SUCCESS] `identifier` is a character column
+[2026-07-08 14:56:56] [SUCCESS] `rate_id` is a character column
+[2026-07-08 14:56:56] [SUCCESS] `line_no` is a numeric column
+[2026-07-08 14:56:56] [SUCCESS] `actual_rate` is a numeric column
+[2026-07-08 14:56:56] [SUCCESS] `pro_rata_rate` is a numeric column
+[2026-07-08 14:56:56] [SUCCESS] `check` is a numeric column
+[2026-07-08 14:56:56] [SUCCESS] `residential_rate` is a numeric column
+[2026-07-08 14:56:56] [SUCCESS] `pce_eligible_residential_kwh` is a numeric column
+[2026-07-08 14:56:56] [SUCCESS] `pce_eligible_com_facil_kwh` is a numeric column
+[2026-07-08 14:56:56] [SUCCESS] `pce_eligible_community_kwh` is a numeric column
+[2026-07-08 14:56:56] [ERROR] Column 'pce_eligible_k_wh_total' is missing.
+[2026-07-08 14:56:56] [SUCCESS] `identifier` has no missing values
+[2026-07-08 14:56:56] [SUCCESS] `line_no` has no missing values
+[2026-07-08 14:56:56] [SUCCESS] `actual_rate` has only positive values
+[2026-07-08 14:56:56] [SUCCESS] `residential_rate` has only positive values
+[2026-07-08 14:56:56] [FATAL] FATAL: Data testing failed for l0_pce_rate_line_2026-06.csv
+[2026-07-08 14:57:13] [INFO] --- Starting test run for l0_pce_rate_line_2026-06.csv ---
+[2026-07-08 14:57:13] [SUCCESS] `identifier` is a character column
+[2026-07-08 14:57:13] [SUCCESS] `rate_id` is a character column
+[2026-07-08 14:57:13] [SUCCESS] `line_no` is a numeric column
+[2026-07-08 14:57:13] [SUCCESS] `actual_rate` is a numeric column
+[2026-07-08 14:57:13] [SUCCESS] `pro_rata_rate` is a numeric column
+[2026-07-08 14:57:13] [SUCCESS] `check` is a numeric column
+[2026-07-08 14:57:13] [SUCCESS] `residential_rate` is a numeric column
+[2026-07-08 14:57:13] [SUCCESS] `pce_eligible_residential_kwh` is a numeric column
+[2026-07-08 14:57:13] [SUCCESS] `pce_eligible_com_facil_kwh` is a numeric column
+[2026-07-08 14:57:13] [SUCCESS] `pce_eligible_community_kwh` is a numeric column
+[2026-07-08 14:57:13] [SUCCESS] `pce_eligible_kwh_total` is a numeric column
+[2026-07-08 14:57:13] [SUCCESS] `identifier` has no missing values
+[2026-07-08 14:57:13] [SUCCESS] `line_no` has no missing values
+[2026-07-08 14:57:13] [SUCCESS] `actual_rate` has only positive values
+[2026-07-08 14:57:13] [SUCCESS] `residential_rate` has only positive values
+[2026-07-08 14:57:14] [INFO] Success! l0_pce_rate_line_2026-06.csv passed all data tests, writing to file as l1_pce_rate_line_2026-06.csv.
+[2026-07-08 14:57:20] [INFO] --- Starting test run for l0_pce_header_2026-06.csv ---
+[2026-07-08 14:57:20] [SUCCESS] `identifier` is a character column
+[2026-07-08 14:57:20] [SUCCESS] `utility` is a character column
+[2026-07-08 14:57:20] [SUCCESS] `community` is a character column
+[2026-07-08 14:57:20] [SUCCESS] `purchased_from` is a character column
+[2026-07-08 14:57:20] [SUCCESS] `other_1_kwh_type` is a character column
+[2026-07-08 14:57:20] [SUCCESS] `other_2_kwh_type` is a character column
+[2026-07-08 14:57:20] [SUCCESS] `umr_month` is a character column
+[2026-07-08 14:57:20] [SUCCESS] `line_no` is a numeric column
+[2026-07-08 14:57:20] [SUCCESS] `identifier` has no missing values
+[2026-07-08 14:57:20] [SUCCESS] `line_no` has no missing values
+[2026-07-08 14:57:20] [SUCCESS] `powerhouse_consumption_kwh` has only positive values
+[2026-07-08 14:57:20] [SUCCESS] `peak_consumption_kw` has only positive values
+[2026-07-08 14:57:21] [INFO] Success! l0_pce_header_2026-06.csv passed all data tests, writing to file as l1_pce_header_2026-06.csv.
+[2026-07-08 15:51:44] [INFO] --- Starting test run for l0_pce_rate_line_2026-06.csv ---
+[2026-07-08 15:51:44] [SUCCESS] `identifier` is a character column
+[2026-07-08 15:51:44] [SUCCESS] `rate_id` is a character column
+[2026-07-08 15:51:44] [SUCCESS] `line_no` is a numeric column
+[2026-07-08 15:51:44] [SUCCESS] `actual_rate` is a numeric column
+[2026-07-08 15:51:44] [SUCCESS] `pro_rata_rate` is a numeric column
+[2026-07-08 15:51:44] [SUCCESS] `check` is a numeric column
+[2026-07-08 15:51:44] [SUCCESS] `residential_rate` is a numeric column
+[2026-07-08 15:51:44] [SUCCESS] `pce_eligible_residential_kwh` is a numeric column
+[2026-07-08 15:51:45] [SUCCESS] `pce_eligible_com_facil_kwh` is a numeric column
+[2026-07-08 15:51:45] [SUCCESS] `pce_eligible_community_kwh` is a numeric column
+[2026-07-08 15:51:45] [SUCCESS] `pce_eligible_kwh_total` is a numeric column
+[2026-07-08 15:51:45] [SUCCESS] `identifier` has no missing values
+[2026-07-08 15:51:45] [SUCCESS] `line_no` has no missing values
+[2026-07-08 15:51:45] [SUCCESS] `actual_rate` has only positive values
+[2026-07-08 15:51:45] [SUCCESS] `residential_rate` has only positive values
+[2026-07-08 15:51:45] [INFO] Success! l0_pce_rate_line_2026-06.csv passed all data tests, writing to file as l1_pce_rate_line_2026-06.csv.
+[2026-07-08 15:52:20] [INFO] --- Starting test run for l0_pce_header_2026-06.csv ---
+[2026-07-08 15:52:21] [SUCCESS] `identifier` is a character column
+[2026-07-08 15:52:21] [SUCCESS] `utility` is a character column
+[2026-07-08 15:52:21] [SUCCESS] `community` is a character column
+[2026-07-08 15:52:21] [SUCCESS] `purchased_from` is a character column
+[2026-07-08 15:52:21] [SUCCESS] `other_1_kwh_type` is a character column
+[2026-07-08 15:52:21] [SUCCESS] `other_2_kwh_type` is a character column
+[2026-07-08 15:52:21] [SUCCESS] `umr_month` is a character column
+[2026-07-08 15:52:21] [SUCCESS] `line_no` is a numeric column
+[2026-07-08 15:52:21] [SUCCESS] `identifier` has no missing values
+[2026-07-08 15:52:21] [SUCCESS] `line_no` has no missing values
+[2026-07-08 15:52:21] [SUCCESS] `powerhouse_consumption_kwh` has only positive values
+[2026-07-08 15:52:21] [SUCCESS] `peak_consumption_kw` has only positive values
+[2026-07-08 15:52:21] [INFO] Success! l0_pce_header_2026-06.csv passed all data tests, writing to file as l1_pce_header_2026-06.csv.
+[2026-07-08 15:52:21] [INFO] --- Starting test run for l0_pce_header_2026-07.csv ---
+[2026-07-08 15:52:21] [SUCCESS] `identifier` is a character column
+[2026-07-08 15:52:21] [SUCCESS] `utility` is a character column
+[2026-07-08 15:52:21] [SUCCESS] `community` is a character column
+[2026-07-08 15:52:21] [SUCCESS] `purchased_from` is a character column
+[2026-07-08 15:52:21] [SUCCESS] `other_1_kwh_type` is a character column
+[2026-07-08 15:52:21] [SUCCESS] `other_2_kwh_type` is a character column
+[2026-07-08 15:52:21] [SUCCESS] `umr_month` is a character column
+[2026-07-08 15:52:21] [SUCCESS] `line_no` is a numeric column
+[2026-07-08 15:52:21] [SUCCESS] `identifier` has no missing values
+[2026-07-08 15:52:21] [SUCCESS] `line_no` has no missing values
+[2026-07-08 15:52:21] [SUCCESS] `powerhouse_consumption_kwh` has only positive values
+[2026-07-08 15:52:21] [SUCCESS] `peak_consumption_kw` has only positive values
+[2026-07-08 15:52:21] [INFO] Success! l0_pce_header_2026-07.csv passed all data tests, writing to file as l1_pce_header_2026-07.csv.
+[2026-07-08 15:52:21] [INFO] --- Starting test run for l0_pce_rate_line_2026-06.csv ---
+[2026-07-08 15:52:21] [SUCCESS] `identifier` is a character column
+[2026-07-08 15:52:21] [SUCCESS] `rate_id` is a character column
+[2026-07-08 15:52:21] [SUCCESS] `line_no` is a numeric column
+[2026-07-08 15:52:21] [SUCCESS] `actual_rate` is a numeric column
+[2026-07-08 15:52:21] [SUCCESS] `pro_rata_rate` is a numeric column
+[2026-07-08 15:52:21] [SUCCESS] `check` is a numeric column
+[2026-07-08 15:52:21] [SUCCESS] `residential_rate` is a numeric column
+[2026-07-08 15:52:21] [SUCCESS] `pce_eligible_residential_kwh` is a numeric column
+[2026-07-08 15:52:21] [SUCCESS] `pce_eligible_com_facil_kwh` is a numeric column
+[2026-07-08 15:52:21] [SUCCESS] `pce_eligible_community_kwh` is a numeric column
+[2026-07-08 15:52:21] [SUCCESS] `pce_eligible_kwh_total` is a numeric column
+[2026-07-08 15:52:21] [SUCCESS] `identifier` has no missing values
+[2026-07-08 15:52:21] [SUCCESS] `line_no` has no missing values
+[2026-07-08 15:52:21] [SUCCESS] `actual_rate` has only positive values
+[2026-07-08 15:52:21] [SUCCESS] `residential_rate` has only positive values
+[2026-07-08 15:52:21] [INFO] Success! l0_pce_rate_line_2026-06.csv passed all data tests, writing to file as l1_pce_rate_line_2026-06.csv.
+[2026-07-08 15:52:21] [INFO] --- Starting test run for l0_pce_rate_line_2026-07.csv ---
+[2026-07-08 15:52:21] [SUCCESS] `identifier` is a character column
+[2026-07-08 15:52:21] [SUCCESS] `rate_id` is a character column
+[2026-07-08 15:52:21] [SUCCESS] `line_no` is a numeric column
+[2026-07-08 15:52:21] [SUCCESS] `actual_rate` is a numeric column
+[2026-07-08 15:52:21] [SUCCESS] `pro_rata_rate` is a numeric column
+[2026-07-08 15:52:21] [SUCCESS] `check` is a numeric column
+[2026-07-08 15:52:21] [SUCCESS] `residential_rate` is a numeric column
+[2026-07-08 15:52:21] [SUCCESS] `pce_eligible_residential_kwh` is a numeric column
+[2026-07-08 15:52:21] [SUCCESS] `pce_eligible_com_facil_kwh` is a numeric column
+[2026-07-08 15:52:21] [SUCCESS] `pce_eligible_community_kwh` is a numeric column
+[2026-07-08 15:52:21] [SUCCESS] `pce_eligible_kwh_total` is a numeric column
+[2026-07-08 15:52:21] [SUCCESS] `identifier` has no missing values
+[2026-07-08 15:52:21] [SUCCESS] `line_no` has no missing values
+[2026-07-08 15:52:21] [SUCCESS] `actual_rate` has only positive values
+[2026-07-08 15:52:21] [SUCCESS] `residential_rate` has only positive values
+[2026-07-08 15:52:21] [INFO] Success! l0_pce_rate_line_2026-07.csv passed all data tests, writing to file as l1_pce_rate_line_2026-07.csv.
+[2026-07-08 15:53:48] [INFO] --- Starting test run for l0_pce_rate_line_2026-06.csv ---
+[2026-07-08 15:54:21] [INFO] --- Starting test run for l0_pce_header_2026-06.csv ---
+[2026-07-08 15:54:21] [SUCCESS] `identifier` is a character column
+[2026-07-08 15:54:21] [SUCCESS] `utility` is a character column
+[2026-07-08 15:54:21] [SUCCESS] `community` is a character column
+[2026-07-08 15:54:21] [SUCCESS] `purchased_from` is a character column
+[2026-07-08 15:54:21] [SUCCESS] `other_1_kwh_type` is a character column
+[2026-07-08 15:54:21] [SUCCESS] `other_2_kwh_type` is a character column
+[2026-07-08 15:54:21] [SUCCESS] `umr_month` is a character column
+[2026-07-08 15:54:21] [SUCCESS] `line_no` is a numeric column
+[2026-07-08 15:54:21] [SUCCESS] `identifier` has no missing values
+[2026-07-08 15:54:21] [SUCCESS] `line_no` has no missing values
+[2026-07-08 15:54:21] [SUCCESS] `powerhouse_consumption_kwh` has only positive values
+[2026-07-08 15:54:21] [SUCCESS] `peak_consumption_kw` has only positive values
+[2026-07-08 15:54:21] [INFO] Success! l0_pce_header_2026-06.csv passed all data tests, writing to file as l1_pce_header_2026-06.csv.
+[2026-07-08 15:54:21] [INFO] --- Starting test run for l0_pce_header_2026-07.csv ---
+[2026-07-08 15:54:21] [SUCCESS] `identifier` is a character column
+[2026-07-08 15:54:21] [SUCCESS] `utility` is a character column
+[2026-07-08 15:54:21] [SUCCESS] `community` is a character column
+[2026-07-08 15:54:21] [SUCCESS] `purchased_from` is a character column
+[2026-07-08 15:54:21] [SUCCESS] `other_1_kwh_type` is a character column
+[2026-07-08 15:54:21] [SUCCESS] `other_2_kwh_type` is a character column
+[2026-07-08 15:54:21] [SUCCESS] `umr_month` is a character column
+[2026-07-08 15:54:21] [SUCCESS] `line_no` is a numeric column
+[2026-07-08 15:54:21] [SUCCESS] `identifier` has no missing values
+[2026-07-08 15:54:21] [SUCCESS] `line_no` has no missing values
+[2026-07-08 15:54:21] [SUCCESS] `powerhouse_consumption_kwh` has only positive values
+[2026-07-08 15:54:21] [SUCCESS] `peak_consumption_kw` has only positive values
+[2026-07-08 15:54:21] [INFO] Success! l0_pce_header_2026-07.csv passed all data tests, writing to file as l1_pce_header_2026-07.csv.
+[2026-07-08 15:54:21] [INFO] --- Starting test run for l0_pce_rate_line_2026-06.csv ---
+[2026-07-08 15:54:21] [SUCCESS] `identifier` is a character column
+[2026-07-08 15:54:21] [SUCCESS] `rate_id` is a character column
+[2026-07-08 15:54:21] [SUCCESS] `line_no` is a numeric column
+[2026-07-08 15:54:21] [SUCCESS] `actual_rate` is a numeric column
+[2026-07-08 15:54:21] [SUCCESS] `pro_rata_rate` is a numeric column
+[2026-07-08 15:54:21] [SUCCESS] `check` is a numeric column
+[2026-07-08 15:54:21] [SUCCESS] `residential_rate` is a numeric column
+[2026-07-08 15:54:21] [SUCCESS] `pce_eligible_residential_kwh` is a numeric column
+[2026-07-08 15:54:21] [SUCCESS] `pce_eligible_com_facil_kwh` is a numeric column
+[2026-07-08 15:54:21] [SUCCESS] `pce_eligible_community_kwh` is a numeric column
+[2026-07-08 15:54:21] [SUCCESS] `pce_eligible_kwh_total` is a numeric column
+[2026-07-08 15:54:21] [SUCCESS] `identifier` has no missing values
+[2026-07-08 15:54:21] [SUCCESS] `line_no` has no missing values
+[2026-07-08 15:54:21] [SUCCESS] `actual_rate` has only positive values
+[2026-07-08 15:54:21] [SUCCESS] `residential_rate` has only positive values
+[2026-07-08 15:54:21] [INFO] Success! l0_pce_rate_line_2026-06.csv passed all data tests, writing to file as l1_pce_rate_line_2026-06.csv.
+[2026-07-08 15:54:21] [INFO] --- Starting test run for l0_pce_rate_line_2026-07.csv ---
+[2026-07-08 15:54:21] [SUCCESS] `identifier` is a character column
+[2026-07-08 15:54:21] [SUCCESS] `rate_id` is a character column
+[2026-07-08 15:54:21] [SUCCESS] `line_no` is a numeric column
+[2026-07-08 15:54:21] [SUCCESS] `actual_rate` is a numeric column
+[2026-07-08 15:54:21] [SUCCESS] `pro_rata_rate` is a numeric column
+[2026-07-08 15:54:21] [SUCCESS] `check` is a numeric column
+[2026-07-08 15:54:21] [SUCCESS] `residential_rate` is a numeric column
+[2026-07-08 15:54:21] [SUCCESS] `pce_eligible_residential_kwh` is a numeric column
+[2026-07-08 15:54:21] [SUCCESS] `pce_eligible_com_facil_kwh` is a numeric column
+[2026-07-08 15:54:21] [SUCCESS] `pce_eligible_community_kwh` is a numeric column
+[2026-07-08 15:54:21] [SUCCESS] `pce_eligible_kwh_total` is a numeric column
+[2026-07-08 15:54:21] [SUCCESS] `identifier` has no missing values
+[2026-07-08 15:54:21] [SUCCESS] `line_no` has no missing values
+[2026-07-08 15:54:21] [SUCCESS] `actual_rate` has only positive values
+[2026-07-08 15:54:21] [SUCCESS] `residential_rate` has only positive values
+[2026-07-08 15:54:21] [INFO] Success! l0_pce_rate_line_2026-07.csv passed all data tests, writing to file as l1_pce_rate_line_2026-07.csv.
+[2026-07-08 15:57:29] [INFO] --- Starting test run for l0_pce_header_2026-06.csv ---
+[2026-07-08 15:57:29] [SUCCESS] `identifier` is a character column
+[2026-07-08 15:57:29] [SUCCESS] `utility` is a character column
+[2026-07-08 15:57:29] [SUCCESS] `community` is a character column
+[2026-07-08 15:57:29] [SUCCESS] `purchased_from` is a character column
+[2026-07-08 15:57:29] [SUCCESS] `other_1_kwh_type` is a character column
+[2026-07-08 15:57:29] [SUCCESS] `other_2_kwh_type` is a character column
+[2026-07-08 15:57:29] [SUCCESS] `umr_month` is a character column
+[2026-07-08 15:57:29] [SUCCESS] `line_no` is a numeric column
+[2026-07-08 15:57:29] [SUCCESS] `identifier` has no missing values
+[2026-07-08 15:57:29] [SUCCESS] `line_no` has no missing values
+[2026-07-08 15:57:29] [SUCCESS] `powerhouse_consumption_kwh` has only positive values
+[2026-07-08 15:57:29] [SUCCESS] `peak_consumption_kw` has only positive values
+[2026-07-08 15:57:29] [INFO] Success! l0_pce_header_2026-06.csv passed all data tests, writing to file as l1_pce_header_2026-06.csv.
+[2026-07-08 15:57:29] [INFO] --- Starting test run for l0_pce_header_2026-07.csv ---
+[2026-07-08 15:57:30] [SUCCESS] `identifier` is a character column
+[2026-07-08 15:57:30] [SUCCESS] `utility` is a character column
+[2026-07-08 15:57:30] [SUCCESS] `community` is a character column
+[2026-07-08 15:57:30] [SUCCESS] `purchased_from` is a character column
+[2026-07-08 15:57:30] [SUCCESS] `other_1_kwh_type` is a character column
+[2026-07-08 15:57:30] [SUCCESS] `other_2_kwh_type` is a character column
+[2026-07-08 15:57:30] [SUCCESS] `umr_month` is a character column
+[2026-07-08 15:57:30] [SUCCESS] `line_no` is a numeric column
+[2026-07-08 15:57:30] [SUCCESS] `identifier` has no missing values
+[2026-07-08 15:57:30] [SUCCESS] `line_no` has no missing values
+[2026-07-08 15:57:30] [SUCCESS] `powerhouse_consumption_kwh` has only positive values
+[2026-07-08 15:57:30] [SUCCESS] `peak_consumption_kw` has only positive values
+[2026-07-08 15:57:30] [INFO] Success! l0_pce_header_2026-07.csv passed all data tests, writing to file as l1_pce_header_2026-07.csv.
+[2026-07-08 15:57:30] [INFO] --- Starting test run for l0_pce_rate_line_2026-06.csv ---
+[2026-07-08 15:57:30] [SUCCESS] `identifier` is a character column
+[2026-07-08 15:57:30] [SUCCESS] `rate_id` is a character column
+[2026-07-08 15:57:30] [SUCCESS] `line_no` is a numeric column
+[2026-07-08 15:57:30] [SUCCESS] `actual_rate` is a numeric column
+[2026-07-08 15:57:30] [SUCCESS] `pro_rata_rate` is a numeric column
+[2026-07-08 15:57:30] [SUCCESS] `check` is a numeric column
+[2026-07-08 15:57:30] [SUCCESS] `residential_rate` is a numeric column
+[2026-07-08 15:57:30] [SUCCESS] `pce_eligible_residential_kwh` is a numeric column
+[2026-07-08 15:57:30] [SUCCESS] `pce_eligible_com_facil_kwh` is a numeric column
+[2026-07-08 15:57:30] [SUCCESS] `pce_eligible_community_kwh` is a numeric column
+[2026-07-08 15:57:30] [SUCCESS] `pce_eligible_kwh_total` is a numeric column
+[2026-07-08 15:57:30] [SUCCESS] `identifier` has no missing values
+[2026-07-08 15:57:30] [SUCCESS] `line_no` has no missing values
+[2026-07-08 15:57:30] [SUCCESS] `actual_rate` has only positive values
+[2026-07-08 15:57:30] [SUCCESS] `residential_rate` has only positive values
+[2026-07-08 15:57:30] [INFO] Success! l0_pce_rate_line_2026-06.csv passed all data tests, writing to file as l1_pce_rate_line_2026-06.csv.
+[2026-07-08 15:57:30] [INFO] --- Starting test run for l0_pce_rate_line_2026-07.csv ---
+[2026-07-08 15:57:30] [SUCCESS] `identifier` is a character column
+[2026-07-08 15:57:30] [SUCCESS] `rate_id` is a character column
+[2026-07-08 15:57:30] [SUCCESS] `line_no` is a numeric column
+[2026-07-08 15:57:30] [SUCCESS] `actual_rate` is a numeric column
+[2026-07-08 15:57:30] [SUCCESS] `pro_rata_rate` is a numeric column
+[2026-07-08 15:57:30] [SUCCESS] `check` is a numeric column
+[2026-07-08 15:57:30] [SUCCESS] `residential_rate` is a numeric column
+[2026-07-08 15:57:30] [SUCCESS] `pce_eligible_residential_kwh` is a numeric column
+[2026-07-08 15:57:30] [SUCCESS] `pce_eligible_com_facil_kwh` is a numeric column
+[2026-07-08 15:57:30] [SUCCESS] `pce_eligible_community_kwh` is a numeric column
+[2026-07-08 15:57:30] [SUCCESS] `pce_eligible_kwh_total` is a numeric column
+[2026-07-08 15:57:30] [SUCCESS] `identifier` has no missing values
+[2026-07-08 15:57:30] [SUCCESS] `line_no` has no missing values
+[2026-07-08 15:57:30] [SUCCESS] `actual_rate` has only positive values
+[2026-07-08 15:57:30] [SUCCESS] `residential_rate` has only positive values
+[2026-07-08 15:57:30] [INFO] Success! l0_pce_rate_line_2026-07.csv passed all data tests, writing to file as l1_pce_rate_line_2026-07.csv.

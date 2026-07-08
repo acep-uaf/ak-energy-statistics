@@ -1,27 +1,74 @@
+library(dplyr)
 library(readr)
 library(readxl)
-library(janitor)
 library(stringr)
-library(tools)
 library(fs)
+library(yaml)
 
 
-l0_extract_xlsx_write_csv <- function(path) {
+# general function to read XLSX, rename columns according to YAML config file, return df
+read_xlsx_rename_cols <- function(path_in, sheet_name, schema_config) {
 
-  date_stamp <- str_split_i(basename(file_path_sans_ext(path)), 'raw_data_', 2)
+  raw_data <- read_xlsx(path = path_in, sheet = sheet_name)
 
-  raw_header <- read_xlsx(path = path, sheet = 'HeaderData') %>% clean_names()
-  raw_rates <- read_xlsx(path = path, sheet = 'RateLineData') %>% clean_names()
+  config   <- read_yaml(schema_config)
+  sheet_mapping <- config[[sheet_name]]
+  if (is.null(sheet_mapping)) {
+    stop(paste("Sheet '", sheet_name, "' not found in YAML config."))
+  }
+  mapping <- unlist(sheet_mapping)
 
-  raw_header$file_upload_date <- as.Date(date_stamp)
-  raw_rates$file_upload_date  <- as.Date(date_stamp)
+  missing_cols <- setdiff(names(mapping), names(raw_data))
+  if (length(missing_cols) > 0) {
+    stop(paste("Missing expected headers:", paste(missing_cols, collapse = ", ")))
+  }
 
-  dir_create('data/l0')
+  target_contract <- setNames(names(mapping), mapping)
 
-  write_csv(raw_header, paste0("data/l0/l0_header_", date_stamp, ".csv"))
-  write_csv(raw_rates,  paste0("data/l0/l0_rates_", date_stamp, ".csv"))
+  clean_df <- raw_data %>%
+    select(all_of(target_contract))
+
+  return(clean_df)
+}
+
+
+# l0 PCE specific function to extract, rename cols, write to file as CSV
+l0_pce_extract_rename_write <- function(
+  path_in,
+  sheets = c('HeaderData', 'RateLineData'),
+  schema_config = 'config/extract/l0_pce_schema.yml',
+  dir_out = 'data/l0'
+) {
+
+  for (sheet in sheets) {
+    df <- read_xlsx_rename_cols(
+    path_in = path_in,
+    sheet_name = sheet,
+    schema_config = schema_config
+  )
+
+  xlsx_date <- str_extract(path_in, "\\d{4}-\\d{2}")
+  file_out <- str_glue('l0_pce', str_split_i(str_to_snake(sheet), '_data', 1), xlsx_date, .sep="_")
+
+
+  dir_create(dir_out)
+  write_csv(df, path(dir_out, file_out, ext = "csv"))
+  }
 
 }
 
 
-l0_extract_xlsx_write_csv(path = 'data/raw/raw_data_2026-06-12.xlsx')
+# loop function over directory, matching PCE XLSX files
+l0_extract_pce_dir <- function(
+  dir_in = 'data/raw',
+  pattern = 'raw_pce'
+) {
+
+  files <- list.files(path = dir_in, pattern = pattern, full.names=T)
+
+  for (file in files) {
+
+    l0_pce_extract_rename_write(path_in = file)
+  }
+
+}

@@ -1,0 +1,51 @@
+l0_pce_header:
+  type_checks:
+    character:
+      - identifier
+      - utility
+      - community
+      - purchased_from
+      - other_1_kwh_type
+      - other_2_kwh_type
+      - umr_month
+    numeric:
+      - line_no
+    logical:
+      # - other_customers_description
+
+
+  constraints:
+    not_null:
+      - identifier
+      - line_no
+    positive_only:
+      - powerhouse_consumption_kwh
+      - peak_consumption_kw
+    detect_outliers:
+
+l0_pce_rate_line:
+  type_checks:
+    character:
+      - identifier
+      - rate_id
+    numeric:
+      - line_no
+      - actual_rate
+      - pro_rata_rate
+      - check
+      - residential_rate
+      - pce_eligible_residential_kwh
+      - pce_eligible_com_facil_kwh
+      - pce_eligible_community_kwh
+      - pce_eligible_kwh_total
+    logical:
+
+
+  constraints:
+    not_null:
+      - identifier
+      - line_no
+    positive_only:
+      - actual_rate
+      - residential_rate
+    detect_outliers:

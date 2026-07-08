@@ -1,139 +1,141 @@
 library(cli)
-library(logger)
 library(fs)
 library(readr)
 library(yaml)
 
-
-l1_data_tests <- function(path_in, config, path_out) {
-
-  # Setup and helper functions
+l1_data_tests <- function(path_in, config) {
+  # ─── 1. SETUP LOG FILE ──────────────────────────────────────────────────
   options(cli.num_colors = 256)
-  log_layout(layout_glue_colors)
+
+  log_dir <- "logs"
+  dir_create(log_dir)
+  log_file_path <- file.path(log_dir, paste0("pipeline_", Sys.Date(), ".log"))
+
+  # Helper function to append timestamped text to our permanent log archive
+  write_log <- function(text, status = "INFO") {
+    timestamp <- format(Sys.time(), "%Y-%m-%d %H:%M:%S")
+    clean_text <- cli::ansi_strip(text) # Ensure zero raw ANSI color code leaks
+    log_line <- paste0("[", timestamp, "] [", status, "] ", clean_text)
+    write_lines(log_line, log_file_path, append = TRUE)
+  }
+
+  # ─── 2. START RUN ───────────────────────────────────────────────────────
+  cli_h1("Running Data Quality Tests: {.file {basename(path_in)}}")
+  write_log(paste0("--- Starting test run for ", basename(path_in), " ---"))
 
   df <- read_csv(path_in, show_col_types = FALSE)
-  config <- read_yaml(config)
 
-  cli_h1("Running Data Quality Tests: {.file {basename(path_in)}}")
+  cfg_whole <- read_yaml(config)
+  config_key <- path_ext_remove(basename(path_in)) %>%
+    str_remove("_\\d{4}-\\d{2}(-\\d{2})?$")
+  if (!config_key %in% names(cfg_whole)) {
+    stop(paste("Target config key", config_key, "not found in", config ,"YAML."))
+  }
+  cfg <- cfg_whole[[config_key]]
+
+
   all_passed <- TRUE
 
-  run_check <- function(condition, success_msg, fail_msg) {
+  # Core evaluator engine
+  check_col <- function(col, condition, pass_msg, fail_msg) {
+    if (!col %in% names(df)) {
+      err <- paste0("Column '", col, "' is missing.")
+      cli_alert_danger(err)
+      write_log(err, "ERROR")
+      return(FALSE)
+    }
+
     if (all(condition, na.rm = TRUE)) {
-      cli_alert_success(success_msg)
+      # Use cli to safely evaluate the text variables first
+      formatted_msg <- cli::format_inline(pass_msg)
+
+      cli_alert_success(formatted_msg)   # Prints beautiful color on screen
+      write_log(formatted_msg, "SUCCESS") # Appends pure plain text to file
       return(TRUE)
     } else {
-      cli_alert_danger(fail_msg)
+      formatted_msg <- cli::format_inline(fail_msg)
+
+      cli_alert_danger(formatted_msg)
+      write_log(formatted_msg, "WARN")
       return(FALSE)
     }
   }
 
-  # ─── TYPE & EXISTENCE CHECKS ───────────────────────────────────────────
-  # Character check
-  for (col in config$type_checks$character) {
-    if (!col %in% names(df)) {
-      cli_alert_danger("Column {.var {col}} is missing.")
-      all_passed <- FALSE
-      next
-    }
-    passed <- run_check(is.character(df[[col]]),
-                        "{.var {col}} is a text column",
-                        "{.var {col}} should be text, but is not")
-    if (!passed) all_passed <- FALSE
-  }
+  # ─── TYPE CHECKS ────────────────────────────────────────────────────────
+  types <- list(character = is.character, numeric = is.numeric, logical = is.logical)
 
-  # Numeric check
-  for (col in config$type_checks$numeric) {
-    if (!col %in% names(df)) {
-      cli_alert_danger("Column {.var {col}} is missing.")
-      all_passed <- FALSE
-      next
-    }
-    passed <- run_check(is.numeric(df[[col]]),
-                        "{.var {col}} is a numeric column",
-                        "{.var {col}} should be numeric, but is not")
-    if (!passed) all_passed <- FALSE
-  }
-
-  # Logical check
-  for (col in config$type_checks$logical) {
-    if (!col %in% names(df)) {
-      cli_alert_danger("Column {.var {col}} is missing.")
-      all_passed <- FALSE
-      next
-    }
-    passed <- run_check(is.logical(df[[col]]),
-                        "{.var {col}} is a logical column",
-                        "{.var {col}} should be logical, but is not")
-    if (!passed) all_passed <- FALSE
-  }
-
-  # ─── CONSTRAINT CHECKS ─────────────────────────────────────────────────
-  # Not Null check
-  for (col in config$constraints$not_null) {
-    if (col %in% names(df)) {
-      passed <- run_check(!is.na(df[[col]]),
-                          "{.var {col}} has no missing values",
-                          "{.var {col}} contains missing (NULL) values")
+  for (type_name in names(types)) {
+    for (col in cfg$type_checks[[type_name]]) {
+      passed <- check_col(col, types[[type_name]](df[[col]]),
+                          "{.var {col}} is a {type_name} column",
+                          "{.var {col}} should be {type_name}, but is not")
       if (!passed) all_passed <- FALSE
     }
   }
 
-  # Only positive values
-  for (col in config$constraints$positive_only) {
-    if (col %in% names(df)) {
-      passed <- run_check(df[[col]] >= 0,
-                          "{.var {col}} has only positive values",
-                          "{.var {col}} contains negative values")
-      if (!passed) all_passed <- FALSE
-    }
+  # ─── VALUE & STATISTICAL CHECKS ────────────────────────────────────────
+  # Not Null
+  for (col in cfg$constraints$not_null) {
+    passed <- check_col(col, !is.na(df[[col]]),
+                        "{.var {col}} has no missing values",
+                        "{.var {col}} contains missing (NULL) values")
+    if (!passed) all_passed <- FALSE
   }
 
-  # Outlier detection
-  for (col in config$constraints$detect_outliers) {
+  # Positive Only
+  for (col in cfg$constraints$positive_only) {
+    passed <- check_col(col, df[[col]] >= 0,
+                        "{.var {col}} has only positive values",
+                        "{.var {col}} contains negative values")
+    if (!passed) all_passed <- FALSE
+  }
+
+  # Outliers
+  for (col in cfg$constraints$detect_outliers) {
     if (col %in% names(df)) {
+      mad_val <- max(mad(df[[col]], na.rm = TRUE), 0.001)
+      is_clean <- abs(df[[col]] - median(df[[col]], na.rm = TRUE)) <= (3 * mad_val)
 
-      col_median <- median(df[[col]], na.rm = TRUE)
-      col_mad    <- mad(df[[col]], na.rm = TRUE)
-
-      # Protect against columns where MAD is 0 (e.g., a column of mostly identical numbers)
-      if (col_mad == 0) col_mad <- 0.001
-
-      # Calculate how many MADs each row is away from the median
-      # A threshold of 3 is standard, but you can change it to 5 for "extreme" anomalies
-      is_within_mad <- abs(df[[col]] - col_median) <= (3 * col_mad)
-
-      passed <- run_check(is_within_mad,
+      passed <- check_col(col, is_clean,
                           "{.var {col}} has no severe statistical outliers (> 3 MAD)",
                           "{.var {col}} contains values outside 3 Median Absolute Deviations!")
-
-      if (!passed) all_passed = FALSE
+      if (!passed) all_passed <- FALSE
     }
   }
 
-  # ─── PIPELINE GATEKEEPER ───────────────────────────────────────────────
+  # ─── GATEKEEPER ────────────────────────────────────────────────────────
   if (!all_passed) {
-    log_fatal("Data testing failed.")
-    stop("Possible data issues, see above output for specifics.", call. = FALSE)
+    fatal_msg <- paste0("FATAL: Data testing failed for ", basename(path_in))
+    cli_alert_danger(col_red(fatal_msg))
+    write_log(fatal_msg, "FATAL")
+    stop("Possible data issues, see above checklist for specifics.", call. = FALSE)
   }
 
+  path_out = str_replace_all(path_in, 'l0', 'l1')
   dir_create(dirname(path_out))
   write.csv(df, path_out, row.names = FALSE)
 
-  cli_alert_success(
-    col_green("Success! {basename(path_in)} passed all data tests, writing to file as {basename(path_out)}.")
-  )
+  success_msg <- paste0("Success! ", basename(path_in), " passed all data tests, writing to file as ", basename(path_out), ".")
+  cli_alert_success(col_green(success_msg))
+  write_log(success_msg, "INFO")
 }
 
 
-l1_data_tests(
-  path_in = 'data/l0/l0_rates_2026-06-12.csv',
-  config = 'config/data_tests/l0_rates_tests.yaml',
-  path_out = 'data/l1/l1_rates_2026-06-12.csv'
-)
 
 
-l1_data_tests(
-  path_in = 'data/l0/l0_header_2026-06-12.csv',
-  config = 'config/data_tests/l0_header_tests.yaml',
-  path_out = 'data/l1/l1_header_2026_06-12.csv'
-)
+l1_test_pce_dir <- function(
+  dir_in = 'data/l0',
+  pattern = 'l0_pce'
+) {
+
+  files <- list.files(path = dir_in, pattern = pattern, full.names=T)
+
+  for (file in files) {
+
+    l1_data_tests(
+      path_in = file,
+      config = 'config/data_tests/l1_pce_tests.yml'
+    )
+  }
+
+}
