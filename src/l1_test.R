@@ -3,6 +3,7 @@ library(fs)
 library(readr)
 library(yaml)
 library(stringr)
+library(purrr)
 
 l1_data_tests <- function(path_in, config) {
   # Setup Terminal Logging
@@ -12,7 +13,8 @@ l1_data_tests <- function(path_in, config) {
   cli_h1("Running Data Quality Tests: {.file {path_file(path_in)}}")
   cli_alert_info("Starting test run for {path_file(path_in)}")
 
-  df <- read_csv(path_in, show_col_types = FALSE)
+  # Read inputs as plain text characters
+  df_raw <- read_csv(path_in, col_types = cols(.default = "c"), show_col_types = FALSE)
 
   cfg_whole <- read_yaml(config)
   config_key <- path_ext_remove(path_file(path_in)) %>%
@@ -22,6 +24,31 @@ l1_data_tests <- function(path_in, config) {
     stop(paste("Target config key", config_key, "not found in", config ,"YAML."))
   }
   cfg <- cfg_whole[[config_key]]
+
+  # Recasting Engine
+  df <- df_raw
+
+  # Recast Numeric Columns
+  for (col in cfg$type_checks$numeric) {
+    if (col %in% names(df)) {
+      clean_vector <- str_replace_all(df[[col]], "[$,\\s]", "")
+      df[[col]] <- as.numeric(clean_vector)
+    }
+  }
+
+  # Recast Logical Columns
+  for (col in cfg$type_checks$logical) {
+    if (col %in% names(df)) {
+      df[[col]] <- as.logical(df[[col]])
+    }
+  }
+
+  # Recast Character Columns
+  for (col in cfg$type_checks$character) {
+    if (col %in% names(df)) {
+      df[[col]] <- str_trim(as.character(df[[col]]))
+    }
+  }
 
   all_passed <- TRUE
 
@@ -54,12 +81,11 @@ l1_data_tests <- function(path_in, config) {
   }
 
   # Value and Statistical Checks
-  # Not Null
   for (col in cfg$constraints$not_null) {
     passed <- check_col(col, !is.na(df[[col]]),
                         "{.var {col}} has no missing values",
                         "{.var {col}} contains missing (NULL) values")
-    if (!passed) all_passed=FALSE
+    if (!passed) all_passed <- FALSE
   }
 
   # Positive Only
