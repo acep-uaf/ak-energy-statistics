@@ -9,7 +9,7 @@ library(yaml)
 # general function to read XLSX, rename columns according to YAML config file, return df
 read_xlsx_rename_cols <- function(path_in, sheet_name, schema_config) {
 
-  raw_data <- read_xlsx(path = path_in, sheet = sheet_name)
+  raw_data <- read_xlsx(path = path_in, sheet = sheet_name, guess_max = Inf)
 
   config   <- read_yaml(schema_config)
   sheet_mapping <- config[[sheet_name]]
