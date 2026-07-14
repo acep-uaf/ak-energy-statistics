@@ -2,66 +2,46 @@ library(cli)
 library(fs)
 library(readr)
 library(yaml)
+library(stringr)
 
 l1_data_tests <- function(path_in, config) {
-  # ─── 1. SETUP LOG FILE ──────────────────────────────────────────────────
+  # Setup Terminal Logging
   options(cli.num_colors = 256)
 
-  log_dir <- "logs"
-  dir_create(log_dir)
-  log_file_path <- file.path(log_dir, paste0("pipeline_", Sys.Date(), ".log"))
-
-  # Helper function to append timestamped text to our permanent log archive
-  write_log <- function(text, status = "INFO") {
-    timestamp <- format(Sys.time(), "%Y-%m-%d %H:%M:%S")
-    clean_text <- cli::ansi_strip(text) # Ensure zero raw ANSI color code leaks
-    log_line <- paste0("[", timestamp, "] [", status, "] ", clean_text)
-    write_lines(log_line, log_file_path, append = TRUE)
-  }
-
-  # ─── 2. START RUN ───────────────────────────────────────────────────────
+  # Start Run
   cli_h1("Running Data Quality Tests: {.file {basename(path_in)}}")
-  write_log(paste0("--- Starting test run for ", basename(path_in), " ---"))
+  cli_alert_info("Starting test run for {basename(path_in)}")
 
   df <- read_csv(path_in, show_col_types = FALSE)
 
   cfg_whole <- read_yaml(config)
   config_key <- path_ext_remove(basename(path_in)) %>%
     str_remove("_\\d{4}-\\d{2}(-\\d{2})?$")
+
   if (!config_key %in% names(cfg_whole)) {
     stop(paste("Target config key", config_key, "not found in", config ,"YAML."))
   }
   cfg <- cfg_whole[[config_key]]
-
 
   all_passed <- TRUE
 
   # Core evaluator engine
   check_col <- function(col, condition, pass_msg, fail_msg) {
     if (!col %in% names(df)) {
-      err <- paste0("Column '", col, "' is missing.")
-      cli_alert_danger(err)
-      write_log(err, "ERROR")
+      cli_alert_danger("Column '{col}' is missing.")
       return(FALSE)
     }
 
     if (all(condition, na.rm = TRUE)) {
-      # Use cli to safely evaluate the text variables first
-      formatted_msg <- cli::format_inline(pass_msg)
-
-      cli_alert_success(formatted_msg)   # Prints beautiful color on screen
-      write_log(formatted_msg, "SUCCESS") # Appends pure plain text to file
+      cli_alert_success(format_inline(pass_msg))
       return(TRUE)
     } else {
-      formatted_msg <- cli::format_inline(fail_msg)
-
-      cli_alert_danger(formatted_msg)
-      write_log(formatted_msg, "WARN")
+      cli_alert_danger(format_inline(fail_msg))
       return(FALSE)
     }
   }
 
-  # ─── TYPE CHECKS ────────────────────────────────────────────────────────
+  # Type Checks
   types <- list(character = is.character, numeric = is.numeric, logical = is.logical)
 
   for (type_name in names(types)) {
@@ -73,13 +53,13 @@ l1_data_tests <- function(path_in, config) {
     }
   }
 
-  # ─── VALUE & STATISTICAL CHECKS ────────────────────────────────────────
+  # Value and Statistical Checks
   # Not Null
   for (col in cfg$constraints$not_null) {
     passed <- check_col(col, !is.na(df[[col]]),
                         "{.var {col}} has no missing values",
                         "{.var {col}} contains missing (NULL) values")
-    if (!passed) all_passed <- FALSE
+    if (!passed) all_passed=.FALSE
   }
 
   # Positive Only
@@ -103,39 +83,30 @@ l1_data_tests <- function(path_in, config) {
     }
   }
 
-  # ─── GATEKEEPER ────────────────────────────────────────────────────────
+  # Gatekeeper
   if (!all_passed) {
-    fatal_msg <- paste0("FATAL: Data testing failed for ", basename(path_in))
-    cli_alert_danger(col_red(fatal_msg))
-    write_log(fatal_msg, "FATAL")
+    cli_alert_danger(col_red("FATAL: Data testing failed for {basename(path_in)}"))
     stop("Possible data issues, see above checklist for specifics.", call. = FALSE)
   }
 
-  path_out = str_replace_all(path_in, 'l0', 'l1')
+  file_name <- basename(path_in)
+  new_file_name <- str_replace(file_name, "^l0", "l1")
+  path_out <- path("data", "l1", new_file_name)
+
   dir_create(dirname(path_out))
   write.csv(df, path_out, row.names = FALSE)
 
-  success_msg <- paste0("Success! ", basename(path_in), " passed all data tests, writing to file as ", basename(path_out), ".")
-  cli_alert_success(col_green(success_msg))
-  write_log(success_msg, "INFO")
+  cli_alert_success(col_green("Success! {basename(path_in)} passed all data tests, writing to {basename(path_out)}."))
 }
 
-
-
-
-l1_test_pce_dir <- function(
-  dir_in = 'data/l0',
-  pattern = 'l0_pce'
-) {
-
-  files <- list.files(path = dir_in, pattern = pattern, full.names=T)
+# Loop through directory
+l1_test_pce_dir <- function(dir_in = 'data/l0', pattern = 'l0_pce') {
+  files <- list.files(path = dir_in, pattern = pattern, full.names = TRUE)
 
   for (file in files) {
-
     l1_data_tests(
       path_in = file,
       config = 'config/data_tests/l1_pce_tests.yml'
     )
   }
-
 }
