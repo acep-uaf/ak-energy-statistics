@@ -91,7 +91,7 @@ l1_data_tests <- function(path_in, config) {
 
   file_name <- path_file(path_in)
   new_file_name <- str_replace(file_name, "^l0", "l1")
-  path_out <- path("data", "l1", new_file_name)
+  path_out <- path("data", "l1_tested", "monthly", new_file_name)
 
   dir_create(dirname(path_out))
   write_csv(df, file = path_out)
@@ -100,7 +100,7 @@ l1_data_tests <- function(path_in, config) {
 }
 
 # Loop through directory
-l1_test_pce_dir <- function(dir_in = 'data/l0', pattern = 'l0_pce') {
+l1_test_pce_dir <- function(dir_in = 'data/l0_extracted', pattern = 'l0_pce') {
   files <- dir_ls(path = dir_in, regexp = pattern)
 
   for (file in files) {

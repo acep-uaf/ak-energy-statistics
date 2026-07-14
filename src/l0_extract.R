@@ -9,7 +9,7 @@ library(yaml)
 # general function to read XLSX, rename columns according to YAML config file, return df
 read_xlsx_rename_cols <- function(path_in, sheet_name, schema_config) {
 
-  raw_data <- read_xlsx(path = path_in, sheet = sheet_name, guess_max = Inf)
+  raw_data <- read_xlsx(path = path_in, sheet = sheet_name)
 
   config   <- read_yaml(schema_config)
   sheet_mapping <- config[[sheet_name]]
@@ -37,7 +37,7 @@ l0_pce_extract_rename_write <- function(
   path_in,
   sheets = c('HeaderData', 'RateLineData'),
   schema_config = 'config/extract/l0_pce_schema.yml',
-  dir_out = 'data/l0'
+  dir_out = 'data/l0_extracted/monthly'
 ) {
 
   for (sheet in sheets) {
@@ -59,10 +59,7 @@ l0_pce_extract_rename_write <- function(
 
 
 # loop function over directory, matching PCE XLSX files
-l0_extract_pce_dir <- function(
-  dir_in = 'data/raw',
-  pattern = 'raw_pce'
-) {
+l0_extract_pce_dir <- function(dir_in = 'data/raw', pattern = 'raw_pce') {
 
   files <- list.files(path = dir_in, pattern = pattern, full.names=T)
 
