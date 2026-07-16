@@ -1,12 +1,9 @@
 name: Monthly Data Pipeline Run
 
 on:
-  push:
-    branches:
-      - ian/add-github-workflow # Delete this and previous two lines before merge to main!
-  # schedule:
-  #   # Fresh data arrives on day 7, runs on day 10 of every month
-  #   - cron: '0 0 10 * *'
+  schedule:
+    # Fresh data arrives on day 7, runs on day 10 of every month
+    - cron: '0 0 10 * *'
   workflow_dispatch:
 
 permissions:
