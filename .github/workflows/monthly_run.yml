@@ -46,21 +46,20 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-          # Clean up Git's index first so it doesn't get confused by R's unlink() steps
+          # Clean up Git's index first so it doesn't get confused by R's "unlink()" steps
           git rm -r --cached data/l0_extracted/ data/l1_quality_checked/ data/l2_transformed/ data/l3_outliers_checked/ --ignore-unmatch
 
           # Add the entire data directory
           git add data/
 
-          # Commit only if there are actual changes
-          if ! git diff-index --quiet HEAD; then
-            git commit -m "Auto-update monthly data layers [skip ci]"
+          # Check if git actually has changes staged to commit
+          if ! git diff --cached --quiet; then
+            echo "Changes detected. Committing..."
+            git commit -m "Auto-update monthly data [skip ci]"
 
-            # Fetch latest changes and apply our new data commit on top to prevent merge conflicts
+            # Fetch latest remote changes and push
             git pull --rebase origin ${{ github.ref_name }}
-
-            # Push back to the current active branch
             git push origin HEAD:${{ github.ref }}
           else
-            echo "No changes detected in data layers. Skipping push."
+            echo "No data changes detected. Keeping repository clean."
           fi
