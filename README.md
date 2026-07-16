@@ -12,7 +12,7 @@ This is part of a 40+ year effort to create and maintain high level views of the
 
 ### Latest Report & Workbook
 
-This repository is home to efforts to modernize the Alaska Energy Statistics workflow. Previous to this effort, Energy Statistics workbooks were compilled manually via Microsoft Excel. This workflow was very labor-intensive and hard to reproduce automatically. In order to automate the processing workflow to run monthly, we have switched processing from Excel to programatic code.
+This repository is home to efforts to modernize the Alaska Energy Statistics workflow. Previous to this effort, Energy Statistics workbooks were compilled manually via Microsoft Excel. This workflow was very labor-intensive and hard to reproduce automatically. In order to automate the processing workflow to run monthly, we have switched processing from Excel to programatic R code.
 
 
 ### Historical Reports & Workbook
