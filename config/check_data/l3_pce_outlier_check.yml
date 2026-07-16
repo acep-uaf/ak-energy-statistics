@@ -1,0 +1,31 @@
+settings:
+  mad_threshold: 3
+
+columns_to_check:
+  - residential_rate
+  # - pce_rate          # we don't have a column by this name, investigate
+  - pce_eligible_residential_kwh
+  - pce_eligible_community_kwh
+  - pce_eligible_total_kwh
+  # - disbursement      # we don't have a column by this name, investigate
+  - most_recent_fuel_purch_price # check name, called fuel_price by others
+  - fuel_used_gallons
+  - fuel_cost
+  - diesel_kwh_generated
+  - hydro_kwh_generated
+  - natural_gas_kwh_generated
+  - wind_kwh_generated
+  - solar_kwh_generated
+  - total_kwh_purchased   # check name, called kwh_purchased by others
+  - powerhouse_consumption_kwh
+  - peak_consumption_kw
+  - residential_sold_to
+  - commercial_sold_to
+  - com_facil_sold_to
+  - govt_facil_sold_to
+  - unbilled_sold_to
+  - residential_customers
+  - commercial_customers
+  - com_facil_customers
+  - govt_facil_customers
+  - unbilled_customers

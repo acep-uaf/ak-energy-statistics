@@ -1,2 +1,10 @@
 .DS_Store
 .env
+
+# block temporary excel files
+~$*.xlsx
+~$*.xls
+
+# block temp data exports
+*.RData
+*.Rhistory
