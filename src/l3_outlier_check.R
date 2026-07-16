@@ -66,6 +66,7 @@ l3_generate_outlier_log <- function(path_in, path_config, output_log_path) {
       )
     ) %>%
     ungroup() %>%
+    mutate(mad_score = round(mad_score, 0)) %>%
 
     # Log only dramatic outliers
     filter(anomaly_severity %in% c("Strong", "Extreme")) %>%
