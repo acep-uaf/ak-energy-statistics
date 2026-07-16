@@ -1,0 +1,50 @@
+name: Monthly Data Pipeline Run
+
+on:
+  schedule:
+    # Fresh data arrives on day 7, runs on day 10 of every month
+    - cron: '0 0 10 * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  run-pipeline:
+    runs-on: ubuntu-latest
+
+    env:
+      RENV_PATHS_ROOT: ~/.cache/R/renv
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up R
+        uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: 'release'
+
+      - name: Cache renv packages
+        uses: actions/cache@v4
+        with:
+          path: ${{ env.RENV_PATHS_ROOT }}
+          key: ${{ runner.os }}-renv-${{ hashFiles('**/renv.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-renv-
+
+      - name: Run pipeline script
+        run: |
+          chmod +x main.sh
+          ./main.sh
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+          git rm -r --cached data/l0_extracted/ data/l1_quality_checked/ data/l2_transformed/ data/l3_outliers_checked/ --ignore-unmatch
+
+          git add data/
+
+          git diff-index --quiet HEAD || (git commit -m "Auto-update monthly data layers [skip ci]" && git push)
