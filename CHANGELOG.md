@@ -11,7 +11,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 ### Removed
 
-## [1.0.0] - 2023-09-12
+
+## [1.0.1] - 2026-07-16
+
+### Changed
+- Updated README to reflect current direction, added link to archival Energy Statistics repo and website
+
+### Removed
+- Removed legacy workbooks, consolidating legacy worbooks into archival repo only
+
+## [1.0.0] - 2026-07-16
 
 ### Added
 - CHANGELOG.md to track changes to this project.
@@ -31,4 +40,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.0.1] - 2023-07-01
 
-Prior to a github repo push the 2011-2021
+Legacy Energy Statistics workbooks added
