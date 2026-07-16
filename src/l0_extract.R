@@ -6,7 +6,7 @@ library(fs)
 library(yaml)
 
 
-# general function to read XLSX, rename columns according to YAML config file, return df
+# General function to read XLSX, rename columns according to YAML config file, return df
 read_xlsx_rename_cols <- function(path_in, sheet_name, schema_config) {
 
   raw_data <- read_xlsx(path = path_in, sheet = sheet_name)
@@ -58,7 +58,7 @@ l0_pce_extract_rename_write <- function(
 }
 
 
-# loop function over directory, matching PCE XLSX files
+# Loop function over directory, matching PCE XLSX files
 l0_extract_pce_dir <- function(dir_in = 'data/raw', pattern = 'raw_pce') {
 
   files <- list.files(path = dir_in, pattern = pattern, full.names=T)

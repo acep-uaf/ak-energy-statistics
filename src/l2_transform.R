@@ -113,9 +113,6 @@ l2_transform_rate_line <- function(l1_consolidated_dir) {
     )
 
   rates <- raw %>%
-  # group_by(identifier) %>%
-  # filter(line_no == min(line_no)) %>% # uncomment to select lowest line_no (some communities don't have rates for line_no == 10000)
-  # ungroup() %>%
   filter(line_no == 10000) %>%
   select(
     identifier,
@@ -161,7 +158,7 @@ l2_transform_pce <- function(l1_consolidated_dir) {
 
   df <- organized
 
-  path_out <- path_ext_set(path('data/l2/consolidated/l2_pce'),"csv")
+  path_out <- path_ext_set(path('data/l2_transformed/consolidated/l2_pce'),"csv")
   dir_create(dirname(path_out))
   write_csv(df, path_out)
 }

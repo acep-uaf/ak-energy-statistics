@@ -29,7 +29,7 @@ l1_data_quality_checks <- function(path_in, config) {
 
   df <- df_raw
 
-  # map values for select columns
+  # Map values for select columns
   if ("category_mappings" %in% names(cfg)) {
     for (col in names(cfg$category_mappings)) {
       if (col %in% names(df)) {
@@ -94,7 +94,9 @@ l1_data_quality_checks <- function(path_in, config) {
     }
   }
 
-  # Value and Statistical Checks
+  # Value Checks
+
+  # Null values
   for (col in cfg$constraints$not_null) {
     passed <- check_col(col, !is.na(df[[col]]),
                         "{.var {col}} has no missing values",
@@ -120,7 +122,7 @@ l1_data_quality_checks <- function(path_in, config) {
 
   file_name <- path_file(path_in)
   new_file_name <- str_replace(file_name, "^l0", "l1")
-  path_out <- path("data", "l1_tested", "monthly", new_file_name)
+  path_out <- path("data", "l1_quality_checked", "monthly", new_file_name)
 
   dir_create(dirname(path_out))
   write_csv(df, file = path_out)
@@ -129,7 +131,7 @@ l1_data_quality_checks <- function(path_in, config) {
 }
 
 # Loop through directory
-l1_check_quality_pce_dir <- function(dir_in = 'data/l0_extracted', pattern = 'l0_pce', config = 'config/data_tests/l1_pce_tests.yml') {
+l1_check_quality_pce_dir <- function(dir_in = 'data/l0_extracted', pattern = 'l0_pce', config = 'config/check_data/l1_pce_quality_check.yml') {
   files <- dir_ls(path = dir_in, regexp = pattern)
 
   for (file in files) {
