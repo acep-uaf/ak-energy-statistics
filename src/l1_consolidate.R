@@ -7,7 +7,7 @@ library(purrr)
 library(cli)
 
 
-l2_consolidate_pce_data <- function(path_with_pattern, join_by_columns) {
+l1_consolidate_pce_data <- function(path_with_pattern, join_by_columns) {
 
   files <- dir_ls(
     path = path_dir(path_with_pattern),

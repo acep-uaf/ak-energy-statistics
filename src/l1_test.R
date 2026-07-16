@@ -25,8 +25,22 @@ l1_data_tests <- function(path_in, config) {
   }
   cfg <- cfg_whole[[config_key]]
 
-  # Recasting Engine
+  # --- Recasting Engine ---
+
   df <- df_raw
+
+  # map values for select columns
+  if ("category_mappings" %in% names(cfg)) {
+    for (col in names(cfg$category_mappings)) {
+      if (col %in% names(df)) {
+        df[[col]] <- str_to_upper(str_trim(df[[col]]))
+
+        mapping_vec <- unlist(cfg$category_mappings[[col]])
+
+        df[[col]] <- unname(mapping_vec[df[[col]]])
+      }
+    }
+  }
 
   # Recast Numeric Columns
   for (col in cfg$type_checks$numeric) {
@@ -111,7 +125,7 @@ l1_data_tests <- function(path_in, config) {
 
   # Gatekeeper
   if (!all_passed) {
-    cli_alert_danger(col_red("FATAL: Data testing failed for {path_file(path_in)}"))
+    cli_alert_danger("FATAL: Data testing failed for {path_file(path_in)}")
     stop("Possible data issues, see above checklist for specifics.", call. = FALSE)
   }
 
@@ -122,7 +136,7 @@ l1_data_tests <- function(path_in, config) {
   dir_create(dirname(path_out))
   write_csv(df, file = path_out)
 
-  cli_alert_success(col_green("Success! {path_file(path_in)} passed all data tests, writing to {path_file(path_out)}."))
+  cli_alert_success("Success! {path_file(path_in)} passed all data tests, writing to {path_file(path_out)}.")
 }
 
 # Loop through directory
