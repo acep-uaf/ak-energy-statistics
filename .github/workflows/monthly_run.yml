@@ -67,18 +67,10 @@ jobs:
           fi
 
 
-      - name: Render Quarto Website
-        run: |
-          cd site
-          quarto render
-
-      - name: Upload Website Artifacts to GitHub Pages
-        uses: actions/upload-pages-artifact@v3
+      - name: Publish to GitHub Pages (and render)
+        uses: quarto-dev/quarto-actions/publish@v2
         with:
-          path: site/_site
-
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+          target: gh-pages
+          path: site
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
