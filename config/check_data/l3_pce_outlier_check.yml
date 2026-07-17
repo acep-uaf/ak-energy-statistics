@@ -6,11 +6,9 @@ columns_to_check:
   # - pce_rate          # we don't have a column by this name, investigate
   - pce_eligible_residential_kwh
   - pce_eligible_community_kwh
-  - pce_eligible_total_kwh
   # - disbursement      # we don't have a column by this name, investigate
   - most_recent_fuel_purch_price # check name, called fuel_price by others
   - fuel_used_gallons
-  - fuel_cost
   - diesel_kwh_generated
   - hydro_kwh_generated
   - natural_gas_kwh_generated
