@@ -1,6 +1,12 @@
 name: Monthly Data Pipeline & Quarto Publish
 
 on:
+  push:
+    branches:
+      - main
+    # ignore changes to the data folder so you don't trigger infinite loops
+    paths-ignore:
+      - 'data/**'
   schedule:
     # Fresh data arrives on day 7, runs on day 10 of every month
     - cron: '0 0 10 * *'
