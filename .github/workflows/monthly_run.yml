@@ -1,4 +1,4 @@
-name: Monthly Data Pipeline Run
+name: Monthly Data Pipeline & Quarto Publish
 
 on:
   schedule:
@@ -10,7 +10,7 @@ permissions:
   contents: write
 
 jobs:
-  run-pipeline:
+  run-pipeline-and-publish:
     runs-on: ubuntu-latest
 
     env:
@@ -24,6 +24,9 @@ jobs:
         uses: r-lib/actions/setup-r@v2
         with:
           r-version: 'release'
+
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
 
       - name: Cache renv packages
         uses: actions/cache@v4
@@ -44,7 +47,7 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
           # Clean up Git's index first so it doesn't get confused by R's "unlink()" steps
-          git rm -r --cached data/l0_extracted/ data/l1_quality_checked/ data/l2_transformed/ data/l3_outliers_checked/ --ignore-unmatch
+          git rm -r --cached data/l0_extracted/ data/l1_quality_checked/ data/l2_transformed/ data/l3_outliers_checked/ --ignore-unmatch || true
 
           # Add the entire data directory
           git add data/
@@ -60,3 +63,11 @@ jobs:
           else
             echo "No data changes detected. Keeping repository clean."
           fi
+
+      - name: Render and Publish to GitHub Pages
+        uses: quarto-dev/quarto-actions/publish@v2
+        with:
+          target: gh-pages
+          path: site
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

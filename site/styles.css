@@ -1,0 +1,19 @@
+.navbar-logo {
+  padding-right: 20px; /* Adjust this value (e.g., 10px, 20px) to your liking */
+}
+
+
+
+/* Widen the center column in the footer */
+.nav-footer-center {
+  flex: 0 0 60% !important;
+  max-width: 60% !important;
+  text-align: center;
+}
+
+/* Shrink the left and right columns in the footer */
+.nav-footer-left,
+.nav-footer-right {
+  flex: 0 0 20% !important;
+  max-width: 20% !important;
+}

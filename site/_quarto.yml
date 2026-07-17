@@ -1,0 +1,52 @@
+project:
+  type: website
+  output-dir: _site
+  execute-dir: project
+  resources:
+    - "data/raw/*.xlsx"
+  preview:
+    port: 4200
+
+website:
+  title: "Alaska Energy Statistics"
+  favicon: images/favicon.png
+
+
+  navbar:
+    logo: images/acep_logo_cog.png
+    # logo-href: https://www.uaf.edu/acep/
+    left:
+      - href: index.qmd
+        text: Home
+      - href: process.qmd
+      - href: data.qmd
+      - href: outliers.qmd
+    right:
+      - icon: github
+        href: https://github.com/acep-uaf/ak-energy-statistics
+        aria-label: "GitHub"
+
+  page-footer:
+    background: light
+    border: false
+
+    center: |
+      <div style="margin-bottom: 15px;">
+        <a href="https://www.uaf.edu/acep/" target="_blank">
+          <img src="images/acep_logo.png" alt="ACEP Logo" style="height: 45px; display: inline-block;">
+        </a>
+      </div>
+      The [University of Alaska](https://www.alaska.edu/alaska/) is an equal opportunity/equal access employer and educational institution. The university is committed to a [policy of nondiscrimination](https://www.alaska.edu/nondiscrimination/) against individuals on the basis of any legally protected status. UA is committed to providing accessible websites. Learn more about UA’s [notice of web accessibility](https://www.alaska.edu/webaccessibility/?pk_vid=81df806589ed5ce517842767050a30e1).
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    grid:
+      body-width: 1000px
+      sidebar-width: 250px
+      margin-width: 250px
+
+execute:
+  freeze: false # re-evaluate R chunks on run

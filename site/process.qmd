@@ -1,0 +1,18 @@
+---
+title: "Process"
+# subtitle: "Energy Statistics"
+---
+
+
+## Lorem
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+<object data="https://raw.githubusercontent.com/acep-uaf/ak-energy-statistics/main/docs/pce_data_cleaning_methodology_notes_10232013.pdf"
+        type="application/pdf"
+        width="100%"
+        height="600px">
+    <p>Your browser doesn't support embedded PDFs.
+       <a href="https://raw.githubusercontent.com/acep-uaf/ak-energy-statistics/main/docs/pce_data_cleaning_methodology_notes_10232013.pdf">Click to download</a>
+    </p>
+</object>
