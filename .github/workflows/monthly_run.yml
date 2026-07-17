@@ -64,10 +64,19 @@ jobs:
             echo "No data changes detected. Keeping repository clean."
           fi
 
-      - name: Render and Publish to GitHub Pages
+
+      - name: Render Quarto Website
         run: |
           cd site
           quarto render
-          quarto publish gh-pages _site --no-render --no-prompt
+
+      - name: Upload Website Artifacts to GitHub Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site/_site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
