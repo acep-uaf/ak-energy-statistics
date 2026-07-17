@@ -68,6 +68,6 @@ jobs:
         run: |
           cd site
           quarto render
-          quarto publish gh-pages --no-render --no-prompt
+          quarto publish gh-pages _site --no-render --no-prompt
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
