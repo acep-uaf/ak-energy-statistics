@@ -1,0 +1,37 @@
+---
+title: "Outliers"
+---
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+library(tidyverse)
+library(DT)
+
+outliers <- read_csv("../data/l3_outliers_checked/l3_pce_outliers_log.csv")
+
+
+
+datatable(
+  outliers,
+  extensions = 'Buttons',
+  options = list(
+    dom = 'Bfrtip',       # "B" defines where buttons go, "f" is filter, "t" is table, "p" is pagination
+    buttons = list(
+      list(
+        extend = 'csv',
+        filename = 'outliers',
+        text = 'Download CSV'
+      ),
+      list(
+        extend = 'excel',
+        filename = 'outliers',
+        text = 'Download Excel'
+      )
+    ),
+    pageLength = 10,       # Show 10 rows at a time
+    scrollX = TRUE         # Makes wide tables scrollable horizontally
+  ),
+  rownames = FALSE,
+  class = 'cell-border stripe hover' # Gives it a beautiful, clean layout
+)
+
+```

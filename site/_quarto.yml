@@ -1,0 +1,27 @@
+project:
+  type: website
+  output-dir: _site
+  execute-dir: project
+
+website:
+  title: "Energy Statistics"
+  navbar:
+    left:
+      # - href: index.qmd
+      #   text: Home
+      - href: resources.qmd
+      - href: data.qmd
+      - href: outliers.qmd
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    grid:
+      body-width: 1100px
+      sidebar-width: 250px
+      margin-width: 250px
+
+execute:
+  freeze: false # re-evaluate R chunks on run
