@@ -1,12 +1,15 @@
-library(cli)
-library(fs)
+options(cli.num_colors = 256)
+
+library(dplyr, warn.conflicts = FALSE)
+library(lubridate, warn.conflicts = FALSE)
 library(readr)
-library(yaml)
+library(fs)
 library(stringr)
 library(purrr)
+library(cli)
 
 # -------------------------------------------------------------------------
-# DATA PREP
+# DATA PREP & CLEANING ENGINE
 # -------------------------------------------------------------------------
 
 # Transform text columns, map string values
@@ -48,6 +51,11 @@ enforce_l1_bounds <- function(df, cfg) {
 
   cli_h2("Enforcing Range Boundaries")
 
+  violation_list <- list()
+
+  # Safeguard: check if identifier column exists, otherwise fall back gracefully
+  has_id <- "identifier" %in% names(df)
+
   for (col in names(cfg$bounds)) {
     if (!col %in% names(df)) next
 
@@ -62,11 +70,22 @@ enforce_l1_bounds <- function(df, cfg) {
 
       if (any(low_mask, na.rm = TRUE)) {
         col_has_violations <- TRUE
-        bad_vals <- unique(val_vector[low_mask])
+        bad_rows <- which(low_mask)
+        bad_vals <- val_vector[low_mask]
+        bad_ids  <- if (has_id) as.character(df$identifier[low_mask]) else NA_character_
+
         cli_alert_warning(paste0(
           "Column {.var {col}}: Found {sum(low_mask)} value(s) below min of {min_val}. ",
-          "Scrubbed values: {.val {bad_vals}}"
+          "Scrubbed values: {.val {unique(bad_vals)}}"
         ))
+
+        violation_list[[length(violation_list) + 1]] <- tibble::tibble(
+          identifier = bad_ids,
+          column = col,
+          row_index = bad_rows,
+          rule_broken = paste0("< ", min_val),
+          original_value = as.character(bad_vals)
+        )
         val_vector[low_mask] <- NA
       }
     }
@@ -78,21 +97,39 @@ enforce_l1_bounds <- function(df, cfg) {
 
       if (any(high_mask, na.rm = TRUE)) {
         col_has_violations <- TRUE
-        bad_vals <- unique(val_vector[high_mask])
+        bad_rows <- which(high_mask)
+        bad_vals <- val_vector[high_mask]
+        bad_ids  <- if (has_id) as.character(df$identifier[high_mask]) else NA_character_
+
         cli_alert_warning(paste0(
           "Column {.var {col}}: Found {sum(high_mask)} value(s) exceeding max of {max_val}. ",
-          "Scrubbed values: {.val {bad_vals}}"
+          "Scrubbed values: {.val {unique(bad_vals)}}"
         ))
+
+        violation_list[[length(violation_list) + 1]] <- tibble::tibble(
+          identifier = bad_ids,
+          column = col,
+          row_index = bad_rows,
+          rule_broken = paste0("> ", max_val),
+          original_value = as.character(bad_vals)
+        )
         val_vector[high_mask] <- NA
       }
     }
 
-    # If column clean, output success message
+    # If the column was completely clean, report success message
     if (!col_has_violations && ("min" %in% names(limits) || "max" %in% names(limits))) {
       cli_alert_success("Column {.var {col}}: All values within bounds.")
     }
 
     df[[col]] <- val_vector
+  }
+
+  # Export collected anomalies out to a temporary workspace global variable
+  if (length(violation_list) > 0) {
+    .pce_violations <<- purrr::list_rbind(violation_list)
+  } else {
+    .pce_violations <<- NULL
   }
 
   return(df)
@@ -166,41 +203,63 @@ validate_l1_data <- function(df, cfg) {
 # -------------------------------------------------------------------------
 
 l1_data_quality_checks <- function(path_in, config) {
-  options(cli.num_colors = 256)
-  cli_h1("Running Data Quality Checks: {.file {path_file(path_in)}}")
+  file_name <- path_file(path_in)
+  cli_h1("Running Data Quality Checks: {.file {file_name}}")
 
   # Ingest config & data
   cfg_whole <- read_yaml(config)
-  config_key <- path_ext_remove(path_file(path_in)) %>% str_remove("_\\d{4}-\\d{2}(-\\d{2})?$")
+  config_key <- path_ext_remove(file_name) %>% str_remove("_\\d{4}-\\d{2}(-\\d{2})?$")
 
   if (!config_key %in% names(cfg_whole)) {
-    stop(paste("Target config key", config_key, "not found in", config ,"YAML."))
+    stop(paste("Target config key", config_key, "not found in", config, "YAML."))
   }
   cfg <- cfg_whole[[config_key]]
 
-  df <- read_csv(path_in, col_types = cols(.default = "c"), show_col_types = FALSE)
+  # Ingest every column strictly as character text, silencing all internal guessing logs
+  df <- read_csv(
+    path_in,
+    col_types = readr::cols(.default = readr::col_character()),
+    show_col_types = FALSE,
+    progress = FALSE
+  )
 
   # Process data (Recast -> Enforce Bounds)
   df <- recast_l1_data(df, cfg)
   df <- enforce_l1_bounds(df, cfg)
 
-  # Validate data
+  # Validate data types and structural database constraints
   all_passed <- validate_l1_data(df, cfg)
 
   if (!all_passed) {
-    cli_alert_danger("FATAL: Data quality checks failed for {path_file(path_in)}")
+    cli_alert_danger("FATAL: Data quality checks failed for {file_name}")
     stop("Possible data quality issues, see above checklist for specifics.", call. = FALSE)
   }
 
-  # Egress
-  file_name <- path_file(path_in)
+  # Egress Setup
   new_file_name <- str_replace(file_name, "^l0", "l1")
   path_out <- path("data", "l1_quality_checked", "monthly", new_file_name)
 
   dir_create(dirname(path_out))
   write_csv(df, file = path_out)
 
-  cli_alert_success("Success! {path_file(path_in)} passed all data quality checks, writing to {path_file(path_out)}.")
+  # Write out log file if violations were flagged
+  if (exists(".pce_violations", envir = .GlobalEnv) && !is.null(get(".pce_violations", envir = .GlobalEnv))) {
+    violations_df <- get(".pce_violations", envir = .GlobalEnv) %>%
+      mutate(file = file_name, .before = 1)
+
+    log_name <- str_replace(new_file_name, "\\.csv$", "_quarantine_log.csv")
+    path_log_out <- path("data", "l1_quality_checked", "logs", log_name)
+
+    dir_create(dirname(path_log_out))
+    write_csv(violations_df, file = path_log_out)
+
+    cli_alert_info("Quarantine log saved to {.file {path_file(path_log_out)}} ({nrow(violations_df)} entries).")
+
+    # Securely remove temporary state variable from workspace environment
+    rm(.pce_violations, envir = .GlobalEnv)
+  }
+
+  cli_alert_success("Success! {file_name} passed all data quality checks, writing to {path_file(path_out)}.")
 }
 
 # Loop through directory
