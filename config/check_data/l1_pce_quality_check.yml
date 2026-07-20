@@ -37,10 +37,9 @@ l0_pce_header:
       - calendar_year
     logical:
       []
-      # - other_customers_description
 
   category_mappings:
-    # All values converted to upper case before mapping, then mapped to lowercase (or your preference)
+    # All values converted to upper case before mapping, then mapped to lowercase
     other_1_kwh_type:
       "SOLAR": "solar"
       "WIND": "wind"
@@ -64,9 +63,13 @@ l0_pce_header:
     not_null:
       - identifier
       - line_no
-    positive_only:
-      - powerhouse_consumption_kwh
-      - peak_consumption_kw
+  bounds:
+    powerhouse_consumption_kwh:
+      min: 0
+      max:
+    peak_consumption_kw:
+      min: 0
+      max:
 
 
 
@@ -88,12 +91,14 @@ l0_pce_rate_line:
       - pce_eligible_kwh_total
     logical:
       []
-
-
   constraints:
     not_null:
       - identifier
       - line_no
-    positive_only:
-      - actual_rate
-      - residential_rate
+  bounds:
+    actual_rate:
+      min: 0
+      max:
+    residential_rate:
+      min: 0
+      max:
