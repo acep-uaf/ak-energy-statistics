@@ -95,10 +95,13 @@ l0_pce_rate_line:
     not_null:
       - identifier
       - line_no
+    positive_only:
+      - actual_rate
+      - residential_rate
   bounds:
     actual_rate:
       min: 0
       max:
     residential_rate:
-      min: 0
-      max:
+      min: 0.08
+      max: 2.50

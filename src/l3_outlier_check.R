@@ -1,4 +1,4 @@
-library(dplyr)
+library(dplyr, warn.conflicts = FALSE)
 library(tidyr)
 library(readr)
 library(yaml)
@@ -7,7 +7,7 @@ library(fs)
 l3_generate_outlier_log <- function(path_in, path_config, output_log_path) {
 
   config_data <- read_yaml(path_config)
-  l2 <- read_csv(path_in)
+  l2 <- read_csv(path_in, show_col_types = FALSE)
 
   # Extract variables from config
   columns_to_check <- unlist(config_data$columns_to_check)

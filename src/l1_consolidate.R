@@ -1,5 +1,5 @@
-library(dplyr)
-library(lubridate)
+library(dplyr, warn.conflicts = FALSE)
+library(lubridate, warn.conflicts = FALSE)
 library(readr)
 library(fs)
 library(stringr)
@@ -22,11 +22,13 @@ l1_consolidate_pce_data <- function(path_with_pattern, join_by_columns) {
 
   df_main <- files %>%
     set_names() %>%
-    map(read_csv, show_col_types = FALSE) %>%
+    map(read_csv, col_types = cols(.default = "c"), show_col_types = FALSE) %>%
     list_rbind(names_to = "file_path") %>%
     mutate(
       file_date = str_extract(path_file(file_path), "\\d{4}-\\d{2}")
-    )
+    ) %>%
+    suppressMessages(type_convert(guess_integer = TRUE))
+
 
   df_deduped <- df_main %>%
     arrange(file_date) %>%

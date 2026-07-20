@@ -1,6 +1,6 @@
-library(dplyr)
+library(dplyr, warn.conflicts = FALSE)
 library(tidyr)
-library(lubridate)
+library(lubridate, warn.conflicts = FALSE)
 library(readr)
 library(fs)
 library(stringr)
@@ -11,7 +11,7 @@ library(cli)
 
 l2_transform_header <- function(l1_consolidated_dir) {
 
-  raw <- read_csv(path(l1_consolidated_dir, 'l1_pce_header_consolidated.csv'))
+  raw <- read_csv(path(l1_consolidated_dir, 'l1_pce_header_consolidated.csv'), show_col_types = FALSE)
 
 
   cleaned <- raw %>%
@@ -101,7 +101,7 @@ l2_transform_header <- function(l1_consolidated_dir) {
 
 l2_transform_rate_line <- function(l1_consolidated_dir) {
 
-  raw <- read_csv(path(l1_consolidated_dir, 'l1_pce_rate_line_consolidated.csv'))
+  raw <- read_csv(path(l1_consolidated_dir, 'l1_pce_rate_line_consolidated.csv'), show_col_types = FALSE)
 
   pce_eligible_kwhs <- raw %>%
     group_by(identifier) %>%

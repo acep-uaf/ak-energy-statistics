@@ -46,30 +46,50 @@ recast_l1_data <- function(df, cfg) {
 enforce_l1_bounds <- function(df, cfg) {
   if (!"bounds" %in% names(cfg)) return(df)
 
+  cli_h2("Enforcing Range Boundaries")
+
   for (col in names(cfg$bounds)) {
     if (!col %in% names(df)) next
 
     limits <- cfg$bounds[[col]]
     val_vector <- df[[col]]
+    col_has_violations <- FALSE
 
-    # Check lower bound securely (handles both NULL and NA safely)
+    # Check lower bound securely
     if ("min" %in% names(limits) && !is.null(limits$min) && !is.na(limits$min)) {
       min_val <- as.numeric(limits$min)
       low_mask <- !is.na(val_vector) & val_vector < min_val
+
       if (any(low_mask, na.rm = TRUE)) {
-        cli_alert_warning("Column {.var {col}}: Setting {sum(low_mask)} value(s) to NA (fell below min of {min_val})")
+        col_has_violations <- TRUE
+        bad_vals <- unique(val_vector[low_mask])
+        cli_alert_warning(paste0(
+          "Column {.var {col}}: Found {sum(low_mask)} value(s) below min of {min_val}. ",
+          "Scrubbed values: {.val {bad_vals}}"
+        ))
         val_vector[low_mask] <- NA
       }
     }
 
-    # Check upper bound securely (handles both NULL and NA safely)
+    # Check upper bound securely
     if ("max" %in% names(limits) && !is.null(limits$max) && !is.na(limits$max)) {
       max_val <- as.numeric(limits$max)
       high_mask <- !is.na(val_vector) & val_vector > max_val
+
       if (any(high_mask, na.rm = TRUE)) {
-        cli_alert_warning("Column {.var {col}}: Setting {sum(high_mask)} value(s) to NA (exceeded max of {max_val})")
+        col_has_violations <- TRUE
+        bad_vals <- unique(val_vector[high_mask])
+        cli_alert_warning(paste0(
+          "Column {.var {col}}: Found {sum(high_mask)} value(s) exceeding max of {max_val}. ",
+          "Scrubbed values: {.val {bad_vals}}"
+        ))
         val_vector[high_mask] <- NA
       }
+    }
+
+    # If column clean, output success message
+    if (!col_has_violations && ("min" %in% names(limits) || "max" %in% names(limits))) {
+      cli_alert_success("Column {.var {col}}: All values within bounds.")
     }
 
     df[[col]] <- val_vector
@@ -100,7 +120,8 @@ validate_l1_data <- function(df, cfg) {
     }
   }
 
-  # Type Checks
+  # --- Type Assertions ---
+  cli_h2("Verifying Column Type Integrity")
   types <- list(character = is.character, numeric = is.numeric, logical = is.logical)
   for (type_name in names(types)) {
     if (is.null(cfg$type_checks[[type_name]])) next
@@ -110,6 +131,11 @@ validate_l1_data <- function(df, cfg) {
                           "{.var {col}} should be {type_name}, but is not")
       if (!passed) all_passed <- FALSE
     }
+  }
+
+  # --- Constraint Assertions ---
+  if (!is.null(cfg$constraints$not_null) || !is.null(cfg$constraints$positive_only)) {
+    cli_h2("Running Constraint Checks")
   }
 
   # Constraints: Not Null
