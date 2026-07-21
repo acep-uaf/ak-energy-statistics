@@ -1,5 +1,12 @@
 [
   {
+    "objectID": "data.html",
+    "href": "data.html",
+    "title": "Data",
+    "section": "",
+    "text": "Raw Data\n\nMonthly Power Cost Equalization (PCE)\nBelow are links to download archived copies of raw monthly data exported by the Alaska Energy Authority in XLSX format. These files are unprocessed and may contain errors. Use with caution.\n\n\n\nFile Name\nSize\nDirect Download\n\n\n\n\nraw_pce_2026-07.xlsx\n49.8K\nDownload XLSX\n\n\nraw_pce_2026-06.xlsx\n6.75M\nDownload XLSX\n\n\n\n \n\n\n\nLevel 1 Data\nLevel 1 data is created by running basic data quality checks against the data and overwriting with NULL for values outside the boundaries. For instance, the column most_recent_fuel_purch_price requires values to be greater than $0.50 and less than $10.00. If a record contains a value of $0.20 or $50.00, the value is discarded. A list of records with out-of-bound values can be seen on Quality and Outliers\n\nPCE\nActive Data Quality Rules\n\n\n\nColumn\nRequired\nAllowed Values / Bounds\n\n\n\n\nidentifier\nYes\nAny value\n\n\nline_no\nYes\nAny value\n\n\nnon_fuel_expenses\nOptional\n≥ 0 (No Zeros)\n\n\npowerhouse_consumption_kwh\nOptional\n≥ 0 (No Zeros)\n\n\npeak_consumption_kw\nOptional\n≥ 0 (No Zeros)\n\n\nmost_recent_fuel_purch_price\nOptional\n0.5 to 10\n\n\ndiesel_kwh_generated\nOptional\n≥ 0 (No Zeros)\n\n\nresidential_sold_to\nOptional\n≥ 0 (No Zeros)\n\n\ncommercial_sold_to\nOptional\n≥ 0\n\n\ncom_facil_sold_to\nOptional\n≥ 0\n\n\ngovt_facil_sold_to\nOptional\n≥ 0\n\n\nunbilled_sold_to\nOptional\n≥ 0\n\n\n\nStandardized Categories\n\nother_1_kwh_type: Maps inputs to solar, wind, hydro, natural_gas, other\nother_2_kwh_type: Maps inputs to solar, wind, hydro, natural_gas, other\n\n\n\n\nFile Name\nSize\nDirect Download\n\n\n\n\nl1_pce_rate_line_consolidated.csv\n2.78M\nDownload CSV\n\n\nl1_pce_header_consolidated.csv\n3.82M\nDownload CSV\n\n\n\n \n\n\n\nLevel 2 Data\n\nPCE\nBelow are links to download L2 data.\n\n\n\nFile Name\nSize\nDirect Download\n\n\n\n\nl1_pce_rate_line_consolidated.csv\n2.78M\nDownload CSV\n\n\nl1_pce_header_consolidated.csv\n3.82M\nDownload CSV"
+  },
+  {
     "objectID": "process.html",
     "href": "process.html",
     "title": "Process",
@@ -19,6 +26,13 @@
     "title": "Process",
     "section": "Lorem",
     "text": "Lorem\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n\n\nYour browser doesn’t support embedded PDFs. Click to download"
+  },
+  {
+    "objectID": "quality_and_outliers.html",
+    "href": "quality_and_outliers.html",
+    "title": "Quality and Outliers",
+    "section": "",
+    "text": "In order to provide the most accurate version of this essential data, we performed two levels of checks. First, we set up and enforced basic boundary rules to ensure the data was within reasonable bounds. Second, we set up and ran statistical analysis in order to drop extreme anamolies within the data. For transparency, logs of the the removed records are shown below.\n\nQuality\nQuality checks were performed on raw data in order to enforce boundaries.\n\n\n\nFile Name\nSize\nDirect Download\n\n\n\n\nl0_pce_rate_line_2026-07_quality_log.csv\n1K\nDownload CSV\n\n\nl0_pce_rate_line_2026-06_quality_log.csv\n310K\nDownload CSV\n\n\nl0_pce_header_2026-07_quality_log.csv\n10.2K\nDownload CSV\n\n\nl0_pce_header_2026-06_quality_log.csv\n2.23M\nDownload CSV\n\n\n\n \n\n\nOutliers\nOutlier detection was performed on Level 2 data in order to identify and NULL extreme values."
   },
   {
     "objectID": "index.html#lorem-ipsum",
