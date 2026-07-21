@@ -37,10 +37,9 @@ l0_pce_header:
       - calendar_year
     logical:
       []
-      # - other_customers_description
 
   category_mappings:
-    # All values converted to upper case before mapping, then mapped to lowercase (or your preference)
+    # All values converted to upper case before mapping, then mapped to lowercase
     other_1_kwh_type:
       "SOLAR": "solar"
       "WIND": "wind"
@@ -60,14 +59,43 @@ l0_pce_header:
       "OTHER": "other"
       # "+", "UNKNOWN-IPEC", and anything else omitted here automatically become NA
 
+
   constraints:
     not_null:
       - identifier
       - line_no
-    positive_only:
-      - powerhouse_consumption_kwh
-      - peak_consumption_kw
 
+  bounds:
+    non_fuel_expenses:
+      min: 0
+      allow_zero: false
+    powerhouse_consumption_kwh:
+      min: 0
+      allow_zero: false
+    peak_consumption_kw:
+      min: 0
+      allow_zero: false
+    most_recent_fuel_purch_price:
+      min: 0.50
+      max: 10.00
+    diesel_kwh_generated:  # preserve 0 if intertied?
+      min: 0
+      allow_zero: false
+    residential_sold_to:
+      min: 0
+      allow_zero: false
+    commercial_sold_to:
+      min: 0
+      allow_zero: true
+    com_facil_sold_to:
+      min: 0
+      allow_zero: true
+    govt_facil_sold_to:
+      min: 0
+      allow_zero: true
+    unbilled_sold_to:
+      min: 0
+      allow_zero: true
 
 
 
@@ -82,6 +110,7 @@ l0_pce_rate_line:
       - pro_rata_rate
       - check
       - residential_rate
+      - effective_residential_rate
       - pce_eligible_residential_kwh
       - pce_eligible_com_facil_kwh
       - pce_eligible_community_kwh
@@ -94,6 +123,13 @@ l0_pce_rate_line:
     not_null:
       - identifier
       - line_no
-    positive_only:
-      - actual_rate
-      - residential_rate
+
+  bounds:
+    actual_rate:
+      min: 0
+    residential_rate:
+      min: 0.08
+      max: 2.50
+    effective_residential_rate:    # <-- Clean, explicit validation trap
+      min: 0.0
+      allow_zero: true

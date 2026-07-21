@@ -38,31 +38,7 @@ Historical 2011-2021 workbooks and reports may be found at the [archival github 
 <br>
 <br>
 
-### Monthly Power Cost Equalization (PCE) Data
 
-```{r}
-#| echo: false
-#| results: asis
-
-# Clever function to list download links to XLSX files via GitHub URLs
-
-data_dir <- "../data/raw"
-files <- list.files(data_dir, pattern = "\\.xlsx$", full.names = FALSE)
-
-files <- sort(files, decreasing = TRUE)
-
-cat("| Reporting Month | Download Link | Notes |\n")
-cat("|---|---|\n")
-
-for (f in files) {
-  date_str <- gsub("raw_pce_(.*)\\.xlsx", "\\1", f)
-
-  base_url <- "https://raw.githubusercontent.com/acep-uaf/ak-energy-statistics/main/data/raw/"
-  github_url <- paste0(base_url, f)
-
-  cat(sprintf("| %s | [Download Raw PCE XLSX](%s) |\n", date_str, github_url))
-}
-```
 
 ## Lorem Ipsum
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.

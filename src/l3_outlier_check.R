@@ -1,63 +1,62 @@
-library(dplyr)
+library(dplyr, warn.conflicts = FALSE)
 library(tidyr)
 library(readr)
 library(yaml)
 library(fs)
 
-l3_generate_outlier_log <- function(path_in, path_config, output_log_path) {
+l3_check_outliers <- function(path_in, path_config, output_log_path, path_out) {
 
   config_data <- read_yaml(path_config)
-  l2 <- read_csv(path_in)
+  l2 <- read_csv(path_in, show_col_types = FALSE)
 
   # Extract variables from config
   columns_to_check <- unlist(config_data$columns_to_check)
   mad_threshold   <- as.numeric(config_data$settings$mad_threshold)
 
+  # Filter down to columns that actually exist in the data
+  columns_to_check <- intersect(columns_to_check, names(l2))
+
   message(paste("Loaded config. Checking", length(columns_to_check), "columns with a MAD threshold of", mad_threshold))
 
-  # Pivot based on YAML list of columns
-  outliers <- l2 %>%
-    select(pce_id, calendar_year, umr_month_numeric, all_of(columns_to_check)) %>%
+  # Add temporary row index to preserve strict row ordering and uniqueness
+  l2_indexed <- l2 %>%
+    mutate(.row_id = row_number(), .before = 1)
+
+  # Pivot based on YAML list of columns & calculate outliers
+  outliers <- l2_indexed %>%
+    select(.row_id, pce_id, calendar_year, umr_month_numeric, all_of(columns_to_check)) %>%
     pivot_longer(
       cols = all_of(columns_to_check),
       names_to = "column_tested",
       values_to = "raw_value"
     ) %>%
-
-    # Drop NAs
     filter(!is.na(raw_value)) %>%
-
-    # Run statistical checks
     group_by(pce_id, umr_month_numeric, column_tested) %>%
     mutate(
       points_in_group = n(),
       median_val = median(raw_value, na.rm = TRUE),
       mad_val    = mad(raw_value, na.rm = TRUE),
 
-      # Calculate MAD-based score ONLY if the median is positive
       adjusted_mad = case_when(
         mad_val > 0 ~ mad_val,
         median_val > 0 ~ max(median_val * 0.10, 10),
-        TRUE ~ NA_real_ # Handle zeros separately
+        TRUE ~ NA_real_
       ),
 
       mad_score = abs(raw_value - median_val) / adjusted_mad,
       absolute_diff = abs(raw_value - median_val),
 
-      # Set the classification using conditional rules
       anomaly_severity = case_when(
         points_in_group < 3 ~ "Insufficient Data",
 
-        # LANE B: If the median is 0 (Zero-Inflated Data)
         median_val == 0 ~ case_when(
           raw_value == 0 ~ "Normal",
-          raw_value < 1000 ~ "Normal", # Skip small starting values
+          raw_value < 1000 ~ "Normal",
           raw_value >= 100000 ~ "Extreme",
           raw_value >= 10000  ~ "Strong",
-          .default = "Mild" # Clean fallback inside Lane B
+          .default = "Mild"
         ),
 
-        # LANE A: Normal active data (Median > 0)
         absolute_diff < 50 ~ "Normal",
         mad_score < mad_threshold ~ "Normal",
         mad_score < (mad_threshold * 1.5) ~ "Mild",
@@ -67,16 +66,43 @@ l3_generate_outlier_log <- function(path_in, path_config, output_log_path) {
     ) %>%
     ungroup() %>%
     mutate(mad_score = round(mad_score, 0)) %>%
-
-    # Log only dramatic outliers
     filter(anomaly_severity %in% c("Strong", "Extreme")) %>%
-
-    # Organize
-    select(pce_id, calendar_year, umr_month_numeric, column_tested, raw_value, median_val, mad_score, anomaly_severity) %>%
+    select(.row_id, pce_id, calendar_year, umr_month_numeric, column_tested, raw_value, median_val, mad_score, anomaly_severity) %>%
     arrange(desc(mad_score))
 
-  # Write list to file
+  # Write Outlier Log to File
   dir_create(dirname(output_log_path))
-  write_csv(outliers, output_log_path)
-  message(paste("Successfully recorded", nrow(outliers), "outliers"))
+
+  log_export <- outliers %>% select(-.row_id)
+  write_csv(log_export, output_log_path)
+  message(paste("Successfully recorded", nrow(log_export), "outliers to log."))
+
+  # Scrub Outliers in Dataset using the precise .row_id and column_tested coordinates
+  if (nrow(outliers) > 0) {
+    outlier_keys <- outliers %>%
+      select(.row_id, column_tested) %>%
+      mutate(is_outlier = TRUE)
+
+    l3_clean <- l2_indexed %>%
+      pivot_longer(
+        cols = all_of(columns_to_check),
+        names_to = "column_tested",
+        values_to = "raw_value"
+      ) %>%
+      left_join(outlier_keys, by = c(".row_id", "column_tested")) %>%
+      mutate(raw_value = if_else(is_outlier %in% TRUE, NA_real_, raw_value)) %>%
+      select(-is_outlier) %>%
+      pivot_wider(
+        names_from = column_tested,
+        values_from = raw_value
+      ) %>%
+      select(-.row_id)
+  } else {
+    l3_clean <- l2
+  }
+
+  # Write Cleaned Dataset to File
+  dir_create(dirname(path_out))
+  write_csv(l3_clean, path_out)
+  message(paste("Cleaned dataset saved with", nrow(outliers), "outliers scrubbed to NA at:", path_out))
 }
