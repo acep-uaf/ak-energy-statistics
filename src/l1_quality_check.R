@@ -42,6 +42,13 @@ recast_l1_data <- function(df, cfg) {
     if (col %in% names(df)) df[[col]] <- str_trim(as.character(df[[col]]))
   }
 
+  if ("actual_rate" %in% names(df) && "residential_rate" %in% names(df)) {
+    df <- df %>%
+      mutate(
+        effective_residential_rate = residential_rate - actual_rate
+      )
+  }
+
   return(df)
 }
 
@@ -66,7 +73,16 @@ enforce_l1_bounds <- function(df, cfg) {
     # Check lower bound securely
     if ("min" %in% names(limits) && !is.null(limits$min) && !is.na(limits$min)) {
       min_val <- as.numeric(limits$min)
-      low_mask <- !is.na(val_vector) & val_vector < min_val
+      allow_z <- if ("allow_zero" %in% names(limits)) as.logical(limits$allow_zero) else TRUE
+
+      # If zero is NOT allowed, trigger mask for anything <= min_val
+      if (!allow_z && min_val == 0) {
+        low_mask <- !is.na(val_vector) & val_vector <= min_val
+        rule_desc <- paste0("<= ", min_val)
+      } else {
+        low_mask <- !is.na(val_vector) & val_vector < min_val
+        rule_desc <- paste0("< ", min_val)
+      }
 
       if (any(low_mask, na.rm = TRUE)) {
         col_has_violations <- TRUE
@@ -74,16 +90,13 @@ enforce_l1_bounds <- function(df, cfg) {
         bad_vals <- val_vector[low_mask]
         bad_ids  <- if (has_id) as.character(df$identifier[low_mask]) else NA_character_
 
-        cli_alert_warning(paste0(
-          "Column {.var {col}}: Found {sum(low_mask)} value(s) below min of {min_val}. ",
-          "Scrubbed values: {.val {unique(bad_vals)}}"
-        ))
+        cli_alert_warning("Column {.var {col}}: Found {sum(low_mask)} value(s) out of bounds. Scrubbed values: {.val {unique(bad_vals)}}")
 
         violation_list[[length(violation_list) + 1]] <- tibble::tibble(
           identifier = bad_ids,
           column = col,
           row_index = bad_rows,
-          rule_broken = paste0("< ", min_val),
+          rule_broken = rule_desc,
           original_value = as.character(bad_vals)
         )
         val_vector[low_mask] <- NA
@@ -236,8 +249,9 @@ l1_data_quality_checks <- function(path_in, config) {
   }
 
   # Egress Setup
-  new_file_name <- str_replace(file_name, "^l0", "l1")
-  path_out <- path("data", "l1_quality_checked", "monthly", new_file_name)
+  path_out <- path_in %>%
+    str_replace_all("l0", "l1") %>%
+    str_replace("extracted", "quality_checked")
 
   dir_create(dirname(path_out))
   write_csv(df, file = path_out)
@@ -247,8 +261,9 @@ l1_data_quality_checks <- function(path_in, config) {
     violations_df <- get(".pce_violations", envir = .GlobalEnv) %>%
       mutate(file = file_name, .before = 1)
 
-    log_name <- str_replace(new_file_name, "\\.csv$", "_quarantine_log.csv")
-    path_log_out <- path("data", "l1_quality_checked", "logs", log_name)
+
+    log_file_name <- path_ext_set(str_c(path_ext_remove(file_name), "_quality_log"), "csv")
+    path_log_out <- path(path_dir(path_dir(path_out)), "logs", log_file_name)
 
     dir_create(dirname(path_log_out))
     write_csv(violations_df, file = path_log_out)

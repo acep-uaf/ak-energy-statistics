@@ -119,10 +119,8 @@ l2_transform_rate_line <- function(l1_consolidated_dir) {
     actual_rate,
     pro_rata_rate,
     check,
-    residential_rate
-  ) %>%
-  mutate(
-    effective_residential_rate = (residential_rate - actual_rate)
+    residential_rate,
+    effective_residential_rate
   )
 
 
