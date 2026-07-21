@@ -20,7 +20,7 @@ website:
         text: Home
       - href: process.qmd
       - href: data.qmd
-      - href: outliers.qmd
+      - href: quality_and_outliers.qmd
     right:
       - icon: github
         href: https://github.com/acep-uaf/ak-energy-statistics

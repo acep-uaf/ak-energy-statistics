@@ -3,38 +3,75 @@ title: "Data"
 # subtitle: "Energy Statistics"
 ---
 
+```{r}
+#| label: setup
+#| include: false
+
+source("../src/utils_quarto.R")
+```
 
 
-```{r, echo=FALSE, warning=FALSE, message=FALSE}
-library(tidyverse)
-library(DT)
+# Raw Data
+### Monthly Power Cost Equalization (PCE)
+Below are links to download archived copies of raw monthly data exported by the Alaska Energy Authority in XLSX format. These files are unprocessed and may contain errors. Use with caution.
 
-l2_pce <- read_csv("../data/l2_transformed/consolidated/l2_pce.csv")
+```{r}
+#| echo: false
+#| results: asis
+
+generate_download_table(
+  data_dir       = "../data/raw",
+  github_subpath = "data/raw",
+  file_pattern   = "\\.xlsx$"
+)
+```
 
 
+<br>
+<br>
 
-datatable(
-  l2_pce,
-  extensions = 'Buttons',
-  options = list(
-    dom = 'Bfrtip',       # "B" defines where buttons go, "f" is filter, "t" is table, "p" is pagination
-    buttons = list(
-      list(
-        extend = 'csv',
-        filename = 'l2_pce',
-        text = 'Download CSV'
-      ),
-      list(
-        extend = 'excel',
-        filename = 'l2_pce',
-        text = 'Download Excel'
-      )
-    ),
-    pageLength = 10,       # Show 10 rows at a time
-    scrollX = TRUE         # Makes wide tables scrollable horizontally
-  ),
-  rownames = FALSE,
-  class = 'cell-border stripe hover' # Gives it a beautiful, clean layout
+# Level 1 Data
+Level 1 data is created by running basic data quality checks against the data and overwriting with NULL for values outside the boundaries. For instance, the column `most_recent_fuel_purch_price` requires values to be greater than $0.50 and less than $10.00. If a record contains a value of $0.20 or $50.00, the value is discarded. A list of records with out-of-bound values can be seen on [Quality and Outliers](quality_and_outliers.qmd)
+
+### PCE
+
+```{r}
+#| echo: false
+#| results: asis
+
+render_quality_rules(
+  yaml_path  = "../config/check_data/l1_pce_quality_check.yml",
+  config_key = "l0_pce_header"
+)
+```
+
+```{r}
+#| echo: false
+#| results: asis
+
+generate_download_table(
+  data_dir       = "../data/l1_quality_checked/consolidated",
+  github_subpath = "data/l1_quality_checked/consolidated",
+  file_pattern   = "\\.csv$"
 )
 
+```
+
+
+<br>
+<br>
+
+# Level 2 Data
+### PCE
+Below are links to download L2 data.
+
+```{r}
+#| echo: false
+#| results: asis
+
+generate_download_table(
+  data_dir       = "../data/l1_quality_checked/consolidated",
+  github_subpath = "data/l1_quality_checked/consolidated",
+  file_pattern   = "\\.csv$"
+)
 ```
