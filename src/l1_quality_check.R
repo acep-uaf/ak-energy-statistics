@@ -215,7 +215,7 @@ validate_l1_data <- function(df, cfg) {
 # COORDINATOR & RUNNER
 # -------------------------------------------------------------------------
 
-l1_data_quality_checks <- function(path_in, config) {
+l1_check_quality <- function(path_in, config) {
   file_name <- path_file(path_in)
   cli_h1("Running Data Quality Checks: {.file {file_name}}")
 
@@ -282,7 +282,7 @@ l1_check_quality_pce_dir <- function(dir_in, pattern, config) {
   files <- dir_ls(path = dir_in, regexp = pattern)
 
   for (file in files) {
-    l1_data_quality_checks(
+    l1_check_quality(
       path_in = file,
       config = config
     )

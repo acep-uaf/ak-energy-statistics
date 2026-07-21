@@ -33,8 +33,9 @@ l1_consolidate_pce_data(
 
 l2_transform_pce(l1_consolidated_dir = 'data/l1_quality_checked/consolidated')
 
-l3_generate_outlier_log(
+l3_check_outliers(
   path_in         = "data/l2_transformed/consolidated/l2_pce.csv",
   path_config     = "config/check_data/l3_pce_outlier_check.yml",
-  output_log_path = "data/l3_outliers_checked/logs/l3_pce_outliers_log.csv"
+  output_log_path = "data/l3_outliers_checked/logs/l3_pce_outliers_log.csv",
+  path_out = "data/l3_outliers_checked/consolidated/l3_pce.csv"
 )
