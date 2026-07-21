@@ -21,7 +21,7 @@ Below are links to download archived copies of raw monthly data exported by the 
 
 generate_download_table(
   data_dir       = "../data/raw",
-  github_subpath = "data/raw",
+  # github_subpath = "data/raw",
   file_pattern   = "\\.xlsx$"
 )
 ```
@@ -45,13 +45,15 @@ render_quality_rules(
 )
 ```
 
+#### Downloads
+
 ```{r}
 #| echo: false
 #| results: asis
 
 generate_download_table(
   data_dir       = "../data/l1_quality_checked/consolidated",
-  github_subpath = "data/l1_quality_checked/consolidated",
+  # github_subpath = "data/l1_quality_checked/consolidated",
   file_pattern   = "\\.csv$"
 )
 
@@ -71,7 +73,7 @@ Below are links to download L2 data.
 
 generate_download_table(
   data_dir       = "../data/l1_quality_checked/consolidated",
-  github_subpath = "data/l1_quality_checked/consolidated",
+  # github_subpath = "data/l1_quality_checked/consolidated",
   file_pattern   = "\\.csv$"
 )
 ```

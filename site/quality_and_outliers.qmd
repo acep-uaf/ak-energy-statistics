@@ -15,7 +15,7 @@ In order to provide the most accurate version of this essential data, we perform
 
 
 # Quality
-Quality checks were performed on raw data in order to enforce boundaries.
+Quality checks were performed on raw data in order to enforce boundaries. The logs of flagged/removed values may be seen below, organized by month and table (rate_line, header).
 
 
 ```{r}
@@ -24,7 +24,6 @@ Quality checks were performed on raw data in order to enforce boundaries.
 
 generate_download_table(
   data_dir       = "../data/l1_quality_checked/logs",
-  github_subpath = "data/l1_quality_checked/logs",
   file_pattern   = "\\.csv$"
 )
 
@@ -36,7 +35,7 @@ generate_download_table(
 
 
 # Outliers
-Outlier detection was performed on Level 2 data in order to identify and NULL extreme values.
+Outlier detection was performed on Level 2 data in order to identify and NULL extreme values. The log of flagged/removed values may be seen below, outputted from the multi-year consolidated dataset.
 ```{r, echo=FALSE, warning=FALSE, message=FALSE}
 library(tidyverse)
 library(DT)
