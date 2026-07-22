@@ -1,19 +1,24 @@
-library(fs)
 
-src_dir <- "../data"
+src_dir  <- "../data"
 dest_dir <- "data"
 
-# Only perform copy if destination folder doesn't exist yet
-if (!dir.exists(dest_dir)) {
-  fs::dir_copy(src_dir, dest_dir)
-} else {
-  # Optionally sync only files that do not exist in destination
-  src_files <- fs::dir_ls(src_dir, recurse = TRUE, type = "file")
-  rel_paths <- fs::path_rel(src_files, start = src_dir)
-  dest_files <- fs::path(dest_dir, rel_paths)
+if (dir.exists(src_dir)) {
+  # Recursively list all relative file paths inside ../data
+  src_files <- list.files(src_dir, recursive = TRUE, full.names = FALSE)
 
-  missing_mask <- !fs::file_exists(dest_files)
-  if (any(missing_mask)) {
-    fs::file_copy(src_files[missing_mask], dest_files[missing_mask], overwrite = TRUE)
+  for (f in src_files) {
+    src_path  <- file.path(src_dir, f)
+    dest_path <- file.path(dest_dir, f)
+
+    # Create subdirectories if they don't exist yet
+    target_dir <- dirname(dest_path)
+    if (!dir.exists(target_dir)) {
+      dir.create(target_dir, recursive = TRUE)
+    }
+
+    # Copy if file is missing or if source file is newer
+    if (!file.exists(dest_path) || file.info(src_path)$mtime > file.info(dest_path)$mtime) {
+      file.copy(src_path, dest_path, overwrite = TRUE)
+    }
   }
 }
