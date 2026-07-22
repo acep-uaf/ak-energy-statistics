@@ -12,14 +12,38 @@ library(cli)
 # DATA PREP & CLEANING ENGINE
 # -------------------------------------------------------------------------
 
-# Transform text columns, map string values
+# Transform text columns, map string values, and scrub missingness patterns
 recast_l1_data <- function(df, cfg) {
-  # Map values for categorical variables
+
+  # Recast & Clean Character Columns
+  for (col in cfg$type_checks$character) {
+    if (col %in% names(df)) {
+      # Normalize text: UPPERCASE and strip internal/external whitespace padding
+      vals <- str_to_upper(str_squish(as.character(df[[col]])))
+
+      # Define global character junk/placeholder patterns
+      junk_patterns <- c(
+        "^0+$",                 # "0", "00", etc.
+        "^\\?+$",               # "?", "???", etc.
+        "^SEE\\s+",             # Cross-references like "SEE TOK", "SEE SLANA"
+        "^(N/A|NA|NONE|NULL)$"  # Standard null strings
+      )
+
+      is_junk <- str_detect(vals, paste(junk_patterns, collapse = "|"))
+      vals[is_junk | vals == ""] <- NA_character_
+
+      df[[col]] <- vals
+    }
+  }
+
+  # Map Categorical Overrides (Strict mapping for YAML category lists)
   if ("category_mappings" %in% names(cfg)) {
     for (col in names(cfg$category_mappings)) {
       if (col %in% names(df)) {
-        df[[col]] <- str_to_upper(str_trim(df[[col]]))
         mapping_vec <- unlist(cfg$category_mappings[[col]])
+
+        names(mapping_vec) <- str_to_upper(str_trim(names(mapping_vec)))
+
         df[[col]] <- unname(mapping_vec[df[[col]]])
       }
     }
@@ -37,11 +61,7 @@ recast_l1_data <- function(df, cfg) {
     if (col %in% names(df)) df[[col]] <- as.logical(df[[col]])
   }
 
-  # Recast Character
-  for (col in cfg$type_checks$character) {
-    if (col %in% names(df)) df[[col]] <- str_trim(as.character(df[[col]]))
-  }
-
+  # Derived Rate Calculations
   if ("actual_rate" %in% names(df) && "residential_rate" %in% names(df)) {
     df <- df %>%
       mutate(
@@ -268,7 +288,7 @@ l1_check_quality <- function(path_in, config) {
     dir_create(dirname(path_log_out))
     write_csv(violations_df, file = path_log_out)
 
-    cli_alert_info("Quarantine log saved to {.file {path_file(path_log_out)}} ({nrow(violations_df)} entries).")
+    cli_alert_info("Quality log saved to {.file {path_file(path_log_out)}} ({nrow(violations_df)} entries).")
 
     # Securely remove temporary state variable from workspace environment
     rm(.pce_violations, envir = .GlobalEnv)
