@@ -11,18 +11,51 @@ source("../src/utils_quarto.R")
 ```
 
 
-# Raw Data
-### Monthly Power Cost Equalization (PCE)
-Below are links to download archived copies of raw monthly data exported by the Alaska Energy Authority in XLSX format. These files are unprocessed and may contain errors. Use with caution.
+
+
+# Level 3 Data
+### PCE
+Level 3 data applies statistical outlier checks in order to screen values for statistical anomalies. [Mean Absolute Deviation (MAD)](https://en.wikipedia.org/wiki/Median_absolute_deviation) was calculated for the following columns, then strong and extreme outliers were flagged/removed from the data.
+
+```{r}
+#| echo: false
+#| results: asis
+#|
+render_outlier_rules(
+  yaml_path  = "../config/check_data/l3_pce_outlier_check.yml",
+  config_key = NULL
+)
+
+```
+
+#### Downloads
 
 ```{r}
 #| echo: false
 #| results: asis
 
 generate_download_table(
-  data_dir       = "../data/raw",
-  # github_subpath = "data/raw",
-  file_pattern   = "\\.xlsx$"
+  data_dir       = "data/l3_outliers_checked/consolidated",
+  file_pattern   = "\\.csv$"
+)
+```
+
+
+<br>
+<br>
+
+# Level 2 Data
+Level 2 data processing applies basic transformations to create or modify columns.
+
+### PCE
+
+```{r}
+#| echo: false
+#| results: asis
+
+generate_download_table(
+  data_dir       = "data/l2_transformed/consolidated",
+  file_pattern   = "\\.csv$"
 )
 ```
 
@@ -52,28 +85,25 @@ render_quality_rules(
 #| results: asis
 
 generate_download_table(
-  data_dir       = "../data/l1_quality_checked/consolidated",
-  # github_subpath = "data/l1_quality_checked/consolidated",
+  data_dir       = "data/l1_quality_checked/consolidated",
   file_pattern   = "\\.csv$"
 )
 
 ```
 
-
 <br>
 <br>
 
-# Level 2 Data
-### PCE
-Below are links to download L2 data.
+# Raw Data
+### Monthly Power Cost Equalization (PCE)
+Below are links to download archived copies of raw monthly data exported by the Alaska Energy Authority in XLSX format. These files are unprocessed and may contain errors. Use with caution.
 
 ```{r}
 #| echo: false
 #| results: asis
 
 generate_download_table(
-  data_dir       = "../data/l1_quality_checked/consolidated",
-  # github_subpath = "data/l1_quality_checked/consolidated",
-  file_pattern   = "\\.csv$"
+  data_dir       = "../data/raw",
+  file_pattern   = "\\.xlsx$"
 )
 ```
