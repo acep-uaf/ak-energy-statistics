@@ -4,25 +4,18 @@ library(yaml)
 library(knitr)
 library(rlang)
 
-#' Generate a Markdown Download Table for Repository Data Files
-#'
-#' @param data_dir Local relative directory path containing the data files.
-#' @param github_subpath Relative path inside the GitHub repository.
-#' @param file_pattern Regex pattern matching files to include.
-#' @param repo_base Base GitHub raw content URL.
+
+
 generate_download_table <- function(
     data_dir,
-    github_subpath,
-    file_pattern = "\\.(csv|xlsx|parquet|zip)$",
-    repo_base = "https://raw.githubusercontent.com/acep-uaf/ak-energy-statistics/main/"
+    file_pattern = "\\.(csv|xlsx|parquet|zip)$"
 ) {
 
   if (!dir.exists(data_dir)) {
-    cat("*No data directory found at:", data_dir, "*\n")
+    cat("*No data directory found at:* `", data_dir, "`\n", sep = "")
     return(invisible(NULL))
   }
 
-  # Fetch files with full local paths to extract metadata (size)
   file_paths <- sort(list.files(data_dir, pattern = file_pattern, full.names = TRUE), decreasing = TRUE)
 
   if (length(file_paths) == 0) {
@@ -30,31 +23,31 @@ generate_download_table <- function(
     return(invisible(NULL))
   }
 
-  # Clean GitHub subpath
-  subpath_clean <- if (github_subpath != "") paste0(gsub("/+$", "", github_subpath), "/") else ""
-
-  # Build Markdown Table Header
-  cat("| File Name | Size | Direct Download |\n")
+  cat("| File Name | Size | Download |\n")
   cat("|---|---|---|\n")
 
   for (fp in file_paths) {
-    f_name <- path_file(fp)
-
-    # Extract human-readable file size (e.g., "1.2MB", "450KB")
+    f_name <- fs::path_file(fp)
     f_size <- as.character(fs::file_size(fp))
 
-    # Construct GitHub raw URL
-    full_github_url <- paste0(repo_base, subpath_clean, f_name)
+    web_path <- gsub("\\\\", "/", fp)
 
-    # Print clean Markdown row
-    cat(sprintf("| `%s` | %s | [Download %s](%s) |\n", f_name, f_size, path_ext(f_name) %>% toupper(), full_github_url))
+    download_link <- sprintf(
+      '<a href="%s" download="%s">Download %s</a>',
+      web_path,
+      f_name,
+      fs::path_ext(f_name) %>% toupper()
+    )
+
+    cat(sprintf("| `%s` | %s | %s |\n", f_name, f_size, download_link))
   }
 }
 
 
-
-
-
+#' Render Data Quality Bounds as a Clean Markdown Table
+#'
+#' @param yaml_path Path to the YAML configuration file.
+#' @param config_key Key inside the YAML (e.g., "l0_pce_header").
 render_quality_rules <- function(yaml_path, config_key) {
   if (!file.exists(yaml_path)) {
     cat("\n\n*Config file not found at:", yaml_path, "*\n\n")
@@ -63,68 +56,100 @@ render_quality_rules <- function(yaml_path, config_key) {
 
   cfg <- read_yaml(yaml_path)[[config_key]]
 
-  if (is.null(cfg)) {
-    cat("\n\n*Key '", config_key, "' not found in config.*\n\n", sep = "")
+  if (is.null(cfg) || is.null(cfg$bounds)) {
     return(invisible(NULL))
   }
 
-  # 1. Identify ONLY columns with active constraints or bounds
-  not_null_cols <- cfg$constraints$not_null %||% character(0)
-  bounded_cols  <- names(cfg$bounds %||% list())
+  # Extract ONLY columns defined in bounds
+  bounded_cols <- names(cfg$bounds)
 
-  target_cols <- unique(c(not_null_cols, bounded_cols))
+  if (length(bounded_cols) == 0) {
+    return(invisible(NULL))
+  }
 
-  out_str <- ""
+  # Build 2-column bounds summary
+  rules_df <- tibble(Column = bounded_cols) %>%
+    mutate(
+      `Allowed Range / Bounds` = sapply(Column, function(col) {
+        b <- cfg$bounds[[col]]
 
-  # 2. Build summary table
-  if (length(target_cols) > 0) {
-    rules_df <- tibble(Column = target_cols) %>%
-      mutate(
-        `Required` = if_else(Column %in% not_null_cols, "Yes", "Optional"),
-        `Allowed Values / Bounds` = sapply(Column, function(col) {
-          b <- cfg$bounds[[col]]
-          if (is.null(b)) return("Any value")
+        parts <- c()
+        if (!is.null(b$min) && !is.null(b$max)) {
+          parts <- c(parts, paste0(b$min, " to ", b$max))
+        } else if (!is.null(b$min)) {
+          parts <- c(parts, paste0("≥ ", b$min))
+        } else if (!is.null(b$max)) {
+          parts <- c(parts, paste0("≤ ", b$max))
+        }
 
-          parts <- c()
-          if (!is.null(b$min) && !is.null(b$max)) {
-            parts <- c(parts, paste0(b$min, " to ", b$max))
-          } else if (!is.null(b$min)) {
-            parts <- c(parts, paste0("≥ ", b$min))
-          } else if (!is.null(b$max)) {
-            parts <- c(parts, paste0("≤ ", b$max))
-          }
+        if (isFALSE(b$allow_zero)) {
+          parts <- c(parts, "(No Zeros)")
+        }
 
-          if (isFALSE(b$allow_zero)) {
-            parts <- c(parts, "(No Zeros)")
-          }
-
-          paste(parts, collapse = " ")
-        })
-      ) %>%
-      mutate(Column = paste0("`", Column, "`"))
-
-    # Force kable to output plain markdown strings explicitly
-    table_md <- as.character(knitr::kable(rules_df, format = "pipe"))
-
-    out_str <- paste0(
-      out_str,
-      "\n\n**Active Data Quality Rules**\n\n",
-      paste(table_md, collapse = "\n"),
-      "\n\n"
+        if (length(parts) == 0) return("Any value")
+        paste(parts, collapse = " ")
+      }),
+      Column = paste0("`", Column, "`")
     )
+
+  # Format markdown table
+  table_md <- as.character(knitr::kable(rules_df, format = "pipe"))
+
+  out_str <- paste0(
+    "\n\n**Data Quality Bounds**\n\n",
+    paste(table_md, collapse = "\n"),
+    "\n\n"
+  )
+
+  cat(out_str)
+}
+
+
+
+#' Render Outlier Detection Rules as a Clean Markdown Table
+#'
+#' @param yaml_path Path to the YAML configuration file.
+#' @param config_key Optional key inside the YAML (e.g., "outlier_checks"). Leave NULL if top-level.
+render_outlier_rules <- function(yaml_path, config_key = NULL) {
+  if (!file.exists(yaml_path)) {
+    cat("\n\n*Config file not found at:* `", yaml_path, "`\n\n", sep = "")
+    return(invisible(NULL))
   }
 
-  # 3. Compact Category Mapping List
-  if (!is.null(cfg$category_mappings)) {
-    out_str <- paste0(out_str, "**Standardized Categories**\n\n")
-    for (cat_col in names(cfg$category_mappings)) {
-      unique_targets <- unique(unlist(cfg$category_mappings[[cat_col]]))
-      target_str <- paste(paste0("`", unique_targets, "`"), collapse = ", ")
-      out_str <- paste0(out_str, sprintf("* **`%s`**: Maps inputs to %s\n", cat_col, target_str))
-    }
-    out_str <- paste0(out_str, "\n\n")
+  cfg <- yaml::read_yaml(yaml_path)
+
+  if (!is.null(config_key)) {
+    cfg <- cfg[[config_key]]
   }
 
-  # Single cat() call ensures Pandoc gets contiguous raw markdown
+  if (is.null(cfg)) {
+    return(invisible(NULL))
+  }
+
+  # Extract settings and columns
+  mad_thresh <- cfg$settings$mad_threshold %||% "N/A"
+  cols_to_check <- unlist(cfg$columns_to_check)
+
+  if (length(cols_to_check) == 0) {
+    cat("\n\n*No columns configured for outlier detection.*\n\n")
+    return(invisible(NULL))
+  }
+
+  # Create a clean table listing target columns
+  outlier_df <- tibble::tibble(
+    `Columns checked for outliers` = paste0("`", cols_to_check, "`")
+  )
+
+  table_md <- as.character(knitr::kable(outlier_df, format = "pipe"))
+
+  # Assemble header summary + markdown table
+  out_str <- paste0(
+    "\n\n**Outlier Detection (MAD)**\n\n",
+    "* **Method:** Median Absolute Deviation (MAD)\n",
+    "* **Threshold Multiplier:** `", mad_thresh, "` MADs from the median\n\n",
+    paste(table_md, collapse = "\n"),
+    "\n\n"
+  )
+
   cat(out_str)
 }

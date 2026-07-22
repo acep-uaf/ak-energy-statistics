@@ -12,3 +12,6 @@
 # block local quarto builds
 site/_site/
 site/.quarto/
+
+/.quarto/
+**/*.quarto_ipynb

@@ -2,8 +2,7 @@ project:
   type: website
   output-dir: _site
   execute-dir: project
-  resources:
-    - "data/raw/*.xlsx"
+  pre-render: sync_data.R
   preview:
     port: 4200
 

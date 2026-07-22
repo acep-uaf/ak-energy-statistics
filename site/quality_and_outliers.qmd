@@ -15,7 +15,7 @@ In order to provide the most accurate version of this essential data, we perform
 
 
 # Quality
-Quality checks were performed on raw data in order to enforce boundaries.
+Quality checks were performed on raw data in order to enforce boundaries. The logs of flagged/removed values may be seen below, organized by month and table (rate_line, header).
 
 
 ```{r}
@@ -23,8 +23,7 @@ Quality checks were performed on raw data in order to enforce boundaries.
 #| results: asis
 
 generate_download_table(
-  data_dir       = "../data/l1_quality_checked/logs",
-  github_subpath = "data/l1_quality_checked/logs",
+  data_dir       = "data/l1_quality_checked/logs",
   file_pattern   = "\\.csv$"
 )
 
@@ -36,37 +35,15 @@ generate_download_table(
 
 
 # Outliers
-Outlier detection was performed on Level 2 data in order to identify and NULL extreme values.
-```{r, echo=FALSE, warning=FALSE, message=FALSE}
-library(tidyverse)
-library(DT)
+Outlier detection was performed on Level 2 data in order to identify and NULL extreme values. The log of flagged/removed values may be seen below, outputted from the multi-year consolidated dataset.
 
-outliers <- read_csv("../data/l3_outliers_checked/logs/l3_pce_outliers_log.csv")
+```{r}
+#| echo: false
+#| results: asis
 
-
-
-datatable(
-  outliers,
-  extensions = 'Buttons',
-  options = list(
-    dom = 'Bfrtip',       # "B" defines where buttons go, "f" is filter, "t" is table, "p" is pagination
-    buttons = list(
-      list(
-        extend = 'csv',
-        filename = 'outliers',
-        text = 'Download CSV'
-      ),
-      list(
-        extend = 'excel',
-        filename = 'outliers',
-        text = 'Download Excel'
-      )
-    ),
-    pageLength = 15,       # Show 10 rows at a time
-    scrollX = TRUE         # Makes wide tables scrollable horizontally
-  ),
-  rownames = FALSE,
-  class = 'cell-border stripe hover'
+generate_download_table(
+  data_dir       = "data/l3_outliers_checked/logs",
+  file_pattern   = "\\.csv$"
 )
 
 ```
