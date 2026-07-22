@@ -43,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-01e807eee52377d354d5a86b3593c1f0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-b287dc6c4f07bc68d43a90fd492dc129.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -136,17 +136,21 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#raw-data" id="toc-raw-data" class="nav-link active" data-scroll-target="#raw-data">Raw Data</a>
-  <ul class="collapse">
-  <li><a href="#monthly-power-cost-equalization-pce" id="toc-monthly-power-cost-equalization-pce" class="nav-link" data-scroll-target="#monthly-power-cost-equalization-pce">Monthly Power Cost Equalization (PCE)</a></li>
-  </ul></li>
-  <li><a href="#level-1-data" id="toc-level-1-data" class="nav-link" data-scroll-target="#level-1-data">Level 1 Data</a>
+  <li><a href="#level-3-data" id="toc-level-3-data" class="nav-link active" data-scroll-target="#level-3-data">Level 3 Data</a>
   <ul class="collapse">
   <li><a href="#pce" id="toc-pce" class="nav-link" data-scroll-target="#pce">PCE</a></li>
   </ul></li>
   <li><a href="#level-2-data" id="toc-level-2-data" class="nav-link" data-scroll-target="#level-2-data">Level 2 Data</a>
   <ul class="collapse">
   <li><a href="#pce-1" id="toc-pce-1" class="nav-link" data-scroll-target="#pce-1">PCE</a></li>
+  </ul></li>
+  <li><a href="#level-1-data" id="toc-level-1-data" class="nav-link" data-scroll-target="#level-1-data">Level 1 Data</a>
+  <ul class="collapse">
+  <li><a href="#pce-2" id="toc-pce-2" class="nav-link" data-scroll-target="#pce-2">PCE</a></li>
+  </ul></li>
+  <li><a href="#raw-data" id="toc-raw-data" class="nav-link" data-scroll-target="#raw-data">Raw Data</a>
+  <ul class="collapse">
+  <li><a href="#monthly-power-cost-equalization-pce" id="toc-monthly-power-cost-equalization-pce" class="nav-link" data-scroll-target="#monthly-power-cost-equalization-pce">Monthly Power Cost Equalization (PCE)</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -173,29 +177,144 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="raw-data" class="level1">
-<h1>Raw Data</h1>
-<section id="monthly-power-cost-equalization-pce" class="level3">
-<h3 class="anchored" data-anchor-id="monthly-power-cost-equalization-pce">Monthly Power Cost Equalization (PCE)</h3>
-<p>Below are links to download archived copies of raw monthly data exported by the Alaska Energy Authority in XLSX format. These files are unprocessed and may contain errors. Use with caution.</p>
+<section id="level-3-data" class="level1">
+<h1>Level 3 Data</h1>
+<section id="pce" class="level3">
+<h3 class="anchored" data-anchor-id="pce">PCE</h3>
+<p>Level 3 data applies statistical outlier checks in order to screen values for statistical anomalies. <a href="https://en.wikipedia.org/wiki/Median_absolute_deviation">Mean Absolute Deviation (MAD)</a> was calculated for the following columns, then strong and extreme outliers were flagged/removed from the data.</p>
+<p><strong>Outlier Detection (MAD)</strong></p>
+<ul>
+<li><strong>Method:</strong> Median Absolute Deviation (MAD)</li>
+<li><strong>Threshold Multiplier:</strong> <code>3</code> MADs from the median</li>
+</ul>
 <table class="caption-top table">
 <thead>
 <tr class="header">
-<th>File Name</th>
-<th>Size</th>
-<th>Direct Download</th>
+<th style="text-align: left;">Columns checked for outliers</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><code>raw_pce_2026-07.xlsx</code></td>
-<td>49.8K</td>
-<td><a href="https://raw.githubusercontent.com/acep-uaf/ak-energy-statistics/main/data/raw/raw_pce_2026-07.xlsx">Download XLSX</a></td>
+<td style="text-align: left;"><code>residential_rate</code></td>
 </tr>
 <tr class="even">
-<td><code>raw_pce_2026-06.xlsx</code></td>
-<td>6.75M</td>
-<td><a href="https://raw.githubusercontent.com/acep-uaf/ak-energy-statistics/main/data/raw/raw_pce_2026-06.xlsx">Download XLSX</a></td>
+<td style="text-align: left;"><code>pce_eligible_residential_kwh</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>pce_eligible_community_kwh</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>most_recent_fuel_purch_price</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>fuel_used_gallons</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>diesel_kwh_generated</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>hydro_kwh_generated</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>natural_gas_kwh_generated</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>wind_kwh_generated</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>solar_kwh_generated</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>total_kwh_purchased</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>powerhouse_consumption_kwh</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>peak_consumption_kw</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>residential_sold_to</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>commercial_sold_to</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>com_facil_sold_to</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>govt_facil_sold_to</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>unbilled_sold_to</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>residential_customers</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>commercial_customers</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>com_facil_customers</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>govt_facil_customers</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>unbilled_customers</code></td>
+</tr>
+</tbody>
+</table>
+<section id="downloads" class="level4">
+<h4 class="anchored" data-anchor-id="downloads">Downloads</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>File Name</th>
+<th>Size</th>
+<th>Download</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>l3_pce.csv</code></td>
+<td>5.84M</td>
+<td><a href="data/l3_outliers_checked/consolidated/l3_pce.csv" download="l3_pce.csv">Download CSV</a></td>
+</tr>
+</tbody>
+</table>
+<p><br> <br></p>
+</section>
+</section>
+</section>
+<section id="level-2-data" class="level1">
+<h1>Level 2 Data</h1>
+<p>Level 2 data processing applies basic transformations to create or modify columns.</p>
+<section id="pce-1" class="level3">
+<h3 class="anchored" data-anchor-id="pce-1">PCE</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>File Name</th>
+<th>Size</th>
+<th>Download</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>l2_pce.csv</code></td>
+<td>5.86M</td>
+<td><a href="data/l2_transformed/consolidated/l2_pce.csv" download="l2_pce.csv">Download CSV</a></td>
 </tr>
 </tbody>
 </table>
@@ -205,132 +324,119 @@ ul.task-list li input[type="checkbox"] {
 <section id="level-1-data" class="level1">
 <h1>Level 1 Data</h1>
 <p>Level 1 data is created by running basic data quality checks against the data and overwriting with NULL for values outside the boundaries. For instance, the column <code>most_recent_fuel_purch_price</code> requires values to be greater than $0.50 and less than $10.00. If a record contains a value of $0.20 or $50.00, the value is discarded. A list of records with out-of-bound values can be seen on <a href="./quality_and_outliers.html">Quality and Outliers</a></p>
-<section id="pce" class="level3">
-<h3 class="anchored" data-anchor-id="pce">PCE</h3>
-<p><strong>Active Data Quality Rules</strong></p>
+<section id="pce-2" class="level3">
+<h3 class="anchored" data-anchor-id="pce-2">PCE</h3>
+<p><strong>Data Quality Bounds</strong></p>
 <table class="caption-top table">
 <thead>
 <tr class="header">
 <th style="text-align: left;">Column</th>
-<th style="text-align: left;">Required</th>
-<th style="text-align: left;">Allowed Values / Bounds</th>
+<th style="text-align: left;">Allowed Range / Bounds</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;"><code>identifier</code></td>
-<td style="text-align: left;">Yes</td>
-<td style="text-align: left;">Any value</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><code>line_no</code></td>
-<td style="text-align: left;">Yes</td>
-<td style="text-align: left;">Any value</td>
-</tr>
-<tr class="odd">
 <td style="text-align: left;"><code>non_fuel_expenses</code></td>
-<td style="text-align: left;">Optional</td>
 <td style="text-align: left;">≥ 0 (No Zeros)</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><code>powerhouse_consumption_kwh</code></td>
-<td style="text-align: left;">Optional</td>
 <td style="text-align: left;">≥ 0 (No Zeros)</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><code>peak_consumption_kw</code></td>
-<td style="text-align: left;">Optional</td>
 <td style="text-align: left;">≥ 0 (No Zeros)</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><code>most_recent_fuel_purch_price</code></td>
-<td style="text-align: left;">Optional</td>
 <td style="text-align: left;">0.5 to 10</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><code>diesel_kwh_generated</code></td>
-<td style="text-align: left;">Optional</td>
 <td style="text-align: left;">≥ 0 (No Zeros)</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><code>residential_sold_to</code></td>
-<td style="text-align: left;">Optional</td>
 <td style="text-align: left;">≥ 0 (No Zeros)</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><code>commercial_sold_to</code></td>
-<td style="text-align: left;">Optional</td>
 <td style="text-align: left;">≥ 0</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><code>com_facil_sold_to</code></td>
-<td style="text-align: left;">Optional</td>
 <td style="text-align: left;">≥ 0</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><code>govt_facil_sold_to</code></td>
-<td style="text-align: left;">Optional</td>
 <td style="text-align: left;">≥ 0</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><code>unbilled_sold_to</code></td>
-<td style="text-align: left;">Optional</td>
 <td style="text-align: left;">≥ 0</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Standardized Categories</strong></p>
-<ul>
-<li><strong><code>other_1_kwh_type</code></strong>: Maps inputs to <code>solar</code>, <code>wind</code>, <code>hydro</code>, <code>natural_gas</code>, <code>other</code></li>
-<li><strong><code>other_2_kwh_type</code></strong>: Maps inputs to <code>solar</code>, <code>wind</code>, <code>hydro</code>, <code>natural_gas</code>, <code>other</code></li>
-</ul>
+<section id="downloads-1" class="level4">
+<h4 class="anchored" data-anchor-id="downloads-1">Downloads</h4>
 <table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
 <thead>
 <tr class="header">
 <th>File Name</th>
 <th>Size</th>
-<th>Direct Download</th>
+<th>Download</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><code>l1_pce_rate_line_consolidated.csv</code></td>
 <td>2.78M</td>
-<td><a href="https://raw.githubusercontent.com/acep-uaf/ak-energy-statistics/main/data/l1_quality_checked/consolidated/l1_pce_rate_line_consolidated.csv">Download CSV</a></td>
+<td><a href="data/l1_quality_checked/consolidated/l1_pce_rate_line_consolidated.csv" download="l1_pce_rate_line_consolidated.csv">Download CSV</a></td>
 </tr>
 <tr class="even">
 <td><code>l1_pce_header_consolidated.csv</code></td>
 <td>3.82M</td>
-<td><a href="https://raw.githubusercontent.com/acep-uaf/ak-energy-statistics/main/data/l1_quality_checked/consolidated/l1_pce_header_consolidated.csv">Download CSV</a></td>
+<td><a href="data/l1_quality_checked/consolidated/l1_pce_header_consolidated.csv" download="l1_pce_header_consolidated.csv">Download CSV</a></td>
 </tr>
 </tbody>
 </table>
 <p><br> <br></p>
 </section>
 </section>
-<section id="level-2-data" class="level1">
-<h1>Level 2 Data</h1>
-<section id="pce-1" class="level3">
-<h3 class="anchored" data-anchor-id="pce-1">PCE</h3>
-<p>Below are links to download L2 data.</p>
+</section>
+<section id="raw-data" class="level1">
+<h1>Raw Data</h1>
+<section id="monthly-power-cost-equalization-pce" class="level3">
+<h3 class="anchored" data-anchor-id="monthly-power-cost-equalization-pce">Monthly Power Cost Equalization (PCE)</h3>
+<p>Below are links to download archived copies of raw monthly data exported by the Alaska Energy Authority in XLSX format. These files are unprocessed and may contain errors. Use with caution.</p>
 <table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
 <thead>
 <tr class="header">
 <th>File Name</th>
 <th>Size</th>
-<th>Direct Download</th>
+<th>Download</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><code>l1_pce_rate_line_consolidated.csv</code></td>
-<td>2.78M</td>
-<td><a href="https://raw.githubusercontent.com/acep-uaf/ak-energy-statistics/main/data/l1_quality_checked/consolidated/l1_pce_rate_line_consolidated.csv">Download CSV</a></td>
+<td><code>raw_pce_2026-07.xlsx</code></td>
+<td>49.8K</td>
+<td><a href="../data/raw/raw_pce_2026-07.xlsx" download="raw_pce_2026-07.xlsx">Download XLSX</a></td>
 </tr>
 <tr class="even">
-<td><code>l1_pce_header_consolidated.csv</code></td>
-<td>3.82M</td>
-<td><a href="https://raw.githubusercontent.com/acep-uaf/ak-energy-statistics/main/data/l1_quality_checked/consolidated/l1_pce_header_consolidated.csv">Download CSV</a></td>
+<td><code>raw_pce_2026-06.xlsx</code></td>
+<td>6.75M</td>
+<td><a href="../data/raw/raw_pce_2026-06.xlsx" download="raw_pce_2026-06.xlsx">Download XLSX</a></td>
 </tr>
 </tbody>
 </table>
