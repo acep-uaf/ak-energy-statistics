@@ -36,7 +36,7 @@ read_xlsx_rename_cols <- function(path_in, sheet_name, schema_config) {
 l0_pce_extract_rename_write <- function(
   path_in,
   sheets = c('HeaderData', 'RateLineData'),
-  schema_config = 'config/extract/l0_pce_schema.yml',
+  schema_config = 'config/schema/l0_pce_schema.yml',
   dir_out = 'data/l0_extracted/monthly'
 ) {
 

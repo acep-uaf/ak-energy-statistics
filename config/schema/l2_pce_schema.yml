@@ -1,0 +1,63 @@
+# Changes to the column order in this
+
+pce_columns:
+  # Identifiers & Metadata
+  - identifier
+  - pce_id
+  # - line_no
+  - utility
+  - community
+
+  # Date & Time Identifiers
+  - calendar_year
+  - fiscal_year
+  - umr_month
+  - umr_month_numeric
+
+  # Customers
+  - residential_customers
+  - commercial_customers
+  - com_facil_customers
+  - govt_facil_customers
+  - unbilled_customers
+  - other_customers
+  - other_customers_description
+
+  # Electricity Sales & Metrics (kWh)
+  - residential_sold_to
+  - residential_kwh_per_customer_per_month
+  - pce_residential_kwh_per_customer_per_month
+  - commercial_sold_to
+  - com_facil_sold_to
+  - govt_facil_sold_to
+  - unbilled_sold_to
+
+  # Generation & Fuel Metrics
+  - powerhouse_consumption_kwh
+  - peak_consumption_kw
+  - diesel_kwh_generated
+  - hydro_kwh_generated
+  - solar_kwh_generated
+  - wind_kwh_generated
+  - natural_gas_kwh_generated
+  - other_kwh_generated
+  - purchased_from
+  - total_kwh_purchased
+  - most_recent_fuel_purch_price
+  - fuel_used_gallons
+  - non_fuel_expenses
+  - fuel_cost
+  - amount
+
+  # PCE Eligibility
+  - pce_eligible_residential_kwh
+  - pce_eligible_com_facil_kwh
+  - pce_eligible_community_kwh
+  - pce_eligible_total_kwh
+
+  # Rate Calculations
+  - actual_rate
+  - pro_rata_rate
+  # - check
+  - residential_rate
+  - effective_residential_rate

@@ -133,7 +133,7 @@ l2_transform_rate_line <- function(l1_consolidated_dir) {
 }
 
 
-l2_transform_pce <- function(l1_consolidated_dir) {
+l2_transform_pce <- function(l1_consolidated_dir, config = "config/schema/l2_pce_schema.yml") {
   header <- l2_transform_header(l1_consolidated_dir)
   rate_line <- l2_transform_rate_line(l1_consolidated_dir)
 
@@ -142,21 +142,33 @@ l2_transform_pce <- function(l1_consolidated_dir) {
 
   calculated <- joined %>%
     mutate(
-      residential_kwh_per_customer_per_month = residential_sold_to/residential_customers,
-      pce_residential_kwh_per_customer_per_month = pce_eligible_residential_kwh/residential_customers
+      residential_kwh_per_customer_per_month = residential_sold_to / residential_customers,
+      pce_residential_kwh_per_customer_per_month = pce_eligible_residential_kwh / residential_customers
     )
 
-  organized <- calculated %>%
-    relocate(
-      residential_kwh_per_customer_per_month, .after = "residential_sold_to"
-    ) %>%
-    relocate(
-      pce_residential_kwh_per_customer_per_month, .after = "residential_kwh_per_customer_per_month"
-    )
+  # --- Apply Config-Driven Column Order & Selection ---
+  if (file_exists(config)) {
+    col_config <- yaml::read_yaml(config)
+    target_columns <- col_config$pce_columns
 
-  df <- organized
+    # option A: strict (throws an error if a requested column is missing in data)
+    # df <- calculated %>% select(all_of(target_columns))
 
-  path_out <- path_ext_set(path('data/l2_transformed/consolidated/l2_pce'),"csv")
+    # Option B: resilient (keeps missing config columns from breaking the ETL)
+    df <- calculated %>% select(any_of(target_columns))
+
+    # Optional check to warn if new/unconfigured columns are being dropped silently
+    omitted <- setdiff(names(calculated), target_columns)
+    if (length(omitted) > 0) {
+      cli::cli_alert_info("Omitted {length(omitted)} unlisted column(s): {paste(omitted, collapse = ', ')}")
+    }
+  } else {
+    cli::cli_alert_warning("Config path {.path {config}} not found. Defaulting to calculated column order.")
+    df <- calculated
+  }
+
+  path_out <- path_ext_set(path('data/l2_transformed/consolidated/l2_pce'), "csv")
   dir_create(dirname(path_out))
   write_csv(df, path_out)
+
 }
