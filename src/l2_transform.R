@@ -18,20 +18,18 @@ l2_transform_header <- function(l1_consolidated_dir) {
   # split identifier
   mutate(
     # id1 = str_sub(identifier, 1, 3), .before = identifier, # All records are 'A33', not sure significance, drop?
-    pce_id = str_sub(identifier, 2, 7), # Foreign key, pce_id
-    # fiscal_month_year = str_sub(identifier, 8, 11), # Fiscal month and year combo identifier, captured elsewhere, could drop
-    # id4 = str_sub(identifier, 12, 17) # All records are '225003', not sure significance, drop?
+    project_code = str_sub(identifier, 2, 7), # Foreign key, project_code
+    stage_code = str_sub(identifier, 8, 9), # Fiscal month
+    shortcut_dimension_4_code = str_sub(identifier, 10, 11), # Fiscal year
   .before = community) %>%
 
   mutate(
-    umr_month_numeric = as.integer(month(parse_date_time(umr_month, 'B'))),
     fiscal_year = as.integer(fiscal_year),
     calendar_year = as.integer(calendar_year),
-    pce_id = as.integer(pce_id),
+    project_code = as.integer(project_code),
     other_customers_description = as.character(other_customers_description)
   ) %>%
-  relocate(umr_month_numeric, .after = "umr_month") %>%
-  arrange(calendar_year, umr_month_numeric)
+  arrange(calendar_year, stage_code)
 
 
 
@@ -64,6 +62,8 @@ l2_transform_header <- function(l1_consolidated_dir) {
     # Coalesce multiple hydro columns
     # 10 years of data had one record with other_*_kwh_type = 'hydro', but combine for posterity
     mutate(
+      purchased_from_2 = NA,
+      total_kwh_purchased_2 = NA,
       hydro_kwh_combined = coalesce(hydro_kwh_generated, hydro_kwh_generated_main)
     ) %>%
 
@@ -76,22 +76,6 @@ l2_transform_header <- function(l1_consolidated_dir) {
     ) %>%
     rename(
       hydro_kwh_generated = hydro_kwh_combined
-    ) %>%
-    relocate(
-      any_of(c(
-        "diesel_kwh_generated",
-        "hydro_kwh_generated",
-        "solar_kwh_generated",
-        "wind_kwh_generated",
-        "natural_gas_kwh_generated",
-        "other_kwh_generated"
-      )),
-      .after = other_customers_description
-    ) %>%
-    relocate(
-      purchased_from,
-      total_kwh_purchased,
-      .after = other_customers_description
     )
 
   return(df_out)
@@ -146,7 +130,7 @@ l2_transform_pce <- function(l1_consolidated_dir, config = "config/schema/l2_pce
       pce_residential_kwh_per_customer_per_month = pce_eligible_residential_kwh / residential_customers
     )
 
-  # --- Apply Config-Driven Column Order & Selection ---
+  # Schema from YAML config
   if (file_exists(config)) {
     col_config <- yaml::read_yaml(config)
     target_columns <- col_config$pce_columns

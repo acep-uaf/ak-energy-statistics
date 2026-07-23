@@ -24,14 +24,14 @@ l3_check_outliers <- function(path_in, path_config, output_log_path, path_out) {
 
   # Pivot based on YAML list of columns & calculate outliers
   outliers <- l2_indexed %>%
-    select(.row_id, pce_id, calendar_year, umr_month_numeric, all_of(columns_to_check)) %>%
+    select(.row_id, project_code, calendar_year, stage_code, all_of(columns_to_check)) %>%
     pivot_longer(
       cols = all_of(columns_to_check),
       names_to = "column_tested",
       values_to = "raw_value"
     ) %>%
     filter(!is.na(raw_value)) %>%
-    group_by(pce_id, umr_month_numeric, column_tested) %>%
+    group_by(project_code, stage_code, column_tested) %>%
     mutate(
       points_in_group = n(),
       median_val = median(raw_value, na.rm = TRUE),
@@ -67,7 +67,7 @@ l3_check_outliers <- function(path_in, path_config, output_log_path, path_out) {
     ungroup() %>%
     mutate(mad_score = round(mad_score, 0)) %>%
     filter(anomaly_severity %in% c("Strong", "Extreme")) %>%
-    select(.row_id, pce_id, calendar_year, umr_month_numeric, column_tested, raw_value, median_val, mad_score, anomaly_severity) %>%
+    select(.row_id, project_code, calendar_year, stage_code, column_tested, raw_value, median_val, mad_score, anomaly_severity) %>%
     arrange(desc(mad_score))
 
   # Write Outlier Log to File
@@ -77,28 +77,17 @@ l3_check_outliers <- function(path_in, path_config, output_log_path, path_out) {
   write_csv(log_export, output_log_path)
   message(paste("Successfully recorded", nrow(log_export), "outliers to log."))
 
-  # Scrub Outliers in Dataset using the precise .row_id and column_tested coordinates
-  if (nrow(outliers) > 0) {
-    outlier_keys <- outliers %>%
-      select(.row_id, column_tested) %>%
-      mutate(is_outlier = TRUE)
+  # --- Scrub Outliers directly in Wide Format ---
+  l3_clean <- l2
 
-    l3_clean <- l2_indexed %>%
-      pivot_longer(
-        cols = all_of(columns_to_check),
-        names_to = "column_tested",
-        values_to = "raw_value"
-      ) %>%
-      left_join(outlier_keys, by = c(".row_id", "column_tested")) %>%
-      mutate(raw_value = if_else(is_outlier %in% TRUE, NA_real_, raw_value)) %>%
-      select(-is_outlier) %>%
-      pivot_wider(
-        names_from = column_tested,
-        values_from = raw_value
-      ) %>%
-      select(-.row_id)
-  } else {
-    l3_clean <- l2
+  if (nrow(outliers) > 0) {
+    row_idx <- outliers$.row_id
+    col_names <- outliers$column_tested
+
+    # Directly set flagged outlier cell coordinates to NA
+    for (i in seq_len(nrow(outliers))) {
+      l3_clean[row_idx[i], col_names[i]] <- NA_real_
+    }
   }
 
   # Write Cleaned Dataset to File
