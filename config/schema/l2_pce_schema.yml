@@ -1,20 +1,44 @@
-# Changes to the column order in this
+# Changes to the column order in this config file change the column order in the data
 
 pce_columns:
-  # Identifiers & Metadata
   - identifier
-  - pce_id
-  # - line_no
+  - project_code
+  - stage_code
+  - shortcut_dimension_4_code
+  - line_no
+
+  # # From lookup table
+  # - sales_reporter_id
+  # - sales_reporting_name
+  # - operator_id
+  # - operator_name
+  # - plant_id
+  # - plant_name
+  # - intertie_id
+  # - intertie_name
+
   - utility
   - community
 
-  # Date & Time Identifiers
-  - calendar_year
-  - fiscal_year
-  - umr_month
-  - umr_month_numeric
+  - amount
+  - purchased_from
+  - purchased_from_2
+  - powerhouse_consumption_kwh
+  - peak_consumption_kw
 
-  # Customers
+  - residential_sold_to
+  - commercial_sold_to
+  - com_facil_sold_to
+  - govt_facil_sold_to
+  - unbilled_sold_to
+
+  - most_recent_fuel_purch_price
+  - fuel_used_gallons
+  - non_fuel_expenses
+  - fuel_cost
+  - total_kwh_purchased
+  - total_kwh_purchased_2
+
   - residential_customers
   - commercial_customers
   - com_facil_customers
@@ -23,41 +47,33 @@ pce_columns:
   - other_customers
   - other_customers_description
 
-  # Electricity Sales & Metrics (kWh)
-  - residential_sold_to
-  - residential_kwh_per_customer_per_month
-  - pce_residential_kwh_per_customer_per_month
-  - commercial_sold_to
-  - com_facil_sold_to
-  - govt_facil_sold_to
-  - unbilled_sold_to
-
-  # Generation & Fuel Metrics
-  - powerhouse_consumption_kwh
-  - peak_consumption_kw
   - diesel_kwh_generated
   - hydro_kwh_generated
-  - solar_kwh_generated
-  - wind_kwh_generated
   - natural_gas_kwh_generated
+  - wind_kwh_generated
+  - solar_kwh_generated
   - other_kwh_generated
-  - purchased_from
-  - total_kwh_purchased
-  - most_recent_fuel_purch_price
-  - fuel_used_gallons
-  - non_fuel_expenses
-  - fuel_cost
-  - amount
 
-  # PCE Eligibility
+  # # We pivoted to the columns above, drop?
+  # - other_1_kwh_type
+  # - other_1_kwh_generated
+  # - other_2_kwh_type
+  # - other_2_kwh_generated
+
+  - umr_month
+  - fiscal_year
+  - calendar_year
+
   - pce_eligible_residential_kwh
   - pce_eligible_com_facil_kwh
   - pce_eligible_community_kwh
   - pce_eligible_total_kwh
-
-  # Rate Calculations
   - actual_rate
   - pro_rata_rate
-  # - check
+  - check
   - residential_rate
   - effective_residential_rate
+
+  # Calculated columns, included?
+  - residential_kwh_per_customer_per_month
+  - pce_residential_kwh_per_customer_per_month
