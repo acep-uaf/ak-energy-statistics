@@ -1,4 +1,5 @@
 source('src/l0_extract.R')
+source('src/l1_lookup.R')
 source('src/l1_quality_check.R')
 source('src/l1_consolidate.R')
 source('src/l2_transform.R')
@@ -14,6 +15,20 @@ unlink('data/l3_outliers_checked', recursive = T)
 l0_extract_pce_dir(
   dir_in = 'data/raw',
   pattern = 'raw_pce'
+)
+
+l1_clean_lookup_sales_report(
+  dir_raw = "data/raw/lookup",
+  path_out = "data/l1_quality_checked/lookup/l1_lookup_sales_report.csv"
+)
+l1_clean_lookup_plants(
+  dir_raw = "data/raw/lookup",
+  path_out = "data/l1_quality_checked/lookup/l1_lookup_plants.csv"
+)
+
+l1_clean_lookup_operators(
+  dir_raw = "data/raw/lookup",
+  path_out = "data/l1_quality_checked/lookup/l1_lookup_operators.csv"
 )
 
 l1_check_quality_pce_dir(
@@ -34,6 +49,9 @@ l1_consolidate_pce_data(
 
 l2_transform_pce(
   l1_consolidated_dir = "data/l1_quality_checked/consolidated",
+  l1_lookup_sales_report_path = "data/l1_quality_checked/lookup/l1_lookup_sales_report.csv",
+  l1_lookup_plants_path = "data/l1_quality_checked/lookup/l1_lookup_plants.csv",
+  l1_lookup_operators_path = "data/l1_quality_checked/lookup/l1_lookup_operators.csv",
   config = "config/schema/l2_pce_schema.yml"
 )
 

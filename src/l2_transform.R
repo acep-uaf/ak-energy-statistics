@@ -117,12 +117,25 @@ l2_transform_rate_line <- function(l1_consolidated_dir) {
 }
 
 
-l2_transform_pce <- function(l1_consolidated_dir, config = "config/schema/l2_pce_schema.yml") {
+l2_transform_pce <- function(
+  l1_consolidated_dir,
+  l1_lookup_sales_report_path,
+  l1_lookup_plants_path,
+  l1_lookup_operators_path,
+  config = "config/schema/l2_pce_schema.yml") {
+
   header <- l2_transform_header(l1_consolidated_dir)
   rate_line <- l2_transform_rate_line(l1_consolidated_dir)
 
+  lookup_sales_report <- read_csv(l1_lookup_sales_report_path, show_col_types = FALSE)
+  lookup_plants <- read_csv(l1_lookup_plants_path, show_col_types = FALSE)
+  lookup_operators <- read_csv(l1_lookup_operators_path, show_col_types = FALSE)
+
   joined <- header %>%
-    left_join(rate_line, by = "identifier")
+    left_join(rate_line, by = "identifier") %>%
+    left_join(lookup_sales_report, by = join_by(project_code == pce_reporting_id)) %>%
+    left_join(lookup_plants, by = join_by(project_code == pce_reporting_id)) %>%
+    left_join(lookup_operators, by = join_by(project_code == project_code))
 
   calculated <- joined %>%
     mutate(
