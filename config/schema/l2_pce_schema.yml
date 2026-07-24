@@ -7,15 +7,15 @@ pce_columns:
   - shortcut_dimension_4_code
   - line_no
 
-  # # From lookup table
-  # - sales_reporter_id
-  # - sales_reporting_name
-  # - operator_id
-  # - operator_name
-  # - plant_id
-  # - plant_name
-  # - intertie_id
-  # - intertie_name
+  # From lookup table
+  - sales_reporter_id
+  - sales_reporting_name
+  - ak_operator_id
+  - operator_name
+  - plant_id
+  - plant_name
+  - intertie_id
+  - intertie_name
 
   - utility
   - community

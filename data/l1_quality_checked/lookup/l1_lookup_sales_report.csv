@@ -1,0 +1,183 @@
+pce_reporting_id,sales_reporter_id,sales_reporting_name,intertie_id,intertie_name
+331005,SR-11,Adak,186-0000,Adak_grid
+331010,SR-12,Akhiok,001-0000,Akhiok_grid
+331020,SR-13,Akiachak,002-0000,Akiachak_grid
+331030,SR-14,Akiak,003-0000,Akiak_grid
+331040,SR-15,Akutan,004-0000,Akutan_grid
+331240,SR-16,Alakanuk,045-2016,Emmonak_grid
+331050,SR-17,"Allakaket, Alatna",005-0000,Allakaket_grid
+331250,SR-18,Ambler,035-0000,Ambler_grid
+332350,SR-19,Anaktuvuk Pass,160-0000,Anaktuvuk Pass_grid
+332650,SR-20,Angoon,125-0000,Angoon_grid
+331760,SR-21,Aniak,093-0000,Aniak_grid
+331260,SR-22,Anvik,036-0000,Anvik_grid
+331770,SR-23,Arctic Village,094-0000,Arctic Village_grid
+331750,SR-24,Atka,095-0000,Atka_grid
+331780,SR-25,Atmautluak,096-0000,Atmautluak_grid
+332360,SR-26,Atqasuk,161-0000,Atqasuk_grid
+331790,SR-27,Beaver,097-0000,Beaver_grid
+331800,SR-28,"Bethel, Oscarville",034-1988,Bethel_grid
+331060,SR-29,"Bettles, Evansville",007-0000,Bettles_grid
+331810,SR-30,Birch Creek,098-0000,Birch Creek_grid
+331270,SR-31,Brevig Mission,039-0000,Brevig Mission_grid
+331820,SR-32,Buckland,099-0000,Buckland_grid
+331830,SR-33,Central,116-0000,Central_grid
+331840,SR-34,Chalkyitsik,100-0000,Chalkyitsik_grid
+332310,SR-35,Chefornak,154-0000,Chefornak_grid
+331850,SR-36,Chenega Bay,101-0000,Chenega_grid
+331280,SR-37,Chevak,040-0000,Chevak_grid
+331860,SR-38,Chignik,104-0000,Chignik_grid
+331870,SR-39,Chignik Lagoon,102-0000,Chignik Lagoon_grid
+331880,SR-40,Chignik Lake,103-0000,Chignik Lake_grid
+332660,SR-41,Chilkat Valley,032-1998,Haines_grid
+332690,SR-213,Chilkat Valley/Klukwan,032-1998,Haines_grid
+331070,SR-42,Chistochina,026-2012,Slana_grid
+331890,SR-43,Chitina,105-0000,Chitina_grid
+332230,SR-44,Chuathbaluk,144-0000,Chuathbaluk_grid
+331900,SR-45,Circle,106-0000,Circle_grid
+331910,SR-46,Clark's Point,107-0000,Clark's Point_grid
+331080,SR-47,Coffman Cove,023-2015,Prince of Wales Is._grid
+331980,SR-48,Cold Bay,114-0000,Cold Bay_grid
+331920,SR-49,"Cordova, Eyak",014-1990,Cordova_grid
+331090,SR-50,Craig,023-2015,Prince of Wales Is._grid
+332240,SR-51,Crooked Creek,145-0000,Crooked Creek_grid
+332060,SR-52,Deering,130-0000,Deering_grid
+332430,SR-53,"Dillingham, Aleknagik",169-0000,Dillingham_grid
+331930,SR-54,Diomede,110-0000,Diomede_grid
+331100,SR-55,"Dot Lake, Dot Lake Village",015-2008,Tok_grid
+331110,SR-56,"Eagle, Eagle Village",009-0000,Eagle_grid
+331290,SR-57,Eek,041-0000,Eek_grid
+331940,SR-58,Egegik,111-0000,Egegik_grid
+331950,SR-59,Ekwok,065-2016,New_Stuyahok_grid
+331960,SR-60,Elfin Cove,112-0000,Elfin Cove_grid
+331300,SR-61,Elim,043-0000,Elim_grid
+331310,SR-62,Emmonak,045-2016,Emmonak_grid
+331970,SR-63,False Pass,113-0000,False Pass_grid
+332020,SR-64,Fort Yukon,119-0000,Fort Yukon_grid
+331990,SR-65,Galena,115-0000,Galena_grid
+331320,SR-66,Gambell,046-0000,Gambell_grid
+332000,SR-67,Golovin,117-0000,Golovin_grid
+331330,SR-68,Goodnews Bay,047-0000,Goodnews Bay_grid
+331340,SR-69,Grayling,048-0000,Grayling_grid
+332010,SR-70,Gustavus,118-0000,Gustavus_grid
+331120,SR-71,"Haines, Covenant Life",032-1998,Haines_grid
+331130,SR-72,Healy Lake,011-0000,Healy Lake_grid
+331140,SR-73,Hollis,023-2015,Prince of Wales Is._grid
+331350,SR-74,Holy Cross,049-0000,Holy Cross_grid
+332670,SR-75,Hoonah,128-0000,Hoonah_grid
+331360,SR-76,Hooper Bay,050-0000,Hooper Bay_grid
+332030,SR-77,Hughes,120-0000,Hughes_grid
+331370,SR-78,Huslia,051-0000,Huslia_grid
+331150,SR-79,Hydaburg,023-2015,Prince of Wales Is._grid
+332040,SR-80,Igiugig,121-0000,Igiugig_grid
+332050,SR-81,"Iliamna, Newhalen, Nondalton",123-1983,Newhalen_grid
+332680,SR-82,Kake,129-0000,Kake_grid
+332370,SR-83,Kaktovik,162-0000,Kaktovik_grid
+331720,SR-84,Kalskag,052-0000,Kalskag_grid
+331380,SR-85,Kaltag,054-0000,Kaltag_grid
+331740,SR-86,Karluk,092-0000,Karluk_grid
+331390,SR-87,Kasigluk,055-2006,Kasigluk_grid
+331400,SR-88,Kiana,057-0000,Kiana_grid
+332070,SR-89,King Cove,131-0000,King Cove_grid
+332080,SR-90,Kipnuk,132-0000,Kipnuk_grid
+331410,SR-91,Kivalina,058-0000,Kivalina_grid
+331155,SR-92,Klawock,023-2015,Prince of Wales Is._grid
+332700,SR-93,Klukwan,032-1998,Haines_grid
+332090,SR-94,Kobuk,149-1980,Shungnak_grid
+332100,SR-95,Kokhanok,134-0000,Kokhanok_grid
+332110,SR-96,Koliganek,157-0000,Koliganek_grid
+332510,SR-97,Kongiganak,176-0000,Kongiganak_grid
+332120,SR-98,Kotlik,059-0000,Kotlik_grid
+332130,SR-99,Kotzebue,135-0000,Kotzebue_grid
+331420,SR-100,Koyuk,060-0000,Koyuk_grid
+332140,SR-101,Koyukuk,136-0000,Koyukuk_grid
+332150,SR-102,Kwethluk,137-0000,Kwethluk_grid
+332160,SR-103,Kwigillingok,138-0000,Kwigillingok_grid
+332170,SR-104,Larsen Bay,139-0000,Larsen Bay_grid
+332180,SR-105,Levelock,140-0000,Levelock_grid
+332190,SR-106,Lime Village,141-0000,Lime Village_grid
+331430,SR-107,Lower Kalskag,052-0000,Kalskag_grid
+332210,SR-109,Manokotak,142-0000,Manokotak_grid
+331440,SR-110,Marshall,061-0000,Marshall_grid
+332220,SR-111,McGrath,143-0000,McGrath_grid
+331450,SR-112,Mekoryuk,062-0000,Mekoryuk_grid
+331160,SR-113,Mentasta Lake,026-2012,Slana_grid
+331460,SR-114,Minto,063-0000,Minto_grid
+331470,SR-115,Mountain Village,075-2020,Mountain Village_grid
+332280,SR-116,"Naknek, South Naknek, King Salmon",150-0000,Naknek_grid
+332290,SR-117,Napakiak,034-1988,Bethel_grid
+332300,SR-118,Napaskiak,153-0000,Napaskiak_grid
+331170,SR-119,Naukati Bay,023-2015,Prince of Wales Is._grid
+332320,SR-120,Nelson Lagoon,156-0000,Nelson Lagoon_grid
+331480,SR-121,New Stuyahok,065-2016,New_Stuyahok_grid
+332870,SR-122,Newtok,196-0000,Newtok_grid
+331490,SR-123,Nightmute,088-2008,Toksook Bay_grid
+332330,SR-124,Nikolai,158-0000,Nikolai_grid
+332740,SR-125,Nikolski,193-0000,Nikolski_grid
+331500,SR-126,Noatak,066-0000,Noatak_grid
+332340,SR-127,Nome,159-0000,Nome_grid
+331510,SR-128,Noorvik,067-0000,Noorvik_grid
+331180,SR-129,"Northway, Northway Village, Northway Junction",012-0000,Northway_grid
+332380,SR-130,Nuiqsut,163-0000,Nuiqsut_grid
+331520,SR-131,Nulato,068-0000,Nulato_grid
+332420,SR-132,Nunam Iqua,167-0000,Nunam Iqua_grid
+331530,SR-133,Nunapitchuk,055-2006,Kasigluk_grid
+331540,SR-134,Old Harbor,069-0000,Old Harbor_grid
+332440,SR-135,Ouzinkie,170-0000,Ouzinkie_grid
+332450,SR-136,Pedro Bay,171-0000,Pedro Bay_grid
+332460,SR-137,Pelican,172-0000,Pelican_grid
+332470,SR-138,Perryville,155-0000,Perryville_grid
+332480,SR-139,Pilot Point,173-0000,Pilot Point_grid
+331550,SR-140,Pilot Station,070-0000,Pilot Station_grid
+331560,SR-141,Pitkas Point,075-2020,Saint Mary's_grid
+332490,SR-142,Platinum,174-0000,Platinum_grid
+332390,SR-143,Point Hope,164-0000,Point Hope_grid
+332400,SR-144,Point Lay,165-0000,Point Lay_grid
+332590,SR-145,Port Alsworth,183-0000,Port Alsworth_grid
+332500,SR-146,Port Heiden,175-0000,Port Heiden_grid
+331570,SR-147,Quinhagak,071-0000,Quinhagak_grid
+332520,SR-148,Rampart,177-0000,Rampart_grid
+332250,SR-149,Red Devil,146-0000,Red Devil_grid
+332530,SR-150,Ruby,178-0000,Ruby_grid
+331580,SR-151,Russian Mission,072-0000,Russian Mission_grid
+332550,SR-152,Saint George,179-0000,Saint George_grid
+331660,SR-153,"Saint Mary's, Andreafsky",075-2020,Saint Mary's_grid
+331670,SR-154,Saint Michael,084-2015,Stebbins_grid
+332560,SR-155,Saint Paul,180-0000,Saint Paul_grid
+332540,SR-156,Sand Point,187-0000,Sand Point_grid
+331590,SR-157,Savoonga,076-0000,Savoonga_grid
+331600,SR-158,Scammon Bay,077-0000,Scammon Bay_grid
+331610,SR-159,Selawik,078-0000,Selawik_grid
+331620,SR-160,Shageluk,079-0000,Shageluk_grid
+331630,SR-161,Shaktoolik,080-0000,Shaktoolik_grid
+331640,SR-162,Shishmaref,081-0000,Shishmaref_grid
+331650,SR-163,Shungnak,149-1980,Shungnak_grid
+331190,SR-164,Skagway,032-1998,Haines_grid
+331195,SR-165,Slana,026-2012,Slana_grid
+332260,SR-166,Sleetmute,147-0000,Sleetmute_grid
+331680,SR-167,Stebbins,084-2015,Stebbins_grid
+332570,SR-168,Stevens Village,181-0000,Stevens Village_grid
+332270,SR-169,Stony River,148-0000,Stony River_grid
+332580,SR-170,Takotna,182-0000,Takotna_grid
+332600,SR-171,Tanana,184-0000,Tanana_grid
+332610,SR-172,Tatitlek,185-0000,Tatitlek_grid
+331685,SR-173,Teller,085-0000,Teller_grid
+332620,SR-173,Teller,085-0000,Teller_grid
+332630,SR-174,Tenakee Springs,189-0000,Tenakee Springs_grid
+331200,SR-175,Tetlin,015-2008,Tok_grid
+331210,SR-176,"Thorne Bay, City of",NA,ThorneBay_grid
+331690,SR-177,Togiak,086-2020,Togiak_grid
+331220,SR-178,"Tok, Tanacross",015-2008,Tok_grid
+331700,SR-179,Toksook Bay,088-2008,Toksook Bay_grid
+332710,SR-180,Tuluksak,190-0000,Tuluksak_grid
+332720,SR-181,Tuntutuliak,191-0000,Tuntutuliak_grid
+331710,SR-182,Tununak,088-2008,Toksook Bay_grid
+332730,SR-183,Twin Hills,086-2020,Togiak_grid
+332850,SR-184,Unalakleet,194-0000,Unalakleet_grid
+332860,SR-185,Unalaska,195-0000,Unalaska_grid
+332880,SR-186,Venetie,197-0000,Venetie_grid
+332410,SR-187,Wainwright,166-0000,Wainwright_grid
+331730,SR-188,Wales,090-0000,Wales_grid
+331230,SR-189,Whale Pass,213-0000,Whale_Pass_grid
+332890,SR-190,White Mountain,198-0000,WhiteMountain_grid
+332900,SR-191,Yakutat,091-0000,Yakutat_grid

@@ -1,0 +1,298 @@
+pce_reporting_id,plant_id,plant_name
+NA,P168,10 Mile Creek
+NA,P44,7-Mile Ridge Wind Project
+NA,P104,AWWU Conduit
+331005,P251,Adak
+NA,P1,Agrium Kenai Nitrogen Operations
+331010,P2,Akhiok
+331020,P3,Akiachak
+331030,P4,Akiak
+331040,P5,Akutan
+331240,P45,Alakanuk
+331050,P30,Allakaket
+NA,P126,Allison Creek Hydro
+NA,P281,Alyeska Seafoods
+331250,P46,Ambler
+NA,P282,American President Lines Ltd
+332350,P216,Anaktuvuk Pass
+NA,P101,Anchorage 1
+332650,P163,Angoon
+331760,P105,Aniak
+NA,P6,Annex Creek
+331260,P79,Anvik
+331770,P106,Arctic Village
+331750,P107,Atka
+331780,P108,Atmautluak
+332360,P217,Atqasuk
+NA,P7,Auke Bay
+NA,P109,Aurora Energy LLC Chena
+NA,P110,Barrow
+NA,P146,Battery Energy Storage System
+331790,P111,Beaver
+NA,P171,Beaver Falls
+NA,P120,Beluga
+NA,P283,Bering Star
+NA,P155,Bernice Lake
+331800,P47,Bethel
+331060,P31,Bettles
+331810,P112,Birch Creek
+NA,P15,Black Bear Lake
+NA,P229,Blind Slough
+NA,P280,Blue Lake Fish Valve
+NA,P240,Blue Lake Hydro
+NA,P156,Bradley Lake
+331270,P48,Brevig Mission
+331820,P113,Buckland
+NA,P245,Burnett River Hatchery
+NA,P199,Centennial
+331830,P145,Central
+NA,P284,Central Production Facility 1
+NA,P285,Central Production Facility 2
+NA,P286,Central Production Facility 3
+331840,P114,Chalkyitsik
+332310,P210,Chefornak
+NA,P279,Chena 6
+331850,P115,Chenega Bay
+NA,P200,Chester Lake
+331280,P49,Chevak
+331860,P118,Chignik Bay
+331870,P116,Chignik Lagoon
+331880,P117,Chignik Lake
+332660,P166,Chilkat Valley
+331070,P32,Chistochina
+331890,P119,Chitina
+332230,P202,Chuathbaluk
+331900,P124,Circle
+331910,P125,Clark's Point
+331080,P33,Coffman Cove
+331980,P143,Cold Bay
+NA,P121,Cooper Lake
+331920,P292,"Cordova, Eyak"
+331090,P20,Craig
+332240,P203,Crooked Creek
+332060,P169,Deering
+NA,P147,Delta Power
+NA,P14,Delta Wind Farm
+NA,P41,Dewey Lakes 
+332430,P224,Dillingham
+331930,P135,Diomede
+NA,P226,Dry Spruce Bay (Creek)
+NA,P263,Dutch Harbor
+NA,P180,ESS Battery Microgrid
+331110,P34,Eagle
+331290,P80,Eek
+331940,P139,Egegik
+NA,P268,Eielson AFB Central Heat & Power Plant
+NA,P197,Eklutna Generation Station
+NA,P102,Eklutna Hydro Project
+331950,P81,Ekwok
+331960,P140,Elfin Cove
+331300,P50,Elim
+331310,P51,Emmonak
+NA,P148,Eva Creek Wind
+NA,P131,Eyak Service Center BESS
+NA,P149,Fairbanks
+NA,P21,False Island
+331970,P141,False Pass
+NA,P142,Fire Island Wind
+NA,P181,Flywheel Energy Storage System Microgrid
+NA,P136,Fort Greely Power Plant
+NA,P152,GVEA Solar Farm
+331990,P144,Galena Electric Utility
+331320,P52,Gambell
+NA,P103,George M Sullivan Generation Plant 2
+NA,P127,Glennallen
+NA,P16,Goat Lake Hydro
+NA,P8,Gold Creek
+332000,P153,Golovin
+331330,P82,Goodnews Bay
+331340,P83,Grayling
+NA,P241,Green Lake
+332010,P35,Gustavus
+332020,P154,Gwitchyaa Zhee
+331120,P22,Haines
+NA,P150,Healy
+331130,P36,Healy Lake
+NA,P293,Hiilangaay Hydro
+331140,P37,Hollis
+331350,P84,Holy Cross
+332670,P164,Hoonah
+331360,P53,Hooper Bay
+NA,P235,Houston Solar
+332030,P160,Hughes
+NA,P132,Humpback Creek
+331370,P85,Huslia
+331150,P23,Hydaburg
+332040,P161,Igiugig
+NA,P9,Industrial Plant
+NA,P122,International
+NA,P269,Ivanof Bay
+NA,P138,JBER Landfill Gas Power Plant
+NA,P242,Jarvis Street
+NA,P274,Jetty Lake (West Side Hydro)
+332680,P165,Kake
+332370,P218,Kaktovik
+331380,P86,Kaltag
+331740,P100,Karluk
+NA,P17,Kasidaya Creek Hydro
+331390,P54,Kasigluk
+NA,P172,Ketchikan
+331400,P55,Kiana
+332070,P177,King Cove
+NA,P287,King Cove
+332080,P178,Kipnuk
+331410,P56,Kivalina
+331155,P278,Klawock
+NA,P24,Klawock Power Generation Station
+332700,P167,Klukwan
+332090,P179,Kobuk
+NA,P182,Kodiak Microgrid
+332100,P188,Kokhanok
+332110,P213,Koliganek
+332510,P233,Kongiganak
+332120,P57,Kotlik
+332130,P189,Kotzebue
+331420,P58,Koyuk
+332140,P190,Koyukuk
+332150,P191,Kwethluk
+332160,P192,Kwigillingok
+NA,P10,Lake Dorothy Hydroelectric Project
+332170,P193,Larsen Bay
+NA,P11,Lemon Creek
+332180,P194,Levelock
+332190,P195,Lime Village
+NA,P288,Lisburne Production Center
+331430,P99,Lower Kalskag
+NA,P42,Lutak
+NA,P170,Mahoney Lake Hydroelectric
+332200,P253,Manley
+332210,P196,Manokotak
+NA,P275,Marathon Hydro
+331440,P59,Marshall
+332220,P198,McGrath
+NA,P276,McRoberts Creek
+331450,P87,Mekoryuk
+331160,P38,Mentasta Lake
+331460,P88,Minto
+331470,P60,Mountain Village
+332280,P207,Naknek
+332290,P208,Napakiak
+332300,P209,Napaskiak
+331170,P43,Naukati Bay
+332320,P212,Nelson Lagoon
+331480,P61,New Stuyahok
+332050,P162,Newhalen
+332870,P265,Newtok
+331490,P89,Nightmute
+NA,P157,Nikiski Co-Generation
+332330,P214,Nikolai
+332740,P261,Nikolski
+331500,P62,Noatak
+331510,P63,Noorvik
+NA,P151,North Pole
+331180,P25,Northway
+332380,P219,Nuiqsut
+331520,P90,Nulato
+332420,P223,Nunam Iqua
+331530,P64,Nunapitchuk
+NA,P183,Nymans Plant Microgrid
+NA,P289,Offshore Systems
+331540,P91,Old Harbor
+NA,P133,Orca
+332440,P225,Ouzinkie
+332450,P227,Pedro Bay
+332460,P228,Pelican
+332470,P211,Perryville
+NA,P184,Pillar Mountain Wind Project Microgrid
+332480,P230,Pilot Point
+331550,P65,Pilot Station
+331560,P92,Pitkas Point
+332490,P231,Platinum
+332390,P220,Point Hope
+332400,P221,Point Lay
+332590,P248,Port Alsworth
+332500,P232,Port Heiden
+NA,P185,Port Lions Microgrid
+NA,P134,Power Creek
+NA,P201,Purple Lake
+331570,P66,Quinhagak
+NA,P296,Ram Valley Hydro
+332520,P234,Rampart
+332250,P204,Red Devil
+332530,P236,Ruby
+331580,P93,Russian Mission
+NA,P173,S W Bailey
+332550,P237,Saint George
+331660,P67,Saint Mary's
+331670,P73,Saint Michael
+332560,P238,Saint Paul
+NA,P252,Saint Paul Wind
+NA,P12,Salmon Creek 1
+332540,P295,Sand Point
+331590,P68,Savoonga
+331600,P69,Scammon Bay
+NA,P290,Seawater Treatment Plant
+331610,P70,Selawik
+NA,P158,Seldovia
+NA,P239,Seward
+331620,P94,Shageluk
+331630,P95,Shaktoolik
+331640,P71,Shishmaref
+331650,P72,Shungnak
+NA,P174,Silvis
+331190,P26,Skagway
+331195,P27,Slana Generating Station
+332260,P205,Sleetmute
+332340,P215,Snake River
+NA,P13,Snettisham
+NA,P159,Soldotna
+NA,P128,Solomon Gulch
+NA,P18,South Fork
+NA,P243,South Fork Hydro (Eagle River)
+NA,P123,Southcentral Power Project
+331680,P74,Stebbins
+332570,P246,Stevens Village
+332270,P206,Stony River
+NA,P186,Swampy Acres Microgrid
+NA,P175,Swan Lake
+NA,P294,Sweetheart Lake Hydroelectric Facility
+NA,P254,TNSG North Plant
+NA,P255,TNSG South Plant
+332580,P247,Takotna
+332600,P249,Tanana
+332610,P250,Tatitlek
+331685,P96,Teller
+332620,P96,Teller
+332630,P256,Tenakee Springs
+NA,P187,Terror Lake Microgrid
+NA,P257,Tesoro Kenai Cogeneration Plant
+331200,P39,Tetlin
+331210,P28,Thorne Bay Plant
+NA,P277,Tin City
+331690,P75,Togiak
+331220,P29,Tok
+331700,P76,Toksook Bay
+332710,P258,Tuluksak
+332720,P259,Tuntutuliak
+331710,P97,Tununak
+332730,P260,Twin Hills
+NA,P244,Tyee Lake Hydroelectric Facility
+332850,P262,Unalakleet
+332860,P291,Unalaska
+NA,P264,Unalaska Power Module
+NA,P266,Unisea G 2
+NA,P267,University of Alaska Fairbanks
+331720,P77,Upper Kalskag
+NA,P137,Utility Plants Section
+NA,P129,Valdez
+NA,P130,Valdez Cogen
+332880,P270,Venetie
+NA,P19,Viking
+332410,P222,Wainwright
+331730,P98,Wales
+NA,P271,Westward Seafoods
+331230,P40,Whale Pass
+332890,P272,White Mountain
+NA,P176,Whitman
+NA,P273,Wrangell
+332900,P78,Yakutat
