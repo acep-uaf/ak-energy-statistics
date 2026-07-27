@@ -127,9 +127,8 @@ l0_pce_rate_line:
   bounds:
     actual_rate:
       min: 0
-    residential_rate:
+    effective_residential_rate:
       min: 0.08
       max: 2.50
-    effective_residential_rate:    # <-- Clean, explicit validation trap
-      min: 0.0
-      allow_zero: true
+      allow_zero: false
+      target_column: residential_rate

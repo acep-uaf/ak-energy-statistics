@@ -72,6 +72,7 @@ recast_l1_data <- function(df, cfg) {
   return(df)
 }
 
+
 # Null values that fall outside of YAML-specified boundaries
 enforce_l1_bounds <- function(df, cfg) {
   if (!"bounds" %in% names(cfg)) return(df)
@@ -87,7 +88,13 @@ enforce_l1_bounds <- function(df, cfg) {
     if (!col %in% names(df)) next
 
     limits <- cfg$bounds[[col]]
-    val_vector <- df[[col]]
+
+    # Determine target column to scrub (defaults to 'col' if not explicitly overridden)
+    target_col <- if ("target_column" %in% names(limits)) limits$target_column else col
+    if (!target_col %in% names(df)) next
+
+    val_vector <- df[[col]]           # Evaluated column
+    target_vector <- df[[target_col]] # Column to scrub
     col_has_violations <- FALSE
 
     # Check lower bound securely
@@ -107,19 +114,24 @@ enforce_l1_bounds <- function(df, cfg) {
       if (any(low_mask, na.rm = TRUE)) {
         col_has_violations <- TRUE
         bad_rows <- which(low_mask)
-        bad_vals <- val_vector[low_mask]
         bad_ids  <- if (has_id) as.character(df$identifier[low_mask]) else NA_character_
 
-        cli_alert_warning("Column {.var {col}}: Found {sum(low_mask)} value(s) out of bounds. Scrubbed values: {.val {unique(bad_vals)}}")
-
-        violation_list[[length(violation_list) + 1]] <- tibble::tibble(
-          identifier = bad_ids,
-          column = col,
-          row_index = bad_rows,
-          rule_broken = rule_desc,
-          original_value = as.character(bad_vals)
+        cli_alert_warning(
+          "Column {.var {target_col}} (via {.var {col}}): Found {sum(low_mask)} value(s) below min of {min_val}."
         )
-        val_vector[low_mask] <- NA
+
+        # --- Explicit Schema Violation Logging ---
+        violation_list[[length(violation_list) + 1]] <- tibble::tibble(
+          identifier            = bad_ids,
+          row_index             = bad_rows,
+          target_column         = target_col,
+          target_value_scrubbed = as.character(target_vector[low_mask]),
+          eval_column           = col,
+          eval_value_observed   = as.character(val_vector[low_mask]),
+          rule_broken           = rule_desc
+        )
+
+        target_vector[low_mask] <- NA # Scrub target column
       }
     }
 
@@ -131,34 +143,37 @@ enforce_l1_bounds <- function(df, cfg) {
       if (any(high_mask, na.rm = TRUE)) {
         col_has_violations <- TRUE
         bad_rows <- which(high_mask)
-        bad_vals <- val_vector[high_mask]
         bad_ids  <- if (has_id) as.character(df$identifier[high_mask]) else NA_character_
 
         cli_alert_warning(paste0(
-          "Column {.var {col}}: Found {sum(high_mask)} value(s) exceeding max of {max_val}. ",
-          "Scrubbed values: {.val {unique(bad_vals)}}"
+          "Column {.var {target_col}} (via {.var {col}}): Found {sum(high_mask)} value(s) above max of {max_val}."
         ))
 
+        # --- Explicit Schema Violation Logging ---
         violation_list[[length(violation_list) + 1]] <- tibble::tibble(
-          identifier = bad_ids,
-          column = col,
-          row_index = bad_rows,
-          rule_broken = paste0("> ", max_val),
-          original_value = as.character(bad_vals)
+          identifier            = bad_ids,
+          row_index             = bad_rows,
+          target_column         = target_col,
+          target_value_scrubbed = as.character(target_vector[high_mask]),
+          eval_column           = col,
+          eval_value_observed   = as.character(val_vector[high_mask]),
+          rule_broken           = paste0("> ", max_val)
         )
-        val_vector[high_mask] <- NA
+
+        target_vector[high_mask] <- NA # Scrub target column
       }
     }
 
-    # If the column was completely clean, report success message
+    # Success message if column was completely clean
     if (!col_has_violations && ("min" %in% names(limits) || "max" %in% names(limits))) {
-      cli_alert_success("Column {.var {col}}: All values within bounds.")
+      cli_alert_success("Column {.var {target_col}}: All values within bounds.")
     }
 
-    df[[col]] <- val_vector
+    # Write cleaned values back to dataframe
+    df[[target_col]] <- target_vector
   }
 
-  # Export collected anomalies out to a temporary workspace global variable
+  # Export collected anomalies out to temporary workspace global variable
   if (length(violation_list) > 0) {
     .pce_violations <<- purrr::list_rbind(violation_list)
   } else {
