@@ -1,13 +1,13 @@
-file,identifier,column,row_index,rule_broken,original_value
-l0_pce_rate_line_2026-07.csv,A3328601026225003,residential_rate,136,< 0.08,0
-l0_pce_rate_line_2026-07.csv,A3318800726225003,residential_rate,88,> 2.5,9.999
-l0_pce_rate_line_2026-07.csv,A3318800726225003,residential_rate,89,> 2.5,9.999
-l0_pce_rate_line_2026-07.csv,A3318800826225003,residential_rate,90,> 2.5,9.9999
-l0_pce_rate_line_2026-07.csv,A3318800826225003,residential_rate,91,> 2.5,9.9999
-l0_pce_rate_line_2026-07.csv,A3318800926225003,residential_rate,92,> 2.5,9.9999
-l0_pce_rate_line_2026-07.csv,A3318800926225003,residential_rate,93,> 2.5,9.9999
-l0_pce_rate_line_2026-07.csv,A3318801026225003,residential_rate,94,> 2.5,9.9999
-l0_pce_rate_line_2026-07.csv,A3318801026225003,residential_rate,95,> 2.5,9.9999
-l0_pce_rate_line_2026-07.csv,A3318801126225003,residential_rate,96,> 2.5,9.9999
-l0_pce_rate_line_2026-07.csv,A3318801126225003,residential_rate,97,> 2.5,9.9999
-l0_pce_rate_line_2026-07.csv,A3323800926225003,effective_residential_rate,50,< 0,-0.0162
+file,identifier,row_index,target_column,target_value_scrubbed,eval_column,eval_value_observed,rule_broken
+l0_pce_rate_line_2026-07.csv,A3323800926225003,50,residential_rate,0.08,effective_residential_rate,-0.0162,< 0.08
+l0_pce_rate_line_2026-07.csv,A3328601026225003,136,residential_rate,0,effective_residential_rate,0,< 0.08
+l0_pce_rate_line_2026-07.csv,A3318800726225003,88,residential_rate,9.999,effective_residential_rate,9.4961,> 2.5
+l0_pce_rate_line_2026-07.csv,A3318800726225003,89,residential_rate,9.999,effective_residential_rate,9.999,> 2.5
+l0_pce_rate_line_2026-07.csv,A3318800826225003,90,residential_rate,9.9999,effective_residential_rate,9.497,> 2.5
+l0_pce_rate_line_2026-07.csv,A3318800826225003,91,residential_rate,9.9999,effective_residential_rate,9.9999,> 2.5
+l0_pce_rate_line_2026-07.csv,A3318800926225003,92,residential_rate,9.9999,effective_residential_rate,9.497,> 2.5
+l0_pce_rate_line_2026-07.csv,A3318800926225003,93,residential_rate,9.9999,effective_residential_rate,9.9999,> 2.5
+l0_pce_rate_line_2026-07.csv,A3318801026225003,94,residential_rate,9.9999,effective_residential_rate,9.497,> 2.5
+l0_pce_rate_line_2026-07.csv,A3318801026225003,95,residential_rate,9.9999,effective_residential_rate,9.9999,> 2.5
+l0_pce_rate_line_2026-07.csv,A3318801126225003,96,residential_rate,9.9999,effective_residential_rate,9.497,> 2.5
+l0_pce_rate_line_2026-07.csv,A3318801126225003,97,residential_rate,9.9999,effective_residential_rate,9.9999,> 2.5
