@@ -80,29 +80,37 @@ enforce_l1_bounds <- function(df, cfg) {
   cli_h2("Enforcing Range Boundaries")
 
   violation_list <- list()
-
-  # Safeguard: check if identifier column exists, otherwise fall back gracefully
   has_id <- "identifier" %in% names(df)
 
   for (col in names(cfg$bounds)) {
-    if (!col %in% names(df)) next
-
     limits <- cfg$bounds[[col]]
-
-    # Determine target column to scrub (defaults to 'col' if not explicitly overridden)
     target_col <- if ("target_column" %in% names(limits)) limits$target_column else col
-    if (!target_col %in% names(df)) next
 
-    val_vector <- df[[col]]           # Evaluated column
-    target_vector <- df[[target_col]] # Column to scrub
+    # Ensure evaluated column exists
+    if (!col %in% names(df)) {
+      cli_alert_warning(
+        "Configured bounds column {.var {col}} was not found in dataset. Skipping rule."
+      )
+      next
+    }
+
+    # Ensure target column exists
+    if (!target_col %in% names(df)) {
+      cli_alert_warning(
+        "Target scrub column {.var {target_col}} (configured for {.var {col}}) was not found in dataset. Skipping rule."
+      )
+      next
+    }
+
+    val_vector <- df[[col]]
+    target_vector <- df[[target_col]]
     col_has_violations <- FALSE
 
-    # Check lower bound securely
+    # Check lower bound
     if ("min" %in% names(limits) && !is.null(limits$min) && !is.na(limits$min)) {
       min_val <- as.numeric(limits$min)
       allow_z <- if ("allow_zero" %in% names(limits)) as.logical(limits$allow_zero) else TRUE
 
-      # If zero is NOT allowed, trigger mask for anything <= min_val
       if (!allow_z && min_val == 0) {
         low_mask <- !is.na(val_vector) & val_vector <= min_val
         rule_desc <- paste0("<= ", min_val)
@@ -120,7 +128,6 @@ enforce_l1_bounds <- function(df, cfg) {
           "Column {.var {target_col}} (via {.var {col}}): Found {sum(low_mask)} value(s) below min of {min_val}."
         )
 
-        # --- Explicit Schema Violation Logging ---
         violation_list[[length(violation_list) + 1]] <- tibble::tibble(
           identifier            = bad_ids,
           row_index             = bad_rows,
@@ -131,11 +138,11 @@ enforce_l1_bounds <- function(df, cfg) {
           rule_broken           = rule_desc
         )
 
-        target_vector[low_mask] <- NA # Scrub target column
+        target_vector[low_mask] <- NA
       }
     }
 
-    # Check upper bound securely
+    # Check upper bound
     if ("max" %in% names(limits) && !is.null(limits$max) && !is.na(limits$max)) {
       max_val <- as.numeric(limits$max)
       high_mask <- !is.na(val_vector) & val_vector > max_val
@@ -145,11 +152,10 @@ enforce_l1_bounds <- function(df, cfg) {
         bad_rows <- which(high_mask)
         bad_ids  <- if (has_id) as.character(df$identifier[high_mask]) else NA_character_
 
-        cli_alert_warning(paste0(
-          "Column {.var {target_col}} (via {.var {col}}): Found {sum(high_mask)} value(s) above max of {max_val}."
-        ))
+        cli_alert_warning(
+          "Column {.var {target_col}} (via {.var {col}}): Found {sum(high_mask)} value(s) exceeding max of {max_val}."
+        )
 
-        # --- Explicit Schema Violation Logging ---
         violation_list[[length(violation_list) + 1]] <- tibble::tibble(
           identifier            = bad_ids,
           row_index             = bad_rows,
@@ -160,20 +166,17 @@ enforce_l1_bounds <- function(df, cfg) {
           rule_broken           = paste0("> ", max_val)
         )
 
-        target_vector[high_mask] <- NA # Scrub target column
+        target_vector[high_mask] <- NA
       }
     }
 
-    # Success message if column was completely clean
     if (!col_has_violations && ("min" %in% names(limits) || "max" %in% names(limits))) {
       cli_alert_success("Column {.var {target_col}}: All values within bounds.")
     }
 
-    # Write cleaned values back to dataframe
     df[[target_col]] <- target_vector
   }
 
-  # Export collected anomalies out to temporary workspace global variable
   if (length(violation_list) > 0) {
     .pce_violations <<- purrr::list_rbind(violation_list)
   } else {
