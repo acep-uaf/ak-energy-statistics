@@ -48,6 +48,7 @@ raw_extract_lookup_operators_from_xlsx_download <- function(
 l1_clean_lookup_sales_report <- function(
   path_in = NULL,
   dir_raw = "data/raw/lookup",
+  path_config = "config/overrides/l1_lookup.yml",
   path_out = "data/l1_quality_checked/lookup/l1_lookup_sales_report.csv"
 ) {
 
@@ -81,10 +82,19 @@ l1_clean_lookup_sales_report <- function(
       intertie_id,
       intertie_name
     ) %>%
-    arrange(sales_reporting_name) %>%
-    filter(
-    pce_reporting_id != 332200 & sales_reporter_id != "SR-202" # drop wrong value for Manley Hot Springs
-    )
+    arrange(sales_reporting_name)
+
+  if (file_exists(path_config)) {
+    cfg <- read_yaml(path_config)
+    exclusions_list <- cfg$l1_lookup_sales_report$exclude_records
+
+    if (!is.null(exclusions_list) && length(exclusions_list) > 0) {
+      exclude_df <- bind_rows(exclusions_list)
+
+      df <- anti_join(df, exclude_df, by = names(exclude_df))
+    }
+  }
+
 
   dir_create(dirname(path_out))
   write_csv(df, path_out)
@@ -98,6 +108,7 @@ l1_clean_lookup_sales_report <- function(
 l1_clean_lookup_plants <- function(
   path_in = NULL,
   dir_raw = "data/raw/lookup",
+  path_config = "config/overrides/l1_lookup.yml",
   path_out = "data/l1_quality_checked/lookup/l1_lookup_plants.csv"
 ) {
 
@@ -130,6 +141,18 @@ l1_clean_lookup_plants <- function(
     arrange(plant_name)
 
 
+  if (file_exists(path_config)) {
+    cfg <- read_yaml(path_config)
+    exclusions_list <- cfg$l1_lookup_plants$exclude_records
+
+    if (!is.null(exclusions_list) && length(exclusions_list) > 0) {
+      exclude_df <- bind_rows(exclusions_list)
+
+      df <- anti_join(df, exclude_df, by = names(exclude_df))
+    }
+  }
+
+
   dir_create(dirname(path_out))
   write_csv(df, path_out)
 
@@ -141,6 +164,7 @@ l1_clean_lookup_plants <- function(
 l1_clean_lookup_operators <- function(
   path_in = NULL,
   dir_raw = "data/raw/lookup",
+  path_config = "config/overrides/l1_lookup.yml",
   path_out = "data/l1_quality_checked/lookup/l1_lookup_operators.csv"
 ) {
 
@@ -171,6 +195,17 @@ l1_clean_lookup_operators <- function(
       operator_name
     ) %>%
     arrange(operator_name)
+
+  if (file_exists(path_config)) {
+    cfg <- read_yaml(path_config)
+    exclusions_list <- cfg$l1_lookup_operators$exclude_records
+
+    if (!is.null(exclusions_list) && length(exclusions_list) > 0) {
+      exclude_df <- bind_rows(exclusions_list)
+
+      df <- anti_join(df, exclude_df, by = names(exclude_df))
+    }
+  }
 
 
   dir_create(dirname(path_out))

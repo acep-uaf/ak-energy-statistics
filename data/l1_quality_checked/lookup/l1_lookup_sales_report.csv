@@ -5,16 +5,24 @@ pce_reporting_id,sales_reporter_id,sales_reporting_name,intertie_id,intertie_nam
 331030,SR-14,Akiak,003-0000,Akiak_grid
 331040,SR-15,Akutan,004-0000,Akutan_grid
 331240,SR-16,Alakanuk,045-2016,Emmonak_grid
+NA,SR-211,Alaska Electric & Energy Coop,215-1985,Railbelt_grid
+NA,SR-204,Alaska Electric G & T Coop Inc,215-1985,Railbelt_grid
+NA,SR-1,Alaska Electric Light&Power Co,222-0000,Juneau_grid
+NA,SR-205,Alaska Energy Authority,215-1985,Railbelt_grid
 331050,SR-17,"Allakaket, Alatna",005-0000,Allakaket_grid
+NA,SR-206,Alyeska Seafoods Inc,NA,NA
 331250,SR-18,Ambler,035-0000,Ambler_grid
 332350,SR-19,Anaktuvuk Pass,160-0000,Anaktuvuk Pass_grid
+NA,SR-2,Anchorage Mun Light and Power,215-1985,Railbelt_grid
 332650,SR-20,Angoon,125-0000,Angoon_grid
 331760,SR-21,Aniak,093-0000,Aniak_grid
 331260,SR-22,Anvik,036-0000,Anvik_grid
+NA,SR-197,"Arctic Utilities, Inc",224_0000,Deadhorse_grid
 331770,SR-23,Arctic Village,094-0000,Arctic Village_grid
 331750,SR-24,Atka,095-0000,Atka_grid
 331780,SR-25,Atmautluak,096-0000,Atmautluak_grid
 332360,SR-26,Atqasuk,161-0000,Atqasuk_grid
+NA,SR-194,Barrow Utilities & Electric Cooperative Inc.,221-0000,Utqiagvik_grid
 331790,SR-27,Beaver,097-0000,Beaver_grid
 331800,SR-28,"Bethel, Oscarville",034-1988,Bethel_grid
 331060,SR-29,"Bettles, Evansville",007-0000,Bettles_grid
@@ -34,10 +42,12 @@ pce_reporting_id,sales_reporter_id,sales_reporting_name,intertie_id,intertie_nam
 331070,SR-42,Chistochina,026-2012,Slana_grid
 331890,SR-43,Chitina,105-0000,Chitina_grid
 332230,SR-44,Chuathbaluk,144-0000,Chuathbaluk_grid
+NA,SR-3,Chugach Electric Assn Inc,215-1985,Railbelt_grid
 331900,SR-45,Circle,106-0000,Circle_grid
 331910,SR-46,Clark's Point,107-0000,Clark's Point_grid
 331080,SR-47,Coffman Cove,023-2015,Prince of Wales Is._grid
 331980,SR-48,Cold Bay,114-0000,Cold Bay_grid
+NA,SR-192,"Copper Valley Elec Assn, Inc",216-0000,CopperValley_grid
 331920,SR-49,"Cordova, Eyak",014-1990,Cordova_grid
 331090,SR-50,Craig,023-2015,Prince of Wales Is._grid
 332240,SR-51,Crooked Creek,145-0000,Crooked Creek_grid
@@ -48,6 +58,7 @@ pce_reporting_id,sales_reporter_id,sales_reporting_name,intertie_id,intertie_nam
 331110,SR-56,"Eagle, Eagle Village",009-0000,Eagle_grid
 331290,SR-57,Eek,041-0000,Eek_grid
 331940,SR-58,Egegik,111-0000,Egegik_grid
+NA,SR-58,Egegik,111-0000,Egegik_grid
 331950,SR-59,Ekwok,065-2016,New_Stuyahok_grid
 331960,SR-60,Elfin Cove,112-0000,Elfin Cove_grid
 331300,SR-61,Elim,043-0000,Elim_grid
@@ -56,6 +67,7 @@ pce_reporting_id,sales_reporter_id,sales_reporting_name,intertie_id,intertie_nam
 332020,SR-64,Fort Yukon,119-0000,Fort Yukon_grid
 331990,SR-65,Galena,115-0000,Galena_grid
 331320,SR-66,Gambell,046-0000,Gambell_grid
+NA,SR-4,Golden Valley Elec Assn Inc,215-1985,Railbelt_grid
 332000,SR-67,Golovin,117-0000,Golovin_grid
 331330,SR-68,Goodnews Bay,047-0000,Goodnews Bay_grid
 331340,SR-69,Grayling,048-0000,Grayling_grid
@@ -64,6 +76,7 @@ pce_reporting_id,sales_reporter_id,sales_reporting_name,intertie_id,intertie_nam
 331130,SR-72,Healy Lake,011-0000,Healy Lake_grid
 331140,SR-73,Hollis,023-2015,Prince of Wales Is._grid
 331350,SR-74,Holy Cross,049-0000,Holy Cross_grid
+NA,SR-5,Homer Electric Assn Inc,215-1985,Railbelt_grid
 332670,SR-75,Hoonah,128-0000,Hoonah_grid
 331360,SR-76,Hooper Bay,050-0000,Hooper Bay_grid
 332030,SR-77,Hughes,120-0000,Hughes_grid
@@ -77,6 +90,7 @@ pce_reporting_id,sales_reporter_id,sales_reporting_name,intertie_id,intertie_nam
 331380,SR-85,Kaltag,054-0000,Kaltag_grid
 331740,SR-86,Karluk,092-0000,Karluk_grid
 331390,SR-87,Kasigluk,055-2006,Kasigluk_grid
+NA,SR-6,Ketchikan Public Utilities,217-2009,SEAPA_grid
 331400,SR-88,Kiana,057-0000,Kiana_grid
 332070,SR-89,King Cove,131-0000,King Cove_grid
 332080,SR-90,Kipnuk,132-0000,Kipnuk_grid
@@ -84,6 +98,7 @@ pce_reporting_id,sales_reporter_id,sales_reporting_name,intertie_id,intertie_nam
 331155,SR-92,Klawock,023-2015,Prince of Wales Is._grid
 332700,SR-93,Klukwan,032-1998,Haines_grid
 332090,SR-94,Kobuk,149-1980,Shungnak_grid
+NA,SR-7,Kodiak Electric Assn Inc,223-0000,Kodiak_grid
 332100,SR-95,Kokhanok,134-0000,Kokhanok_grid
 332110,SR-96,Koliganek,157-0000,Koliganek_grid
 332510,SR-97,Kongiganak,176-0000,Kongiganak_grid
@@ -97,13 +112,17 @@ pce_reporting_id,sales_reporter_id,sales_reporting_name,intertie_id,intertie_nam
 332180,SR-105,Levelock,140-0000,Levelock_grid
 332190,SR-106,Lime Village,141-0000,Lime Village_grid
 331430,SR-107,Lower Kalskag,052-0000,Kalskag_grid
+332200,SR-108,Manley Hot Springs,188-0000,Manley Hot Springs_grid
 332210,SR-109,Manokotak,142-0000,Manokotak_grid
 331440,SR-110,Marshall,061-0000,Marshall_grid
+NA,SR-8,Matanuska Electric Assn Inc,215-1985,Railbelt_grid
 332220,SR-111,McGrath,143-0000,McGrath_grid
 331450,SR-112,Mekoryuk,062-0000,Mekoryuk_grid
 331160,SR-113,Mentasta Lake,026-2012,Slana_grid
+NA,SR-195,Metlakatla Power & Light,225_0000,Metlakatla_grid
 331460,SR-114,Minto,063-0000,Minto_grid
 331470,SR-115,Mountain Village,075-2020,Mountain Village_grid
+NA,SR-207,"NUI Energy Brokers, Inc",NA,NA
 332280,SR-116,"Naknek, South Naknek, King Salmon",150-0000,Naknek_grid
 332290,SR-117,Napakiak,034-1988,Bethel_grid
 332300,SR-118,Napaskiak,153-0000,Napaskiak_grid
@@ -124,9 +143,11 @@ pce_reporting_id,sales_reporter_id,sales_reporting_name,intertie_id,intertie_nam
 331530,SR-133,Nunapitchuk,055-2006,Kasigluk_grid
 331540,SR-134,Old Harbor,069-0000,Old Harbor_grid
 332440,SR-135,Ouzinkie,170-0000,Ouzinkie_grid
+NA,SR-9,Paxson Inn and Lodge,226_0000,Paxson_grid
 332450,SR-136,Pedro Bay,171-0000,Pedro Bay_grid
 332460,SR-137,Pelican,172-0000,Pelican_grid
 332470,SR-138,Perryville,155-0000,Perryville_grid
+NA,SR-198,"Petersburg, City of",217-2009,SEAPA_grid
 332480,SR-139,Pilot Point,173-0000,Pilot Point_grid
 331550,SR-140,Pilot Station,070-0000,Pilot Station_grid
 331560,SR-141,Pitkas Point,075-2020,Saint Mary's_grid
@@ -148,16 +169,20 @@ pce_reporting_id,sales_reporter_id,sales_reporting_name,intertie_id,intertie_nam
 331590,SR-157,Savoonga,076-0000,Savoonga_grid
 331600,SR-158,Scammon Bay,077-0000,Scammon Bay_grid
 331610,SR-159,Selawik,078-0000,Selawik_grid
+NA,SR-199,"Seward, City of",215-1985,Railbelt_grid
 331620,SR-160,Shageluk,079-0000,Shageluk_grid
 331630,SR-161,Shaktoolik,080-0000,Shaktoolik_grid
 331640,SR-162,Shishmaref,081-0000,Shishmaref_grid
 331650,SR-163,Shungnak,149-1980,Shungnak_grid
+NA,SR-193,"Sitka, City & Borough of",219-0000,Sitka_grid
 331190,SR-164,Skagway,032-1998,Haines_grid
 331195,SR-165,Slana,026-2012,Slana_grid
 332260,SR-166,Sleetmute,147-0000,Sleetmute_grid
+NA,SR-212,Southeast Alaska Power Agency,217-2009,SEAPA_grid
 331680,SR-167,Stebbins,084-2015,Stebbins_grid
 332570,SR-168,Stevens Village,181-0000,Stevens Village_grid
 332270,SR-169,Stony River,148-0000,Stony River_grid
+NA,SR-10,TDX North Slope Generating Co,224_0000,Deadhorse_grid
 332580,SR-170,Takotna,182-0000,Takotna_grid
 332600,SR-171,Tanana,184-0000,Tanana_grid
 332610,SR-172,Tatitlek,185-0000,Tatitlek_grid
@@ -173,11 +198,16 @@ pce_reporting_id,sales_reporter_id,sales_reporting_name,intertie_id,intertie_nam
 332720,SR-181,Tuntutuliak,191-0000,Tuntutuliak_grid
 331710,SR-182,Tununak,088-2008,Toksook Bay_grid
 332730,SR-183,Twin Hills,086-2020,Togiak_grid
+NA,SR-201,U S Air Force-Eielson AFB,215-1985,Railbelt_grid
+NA,SR-208,U S Army-Ft Wainwright,215-1985,Railbelt_grid
 332850,SR-184,Unalakleet,194-0000,Unalakleet_grid
 332860,SR-185,Unalaska,195-0000,Unalaska_grid
+NA,SR-209,Unisea Inc,NA,NA
+NA,SR-210,University of Alaska,215-1985,Railbelt_grid
 332880,SR-186,Venetie,197-0000,Venetie_grid
 332410,SR-187,Wainwright,166-0000,Wainwright_grid
 331730,SR-188,Wales,090-0000,Wales_grid
 331230,SR-189,Whale Pass,213-0000,Whale_Pass_grid
 332890,SR-190,White Mountain,198-0000,WhiteMountain_grid
+NA,SR-200,"Wrangell, City of",217-2009,SEAPA_grid
 332900,SR-191,Yakutat,091-0000,Yakutat_grid

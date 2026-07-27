@@ -1,0 +1,12 @@
+l1_lookup_sales_report:
+  exclude_records:
+    - pce_reporting_id: 332200 # drop erroroneous record for Manley Hot Springs
+      sales_reporter_id: "SR-202"
+
+
+l1_lookup_plants:
+  exclude_records:
+
+
+l1_lookup_operators:
+  exclude_records:
