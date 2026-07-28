@@ -138,3 +138,9 @@ l0_pce_header_2026-07.csv,A3322901026225003,114,diesel_kwh_generated,0,diesel_kw
 l0_pce_header_2026-07.csv,A3322901126225003,115,diesel_kwh_generated,0,diesel_kwh_generated,0,<= 0
 l0_pce_header_2026-07.csv,A3326901126225003,160,diesel_kwh_generated,0,diesel_kwh_generated,0,<= 0
 l0_pce_header_2026-07.csv,A3326901226225003,163,diesel_kwh_generated,0,diesel_kwh_generated,0,<= 0
+l0_pce_header_2026-07.csv,A3325200726225003,2,fuel_used_gallons,745,diesel_efficiency,0.0135002899391128,< 0.03
+l0_pce_header_2026-07.csv,A3319100926225003,11,fuel_used_gallons,0,diesel_efficiency,0,< 0.03
+l0_pce_header_2026-07.csv,A3319101026225003,103,fuel_used_gallons,0,diesel_efficiency,0,< 0.03
+l0_pce_header_2026-07.csv,A3325200726225003,2,diesel_kwh_generated,55184,diesel_efficiency,0.0135002899391128,< 0.03
+l0_pce_header_2026-07.csv,A3319100926225003,11,diesel_kwh_generated,53805,diesel_efficiency,0,< 0.03
+l0_pce_header_2026-07.csv,A3319101026225003,103,diesel_kwh_generated,53805,diesel_efficiency,0,< 0.03
