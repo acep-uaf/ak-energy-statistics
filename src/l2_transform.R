@@ -25,6 +25,7 @@ l2_transform_header <- function(l1_consolidated_dir) {
 
   mutate(
     fiscal_year = as.integer(fiscal_year),
+    calendar_month = ((as.numeric(stage_code) + 5) %% 12) + 1,
     calendar_year = as.integer(calendar_year),
     project_code = as.integer(project_code),
     other_customers_description = as.character(other_customers_description)

@@ -60,7 +60,8 @@ pce_columns:
   # - other_2_kwh_type
   # - other_2_kwh_generated
 
-  - umr_month
+  # - umr_month
+  - calendar_month
   - fiscal_year
   - calendar_year
 
@@ -70,7 +71,7 @@ pce_columns:
   - pce_eligible_total_kwh
   - actual_rate
   - pro_rata_rate
-  - check
+  # - check
   - residential_rate
   - effective_residential_rate
 
