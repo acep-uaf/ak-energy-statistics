@@ -31,6 +31,11 @@ l1_clean_lookup_operators(
   path_out = "data/l1_quality_checked/lookup/l1_lookup_operators.csv"
 )
 
+l1_clean_lookup_pce_floor(
+  dir_raw = "data/raw/lookup",
+  path_out = "data/l1_quality_checked/lookup/l1_lookup_pce_floor.csv"
+)
+
 l1_check_quality_pce_dir(
   dir_in = 'data/l0_extracted/monthly',
   pattern = 'l0_pce',
