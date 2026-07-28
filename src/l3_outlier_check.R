@@ -90,6 +90,23 @@ l3_check_outliers <- function(path_in, path_config, output_log_path, path_out) {
     }
   }
 
+  # --- Recalculate Derived Metrics Post-Scrubbing ---
+  # Ensures scrubbed NAs in fuel or kWh automatically wipe out the derived efficiency
+  if (all(c("fuel_used_gallons", "diesel_kwh_generated") %in% names(l3_clean))) {
+    l3_clean <- l3_clean %>%
+      mutate(
+        fuel_num = as.numeric(fuel_used_gallons),
+        kwh_num  = as.numeric(diesel_kwh_generated),
+
+        diesel_efficiency = if_else(
+          is.na(fuel_num) | is.na(kwh_num) | kwh_num == 0,
+          NA_real_,
+          fuel_num / kwh_num
+        )
+      ) %>%
+      select(-fuel_num, -kwh_num)
+  }
+
   # Write Cleaned Dataset to File
   dir_create(dirname(path_out))
   write_csv(l3_clean, path_out)

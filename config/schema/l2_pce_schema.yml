@@ -33,7 +33,6 @@ pce_columns:
   - unbilled_sold_to
 
   - most_recent_fuel_purch_price
-  - fuel_used_gallons
   - non_fuel_expenses
   - fuel_cost
   - total_kwh_purchased
@@ -47,7 +46,6 @@ pce_columns:
   - other_customers
   - other_customers_description
 
-  - diesel_kwh_generated
   - hydro_kwh_generated
   - natural_gas_kwh_generated
   - wind_kwh_generated
@@ -78,3 +76,7 @@ pce_columns:
   # Calculated columns, included?
   - residential_kwh_per_customer_per_month
   - pce_residential_kwh_per_customer_per_month
+
+  - fuel_used_gallons
+  - diesel_kwh_generated
+  - diesel_efficiency

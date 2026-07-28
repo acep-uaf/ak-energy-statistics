@@ -61,17 +61,29 @@ recast_l1_data <- function(df, cfg) {
     if (col %in% names(df)) df[[col]] <- as.logical(df[[col]])
   }
 
-  # Derived Rate Calculations
-  if ("actual_rate" %in% names(df) && "residential_rate" %in% names(df)) {
+
+  # Calculate effective residential rate if rate columns exist
+  if (all(c("actual_rate", "residential_rate") %in% names(df))) {
     df <- df %>%
       mutate(
         effective_residential_rate = residential_rate - actual_rate
       )
   }
 
+  # Calculate diesel efficiency if fuel and kwh columns exist
+  if (all(c("fuel_used_gallons", "diesel_kwh_generated") %in% names(df))) {
+    df <- df %>%
+      mutate(
+        diesel_efficiency = if_else(
+          is.na(fuel_used_gallons) | is.na(diesel_kwh_generated) | diesel_kwh_generated == 0,
+          NA_real_,
+          fuel_used_gallons / diesel_kwh_generated
+        )
+      )
+  }
+
   return(df)
 }
-
 
 # Null values that fall outside of YAML-specified boundaries
 enforce_l1_bounds <- function(df, cfg) {
@@ -84,7 +96,15 @@ enforce_l1_bounds <- function(df, cfg) {
 
   for (col in names(cfg$bounds)) {
     limits <- cfg$bounds[[col]]
-    target_col <- if ("target_column" %in% names(limits)) limits$target_column else col
+
+    # Normalize target_cols into a character vector (handles single strings, lists, or NULL)
+    target_cols <- if ("target_columns" %in% names(limits)) {
+      as.character(unlist(limits$target_columns))
+    } else if ("target_column" %in% names(limits)) {
+      as.character(unlist(limits$target_column))
+    } else {
+      col
+    }
 
     # Ensure evaluated column exists
     if (!col %in% names(df)) {
@@ -94,17 +114,12 @@ enforce_l1_bounds <- function(df, cfg) {
       next
     }
 
-    # Ensure target column exists
-    if (!target_col %in% names(df)) {
-      cli_alert_warning(
-        "Target scrub column {.var {target_col}} (configured for {.var {col}}) was not found in dataset. Skipping rule."
-      )
-      next
-    }
-
     val_vector <- df[[col]]
-    target_vector <- df[[target_col]]
     col_has_violations <- FALSE
+
+    # Build logical masks for violations
+    low_mask  <- rep(FALSE, length(val_vector))
+    high_mask <- rep(FALSE, length(val_vector))
 
     # Check lower bound
     if ("min" %in% names(limits) && !is.null(limits$min) && !is.na(limits$min)) {
@@ -118,20 +133,39 @@ enforce_l1_bounds <- function(df, cfg) {
         low_mask <- !is.na(val_vector) & val_vector < min_val
         rule_desc <- paste0("< ", min_val)
       }
+    }
 
+    # Check upper bound
+    if ("max" %in% names(limits) && !is.null(limits$max) && !is.na(limits$max)) {
+      max_val <- as.numeric(limits$max)
+      high_mask <- !is.na(val_vector) & val_vector > max_val
+    }
+
+    # Iterate through all target columns and apply the masks
+    for (t_col in target_cols) {
+      if (!t_col %in% names(df)) {
+        cli_alert_warning(
+          "Target scrub column {.var {t_col}} (configured for {.var {col}}) was not found in dataset. Skipping."
+        )
+        next
+      }
+
+      target_vector <- df[[t_col]]
+
+      # Process low mask violations for t_col
       if (any(low_mask, na.rm = TRUE)) {
         col_has_violations <- TRUE
         bad_rows <- which(low_mask)
         bad_ids  <- if (has_id) as.character(df$identifier[low_mask]) else NA_character_
 
         cli_alert_warning(
-          "Column {.var {target_col}} (via {.var {col}}): Found {sum(low_mask)} value(s) below min of {min_val}."
+          "Column {.var {t_col}} (via {.var {col}}): Found {sum(low_mask)} value(s) below min of {limits$min}."
         )
 
         violation_list[[length(violation_list) + 1]] <- tibble::tibble(
           identifier            = bad_ids,
           row_index             = bad_rows,
-          target_column         = target_col,
+          target_column         = t_col,
           target_value_scrubbed = as.character(target_vector[low_mask]),
           eval_column           = col,
           eval_value_observed   = as.character(val_vector[low_mask]),
@@ -140,41 +174,37 @@ enforce_l1_bounds <- function(df, cfg) {
 
         target_vector[low_mask] <- NA
       }
-    }
 
-    # Check upper bound
-    if ("max" %in% names(limits) && !is.null(limits$max) && !is.na(limits$max)) {
-      max_val <- as.numeric(limits$max)
-      high_mask <- !is.na(val_vector) & val_vector > max_val
-
+      # Process high mask violations for t_col
       if (any(high_mask, na.rm = TRUE)) {
         col_has_violations <- TRUE
         bad_rows <- which(high_mask)
         bad_ids  <- if (has_id) as.character(df$identifier[high_mask]) else NA_character_
 
         cli_alert_warning(
-          "Column {.var {target_col}} (via {.var {col}}): Found {sum(high_mask)} value(s) exceeding max of {max_val}."
+          "Column {.var {t_col}} (via {.var {col}}): Found {sum(high_mask)} value(s) exceeding max of {limits$max}."
         )
 
         violation_list[[length(violation_list) + 1]] <- tibble::tibble(
           identifier            = bad_ids,
           row_index             = bad_rows,
-          target_column         = target_col,
+          target_column         = t_col,
           target_value_scrubbed = as.character(target_vector[high_mask]),
           eval_column           = col,
           eval_value_observed   = as.character(val_vector[high_mask]),
-          rule_broken           = paste0("> ", max_val)
+          rule_broken           = paste0("> ", limits$max)
         )
 
         target_vector[high_mask] <- NA
       }
+
+      # Assign cleaned vector back to df
+      df[[t_col]] <- target_vector
     }
 
     if (!col_has_violations && ("min" %in% names(limits) || "max" %in% names(limits))) {
-      cli_alert_success("Column {.var {target_col}}: All values within bounds.")
+      cli_alert_success("Column(s) {.var {target_cols}}: All values within bounds.")
     }
-
-    df[[target_col]] <- target_vector
   }
 
   if (length(violation_list) > 0) {

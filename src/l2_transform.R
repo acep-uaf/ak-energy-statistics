@@ -8,36 +8,30 @@ library(purrr)
 library(cli)
 
 
-
 l2_transform_header <- function(l1_consolidated_dir) {
 
-  raw <- read_csv(path(l1_consolidated_dir, 'l1_pce_header_consolidated.csv'), show_col_types = FALSE)
-
+  raw <- read_csv(
+    path(l1_consolidated_dir, 'l1_pce_header_consolidated.csv'),
+    show_col_types = FALSE
+  )
 
   cleaned <- raw %>%
-  # split identifier
-  mutate(
-    # id1 = str_sub(identifier, 1, 3), .before = identifier, # All records are 'A33', not sure significance, drop?
-    project_code = str_sub(identifier, 2, 7), # Foreign key, project_code
-    stage_code = str_sub(identifier, 8, 9), # Fiscal month
-    shortcut_dimension_4_code = str_sub(identifier, 10, 11), # Fiscal year
-  .before = community) %>%
-
-  mutate(
-    fiscal_year = as.integer(fiscal_year),
-    calendar_month = ((as.numeric(stage_code) + 5) %% 12) + 1,
-    calendar_year = as.integer(calendar_year),
-    project_code = as.integer(project_code),
-    other_customers_description = as.character(other_customers_description)
-  ) %>%
-  arrange(calendar_year, stage_code)
-
+    mutate(
+      # Parse foreign keys & codes from 11-char identifier (e.g. A3321500226)
+      project_code = str_sub(identifier, 2, 7),
+      stage_code   = str_sub(identifier, 8, 9)   # Fiscal month (1..12)
+    ) %>%
+    mutate(
+      # Parse numeric types explicitly
+      project_code = as.integer(project_code),
+      fiscal_month = as.numeric(stage_code),
+      calendar_month = ((fiscal_month + 5) %% 12) + 1
+    )
 
 
   # Isolate other_*_kwh_* columns in order to pivot
   pivot_other <- cleaned %>%
-    select(identifier, line_no, starts_with("other_1"), starts_with("other_2")) %>%
-    # Collapse to long in order to combine other_1 and other_2
+    select(identifier, starts_with("other_1"), starts_with("other_2")) %>%
     pivot_longer(
       cols = c(
         other_1_kwh_type, other_2_kwh_type,
@@ -46,9 +40,8 @@ l2_transform_header <- function(l1_consolidated_dir) {
       names_to = c("source", ".value"),
       names_pattern = "other_(1|2)_(kwh_type|kwh_generated)"
     ) %>%
-    # Drop NA values (most data) in order to produce side table. Will rejoin later
     filter(!is.na(kwh_type)) %>%
-      select(-source) %>%
+    select(-source) %>%
     pivot_wider(
       names_from = kwh_type,
       values_from = kwh_generated,
@@ -59,28 +52,30 @@ l2_transform_header <- function(l1_consolidated_dir) {
   # Join side table back to main table
   df_out <- cleaned %>%
     rename(hydro_kwh_generated_main = hydro_kwh_generated) %>%
-    left_join(pivot_other, by = c("identifier", "line_no")) %>%
-    # Coalesce multiple hydro columns
-    # 10 years of data had one record with other_*_kwh_type = 'hydro', but combine for posterity
+    left_join(pivot_other, by = "identifier") %>%
     mutate(
-      purchased_from_2 = NA,
-      total_kwh_purchased_2 = NA,
-      hydro_kwh_combined = coalesce(hydro_kwh_generated, hydro_kwh_generated_main)
+      purchased_from_2 = NA_character_,
+      total_kwh_purchased_2 = NA_real_,
+      # Coalesce hydro columns if extra hydro exists in 'other'
+      hydro_kwh_combined = if ("hydro_kwh_generated" %in% names(.)) {
+        coalesce(as.numeric(hydro_kwh_generated), as.numeric(hydro_kwh_generated_main))
+      } else {
+        as.numeric(hydro_kwh_generated_main)
+      }
     ) %>%
-
-    # Clean up and reorder
+    # Clean up intermediate hydro & other columns
     select(
-      -hydro_kwh_generated,
       -hydro_kwh_generated_main,
       -starts_with("other_1"),
       -starts_with("other_2")
-    ) %>%
-    rename(
-      hydro_kwh_generated = hydro_kwh_combined
     )
 
-  return(df_out)
+  if ("hydro_kwh_generated" %in% names(df_out)) {
+    df_out <- select(df_out, -hydro_kwh_generated)
+  }
+  df_out <- rename(df_out, hydro_kwh_generated = hydro_kwh_combined)
 
+  return(df_out)
 }
 
 
