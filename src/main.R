@@ -57,6 +57,7 @@ l2_transform_pce(
   l1_lookup_sales_report_path = "data/l1_quality_checked/lookup/l1_lookup_sales_report.csv",
   l1_lookup_plants_path = "data/l1_quality_checked/lookup/l1_lookup_plants.csv",
   l1_lookup_operators_path = "data/l1_quality_checked/lookup/l1_lookup_operators.csv",
+  l1_lookup_pce_floor_path = "data/l1_quality_checked/lookup/l1_lookup_pce_floor.csv",
   config = "config/schema/l2_pce_schema.yml"
 )
 
