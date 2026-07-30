@@ -1,0 +1,18 @@
+pipeline:
+  stage: "l4_imputation"
+
+imputation:
+  target_columns:
+    - "fuel_used_gallons"
+    - "diesel_kwh_generated"
+    - "powerhouse_consumption_kwh"
+    - "residential_customers"
+    - "commercial_customers"
+
+  # Structural settings
+  group_by: "project_code"
+  year: "calendar_year"
+  month: "calendar_month"
+
+  # Imputation engine settings
+  method: "kalman"

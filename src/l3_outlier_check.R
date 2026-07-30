@@ -78,16 +78,31 @@ l3_check_outliers <- function(path_in, path_config, output_log_path, path_out) {
   message(paste("Successfully recorded", nrow(log_export), "outliers to log."))
 
   # --- Scrub Outliers directly in Wide Format ---
-  l3_clean <- l2
-
   if (nrow(outliers) > 0) {
-    row_idx <- outliers$.row_id
-    col_names <- outliers$column_tested
+    # Pivot outliers to wide format to easily mask matching cells
+    outliers_to_null <- outliers %>%
+      select(.row_id, column_tested) %>%
+      mutate(flag_null = TRUE) %>%
+      pivot_wider(names_from = column_tested, values_from = flag_null)
 
-    # Directly set flagged outlier cell coordinates to NA
-    for (i in seq_len(nrow(outliers))) {
-      l3_clean[row_idx[i], col_names[i]] <- NA_real_
+    # Left join and NULL out flagged cells
+    l3_clean <- l2_indexed %>%
+      left_join(outliers_to_null, by = ".row_id", suffix = c("", "_is_outlier"))
+
+    # Set matching cells to NA
+    for (col in columns_to_check) {
+      flag_col <- paste0(col, "_is_outlier")
+      if (flag_col %in% names(l3_clean)) {
+        l3_clean <- l3_clean %>%
+          mutate(!!col := if_else(!is.na(.data[[flag_col]]), NA_real_, .data[[col]]))
+      }
     }
+
+    # Clean up index and temporary join columns
+    l3_clean <- l3_clean %>%
+      select(-.row_id, -ends_with("_is_outlier"))
+  } else {
+    l3_clean <- l2
   }
 
   # --- Recalculate Derived Metrics Post-Scrubbing ---
