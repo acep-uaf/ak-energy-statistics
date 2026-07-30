@@ -31,6 +31,11 @@ l1_clean_lookup_operators(
   path_out = "data/l1_quality_checked/lookup/l1_lookup_operators.csv"
 )
 
+l1_clean_lookup_pce_floor(
+  dir_raw = "data/raw/lookup",
+  path_out = "data/l1_quality_checked/lookup/l1_lookup_pce_floor.csv"
+)
+
 l1_check_quality_pce_dir(
   dir_in = 'data/l0_extracted/monthly',
   pattern = 'l0_pce',
@@ -52,6 +57,7 @@ l2_transform_pce(
   l1_lookup_sales_report_path = "data/l1_quality_checked/lookup/l1_lookup_sales_report.csv",
   l1_lookup_plants_path = "data/l1_quality_checked/lookup/l1_lookup_plants.csv",
   l1_lookup_operators_path = "data/l1_quality_checked/lookup/l1_lookup_operators.csv",
+  l1_lookup_pce_floor_path = "data/l1_quality_checked/lookup/l1_lookup_pce_floor.csv",
   config = "config/schema/l2_pce_schema.yml"
 )
 

@@ -118,6 +118,7 @@ l2_transform_pce <- function(
   l1_lookup_sales_report_path,
   l1_lookup_plants_path,
   l1_lookup_operators_path,
+  l1_lookup_pce_floor_path,
   config = "config/schema/l2_pce_schema.yml") {
 
   header <- l2_transform_header(l1_consolidated_dir)
@@ -126,12 +127,14 @@ l2_transform_pce <- function(
   lookup_sales_report <- read_csv(l1_lookup_sales_report_path, show_col_types = FALSE)
   lookup_plants <- read_csv(l1_lookup_plants_path, show_col_types = FALSE)
   lookup_operators <- read_csv(l1_lookup_operators_path, show_col_types = FALSE)
+  lookup_pce_floor <- read_csv(l1_lookup_pce_floor_path, show_col_types = FALSE)
 
   joined <- header %>%
     left_join(rate_line, by = "identifier") %>%
     left_join(lookup_sales_report, by = join_by(project_code == pce_reporting_id)) %>%
     left_join(lookup_plants, by = join_by(project_code == pce_reporting_id)) %>%
-    left_join(lookup_operators, by = join_by(project_code == project_code))
+    left_join(lookup_operators, by = join_by(project_code == project_code)) %>%
+    left_join(lookup_pce_floor, by = join_by(fiscal_year))
 
   calculated <- joined %>%
     mutate(

@@ -80,3 +80,6 @@ pce_columns:
   - fuel_used_gallons
   - diesel_kwh_generated
   - diesel_efficiency
+  # - pce_base_rate
+  # - pce_ceiling
+  # - residential_maximum_monthly

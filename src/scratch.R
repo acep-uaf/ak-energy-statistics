@@ -13,13 +13,29 @@ tmp2 <- tmp %>%
   arrange(pce_reporting_id)
 
 
-l1 <- read_csv('data/l1_quality_checked/consolidated/l1_pce_header_consolidated.csv')
+l1_rate_line <- read_csv('data/l1_quality_checked/consolidated/l1_pce_rate_line_consolidated.csv')
+
+tmp <- l1_rate_line %>%
+  filter(
+    line_no == 10000 &
+    residential_rate < 0.1
+  )
+
+
+
+
+
+
+
+
+
+
+
+
 
 l2_pce <- read_csv('data/l2_transformed/consolidated/l2_pce.csv')
 
-l3_pce <- read_csv('data/l3_outliers_checked/consolidated/l3_pce.csv') %>%
-  select(diesel_efficiency, fuel_used_gallons, diesel_kwh_generated) %>%
-  mutate(diesel_efficiency_round_2 = fuel_used_gallons/diesel_kwh_generated)
+l3_pce <- read_csv('data/l3_outliers_checked/consolidated/l3_pce.csv')
 
 
 check_df <- read_csv('data/l3_outliers_checked/consolidated/l3_pce.csv') %>%
