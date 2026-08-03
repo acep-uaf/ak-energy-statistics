@@ -1,0 +1,86 @@
+---
+title: "Alaska PCE Outlier Reviewer"
+format:
+  html:
+    echo: false
+    include-in-header:
+      - text: |
+          <!-- Only Tabulator CSS & JS needed now -->
+          <link href="https://cdn.jsdelivr.net/npm/tabulator-tables@5.5.0/dist/css/tabulator_bootstrap5.min.css" rel="stylesheet">
+          <script src="https://cdn.jsdelivr.net/npm/tabulator-tables@5.5.0/dist/js/tabulator.min.js"></script>
+---
+
+```{ojs}
+// Access Tabulator globally loaded from <head>
+Tabulator = window.Tabulator
+```
+
+```{ojs}
+// Mock Outlier Data
+raw_data = [
+  { id: 1, community: "Utqiaġvik", date: "2026-01-15", kwh_rate: 1.42, status: "Flagged", override: "", is_outlier: true },
+  { id: 2, community: "Bethel",    date: "2026-02-15", kwh_rate: 0.65, status: "Keep",    override: "", is_outlier: false },
+  { id: 3, community: "Kotzebue",  date: "2026-03-15", kwh_rate: 2.89, status: "Flagged", override: "", is_outlier: true }
+]
+```
+
+## Outlier Visualizer
+
+```{ojs}
+viewof selectedCommunity = Inputs.select(
+  ["All", ...new Set(raw_data.map(d => d.community))],
+  { label: "Community:" }
+)
+
+filteredData = raw_data.filter(d =>
+  selectedCommunity === "All" || d.community === selectedCommunity
+)
+
+Plot.plot({
+  height: 250,
+  grid: true,
+  marks: [
+    Plot.dot(filteredData, {
+      x: "date",
+      y: "kwh_rate",
+      stroke: d => d.is_outlier ? "red" : "green",
+      r: 6,
+      tip: true
+    })
+  ]
+})
+```
+
+---
+
+## Decision Table
+
+```{ojs}
+tableContainer = {
+  const container = html`<div style="margin-bottom: 20px;"></div>`;
+
+  const table = new Tabulator(container, {
+    data: filteredData,
+    layout: "fitColumns",
+    columns: [
+      { title: "Community", field: "community" },
+      { title: "Date", field: "date" },
+      { title: "Rate ($)", field: "kwh_rate" },
+      {
+        title: "Decision",
+        field: "status",
+        editor: "list",
+        editorParams: { values: ["Keep", "Flag Invalid", "Override"] }
+      },
+      {
+        title: "Override Rate",
+        field: "override",
+        editor: "input"
+      }
+    ]
+  });
+
+  window.currentTable = table;
+  return container;
+}
+```
