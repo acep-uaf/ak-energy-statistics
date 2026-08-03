@@ -31,7 +31,7 @@ l3_check_outliers <- function(path_in, path_config, output_log_path, path_out) {
       values_to = "raw_value"
     ) %>%
     filter(!is.na(raw_value)) %>%
-    group_by(project_code, stage_code, column_tested) %>%
+    group_by(project_code, column_tested) %>%
     mutate(
       points_in_group = n(),
       median_val = median(raw_value, na.rm = TRUE),

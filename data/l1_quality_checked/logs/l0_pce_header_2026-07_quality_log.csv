@@ -107,9 +107,6 @@ l0_pce_header_2026-07.csv,A3322901026225003,114,peak_consumption_kw,0,peak_consu
 l0_pce_header_2026-07.csv,A3322901126225003,115,peak_consumption_kw,0,peak_consumption_kw,0,<= 0
 l0_pce_header_2026-07.csv,A3322901026225003,114,most_recent_fuel_purch_price,0.4863,most_recent_fuel_purch_price,0.4863,< 0.5
 l0_pce_header_2026-07.csv,A3322901126225003,115,most_recent_fuel_purch_price,0.4279,most_recent_fuel_purch_price,0.4279,< 0.5
-l0_pce_header_2026-07.csv,A3327101026225003,56,most_recent_fuel_purch_price,12.4372,most_recent_fuel_purch_price,12.4372,> 10
-l0_pce_header_2026-07.csv,A3325501026225003,97,most_recent_fuel_purch_price,10.9947,most_recent_fuel_purch_price,10.9947,> 10
-l0_pce_header_2026-07.csv,A3327101126225003,157,most_recent_fuel_purch_price,12.4372,most_recent_fuel_purch_price,12.4372,> 10
 l0_pce_header_2026-07.csv,A3325000926225003,14,diesel_kwh_generated,0,diesel_kwh_generated,0,<= 0
 l0_pce_header_2026-07.csv,A3310700926225003,27,diesel_kwh_generated,0,diesel_kwh_generated,0,<= 0
 l0_pce_header_2026-07.csv,A3310800926225003,28,diesel_kwh_generated,0,diesel_kwh_generated,0,<= 0

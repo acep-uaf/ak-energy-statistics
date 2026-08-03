@@ -4,12 +4,14 @@ source('src/l1_quality_check.R')
 source('src/l1_consolidate.R')
 source('src/l2_transform.R')
 source('src/l3_outlier_check.R')
+source('src/l4_impute.R')
 
 
 unlink('data/l0_extracted', recursive = T)
 unlink('data/l1_quality_checked', recursive = T)
 unlink('data/l2_transformed', recursive = T)
 unlink('data/l3_outliers_checked', recursive = T)
+unlink('data/l4_nulls_imputed', recursive = T)
 
 
 l0_extract_pce_dir(
@@ -61,9 +63,22 @@ l2_transform_pce(
   config = "config/schema/l2_pce_schema.yml"
 )
 
+start_time <- Sys.time()
 l3_check_outliers(
   path_in         = "data/l2_transformed/consolidated/l2_pce.csv",
   path_config     = "config/check_data/l3_pce_outlier_check.yml",
   output_log_path = "data/l3_outliers_checked/logs/l3_pce_outliers_log.csv",
   path_out = "data/l3_outliers_checked/consolidated/l3_pce.csv"
 )
+end_time <- Sys.time()
+print(end_time - start_time)
+
+
+start_time <- Sys.time()
+l4_impute_columns(
+  path_in = "data/l3_outliers_checked/consolidated/l3_pce.csv",
+  path_config = "config/imputations/l4_impute.yml",
+  path_out = "data/l4_nulls_imputed/consolidated/l4_pce.csv"
+)
+end_time <- Sys.time()
+print(end_time - start_time)
