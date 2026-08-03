@@ -77,7 +77,7 @@ l0_pce_header:
       allow_zero: false
     most_recent_fuel_purch_price:
       min: 0.50
-      max: 10.00
+      max: 15.00   # increase this value
     diesel_kwh_generated:  # preserve 0 if intertied?
       min: 0
       allow_zero: false

@@ -1,6 +1,6 @@
 library(janitor)
 library(readr)
-library(dplyr)
+library(tidyverse)
 
 tmp <- read_csv('data/l1_quality_checked/lookup/l1_lookup_sales_report.csv') %>%
   filter(!is.na(pce_reporting_id))
@@ -15,19 +15,25 @@ tmp2 <- tmp %>%
 
 l1_rate_line <- read_csv('data/l1_quality_checked/consolidated/l1_pce_rate_line_consolidated.csv')
 
-tmp <- l1_rate_line %>%
-  filter(
-    line_no == 10000 &
-    residential_rate < 0.1
+tmp <- read_csv('data/l3_outliers_checked/consolidated/l3_pce.csv') %>%
+  filter(sales_reporting_name == "Chilkat Valley")
+
+
+outliers <- read_csv('data/l3_outliers_checked/logs/l3_pce_outliers_log.csv')
+
+
+l3_pce <- read_csv('data/l3_outliers_checked/consolidated/l3_pce.csv')
+
+
+
+line_loss <- l3_pce %>%
+  mutate(
+    total_gen = sum(diesel_kwh_generated, hydro_kwh_generated, natural_gas_kwh_generated, wind_kwh_generated, solar_kwh_generated, other_kwh_generated),
+    total_sales = sum(residential_sold_to, commercial_sold_to, com_facil_sold_to, govt_facil_sold_to, unbilled_sold_to),
+    total_purchased = sum(total_kwh_purchased, total_kwh_purchased_2)
   )
 
-
-
-
-
-
-
-
+l4_imputed <- read_csv('data/l4_nulls_imputed/consolidated/l4_pce.csv')
 
 
 

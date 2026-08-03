@@ -1,0 +1,52 @@
+pipeline:
+  stage: "l4_imputation"
+
+imputation:
+  target_columns:
+    - "residential_rate"
+    # - "pce_rate" # check column name, is this effective_residential_rate?
+    - "pro_rata_rate"
+    - "effective_residential_rate"
+
+
+    - "most_recent_fuel_purch_price"
+    - "fuel_used_gallons"
+    - "fuel_cost"
+    - "non_fuel_expenses"
+    - "diesel_efficiency"
+    - "diesel_kwh_generated"
+    - "hydro_kwh_generated"
+    - "natural_gas_kwh_generated"
+    # - "wind_kwh_generated". # throwing lots of imputations, investigate
+    - "solar_kwh_generated"
+    - "other_kwh_generated"
+    - "powerhouse_consumption_kwh"
+    - "peak_consumption_kw"
+
+    - "residential_sold_to"
+    - "commercial_sold_to"
+    - "com_facil_sold_to"
+    - "govt_facil_sold_to"
+    - "unbilled_sold_to"
+    # - "sales_for_resale"  # check column name, don't have anything like this upstream
+
+    - "residential_customers"
+    - "commercial_customers"
+    - "com_facil_customers"
+    - "govt_facil_customers"
+    - "unbilled_customers"
+    - "other_customers"
+
+    # - "purchased_from".     # this is a freeform string column, how can we impute?
+    - total_kwh_purchased
+
+
+
+
+  # Structural settings
+  group_by: "project_code"
+  year: "calendar_year"
+  month: "calendar_month"
+
+  # Imputation engine settings
+  method: "kalman"
