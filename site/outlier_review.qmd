@@ -1,0 +1,199 @@
+---
+title: "Alaska PCE Outlier Reviewer"
+format:
+  html:
+    toc: false
+    echo: false
+    include-in-header:
+      - text: |
+          <link href="https://cdn.jsdelivr.net/npm/tabulator-tables@5.5.0/dist/css/tabulator_bootstrap5.min.css" rel="stylesheet">
+          <script src="https://cdn.jsdelivr.net/npm/tabulator-tables@5.5.0/dist/js/tabulator.min.js"></script>
+---
+
+```{ojs}
+Tabulator = window.Tabulator
+```
+
+
+
+## Outlier Visualizer
+
+
+
+```{ojs}
+// load data
+
+l3_pce_outliers_log = FileAttachment("data/l3_outliers_checked/logs/l3_pce_outliers_log.csv")
+  .csv()
+  .then(data => {
+    return data.map(d => {
+      let cleanedRow = {};
+
+      for (let key in d) {
+        let val = d[key];
+
+        if (val === "" || val === "NA" || val === null || val === undefined) {
+          cleanedRow[key] = null;
+        }
+        else if (key === "date" || isNaN(val) || isNaN(Number(val))) {
+          cleanedRow[key] = val;
+        }
+        else {
+          cleanedRow[key] = Number(val);
+        }
+      }
+
+      return cleanedRow;
+    })
+  })
+
+l3_pce = FileAttachment("data/l3_outliers_checked/consolidated/l3_pce.csv")
+  .csv()
+  .then(data => {
+    return data.map(d => {
+      let cleanedRow = {};
+
+      for (let key in d) {
+        let val = d[key];
+
+        if (val === "" || val === "NA" || val === null || val === undefined) {
+          cleanedRow[key] = null;
+        }
+        else if (key === "date" || isNaN(val) || isNaN(Number(val))) {
+          cleanedRow[key] = val;
+        }
+        else {
+          cleanedRow[key] = Number(val);
+        }
+      }
+
+      return cleanedRow;
+    })
+    .sort((a, b) => new Date(a.date) - new Date(b.date));
+  })
+```
+
+```{ojs}
+// dropdown selections
+
+communities = [...new Set(l3_pce_outliers_log.map(d => d.sales_reporting_name))]
+
+viewof selectedCommunity = Inputs.select(
+  communities,
+  { label: "Community:", value: communities[0] }
+)
+
+availableColumns = {
+  const subset = l3_pce_outliers_log.filter(d => d.sales_reporting_name === selectedCommunity);
+  return [...new Set(subset.map(d => d.column_tested))];
+}
+
+viewof selectedColumn = Inputs.select(
+  availableColumns,
+  { label: "Column:", value: availableColumns[0] }
+)
+```
+
+```{ojs}
+// filter data
+
+filteredFullSeries = l3_pce.filter(d =>
+  d.sales_reporting_name === selectedCommunity
+)
+
+filteredOutliers = l3_pce_outliers_log.filter(d =>
+  d.sales_reporting_name === selectedCommunity &&
+  d.column_tested === selectedColumn
+)
+
+```
+
+
+
+
+
+```{ojs}
+// plot lines, dots, outlier dots
+
+Plot.plot({
+  height: 500,
+  width: 1000,
+  grid: false,
+  x: {
+    type: "utc",
+    label: "Date",
+    ticks: 20,
+    tickFormat: "%Y"
+  },
+  y: {
+    label: selectedColumn !== "All" ? selectedColumn : "Value",
+    grid: true
+  },
+  marks: [
+    // timeseries line
+    Plot.line(filteredFullSeries, {
+      x: "date",
+      y: d => d[selectedColumn],
+      stroke: "#ccc",
+      strokeWidth: 1.5
+    }),
+
+    // timeseries dots
+    Plot.dot(filteredFullSeries, {
+      x: "date",
+      y: d => d[selectedColumn],
+      fill: "#888888",
+      r: 3,
+      tip: true
+    }),
+
+    // outlier dots
+    Plot.dot(filteredOutliers, {
+      x: "date",
+      y: d => d.raw_value ?? d.value,
+      fill: "red",
+      stroke: "black",
+      strokeWidth: 1,
+      r: 6,
+      tip: true
+    })
+  ]
+})
+```
+
+
+
+
+
+## Decision Table
+
+```{ojs}
+tableContainer = {
+  const container = html`<div style="margin-bottom: 20px;"></div>`;
+
+  const table = new Tabulator(container, {
+    data: filteredOutliers,
+    layout: "fitColumns",
+    columns: [
+      { title: "Community", field: "sales_reporting_name" },
+      { title: "Date", field: "date" },
+      { title: "Column", field: "column_tested"},
+      { title: "Flagged Outlier", field: "raw_value" },
+      {
+        title: "Decision",
+        field: "status",
+        editor: "list",
+        editorParams: { values: ["Use Suggested Imputation", "Set as NA", "Manual Override"] }
+      },
+      {
+        title: "Manual Override Value",
+        field: "override",
+        editor: "input"
+      }
+    ]
+  });
+
+  window.currentTable = table;
+  return container;
+}
+```
