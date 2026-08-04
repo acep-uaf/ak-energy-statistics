@@ -5,45 +5,156 @@ format:
     echo: false
     include-in-header:
       - text: |
-          <!-- Only Tabulator CSS & JS needed now -->
           <link href="https://cdn.jsdelivr.net/npm/tabulator-tables@5.5.0/dist/css/tabulator_bootstrap5.min.css" rel="stylesheet">
           <script src="https://cdn.jsdelivr.net/npm/tabulator-tables@5.5.0/dist/js/tabulator.min.js"></script>
 ---
 
 ```{ojs}
-// Access Tabulator globally loaded from <head>
 Tabulator = window.Tabulator
 ```
 
-```{ojs}
-// Mock Outlier Data
-raw_data = [
-  { id: 1, community: "Utqiaġvik", date: "2026-01-15", kwh_rate: 1.42, status: "Flagged", override: "", is_outlier: true },
-  { id: 2, community: "Bethel",    date: "2026-02-15", kwh_rate: 0.65, status: "Keep",    override: "", is_outlier: false },
-  { id: 3, community: "Kotzebue",  date: "2026-03-15", kwh_rate: 2.89, status: "Flagged", override: "", is_outlier: true }
-]
-```
+
 
 ## Outlier Visualizer
 
+
+
 ```{ojs}
+// load data
+
+l3_pce_outliers_log = FileAttachment("data/l3_outliers_checked/logs/l3_pce_outliers_log.csv")
+  .csv()
+  .then(data => {
+    return data.map(d => {
+      let cleanedRow = {};
+
+      for (let key in d) {
+        let val = d[key];
+
+        if (val === "" || val === "NA" || val === null || val === undefined) {
+          cleanedRow[key] = null;
+        }
+        else if (key === "date" || isNaN(val) || isNaN(Number(val))) {
+          cleanedRow[key] = val;
+        }
+        else {
+          cleanedRow[key] = Number(val);
+        }
+      }
+
+      return cleanedRow;
+    })
+    // .sort((a, b) => new Date(a.date) - new Date(b.date));
+  })
+
+l3_pce = FileAttachment("data/l3_outliers_checked/consolidated/l3_pce.csv")
+  .csv()
+  .then(data => {
+    return data.map(d => {
+      let cleanedRow = {};
+
+      for (let key in d) {
+        let val = d[key];
+
+        if (val === "" || val === "NA" || val === null || val === undefined) {
+          cleanedRow[key] = null;
+        }
+        else if (key === "date" || isNaN(val) || isNaN(Number(val))) {
+          cleanedRow[key] = val;
+        }
+        else {
+          cleanedRow[key] = Number(val);
+        }
+      }
+
+      return cleanedRow;
+    })
+    .sort((a, b) => new Date(a.date) - new Date(b.date));
+  })
+```
+
+```{ojs}
+// 1. Get unique communities (no "All")
+communities = [...new Set(l3_pce_outliers_log.map(d => d.sales_reporting_name))]
+
+// Select Community (defaults to the 1st community in the array)
 viewof selectedCommunity = Inputs.select(
-  ["All", ...new Set(raw_data.map(d => d.community))],
-  { label: "Community:" }
+  communities,
+  { label: "Community:", value: communities[0] }
 )
 
-filteredData = raw_data.filter(d =>
-  selectedCommunity === "All" || d.community === selectedCommunity
+// 2. Get columns ONLY for the chosen community (no "All")
+availableColumns = {
+  const subset = l3_pce_outliers_log.filter(d => d.sales_reporting_name === selectedCommunity);
+  return [...new Set(subset.map(d => d.column_tested))];
+}
+
+// Select Column (defaults to the 1st available column for that community)
+viewof selectedColumn = Inputs.select(
+  availableColumns,
+  { label: "Column:", value: availableColumns[0] }
+)
+```
+
+```{ojs}
+// Filter Full PCE Series for Context
+filteredFullSeries = l3_pce.filter(d =>
+  d.sales_reporting_name === selectedCommunity
 )
 
+// Filter Outliers Log for Chart & Table
+filteredOutliers = l3_pce_outliers_log.filter(d =>
+  d.sales_reporting_name === selectedCommunity &&
+  d.column_tested === selectedColumn
+)
+
+```
+
+
+
+
+
+```{ojs}
 Plot.plot({
-  height: 250,
-  grid: true,
+  height: 500,
+  width: 1000,
+  grid: false,
+  x: {
+    type: "utc",
+    label: "Date",
+    ticks: 20,
+    tickFormat: "%Y"
+  },
+  y: {
+    label: selectedColumn !== "All" ? selectedColumn : "Value",
+    grid: true
+  },
   marks: [
-    Plot.dot(filteredData, {
+    // Layer 1: Context Line connecting historical data points
+    // (If a specific column is chosen, plot that column; otherwise fallback to value/rate)
+    Plot.line(filteredFullSeries, {
       x: "date",
-      y: "kwh_rate",
-      stroke: d => d.is_outlier ? "red" : "green",
+      y: d => d[selectedColumn],
+      stroke: "#ccc",
+      strokeWidth: 1.5
+    }),
+
+    // Layer 2: All normal historical data points in muted gray
+    Plot.dot(filteredFullSeries, {
+      x: "date",
+      y: d => d[selectedColumn],
+      fill: "#888888",
+      r: 3,
+      tip: true
+    }),
+
+    // Layer 3: Highlighted Outliers overlaid on top in bright red
+    Plot.dot(filteredOutliers, {
+      x: "date",
+      y: d => d.raw_value ?? d.value, // Uses log's recorded outlier value
+      fill: "red",
+      stroke: "black",
+      strokeWidth: 1,
       r: 6,
       tip: true
     })
@@ -51,11 +162,13 @@ Plot.plot({
 })
 ```
 
----
 
-## Decision Table
 
-```{ojs}
+
+
+<!-- ## Decision Table
+
+{ojs}
 tableContainer = {
   const container = html`<div style="margin-bottom: 20px;"></div>`;
 
@@ -82,5 +195,4 @@ tableContainer = {
 
   window.currentTable = table;
   return container;
-}
-```
+} -->
