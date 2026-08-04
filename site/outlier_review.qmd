@@ -114,6 +114,7 @@ filteredOutliers = l3_pce_outliers_log.filter(d =>
 Plot.plot({
   height: 500,
   width: 1600,
+  marginLeft: 60,
   grid: false,
   x: {
     type: "utc",
@@ -139,8 +140,7 @@ Plot.plot({
       x: "date",
       y: d => d[selectedColumn],
       fill: "#888888",
-      r: 3,
-      tip: true
+      r: 3
     }),
 
     // outlier dots
@@ -150,9 +150,24 @@ Plot.plot({
       fill: "red",
       stroke: "black",
       strokeWidth: 1,
-      r: 6,
-      tip: false
-    })
+      r: 6
+    }),
+
+
+    Plot.tip(filteredFullSeries, Plot.pointer({
+        x: "date",
+        y: d => d[selectedColumn],
+        channels: {
+            "Community": "sales_reporting_name",
+            "Year": "calendar_year",
+            "Month": "calendar_month",
+            [selectedColumn]: d => d[selectedColumn]
+        },
+        format: {
+            x: false,
+            y: false
+        }
+    }))
   ]
 })
 ```
