@@ -25,7 +25,8 @@ l2_transform_header <- function(l1_consolidated_dir) {
       # Parse numeric types explicitly
       project_code = as.integer(project_code),
       fiscal_month = as.numeric(stage_code),
-      calendar_month = ((fiscal_month + 5) %% 12) + 1
+      calendar_month = ((fiscal_month + 5) %% 12) + 1,
+      date = make_date(calendar_year, calendar_month, 1)
     )
 
 

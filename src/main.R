@@ -63,15 +63,12 @@ l2_transform_pce(
   config = "config/schema/l2_pce_schema.yml"
 )
 
-start_time <- Sys.time()
 l3_check_outliers(
   path_in         = "data/l2_transformed/consolidated/l2_pce.csv",
   path_config     = "config/check_data/l3_pce_outlier_check.yml",
   output_log_path = "data/l3_outliers_checked/logs/l3_pce_outliers_log.csv",
   path_out = "data/l3_outliers_checked/consolidated/l3_pce.csv"
 )
-end_time <- Sys.time()
-print(end_time - start_time)
 
 
 start_time <- Sys.time()

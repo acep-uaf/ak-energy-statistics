@@ -7,6 +7,12 @@ pce_columns:
   - shortcut_dimension_4_code
   - line_no
 
+    # - umr_month
+  - date
+  - calendar_month
+  - fiscal_year
+  - calendar_year
+
   # From lookup table
   - sales_reporter_id
   - sales_reporting_name
@@ -58,10 +64,7 @@ pce_columns:
   # - other_2_kwh_type
   # - other_2_kwh_generated
 
-  # - umr_month
-  - calendar_month
-  - fiscal_year
-  - calendar_year
+
 
   - pce_eligible_residential_kwh
   - pce_eligible_com_facil_kwh
