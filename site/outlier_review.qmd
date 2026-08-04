@@ -2,6 +2,7 @@
 title: "Alaska PCE Outlier Reviewer"
 format:
   html:
+    toc: false
     echo: false
     include-in-header:
       - text: |
@@ -44,7 +45,6 @@ l3_pce_outliers_log = FileAttachment("data/l3_outliers_checked/logs/l3_pce_outli
 
       return cleanedRow;
     })
-    // .sort((a, b) => new Date(a.date) - new Date(b.date));
   })
 
 l3_pce = FileAttachment("data/l3_outliers_checked/consolidated/l3_pce.csv")
@@ -74,22 +74,20 @@ l3_pce = FileAttachment("data/l3_outliers_checked/consolidated/l3_pce.csv")
 ```
 
 ```{ojs}
-// 1. Get unique communities (no "All")
+// dropdown selections
+
 communities = [...new Set(l3_pce_outliers_log.map(d => d.sales_reporting_name))]
 
-// Select Community (defaults to the 1st community in the array)
 viewof selectedCommunity = Inputs.select(
   communities,
   { label: "Community:", value: communities[0] }
 )
 
-// 2. Get columns ONLY for the chosen community (no "All")
 availableColumns = {
   const subset = l3_pce_outliers_log.filter(d => d.sales_reporting_name === selectedCommunity);
   return [...new Set(subset.map(d => d.column_tested))];
 }
 
-// Select Column (defaults to the 1st available column for that community)
 viewof selectedColumn = Inputs.select(
   availableColumns,
   { label: "Column:", value: availableColumns[0] }
@@ -97,12 +95,12 @@ viewof selectedColumn = Inputs.select(
 ```
 
 ```{ojs}
-// Filter Full PCE Series for Context
+// filter data
+
 filteredFullSeries = l3_pce.filter(d =>
   d.sales_reporting_name === selectedCommunity
 )
 
-// Filter Outliers Log for Chart & Table
 filteredOutliers = l3_pce_outliers_log.filter(d =>
   d.sales_reporting_name === selectedCommunity &&
   d.column_tested === selectedColumn
@@ -115,6 +113,8 @@ filteredOutliers = l3_pce_outliers_log.filter(d =>
 
 
 ```{ojs}
+// plot lines, dots, outlier dots
+
 Plot.plot({
   height: 500,
   width: 1000,
@@ -130,8 +130,7 @@ Plot.plot({
     grid: true
   },
   marks: [
-    // Layer 1: Context Line connecting historical data points
-    // (If a specific column is chosen, plot that column; otherwise fallback to value/rate)
+    // timeseries line
     Plot.line(filteredFullSeries, {
       x: "date",
       y: d => d[selectedColumn],
@@ -139,7 +138,7 @@ Plot.plot({
       strokeWidth: 1.5
     }),
 
-    // Layer 2: All normal historical data points in muted gray
+    // timeseries dots
     Plot.dot(filteredFullSeries, {
       x: "date",
       y: d => d[selectedColumn],
@@ -148,10 +147,10 @@ Plot.plot({
       tip: true
     }),
 
-    // Layer 3: Highlighted Outliers overlaid on top in bright red
+    // outlier dots
     Plot.dot(filteredOutliers, {
       x: "date",
-      y: d => d.raw_value ?? d.value, // Uses log's recorded outlier value
+      y: d => d.raw_value ?? d.value,
       fill: "red",
       stroke: "black",
       strokeWidth: 1,
@@ -166,27 +165,28 @@ Plot.plot({
 
 
 
-<!-- ## Decision Table
+## Decision Table
 
-{ojs}
+```{ojs}
 tableContainer = {
   const container = html`<div style="margin-bottom: 20px;"></div>`;
 
   const table = new Tabulator(container, {
-    data: filteredData,
+    data: filteredOutliers,
     layout: "fitColumns",
     columns: [
-      { title: "Community", field: "community" },
+      { title: "Community", field: "sales_reporting_name" },
       { title: "Date", field: "date" },
-      { title: "Rate ($)", field: "kwh_rate" },
+      { title: "Column", field: "column_tested"},
+      { title: "Flagged Outlier", field: "raw_value" },
       {
         title: "Decision",
         field: "status",
         editor: "list",
-        editorParams: { values: ["Keep", "Flag Invalid", "Override"] }
+        editorParams: { values: ["Use Suggested Imputation", "Set as NA", "Manual Override"] }
       },
       {
-        title: "Override Rate",
+        title: "Manual Override Value",
         field: "override",
         editor: "input"
       }
@@ -195,4 +195,5 @@ tableContainer = {
 
   window.currentTable = table;
   return container;
-} -->
+}
+```
