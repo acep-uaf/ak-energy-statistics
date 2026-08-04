@@ -1,8 +1,9 @@
 ---
-title: "Alaska PCE Outlier Reviewer"
+# title: "Outlier Review"
 format:
   html:
     toc: false
+    page-layout: full
     echo: false
     include-in-header:
       - text: |
@@ -14,9 +15,7 @@ format:
 Tabulator = window.Tabulator
 ```
 
-
-
-## Outlier Visualizer
+### Outlier Review
 
 
 
@@ -47,7 +46,7 @@ l3_pce_outliers_log = FileAttachment("data/l3_outliers_checked/logs/l3_pce_outli
     })
   })
 
-l3_pce = FileAttachment("data/l3_outliers_checked/consolidated/l3_pce.csv")
+pce = FileAttachment("data/l2_transformed/consolidated/l2_pce.csv")
   .csv()
   .then(data => {
     return data.map(d => {
@@ -97,7 +96,7 @@ viewof selectedColumn = Inputs.select(
 ```{ojs}
 // filter data
 
-filteredFullSeries = l3_pce.filter(d =>
+filteredFullSeries = pce.filter(d =>
   d.sales_reporting_name === selectedCommunity
 )
 
@@ -109,15 +108,12 @@ filteredOutliers = l3_pce_outliers_log.filter(d =>
 ```
 
 
-
-
-
 ```{ojs}
 // plot lines, dots, outlier dots
 
 Plot.plot({
   height: 500,
-  width: 1000,
+  width: 1600,
   grid: false,
   x: {
     type: "utc",
@@ -155,7 +151,7 @@ Plot.plot({
       stroke: "black",
       strokeWidth: 1,
       r: 6,
-      tip: true
+      tip: false
     })
   ]
 })
@@ -165,7 +161,6 @@ Plot.plot({
 
 
 
-## Decision Table
 
 ```{ojs}
 tableContainer = {
@@ -173,22 +168,27 @@ tableContainer = {
 
   const table = new Tabulator(container, {
     data: filteredOutliers,
-    layout: "fitColumns",
+    layout: "fitDataFill",
     columns: [
-      { title: "Community", field: "sales_reporting_name" },
-      { title: "Date", field: "date" },
-      { title: "Column", field: "column_tested"},
-      { title: "Flagged Outlier", field: "raw_value" },
+      { title: "PCE ID", field: "project_code" },
+      { title: "Name", field: "sales_reporting_name" },
+      { title: "Year", field: "calendar_year" },
+      { title: "Month", field: "calendar_month" },
+      { title: "Column Tested", field: "column_tested"},
+      { title: "Orig Value", field: "raw_value" },
+      { title: "Override Value", field: "override_value" },
       {
-        title: "Decision",
+        title: "Override Action",
         field: "status",
         editor: "list",
-        editorParams: { values: ["Use Suggested Imputation", "Set as NA", "Manual Override"] }
-      },
-      {
-        title: "Manual Override Value",
-        field: "override",
-        editor: "input"
+        editorParams: { values: [
+            "Value out of bounds, but original value kept",
+            "Carry forward",
+            "Annual average",
+            "Average of preceding and proceeding months",
+            "Average of months from other years",
+            "Manual override: expert opinion"
+            ] }
       }
     ]
   });
