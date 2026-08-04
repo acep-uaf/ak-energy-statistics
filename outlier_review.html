@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Alaska PCE Outlier Reviewer – Alaska Energy Statistics</title>
+<title>outlier_review – Alaska Energy Statistics</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -118,7 +118,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -157,7 +157,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="./outlier_review.html" aria-current="page"> 
-<span class="menu-text">Alaska PCE Outlier Reviewer</span></a>
+<span class="menu-text">Outlier Review</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
@@ -174,91 +174,75 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Alaska PCE Outlier Reviewer</h1>
-</div>
+<main class="content column-page" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
-
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
 
 
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="13" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 12;"><span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>Tabulator <span class="op">=</span> <span class="bu">window</span><span class="op">.</span><span class="at">Tabulator</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="14" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 13;"><span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>Tabulator <span class="op">=</span> <span class="bu">window</span><span class="op">.</span><span class="at">Tabulator</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-1" data-nodetype="declaration">
 
 </div>
 </div>
 </div>
-<section id="outlier-visualizer" class="level2">
-<h2 class="anchored" data-anchor-id="outlier-visualizer">Outlier Visualizer</h2>
+<section id="outlier-review" class="level3">
+<h3 class="anchored" data-anchor-id="outlier-review">Outlier Review</h3>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb2" data-startfrom="26" data-source-offset="-14"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 25;"><span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>l3_pce_outliers_log <span class="op">=</span> <span class="fu">FileAttachment</span>(<span class="st">"data/l3_outliers_checked/logs/l3_pce_outliers_log.csv"</span>)</span>
-<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>  <span class="op">.</span><span class="fu">csv</span>()</span>
-<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>  <span class="op">.</span><span class="fu">then</span>(data <span class="kw">=&gt;</span> {</span>
-<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> data<span class="op">.</span><span class="fu">map</span>(d <span class="kw">=&gt;</span> {</span>
-<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a>      <span class="kw">let</span> cleanedRow <span class="op">=</span> {}<span class="op">;</span></span>
-<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a>      <span class="cf">for</span> (<span class="kw">let</span> key <span class="kw">in</span> d) {</span>
-<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a>        <span class="kw">let</span> val <span class="op">=</span> d[key]<span class="op">;</span></span>
-<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> (val <span class="op">===</span> <span class="st">""</span> <span class="op">||</span> val <span class="op">===</span> <span class="st">"NA"</span> <span class="op">||</span> val <span class="op">===</span> <span class="kw">null</span> <span class="op">||</span> val <span class="op">===</span> <span class="kw">undefined</span>) {</span>
-<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a>          cleanedRow[key] <span class="op">=</span> <span class="kw">null</span><span class="op">;</span></span>
-<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a>        }</span>
-<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a>        <span class="cf">else</span> <span class="cf">if</span> (key <span class="op">===</span> <span class="st">"date"</span> <span class="op">||</span> <span class="pp">isNaN</span>(val) <span class="op">||</span> <span class="pp">isNaN</span>(<span class="bu">Number</span>(val))) {</span>
-<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a>          cleanedRow[key] <span class="op">=</span> val<span class="op">;</span></span>
-<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a>        }</span>
-<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a>        <span class="cf">else</span> {</span>
-<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a>          cleanedRow[key] <span class="op">=</span> <span class="bu">Number</span>(val)<span class="op">;</span></span>
-<span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a>        }</span>
-<span id="cb2-44"><a href="#cb2-44" aria-hidden="true" tabindex="-1"></a>      }</span>
-<span id="cb2-45"><a href="#cb2-45" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-46"><a href="#cb2-46" aria-hidden="true" tabindex="-1"></a>      <span class="cf">return</span> cleanedRow<span class="op">;</span></span>
-<span id="cb2-47"><a href="#cb2-47" aria-hidden="true" tabindex="-1"></a>    })</span>
-<span id="cb2-48"><a href="#cb2-48" aria-hidden="true" tabindex="-1"></a>  })</span>
-<span id="cb2-49"><a href="#cb2-49" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-50"><a href="#cb2-50" aria-hidden="true" tabindex="-1"></a>l3_pce <span class="op">=</span> <span class="fu">FileAttachment</span>(<span class="st">"data/l3_outliers_checked/consolidated/l3_pce.csv"</span>)</span>
-<span id="cb2-51"><a href="#cb2-51" aria-hidden="true" tabindex="-1"></a>  <span class="op">.</span><span class="fu">csv</span>()</span>
-<span id="cb2-52"><a href="#cb2-52" aria-hidden="true" tabindex="-1"></a>  <span class="op">.</span><span class="fu">then</span>(data <span class="kw">=&gt;</span> {</span>
-<span id="cb2-53"><a href="#cb2-53" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> data<span class="op">.</span><span class="fu">map</span>(d <span class="kw">=&gt;</span> {</span>
-<span id="cb2-54"><a href="#cb2-54" aria-hidden="true" tabindex="-1"></a>      <span class="kw">let</span> cleanedRow <span class="op">=</span> {}<span class="op">;</span></span>
-<span id="cb2-55"><a href="#cb2-55" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-56"><a href="#cb2-56" aria-hidden="true" tabindex="-1"></a>      <span class="cf">for</span> (<span class="kw">let</span> key <span class="kw">in</span> d) {</span>
-<span id="cb2-57"><a href="#cb2-57" aria-hidden="true" tabindex="-1"></a>        <span class="kw">let</span> val <span class="op">=</span> d[key]<span class="op">;</span></span>
-<span id="cb2-58"><a href="#cb2-58" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-59"><a href="#cb2-59" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> (val <span class="op">===</span> <span class="st">""</span> <span class="op">||</span> val <span class="op">===</span> <span class="st">"NA"</span> <span class="op">||</span> val <span class="op">===</span> <span class="kw">null</span> <span class="op">||</span> val <span class="op">===</span> <span class="kw">undefined</span>) {</span>
-<span id="cb2-60"><a href="#cb2-60" aria-hidden="true" tabindex="-1"></a>          cleanedRow[key] <span class="op">=</span> <span class="kw">null</span><span class="op">;</span></span>
-<span id="cb2-61"><a href="#cb2-61" aria-hidden="true" tabindex="-1"></a>        }</span>
-<span id="cb2-62"><a href="#cb2-62" aria-hidden="true" tabindex="-1"></a>        <span class="cf">else</span> <span class="cf">if</span> (key <span class="op">===</span> <span class="st">"date"</span> <span class="op">||</span> <span class="pp">isNaN</span>(val) <span class="op">||</span> <span class="pp">isNaN</span>(<span class="bu">Number</span>(val))) {</span>
-<span id="cb2-63"><a href="#cb2-63" aria-hidden="true" tabindex="-1"></a>          cleanedRow[key] <span class="op">=</span> val<span class="op">;</span></span>
-<span id="cb2-64"><a href="#cb2-64" aria-hidden="true" tabindex="-1"></a>        }</span>
-<span id="cb2-65"><a href="#cb2-65" aria-hidden="true" tabindex="-1"></a>        <span class="cf">else</span> {</span>
-<span id="cb2-66"><a href="#cb2-66" aria-hidden="true" tabindex="-1"></a>          cleanedRow[key] <span class="op">=</span> <span class="bu">Number</span>(val)<span class="op">;</span></span>
-<span id="cb2-67"><a href="#cb2-67" aria-hidden="true" tabindex="-1"></a>        }</span>
-<span id="cb2-68"><a href="#cb2-68" aria-hidden="true" tabindex="-1"></a>      }</span>
-<span id="cb2-69"><a href="#cb2-69" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-70"><a href="#cb2-70" aria-hidden="true" tabindex="-1"></a>      <span class="cf">return</span> cleanedRow<span class="op">;</span></span>
-<span id="cb2-71"><a href="#cb2-71" aria-hidden="true" tabindex="-1"></a>    })</span>
-<span id="cb2-72"><a href="#cb2-72" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">sort</span>((a<span class="op">,</span> b) <span class="kw">=&gt;</span> <span class="kw">new</span> <span class="bu">Date</span>(a<span class="op">.</span><span class="at">date</span>) <span class="op">-</span> <span class="kw">new</span> <span class="bu">Date</span>(b<span class="op">.</span><span class="at">date</span>))<span class="op">;</span></span>
-<span id="cb2-73"><a href="#cb2-73" aria-hidden="true" tabindex="-1"></a>  })</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb2" data-startfrom="25" data-source-offset="-14"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 24;"><span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>l3_pce_outliers_log <span class="op">=</span> <span class="fu">FileAttachment</span>(<span class="st">"data/l3_outliers_checked/logs/l3_pce_outliers_log.csv"</span>)</span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>  <span class="op">.</span><span class="fu">csv</span>()</span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>  <span class="op">.</span><span class="fu">then</span>(data <span class="kw">=&gt;</span> {</span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> data<span class="op">.</span><span class="fu">map</span>(d <span class="kw">=&gt;</span> {</span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>      <span class="kw">let</span> cleanedRow <span class="op">=</span> {}<span class="op">;</span></span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a>      <span class="cf">for</span> (<span class="kw">let</span> key <span class="kw">in</span> d) {</span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a>        <span class="kw">let</span> val <span class="op">=</span> d[key]<span class="op">;</span></span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> (val <span class="op">===</span> <span class="st">""</span> <span class="op">||</span> val <span class="op">===</span> <span class="st">"NA"</span> <span class="op">||</span> val <span class="op">===</span> <span class="kw">null</span> <span class="op">||</span> val <span class="op">===</span> <span class="kw">undefined</span>) {</span>
+<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a>          cleanedRow[key] <span class="op">=</span> <span class="kw">null</span><span class="op">;</span></span>
+<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a>        }</span>
+<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a>        <span class="cf">else</span> <span class="cf">if</span> (key <span class="op">===</span> <span class="st">"date"</span> <span class="op">||</span> <span class="pp">isNaN</span>(val) <span class="op">||</span> <span class="pp">isNaN</span>(<span class="bu">Number</span>(val))) {</span>
+<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a>          cleanedRow[key] <span class="op">=</span> val<span class="op">;</span></span>
+<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a>        }</span>
+<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a>        <span class="cf">else</span> {</span>
+<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a>          cleanedRow[key] <span class="op">=</span> <span class="bu">Number</span>(val)<span class="op">;</span></span>
+<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a>        }</span>
+<span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a>      }</span>
+<span id="cb2-44"><a href="#cb2-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-45"><a href="#cb2-45" aria-hidden="true" tabindex="-1"></a>      <span class="cf">return</span> cleanedRow<span class="op">;</span></span>
+<span id="cb2-46"><a href="#cb2-46" aria-hidden="true" tabindex="-1"></a>    })</span>
+<span id="cb2-47"><a href="#cb2-47" aria-hidden="true" tabindex="-1"></a>  })</span>
+<span id="cb2-48"><a href="#cb2-48" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-49"><a href="#cb2-49" aria-hidden="true" tabindex="-1"></a>pce <span class="op">=</span> <span class="fu">FileAttachment</span>(<span class="st">"data/l2_transformed/consolidated/l2_pce.csv"</span>)</span>
+<span id="cb2-50"><a href="#cb2-50" aria-hidden="true" tabindex="-1"></a>  <span class="op">.</span><span class="fu">csv</span>()</span>
+<span id="cb2-51"><a href="#cb2-51" aria-hidden="true" tabindex="-1"></a>  <span class="op">.</span><span class="fu">then</span>(data <span class="kw">=&gt;</span> {</span>
+<span id="cb2-52"><a href="#cb2-52" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> data<span class="op">.</span><span class="fu">map</span>(d <span class="kw">=&gt;</span> {</span>
+<span id="cb2-53"><a href="#cb2-53" aria-hidden="true" tabindex="-1"></a>      <span class="kw">let</span> cleanedRow <span class="op">=</span> {}<span class="op">;</span></span>
+<span id="cb2-54"><a href="#cb2-54" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-55"><a href="#cb2-55" aria-hidden="true" tabindex="-1"></a>      <span class="cf">for</span> (<span class="kw">let</span> key <span class="kw">in</span> d) {</span>
+<span id="cb2-56"><a href="#cb2-56" aria-hidden="true" tabindex="-1"></a>        <span class="kw">let</span> val <span class="op">=</span> d[key]<span class="op">;</span></span>
+<span id="cb2-57"><a href="#cb2-57" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-58"><a href="#cb2-58" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> (val <span class="op">===</span> <span class="st">""</span> <span class="op">||</span> val <span class="op">===</span> <span class="st">"NA"</span> <span class="op">||</span> val <span class="op">===</span> <span class="kw">null</span> <span class="op">||</span> val <span class="op">===</span> <span class="kw">undefined</span>) {</span>
+<span id="cb2-59"><a href="#cb2-59" aria-hidden="true" tabindex="-1"></a>          cleanedRow[key] <span class="op">=</span> <span class="kw">null</span><span class="op">;</span></span>
+<span id="cb2-60"><a href="#cb2-60" aria-hidden="true" tabindex="-1"></a>        }</span>
+<span id="cb2-61"><a href="#cb2-61" aria-hidden="true" tabindex="-1"></a>        <span class="cf">else</span> <span class="cf">if</span> (key <span class="op">===</span> <span class="st">"date"</span> <span class="op">||</span> <span class="pp">isNaN</span>(val) <span class="op">||</span> <span class="pp">isNaN</span>(<span class="bu">Number</span>(val))) {</span>
+<span id="cb2-62"><a href="#cb2-62" aria-hidden="true" tabindex="-1"></a>          cleanedRow[key] <span class="op">=</span> val<span class="op">;</span></span>
+<span id="cb2-63"><a href="#cb2-63" aria-hidden="true" tabindex="-1"></a>        }</span>
+<span id="cb2-64"><a href="#cb2-64" aria-hidden="true" tabindex="-1"></a>        <span class="cf">else</span> {</span>
+<span id="cb2-65"><a href="#cb2-65" aria-hidden="true" tabindex="-1"></a>          cleanedRow[key] <span class="op">=</span> <span class="bu">Number</span>(val)<span class="op">;</span></span>
+<span id="cb2-66"><a href="#cb2-66" aria-hidden="true" tabindex="-1"></a>        }</span>
+<span id="cb2-67"><a href="#cb2-67" aria-hidden="true" tabindex="-1"></a>      }</span>
+<span id="cb2-68"><a href="#cb2-68" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-69"><a href="#cb2-69" aria-hidden="true" tabindex="-1"></a>      <span class="cf">return</span> cleanedRow<span class="op">;</span></span>
+<span id="cb2-70"><a href="#cb2-70" aria-hidden="true" tabindex="-1"></a>    })</span>
+<span id="cb2-71"><a href="#cb2-71" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">sort</span>((a<span class="op">,</span> b) <span class="kw">=&gt;</span> <span class="kw">new</span> <span class="bu">Date</span>(a<span class="op">.</span><span class="at">date</span>) <span class="op">-</span> <span class="kw">new</span> <span class="bu">Date</span>(b<span class="op">.</span><span class="at">date</span>))<span class="op">;</span></span>
+<span id="cb2-72"><a href="#cb2-72" aria-hidden="true" tabindex="-1"></a>  })</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div>
 <div id="ojs-cell-2-1" data-nodetype="declaration">
@@ -275,22 +259,22 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb3" data-startfrom="79" data-source-offset="-24"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 78;"><span id="cb3-79"><a href="#cb3-79" aria-hidden="true" tabindex="-1"></a>communities <span class="op">=</span> [<span class="op">...</span><span class="kw">new</span> <span class="bu">Set</span>(l3_pce_outliers_log<span class="op">.</span><span class="fu">map</span>(d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">sales_reporting_name</span>))]</span>
-<span id="cb3-80"><a href="#cb3-80" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-81"><a href="#cb3-81" aria-hidden="true" tabindex="-1"></a>viewof selectedCommunity <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">select</span>(</span>
-<span id="cb3-82"><a href="#cb3-82" aria-hidden="true" tabindex="-1"></a>  communities<span class="op">,</span></span>
-<span id="cb3-83"><a href="#cb3-83" aria-hidden="true" tabindex="-1"></a>  { <span class="dt">label</span><span class="op">:</span> <span class="st">"Community:"</span><span class="op">,</span> <span class="dt">value</span><span class="op">:</span> communities[<span class="dv">0</span>] }</span>
-<span id="cb3-84"><a href="#cb3-84" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb3-85"><a href="#cb3-85" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-86"><a href="#cb3-86" aria-hidden="true" tabindex="-1"></a>availableColumns <span class="op">=</span> {</span>
-<span id="cb3-87"><a href="#cb3-87" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> subset <span class="op">=</span> l3_pce_outliers_log<span class="op">.</span><span class="fu">filter</span>(d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">sales_reporting_name</span> <span class="op">===</span> selectedCommunity)<span class="op">;</span></span>
-<span id="cb3-88"><a href="#cb3-88" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> [<span class="op">...</span><span class="kw">new</span> <span class="bu">Set</span>(subset<span class="op">.</span><span class="fu">map</span>(d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">column_tested</span>))]<span class="op">;</span></span>
-<span id="cb3-89"><a href="#cb3-89" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb3-90"><a href="#cb3-90" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-91"><a href="#cb3-91" aria-hidden="true" tabindex="-1"></a>viewof selectedColumn <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">select</span>(</span>
-<span id="cb3-92"><a href="#cb3-92" aria-hidden="true" tabindex="-1"></a>  availableColumns<span class="op">,</span></span>
-<span id="cb3-93"><a href="#cb3-93" aria-hidden="true" tabindex="-1"></a>  { <span class="dt">label</span><span class="op">:</span> <span class="st">"Column:"</span><span class="op">,</span> <span class="dt">value</span><span class="op">:</span> availableColumns[<span class="dv">0</span>] }</span>
-<span id="cb3-94"><a href="#cb3-94" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb3" data-startfrom="78" data-source-offset="-24"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 77;"><span id="cb3-78"><a href="#cb3-78" aria-hidden="true" tabindex="-1"></a>communities <span class="op">=</span> [<span class="op">...</span><span class="kw">new</span> <span class="bu">Set</span>(l3_pce_outliers_log<span class="op">.</span><span class="fu">map</span>(d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">sales_reporting_name</span>))]</span>
+<span id="cb3-79"><a href="#cb3-79" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-80"><a href="#cb3-80" aria-hidden="true" tabindex="-1"></a>viewof selectedCommunity <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">select</span>(</span>
+<span id="cb3-81"><a href="#cb3-81" aria-hidden="true" tabindex="-1"></a>  communities<span class="op">,</span></span>
+<span id="cb3-82"><a href="#cb3-82" aria-hidden="true" tabindex="-1"></a>  { <span class="dt">label</span><span class="op">:</span> <span class="st">"Community:"</span><span class="op">,</span> <span class="dt">value</span><span class="op">:</span> communities[<span class="dv">0</span>] }</span>
+<span id="cb3-83"><a href="#cb3-83" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb3-84"><a href="#cb3-84" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-85"><a href="#cb3-85" aria-hidden="true" tabindex="-1"></a>availableColumns <span class="op">=</span> {</span>
+<span id="cb3-86"><a href="#cb3-86" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> subset <span class="op">=</span> l3_pce_outliers_log<span class="op">.</span><span class="fu">filter</span>(d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">sales_reporting_name</span> <span class="op">===</span> selectedCommunity)<span class="op">;</span></span>
+<span id="cb3-87"><a href="#cb3-87" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> [<span class="op">...</span><span class="kw">new</span> <span class="bu">Set</span>(subset<span class="op">.</span><span class="fu">map</span>(d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">column_tested</span>))]<span class="op">;</span></span>
+<span id="cb3-88"><a href="#cb3-88" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb3-89"><a href="#cb3-89" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-90"><a href="#cb3-90" aria-hidden="true" tabindex="-1"></a>viewof selectedColumn <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">select</span>(</span>
+<span id="cb3-91"><a href="#cb3-91" aria-hidden="true" tabindex="-1"></a>  availableColumns<span class="op">,</span></span>
+<span id="cb3-92"><a href="#cb3-92" aria-hidden="true" tabindex="-1"></a>  { <span class="dt">label</span><span class="op">:</span> <span class="st">"Column:"</span><span class="op">,</span> <span class="dt">value</span><span class="op">:</span> availableColumns[<span class="dv">0</span>] }</span>
+<span id="cb3-93"><a href="#cb3-93" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div>
 <div id="ojs-cell-3-1" data-nodetype="declaration">
@@ -321,14 +305,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb4" data-startfrom="100" data-source-offset="-16"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 99;"><span id="cb4-100"><a href="#cb4-100" aria-hidden="true" tabindex="-1"></a>filteredFullSeries <span class="op">=</span> l3_pce<span class="op">.</span><span class="fu">filter</span>(d <span class="kw">=&gt;</span></span>
-<span id="cb4-101"><a href="#cb4-101" aria-hidden="true" tabindex="-1"></a>  d<span class="op">.</span><span class="at">sales_reporting_name</span> <span class="op">===</span> selectedCommunity</span>
-<span id="cb4-102"><a href="#cb4-102" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb4-103"><a href="#cb4-103" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-104"><a href="#cb4-104" aria-hidden="true" tabindex="-1"></a>filteredOutliers <span class="op">=</span> l3_pce_outliers_log<span class="op">.</span><span class="fu">filter</span>(d <span class="kw">=&gt;</span></span>
-<span id="cb4-105"><a href="#cb4-105" aria-hidden="true" tabindex="-1"></a>  d<span class="op">.</span><span class="at">sales_reporting_name</span> <span class="op">===</span> selectedCommunity <span class="op">&amp;&amp;</span></span>
-<span id="cb4-106"><a href="#cb4-106" aria-hidden="true" tabindex="-1"></a>  d<span class="op">.</span><span class="at">column_tested</span> <span class="op">===</span> selectedColumn</span>
-<span id="cb4-107"><a href="#cb4-107" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb4" data-startfrom="99" data-source-offset="-16"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 98;"><span id="cb4-99"><a href="#cb4-99" aria-hidden="true" tabindex="-1"></a>filteredFullSeries <span class="op">=</span> pce<span class="op">.</span><span class="fu">filter</span>(d <span class="kw">=&gt;</span></span>
+<span id="cb4-100"><a href="#cb4-100" aria-hidden="true" tabindex="-1"></a>  d<span class="op">.</span><span class="at">sales_reporting_name</span> <span class="op">===</span> selectedCommunity</span>
+<span id="cb4-101"><a href="#cb4-101" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb4-102"><a href="#cb4-102" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-103"><a href="#cb4-103" aria-hidden="true" tabindex="-1"></a>filteredOutliers <span class="op">=</span> l3_pce_outliers_log<span class="op">.</span><span class="fu">filter</span>(d <span class="kw">=&gt;</span></span>
+<span id="cb4-104"><a href="#cb4-104" aria-hidden="true" tabindex="-1"></a>  d<span class="op">.</span><span class="at">sales_reporting_name</span> <span class="op">===</span> selectedCommunity <span class="op">&amp;&amp;</span></span>
+<span id="cb4-105"><a href="#cb4-105" aria-hidden="true" tabindex="-1"></a>  d<span class="op">.</span><span class="at">column_tested</span> <span class="op">===</span> selectedColumn</span>
+<span id="cb4-106"><a href="#cb4-106" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div>
 <div id="ojs-cell-4-1" data-nodetype="declaration">
@@ -345,83 +329,85 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb5" data-startfrom="115" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 114;"><span id="cb5-115"><a href="#cb5-115" aria-hidden="true" tabindex="-1"></a><span class="co">// plot lines, dots, outlier dots</span></span>
-<span id="cb5-116"><a href="#cb5-116" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-117"><a href="#cb5-117" aria-hidden="true" tabindex="-1"></a>Plot<span class="op">.</span><span class="fu">plot</span>({</span>
-<span id="cb5-118"><a href="#cb5-118" aria-hidden="true" tabindex="-1"></a>  <span class="dt">height</span><span class="op">:</span> <span class="dv">500</span><span class="op">,</span></span>
-<span id="cb5-119"><a href="#cb5-119" aria-hidden="true" tabindex="-1"></a>  <span class="dt">width</span><span class="op">:</span> <span class="dv">1000</span><span class="op">,</span></span>
-<span id="cb5-120"><a href="#cb5-120" aria-hidden="true" tabindex="-1"></a>  <span class="dt">grid</span><span class="op">:</span> <span class="kw">false</span><span class="op">,</span></span>
-<span id="cb5-121"><a href="#cb5-121" aria-hidden="true" tabindex="-1"></a>  <span class="dt">x</span><span class="op">:</span> {</span>
-<span id="cb5-122"><a href="#cb5-122" aria-hidden="true" tabindex="-1"></a>    <span class="dt">type</span><span class="op">:</span> <span class="st">"utc"</span><span class="op">,</span></span>
-<span id="cb5-123"><a href="#cb5-123" aria-hidden="true" tabindex="-1"></a>    <span class="dt">label</span><span class="op">:</span> <span class="st">"Date"</span><span class="op">,</span></span>
-<span id="cb5-124"><a href="#cb5-124" aria-hidden="true" tabindex="-1"></a>    <span class="dt">ticks</span><span class="op">:</span> <span class="dv">20</span><span class="op">,</span></span>
-<span id="cb5-125"><a href="#cb5-125" aria-hidden="true" tabindex="-1"></a>    <span class="dt">tickFormat</span><span class="op">:</span> <span class="st">"%Y"</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb5" data-startfrom="111" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 110;"><span id="cb5-111"><a href="#cb5-111" aria-hidden="true" tabindex="-1"></a><span class="co">// plot lines, dots, outlier dots</span></span>
+<span id="cb5-112"><a href="#cb5-112" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-113"><a href="#cb5-113" aria-hidden="true" tabindex="-1"></a>Plot<span class="op">.</span><span class="fu">plot</span>({</span>
+<span id="cb5-114"><a href="#cb5-114" aria-hidden="true" tabindex="-1"></a>  <span class="dt">height</span><span class="op">:</span> <span class="dv">500</span><span class="op">,</span></span>
+<span id="cb5-115"><a href="#cb5-115" aria-hidden="true" tabindex="-1"></a>  <span class="dt">width</span><span class="op">:</span> <span class="dv">1600</span><span class="op">,</span></span>
+<span id="cb5-116"><a href="#cb5-116" aria-hidden="true" tabindex="-1"></a>  <span class="dt">grid</span><span class="op">:</span> <span class="kw">false</span><span class="op">,</span></span>
+<span id="cb5-117"><a href="#cb5-117" aria-hidden="true" tabindex="-1"></a>  <span class="dt">x</span><span class="op">:</span> {</span>
+<span id="cb5-118"><a href="#cb5-118" aria-hidden="true" tabindex="-1"></a>    <span class="dt">type</span><span class="op">:</span> <span class="st">"utc"</span><span class="op">,</span></span>
+<span id="cb5-119"><a href="#cb5-119" aria-hidden="true" tabindex="-1"></a>    <span class="dt">label</span><span class="op">:</span> <span class="st">"Date"</span><span class="op">,</span></span>
+<span id="cb5-120"><a href="#cb5-120" aria-hidden="true" tabindex="-1"></a>    <span class="dt">ticks</span><span class="op">:</span> <span class="dv">20</span><span class="op">,</span></span>
+<span id="cb5-121"><a href="#cb5-121" aria-hidden="true" tabindex="-1"></a>    <span class="dt">tickFormat</span><span class="op">:</span> <span class="st">"%Y"</span></span>
+<span id="cb5-122"><a href="#cb5-122" aria-hidden="true" tabindex="-1"></a>  }<span class="op">,</span></span>
+<span id="cb5-123"><a href="#cb5-123" aria-hidden="true" tabindex="-1"></a>  <span class="dt">y</span><span class="op">:</span> {</span>
+<span id="cb5-124"><a href="#cb5-124" aria-hidden="true" tabindex="-1"></a>    <span class="dt">label</span><span class="op">:</span> selectedColumn <span class="op">!==</span> <span class="st">"All"</span> <span class="op">?</span> selectedColumn <span class="op">:</span> <span class="st">"Value"</span><span class="op">,</span></span>
+<span id="cb5-125"><a href="#cb5-125" aria-hidden="true" tabindex="-1"></a>    <span class="dt">grid</span><span class="op">:</span> <span class="kw">true</span></span>
 <span id="cb5-126"><a href="#cb5-126" aria-hidden="true" tabindex="-1"></a>  }<span class="op">,</span></span>
-<span id="cb5-127"><a href="#cb5-127" aria-hidden="true" tabindex="-1"></a>  <span class="dt">y</span><span class="op">:</span> {</span>
-<span id="cb5-128"><a href="#cb5-128" aria-hidden="true" tabindex="-1"></a>    <span class="dt">label</span><span class="op">:</span> selectedColumn <span class="op">!==</span> <span class="st">"All"</span> <span class="op">?</span> selectedColumn <span class="op">:</span> <span class="st">"Value"</span><span class="op">,</span></span>
-<span id="cb5-129"><a href="#cb5-129" aria-hidden="true" tabindex="-1"></a>    <span class="dt">grid</span><span class="op">:</span> <span class="kw">true</span></span>
-<span id="cb5-130"><a href="#cb5-130" aria-hidden="true" tabindex="-1"></a>  }<span class="op">,</span></span>
-<span id="cb5-131"><a href="#cb5-131" aria-hidden="true" tabindex="-1"></a>  <span class="dt">marks</span><span class="op">:</span> [</span>
-<span id="cb5-132"><a href="#cb5-132" aria-hidden="true" tabindex="-1"></a>    <span class="co">// timeseries line</span></span>
-<span id="cb5-133"><a href="#cb5-133" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">line</span>(filteredFullSeries<span class="op">,</span> {</span>
-<span id="cb5-134"><a href="#cb5-134" aria-hidden="true" tabindex="-1"></a>      <span class="dt">x</span><span class="op">:</span> <span class="st">"date"</span><span class="op">,</span></span>
-<span id="cb5-135"><a href="#cb5-135" aria-hidden="true" tabindex="-1"></a>      <span class="dt">y</span><span class="op">:</span> d <span class="kw">=&gt;</span> d[selectedColumn]<span class="op">,</span></span>
-<span id="cb5-136"><a href="#cb5-136" aria-hidden="true" tabindex="-1"></a>      <span class="dt">stroke</span><span class="op">:</span> <span class="st">"#ccc"</span><span class="op">,</span></span>
-<span id="cb5-137"><a href="#cb5-137" aria-hidden="true" tabindex="-1"></a>      <span class="dt">strokeWidth</span><span class="op">:</span> <span class="fl">1.5</span></span>
-<span id="cb5-138"><a href="#cb5-138" aria-hidden="true" tabindex="-1"></a>    })<span class="op">,</span></span>
-<span id="cb5-139"><a href="#cb5-139" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-140"><a href="#cb5-140" aria-hidden="true" tabindex="-1"></a>    <span class="co">// timeseries dots</span></span>
-<span id="cb5-141"><a href="#cb5-141" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">dot</span>(filteredFullSeries<span class="op">,</span> {</span>
-<span id="cb5-142"><a href="#cb5-142" aria-hidden="true" tabindex="-1"></a>      <span class="dt">x</span><span class="op">:</span> <span class="st">"date"</span><span class="op">,</span></span>
-<span id="cb5-143"><a href="#cb5-143" aria-hidden="true" tabindex="-1"></a>      <span class="dt">y</span><span class="op">:</span> d <span class="kw">=&gt;</span> d[selectedColumn]<span class="op">,</span></span>
-<span id="cb5-144"><a href="#cb5-144" aria-hidden="true" tabindex="-1"></a>      <span class="dt">fill</span><span class="op">:</span> <span class="st">"#888888"</span><span class="op">,</span></span>
-<span id="cb5-145"><a href="#cb5-145" aria-hidden="true" tabindex="-1"></a>      <span class="dt">r</span><span class="op">:</span> <span class="dv">3</span><span class="op">,</span></span>
-<span id="cb5-146"><a href="#cb5-146" aria-hidden="true" tabindex="-1"></a>      <span class="dt">tip</span><span class="op">:</span> <span class="kw">true</span></span>
-<span id="cb5-147"><a href="#cb5-147" aria-hidden="true" tabindex="-1"></a>    })<span class="op">,</span></span>
-<span id="cb5-148"><a href="#cb5-148" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-149"><a href="#cb5-149" aria-hidden="true" tabindex="-1"></a>    <span class="co">// outlier dots</span></span>
-<span id="cb5-150"><a href="#cb5-150" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">dot</span>(filteredOutliers<span class="op">,</span> {</span>
-<span id="cb5-151"><a href="#cb5-151" aria-hidden="true" tabindex="-1"></a>      <span class="dt">x</span><span class="op">:</span> <span class="st">"date"</span><span class="op">,</span></span>
-<span id="cb5-152"><a href="#cb5-152" aria-hidden="true" tabindex="-1"></a>      <span class="dt">y</span><span class="op">:</span> d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">raw_value</span> <span class="op">??</span> d<span class="op">.</span><span class="at">value</span><span class="op">,</span></span>
-<span id="cb5-153"><a href="#cb5-153" aria-hidden="true" tabindex="-1"></a>      <span class="dt">fill</span><span class="op">:</span> <span class="st">"red"</span><span class="op">,</span></span>
-<span id="cb5-154"><a href="#cb5-154" aria-hidden="true" tabindex="-1"></a>      <span class="dt">stroke</span><span class="op">:</span> <span class="st">"black"</span><span class="op">,</span></span>
-<span id="cb5-155"><a href="#cb5-155" aria-hidden="true" tabindex="-1"></a>      <span class="dt">strokeWidth</span><span class="op">:</span> <span class="dv">1</span><span class="op">,</span></span>
-<span id="cb5-156"><a href="#cb5-156" aria-hidden="true" tabindex="-1"></a>      <span class="dt">r</span><span class="op">:</span> <span class="dv">6</span><span class="op">,</span></span>
-<span id="cb5-157"><a href="#cb5-157" aria-hidden="true" tabindex="-1"></a>      <span class="dt">tip</span><span class="op">:</span> <span class="kw">true</span></span>
-<span id="cb5-158"><a href="#cb5-158" aria-hidden="true" tabindex="-1"></a>    })</span>
-<span id="cb5-159"><a href="#cb5-159" aria-hidden="true" tabindex="-1"></a>  ]</span>
-<span id="cb5-160"><a href="#cb5-160" aria-hidden="true" tabindex="-1"></a>})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb5-127"><a href="#cb5-127" aria-hidden="true" tabindex="-1"></a>  <span class="dt">marks</span><span class="op">:</span> [</span>
+<span id="cb5-128"><a href="#cb5-128" aria-hidden="true" tabindex="-1"></a>    <span class="co">// timeseries line</span></span>
+<span id="cb5-129"><a href="#cb5-129" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">line</span>(filteredFullSeries<span class="op">,</span> {</span>
+<span id="cb5-130"><a href="#cb5-130" aria-hidden="true" tabindex="-1"></a>      <span class="dt">x</span><span class="op">:</span> <span class="st">"date"</span><span class="op">,</span></span>
+<span id="cb5-131"><a href="#cb5-131" aria-hidden="true" tabindex="-1"></a>      <span class="dt">y</span><span class="op">:</span> d <span class="kw">=&gt;</span> d[selectedColumn]<span class="op">,</span></span>
+<span id="cb5-132"><a href="#cb5-132" aria-hidden="true" tabindex="-1"></a>      <span class="dt">stroke</span><span class="op">:</span> <span class="st">"#ccc"</span><span class="op">,</span></span>
+<span id="cb5-133"><a href="#cb5-133" aria-hidden="true" tabindex="-1"></a>      <span class="dt">strokeWidth</span><span class="op">:</span> <span class="fl">1.5</span></span>
+<span id="cb5-134"><a href="#cb5-134" aria-hidden="true" tabindex="-1"></a>    })<span class="op">,</span></span>
+<span id="cb5-135"><a href="#cb5-135" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-136"><a href="#cb5-136" aria-hidden="true" tabindex="-1"></a>    <span class="co">// timeseries dots</span></span>
+<span id="cb5-137"><a href="#cb5-137" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">dot</span>(filteredFullSeries<span class="op">,</span> {</span>
+<span id="cb5-138"><a href="#cb5-138" aria-hidden="true" tabindex="-1"></a>      <span class="dt">x</span><span class="op">:</span> <span class="st">"date"</span><span class="op">,</span></span>
+<span id="cb5-139"><a href="#cb5-139" aria-hidden="true" tabindex="-1"></a>      <span class="dt">y</span><span class="op">:</span> d <span class="kw">=&gt;</span> d[selectedColumn]<span class="op">,</span></span>
+<span id="cb5-140"><a href="#cb5-140" aria-hidden="true" tabindex="-1"></a>      <span class="dt">fill</span><span class="op">:</span> <span class="st">"#888888"</span><span class="op">,</span></span>
+<span id="cb5-141"><a href="#cb5-141" aria-hidden="true" tabindex="-1"></a>      <span class="dt">r</span><span class="op">:</span> <span class="dv">3</span><span class="op">,</span></span>
+<span id="cb5-142"><a href="#cb5-142" aria-hidden="true" tabindex="-1"></a>      <span class="dt">tip</span><span class="op">:</span> <span class="kw">true</span></span>
+<span id="cb5-143"><a href="#cb5-143" aria-hidden="true" tabindex="-1"></a>    })<span class="op">,</span></span>
+<span id="cb5-144"><a href="#cb5-144" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-145"><a href="#cb5-145" aria-hidden="true" tabindex="-1"></a>    <span class="co">// outlier dots</span></span>
+<span id="cb5-146"><a href="#cb5-146" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">dot</span>(filteredOutliers<span class="op">,</span> {</span>
+<span id="cb5-147"><a href="#cb5-147" aria-hidden="true" tabindex="-1"></a>      <span class="dt">x</span><span class="op">:</span> <span class="st">"date"</span><span class="op">,</span></span>
+<span id="cb5-148"><a href="#cb5-148" aria-hidden="true" tabindex="-1"></a>      <span class="dt">y</span><span class="op">:</span> d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">raw_value</span> <span class="op">??</span> d<span class="op">.</span><span class="at">value</span><span class="op">,</span></span>
+<span id="cb5-149"><a href="#cb5-149" aria-hidden="true" tabindex="-1"></a>      <span class="dt">fill</span><span class="op">:</span> <span class="st">"red"</span><span class="op">,</span></span>
+<span id="cb5-150"><a href="#cb5-150" aria-hidden="true" tabindex="-1"></a>      <span class="dt">stroke</span><span class="op">:</span> <span class="st">"black"</span><span class="op">,</span></span>
+<span id="cb5-151"><a href="#cb5-151" aria-hidden="true" tabindex="-1"></a>      <span class="dt">strokeWidth</span><span class="op">:</span> <span class="dv">1</span><span class="op">,</span></span>
+<span id="cb5-152"><a href="#cb5-152" aria-hidden="true" tabindex="-1"></a>      <span class="dt">r</span><span class="op">:</span> <span class="dv">6</span><span class="op">,</span></span>
+<span id="cb5-153"><a href="#cb5-153" aria-hidden="true" tabindex="-1"></a>      <span class="dt">tip</span><span class="op">:</span> <span class="kw">false</span></span>
+<span id="cb5-154"><a href="#cb5-154" aria-hidden="true" tabindex="-1"></a>    })</span>
+<span id="cb5-155"><a href="#cb5-155" aria-hidden="true" tabindex="-1"></a>  ]</span>
+<span id="cb5-156"><a href="#cb5-156" aria-hidden="true" tabindex="-1"></a>})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-5" data-nodetype="expression">
 
 </div>
 </div>
 </div>
-</section>
-<section id="decision-table" class="level2">
-<h2 class="anchored" data-anchor-id="decision-table">Decision Table</h2>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb6" data-startfrom="170" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 169;"><span id="cb6-170"><a href="#cb6-170" aria-hidden="true" tabindex="-1"></a>tableContainer <span class="op">=</span> {</span>
-<span id="cb6-171"><a href="#cb6-171" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> container <span class="op">=</span> <span class="fu">html</span><span class="vs">`&lt;div style="margin-bottom: 20px;"&gt;&lt;/div&gt;`</span><span class="op">;</span></span>
-<span id="cb6-172"><a href="#cb6-172" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-173"><a href="#cb6-173" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> table <span class="op">=</span> <span class="kw">new</span> <span class="fu">Tabulator</span>(container<span class="op">,</span> {</span>
-<span id="cb6-174"><a href="#cb6-174" aria-hidden="true" tabindex="-1"></a>    <span class="dt">data</span><span class="op">:</span> filteredOutliers<span class="op">,</span></span>
-<span id="cb6-175"><a href="#cb6-175" aria-hidden="true" tabindex="-1"></a>    <span class="dt">layout</span><span class="op">:</span> <span class="st">"fitColumns"</span><span class="op">,</span></span>
-<span id="cb6-176"><a href="#cb6-176" aria-hidden="true" tabindex="-1"></a>    <span class="dt">columns</span><span class="op">:</span> [</span>
-<span id="cb6-177"><a href="#cb6-177" aria-hidden="true" tabindex="-1"></a>      { <span class="dt">title</span><span class="op">:</span> <span class="st">"Community"</span><span class="op">,</span> <span class="dt">field</span><span class="op">:</span> <span class="st">"sales_reporting_name"</span> }<span class="op">,</span></span>
-<span id="cb6-178"><a href="#cb6-178" aria-hidden="true" tabindex="-1"></a>      { <span class="dt">title</span><span class="op">:</span> <span class="st">"Date"</span><span class="op">,</span> <span class="dt">field</span><span class="op">:</span> <span class="st">"date"</span> }<span class="op">,</span></span>
-<span id="cb6-179"><a href="#cb6-179" aria-hidden="true" tabindex="-1"></a>      { <span class="dt">title</span><span class="op">:</span> <span class="st">"Column"</span><span class="op">,</span> <span class="dt">field</span><span class="op">:</span> <span class="st">"column_tested"</span>}<span class="op">,</span></span>
-<span id="cb6-180"><a href="#cb6-180" aria-hidden="true" tabindex="-1"></a>      { <span class="dt">title</span><span class="op">:</span> <span class="st">"Flagged Outlier"</span><span class="op">,</span> <span class="dt">field</span><span class="op">:</span> <span class="st">"raw_value"</span> }<span class="op">,</span></span>
-<span id="cb6-181"><a href="#cb6-181" aria-hidden="true" tabindex="-1"></a>      {</span>
-<span id="cb6-182"><a href="#cb6-182" aria-hidden="true" tabindex="-1"></a>        <span class="dt">title</span><span class="op">:</span> <span class="st">"Decision"</span><span class="op">,</span></span>
-<span id="cb6-183"><a href="#cb6-183" aria-hidden="true" tabindex="-1"></a>        <span class="dt">field</span><span class="op">:</span> <span class="st">"status"</span><span class="op">,</span></span>
-<span id="cb6-184"><a href="#cb6-184" aria-hidden="true" tabindex="-1"></a>        <span class="dt">editor</span><span class="op">:</span> <span class="st">"list"</span><span class="op">,</span></span>
-<span id="cb6-185"><a href="#cb6-185" aria-hidden="true" tabindex="-1"></a>        <span class="dt">editorParams</span><span class="op">:</span> { <span class="dt">values</span><span class="op">:</span> [<span class="st">"Use Suggested Imputation"</span><span class="op">,</span> <span class="st">"Set as NA"</span><span class="op">,</span> <span class="st">"Manual Override"</span>] }</span>
-<span id="cb6-186"><a href="#cb6-186" aria-hidden="true" tabindex="-1"></a>      }<span class="op">,</span></span>
-<span id="cb6-187"><a href="#cb6-187" aria-hidden="true" tabindex="-1"></a>      {</span>
-<span id="cb6-188"><a href="#cb6-188" aria-hidden="true" tabindex="-1"></a>        <span class="dt">title</span><span class="op">:</span> <span class="st">"Manual Override Value"</span><span class="op">,</span></span>
-<span id="cb6-189"><a href="#cb6-189" aria-hidden="true" tabindex="-1"></a>        <span class="dt">field</span><span class="op">:</span> <span class="st">"override"</span><span class="op">,</span></span>
-<span id="cb6-190"><a href="#cb6-190" aria-hidden="true" tabindex="-1"></a>        <span class="dt">editor</span><span class="op">:</span> <span class="st">"input"</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb6" data-startfrom="165" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 164;"><span id="cb6-165"><a href="#cb6-165" aria-hidden="true" tabindex="-1"></a>tableContainer <span class="op">=</span> {</span>
+<span id="cb6-166"><a href="#cb6-166" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> container <span class="op">=</span> <span class="fu">html</span><span class="vs">`&lt;div style="margin-bottom: 20px;"&gt;&lt;/div&gt;`</span><span class="op">;</span></span>
+<span id="cb6-167"><a href="#cb6-167" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-168"><a href="#cb6-168" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> table <span class="op">=</span> <span class="kw">new</span> <span class="fu">Tabulator</span>(container<span class="op">,</span> {</span>
+<span id="cb6-169"><a href="#cb6-169" aria-hidden="true" tabindex="-1"></a>    <span class="dt">data</span><span class="op">:</span> filteredOutliers<span class="op">,</span></span>
+<span id="cb6-170"><a href="#cb6-170" aria-hidden="true" tabindex="-1"></a>    <span class="dt">layout</span><span class="op">:</span> <span class="st">"fitDataFill"</span><span class="op">,</span></span>
+<span id="cb6-171"><a href="#cb6-171" aria-hidden="true" tabindex="-1"></a>    <span class="dt">columns</span><span class="op">:</span> [</span>
+<span id="cb6-172"><a href="#cb6-172" aria-hidden="true" tabindex="-1"></a>      { <span class="dt">title</span><span class="op">:</span> <span class="st">"PCE ID"</span><span class="op">,</span> <span class="dt">field</span><span class="op">:</span> <span class="st">"project_code"</span> }<span class="op">,</span></span>
+<span id="cb6-173"><a href="#cb6-173" aria-hidden="true" tabindex="-1"></a>      { <span class="dt">title</span><span class="op">:</span> <span class="st">"Name"</span><span class="op">,</span> <span class="dt">field</span><span class="op">:</span> <span class="st">"sales_reporting_name"</span> }<span class="op">,</span></span>
+<span id="cb6-174"><a href="#cb6-174" aria-hidden="true" tabindex="-1"></a>      { <span class="dt">title</span><span class="op">:</span> <span class="st">"Year"</span><span class="op">,</span> <span class="dt">field</span><span class="op">:</span> <span class="st">"calendar_year"</span> }<span class="op">,</span></span>
+<span id="cb6-175"><a href="#cb6-175" aria-hidden="true" tabindex="-1"></a>      { <span class="dt">title</span><span class="op">:</span> <span class="st">"Month"</span><span class="op">,</span> <span class="dt">field</span><span class="op">:</span> <span class="st">"calendar_month"</span> }<span class="op">,</span></span>
+<span id="cb6-176"><a href="#cb6-176" aria-hidden="true" tabindex="-1"></a>      { <span class="dt">title</span><span class="op">:</span> <span class="st">"Column Tested"</span><span class="op">,</span> <span class="dt">field</span><span class="op">:</span> <span class="st">"column_tested"</span>}<span class="op">,</span></span>
+<span id="cb6-177"><a href="#cb6-177" aria-hidden="true" tabindex="-1"></a>      { <span class="dt">title</span><span class="op">:</span> <span class="st">"Orig Value"</span><span class="op">,</span> <span class="dt">field</span><span class="op">:</span> <span class="st">"raw_value"</span> }<span class="op">,</span></span>
+<span id="cb6-178"><a href="#cb6-178" aria-hidden="true" tabindex="-1"></a>      { <span class="dt">title</span><span class="op">:</span> <span class="st">"Override Value"</span><span class="op">,</span> <span class="dt">field</span><span class="op">:</span> <span class="st">"override_value"</span> }<span class="op">,</span></span>
+<span id="cb6-179"><a href="#cb6-179" aria-hidden="true" tabindex="-1"></a>      {</span>
+<span id="cb6-180"><a href="#cb6-180" aria-hidden="true" tabindex="-1"></a>        <span class="dt">title</span><span class="op">:</span> <span class="st">"Override Action"</span><span class="op">,</span></span>
+<span id="cb6-181"><a href="#cb6-181" aria-hidden="true" tabindex="-1"></a>        <span class="dt">field</span><span class="op">:</span> <span class="st">"status"</span><span class="op">,</span></span>
+<span id="cb6-182"><a href="#cb6-182" aria-hidden="true" tabindex="-1"></a>        <span class="dt">editor</span><span class="op">:</span> <span class="st">"list"</span><span class="op">,</span></span>
+<span id="cb6-183"><a href="#cb6-183" aria-hidden="true" tabindex="-1"></a>        <span class="dt">editorParams</span><span class="op">:</span> { <span class="dt">values</span><span class="op">:</span> [</span>
+<span id="cb6-184"><a href="#cb6-184" aria-hidden="true" tabindex="-1"></a>            <span class="st">"Value out of bounds, but original value kept"</span><span class="op">,</span></span>
+<span id="cb6-185"><a href="#cb6-185" aria-hidden="true" tabindex="-1"></a>            <span class="st">"Carry forward"</span><span class="op">,</span></span>
+<span id="cb6-186"><a href="#cb6-186" aria-hidden="true" tabindex="-1"></a>            <span class="st">"Annual average"</span><span class="op">,</span></span>
+<span id="cb6-187"><a href="#cb6-187" aria-hidden="true" tabindex="-1"></a>            <span class="st">"Average of preceding and proceeding months"</span><span class="op">,</span></span>
+<span id="cb6-188"><a href="#cb6-188" aria-hidden="true" tabindex="-1"></a>            <span class="st">"Average of months from other years"</span><span class="op">,</span></span>
+<span id="cb6-189"><a href="#cb6-189" aria-hidden="true" tabindex="-1"></a>            <span class="st">"Manual override: expert opinion"</span></span>
+<span id="cb6-190"><a href="#cb6-190" aria-hidden="true" tabindex="-1"></a>            ] }</span>
 <span id="cb6-191"><a href="#cb6-191" aria-hidden="true" tabindex="-1"></a>      }</span>
 <span id="cb6-192"><a href="#cb6-192" aria-hidden="true" tabindex="-1"></a>    ]</span>
 <span id="cb6-193"><a href="#cb6-193" aria-hidden="true" tabindex="-1"></a>  })<span class="op">;</span></span>
@@ -441,7 +427,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </main> <!-- /main -->
 <script type="ojs-module-contents">
-eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6IlRhYnVsYXRvciA9IHdpbmRvdy5UYWJ1bGF0b3JcbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMiIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6Ii8vIGxvYWQgZGF0YVxuXG5sM19wY2Vfb3V0bGllcnNfbG9nID0gRmlsZUF0dGFjaG1lbnQoXCJkYXRhL2wzX291dGxpZXJzX2NoZWNrZWQvbG9ncy9sM19wY2Vfb3V0bGllcnNfbG9nLmNzdlwiKVxuICAuY3N2KClcbiAgLnRoZW4oZGF0YSA9PiB7XG4gICAgcmV0dXJuIGRhdGEubWFwKGQgPT4ge1xuICAgICAgbGV0IGNsZWFuZWRSb3cgPSB7fTtcblxuICAgICAgZm9yIChsZXQga2V5IGluIGQpIHtcbiAgICAgICAgbGV0IHZhbCA9IGRba2V5XTtcblxuICAgICAgICBpZiAodmFsID09PSBcIlwiIHx8IHZhbCA9PT0gXCJOQVwiIHx8IHZhbCA9PT0gbnVsbCB8fCB2YWwgPT09IHVuZGVmaW5lZCkge1xuICAgICAgICAgIGNsZWFuZWRSb3dba2V5XSA9IG51bGw7XG4gICAgICAgIH1cbiAgICAgICAgZWxzZSBpZiAoa2V5ID09PSBcImRhdGVcIiB8fCBpc05hTih2YWwpIHx8IGlzTmFOKE51bWJlcih2YWwpKSkge1xuICAgICAgICAgIGNsZWFuZWRSb3dba2V5XSA9IHZhbDtcbiAgICAgICAgfVxuICAgICAgICBlbHNlIHtcbiAgICAgICAgICBjbGVhbmVkUm93W2tleV0gPSBOdW1iZXIodmFsKTtcbiAgICAgICAgfVxuICAgICAgfVxuXG4gICAgICByZXR1cm4gY2xlYW5lZFJvdztcbiAgICB9KVxuICB9KVxuXG5sM19wY2UgPSBGaWxlQXR0YWNobWVudChcImRhdGEvbDNfb3V0bGllcnNfY2hlY2tlZC9jb25zb2xpZGF0ZWQvbDNfcGNlLmNzdlwiKVxuICAuY3N2KClcbiAgLnRoZW4oZGF0YSA9PiB7XG4gICAgcmV0dXJuIGRhdGEubWFwKGQgPT4ge1xuICAgICAgbGV0IGNsZWFuZWRSb3cgPSB7fTtcblxuICAgICAgZm9yIChsZXQga2V5IGluIGQpIHtcbiAgICAgICAgbGV0IHZhbCA9IGRba2V5XTtcblxuICAgICAgICBpZiAodmFsID09PSBcIlwiIHx8IHZhbCA9PT0gXCJOQVwiIHx8IHZhbCA9PT0gbnVsbCB8fCB2YWwgPT09IHVuZGVmaW5lZCkge1xuICAgICAgICAgIGNsZWFuZWRSb3dba2V5XSA9IG51bGw7XG4gICAgICAgIH1cbiAgICAgICAgZWxzZSBpZiAoa2V5ID09PSBcImRhdGVcIiB8fCBpc05hTih2YWwpIHx8IGlzTmFOKE51bWJlcih2YWwpKSkge1xuICAgICAgICAgIGNsZWFuZWRSb3dba2V5XSA9IHZhbDtcbiAgICAgICAgfVxuICAgICAgICBlbHNlIHtcbiAgICAgICAgICBjbGVhbmVkUm93W2tleV0gPSBOdW1iZXIodmFsKTtcbiAgICAgICAgfVxuICAgICAgfVxuXG4gICAgICByZXR1cm4gY2xlYW5lZFJvdztcbiAgICB9KVxuICAgIC5zb3J0KChhLCBiKSA9PiBuZXcgRGF0ZShhLmRhdGUpIC0gbmV3IERhdGUoYi5kYXRlKSk7XG4gIH0pXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTMiLCJpbmxpbmUiOmZhbHNlLCJzb3VyY2UiOiIvLyBkcm9wZG93biBzZWxlY3Rpb25zXG5cbmNvbW11bml0aWVzID0gWy4uLm5ldyBTZXQobDNfcGNlX291dGxpZXJzX2xvZy5tYXAoZCA9PiBkLnNhbGVzX3JlcG9ydGluZ19uYW1lKSldXG5cbnZpZXdvZiBzZWxlY3RlZENvbW11bml0eSA9IElucHV0cy5zZWxlY3QoXG4gIGNvbW11bml0aWVzLFxuICB7IGxhYmVsOiBcIkNvbW11bml0eTpcIiwgdmFsdWU6IGNvbW11bml0aWVzWzBdIH1cbilcblxuYXZhaWxhYmxlQ29sdW1ucyA9IHtcbiAgY29uc3Qgc3Vic2V0ID0gbDNfcGNlX291dGxpZXJzX2xvZy5maWx0ZXIoZCA9PiBkLnNhbGVzX3JlcG9ydGluZ19uYW1lID09PSBzZWxlY3RlZENvbW11bml0eSk7XG4gIHJldHVybiBbLi4ubmV3IFNldChzdWJzZXQubWFwKGQgPT4gZC5jb2x1bW5fdGVzdGVkKSldO1xufVxuXG52aWV3b2Ygc2VsZWN0ZWRDb2x1bW4gPSBJbnB1dHMuc2VsZWN0KFxuICBhdmFpbGFibGVDb2x1bW5zLFxuICB7IGxhYmVsOiBcIkNvbHVtbjpcIiwgdmFsdWU6IGF2YWlsYWJsZUNvbHVtbnNbMF0gfVxuKVxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC00IiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoiLy8gZmlsdGVyIGRhdGFcblxuZmlsdGVyZWRGdWxsU2VyaWVzID0gbDNfcGNlLmZpbHRlcihkID0+XG4gIGQuc2FsZXNfcmVwb3J0aW5nX25hbWUgPT09IHNlbGVjdGVkQ29tbXVuaXR5XG4pXG5cbmZpbHRlcmVkT3V0bGllcnMgPSBsM19wY2Vfb3V0bGllcnNfbG9nLmZpbHRlcihkID0+XG4gIGQuc2FsZXNfcmVwb3J0aW5nX25hbWUgPT09IHNlbGVjdGVkQ29tbXVuaXR5ICYmXG4gIGQuY29sdW1uX3Rlc3RlZCA9PT0gc2VsZWN0ZWRDb2x1bW5cbilcblxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC01IiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoiLy8gcGxvdCBsaW5lcywgZG90cywgb3V0bGllciBkb3RzXG5cblBsb3QucGxvdCh7XG4gIGhlaWdodDogNTAwLFxuICB3aWR0aDogMTAwMCxcbiAgZ3JpZDogZmFsc2UsXG4gIHg6IHtcbiAgICB0eXBlOiBcInV0Y1wiLFxuICAgIGxhYmVsOiBcIkRhdGVcIixcbiAgICB0aWNrczogMjAsXG4gICAgdGlja0Zvcm1hdDogXCIlWVwiXG4gIH0sXG4gIHk6IHtcbiAgICBsYWJlbDogc2VsZWN0ZWRDb2x1bW4gIT09IFwiQWxsXCIgPyBzZWxlY3RlZENvbHVtbiA6IFwiVmFsdWVcIixcbiAgICBncmlkOiB0cnVlXG4gIH0sXG4gIG1hcmtzOiBbXG4gICAgLy8gdGltZXNlcmllcyBsaW5lXG4gICAgUGxvdC5saW5lKGZpbHRlcmVkRnVsbFNlcmllcywge1xuICAgICAgeDogXCJkYXRlXCIsXG4gICAgICB5OiBkID0+IGRbc2VsZWN0ZWRDb2x1bW5dLFxuICAgICAgc3Ryb2tlOiBcIiNjY2NcIixcbiAgICAgIHN0cm9rZVdpZHRoOiAxLjVcbiAgICB9KSxcblxuICAgIC8vIHRpbWVzZXJpZXMgZG90c1xuICAgIFBsb3QuZG90KGZpbHRlcmVkRnVsbFNlcmllcywge1xuICAgICAgeDogXCJkYXRlXCIsXG4gICAgICB5OiBkID0+IGRbc2VsZWN0ZWRDb2x1bW5dLFxuICAgICAgZmlsbDogXCIjODg4ODg4XCIsXG4gICAgICByOiAzLFxuICAgICAgdGlwOiB0cnVlXG4gICAgfSksXG5cbiAgICAvLyBvdXRsaWVyIGRvdHNcbiAgICBQbG90LmRvdChmaWx0ZXJlZE91dGxpZXJzLCB7XG4gICAgICB4OiBcImRhdGVcIixcbiAgICAgIHk6IGQgPT4gZC5yYXdfdmFsdWUgPz8gZC52YWx1ZSxcbiAgICAgIGZpbGw6IFwicmVkXCIsXG4gICAgICBzdHJva2U6IFwiYmxhY2tcIixcbiAgICAgIHN0cm9rZVdpZHRoOiAxLFxuICAgICAgcjogNixcbiAgICAgIHRpcDogdHJ1ZVxuICAgIH0pXG4gIF1cbn0pXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTYiLCJpbmxpbmUiOmZhbHNlLCJzb3VyY2UiOiJ0YWJsZUNvbnRhaW5lciA9IHtcbiAgY29uc3QgY29udGFpbmVyID0gaHRtbGA8ZGl2IHN0eWxlPVwibWFyZ2luLWJvdHRvbTogMjBweDtcIj48L2Rpdj5gO1xuXG4gIGNvbnN0IHRhYmxlID0gbmV3IFRhYnVsYXRvcihjb250YWluZXIsIHtcbiAgICBkYXRhOiBmaWx0ZXJlZE91dGxpZXJzLFxuICAgIGxheW91dDogXCJmaXRDb2x1bW5zXCIsXG4gICAgY29sdW1uczogW1xuICAgICAgeyB0aXRsZTogXCJDb21tdW5pdHlcIiwgZmllbGQ6IFwic2FsZXNfcmVwb3J0aW5nX25hbWVcIiB9LFxuICAgICAgeyB0aXRsZTogXCJEYXRlXCIsIGZpZWxkOiBcImRhdGVcIiB9LFxuICAgICAgeyB0aXRsZTogXCJDb2x1bW5cIiwgZmllbGQ6IFwiY29sdW1uX3Rlc3RlZFwifSxcbiAgICAgIHsgdGl0bGU6IFwiRmxhZ2dlZCBPdXRsaWVyXCIsIGZpZWxkOiBcInJhd192YWx1ZVwiIH0sXG4gICAgICB7XG4gICAgICAgIHRpdGxlOiBcIkRlY2lzaW9uXCIsXG4gICAgICAgIGZpZWxkOiBcInN0YXR1c1wiLFxuICAgICAgICBlZGl0b3I6IFwibGlzdFwiLFxuICAgICAgICBlZGl0b3JQYXJhbXM6IHsgdmFsdWVzOiBbXCJVc2UgU3VnZ2VzdGVkIEltcHV0YXRpb25cIiwgXCJTZXQgYXMgTkFcIiwgXCJNYW51YWwgT3ZlcnJpZGVcIl0gfVxuICAgICAgfSxcbiAgICAgIHtcbiAgICAgICAgdGl0bGU6IFwiTWFudWFsIE92ZXJyaWRlIFZhbHVlXCIsXG4gICAgICAgIGZpZWxkOiBcIm92ZXJyaWRlXCIsXG4gICAgICAgIGVkaXRvcjogXCJpbnB1dFwiXG4gICAgICB9XG4gICAgXVxuICB9KTtcblxuICB3aW5kb3cuY3VycmVudFRhYmxlID0gdGFibGU7XG4gIHJldHVybiBjb250YWluZXI7XG59XG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXRRdWlldCIsInNvdXJjZSI6InNoaW55SW5wdXQoJ3NlbGVjdGVkQ29tbXVuaXR5JykifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXRRdWlldCIsInNvdXJjZSI6InNoaW55SW5wdXQoJ3NlbGVjdGVkQ29sdW1uJykifV19
+eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6IlRhYnVsYXRvciA9IHdpbmRvdy5UYWJ1bGF0b3JcbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMiIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6Ii8vIGxvYWQgZGF0YVxuXG5sM19wY2Vfb3V0bGllcnNfbG9nID0gRmlsZUF0dGFjaG1lbnQoXCJkYXRhL2wzX291dGxpZXJzX2NoZWNrZWQvbG9ncy9sM19wY2Vfb3V0bGllcnNfbG9nLmNzdlwiKVxuICAuY3N2KClcbiAgLnRoZW4oZGF0YSA9PiB7XG4gICAgcmV0dXJuIGRhdGEubWFwKGQgPT4ge1xuICAgICAgbGV0IGNsZWFuZWRSb3cgPSB7fTtcblxuICAgICAgZm9yIChsZXQga2V5IGluIGQpIHtcbiAgICAgICAgbGV0IHZhbCA9IGRba2V5XTtcblxuICAgICAgICBpZiAodmFsID09PSBcIlwiIHx8IHZhbCA9PT0gXCJOQVwiIHx8IHZhbCA9PT0gbnVsbCB8fCB2YWwgPT09IHVuZGVmaW5lZCkge1xuICAgICAgICAgIGNsZWFuZWRSb3dba2V5XSA9IG51bGw7XG4gICAgICAgIH1cbiAgICAgICAgZWxzZSBpZiAoa2V5ID09PSBcImRhdGVcIiB8fCBpc05hTih2YWwpIHx8IGlzTmFOKE51bWJlcih2YWwpKSkge1xuICAgICAgICAgIGNsZWFuZWRSb3dba2V5XSA9IHZhbDtcbiAgICAgICAgfVxuICAgICAgICBlbHNlIHtcbiAgICAgICAgICBjbGVhbmVkUm93W2tleV0gPSBOdW1iZXIodmFsKTtcbiAgICAgICAgfVxuICAgICAgfVxuXG4gICAgICByZXR1cm4gY2xlYW5lZFJvdztcbiAgICB9KVxuICB9KVxuXG5wY2UgPSBGaWxlQXR0YWNobWVudChcImRhdGEvbDJfdHJhbnNmb3JtZWQvY29uc29saWRhdGVkL2wyX3BjZS5jc3ZcIilcbiAgLmNzdigpXG4gIC50aGVuKGRhdGEgPT4ge1xuICAgIHJldHVybiBkYXRhLm1hcChkID0+IHtcbiAgICAgIGxldCBjbGVhbmVkUm93ID0ge307XG5cbiAgICAgIGZvciAobGV0IGtleSBpbiBkKSB7XG4gICAgICAgIGxldCB2YWwgPSBkW2tleV07XG5cbiAgICAgICAgaWYgKHZhbCA9PT0gXCJcIiB8fCB2YWwgPT09IFwiTkFcIiB8fCB2YWwgPT09IG51bGwgfHwgdmFsID09PSB1bmRlZmluZWQpIHtcbiAgICAgICAgICBjbGVhbmVkUm93W2tleV0gPSBudWxsO1xuICAgICAgICB9XG4gICAgICAgIGVsc2UgaWYgKGtleSA9PT0gXCJkYXRlXCIgfHwgaXNOYU4odmFsKSB8fCBpc05hTihOdW1iZXIodmFsKSkpIHtcbiAgICAgICAgICBjbGVhbmVkUm93W2tleV0gPSB2YWw7XG4gICAgICAgIH1cbiAgICAgICAgZWxzZSB7XG4gICAgICAgICAgY2xlYW5lZFJvd1trZXldID0gTnVtYmVyKHZhbCk7XG4gICAgICAgIH1cbiAgICAgIH1cblxuICAgICAgcmV0dXJuIGNsZWFuZWRSb3c7XG4gICAgfSlcbiAgICAuc29ydCgoYSwgYikgPT4gbmV3IERhdGUoYS5kYXRlKSAtIG5ldyBEYXRlKGIuZGF0ZSkpO1xuICB9KVxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC0zIiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoiLy8gZHJvcGRvd24gc2VsZWN0aW9uc1xuXG5jb21tdW5pdGllcyA9IFsuLi5uZXcgU2V0KGwzX3BjZV9vdXRsaWVyc19sb2cubWFwKGQgPT4gZC5zYWxlc19yZXBvcnRpbmdfbmFtZSkpXVxuXG52aWV3b2Ygc2VsZWN0ZWRDb21tdW5pdHkgPSBJbnB1dHMuc2VsZWN0KFxuICBjb21tdW5pdGllcyxcbiAgeyBsYWJlbDogXCJDb21tdW5pdHk6XCIsIHZhbHVlOiBjb21tdW5pdGllc1swXSB9XG4pXG5cbmF2YWlsYWJsZUNvbHVtbnMgPSB7XG4gIGNvbnN0IHN1YnNldCA9IGwzX3BjZV9vdXRsaWVyc19sb2cuZmlsdGVyKGQgPT4gZC5zYWxlc19yZXBvcnRpbmdfbmFtZSA9PT0gc2VsZWN0ZWRDb21tdW5pdHkpO1xuICByZXR1cm4gWy4uLm5ldyBTZXQoc3Vic2V0Lm1hcChkID0+IGQuY29sdW1uX3Rlc3RlZCkpXTtcbn1cblxudmlld29mIHNlbGVjdGVkQ29sdW1uID0gSW5wdXRzLnNlbGVjdChcbiAgYXZhaWxhYmxlQ29sdW1ucyxcbiAgeyBsYWJlbDogXCJDb2x1bW46XCIsIHZhbHVlOiBhdmFpbGFibGVDb2x1bW5zWzBdIH1cbilcbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtNCIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6Ii8vIGZpbHRlciBkYXRhXG5cbmZpbHRlcmVkRnVsbFNlcmllcyA9IHBjZS5maWx0ZXIoZCA9PlxuICBkLnNhbGVzX3JlcG9ydGluZ19uYW1lID09PSBzZWxlY3RlZENvbW11bml0eVxuKVxuXG5maWx0ZXJlZE91dGxpZXJzID0gbDNfcGNlX291dGxpZXJzX2xvZy5maWx0ZXIoZCA9PlxuICBkLnNhbGVzX3JlcG9ydGluZ19uYW1lID09PSBzZWxlY3RlZENvbW11bml0eSAmJlxuICBkLmNvbHVtbl90ZXN0ZWQgPT09IHNlbGVjdGVkQ29sdW1uXG4pXG5cbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtNSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6Ii8vIHBsb3QgbGluZXMsIGRvdHMsIG91dGxpZXIgZG90c1xuXG5QbG90LnBsb3Qoe1xuICBoZWlnaHQ6IDUwMCxcbiAgd2lkdGg6IDE2MDAsXG4gIGdyaWQ6IGZhbHNlLFxuICB4OiB7XG4gICAgdHlwZTogXCJ1dGNcIixcbiAgICBsYWJlbDogXCJEYXRlXCIsXG4gICAgdGlja3M6IDIwLFxuICAgIHRpY2tGb3JtYXQ6IFwiJVlcIlxuICB9LFxuICB5OiB7XG4gICAgbGFiZWw6IHNlbGVjdGVkQ29sdW1uICE9PSBcIkFsbFwiID8gc2VsZWN0ZWRDb2x1bW4gOiBcIlZhbHVlXCIsXG4gICAgZ3JpZDogdHJ1ZVxuICB9LFxuICBtYXJrczogW1xuICAgIC8vIHRpbWVzZXJpZXMgbGluZVxuICAgIFBsb3QubGluZShmaWx0ZXJlZEZ1bGxTZXJpZXMsIHtcbiAgICAgIHg6IFwiZGF0ZVwiLFxuICAgICAgeTogZCA9PiBkW3NlbGVjdGVkQ29sdW1uXSxcbiAgICAgIHN0cm9rZTogXCIjY2NjXCIsXG4gICAgICBzdHJva2VXaWR0aDogMS41XG4gICAgfSksXG5cbiAgICAvLyB0aW1lc2VyaWVzIGRvdHNcbiAgICBQbG90LmRvdChmaWx0ZXJlZEZ1bGxTZXJpZXMsIHtcbiAgICAgIHg6IFwiZGF0ZVwiLFxuICAgICAgeTogZCA9PiBkW3NlbGVjdGVkQ29sdW1uXSxcbiAgICAgIGZpbGw6IFwiIzg4ODg4OFwiLFxuICAgICAgcjogMyxcbiAgICAgIHRpcDogdHJ1ZVxuICAgIH0pLFxuXG4gICAgLy8gb3V0bGllciBkb3RzXG4gICAgUGxvdC5kb3QoZmlsdGVyZWRPdXRsaWVycywge1xuICAgICAgeDogXCJkYXRlXCIsXG4gICAgICB5OiBkID0+IGQucmF3X3ZhbHVlID8/IGQudmFsdWUsXG4gICAgICBmaWxsOiBcInJlZFwiLFxuICAgICAgc3Ryb2tlOiBcImJsYWNrXCIsXG4gICAgICBzdHJva2VXaWR0aDogMSxcbiAgICAgIHI6IDYsXG4gICAgICB0aXA6IGZhbHNlXG4gICAgfSlcbiAgXVxufSlcbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtNiIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6InRhYmxlQ29udGFpbmVyID0ge1xuICBjb25zdCBjb250YWluZXIgPSBodG1sYDxkaXYgc3R5bGU9XCJtYXJnaW4tYm90dG9tOiAyMHB4O1wiPjwvZGl2PmA7XG5cbiAgY29uc3QgdGFibGUgPSBuZXcgVGFidWxhdG9yKGNvbnRhaW5lciwge1xuICAgIGRhdGE6IGZpbHRlcmVkT3V0bGllcnMsXG4gICAgbGF5b3V0OiBcImZpdERhdGFGaWxsXCIsXG4gICAgY29sdW1uczogW1xuICAgICAgeyB0aXRsZTogXCJQQ0UgSURcIiwgZmllbGQ6IFwicHJvamVjdF9jb2RlXCIgfSxcbiAgICAgIHsgdGl0bGU6IFwiTmFtZVwiLCBmaWVsZDogXCJzYWxlc19yZXBvcnRpbmdfbmFtZVwiIH0sXG4gICAgICB7IHRpdGxlOiBcIlllYXJcIiwgZmllbGQ6IFwiY2FsZW5kYXJfeWVhclwiIH0sXG4gICAgICB7IHRpdGxlOiBcIk1vbnRoXCIsIGZpZWxkOiBcImNhbGVuZGFyX21vbnRoXCIgfSxcbiAgICAgIHsgdGl0bGU6IFwiQ29sdW1uIFRlc3RlZFwiLCBmaWVsZDogXCJjb2x1bW5fdGVzdGVkXCJ9LFxuICAgICAgeyB0aXRsZTogXCJPcmlnIFZhbHVlXCIsIGZpZWxkOiBcInJhd192YWx1ZVwiIH0sXG4gICAgICB7IHRpdGxlOiBcIk92ZXJyaWRlIFZhbHVlXCIsIGZpZWxkOiBcIm92ZXJyaWRlX3ZhbHVlXCIgfSxcbiAgICAgIHtcbiAgICAgICAgdGl0bGU6IFwiT3ZlcnJpZGUgQWN0aW9uXCIsXG4gICAgICAgIGZpZWxkOiBcInN0YXR1c1wiLFxuICAgICAgICBlZGl0b3I6IFwibGlzdFwiLFxuICAgICAgICBlZGl0b3JQYXJhbXM6IHsgdmFsdWVzOiBbXG4gICAgICAgICAgICBcIlZhbHVlIG91dCBvZiBib3VuZHMsIGJ1dCBvcmlnaW5hbCB2YWx1ZSBrZXB0XCIsXG4gICAgICAgICAgICBcIkNhcnJ5IGZvcndhcmRcIixcbiAgICAgICAgICAgIFwiQW5udWFsIGF2ZXJhZ2VcIixcbiAgICAgICAgICAgIFwiQXZlcmFnZSBvZiBwcmVjZWRpbmcgYW5kIHByb2NlZWRpbmcgbW9udGhzXCIsXG4gICAgICAgICAgICBcIkF2ZXJhZ2Ugb2YgbW9udGhzIGZyb20gb3RoZXIgeWVhcnNcIixcbiAgICAgICAgICAgIFwiTWFudWFsIG92ZXJyaWRlOiBleHBlcnQgb3BpbmlvblwiXG4gICAgICAgICAgICBdIH1cbiAgICAgIH1cbiAgICBdXG4gIH0pO1xuXG4gIHdpbmRvdy5jdXJyZW50VGFibGUgPSB0YWJsZTtcbiAgcmV0dXJuIGNvbnRhaW5lcjtcbn1cbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldFF1aWV0Iiwic291cmNlIjoic2hpbnlJbnB1dCgnc2VsZWN0ZWRDb21tdW5pdHknKSJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldFF1aWV0Iiwic291cmNlIjoic2hpbnlJbnB1dCgnc2VsZWN0ZWRDb2x1bW4nKSJ9XX0=
 </script>
 <script type="module">
 if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }
