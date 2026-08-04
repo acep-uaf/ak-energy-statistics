@@ -13,12 +13,10 @@ project_code,sales_reporting_name,date,calendar_year,calendar_month,column_teste
 331010,Akhiok,2019-02-01,2019,2,residential_sold_to,18895,7346,8,Strong
 331010,Akhiok,2021-03-01,2021,3,fuel_used_gallons,4473,2760,5,Strong
 331010,Akhiok,2021-07-01,2021,7,fuel_used_gallons,1165,2760,5,Strong
-331010,Akhiok,2021-08-01,2021,8,pce_eligible_residential_kwh,621,6180.5,5,Strong
 331010,Akhiok,2021-08-01,2021,8,fuel_used_gallons,1165,2760,5,Strong
 331010,Akhiok,2021-12-01,2021,12,commercial_sold_to,19102,9137,5,Strong
 331010,Akhiok,2022-02-01,2022,2,powerhouse_consumption_kwh,5199,774,6,Strong
 331010,Akhiok,2023-03-01,2023,3,peak_consumption_kw,2202,59,66,Extreme
-331010,Akhiok,2023-06-01,2023,6,pce_eligible_residential_kwh,11660,6180.5,5,Strong
 331010,Akhiok,2023-06-01,2023,6,residential_sold_to,14682,7346,5,Strong
 331010,Akhiok,2024-01-01,2024,1,diesel_kwh_generated,45738,23600,5,Strong
 331010,Akhiok,2024-01-01,2024,1,com_facil_sold_to,9947,2410,5,Strong
@@ -46,51 +44,29 @@ project_code,sales_reporting_name,date,calendar_year,calendar_month,column_teste
 331020,Akiachak,2026-05-01,2026,5,wind_kwh_generated,27737,0,NA,Strong
 331030,Akiak,2018-02-01,2018,2,fuel_used_gallons,17318,7954,8,Strong
 331030,Akiak,2018-02-01,2018,2,powerhouse_consumption_kwh,5126,2645,9,Extreme
-331030,Akiak,2018-04-01,2018,4,pce_eligible_community_kwh,13983,2826,10,Extreme
-331030,Akiak,2018-05-01,2018,5,pce_eligible_community_kwh,11698,2826,8,Strong
 331030,Akiak,2022-07-01,2022,7,govt_facil_sold_to,54459,2316.5,35,Extreme
 331030,Akiak,2022-08-01,2022,8,commercial_sold_to,267666,41166.5,12,Extreme
-331030,Akiak,2023-08-01,2023,8,pce_eligible_residential_kwh,54686,29774,6,Strong
 331030,Akiak,2023-08-01,2023,8,fuel_used_gallons,21098,7954,11,Extreme
 331030,Akiak,2023-08-01,2023,8,residential_sold_to,106044,32619,11,Extreme
 331030,Akiak,2023-08-01,2023,8,unbilled_sold_to,3461,775.5,5,Strong
 331030,Akiak,2023-09-01,2023,9,diesel_kwh_generated,214987,100561.5,7,Strong
 331030,Akiak,2023-09-01,2023,9,commercial_sold_to,166922,41166.5,6,Strong
-331030,Akiak,2024-03-01,2024,3,pce_eligible_residential_kwh,62686,29774,7,Strong
-331030,Akiak,2024-03-01,2024,3,pce_eligible_community_kwh,14927,2826,11,Extreme
 331030,Akiak,2024-03-01,2024,3,residential_sold_to,260475,32619,34,Extreme
 331030,Akiak,2024-03-01,2024,3,commercial_sold_to,294257,41166.5,13,Extreme
 331030,Akiak,2024-03-01,2024,3,com_facil_sold_to,212495,11981,30,Extreme
 331030,Akiak,2024-03-01,2024,3,govt_facil_sold_to,22135,2316.5,13,Extreme
 331030,Akiak,2024-03-01,2024,3,unbilled_sold_to,10461,775.5,18,Extreme
-331030,Akiak,2024-08-01,2024,8,pce_eligible_residential_kwh,51632,29774,5,Strong
 331030,Akiak,2024-08-01,2024,8,fuel_used_gallons,25572,7954,15,Extreme
 331030,Akiak,2024-08-01,2024,8,diesel_kwh_generated,267575,100561.5,10,Extreme
 331030,Akiak,2024-08-01,2024,8,powerhouse_consumption_kwh,9914,2645,27,Extreme
 331030,Akiak,2024-08-01,2024,8,residential_sold_to,98245,32619,10,Extreme
-331030,Akiak,2024-11-01,2024,11,pce_eligible_community_kwh,12370,2826,9,Strong
-331030,Akiak,2024-12-01,2024,12,pce_eligible_community_kwh,14446,2826,10,Extreme
-331030,Akiak,2025-01-01,2025,1,pce_eligible_community_kwh,20343,2826,16,Extreme
-331030,Akiak,2025-02-01,2025,2,pce_eligible_community_kwh,8915,2826,5,Strong
-331030,Akiak,2025-03-01,2025,3,pce_eligible_community_kwh,19939,2826,15,Extreme
-331030,Akiak,2025-04-01,2025,4,pce_eligible_community_kwh,11077,2826,7,Strong
-331030,Akiak,2025-05-01,2025,5,pce_eligible_community_kwh,11443,2826,8,Strong
-331030,Akiak,2025-07-01,2025,7,pce_eligible_residential_kwh,50519,29774,5,Strong
-331030,Akiak,2025-07-01,2025,7,pce_eligible_community_kwh,15876,2826,12,Extreme
 331030,Akiak,2025-07-01,2025,7,fuel_used_gallons,15084,7954,6,Strong
 331030,Akiak,2025-07-01,2025,7,residential_sold_to,69724,32619,6,Strong
-331030,Akiak,2025-08-01,2025,8,pce_eligible_community_kwh,18744,2826,14,Extreme
-331030,Akiak,2025-11-01,2025,11,pce_eligible_community_kwh,11293,2826,8,Strong
-331030,Akiak,2026-01-01,2026,1,pce_eligible_residential_kwh,52013,29774,5,Strong
-331030,Akiak,2026-01-01,2026,1,pce_eligible_community_kwh,35039,2826,29,Extreme
 331030,Akiak,2026-01-01,2026,1,fuel_used_gallons,17109,7954,8,Strong
 331030,Akiak,2026-01-01,2026,1,diesel_kwh_generated,217138,100561.5,7,Strong
 331030,Akiak,2026-01-01,2026,1,powerhouse_consumption_kwh,5645,2645,11,Extreme
 331030,Akiak,2026-01-01,2026,1,residential_sold_to,76581,32619,7,Strong
-331030,Akiak,2026-02-01,2026,2,pce_eligible_community_kwh,29928,2826,24,Extreme
 331030,Akiak,2026-02-01,2026,2,residential_sold_to,86604,32619,8,Strong
-331030,Akiak,2026-03-01,2026,3,pce_eligible_community_kwh,9972,2826,6,Strong
-331030,Akiak,2026-05-01,2026,5,pce_eligible_community_kwh,19389,2826,15,Extreme
 331040,Akutan,2016-02-01,2016,2,govt_facil_sold_to,812,266,7,Strong
 331040,Akutan,2016-05-01,2016,5,govt_facil_sold_to,925,266,8,Strong
 331040,Akutan,2016-06-01,2016,6,govt_facil_sold_to,942,266,9,Strong
@@ -147,16 +123,12 @@ project_code,sales_reporting_name,date,calendar_year,calendar_month,column_teste
 331250,Ambler,2025-02-01,2025,2,com_facil_sold_to,55826,22403,6,Strong
 331250,Ambler,2025-11-01,2025,11,fuel_used_gallons,0,7793,5,Strong
 331250,Ambler,2025-11-01,2025,11,commercial_sold_to,12709,3285,24,Extreme
-331250,Ambler,2025-12-01,2025,12,pce_eligible_residential_kwh,44405,28786.5,5,Strong
 331250,Ambler,2025-12-01,2025,12,fuel_used_gallons,0,7793,5,Strong
 331250,Ambler,2025-12-01,2025,12,commercial_sold_to,16036,3285,33,Extreme
-331250,Ambler,2026-01-01,2026,1,pce_eligible_residential_kwh,46154,28786.5,5,Strong
 331250,Ambler,2026-01-01,2026,1,fuel_used_gallons,0,7793,5,Strong
 331250,Ambler,2026-01-01,2026,1,commercial_sold_to,16138,3285,33,Extreme
-331250,Ambler,2026-02-01,2026,2,pce_eligible_residential_kwh,44178,28786.5,5,Strong
 331250,Ambler,2026-02-01,2026,2,fuel_used_gallons,0,7793,5,Strong
 331250,Ambler,2026-02-01,2026,2,commercial_sold_to,12643,3285,24,Extreme
-331250,Ambler,2026-03-01,2026,3,pce_eligible_residential_kwh,43635,28786.5,5,Strong
 331250,Ambler,2026-03-01,2026,3,fuel_used_gallons,0,7793,5,Strong
 331250,Ambler,2026-03-01,2026,3,commercial_sold_to,12925,3285,25,Extreme
 332350,Anaktuvuk Pass,2016-03-01,2016,3,peak_consumption_kw,1070,594,5,Strong
@@ -181,12 +153,9 @@ project_code,sales_reporting_name,date,calendar_year,calendar_month,column_teste
 331760,Aniak,2020-01-01,2020,1,unbilled_sold_to,12098,2941.5,5,Strong
 331760,Aniak,2022-02-01,2022,2,peak_consumption_kw,52,420,7,Strong
 331760,Aniak,2025-03-01,2025,3,peak_consumption_kw,2901,420,45,Extreme
-331760,Aniak,2025-12-01,2025,12,pce_eligible_community_kwh,12923,5155,5,Strong
 331760,Aniak,2025-12-01,2025,12,com_facil_sold_to,13347,5155,5,Strong
-331760,Aniak,2026-01-01,2026,1,pce_eligible_community_kwh,16366,5155,7,Strong
 331760,Aniak,2026-01-01,2026,1,com_facil_sold_to,16806,5155,7,Strong
 331760,Aniak,2026-02-01,2026,2,com_facil_sold_to,12806,5155,5,Strong
-331760,Aniak,2026-03-01,2026,3,pce_eligible_community_kwh,14992,5155,6,Strong
 331760,Aniak,2026-03-01,2026,3,com_facil_sold_to,15336,5155,6,Strong
 331260,Anvik,2015-07-01,2015,7,com_facil_sold_to,4177,10564,7,Strong
 331260,Anvik,2015-08-01,2015,8,com_facil_sold_to,4183,10564,7,Strong
@@ -205,7 +174,6 @@ project_code,sales_reporting_name,date,calendar_year,calendar_month,column_teste
 331260,Anvik,2019-11-01,2019,11,com_facil_sold_to,15273,10564,5,Strong
 331260,Anvik,2019-12-01,2019,12,com_facil_sold_to,16859,10564,7,Strong
 331260,Anvik,2021-12-01,2021,12,fuel_used_gallons,4515,2824,5,Strong
-331260,Anvik,2025-11-01,2025,11,pce_eligible_community_kwh,26110,3900,31,Extreme
 331260,Anvik,2025-11-01,2025,11,fuel_used_gallons,0,2824,9,Strong
 331260,Anvik,2025-11-01,2025,11,commercial_sold_to,10073,0,NA,Strong
 331260,Anvik,2025-11-01,2025,11,com_facil_sold_to,4359,10564,6,Strong
@@ -229,7 +197,6 @@ project_code,sales_reporting_name,date,calendar_year,calendar_month,column_teste
 331770,Arctic Village,2023-01-01,2023,1,com_facil_sold_to,47210,5413,8,Strong
 331770,Arctic Village,2023-03-01,2023,3,residential_sold_to,47927,18172,5,Strong
 331770,Arctic Village,2023-03-01,2023,3,com_facil_sold_to,48824,5413,9,Strong
-331770,Arctic Village,2023-07-01,2023,7,pce_eligible_residential_kwh,43111,16253,5,Strong
 331770,Arctic Village,2023-07-01,2023,7,residential_sold_to,69278,18172,8,Strong
 331770,Arctic Village,2024-02-01,2024,2,commercial_sold_to,51862,13624,5,Strong
 331770,Arctic Village,2024-03-01,2024,3,commercial_sold_to,51862,13624,5,Strong
@@ -319,7 +286,6 @@ project_code,sales_reporting_name,date,calendar_year,calendar_month,column_teste
 331800,"Bethel, Oscarville",2025-11-01,2025,11,commercial_sold_to,1847623,1309592,5,Strong
 331800,"Bethel, Oscarville",2025-12-01,2025,12,fuel_used_gallons,0,247582,11,Extreme
 331800,"Bethel, Oscarville",2025-12-01,2025,12,commercial_sold_to,1812517,1309592,5,Strong
-331800,"Bethel, Oscarville",2026-01-01,2026,1,pce_eligible_residential_kwh,971507,674887,5,Strong
 331800,"Bethel, Oscarville",2026-01-01,2026,1,fuel_used_gallons,0,247582,11,Extreme
 331800,"Bethel, Oscarville",2026-01-01,2026,1,residential_sold_to,1525259,825477,5,Strong
 331800,"Bethel, Oscarville",2026-01-01,2026,1,commercial_sold_to,2009153,1309592,6,Strong
@@ -331,49 +297,27 @@ project_code,sales_reporting_name,date,calendar_year,calendar_month,column_teste
 331060,"Bettles, Evansville",2022-02-01,2022,2,powerhouse_consumption_kwh,2698,222,9,Strong
 331060,"Bettles, Evansville",2022-03-01,2022,3,powerhouse_consumption_kwh,1554,222,5,Strong
 331060,"Bettles, Evansville",2022-04-01,2022,4,powerhouse_consumption_kwh,1570,222,5,Strong
-331060,"Bettles, Evansville",2022-09-01,2022,9,pce_eligible_community_kwh,1876,1400,5,Strong
 331060,"Bettles, Evansville",2022-09-01,2022,9,powerhouse_consumption_kwh,2121,222,7,Strong
-331060,"Bettles, Evansville",2022-10-01,2022,10,pce_eligible_community_kwh,2112,1400,7,Strong
 331060,"Bettles, Evansville",2022-10-01,2022,10,powerhouse_consumption_kwh,2400,222,8,Strong
-331060,"Bettles, Evansville",2022-11-01,2022,11,pce_eligible_community_kwh,2380,1400,9,Extreme
 331060,"Bettles, Evansville",2022-11-01,2022,11,powerhouse_consumption_kwh,2613,222,9,Strong
-331060,"Bettles, Evansville",2022-12-01,2022,12,pce_eligible_community_kwh,2380,1400,9,Extreme
 331060,"Bettles, Evansville",2022-12-01,2022,12,powerhouse_consumption_kwh,2408,222,8,Strong
-331060,"Bettles, Evansville",2023-01-01,2023,1,pce_eligible_community_kwh,2380,1400,9,Extreme
 331060,"Bettles, Evansville",2023-01-01,2023,1,powerhouse_consumption_kwh,2244,222,7,Strong
-331060,"Bettles, Evansville",2023-02-01,2023,2,pce_eligible_community_kwh,2380,1400,9,Extreme
 331060,"Bettles, Evansville",2023-02-01,2023,2,powerhouse_consumption_kwh,2438,222,8,Strong
-331060,"Bettles, Evansville",2023-03-01,2023,3,pce_eligible_community_kwh,2380,1400,9,Extreme
 331060,"Bettles, Evansville",2023-03-01,2023,3,powerhouse_consumption_kwh,2170,222,7,Strong
-331060,"Bettles, Evansville",2023-04-01,2023,4,pce_eligible_community_kwh,2380,1400,9,Extreme
 331060,"Bettles, Evansville",2023-04-01,2023,4,powerhouse_consumption_kwh,2290,222,7,Strong
-331060,"Bettles, Evansville",2023-05-01,2023,5,pce_eligible_community_kwh,2380,1400,9,Extreme
 331060,"Bettles, Evansville",2023-05-01,2023,5,powerhouse_consumption_kwh,1721,222,5,Strong
-331060,"Bettles, Evansville",2023-06-01,2023,6,pce_eligible_community_kwh,2380,1400,9,Extreme
 331060,"Bettles, Evansville",2023-06-01,2023,6,powerhouse_consumption_kwh,1871,222,6,Strong
-331060,"Bettles, Evansville",2023-07-01,2023,7,pce_eligible_community_kwh,2380,1400,9,Extreme
 331060,"Bettles, Evansville",2023-07-01,2023,7,powerhouse_consumption_kwh,1636,222,5,Strong
-331060,"Bettles, Evansville",2023-08-01,2023,8,pce_eligible_community_kwh,2380,1400,9,Extreme
 331060,"Bettles, Evansville",2023-08-01,2023,8,powerhouse_consumption_kwh,1655,222,5,Strong
-331060,"Bettles, Evansville",2023-09-01,2023,9,pce_eligible_community_kwh,2380,1400,9,Extreme
 331060,"Bettles, Evansville",2023-09-01,2023,9,powerhouse_consumption_kwh,2318,222,8,Strong
-331060,"Bettles, Evansville",2023-10-01,2023,10,pce_eligible_community_kwh,2380,1400,9,Extreme
 331060,"Bettles, Evansville",2023-10-01,2023,10,powerhouse_consumption_kwh,2207,222,7,Strong
-331060,"Bettles, Evansville",2023-11-01,2023,11,pce_eligible_community_kwh,2380,1400,9,Extreme
 331060,"Bettles, Evansville",2023-11-01,2023,11,powerhouse_consumption_kwh,2401,222,8,Strong
-331060,"Bettles, Evansville",2023-12-01,2023,12,pce_eligible_community_kwh,2380,1400,9,Extreme
 331060,"Bettles, Evansville",2023-12-01,2023,12,powerhouse_consumption_kwh,2221,222,7,Strong
-331060,"Bettles, Evansville",2024-01-01,2024,1,pce_eligible_community_kwh,2380,1400,9,Extreme
 331060,"Bettles, Evansville",2024-01-01,2024,1,powerhouse_consumption_kwh,2364,222,8,Strong
-331060,"Bettles, Evansville",2024-02-01,2024,2,pce_eligible_community_kwh,2380,1400,9,Extreme
 331060,"Bettles, Evansville",2024-02-01,2024,2,powerhouse_consumption_kwh,2675,222,9,Strong
-331060,"Bettles, Evansville",2024-03-01,2024,3,pce_eligible_community_kwh,2380,1400,9,Extreme
 331060,"Bettles, Evansville",2024-03-01,2024,3,powerhouse_consumption_kwh,2461,222,8,Strong
-331060,"Bettles, Evansville",2024-04-01,2024,4,pce_eligible_community_kwh,2380,1400,9,Extreme
 331060,"Bettles, Evansville",2024-04-01,2024,4,powerhouse_consumption_kwh,2454,222,8,Strong
-331060,"Bettles, Evansville",2024-05-01,2024,5,pce_eligible_community_kwh,2380,1400,9,Extreme
 331060,"Bettles, Evansville",2024-05-01,2024,5,powerhouse_consumption_kwh,1925,222,6,Strong
-331060,"Bettles, Evansville",2024-06-01,2024,6,pce_eligible_community_kwh,2296,1400,9,Strong
 331060,"Bettles, Evansville",2024-06-01,2024,6,powerhouse_consumption_kwh,1734,222,5,Strong
 331060,"Bettles, Evansville",2024-07-01,2024,7,powerhouse_consumption_kwh,1542,222,5,Strong
 331060,"Bettles, Evansville",2024-08-01,2024,8,powerhouse_consumption_kwh,1748,222,6,Strong
@@ -399,7 +343,6 @@ project_code,sales_reporting_name,date,calendar_year,calendar_month,column_teste
 331060,"Bettles, Evansville",2026-04-01,2026,4,powerhouse_consumption_kwh,4693,222,16,Extreme
 331810,Birch Creek,2018-01-01,2018,1,powerhouse_consumption_kwh,1021,305,5,Strong
 331810,Birch Creek,2019-06-01,2019,6,peak_consumption_kw,401,40,22,Extreme
-331810,Birch Creek,2021-05-01,2021,5,pce_eligible_residential_kwh,5139,2038,5,Strong
 331810,Birch Creek,2021-08-01,2021,8,peak_consumption_kw,149,40,7,Strong
 331810,Birch Creek,2022-01-01,2022,1,peak_consumption_kw,612,40,35,Extreme
 331810,Birch Creek,2022-02-01,2022,2,residential_sold_to,6419,2168,6,Strong
@@ -424,7 +367,6 @@ project_code,sales_reporting_name,date,calendar_year,calendar_month,column_teste
 331820,Buckland,2021-03-01,2021,3,fuel_used_gallons,25444,10410,5,Strong
 331820,Buckland,2021-04-01,2021,4,fuel_used_gallons,25444,10410,5,Strong
 331820,Buckland,2022-03-01,2022,3,powerhouse_consumption_kwh,21233,4004.5,12,Extreme
-331820,Buckland,2022-04-01,2022,4,pce_eligible_community_kwh,31984,9834,7,Strong
 331820,Buckland,2022-04-01,2022,4,com_facil_sold_to,31984,10510,9,Strong
 331820,Buckland,2022-11-01,2022,11,govt_facil_sold_to,49701,8716,13,Extreme
 331820,Buckland,2023-01-01,2023,1,unbilled_customers,969,3,97,Extreme
@@ -466,7 +408,6 @@ project_code,sales_reporting_name,date,calendar_year,calendar_month,column_teste
 332310,Chefornak,2025-11-01,2025,11,peak_consumption_kw,524,322,5,Strong
 331850,Chenega Bay,2015-12-01,2015,12,govt_facil_sold_to,2310,429,6,Strong
 331850,Chenega Bay,2016-01-01,2016,1,govt_facil_sold_to,6149,429,18,Extreme
-331850,Chenega Bay,2016-08-01,2016,8,pce_eligible_community_kwh,1605,3780,5,Strong
 331850,Chenega Bay,2017-01-01,2017,1,govt_facil_sold_to,2119,429,5,Strong
 331850,Chenega Bay,2017-03-01,2017,3,govt_facil_sold_to,2110,429,5,Strong
 331850,Chenega Bay,2017-06-01,2017,6,residential_sold_to,13823,6284,6,Strong
@@ -545,12 +486,6 @@ project_code,sales_reporting_name,date,calendar_year,calendar_month,column_teste
 331860,Chignik,2015-08-01,2015,8,fuel_used_gallons,8245,3892,5,Strong
 331860,Chignik,2015-08-01,2015,8,diesel_kwh_generated,113561,51970,6,Strong
 331860,Chignik,2015-08-01,2015,8,commercial_sold_to,72600,24122,7,Strong
-331860,Chignik,2016-09-01,2016,9,pce_eligible_community_kwh,0,6440,8,Strong
-331860,Chignik,2016-10-01,2016,10,pce_eligible_community_kwh,0,6440,8,Strong
-331860,Chignik,2016-11-01,2016,11,pce_eligible_community_kwh,0,6440,8,Strong
-331860,Chignik,2016-12-01,2016,12,pce_eligible_community_kwh,0,6440,8,Strong
-331860,Chignik,2017-01-01,2017,1,pce_eligible_community_kwh,0,6440,8,Strong
-331860,Chignik,2017-02-01,2017,2,pce_eligible_community_kwh,0,6440,8,Strong
 331860,Chignik,2017-06-01,2017,6,commercial_sold_to,63891,24122,6,Strong
 331860,Chignik,2017-07-01,2017,7,powerhouse_consumption_kwh,4957,1711,8,Strong
 331860,Chignik,2018-05-01,2018,5,commercial_sold_to,64049,24122,6,Strong
@@ -561,11 +496,8 @@ project_code,sales_reporting_name,date,calendar_year,calendar_month,column_teste
 331860,Chignik,2018-08-01,2018,8,powerhouse_consumption_kwh,4273,1711,6,Strong
 331860,Chignik,2019-05-01,2019,5,commercial_sold_to,58864,24122,5,Strong
 331860,Chignik,2019-07-01,2019,7,commercial_sold_to,56093,24122,5,Strong
-331860,Chignik,2020-02-01,2020,2,pce_eligible_community_kwh,0,6440,8,Strong
 331860,Chignik,2020-02-01,2020,2,com_facil_sold_to,0,9894.5,5,Strong
-331860,Chignik,2020-03-01,2020,3,pce_eligible_community_kwh,500,6440,7,Strong
 331860,Chignik,2020-03-01,2020,3,com_facil_sold_to,500,9894.5,5,Strong
-331860,Chignik,2020-04-01,2020,4,pce_eligible_community_kwh,1837,6440,6,Strong
 331860,Chignik,2020-04-01,2020,4,powerhouse_consumption_kwh,39606,1711,96,Extreme
 331860,Chignik,2020-05-01,2020,5,powerhouse_consumption_kwh,68390,1711,168,Extreme
 331860,Chignik,2020-05-01,2020,5,residential_sold_to,176547,12021,43,Extreme
@@ -626,62 +558,35 @@ project_code,sales_reporting_name,date,calendar_year,calendar_month,column_teste
 332660,Chilkat Valley,2020-01-01,2020,1,peak_consumption_kw,480,234,7,Strong
 332660,Chilkat Valley,2020-03-01,2020,3,peak_consumption_kw,54,234,5,Strong
 332660,Chilkat Valley,2020-04-01,2020,4,peak_consumption_kw,43,234,6,Strong
-332660,Chilkat Valley,2020-10-01,2020,10,pce_eligible_community_kwh,1050,127,15,Extreme
 332660,Chilkat Valley,2020-10-01,2020,10,com_facil_sold_to,1050,127,15,Extreme
-332660,Chilkat Valley,2020-11-01,2020,11,pce_eligible_community_kwh,3522,127,56,Extreme
 332660,Chilkat Valley,2020-11-01,2020,11,com_facil_sold_to,3522,127,56,Extreme
-332660,Chilkat Valley,2020-12-01,2020,12,pce_eligible_community_kwh,3154,127,50,Extreme
 332660,Chilkat Valley,2020-12-01,2020,12,com_facil_sold_to,3154,127,50,Extreme
-332660,Chilkat Valley,2021-01-01,2021,1,pce_eligible_community_kwh,3248,127,51,Extreme
 332660,Chilkat Valley,2021-01-01,2021,1,com_facil_sold_to,3248,127,51,Extreme
-332660,Chilkat Valley,2021-02-01,2021,2,pce_eligible_community_kwh,3689,127,59,Extreme
 332660,Chilkat Valley,2021-02-01,2021,2,com_facil_sold_to,3689,127,59,Extreme
-332660,Chilkat Valley,2021-03-01,2021,3,pce_eligible_community_kwh,2348,127,37,Extreme
 332660,Chilkat Valley,2021-03-01,2021,3,com_facil_sold_to,2348,127,37,Extreme
-332660,Chilkat Valley,2021-04-01,2021,4,pce_eligible_community_kwh,1379,127,21,Extreme
 332660,Chilkat Valley,2021-04-01,2021,4,com_facil_sold_to,1379,127,21,Extreme
-332660,Chilkat Valley,2021-05-01,2021,5,pce_eligible_community_kwh,1809,127,28,Extreme
 332660,Chilkat Valley,2021-05-01,2021,5,com_facil_sold_to,1809,127,28,Extreme
-332660,Chilkat Valley,2021-06-01,2021,6,pce_eligible_community_kwh,2011,127,31,Extreme
 332660,Chilkat Valley,2021-06-01,2021,6,com_facil_sold_to,2011,127,31,Extreme
-332660,Chilkat Valley,2021-07-01,2021,7,pce_eligible_community_kwh,1903,127,29,Extreme
 332660,Chilkat Valley,2021-07-01,2021,7,com_facil_sold_to,1903,127,29,Extreme
-332660,Chilkat Valley,2021-08-01,2021,8,pce_eligible_community_kwh,1747,127,27,Extreme
 332660,Chilkat Valley,2021-08-01,2021,8,com_facil_sold_to,1747,127,27,Extreme
-332660,Chilkat Valley,2021-09-01,2021,9,pce_eligible_community_kwh,1419,127,21,Extreme
 332660,Chilkat Valley,2021-09-01,2021,9,com_facil_sold_to,1419,127,21,Extreme
-332660,Chilkat Valley,2021-10-01,2021,10,pce_eligible_community_kwh,1763,127,27,Extreme
 332660,Chilkat Valley,2021-10-01,2021,10,com_facil_sold_to,1763,127,27,Extreme
-332660,Chilkat Valley,2021-11-01,2021,11,pce_eligible_community_kwh,1160,127,17,Extreme
 332660,Chilkat Valley,2021-11-01,2021,11,com_facil_sold_to,1160,127,17,Extreme
-332660,Chilkat Valley,2021-12-01,2021,12,pce_eligible_community_kwh,1386,127,21,Extreme
 332660,Chilkat Valley,2021-12-01,2021,12,com_facil_sold_to,1386,127,21,Extreme
-332660,Chilkat Valley,2022-01-01,2022,1,pce_eligible_community_kwh,1788,127,27,Extreme
 332660,Chilkat Valley,2022-01-01,2022,1,com_facil_sold_to,1788,127,27,Extreme
-332660,Chilkat Valley,2022-02-01,2022,2,pce_eligible_community_kwh,1800,127,28,Extreme
 332660,Chilkat Valley,2022-02-01,2022,2,peak_consumption_kw,61,234,5,Strong
 332660,Chilkat Valley,2022-02-01,2022,2,com_facil_sold_to,1800,127,28,Extreme
-332660,Chilkat Valley,2022-03-01,2022,3,pce_eligible_community_kwh,2050,127,32,Extreme
 332660,Chilkat Valley,2022-03-01,2022,3,com_facil_sold_to,2050,127,32,Extreme
-332660,Chilkat Valley,2022-04-01,2022,4,pce_eligible_community_kwh,2028,127,31,Extreme
 332660,Chilkat Valley,2022-04-01,2022,4,peak_consumption_kw,41,234,6,Strong
 332660,Chilkat Valley,2022-04-01,2022,4,com_facil_sold_to,2028,127,31,Extreme
-332660,Chilkat Valley,2022-05-01,2022,5,pce_eligible_community_kwh,1444,127,22,Extreme
 332660,Chilkat Valley,2022-05-01,2022,5,peak_consumption_kw,37,234,6,Strong
 332660,Chilkat Valley,2022-05-01,2022,5,com_facil_sold_to,1444,127,22,Extreme
-332660,Chilkat Valley,2022-06-01,2022,6,pce_eligible_community_kwh,1112,127,16,Extreme
 332660,Chilkat Valley,2022-06-01,2022,6,com_facil_sold_to,1112,127,16,Extreme
-332660,Chilkat Valley,2022-07-01,2022,7,pce_eligible_community_kwh,702,127,9,Extreme
 332660,Chilkat Valley,2022-07-01,2022,7,com_facil_sold_to,702,127,9,Extreme
-332660,Chilkat Valley,2022-08-01,2022,8,pce_eligible_community_kwh,669,127,9,Strong
 332660,Chilkat Valley,2022-08-01,2022,8,com_facil_sold_to,669,127,9,Strong
-332660,Chilkat Valley,2022-09-01,2022,9,pce_eligible_community_kwh,750,127,10,Extreme
 332660,Chilkat Valley,2022-09-01,2022,9,com_facil_sold_to,750,127,10,Extreme
-332660,Chilkat Valley,2022-10-01,2022,10,pce_eligible_community_kwh,667,127,9,Strong
 332660,Chilkat Valley,2022-10-01,2022,10,com_facil_sold_to,667,127,9,Strong
-332660,Chilkat Valley,2022-11-01,2022,11,pce_eligible_community_kwh,789,127,11,Extreme
 332660,Chilkat Valley,2022-11-01,2022,11,com_facil_sold_to,789,127,11,Extreme
-332660,Chilkat Valley,2022-12-01,2022,12,pce_eligible_community_kwh,818,127,11,Extreme
 332660,Chilkat Valley,2022-12-01,2022,12,com_facil_sold_to,818,127,11,Extreme
 332690,Chilkat Valley/Klukwan,2023-02-01,2023,2,powerhouse_consumption_kwh,14310,4464,59,Extreme
 332690,Chilkat Valley/Klukwan,2026-01-01,2026,1,residential_sold_to,117710,77350,5,Strong
@@ -704,15 +609,10 @@ project_code,sales_reporting_name,date,calendar_year,calendar_month,column_teste
 331890,Chitina,2020-07-01,2020,7,peak_consumption_kw,190,86,5,Strong
 331890,Chitina,2021-01-01,2021,1,unbilled_sold_to,0,575,10,Extreme
 331890,Chitina,2022-09-01,2022,9,fuel_used_gallons,6736,3019,11,Extreme
-331890,Chitina,2023-12-01,2023,12,pce_eligible_community_kwh,2503,1009,5,Strong
-331890,Chitina,2024-01-01,2024,1,pce_eligible_community_kwh,2575,1009,5,Strong
 331890,Chitina,2025-06-01,2025,6,peak_consumption_kw,220,86,6,Strong
 331890,Chitina,2025-07-01,2025,7,commercial_sold_to,30538,17617,5,Strong
-331890,Chitina,2025-12-01,2025,12,pce_eligible_community_kwh,3703,1009,8,Strong
 331890,Chitina,2025-12-01,2025,12,com_facil_sold_to,3703,1022,8,Strong
-331890,Chitina,2026-01-01,2026,1,pce_eligible_community_kwh,3235,1009,7,Strong
 331890,Chitina,2026-01-01,2026,1,com_facil_sold_to,3235,1022,6,Strong
-331890,Chitina,2026-05-01,2026,5,pce_eligible_community_kwh,2528,1009,5,Strong
 332230,Chuathbaluk,2018-04-01,2018,4,peak_consumption_kw,652,55,81,Extreme
 332230,Chuathbaluk,2019-08-01,2019,8,powerhouse_consumption_kwh,1740,836,6,Strong
 332230,Chuathbaluk,2021-10-01,2021,10,powerhouse_consumption_kwh,1950,836,8,Strong
@@ -728,13 +628,7 @@ project_code,sales_reporting_name,date,calendar_year,calendar_month,column_teste
 331900,Circle,2017-12-01,2017,12,commercial_sold_to,10472,4263,5,Strong
 331900,Circle,2018-01-01,2018,1,commercial_sold_to,9674,4263,5,Strong
 331900,Circle,2020-12-01,2020,12,commercial_sold_to,12328,4263,7,Strong
-331900,Circle,2022-12-01,2022,12,pce_eligible_residential_kwh,16615,8101,8,Strong
-331900,Circle,2023-01-01,2023,1,pce_eligible_residential_kwh,13632,8101,5,Strong
-331910,Clark's Point,2016-07-01,2016,7,pce_eligible_community_kwh,3640,1038,5,Strong
-331910,Clark's Point,2017-03-01,2017,3,pce_eligible_community_kwh,7774,1038,13,Extreme
 331910,Clark's Point,2017-03-01,2017,3,com_facil_sold_to,7774,1768,5,Strong
-331910,Clark's Point,2017-12-01,2017,12,pce_eligible_community_kwh,3830,1038,5,Strong
-331910,Clark's Point,2018-01-01,2018,1,pce_eligible_community_kwh,3547,1038,5,Strong
 331910,Clark's Point,2018-07-01,2018,7,unbilled_sold_to,237,5,31,Extreme
 331910,Clark's Point,2019-03-01,2019,3,unbilled_sold_to,253,5,33,Extreme
 331910,Clark's Point,2019-06-01,2019,6,unbilled_sold_to,71,5,9,Strong
@@ -745,12 +639,9 @@ project_code,sales_reporting_name,date,calendar_year,calendar_month,column_teste
 331910,Clark's Point,2024-03-01,2024,3,commercial_sold_to,20022,7130,5,Strong
 331910,Clark's Point,2024-03-01,2024,3,unbilled_sold_to,66,5,8,Strong
 331910,Clark's Point,2024-04-01,2024,4,unbilled_sold_to,128,5,17,Extreme
-331910,Clark's Point,2024-06-01,2024,6,pce_eligible_residential_kwh,16282,9070,5,Strong
 331910,Clark's Point,2024-08-01,2024,8,peak_consumption_kw,1457,67,55,Extreme
-331910,Clark's Point,2024-10-01,2024,10,pce_eligible_community_kwh,3556,1038,5,Strong
 331910,Clark's Point,2024-10-01,2024,10,unbilled_sold_to,55,5,7,Strong
 331910,Clark's Point,2024-11-01,2024,11,unbilled_sold_to,241,5,32,Extreme
-331910,Clark's Point,2025-01-01,2025,1,pce_eligible_community_kwh,4060,1038,6,Strong
 331910,Clark's Point,2025-01-01,2025,1,unbilled_sold_to,325,5,43,Extreme
 331910,Clark's Point,2025-02-01,2025,2,unbilled_sold_to,79,5,10,Extreme
 331910,Clark's Point,2025-03-01,2025,3,unbilled_sold_to,203,5,27,Extreme
@@ -758,12 +649,9 @@ project_code,sales_reporting_name,date,calendar_year,calendar_month,column_teste
 331910,Clark's Point,2025-12-01,2025,12,unbilled_sold_to,78,5,10,Extreme
 331910,Clark's Point,2026-02-01,2026,2,diesel_kwh_generated,69623,28800,5,Strong
 331910,Clark's Point,2026-02-01,2026,2,unbilled_sold_to,74,5,9,Extreme
-331910,Clark's Point,2026-03-01,2026,3,pce_eligible_community_kwh,3673,1038,5,Strong
-331910,Clark's Point,2026-04-01,2026,4,pce_eligible_community_kwh,3674,1038,5,Strong
 331910,Clark's Point,2026-04-01,2026,4,unbilled_sold_to,69,5,9,Strong
 331980,Cold Bay,2017-01-01,2017,1,govt_facil_sold_to,120710,57717,5,Strong
 331980,Cold Bay,2017-03-01,2017,3,govt_facil_sold_to,133575,57717,6,Strong
-331980,Cold Bay,2021-05-01,2021,5,pce_eligible_community_kwh,0,4130,7,Strong
 331980,Cold Bay,2021-11-01,2021,11,peak_consumption_kw,16700,292,231,Extreme
 331920,"Cordova, Eyak",2016-07-01,2016,7,peak_consumption_kw,8776,3763,6,Strong
 331920,"Cordova, Eyak",2016-07-01,2016,7,commercial_sold_to,2412164,935338,7,Strong
@@ -904,8 +792,6 @@ project_code,sales_reporting_name,date,calendar_year,calendar_month,column_teste
 332240,Crooked Creek,2020-10-01,2020,10,commercial_sold_to,20391,8639,6,Strong
 332240,Crooked Creek,2021-02-01,2021,2,powerhouse_consumption_kwh,2093,1062,6,Strong
 332240,Crooked Creek,2023-01-01,2023,1,govt_facil_sold_to,4174,988,8,Strong
-332240,Crooked Creek,2024-01-01,2024,1,pce_eligible_residential_kwh,11023,7148,5,Strong
-332240,Crooked Creek,2024-01-01,2024,1,pce_eligible_community_kwh,6245,2249,8,Strong
 332240,Crooked Creek,2024-01-01,2024,1,fuel_used_gallons,4302,2009,6,Strong
 332240,Crooked Creek,2024-01-01,2024,1,diesel_kwh_generated,45175,22810,5,Strong
 332240,Crooked Creek,2024-01-01,2024,1,com_facil_sold_to,6245,2418,10,Extreme
@@ -1024,7 +910,6 @@ project_code,sales_reporting_name,date,calendar_year,calendar_month,column_teste
 331930,Diomede,2017-07-01,2017,7,govt_facil_sold_to,1238,107,13,Extreme
 331930,Diomede,2017-08-01,2017,8,govt_facil_sold_to,656,107,6,Strong
 331930,Diomede,2017-09-01,2017,9,govt_facil_sold_to,1057,107,11,Extreme
-331930,Diomede,2017-10-01,2017,10,pce_eligible_community_kwh,14810,982,27,Extreme
 331930,Diomede,2017-10-01,2017,10,com_facil_sold_to,14810,1150,24,Extreme
 331930,Diomede,2017-10-01,2017,10,govt_facil_sold_to,14115,107,166,Extreme
 331930,Diomede,2017-11-01,2017,11,govt_facil_sold_to,503,107,5,Strong
@@ -1051,21 +936,11 @@ project_code,sales_reporting_name,date,calendar_year,calendar_month,column_teste
 331100,"Dot Lake, Dot Lake Village",2016-05-01,2016,5,commercial_sold_to,23061,12669.5,5,Strong
 331100,"Dot Lake, Dot Lake Village",2026-01-01,2026,1,residential_sold_to,14513,7703.5,5,Strong
 331110,"Eagle, Eagle Village",2022-02-01,2022,2,fuel_used_gallons,8859,5169,5,Strong
-331110,"Eagle, Eagle Village",2025-12-01,2025,12,pce_eligible_residential_kwh,30890,22992.5,5,Strong
 331110,"Eagle, Eagle Village",2025-12-01,2025,12,residential_sold_to,36411,25494.5,6,Strong
-331110,"Eagle, Eagle Village",2026-01-01,2026,1,pce_eligible_residential_kwh,31508,22992.5,6,Strong
 331110,"Eagle, Eagle Village",2026-01-01,2026,1,residential_sold_to,37994,25494.5,6,Strong
-331290,Eek,2015-11-01,2015,11,pce_eligible_community_kwh,10934,3780,5,Strong
 331290,Eek,2015-11-01,2015,11,commercial_sold_to,24815,10244,5,Strong
 331290,Eek,2015-12-01,2015,12,commercial_sold_to,23144,10244,5,Strong
-331290,Eek,2016-01-01,2016,1,pce_eligible_community_kwh,12098,3780,5,Strong
 331290,Eek,2016-01-01,2016,1,commercial_sold_to,31061,10244,7,Strong
-331290,Eek,2016-02-01,2016,2,pce_eligible_community_kwh,11980,3780,5,Strong
-331290,Eek,2016-03-01,2016,3,pce_eligible_community_kwh,11383,3780,5,Strong
-331290,Eek,2016-12-01,2016,12,pce_eligible_community_kwh,11943,3780,5,Strong
-331290,Eek,2017-01-01,2017,1,pce_eligible_community_kwh,12719,3780,6,Strong
-331290,Eek,2017-02-01,2017,2,pce_eligible_community_kwh,14204,3780,7,Strong
-331290,Eek,2017-03-01,2017,3,pce_eligible_community_kwh,16501,3780,8,Strong
 331290,Eek,2022-01-01,2022,1,com_facil_sold_to,51642,18757,5,Strong
 331290,Eek,2022-02-01,2022,2,com_facil_sold_to,49669,18757,5,Strong
 331290,Eek,2025-07-01,2025,7,powerhouse_consumption_kwh,6735,1612,9,Strong
@@ -1100,25 +975,19 @@ project_code,sales_reporting_name,date,calendar_year,calendar_month,column_teste
 331940,Egegik,2018-02-01,2018,2,residential_customers,29,84,37,Extreme
 331940,Egegik,2018-04-01,2018,4,residential_customers,29,84,37,Extreme
 331940,Egegik,2018-05-01,2018,5,commercial_sold_to,53848,14387.5,7,Strong
-331940,Egegik,2018-06-01,2018,6,pce_eligible_residential_kwh,20061,9846.5,5,Strong
 331940,Egegik,2018-06-01,2018,6,commercial_sold_to,57176,14387.5,8,Strong
 331940,Egegik,2018-07-01,2018,7,commercial_sold_to,52343,14387.5,7,Strong
 331940,Egegik,2019-05-01,2019,5,commercial_sold_to,50653,14387.5,7,Strong
 331940,Egegik,2019-06-01,2019,6,commercial_sold_to,48147,14387.5,6,Strong
-331940,Egegik,2019-07-01,2019,7,pce_eligible_residential_kwh,19997,9846.5,5,Strong
 331940,Egegik,2019-07-01,2019,7,commercial_sold_to,47211,14387.5,6,Strong
 331940,Egegik,2020-05-01,2020,5,commercial_sold_to,40615,14387.5,5,Strong
-331940,Egegik,2020-06-01,2020,6,pce_eligible_residential_kwh,19848,9846.5,5,Strong
 331940,Egegik,2020-06-01,2020,6,commercial_sold_to,52389,14387.5,7,Strong
-331940,Egegik,2020-07-01,2020,7,pce_eligible_residential_kwh,20718,9846.5,5,Strong
 331940,Egegik,2020-07-01,2020,7,peak_consumption_kw,351,113.5,5,Strong
 331940,Egegik,2020-07-01,2020,7,residential_sold_to,27648,11061.5,5,Strong
 331940,Egegik,2020-07-01,2020,7,commercial_sold_to,43597,14387.5,5,Strong
 331940,Egegik,2021-05-01,2021,5,commercial_sold_to,48431,14387.5,6,Strong
-331940,Egegik,2021-06-01,2021,6,pce_eligible_residential_kwh,20245,9846.5,5,Strong
 331940,Egegik,2021-06-01,2021,6,diesel_kwh_generated,103096,44024,5,Strong
 331940,Egegik,2021-06-01,2021,6,commercial_sold_to,61251,14387.5,8,Strong
-331940,Egegik,2021-07-01,2021,7,pce_eligible_residential_kwh,19726,9846.5,5,Strong
 331940,Egegik,2021-07-01,2021,7,diesel_kwh_generated,102383,44024,5,Strong
 331940,Egegik,2021-07-01,2021,7,residential_sold_to,26865,11061.5,5,Strong
 331940,Egegik,2021-07-01,2021,7,commercial_sold_to,53725,14387.5,7,Strong
@@ -1126,48 +995,38 @@ project_code,sales_reporting_name,date,calendar_year,calendar_month,column_teste
 331940,Egegik,2022-05-01,2022,5,powerhouse_consumption_kwh,5693,2200.5,9,Extreme
 331940,Egegik,2022-05-01,2022,5,peak_consumption_kw,311,113.5,5,Strong
 331940,Egegik,2022-05-01,2022,5,commercial_sold_to,50886,14387.5,7,Strong
-331940,Egegik,2022-06-01,2022,6,pce_eligible_residential_kwh,21591,9846.5,5,Strong
 331940,Egegik,2022-06-01,2022,6,diesel_kwh_generated,103797,44024,5,Strong
 331940,Egegik,2022-06-01,2022,6,residential_sold_to,26755,11061.5,5,Strong
 331940,Egegik,2022-06-01,2022,6,commercial_sold_to,55412,14387.5,7,Strong
-331940,Egegik,2022-07-01,2022,7,pce_eligible_residential_kwh,24446,9846.5,7,Strong
 331940,Egegik,2022-07-01,2022,7,diesel_kwh_generated,110440,44024,5,Strong
 331940,Egegik,2022-07-01,2022,7,residential_sold_to,28549,11061.5,5,Strong
 331940,Egegik,2022-07-01,2022,7,commercial_sold_to,49316,14387.5,6,Strong
 331940,Egegik,2023-05-01,2023,5,commercial_sold_to,59205,14387.5,8,Strong
-331940,Egegik,2023-06-01,2023,6,pce_eligible_residential_kwh,24651,9846.5,7,Strong
 331940,Egegik,2023-06-01,2023,6,diesel_kwh_generated,110404,44024,5,Strong
 331940,Egegik,2023-06-01,2023,6,residential_sold_to,27745,11061.5,5,Strong
 331940,Egegik,2023-06-01,2023,6,commercial_sold_to,60883,14387.5,8,Strong
-331940,Egegik,2023-07-01,2023,7,pce_eligible_residential_kwh,25927,9846.5,7,Strong
 331940,Egegik,2023-07-01,2023,7,diesel_kwh_generated,116056,44024,6,Strong
 331940,Egegik,2023-07-01,2023,7,residential_sold_to,32145,11061.5,6,Strong
 331940,Egegik,2023-07-01,2023,7,commercial_sold_to,61390,14387.5,9,Strong
 331940,Egegik,2024-05-01,2024,5,peak_consumption_kw,333,113.5,5,Strong
 331940,Egegik,2024-05-01,2024,5,commercial_sold_to,64198,14387.5,9,Extreme
-331940,Egegik,2024-06-01,2024,6,pce_eligible_residential_kwh,23541,9846.5,6,Strong
 331940,Egegik,2024-06-01,2024,6,diesel_kwh_generated,105954,44024,5,Strong
 331940,Egegik,2024-06-01,2024,6,residential_sold_to,26879,11061.5,5,Strong
 331940,Egegik,2024-06-01,2024,6,commercial_sold_to,56256,14387.5,8,Strong
-331940,Egegik,2024-07-01,2024,7,pce_eligible_residential_kwh,22330,9846.5,6,Strong
 331940,Egegik,2024-07-01,2024,7,diesel_kwh_generated,110130,44024,5,Strong
 331940,Egegik,2024-07-01,2024,7,residential_sold_to,26700,11061.5,5,Strong
 331940,Egegik,2024-07-01,2024,7,commercial_sold_to,51171,14387.5,7,Strong
 331940,Egegik,2025-05-01,2025,5,fuel_used_gallons,9578,3849.5,5,Strong
 331940,Egegik,2025-05-01,2025,5,commercial_sold_to,50777,14387.5,7,Strong
-331940,Egegik,2025-06-01,2025,6,pce_eligible_residential_kwh,24796,9846.5,7,Strong
 331940,Egegik,2025-06-01,2025,6,diesel_kwh_generated,109378,44024,5,Strong
 331940,Egegik,2025-06-01,2025,6,peak_consumption_kw,7342,113.5,165,Extreme
 331940,Egegik,2025-06-01,2025,6,residential_sold_to,29820,11061.5,6,Strong
 331940,Egegik,2025-06-01,2025,6,commercial_sold_to,56808,14387.5,8,Strong
-331940,Egegik,2025-07-01,2025,7,pce_eligible_residential_kwh,25689,9846.5,7,Strong
 331940,Egegik,2025-07-01,2025,7,fuel_used_gallons,9898,3849.5,6,Strong
 331940,Egegik,2025-07-01,2025,7,diesel_kwh_generated,114220,44024,6,Strong
 331940,Egegik,2025-07-01,2025,7,residential_sold_to,33206,11061.5,7,Strong
 331940,Egegik,2025-07-01,2025,7,commercial_sold_to,55458,14387.5,7,Strong
 331950,Ekwok,2016-08-01,2016,8,residential_customers,140,50,30,Extreme
-331950,Ekwok,2018-06-01,2018,6,pce_eligible_community_kwh,5006,1834,6,Strong
-331950,Ekwok,2020-01-01,2020,1,pce_eligible_community_kwh,4585,1834,5,Strong
 331950,Ekwok,2024-07-01,2024,7,govt_facil_sold_to,298,7868,5,Strong
 331950,Ekwok,2025-11-01,2025,11,com_facil_sold_to,1495,9571,5,Strong
 331950,Ekwok,2025-12-01,2025,12,com_facil_sold_to,1314,9571,5,Strong
@@ -1325,7 +1184,6 @@ project_code,sales_reporting_name,date,calendar_year,calendar_month,column_teste
 331970,False Pass,2020-05-01,2020,5,unbilled_sold_to,12000,1515,5,Strong
 331970,False Pass,2020-06-01,2020,6,unbilled_sold_to,16000,1515,6,Strong
 331970,False Pass,2020-07-01,2020,7,unbilled_sold_to,15620,1515,6,Strong
-331970,False Pass,2025-01-01,2025,1,pce_eligible_community_kwh,13668,3879,5,Strong
 331970,False Pass,2025-01-01,2025,1,com_facil_sold_to,14165,5932,5,Strong
 331970,False Pass,2025-05-01,2025,5,unbilled_customers,2668,1,267,Extreme
 331970,False Pass,2026-02-01,2026,2,com_facil_sold_to,14042,5932,5,Strong
@@ -1336,13 +1194,7 @@ project_code,sales_reporting_name,date,calendar_year,calendar_month,column_teste
 332020,Fort Yukon,2022-04-01,2022,4,com_facil_customers,70,17,36,Extreme
 331990,Galena,2016-11-01,2016,11,govt_facil_sold_to,139893,36026,14,Extreme
 331990,Galena,2017-03-01,2017,3,govt_facil_sold_to,87679,36026,7,Strong
-331990,Galena,2020-08-01,2020,8,pce_eligible_community_kwh,22525,31430,6,Strong
-331990,Galena,2021-06-01,2021,6,pce_eligible_community_kwh,24687,31430,5,Strong
-331990,Galena,2021-09-01,2021,9,pce_eligible_community_kwh,22335,31430,6,Strong
-331990,Galena,2022-05-01,2022,5,pce_eligible_community_kwh,23953,31430,5,Strong
-331990,Galena,2022-06-01,2022,6,pce_eligible_community_kwh,24338,31430,5,Strong
 331990,Galena,2023-05-01,2023,5,commercial_customers,354,117,53,Extreme
-331990,Galena,2023-12-01,2023,12,pce_eligible_community_kwh,3340,31430,19,Extreme
 331320,Gambell,2015-08-01,2015,8,powerhouse_consumption_kwh,16874,5166.5,8,Strong
 331320,Gambell,2015-09-01,2015,9,powerhouse_consumption_kwh,25142,5166.5,14,Extreme
 331320,Gambell,2015-10-01,2015,10,powerhouse_consumption_kwh,17600,5166.5,9,Strong
@@ -1513,7 +1365,6 @@ project_code,sales_reporting_name,date,calendar_year,calendar_month,column_teste
 332010,Gustavus,2024-12-01,2024,12,govt_facil_sold_to,101788,20356,9,Strong
 332010,Gustavus,2025-01-01,2025,1,total_kwh_purchased,316029,0,NA,Extreme
 332010,Gustavus,2025-01-01,2025,1,govt_facil_sold_to,109541,20356,10,Extreme
-332010,Gustavus,2025-02-01,2025,2,pce_eligible_community_kwh,5791,3040,5,Strong
 332010,Gustavus,2025-02-01,2025,2,fuel_used_gallons,9338,713,8,Strong
 332010,Gustavus,2025-02-01,2025,2,diesel_kwh_generated,134466,17316,5,Strong
 332010,Gustavus,2025-02-01,2025,2,total_kwh_purchased,233561,0,NA,Extreme
@@ -1539,17 +1390,14 @@ project_code,sales_reporting_name,date,calendar_year,calendar_month,column_teste
 332010,Gustavus,2025-10-01,2025,10,govt_facil_sold_to,80383,20356,7,Strong
 332010,Gustavus,2025-11-01,2025,11,total_kwh_purchased,300139,0,NA,Extreme
 332010,Gustavus,2025-11-01,2025,11,govt_facil_sold_to,90382,20356,8,Strong
-332010,Gustavus,2025-12-01,2025,12,pce_eligible_community_kwh,6262,3040,6,Strong
 332010,Gustavus,2025-12-01,2025,12,total_kwh_purchased,330805,0,NA,Extreme
 332010,Gustavus,2025-12-01,2025,12,com_facil_sold_to,6262,3040,6,Strong
 332010,Gustavus,2025-12-01,2025,12,govt_facil_sold_to,114840,20356,10,Extreme
-332010,Gustavus,2026-01-01,2026,1,pce_eligible_community_kwh,5945,3040,5,Strong
 332010,Gustavus,2026-01-01,2026,1,fuel_used_gallons,16581,713,15,Extreme
 332010,Gustavus,2026-01-01,2026,1,diesel_kwh_generated,248363,17316,10,Extreme
 332010,Gustavus,2026-01-01,2026,1,total_kwh_purchased,146900,0,NA,Extreme
 332010,Gustavus,2026-01-01,2026,1,com_facil_sold_to,5945,3040,5,Strong
 332010,Gustavus,2026-01-01,2026,1,govt_facil_sold_to,119354,20356,11,Extreme
-332010,Gustavus,2026-02-01,2026,2,pce_eligible_community_kwh,5606,3040,5,Strong
 332010,Gustavus,2026-02-01,2026,2,total_kwh_purchased,329310,0,NA,Extreme
 332010,Gustavus,2026-02-01,2026,2,com_facil_sold_to,5606,3040,5,Strong
 332010,Gustavus,2026-02-01,2026,2,govt_facil_sold_to,132895,20356,12,Extreme
@@ -1605,7 +1453,6 @@ project_code,sales_reporting_name,date,calendar_year,calendar_month,column_teste
 331120,"Haines, Covenant Life",2023-05-01,2023,5,diesel_kwh_generated,171099,12200,12,Extreme
 331120,"Haines, Covenant Life",2023-09-01,2023,9,fuel_used_gallons,6462,842,6,Strong
 331120,"Haines, Covenant Life",2023-09-01,2023,9,diesel_kwh_generated,89214,12200,6,Strong
-331120,"Haines, Covenant Life",2026-01-01,2026,1,pce_eligible_residential_kwh,468677,322622,5,Strong
 331120,"Haines, Covenant Life",2026-01-01,2026,1,residential_sold_to,747617,447535.5,5,Strong
 331140,Hollis,2022-01-01,2022,1,powerhouse_consumption_kwh,3165,1299.5,6,Strong
 331140,Hollis,2022-04-01,2022,4,powerhouse_consumption_kwh,2801,1299.5,5,Strong
@@ -1617,7 +1464,6 @@ project_code,sales_reporting_name,date,calendar_year,calendar_month,column_teste
 331350,Holy Cross,2025-11-01,2025,11,fuel_used_gallons,0,3771.5,7,Strong
 331350,Holy Cross,2025-12-01,2025,12,fuel_used_gallons,0,3771.5,7,Strong
 331350,Holy Cross,2025-12-01,2025,12,commercial_sold_to,10110,0,NA,Strong
-331350,Holy Cross,2026-01-01,2026,1,pce_eligible_residential_kwh,32507,21007,5,Strong
 331350,Holy Cross,2026-01-01,2026,1,fuel_used_gallons,0,3771.5,7,Strong
 331350,Holy Cross,2026-01-01,2026,1,residential_sold_to,40367,23902,6,Strong
 331350,Holy Cross,2026-01-01,2026,1,commercial_sold_to,10796,0,NA,Strong
@@ -1648,11 +1494,9 @@ project_code,sales_reporting_name,date,calendar_year,calendar_month,column_teste
 331360,Hooper Bay,2023-03-01,2023,3,com_facil_sold_to,131754,69263,5,Strong
 331360,Hooper Bay,2025-11-01,2025,11,fuel_used_gallons,0,18198.5,5,Strong
 331360,Hooper Bay,2025-12-01,2025,12,fuel_used_gallons,0,18198.5,5,Strong
-331360,Hooper Bay,2026-01-01,2026,1,pce_eligible_community_kwh,74283,25869,5,Strong
 331360,Hooper Bay,2026-01-01,2026,1,fuel_used_gallons,0,18198.5,5,Strong
 331360,Hooper Bay,2026-01-01,2026,1,commercial_sold_to,54732,34006,5,Strong
 331360,Hooper Bay,2026-02-01,2026,2,fuel_used_gallons,0,18198.5,5,Strong
-331360,Hooper Bay,2026-03-01,2026,3,pce_eligible_community_kwh,75974,25869,5,Strong
 331360,Hooper Bay,2026-03-01,2026,3,fuel_used_gallons,0,18198.5,5,Strong
 332030,Hughes,2015-12-01,2015,12,unbilled_sold_to,245,29.5,5,Strong
 332030,Hughes,2017-12-01,2017,12,unbilled_sold_to,254,29.5,5,Strong
@@ -1666,12 +1510,10 @@ project_code,sales_reporting_name,date,calendar_year,calendar_month,column_teste
 331370,Huslia,2016-11-01,2016,11,residential_customers,41,103,14,Extreme
 331370,Huslia,2017-01-01,2017,1,residential_customers,40,103,14,Extreme
 331370,Huslia,2017-02-01,2017,2,residential_customers,40,103,14,Extreme
-331370,Huslia,2025-01-01,2025,1,pce_eligible_residential_kwh,59066,36013,5,Strong
 331370,Huslia,2025-11-01,2025,11,fuel_used_gallons,0,6592.5,5,Strong
 331370,Huslia,2025-11-01,2025,11,commercial_sold_to,11448,0,NA,Strong
 331370,Huslia,2025-12-01,2025,12,fuel_used_gallons,0,6592.5,5,Strong
 331370,Huslia,2025-12-01,2025,12,commercial_sold_to,12740,0,NA,Strong
-331370,Huslia,2026-01-01,2026,1,pce_eligible_residential_kwh,57394,36013,5,Strong
 331370,Huslia,2026-01-01,2026,1,fuel_used_gallons,0,6592.5,5,Strong
 331370,Huslia,2026-01-01,2026,1,residential_sold_to,73964,45253,5,Strong
 331370,Huslia,2026-01-01,2026,1,commercial_sold_to,13309,0,NA,Strong
@@ -1890,12 +1732,8 @@ project_code,sales_reporting_name,date,calendar_year,calendar_month,column_teste
 331400,Kiana,2026-01-01,2026,1,commercial_sold_to,32812,17695,6,Strong
 331400,Kiana,2026-02-01,2026,2,commercial_sold_to,31091,17695,6,Strong
 331400,Kiana,2026-03-01,2026,3,commercial_sold_to,31557,17695,6,Strong
-332070,King Cove,2017-07-01,2017,7,pce_eligible_community_kwh,64610,63350,5,Strong
-332070,King Cove,2017-08-01,2017,8,pce_eligible_community_kwh,64610,63350,5,Strong
 332070,King Cove,2017-08-01,2017,8,powerhouse_consumption_kwh,21547,5661,8,Strong
-332070,King Cove,2017-09-01,2017,9,pce_eligible_community_kwh,64610,63350,5,Strong
 332070,King Cove,2017-09-01,2017,9,com_facil_sold_to,205473,87137.5,10,Extreme
-332070,King Cove,2017-10-01,2017,10,pce_eligible_community_kwh,56623,63350,26,Extreme
 332080,Kipnuk,2015-11-01,2015,11,unbilled_customers,64,10,12,Extreme
 332080,Kipnuk,2015-12-01,2015,12,unbilled_sold_to,12795,2290,5,Strong
 332080,Kipnuk,2015-12-01,2015,12,unbilled_customers,64,10,12,Extreme
@@ -1928,15 +1766,9 @@ project_code,sales_reporting_name,date,calendar_year,calendar_month,column_teste
 332080,Kipnuk,2022-10-01,2022,10,powerhouse_consumption_kwh,18982,4619,5,Strong
 332080,Kipnuk,2022-12-01,2022,12,unbilled_sold_to,26182,2290,11,Extreme
 332080,Kipnuk,2023-03-01,2023,3,powerhouse_consumption_kwh,25970,4619,7,Strong
-332080,Kipnuk,2023-12-01,2023,12,pce_eligible_community_kwh,27068,7451,7,Strong
-332080,Kipnuk,2024-02-01,2024,2,pce_eligible_community_kwh,24123,7451,6,Strong
 332080,Kipnuk,2024-11-01,2024,11,powerhouse_consumption_kwh,30391,4619,9,Strong
-332080,Kipnuk,2024-12-01,2024,12,pce_eligible_community_kwh,48849,7451,14,Extreme
 332080,Kipnuk,2024-12-01,2024,12,com_facil_sold_to,67263,12027,7,Strong
-332080,Kipnuk,2025-01-01,2025,1,pce_eligible_residential_kwh,104656,64155,6,Strong
-332080,Kipnuk,2025-01-01,2025,1,pce_eligible_community_kwh,26718,7451,6,Strong
 332080,Kipnuk,2025-01-01,2025,1,residential_sold_to,121402,70282,6,Strong
-332080,Kipnuk,2025-03-01,2025,3,pce_eligible_community_kwh,21787,7451,5,Strong
 332080,Kipnuk,2025-09-01,2025,9,fuel_used_gallons,19514,9555.5,5,Strong
 331410,Kivalina,2016-08-01,2016,8,residential_customers,186,89,33,Extreme
 331410,Kivalina,2016-10-01,2016,10,residential_customers,185,89,32,Extreme
@@ -2012,8 +1844,6 @@ project_code,sales_reporting_name,date,calendar_year,calendar_month,column_teste
 331155,Klawock,2020-01-01,2020,1,commercial_sold_to,256177,401686,5,Strong
 331155,Klawock,2026-01-01,2026,1,residential_customers,348,399,6,Strong
 331155,Klawock,2026-02-01,2026,2,residential_customers,344,399,6,Strong
-332700,Klukwan,2015-07-01,2015,7,pce_eligible_community_kwh,3720,6510,13,Extreme
-332700,Klukwan,2015-08-01,2015,8,pce_eligible_community_kwh,4484,6510,10,Extreme
 332700,Klukwan,2022-12-01,2022,12,commercial_sold_to,15306,7253.5,5,Strong
 332090,Kobuk,2015-11-01,2015,11,commercial_sold_to,12273,7455,6,Strong
 332090,Kobuk,2015-12-01,2015,12,commercial_sold_to,14685,7455,9,Strong
@@ -2026,7 +1856,6 @@ project_code,sales_reporting_name,date,calendar_year,calendar_month,column_teste
 332090,Kobuk,2024-02-01,2024,2,commercial_sold_to,15718,7455,10,Extreme
 332090,Kobuk,2025-11-01,2025,11,commercial_sold_to,11274,7455,5,Strong
 332090,Kobuk,2025-12-01,2025,12,commercial_sold_to,12100,7455,6,Strong
-332090,Kobuk,2026-01-01,2026,1,pce_eligible_community_kwh,32779,8773,12,Extreme
 332090,Kobuk,2026-01-01,2026,1,commercial_sold_to,14084,7455,8,Strong
 332090,Kobuk,2026-02-01,2026,2,commercial_sold_to,12264,7455,6,Strong
 332090,Kobuk,2026-03-01,2026,3,commercial_sold_to,13193,7455,7,Strong
@@ -2060,10 +1889,8 @@ project_code,sales_reporting_name,date,calendar_year,calendar_month,column_teste
 332110,Koliganek,2018-08-01,2018,8,powerhouse_consumption_kwh,3519,1584,7,Strong
 332110,Koliganek,2018-09-01,2018,9,powerhouse_consumption_kwh,2912,1584,5,Strong
 332110,Koliganek,2018-12-01,2018,12,peak_consumption_kw,168,92,5,Strong
-332110,Koliganek,2019-01-01,2019,1,pce_eligible_community_kwh,11622,6027.5,5,Strong
 332110,Koliganek,2022-12-01,2022,12,fuel_used_gallons,9640,4894.5,9,Extreme
 332110,Koliganek,2022-12-01,2022,12,powerhouse_consumption_kwh,2806,1584,5,Strong
-332110,Koliganek,2026-01-01,2026,1,pce_eligible_community_kwh,11830,6027.5,5,Strong
 332110,Koliganek,2026-01-01,2026,1,com_facil_sold_to,13384,6777,5,Strong
 332510,Kongiganak,2015-12-01,2015,12,residential_customers,103,157,5,Strong
 332510,Kongiganak,2016-01-01,2016,1,residential_customers,101,157,5,Strong
@@ -2119,7 +1946,6 @@ project_code,sales_reporting_name,date,calendar_year,calendar_month,column_teste
 331420,Koyuk,2025-11-01,2025,11,commercial_sold_to,31245,13417,8,Strong
 331420,Koyuk,2025-12-01,2025,12,fuel_used_gallons,0,7740.5,5,Strong
 331420,Koyuk,2025-12-01,2025,12,commercial_sold_to,33960,13417,9,Strong
-331420,Koyuk,2026-01-01,2026,1,pce_eligible_residential_kwh,49807,33486,5,Strong
 331420,Koyuk,2026-01-01,2026,1,fuel_used_gallons,0,7740.5,5,Strong
 331420,Koyuk,2026-01-01,2026,1,commercial_sold_to,37318,13417,10,Extreme
 331420,Koyuk,2026-02-01,2026,2,fuel_used_gallons,0,7740.5,5,Strong
@@ -2158,41 +1984,32 @@ project_code,sales_reporting_name,date,calendar_year,calendar_month,column_teste
 332150,Kwethluk,2024-10-01,2024,10,peak_consumption_kw,618,315,5,Strong
 332150,Kwethluk,2024-11-01,2024,11,peak_consumption_kw,598,315,5,Strong
 332150,Kwethluk,2025-10-01,2025,10,unbilled_sold_to,45906,10092,7,Strong
-332160,Kwigillingok,2015-10-01,2015,10,pce_eligible_community_kwh,13121,3206,8,Strong
 332160,Kwigillingok,2015-10-01,2015,10,wind_kwh_generated,116614,16967,5,Strong
 332160,Kwigillingok,2015-10-01,2015,10,powerhouse_consumption_kwh,9271,3588.5,5,Strong
 332160,Kwigillingok,2015-10-01,2015,10,residential_sold_to,99632,45337,8,Strong
 332160,Kwigillingok,2015-10-01,2015,10,commercial_sold_to,142773,45488.5,5,Strong
 332160,Kwigillingok,2015-10-01,2015,10,com_facil_sold_to,13121,3206,8,Strong
 332160,Kwigillingok,2015-10-01,2015,10,govt_facil_sold_to,1766,308,9,Extreme
-332160,Kwigillingok,2016-01-01,2016,1,pce_eligible_community_kwh,12352,3206,7,Strong
 332160,Kwigillingok,2016-01-01,2016,1,com_facil_sold_to,12352,3206,7,Strong
 332160,Kwigillingok,2016-01-01,2016,1,govt_facil_sold_to,1391,308,7,Strong
-332160,Kwigillingok,2016-02-01,2016,2,pce_eligible_community_kwh,10636,3206,6,Strong
 332160,Kwigillingok,2016-02-01,2016,2,com_facil_sold_to,10636,3206,6,Strong
 332160,Kwigillingok,2016-02-01,2016,2,govt_facil_sold_to,1306,308,6,Strong
-332160,Kwigillingok,2016-03-01,2016,3,pce_eligible_community_kwh,11635,3206,7,Strong
 332160,Kwigillingok,2016-03-01,2016,3,com_facil_sold_to,11635,3206,7,Strong
 332160,Kwigillingok,2016-03-01,2016,3,govt_facil_sold_to,1340,308,7,Strong
 332160,Kwigillingok,2016-04-01,2016,4,powerhouse_consumption_kwh,10184,3588.5,5,Strong
 332160,Kwigillingok,2016-04-01,2016,4,govt_facil_sold_to,1375,308,7,Strong
 332160,Kwigillingok,2016-12-01,2016,12,govt_facil_sold_to,1150,308,5,Strong
-332160,Kwigillingok,2017-01-01,2017,1,pce_eligible_community_kwh,11327,3206,6,Strong
 332160,Kwigillingok,2017-01-01,2017,1,residential_sold_to,87180,45337,6,Strong
 332160,Kwigillingok,2017-01-01,2017,1,com_facil_sold_to,11327,3206,6,Strong
 332160,Kwigillingok,2017-01-01,2017,1,govt_facil_sold_to,1139,308,5,Strong
-332160,Kwigillingok,2017-02-01,2017,2,pce_eligible_community_kwh,11093,3206,6,Strong
 332160,Kwigillingok,2017-02-01,2017,2,com_facil_sold_to,11093,3206,6,Strong
 332160,Kwigillingok,2017-02-01,2017,2,govt_facil_sold_to,1060,308,5,Strong
-332160,Kwigillingok,2017-03-01,2017,3,pce_eligible_community_kwh,11909,3206,7,Strong
 332160,Kwigillingok,2017-03-01,2017,3,com_facil_sold_to,11909,3206,7,Strong
 332160,Kwigillingok,2017-03-01,2017,3,govt_facil_sold_to,1173,308,6,Strong
 332160,Kwigillingok,2017-12-01,2017,12,govt_facil_sold_to,1103,308,5,Strong
-332160,Kwigillingok,2018-01-01,2018,1,pce_eligible_community_kwh,9374,3206,5,Strong
 332160,Kwigillingok,2018-01-01,2018,1,com_facil_sold_to,9374,3206,5,Strong
 332160,Kwigillingok,2018-01-01,2018,1,govt_facil_sold_to,1608,308,8,Strong
 332160,Kwigillingok,2018-02-01,2018,2,wind_kwh_generated,122432,16967,5,Strong
-332160,Kwigillingok,2018-03-01,2018,3,pce_eligible_community_kwh,9223,3206,5,Strong
 332160,Kwigillingok,2018-03-01,2018,3,com_facil_sold_to,9223,3206,5,Strong
 332160,Kwigillingok,2018-07-01,2018,7,powerhouse_consumption_kwh,9890,3588.5,5,Strong
 332160,Kwigillingok,2018-08-01,2018,8,powerhouse_consumption_kwh,10199,3588.5,5,Strong
@@ -2214,20 +2031,12 @@ project_code,sales_reporting_name,date,calendar_year,calendar_month,column_teste
 332160,Kwigillingok,2025-01-01,2025,1,govt_facil_sold_to,1194,308,6,Strong
 332160,Kwigillingok,2025-03-01,2025,3,govt_facil_sold_to,1207,308,6,Strong
 332160,Kwigillingok,2025-09-01,2025,9,powerhouse_consumption_kwh,9709,3588.5,5,Strong
-332160,Kwigillingok,2025-10-01,2025,10,pce_eligible_residential_kwh,14964,36399,5,Strong
 332160,Kwigillingok,2025-11-01,2025,11,govt_facil_sold_to,1088,308,5,Strong
-332160,Kwigillingok,2025-12-01,2025,12,pce_eligible_residential_kwh,8328,36399,6,Strong
 332160,Kwigillingok,2025-12-01,2025,12,residential_sold_to,8648,45337,5,Strong
-332160,Kwigillingok,2026-01-01,2026,1,pce_eligible_residential_kwh,14788,36399,5,Strong
 332160,Kwigillingok,2026-01-01,2026,1,govt_facil_sold_to,1924,308,10,Extreme
-332160,Kwigillingok,2026-02-01,2026,2,pce_eligible_residential_kwh,13295,36399,5,Strong
 332160,Kwigillingok,2026-02-01,2026,2,residential_sold_to,13770,45337,5,Strong
 332160,Kwigillingok,2026-02-01,2026,2,govt_facil_sold_to,1601,308,8,Strong
 332160,Kwigillingok,2026-03-01,2026,3,govt_facil_sold_to,2285,308,13,Extreme
-332160,Kwigillingok,2026-04-01,2026,4,pce_eligible_residential_kwh,14900,36399,5,Strong
-332170,Larsen Bay,2016-04-01,2016,4,pce_eligible_community_kwh,0,5600,11,Extreme
-332170,Larsen Bay,2016-05-01,2016,5,pce_eligible_community_kwh,0,5600,11,Extreme
-332170,Larsen Bay,2016-06-01,2016,6,pce_eligible_community_kwh,766,5600,9,Extreme
 332170,Larsen Bay,2017-02-01,2017,2,fuel_used_gallons,2146,38,37,Extreme
 332170,Larsen Bay,2017-03-01,2017,3,fuel_used_gallons,2895,38,51,Extreme
 332170,Larsen Bay,2017-04-01,2017,4,fuel_used_gallons,855,38,15,Extreme
@@ -2260,7 +2069,6 @@ project_code,sales_reporting_name,date,calendar_year,calendar_month,column_teste
 332190,Lime Village,2016-12-01,2016,12,commercial_sold_to,3724,1186,5,Strong
 332190,Lime Village,2017-11-01,2017,11,govt_facil_sold_to,330,38,6,Strong
 332190,Lime Village,2017-12-01,2017,12,govt_facil_sold_to,614,38,12,Extreme
-332190,Lime Village,2018-02-01,2018,2,pce_eligible_community_kwh,2520,630,6,Strong
 332190,Lime Village,2018-02-01,2018,2,fuel_used_gallons,1814,727,7,Strong
 332190,Lime Village,2018-02-01,2018,2,diesel_kwh_generated,16121,5280,7,Strong
 332190,Lime Village,2018-02-01,2018,2,powerhouse_consumption_kwh,1193,308,5,Strong
@@ -2276,14 +2084,12 @@ project_code,sales_reporting_name,date,calendar_year,calendar_month,column_teste
 332190,Lime Village,2020-01-01,2020,1,commercial_sold_to,4278,1186,7,Strong
 332190,Lime Village,2020-01-01,2020,1,govt_facil_sold_to,1621,38,32,Extreme
 332190,Lime Village,2021-01-01,2021,1,govt_facil_sold_to,969,38,19,Extreme
-332190,Lime Village,2023-04-01,2023,4,pce_eligible_residential_kwh,5473,1400,5,Strong
 332190,Lime Village,2023-04-01,2023,4,fuel_used_gallons,6438,727,35,Extreme
 332190,Lime Village,2023-04-01,2023,4,diesel_kwh_generated,59134,5280,37,Extreme
 332190,Lime Village,2023-04-01,2023,4,residential_sold_to,9042,1758,10,Extreme
 332190,Lime Village,2023-04-01,2023,4,commercial_sold_to,10468,1186,20,Extreme
 332190,Lime Village,2023-04-01,2023,4,com_facil_sold_to,11294,1040,17,Extreme
 332190,Lime Village,2023-04-01,2023,4,govt_facil_sold_to,6923,38,141,Extreme
-332190,Lime Village,2023-08-01,2023,8,pce_eligible_residential_kwh,5599,1400,5,Strong
 332190,Lime Village,2023-08-01,2023,8,fuel_used_gallons,1768,727,6,Strong
 332190,Lime Village,2023-08-01,2023,8,diesel_kwh_generated,22829,5280,12,Extreme
 332190,Lime Village,2023-08-01,2023,8,residential_sold_to,6413,1758,7,Strong
@@ -2306,7 +2112,6 @@ project_code,sales_reporting_name,date,calendar_year,calendar_month,column_teste
 332190,Lime Village,2024-04-01,2024,4,com_facil_sold_to,8094,1040,11,Extreme
 332190,Lime Village,2024-04-01,2024,4,govt_facil_sold_to,706,38,14,Extreme
 332190,Lime Village,2024-05-01,2024,5,residential_sold_to,5182,1758,5,Strong
-332190,Lime Village,2024-09-01,2024,9,pce_eligible_residential_kwh,5327,1400,5,Strong
 332190,Lime Village,2024-09-01,2024,9,residential_sold_to,9113,1758,10,Extreme
 332190,Lime Village,2024-09-01,2024,9,commercial_sold_to,5443,1186,9,Extreme
 332190,Lime Village,2024-09-01,2024,9,com_facil_sold_to,4824,1040,6,Strong
@@ -2325,21 +2130,17 @@ project_code,sales_reporting_name,date,calendar_year,calendar_month,column_teste
 332200,Manley Hot Springs,2024-10-01,2024,10,powerhouse_consumption_kwh,9174,2088.5,5,Strong
 332200,Manley Hot Springs,2025-04-01,2025,4,powerhouse_consumption_kwh,8466,2088.5,5,Strong
 332200,Manley Hot Springs,2025-05-01,2025,5,powerhouse_consumption_kwh,8466,2088.5,5,Strong
-332200,Manley Hot Springs,2025-12-01,2025,12,pce_eligible_residential_kwh,18613,12635.5,5,Strong
-332200,Manley Hot Springs,2026-01-01,2026,1,pce_eligible_residential_kwh,19819,12635.5,6,Strong
 332200,Manley Hot Springs,2026-01-01,2026,1,fuel_used_gallons,6513,3687,5,Strong
 332200,Manley Hot Springs,2026-01-01,2026,1,diesel_kwh_generated,82563,45450,5,Strong
 332200,Manley Hot Springs,2026-01-01,2026,1,residential_sold_to,24925,14161,5,Strong
 332210,Manokotak,2018-02-01,2018,2,unbilled_sold_to,12274,3795.5,6,Strong
 332210,Manokotak,2019-04-01,2019,4,unbilled_sold_to,16663,3795.5,9,Extreme
 332210,Manokotak,2019-05-01,2019,5,unbilled_sold_to,16663,3795.5,9,Extreme
-332210,Manokotak,2021-01-01,2021,1,pce_eligible_community_kwh,15931,5196,7,Strong
 332210,Manokotak,2021-01-01,2021,1,com_facil_sold_to,15931,5398.5,8,Strong
 332210,Manokotak,2021-11-01,2021,11,residential_sold_to,90188,51248.5,5,Strong
 332210,Manokotak,2022-01-01,2022,1,govt_facil_sold_to,60963,23758.5,5,Strong
 332210,Manokotak,2023-02-01,2023,2,commercial_sold_to,34535,14976.5,7,Strong
 332210,Manokotak,2023-07-01,2023,7,commercial_sold_to,34117,14976.5,6,Strong
-332210,Manokotak,2024-11-01,2024,11,pce_eligible_community_kwh,12334,5196,5,Strong
 332210,Manokotak,2024-11-01,2024,11,com_facil_sold_to,12334,5398.5,5,Strong
 332210,Manokotak,2024-12-01,2024,12,unbilled_sold_to,10303,3795.5,5,Strong
 331440,Marshall,2015-07-01,2015,7,commercial_sold_to,18994,8002,9,Extreme
@@ -2398,26 +2199,14 @@ project_code,sales_reporting_name,date,calendar_year,calendar_month,column_teste
 331160,Mentasta Lake,2022-01-01,2022,1,commercial_sold_to,27192,11863,6,Strong
 331160,Mentasta Lake,2022-02-01,2022,2,commercial_sold_to,32739,11863,9,Strong
 331160,Mentasta Lake,2022-03-01,2022,3,commercial_sold_to,27723,11863,7,Strong
-331160,Mentasta Lake,2024-02-01,2024,2,pce_eligible_community_kwh,5925,1806,5,Strong
 331160,Mentasta Lake,2024-02-01,2024,2,com_facil_sold_to,5925,1806,5,Strong
-331160,Mentasta Lake,2025-11-01,2025,11,pce_eligible_community_kwh,5732,1806,5,Strong
 331160,Mentasta Lake,2025-11-01,2025,11,com_facil_sold_to,5732,1806,5,Strong
-331160,Mentasta Lake,2025-12-01,2025,12,pce_eligible_community_kwh,6696,1806,6,Strong
 331160,Mentasta Lake,2025-12-01,2025,12,com_facil_sold_to,6696,1806,6,Strong
-331160,Mentasta Lake,2026-01-01,2026,1,pce_eligible_residential_kwh,19375,11747,5,Strong
-331160,Mentasta Lake,2026-01-01,2026,1,pce_eligible_community_kwh,6873,1806,6,Strong
 331160,Mentasta Lake,2026-01-01,2026,1,residential_sold_to,21789,12341,5,Strong
 331160,Mentasta Lake,2026-01-01,2026,1,com_facil_sold_to,6873,1806,6,Strong
-331160,Mentasta Lake,2026-02-01,2026,2,pce_eligible_community_kwh,6490,1806,6,Strong
 331160,Mentasta Lake,2026-02-01,2026,2,com_facil_sold_to,6490,1806,6,Strong
-331160,Mentasta Lake,2026-03-01,2026,3,pce_eligible_community_kwh,5997,1806,5,Strong
 331160,Mentasta Lake,2026-03-01,2026,3,com_facil_sold_to,5997,1806,5,Strong
-331160,Mentasta Lake,2026-04-01,2026,4,pce_eligible_community_kwh,5607,1806,5,Strong
 331160,Mentasta Lake,2026-04-01,2026,4,com_facil_sold_to,5607,1806,5,Strong
-331460,Minto,2016-06-01,2016,6,pce_eligible_community_kwh,6037,11480,6,Strong
-331460,Minto,2016-07-01,2016,7,pce_eligible_community_kwh,6415,11480,5,Strong
-331460,Minto,2016-08-01,2016,8,pce_eligible_community_kwh,6632,11480,5,Strong
-331460,Minto,2018-06-01,2018,6,pce_eligible_community_kwh,6807,11480,5,Strong
 331460,Minto,2024-01-01,2024,1,fuel_used_gallons,10568,4722,5,Strong
 331460,Minto,2024-01-01,2024,1,diesel_kwh_generated,126996,60095,5,Strong
 331460,Minto,2024-01-01,2024,1,govt_facil_sold_to,32869,7862,8,Strong
@@ -2586,11 +2375,9 @@ project_code,sales_reporting_name,date,calendar_year,calendar_month,column_teste
 332300,Napaskiak,2017-02-01,2017,2,commercial_sold_to,72453,15092,10,Extreme
 332300,Napaskiak,2017-02-01,2017,2,unbilled_sold_to,12680,3676.5,5,Strong
 332300,Napaskiak,2017-04-01,2017,4,unbilled_sold_to,21919,3676.5,9,Extreme
-332300,Napaskiak,2017-07-01,2017,7,pce_eligible_community_kwh,9044,3247,5,Strong
 332300,Napaskiak,2017-07-01,2017,7,com_facil_sold_to,9044,3285.5,5,Strong
 332300,Napaskiak,2023-10-01,2023,10,powerhouse_consumption_kwh,34108,2945,18,Extreme
 332300,Napaskiak,2023-11-01,2023,11,powerhouse_consumption_kwh,38097,2945,20,Extreme
-332300,Napaskiak,2023-12-01,2023,12,pce_eligible_residential_kwh,5660,32753.5,7,Strong
 332300,Napaskiak,2023-12-01,2023,12,powerhouse_consumption_kwh,13010,2945,6,Strong
 332300,Napaskiak,2024-01-01,2024,1,powerhouse_consumption_kwh,43082,2945,23,Extreme
 332300,Napaskiak,2024-01-01,2024,1,residential_sold_to,92204,34168,11,Extreme
@@ -2632,7 +2419,6 @@ project_code,sales_reporting_name,date,calendar_year,calendar_month,column_teste
 332320,Nelson Lagoon,2024-04-01,2024,4,fuel_used_gallons,8261,2268,19,Extreme
 332320,Nelson Lagoon,2024-06-01,2024,6,commercial_sold_to,16305,7096.5,7,Strong
 332320,Nelson Lagoon,2024-07-01,2024,7,commercial_sold_to,16132,7096.5,7,Strong
-332320,Nelson Lagoon,2024-08-01,2024,8,pce_eligible_residential_kwh,12739,8623,5,Strong
 332320,Nelson Lagoon,2025-06-01,2025,6,commercial_sold_to,22278,7096.5,11,Extreme
 332320,Nelson Lagoon,2025-07-01,2025,7,commercial_sold_to,14285,7096.5,5,Strong
 332320,Nelson Lagoon,2025-08-01,2025,8,fuel_used_gallons,4860,2268,8,Strong
@@ -2694,7 +2480,6 @@ project_code,sales_reporting_name,date,calendar_year,calendar_month,column_teste
 332870,Newtok,2024-01-01,2024,1,fuel_used_gallons,7074,3345,5,Strong
 332870,Newtok,2024-02-01,2024,2,fuel_used_gallons,11736,3345,10,Extreme
 332870,Newtok,2024-02-01,2024,2,powerhouse_consumption_kwh,4570,586,6,Strong
-332870,Newtok,2024-03-01,2024,3,pce_eligible_community_kwh,7429,1931,5,Strong
 332870,Newtok,2024-03-01,2024,3,fuel_used_gallons,7372,3345,5,Strong
 332870,Newtok,2024-03-01,2024,3,diesel_kwh_generated,96205,39088,6,Strong
 332870,Newtok,2024-03-01,2024,3,com_facil_sold_to,7429,1931,5,Strong
@@ -2794,13 +2579,6 @@ project_code,sales_reporting_name,date,calendar_year,calendar_month,column_teste
 332740,Nikolski,2020-08-01,2020,8,fuel_used_gallons,3072,1561.5,5,Strong
 332740,Nikolski,2021-10-01,2021,10,fuel_used_gallons,0,1561.5,5,Strong
 332740,Nikolski,2023-05-01,2023,5,fuel_used_gallons,3630,1561.5,7,Strong
-332740,Nikolski,2023-12-01,2023,12,pce_eligible_community_kwh,2870,1190,5,Strong
-332740,Nikolski,2024-01-01,2024,1,pce_eligible_community_kwh,2870,1190,5,Strong
-332740,Nikolski,2024-02-01,2024,2,pce_eligible_community_kwh,2870,1190,5,Strong
-332740,Nikolski,2024-03-01,2024,3,pce_eligible_community_kwh,2870,1190,5,Strong
-332740,Nikolski,2024-04-01,2024,4,pce_eligible_community_kwh,2870,1190,5,Strong
-332740,Nikolski,2024-05-01,2024,5,pce_eligible_community_kwh,2870,1190,5,Strong
-332740,Nikolski,2024-06-01,2024,6,pce_eligible_community_kwh,2801,1190,5,Strong
 332740,Nikolski,2024-06-01,2024,6,fuel_used_gallons,4610,1561.5,11,Extreme
 332740,Nikolski,2024-06-01,2024,6,diesel_kwh_generated,44654,16711.5,11,Extreme
 332740,Nikolski,2024-07-01,2024,7,powerhouse_consumption_kwh,4984,1910,6,Strong
@@ -2808,15 +2586,7 @@ project_code,sales_reporting_name,date,calendar_year,calendar_month,column_teste
 332740,Nikolski,2025-02-01,2025,2,fuel_used_gallons,2885,1561.5,5,Strong
 332740,Nikolski,2025-03-01,2025,3,fuel_used_gallons,3170,1561.5,6,Strong
 332740,Nikolski,2025-03-01,2025,3,com_facil_sold_to,9925,2764.5,8,Strong
-332740,Nikolski,2025-07-01,2025,7,pce_eligible_community_kwh,2745,1190,5,Strong
-332740,Nikolski,2025-08-01,2025,8,pce_eligible_community_kwh,2728,1190,5,Strong
-332740,Nikolski,2025-09-01,2025,9,pce_eligible_community_kwh,2744,1190,5,Strong
-332740,Nikolski,2025-10-01,2025,10,pce_eligible_community_kwh,2739,1190,5,Strong
-332740,Nikolski,2025-11-01,2025,11,pce_eligible_community_kwh,2749,1190,5,Strong
-332740,Nikolski,2025-12-01,2025,12,pce_eligible_community_kwh,2735,1190,5,Strong
 332740,Nikolski,2025-12-01,2025,12,powerhouse_consumption_kwh,4878,1910,6,Strong
-332740,Nikolski,2026-01-01,2026,1,pce_eligible_community_kwh,2756,1190,5,Strong
-332740,Nikolski,2026-02-01,2026,2,pce_eligible_community_kwh,2788,1190,5,Strong
 332740,Nikolski,2026-03-01,2026,3,fuel_used_gallons,4100,1561.5,9,Strong
 332740,Nikolski,2026-03-01,2026,3,com_facil_sold_to,7247,2764.5,5,Strong
 332740,Nikolski,2026-04-01,2026,4,fuel_used_gallons,3493,1561.5,7,Strong
@@ -2828,7 +2598,6 @@ project_code,sales_reporting_name,date,calendar_year,calendar_month,column_teste
 331500,Noatak,2015-12-01,2015,12,commercial_sold_to,18494,10922,7,Strong
 331500,Noatak,2016-01-01,2016,1,commercial_sold_to,19623,10922,8,Strong
 331500,Noatak,2022-01-01,2022,1,powerhouse_consumption_kwh,12428,3930,8,Strong
-331500,Noatak,2023-01-01,2023,1,pce_eligible_residential_kwh,74857,52919,5,Strong
 331500,Noatak,2023-09-01,2023,9,powerhouse_consumption_kwh,16994,3930,13,Extreme
 331500,Noatak,2023-10-01,2023,10,powerhouse_consumption_kwh,8869,3930,5,Strong
 331500,Noatak,2024-01-01,2024,1,powerhouse_consumption_kwh,9203,3930,5,Strong
@@ -2868,49 +2637,14 @@ project_code,sales_reporting_name,date,calendar_year,calendar_month,column_teste
 331180,"Northway, Northway Village, Northway Junction",2020-12-01,2020,12,govt_facil_sold_to,0,22776,5,Strong
 331180,"Northway, Northway Village, Northway Junction",2020-12-01,2020,12,unbilled_sold_to,25680,0,NA,Strong
 331180,"Northway, Northway Village, Northway Junction",2025-05-01,2025,5,powerhouse_consumption_kwh,5040,1392,7,Strong
-331180,"Northway, Northway Village, Northway Junction",2025-12-01,2025,12,pce_eligible_residential_kwh,44434,24045.5,7,Strong
 331180,"Northway, Northway Village, Northway Junction",2025-12-01,2025,12,powerhouse_consumption_kwh,3936,1392,5,Strong
 331180,"Northway, Northway Village, Northway Junction",2025-12-01,2025,12,residential_sold_to,54557,27381.5,5,Strong
-331180,"Northway, Northway Village, Northway Junction",2026-01-01,2026,1,pce_eligible_residential_kwh,47117,24045.5,7,Strong
 331180,"Northway, Northway Village, Northway Junction",2026-01-01,2026,1,powerhouse_consumption_kwh,4248,1392,5,Strong
 331180,"Northway, Northway Village, Northway Junction",2026-01-01,2026,1,residential_sold_to,59563,27381.5,6,Strong
-331180,"Northway, Northway Village, Northway Junction",2026-02-01,2026,2,pce_eligible_residential_kwh,39567,24045.5,5,Strong
-331180,"Northway, Northway Village, Northway Junction",2026-03-01,2026,3,pce_eligible_residential_kwh,38339,24045.5,5,Strong
 331180,"Northway, Northway Village, Northway Junction",2026-04-01,2026,4,powerhouse_consumption_kwh,3960,1392,5,Strong
-332380,Nuiqsut,2015-08-01,2015,8,pce_eligible_residential_kwh,0,39830.5,5,Strong
-332380,Nuiqsut,2015-09-01,2015,9,pce_eligible_residential_kwh,0,39830.5,5,Strong
-332380,Nuiqsut,2015-10-01,2015,10,pce_eligible_residential_kwh,0,39830.5,5,Strong
-332380,Nuiqsut,2015-11-01,2015,11,pce_eligible_residential_kwh,0,39830.5,5,Strong
-332380,Nuiqsut,2015-12-01,2015,12,pce_eligible_residential_kwh,0,39830.5,5,Strong
-332380,Nuiqsut,2016-01-01,2016,1,pce_eligible_residential_kwh,0,39830.5,5,Strong
-332380,Nuiqsut,2016-02-01,2016,2,pce_eligible_residential_kwh,0,39830.5,5,Strong
-332380,Nuiqsut,2016-03-01,2016,3,pce_eligible_residential_kwh,0,39830.5,5,Strong
-332380,Nuiqsut,2016-04-01,2016,4,pce_eligible_residential_kwh,0,39830.5,5,Strong
-332380,Nuiqsut,2016-05-01,2016,5,pce_eligible_residential_kwh,0,39830.5,5,Strong
-332380,Nuiqsut,2016-06-01,2016,6,pce_eligible_residential_kwh,0,39830.5,5,Strong
-332380,Nuiqsut,2017-07-01,2017,7,pce_eligible_residential_kwh,0,39830.5,5,Strong
 332380,Nuiqsut,2019-04-01,2019,4,peak_consumption_kw,5077,1126.5,14,Extreme
 332380,Nuiqsut,2021-02-01,2021,2,peak_consumption_kw,2522,1126.5,5,Strong
-332380,Nuiqsut,2023-07-01,2023,7,pce_eligible_residential_kwh,88093,39830.5,6,Strong
-332380,Nuiqsut,2024-10-01,2024,10,pce_eligible_residential_kwh,1,39830.5,5,Strong
 332380,Nuiqsut,2024-10-01,2024,10,powerhouse_consumption_kwh,57674,31813.5,6,Strong
-332380,Nuiqsut,2024-11-01,2024,11,pce_eligible_residential_kwh,1,39830.5,5,Strong
-332380,Nuiqsut,2024-12-01,2024,12,pce_eligible_residential_kwh,1,39830.5,5,Strong
-332380,Nuiqsut,2025-01-01,2025,1,pce_eligible_residential_kwh,1,39830.5,5,Strong
-332380,Nuiqsut,2025-02-01,2025,2,pce_eligible_residential_kwh,1,39830.5,5,Strong
-332380,Nuiqsut,2025-03-01,2025,3,pce_eligible_residential_kwh,1,39830.5,5,Strong
-332380,Nuiqsut,2025-04-01,2025,4,pce_eligible_residential_kwh,1,39830.5,5,Strong
-332380,Nuiqsut,2025-05-01,2025,5,pce_eligible_residential_kwh,1,39830.5,5,Strong
-332380,Nuiqsut,2025-06-01,2025,6,pce_eligible_residential_kwh,1,39830.5,5,Strong
-332380,Nuiqsut,2025-07-01,2025,7,pce_eligible_residential_kwh,1,39830.5,5,Strong
-332380,Nuiqsut,2025-08-01,2025,8,pce_eligible_residential_kwh,1,39830.5,5,Strong
-332380,Nuiqsut,2025-09-01,2025,9,pce_eligible_residential_kwh,1,39830.5,5,Strong
-332380,Nuiqsut,2025-10-01,2025,10,pce_eligible_residential_kwh,1,39830.5,5,Strong
-332380,Nuiqsut,2025-11-01,2025,11,pce_eligible_residential_kwh,1,39830.5,5,Strong
-332380,Nuiqsut,2025-12-01,2025,12,pce_eligible_residential_kwh,1,39830.5,5,Strong
-332380,Nuiqsut,2026-01-01,2026,1,pce_eligible_residential_kwh,1,39830.5,5,Strong
-332380,Nuiqsut,2026-02-01,2026,2,pce_eligible_residential_kwh,1,39830.5,5,Strong
-332380,Nuiqsut,2026-03-01,2026,3,pce_eligible_residential_kwh,1,39830.5,5,Strong
 332380,Nuiqsut,2026-03-01,2026,3,peak_consumption_kw,3802,1126.5,9,Extreme
 331520,Nulato,2015-12-01,2015,12,commercial_sold_to,11969,0,NA,Strong
 331520,Nulato,2016-01-01,2016,1,commercial_sold_to,12488,0,NA,Strong
@@ -2955,15 +2689,12 @@ project_code,sales_reporting_name,date,calendar_year,calendar_month,column_teste
 331540,Old Harbor,2016-12-01,2016,12,fuel_used_gallons,7148,4757,5,Strong
 331540,Old Harbor,2017-01-01,2017,1,residential_customers,207,92,16,Extreme
 331540,Old Harbor,2017-02-01,2017,2,residential_customers,207,92,16,Extreme
-331540,Old Harbor,2020-09-01,2020,9,pce_eligible_residential_kwh,15225,26433,5,Strong
 331540,Old Harbor,2022-01-01,2022,1,fuel_used_gallons,7347,4757,5,Strong
 331540,Old Harbor,2025-11-01,2025,11,fuel_used_gallons,0,4757,10,Extreme
 331540,Old Harbor,2025-12-01,2025,12,fuel_used_gallons,0,4757,10,Extreme
 331540,Old Harbor,2026-01-01,2026,1,fuel_used_gallons,0,4757,10,Extreme
 331540,Old Harbor,2026-02-01,2026,2,fuel_used_gallons,0,4757,10,Extreme
 331540,Old Harbor,2026-03-01,2026,3,fuel_used_gallons,0,4757,10,Extreme
-332440,Ouzinkie,2015-12-01,2015,12,pce_eligible_community_kwh,18712,7980,6,Strong
-332440,Ouzinkie,2016-01-01,2016,1,pce_eligible_community_kwh,19380,7980,6,Strong
 332440,Ouzinkie,2019-02-01,2019,2,govt_facil_sold_to,2025,768,6,Strong
 332450,Pedro Bay,2022-06-01,2022,6,powerhouse_consumption_kwh,3083,1071.5,11,Extreme
 332450,Pedro Bay,2022-07-01,2022,7,powerhouse_consumption_kwh,3075,1071.5,11,Extreme
@@ -2973,12 +2704,9 @@ project_code,sales_reporting_name,date,calendar_year,calendar_month,column_teste
 332460,Pelican,2016-11-01,2016,11,powerhouse_consumption_kwh,13667,5245.5,8,Strong
 332460,Pelican,2016-12-01,2016,12,powerhouse_consumption_kwh,115654,5245.5,101,Extreme
 332460,Pelican,2021-07-01,2021,7,fuel_used_gallons,350,44,5,Strong
-332460,Pelican,2021-09-01,2021,9,pce_eligible_community_kwh,0,5906,7,Strong
 332460,Pelican,2021-10-01,2021,10,fuel_used_gallons,856,44,12,Extreme
-332460,Pelican,2021-11-01,2021,11,pce_eligible_community_kwh,0,5906,7,Strong
 332460,Pelican,2021-12-01,2021,12,fuel_used_gallons,5027,44,76,Extreme
 332460,Pelican,2022-01-01,2022,1,fuel_used_gallons,3461,44,52,Extreme
-332460,Pelican,2022-03-01,2022,3,pce_eligible_community_kwh,0,5906,7,Strong
 332460,Pelican,2022-03-01,2022,3,residential_customers,25971,72,17469,Extreme
 332460,Pelican,2022-03-01,2022,3,commercial_customers,24989,27.5,4810,Extreme
 332460,Pelican,2022-03-01,2022,3,com_facil_customers,24789,15.5,16709,Extreme
@@ -3020,16 +2748,10 @@ project_code,sales_reporting_name,date,calendar_year,calendar_month,column_teste
 332470,Perryville,2019-12-01,2019,12,peak_consumption_kw,101,1,10,Extreme
 332470,Perryville,2020-01-01,2020,1,peak_consumption_kw,99,1,10,Extreme
 332480,Pilot Point,2017-01-01,2017,1,peak_consumption_kw,191,96,5,Strong
-332480,Pilot Point,2020-10-01,2020,10,pce_eligible_residential_kwh,0,9199,7,Strong
-332480,Pilot Point,2020-11-01,2020,11,pce_eligible_residential_kwh,0,9199,7,Strong
 332480,Pilot Point,2021-07-01,2021,7,residential_sold_to,20436,10823,5,Strong
 332480,Pilot Point,2022-07-01,2022,7,residential_sold_to,20036,10823,5,Strong
-332480,Pilot Point,2023-06-01,2023,6,pce_eligible_residential_kwh,15692,9199,5,Strong
-332480,Pilot Point,2023-07-01,2023,7,pce_eligible_residential_kwh,16856,9199,6,Strong
 332480,Pilot Point,2023-07-01,2023,7,residential_sold_to,19326,10823,5,Strong
 332480,Pilot Point,2024-01-01,2024,1,powerhouse_consumption_kwh,9848,2027.5,20,Extreme
-332480,Pilot Point,2024-07-01,2024,7,pce_eligible_residential_kwh,15825,9199,5,Strong
-332480,Pilot Point,2025-07-01,2025,7,pce_eligible_residential_kwh,15485,9199,5,Strong
 331550,Pilot Station,2016-08-01,2016,8,residential_customers,36,132,16,Extreme
 331550,Pilot Station,2016-10-01,2016,10,residential_customers,37,132,16,Extreme
 331550,Pilot Station,2016-11-01,2016,11,residential_customers,36,132,16,Extreme
@@ -3044,49 +2766,22 @@ project_code,sales_reporting_name,date,calendar_year,calendar_month,column_teste
 331550,Pilot Station,2026-01-01,2026,1,fuel_used_gallons,0,12220,6,Strong
 331550,Pilot Station,2026-02-01,2026,2,fuel_used_gallons,0,12220,6,Strong
 331550,Pilot Station,2026-03-01,2026,3,fuel_used_gallons,0,12220,6,Strong
-331560,Pitkas Point,2016-06-01,2016,6,pce_eligible_community_kwh,5225,8190,5,Strong
-331560,Pitkas Point,2016-07-01,2016,7,pce_eligible_community_kwh,3667,8190,7,Strong
-331560,Pitkas Point,2016-08-01,2016,8,pce_eligible_community_kwh,3335,8190,8,Strong
 331560,Pitkas Point,2016-08-01,2016,8,residential_customers,90,28,21,Extreme
-331560,Pitkas Point,2016-09-01,2016,9,pce_eligible_community_kwh,3131,8190,8,Strong
 331560,Pitkas Point,2016-10-01,2016,10,residential_customers,141,28,38,Extreme
 331560,Pitkas Point,2016-11-01,2016,11,residential_customers,141,28,38,Extreme
 331560,Pitkas Point,2017-01-01,2017,1,residential_customers,142,28,38,Extreme
 331560,Pitkas Point,2017-02-01,2017,2,residential_customers,142,28,38,Extreme
-331560,Pitkas Point,2017-06-01,2017,6,pce_eligible_community_kwh,3215,8190,8,Strong
-331560,Pitkas Point,2017-07-01,2017,7,pce_eligible_community_kwh,2951,8190,8,Strong
-331560,Pitkas Point,2017-08-01,2017,8,pce_eligible_community_kwh,3320,8190,8,Strong
-331560,Pitkas Point,2017-09-01,2017,9,pce_eligible_community_kwh,3107,8190,8,Strong
-331560,Pitkas Point,2020-11-01,2020,11,pce_eligible_community_kwh,4286,8190,6,Strong
-331560,Pitkas Point,2022-06-01,2022,6,pce_eligible_community_kwh,4449,8190,6,Strong
-331560,Pitkas Point,2023-06-01,2023,6,pce_eligible_community_kwh,3859,8190,7,Strong
-331560,Pitkas Point,2023-07-01,2023,7,pce_eligible_community_kwh,4620,8190,6,Strong
-331560,Pitkas Point,2023-08-01,2023,8,pce_eligible_community_kwh,4937,8190,5,Strong
 331560,Pitkas Point,2026-01-01,2026,1,residential_sold_to,66768,11557,27,Extreme
 331560,Pitkas Point,2026-01-01,2026,1,commercial_sold_to,23198,0,NA,Strong
 331560,Pitkas Point,2026-01-01,2026,1,govt_facil_sold_to,65702,0,NA,Strong
 331560,Pitkas Point,2026-01-01,2026,1,residential_customers,131,28,35,Extreme
-332490,Platinum,2017-10-01,2017,10,pce_eligible_community_kwh,2221,907,19,Extreme
 332490,Platinum,2017-10-01,2017,10,diesel_kwh_generated,29341,17006,10,Extreme
 332490,Platinum,2017-10-01,2017,10,com_facil_sold_to,2221,907,19,Extreme
 332390,Point Hope,2016-03-01,2016,3,powerhouse_consumption_kwh,39162,23173,6,Strong
 332390,Point Hope,2020-09-01,2020,9,powerhouse_consumption_kwh,37860,23173,6,Strong
-332400,Point Lay,2015-08-01,2015,8,pce_eligible_residential_kwh,0,11489,5,Strong
-332400,Point Lay,2015-09-01,2015,9,pce_eligible_residential_kwh,0,11489,5,Strong
-332400,Point Lay,2015-10-01,2015,10,pce_eligible_residential_kwh,0,11489,5,Strong
-332400,Point Lay,2015-11-01,2015,11,pce_eligible_residential_kwh,0,11489,5,Strong
-332400,Point Lay,2015-12-01,2015,12,pce_eligible_residential_kwh,0,11489,5,Strong
-332400,Point Lay,2016-01-01,2016,1,pce_eligible_residential_kwh,0,11489,5,Strong
-332400,Point Lay,2016-02-01,2016,2,pce_eligible_residential_kwh,0,11489,5,Strong
-332400,Point Lay,2016-03-01,2016,3,pce_eligible_residential_kwh,0,11489,5,Strong
-332400,Point Lay,2016-04-01,2016,4,pce_eligible_residential_kwh,0,11489,5,Strong
-332400,Point Lay,2016-05-01,2016,5,pce_eligible_residential_kwh,0,11489,5,Strong
-332400,Point Lay,2016-06-01,2016,6,pce_eligible_residential_kwh,0,11489,5,Strong
-332400,Point Lay,2023-04-01,2023,4,pce_eligible_residential_kwh,61292,11489,21,Extreme
 332590,Port Alsworth,2017-03-01,2017,3,govt_facil_sold_to,10814,6253,5,Strong
 332590,Port Alsworth,2018-02-01,2018,2,powerhouse_consumption_kwh,2890,1750,5,Strong
 332590,Port Alsworth,2022-07-01,2022,7,peak_consumption_kw,418,198,5,Strong
-332590,Port Alsworth,2023-07-01,2023,7,pce_eligible_residential_kwh,31691,22967,5,Strong
 332590,Port Alsworth,2024-02-01,2024,2,peak_consumption_kw,395,198,5,Strong
 332590,Port Alsworth,2025-12-01,2025,12,diesel_kwh_generated,120579,78288,5,Strong
 332590,Port Alsworth,2026-01-01,2026,1,diesel_kwh_generated,120470,78288,5,Strong
@@ -3109,7 +2804,6 @@ project_code,sales_reporting_name,date,calendar_year,calendar_month,column_teste
 332500,Port Heiden,2019-12-01,2019,12,com_facil_sold_to,10131,4202,5,Strong
 332500,Port Heiden,2020-11-01,2020,11,com_facil_sold_to,13415,4202,8,Strong
 332500,Port Heiden,2023-01-01,2023,1,commercial_sold_to,39511,8925,15,Extreme
-332500,Port Heiden,2023-03-01,2023,3,pce_eligible_residential_kwh,20618,12999,5,Strong
 332500,Port Heiden,2023-03-01,2023,3,commercial_sold_to,19475,8925,5,Strong
 332500,Port Heiden,2023-03-01,2023,3,govt_facil_sold_to,47323,10962,8,Strong
 332500,Port Heiden,2023-04-01,2023,4,fuel_used_gallons,27720,4156,25,Extreme
@@ -3119,7 +2813,6 @@ project_code,sales_reporting_name,date,calendar_year,calendar_month,column_teste
 332500,Port Heiden,2023-07-01,2023,7,diesel_kwh_generated,127213,49818,7,Strong
 332500,Port Heiden,2023-08-01,2023,8,fuel_used_gallons,12134,4156,8,Strong
 332500,Port Heiden,2023-08-01,2023,8,diesel_kwh_generated,137712,49818,8,Strong
-332500,Port Heiden,2024-02-01,2024,2,pce_eligible_residential_kwh,22617,12999,6,Strong
 332500,Port Heiden,2024-02-01,2024,2,residential_sold_to,38156,15442,9,Strong
 332500,Port Heiden,2024-02-01,2024,2,commercial_sold_to,22729,8925,7,Strong
 332500,Port Heiden,2024-02-01,2024,2,govt_facil_sold_to,42180,10962,7,Strong
@@ -3151,12 +2844,8 @@ project_code,sales_reporting_name,date,calendar_year,calendar_month,column_teste
 331570,Quinhagak,2026-01-01,2026,1,commercial_sold_to,43129,24320,7,Strong
 331570,Quinhagak,2026-02-01,2026,2,commercial_sold_to,38212,24320,5,Strong
 331570,Quinhagak,2026-03-01,2026,3,commercial_sold_to,45651,24320,8,Strong
-332520,Rampart,2015-10-01,2015,10,pce_eligible_community_kwh,0,3780,5,Strong
-332520,Rampart,2015-11-01,2015,11,pce_eligible_community_kwh,0,3780,5,Strong
-332520,Rampart,2015-12-01,2015,12,pce_eligible_community_kwh,0,3780,5,Strong
 332520,Rampart,2018-12-01,2018,12,fuel_used_gallons,3987,1931,5,Strong
 332520,Rampart,2020-03-01,2020,3,fuel_used_gallons,5320,1931,9,Strong
-332520,Rampart,2020-09-01,2020,9,pce_eligible_community_kwh,0,3780,5,Strong
 332520,Rampart,2021-11-01,2021,11,fuel_used_gallons,3828,1931,5,Strong
 332520,Rampart,2024-02-01,2024,2,powerhouse_consumption_kwh,9137,2267,9,Strong
 332520,Rampart,2024-02-01,2024,2,peak_consumption_kw,7358,51,493,Extreme
@@ -3229,7 +2918,6 @@ project_code,sales_reporting_name,date,calendar_year,calendar_month,column_teste
 331580,Russian Mission,2016-11-01,2016,11,residential_customers,176,78,66,Extreme
 331580,Russian Mission,2017-01-01,2017,1,residential_customers,175,78,65,Extreme
 331580,Russian Mission,2017-02-01,2017,2,residential_customers,175,78,65,Extreme
-331580,Russian Mission,2025-01-01,2025,1,pce_eligible_residential_kwh,41148,29729,5,Strong
 331580,Russian Mission,2025-01-01,2025,1,residential_sold_to,48929,33864,5,Strong
 331580,Russian Mission,2025-11-01,2025,11,fuel_used_gallons,0,6094.5,6,Strong
 331580,Russian Mission,2025-11-01,2025,11,commercial_sold_to,6692,3055,6,Strong
@@ -3325,7 +3013,6 @@ project_code,sales_reporting_name,date,calendar_year,calendar_month,column_teste
 332560,Saint Paul,2018-04-01,2018,4,total_kwh_purchased,32998,2998,7,Strong
 332560,Saint Paul,2018-05-01,2018,5,total_kwh_purchased,42038,2998,9,Strong
 332560,Saint Paul,2018-08-01,2018,8,total_kwh_purchased,26980,2998,5,Strong
-332560,Saint Paul,2018-09-01,2018,9,pce_eligible_community_kwh,22298,27090,5,Strong
 332560,Saint Paul,2018-12-01,2018,12,total_kwh_purchased,27016,2998,5,Strong
 332560,Saint Paul,2019-01-01,2019,1,total_kwh_purchased,28325,2998,6,Strong
 332560,Saint Paul,2019-02-01,2019,2,total_kwh_purchased,24166,2998,5,Strong
@@ -3334,12 +3021,9 @@ project_code,sales_reporting_name,date,calendar_year,calendar_month,column_teste
 332560,Saint Paul,2020-03-01,2020,3,total_kwh_purchased,26977,2998,5,Strong
 332560,Saint Paul,2020-11-01,2020,11,total_kwh_purchased,25398,2998,5,Strong
 332560,Saint Paul,2021-01-01,2021,1,total_kwh_purchased,27543,2998,6,Strong
-332560,Saint Paul,2021-03-01,2021,3,pce_eligible_community_kwh,9913,27090,17,Extreme
-332560,Saint Paul,2021-07-01,2021,7,pce_eligible_community_kwh,21605,27090,5,Strong
 332560,Saint Paul,2024-12-01,2024,12,fuel_used_gallons,28791,19456,5,Strong
 332560,Saint Paul,2025-01-01,2025,1,fuel_used_gallons,29672,19456,5,Strong
 332560,Saint Paul,2025-01-01,2025,1,diesel_kwh_generated,424495,265877,6,Strong
-332560,Saint Paul,2025-06-01,2025,6,pce_eligible_community_kwh,20589,27090,6,Strong
 332560,Saint Paul,2025-06-01,2025,6,wind_kwh_generated,36665,0,NA,Strong
 332560,Saint Paul,2025-07-01,2025,7,wind_kwh_generated,21365,0,NA,Strong
 332560,Saint Paul,2025-08-01,2025,8,wind_kwh_generated,15221,0,NA,Strong
@@ -3417,18 +3101,14 @@ project_code,sales_reporting_name,date,calendar_year,calendar_month,column_teste
 331600,Scammon Bay,2022-08-01,2022,8,powerhouse_consumption_kwh,6428,2955.5,5,Strong
 331600,Scammon Bay,2022-09-01,2022,9,powerhouse_consumption_kwh,6027,2955.5,5,Strong
 331600,Scammon Bay,2022-10-01,2022,10,powerhouse_consumption_kwh,5974,2955.5,5,Strong
-331600,Scammon Bay,2023-01-01,2023,1,pce_eligible_residential_kwh,63991,45289,5,Strong
 331600,Scammon Bay,2023-01-01,2023,1,powerhouse_consumption_kwh,7532,2955.5,7,Strong
 331600,Scammon Bay,2023-02-01,2023,2,powerhouse_consumption_kwh,5834,2955.5,5,Strong
 331600,Scammon Bay,2023-04-01,2023,4,powerhouse_consumption_kwh,6528,2955.5,6,Strong
-331600,Scammon Bay,2024-01-01,2024,1,pce_eligible_residential_kwh,65927,45289,5,Strong
-331600,Scammon Bay,2025-01-01,2025,1,pce_eligible_residential_kwh,65847,45289,5,Strong
 331600,Scammon Bay,2025-08-01,2025,8,powerhouse_consumption_kwh,6402,2955.5,5,Strong
 331600,Scammon Bay,2025-11-01,2025,11,fuel_used_gallons,0,10496,6,Strong
 331600,Scammon Bay,2025-11-01,2025,11,commercial_sold_to,14356,6310,9,Strong
 331600,Scammon Bay,2025-12-01,2025,12,fuel_used_gallons,0,10496,6,Strong
 331600,Scammon Bay,2025-12-01,2025,12,commercial_sold_to,13980,6310,9,Strong
-331600,Scammon Bay,2026-01-01,2026,1,pce_eligible_residential_kwh,64946,45289,5,Strong
 331600,Scammon Bay,2026-01-01,2026,1,fuel_used_gallons,0,10496,6,Strong
 331600,Scammon Bay,2026-01-01,2026,1,commercial_sold_to,15948,6310,11,Extreme
 331600,Scammon Bay,2026-02-01,2026,2,fuel_used_gallons,0,10496,6,Strong
@@ -3464,7 +3144,6 @@ project_code,sales_reporting_name,date,calendar_year,calendar_month,column_teste
 331620,Shageluk,2025-10-01,2025,10,powerhouse_consumption_kwh,2277,976.5,5,Strong
 331620,Shageluk,2025-11-01,2025,11,fuel_used_gallons,0,2986,7,Strong
 331620,Shageluk,2025-12-01,2025,12,fuel_used_gallons,0,2986,7,Strong
-331620,Shageluk,2026-01-01,2026,1,pce_eligible_residential_kwh,18962,9499,5,Strong
 331620,Shageluk,2026-01-01,2026,1,fuel_used_gallons,0,2986,7,Strong
 331620,Shageluk,2026-01-01,2026,1,residential_sold_to,23749,11120,5,Strong
 331620,Shageluk,2026-01-01,2026,1,commercial_sold_to,13738,8512,5,Strong
@@ -3478,23 +3157,16 @@ project_code,sales_reporting_name,date,calendar_year,calendar_month,column_teste
 331630,Shaktoolik,2017-01-01,2017,1,residential_customers,141,63,53,Extreme
 331630,Shaktoolik,2017-02-01,2017,2,residential_customers,139,63,51,Extreme
 331630,Shaktoolik,2017-12-01,2017,12,fuel_used_gallons,8088,5086,5,Strong
-331630,Shaktoolik,2023-01-01,2023,1,pce_eligible_residential_kwh,39181,27032,5,Strong
-331630,Shaktoolik,2024-01-01,2024,1,pce_eligible_residential_kwh,39162,27032,5,Strong
-331630,Shaktoolik,2024-04-01,2024,4,pce_eligible_residential_kwh,37320,27032,5,Strong
-331630,Shaktoolik,2025-01-01,2025,1,pce_eligible_residential_kwh,38803,27032,5,Strong
 331630,Shaktoolik,2025-01-01,2025,1,fuel_used_gallons,8121,5086,5,Strong
 331630,Shaktoolik,2025-01-01,2025,1,diesel_kwh_generated,120421,68396,5,Strong
 331630,Shaktoolik,2025-11-01,2025,11,fuel_used_gallons,0,5086,8,Strong
 331630,Shaktoolik,2025-11-01,2025,11,commercial_sold_to,27197,13144,10,Extreme
-331630,Shaktoolik,2025-12-01,2025,12,pce_eligible_residential_kwh,38275,27032,5,Strong
 331630,Shaktoolik,2025-12-01,2025,12,fuel_used_gallons,0,5086,8,Strong
 331630,Shaktoolik,2025-12-01,2025,12,commercial_sold_to,30834,13144,13,Extreme
-331630,Shaktoolik,2026-01-01,2026,1,pce_eligible_residential_kwh,40464,27032,6,Strong
 331630,Shaktoolik,2026-01-01,2026,1,fuel_used_gallons,0,5086,8,Strong
 331630,Shaktoolik,2026-01-01,2026,1,commercial_sold_to,34338,13144,16,Extreme
 331630,Shaktoolik,2026-02-01,2026,2,fuel_used_gallons,0,5086,8,Strong
 331630,Shaktoolik,2026-02-01,2026,2,commercial_sold_to,30990,13144,13,Extreme
-331630,Shaktoolik,2026-03-01,2026,3,pce_eligible_residential_kwh,37981,27032,5,Strong
 331630,Shaktoolik,2026-03-01,2026,3,fuel_used_gallons,0,5086,8,Strong
 331630,Shaktoolik,2026-03-01,2026,3,commercial_sold_to,35335,13144,16,Extreme
 331640,Shishmaref,2016-08-01,2016,8,residential_customers,89,150,14,Extreme
@@ -3502,11 +3174,7 @@ project_code,sales_reporting_name,date,calendar_year,calendar_month,column_teste
 331640,Shishmaref,2016-11-01,2016,11,residential_customers,90,150,13,Extreme
 331640,Shishmaref,2017-01-01,2017,1,residential_customers,92,150,13,Extreme
 331640,Shishmaref,2017-02-01,2017,2,residential_customers,92,150,13,Extreme
-331640,Shishmaref,2018-12-01,2018,12,pce_eligible_community_kwh,17870,9524,5,Strong
 331640,Shishmaref,2018-12-01,2018,12,fuel_used_gallons,18063,10618,5,Strong
-331640,Shishmaref,2020-01-01,2020,1,pce_eligible_community_kwh,18272,9524,5,Strong
-331640,Shishmaref,2020-02-01,2020,2,pce_eligible_community_kwh,17943,9524,5,Strong
-331640,Shishmaref,2020-03-01,2020,3,pce_eligible_community_kwh,19099,9524,5,Strong
 331640,Shishmaref,2023-02-01,2023,2,fuel_used_gallons,33823,10618,15,Extreme
 331640,Shishmaref,2025-11-01,2025,11,fuel_used_gallons,0,10618,7,Strong
 331640,Shishmaref,2025-12-01,2025,12,fuel_used_gallons,0,10618,7,Strong
@@ -3587,18 +3255,12 @@ project_code,sales_reporting_name,date,calendar_year,calendar_month,column_teste
 331190,Skagway,2026-03-01,2026,3,diesel_kwh_generated,620548,32666,12,Extreme
 331190,Skagway,2026-04-01,2026,4,fuel_used_gallons,54294,2224,16,Extreme
 331190,Skagway,2026-04-01,2026,4,diesel_kwh_generated,765086,32666,15,Extreme
-331195,Slana,2015-12-01,2015,12,pce_eligible_community_kwh,607,95,6,Strong
 331195,Slana,2015-12-01,2015,12,com_facil_sold_to,607,95,6,Strong
-331195,Slana,2019-12-01,2019,12,pce_eligible_community_kwh,498,95,5,Strong
 331195,Slana,2019-12-01,2019,12,com_facil_sold_to,498,95,5,Strong
-331195,Slana,2020-01-01,2020,1,pce_eligible_community_kwh,578,95,6,Strong
 331195,Slana,2020-01-01,2020,1,com_facil_sold_to,578,95,6,Strong
-331195,Slana,2020-02-01,2020,2,pce_eligible_community_kwh,500,95,5,Strong
 331195,Slana,2020-02-01,2020,2,com_facil_sold_to,500,95,5,Strong
 331195,Slana,2021-12-01,2021,12,fuel_used_gallons,13609,7968,5,Strong
-331195,Slana,2022-11-01,2022,11,pce_eligible_community_kwh,573,95,6,Strong
 331195,Slana,2022-11-01,2022,11,com_facil_sold_to,573,95,6,Strong
-331195,Slana,2023-03-01,2023,3,pce_eligible_community_kwh,494,95,5,Strong
 331195,Slana,2023-03-01,2023,3,com_facil_sold_to,494,95,5,Strong
 331195,Slana,2026-01-01,2026,1,fuel_used_gallons,13515,7968,5,Strong
 332260,Sleetmute,2019-04-01,2019,4,peak_consumption_kw,12,66,5,Strong
@@ -3618,10 +3280,7 @@ project_code,sales_reporting_name,date,calendar_year,calendar_month,column_teste
 331680,Stebbins,2017-02-01,2017,2,residential_customers,227,138,20,Extreme
 331680,Stebbins,2024-11-01,2024,11,com_facil_sold_to,65868,21781,5,Strong
 331680,Stebbins,2024-12-01,2024,12,com_facil_sold_to,75981,21781,6,Strong
-331680,Stebbins,2025-01-01,2025,1,pce_eligible_community_kwh,19169,8846,6,Strong
 331680,Stebbins,2025-01-01,2025,1,com_facil_sold_to,81638,21781,6,Strong
-331680,Stebbins,2025-02-01,2025,2,pce_eligible_community_kwh,17468,8846,5,Strong
-331680,Stebbins,2025-03-01,2025,3,pce_eligible_community_kwh,18115,8846,6,Strong
 331680,Stebbins,2025-08-01,2025,8,commercial_sold_to,1403,16423,5,Strong
 331680,Stebbins,2025-09-01,2025,9,commercial_sold_to,1465,16423,5,Strong
 331680,Stebbins,2025-10-01,2025,10,commercial_sold_to,1465,16423,5,Strong
@@ -3691,7 +3350,6 @@ project_code,sales_reporting_name,date,calendar_year,calendar_month,column_teste
 332580,Takotna,2022-05-01,2022,5,fuel_used_gallons,4145,1968,5,Strong
 332580,Takotna,2024-03-01,2024,3,com_facil_sold_to,8228,1868,9,Extreme
 332600,Tanana,2024-11-01,2024,11,peak_consumption_kw,372,220,5,Strong
-332600,Tanana,2025-12-01,2025,12,pce_eligible_residential_kwh,41463,24615.5,6,Strong
 332600,Tanana,2025-12-01,2025,12,residential_sold_to,51471,26291.5,7,Strong
 332610,Tatitlek,2017-08-01,2017,8,commercial_sold_to,9496,4022,5,Strong
 332610,Tatitlek,2018-05-01,2018,5,com_facil_sold_to,12524,3672,7,Strong
@@ -3721,8 +3379,6 @@ project_code,sales_reporting_name,date,calendar_year,calendar_month,column_teste
 331685,Teller,2016-01-01,2016,1,com_facil_sold_to,4066,14977,5,Strong
 331685,Teller,2017-09-01,2017,9,powerhouse_consumption_kwh,8666,3557,7,Strong
 331685,Teller,2019-09-01,2019,9,powerhouse_consumption_kwh,7825,3557,6,Strong
-331685,Teller,2022-02-01,2022,2,pce_eligible_community_kwh,5880,3208,5,Strong
-331685,Teller,2022-03-01,2022,3,pce_eligible_community_kwh,5589,3208,5,Strong
 331685,Teller,2022-12-01,2022,12,fuel_used_gallons,11673,5345,7,Strong
 331685,Teller,2025-11-01,2025,11,fuel_used_gallons,0,5345,6,Strong
 331685,Teller,2025-11-01,2025,11,commercial_sold_to,16099,3668,39,Extreme
@@ -3750,7 +3406,6 @@ project_code,sales_reporting_name,date,calendar_year,calendar_month,column_teste
 331200,Tetlin,2020-12-01,2020,12,commercial_sold_to,13893,3197.5,5,Strong
 331200,Tetlin,2022-11-01,2022,11,commercial_sold_to,14731,3197.5,5,Strong
 331210,"Thorne Bay, City of",2025-05-01,2025,5,powerhouse_consumption_kwh,2077,5826.5,9,Extreme
-331210,"Thorne Bay, City of",2026-01-01,2026,1,pce_eligible_residential_kwh,134364,92041,5,Strong
 331690,Togiak,2015-07-01,2015,7,commercial_sold_to,149671,29698,13,Extreme
 331690,Togiak,2015-08-01,2015,8,commercial_sold_to,124035,29698,10,Extreme
 331690,Togiak,2016-06-01,2016,6,commercial_sold_to,74746,29698,5,Strong
@@ -3784,23 +3439,14 @@ project_code,sales_reporting_name,date,calendar_year,calendar_month,column_teste
 331690,Togiak,2026-01-01,2026,1,fuel_used_gallons,0,17419,8,Strong
 331690,Togiak,2026-02-01,2026,2,fuel_used_gallons,0,17419,8,Strong
 331690,Togiak,2026-03-01,2026,3,fuel_used_gallons,0,17419,8,Strong
-331220,"Tok, Tanacross",2022-12-01,2022,12,pce_eligible_community_kwh,67083,21579.5,5,Strong
 331220,"Tok, Tanacross",2022-12-01,2022,12,com_facil_sold_to,67083,21579.5,5,Strong
-331220,"Tok, Tanacross",2023-01-01,2023,1,pce_eligible_community_kwh,74674,21579.5,5,Strong
 331220,"Tok, Tanacross",2023-01-01,2023,1,com_facil_sold_to,74674,21579.5,6,Strong
-331220,"Tok, Tanacross",2023-02-01,2023,2,pce_eligible_community_kwh,68039,21579.5,5,Strong
 331220,"Tok, Tanacross",2023-02-01,2023,2,com_facil_sold_to,68039,21579.5,5,Strong
-331220,"Tok, Tanacross",2024-01-01,2024,1,pce_eligible_community_kwh,66776,21579.5,5,Strong
 331220,"Tok, Tanacross",2024-01-01,2024,1,com_facil_sold_to,66776,21579.5,5,Strong
-331220,"Tok, Tanacross",2025-01-01,2025,1,pce_eligible_community_kwh,65151,21579.5,5,Strong
 331220,"Tok, Tanacross",2025-01-01,2025,1,com_facil_sold_to,65151,21579.5,5,Strong
-331220,"Tok, Tanacross",2025-12-01,2025,12,pce_eligible_community_kwh,73362,21579.5,5,Strong
 331220,"Tok, Tanacross",2025-12-01,2025,12,com_facil_sold_to,73362,21579.5,5,Strong
-331220,"Tok, Tanacross",2026-01-01,2026,1,pce_eligible_community_kwh,73981,21579.5,5,Strong
 331220,"Tok, Tanacross",2026-01-01,2026,1,com_facil_sold_to,73981,21579.5,5,Strong
-331220,"Tok, Tanacross",2026-02-01,2026,2,pce_eligible_community_kwh,70576,21579.5,5,Strong
 331220,"Tok, Tanacross",2026-02-01,2026,2,com_facil_sold_to,70576,21579.5,5,Strong
-331220,"Tok, Tanacross",2026-03-01,2026,3,pce_eligible_community_kwh,66053,21579.5,5,Strong
 331220,"Tok, Tanacross",2026-03-01,2026,3,com_facil_sold_to,66053,21579.5,5,Strong
 331700,Toksook Bay,2015-07-01,2015,7,commercial_sold_to,23532,4720,25,Extreme
 331700,Toksook Bay,2015-08-01,2015,8,commercial_sold_to,22887,4720,24,Extreme
@@ -3811,7 +3457,6 @@ project_code,sales_reporting_name,date,calendar_year,calendar_month,column_teste
 331700,Toksook Bay,2016-01-01,2016,1,commercial_sold_to,36402,4720,41,Extreme
 331700,Toksook Bay,2017-12-01,2017,12,fuel_used_gallons,59395,18727.5,10,Extreme
 331700,Toksook Bay,2024-01-01,2024,1,wind_kwh_generated,327102,45962,9,Strong
-331700,Toksook Bay,2025-01-01,2025,1,pce_eligible_residential_kwh,75449,53389,5,Strong
 331700,Toksook Bay,2025-11-01,2025,11,commercial_sold_to,24287,4720,26,Extreme
 331700,Toksook Bay,2025-12-01,2025,12,commercial_sold_to,24946,4720,26,Extreme
 331700,Toksook Bay,2026-01-01,2026,1,commercial_sold_to,24195,4720,26,Extreme
@@ -3823,12 +3468,10 @@ project_code,sales_reporting_name,date,calendar_year,calendar_month,column_teste
 332710,Tuluksak,2023-09-01,2023,9,govt_facil_sold_to,5874,1136,6,Strong
 332710,Tuluksak,2024-01-01,2024,1,commercial_sold_to,46117,14225.5,6,Strong
 332710,Tuluksak,2024-03-01,2024,3,residential_sold_to,60962,23162.5,5,Strong
-332710,Tuluksak,2024-06-01,2024,6,pce_eligible_community_kwh,29400,3215.5,17,Extreme
 332710,Tuluksak,2024-06-01,2024,6,diesel_kwh_generated,144464,53282,6,Strong
 332710,Tuluksak,2024-06-01,2024,6,residential_sold_to,57936,23162.5,5,Strong
 332710,Tuluksak,2024-06-01,2024,6,com_facil_sold_to,47673,3316,35,Extreme
 332710,Tuluksak,2026-01-01,2026,1,total_kwh_purchased,93710,0,NA,Strong
-332710,Tuluksak,2026-03-01,2026,3,pce_eligible_community_kwh,12141,3215.5,6,Strong
 332710,Tuluksak,2026-03-01,2026,3,com_facil_sold_to,12142,3316,7,Strong
 332720,Tuntutuliak,2016-01-01,2016,1,wind_kwh_generated,55057,7880,5,Strong
 332720,Tuntutuliak,2016-01-01,2016,1,total_kwh_purchased,18477,0,NA,Strong
@@ -3883,12 +3526,9 @@ project_code,sales_reporting_name,date,calendar_year,calendar_month,column_teste
 332730,Twin Hills,2023-05-01,2023,5,total_kwh_purchased,27177,0,NA,Strong
 332730,Twin Hills,2023-06-01,2023,6,total_kwh_purchased,21012,0,NA,Strong
 332730,Twin Hills,2023-10-01,2023,10,govt_facil_sold_to,7487,801,9,Extreme
-332730,Twin Hills,2023-12-01,2023,12,pce_eligible_residential_kwh,18278,8820,5,Strong
 332730,Twin Hills,2023-12-01,2023,12,residential_sold_to,21479,10360,6,Strong
 332730,Twin Hills,2023-12-01,2023,12,com_facil_sold_to,10256,2820,7,Strong
 332730,Twin Hills,2023-12-01,2023,12,govt_facil_sold_to,11764,801,15,Extreme
-332730,Twin Hills,2024-01-01,2024,1,pce_eligible_residential_kwh,116076,8820,58,Extreme
-332730,Twin Hills,2024-01-01,2024,1,pce_eligible_community_kwh,41623,2777,40,Extreme
 332730,Twin Hills,2024-01-01,2024,1,com_facil_sold_to,9000,2820,6,Strong
 332730,Twin Hills,2024-01-01,2024,1,govt_facil_sold_to,7597,801,9,Extreme
 332730,Twin Hills,2024-02-01,2024,2,govt_facil_sold_to,9166,801,11,Extreme
@@ -3917,7 +3557,6 @@ project_code,sales_reporting_name,date,calendar_year,calendar_month,column_teste
 332730,Twin Hills,2026-01-01,2026,1,govt_facil_sold_to,36884,801,49,Extreme
 332730,Twin Hills,2026-01-01,2026,1,residential_customers,92,33,40,Extreme
 332730,Twin Hills,2026-02-01,2026,2,govt_facil_sold_to,8535,801,10,Extreme
-332730,Twin Hills,2026-03-01,2026,3,pce_eligible_community_kwh,10815,2777,8,Strong
 332730,Twin Hills,2026-03-01,2026,3,govt_facil_sold_to,10145,801,13,Extreme
 332850,Unalakleet,2018-08-01,2018,8,unbilled_sold_to,1818,207,6,Strong
 332850,Unalakleet,2018-09-01,2018,9,unbilled_sold_to,1818,207,6,Strong
@@ -3940,22 +3579,9 @@ project_code,sales_reporting_name,date,calendar_year,calendar_month,column_teste
 332880,Venetie,2020-01-01,2020,1,commercial_sold_to,48852,11563,6,Strong
 332880,Venetie,2020-05-01,2020,5,commercial_sold_to,56894,11563,8,Strong
 332880,Venetie,2020-06-01,2020,6,commercial_sold_to,48734,11563,6,Strong
-332880,Venetie,2023-09-01,2023,9,pce_eligible_residential_kwh,36449,17493,5,Strong
 332880,Venetie,2024-02-01,2024,2,residential_sold_to,56211,19929,5,Strong
 332880,Venetie,2025-02-01,2025,2,govt_facil_sold_to,3334,579,13,Extreme
-332410,Wainwright,2015-08-01,2015,8,pce_eligible_residential_kwh,0,37324,5,Strong
 332410,Wainwright,2015-08-01,2015,8,peak_consumption_kw,1724,1049,5,Strong
-332410,Wainwright,2015-09-01,2015,9,pce_eligible_residential_kwh,0,37324,5,Strong
-332410,Wainwright,2015-10-01,2015,10,pce_eligible_residential_kwh,0,37324,5,Strong
-332410,Wainwright,2015-11-01,2015,11,pce_eligible_residential_kwh,0,37324,5,Strong
-332410,Wainwright,2015-12-01,2015,12,pce_eligible_residential_kwh,0,37324,5,Strong
-332410,Wainwright,2016-01-01,2016,1,pce_eligible_residential_kwh,0,37324,5,Strong
-332410,Wainwright,2016-02-01,2016,2,pce_eligible_residential_kwh,0,37324,5,Strong
-332410,Wainwright,2016-03-01,2016,3,pce_eligible_residential_kwh,0,37324,5,Strong
-332410,Wainwright,2016-04-01,2016,4,pce_eligible_residential_kwh,0,37324,5,Strong
-332410,Wainwright,2016-05-01,2016,5,pce_eligible_residential_kwh,0,37324,5,Strong
-332410,Wainwright,2016-06-01,2016,6,pce_eligible_residential_kwh,0,37324,5,Strong
-332410,Wainwright,2017-07-01,2017,7,pce_eligible_residential_kwh,0,37324,5,Strong
 332410,Wainwright,2017-08-01,2017,8,peak_consumption_kw,4272,1049,22,Extreme
 332410,Wainwright,2018-01-01,2018,1,peak_consumption_kw,7847,1049,47,Extreme
 331730,Wales,2015-07-01,2015,7,commercial_sold_to,10225,3875,5,Strong
@@ -3982,7 +3608,6 @@ project_code,sales_reporting_name,date,calendar_year,calendar_month,column_teste
 331730,Wales,2023-10-01,2023,10,com_facil_sold_to,41267,12432,11,Extreme
 331730,Wales,2023-11-01,2023,11,com_facil_sold_to,41492,12432,11,Extreme
 331730,Wales,2023-12-01,2023,12,com_facil_sold_to,45279,12432,13,Extreme
-331730,Wales,2024-01-01,2024,1,pce_eligible_residential_kwh,29823,13223,9,Strong
 331730,Wales,2024-01-01,2024,1,fuel_used_gallons,8575,4459,5,Strong
 331730,Wales,2024-01-01,2024,1,diesel_kwh_generated,111401,58220,5,Strong
 331730,Wales,2024-01-01,2024,1,com_facil_sold_to,53341,12432,16,Extreme
@@ -4043,25 +3668,16 @@ project_code,sales_reporting_name,date,calendar_year,calendar_month,column_teste
 331230,Whale Pass,2018-01-01,2018,1,peak_consumption_kw,219,100,5,Strong
 331230,Whale Pass,2018-02-01,2018,2,peak_consumption_kw,219,100,5,Strong
 331230,Whale Pass,2018-03-01,2018,3,peak_consumption_kw,219,100,5,Strong
-331230,Whale Pass,2023-02-01,2023,2,pce_eligible_community_kwh,1709,539,6,Strong
 331230,Whale Pass,2023-02-01,2023,2,com_facil_sold_to,1709,539,6,Strong
-331230,Whale Pass,2023-03-01,2023,3,pce_eligible_community_kwh,1689,539,6,Strong
 331230,Whale Pass,2023-03-01,2023,3,com_facil_sold_to,1689,539,6,Strong
-331230,Whale Pass,2024-03-01,2024,3,pce_eligible_community_kwh,1569,539,5,Strong
 331230,Whale Pass,2024-03-01,2024,3,com_facil_sold_to,1569,539,5,Strong
-331230,Whale Pass,2024-04-01,2024,4,pce_eligible_community_kwh,1843,539,7,Strong
 331230,Whale Pass,2024-04-01,2024,4,com_facil_sold_to,1843,539,7,Strong
-331230,Whale Pass,2024-05-01,2024,5,pce_eligible_community_kwh,1641,539,6,Strong
 331230,Whale Pass,2024-05-01,2024,5,com_facil_sold_to,1641,539,6,Strong
-331230,Whale Pass,2025-01-01,2025,1,pce_eligible_community_kwh,1803,539,6,Strong
 331230,Whale Pass,2025-01-01,2025,1,com_facil_sold_to,1803,539,6,Strong
-331230,Whale Pass,2025-02-01,2025,2,pce_eligible_community_kwh,1841,539,7,Strong
 331230,Whale Pass,2025-02-01,2025,2,com_facil_sold_to,1841,539,7,Strong
 332890,White Mountain,2021-01-01,2021,1,com_facil_sold_to,18046,9411.5,5,Strong
 332890,White Mountain,2025-12-01,2025,12,govt_facil_sold_to,7459,1336,9,Strong
 332900,Yakutat,2016-10-01,2016,10,peak_consumption_kw,2101,1169,6,Strong
-332900,Yakutat,2024-01-01,2024,1,pce_eligible_residential_kwh,11562,91951,8,Strong
-332900,Yakutat,2024-01-01,2024,1,pce_eligible_community_kwh,4285,33642.5,5,Strong
 332900,Yakutat,2025-11-01,2025,11,fuel_used_gallons,0,34238,7,Strong
 332900,Yakutat,2025-12-01,2025,12,fuel_used_gallons,0,34238,7,Strong
 332900,Yakutat,2026-01-01,2026,1,fuel_used_gallons,0,34238,7,Strong
