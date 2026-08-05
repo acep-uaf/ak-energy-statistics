@@ -22,7 +22,7 @@ Level 3 data applies statistical outlier checks in order to screen values for st
 #| results: asis
 #|
 render_outlier_rules(
-  yaml_path  = "../config/check_data/l3_pce_outlier_check.yml",
+  yaml_path  = "../config/check_data/l2_pce_outlier_check.yml",
   config_key = NULL
 )
 
@@ -35,7 +35,7 @@ render_outlier_rules(
 #| results: asis
 
 generate_download_table(
-  data_dir       = "data/l3_outliers_checked/consolidated",
+  data_dir       = "data/l3/consolidated",
   file_pattern   = "\\.csv$"
 )
 ```
@@ -54,7 +54,7 @@ Level 2 data processing applies basic transformations to create or modify column
 #| results: asis
 
 generate_download_table(
-  data_dir       = "data/l2_transformed/consolidated",
+  data_dir       = "data/l2/consolidated",
   file_pattern   = "\\.csv$"
 )
 ```
@@ -85,7 +85,7 @@ render_quality_rules(
 #| results: asis
 
 generate_download_table(
-  data_dir       = "data/l1_quality_checked/consolidated",
+  data_dir       = "data/l1/consolidated",
   file_pattern   = "\\.csv$"
 )
 

@@ -8,10 +8,10 @@ library(purrr)
 library(cli)
 
 
-l2_transform_header <- function(l1_consolidated_dir) {
+l1_transform_header <- function(l1_consolidated_dir) {
 
   raw <- read_csv(
-    path(l1_consolidated_dir, 'l1_pce_header_consolidated.csv'),
+    path(l1_consolidated_dir, 'l1_pce_header.csv'),
     show_col_types = FALSE
   )
 
@@ -80,9 +80,9 @@ l2_transform_header <- function(l1_consolidated_dir) {
 }
 
 
-l2_transform_rate_line <- function(l1_consolidated_dir) {
+l1_transform_rate_line <- function(l1_consolidated_dir) {
 
-  raw <- read_csv(path(l1_consolidated_dir, 'l1_pce_rate_line_consolidated.csv'), show_col_types = FALSE)
+  raw <- read_csv(path(l1_consolidated_dir, 'l1_pce_rate_line.csv'), show_col_types = FALSE)
 
   pce_eligible_kwhs <- raw %>%
     group_by(identifier) %>%
@@ -94,15 +94,15 @@ l2_transform_rate_line <- function(l1_consolidated_dir) {
     )
 
   rates <- raw %>%
-  filter(line_no == 10000) %>%
-  select(
-    identifier,
-    actual_rate,
-    pro_rata_rate,
-    check,
-    residential_rate,
-    effective_residential_rate
-  )
+    filter(line_no == 10000) %>%
+    select(
+      identifier,
+      actual_rate,
+      pro_rata_rate,
+      check,
+      residential_rate,
+      effective_residential_rate
+    )
 
 
   df_out <- pce_eligible_kwhs %>%
@@ -114,16 +114,16 @@ l2_transform_rate_line <- function(l1_consolidated_dir) {
 }
 
 
-l2_transform_pce <- function(
+l1_transform_pce <- function(
   l1_consolidated_dir,
   l1_lookup_sales_report_path,
   l1_lookup_plants_path,
   l1_lookup_operators_path,
   l1_lookup_pce_floor_path,
-  config = "config/schema/l2_pce_schema.yml") {
+  config = "config/schema/l1_pce_schema.yml") {
 
-  header <- l2_transform_header(l1_consolidated_dir)
-  rate_line <- l2_transform_rate_line(l1_consolidated_dir)
+  header <- l1_transform_header(l1_consolidated_dir)
+  rate_line <- l1_transform_rate_line(l1_consolidated_dir)
 
   lookup_sales_report <- read_csv(l1_lookup_sales_report_path, show_col_types = FALSE)
   lookup_plants <- read_csv(l1_lookup_plants_path, show_col_types = FALSE)
@@ -164,7 +164,7 @@ l2_transform_pce <- function(
     df <- calculated
   }
 
-  path_out <- path_ext_set(path('data/l2_transformed/consolidated/l2_pce'), "csv")
+  path_out <- path_ext_set(path('data/l1/consolidated/l1_pce'), "csv")
   dir_create(dirname(path_out))
   write_csv(df, path_out)
 

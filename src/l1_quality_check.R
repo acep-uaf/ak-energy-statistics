@@ -318,8 +318,7 @@ l1_check_quality <- function(path_in, config) {
 
   # Egress Setup
   path_out <- path_in %>%
-    str_replace_all("l0", "l1") %>%
-    str_replace("extracted", "quality_checked")
+    str_replace_all("l0", "l1")
 
   dir_create(dirname(path_out))
   write_csv(df, file = path_out)

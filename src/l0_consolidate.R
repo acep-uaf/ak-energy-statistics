@@ -7,7 +7,7 @@ library(purrr)
 library(cli)
 
 
-l1_consolidate_pce_data <- function(path_with_pattern, join_by_columns) {
+l0_consolidate_pce_data <- function(path_with_pattern, join_by_columns) {
 
   files <- dir_ls(
     path = path_dir(path_with_pattern),
@@ -15,7 +15,7 @@ l1_consolidate_pce_data <- function(path_with_pattern, join_by_columns) {
   )
 
   if (length(files) == 0) {
-    stop("No L1 files found to consolidate.")
+    stop("No L0 files found to consolidate.")
   }
 
   cli_alert_info("Consolidating {length(files)} monthly data files...")
@@ -38,7 +38,7 @@ l1_consolidate_pce_data <- function(path_with_pattern, join_by_columns) {
     select(-file_path, -file_date)
 
 
-  path_out <- path_ext_set(str_c(str_replace_all(path_with_pattern, "monthly", "consolidated"), "_consolidated"),"csv")
+  path_out <- path_ext_set(str_c(str_replace_all(path_with_pattern, "monthly", "consolidated")),"csv")
   dir_create(dirname(path_out))
   write_csv(df_deduped, path_out)
 

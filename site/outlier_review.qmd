@@ -22,7 +22,7 @@ Tabulator = window.Tabulator
 ```{ojs}
 // load data
 
-l3_pce_outliers_log = FileAttachment("data/l3_outliers_checked/logs/l3_pce_outliers_log.csv")
+pce_outliers_log = FileAttachment("data/l2/logs/l2_pce_outliers_log.csv")
   .csv()
   .then(data => {
     return data.map(d => {
@@ -46,7 +46,7 @@ l3_pce_outliers_log = FileAttachment("data/l3_outliers_checked/logs/l3_pce_outli
     })
   })
 
-pce = FileAttachment("data/l2_transformed/consolidated/l2_pce.csv")
+pce = FileAttachment("data/l1/consolidated/l1_pce.csv")
   .csv()
   .then(data => {
     return data.map(d => {
@@ -75,7 +75,7 @@ pce = FileAttachment("data/l2_transformed/consolidated/l2_pce.csv")
 ```{ojs}
 // dropdown selections
 
-communities = [...new Set(l3_pce_outliers_log.map(d => d.sales_reporting_name))]
+communities = [...new Set(pce_outliers_log.map(d => d.sales_reporting_name))]
 
 viewof selectedCommunity = Inputs.select(
   communities,
@@ -83,7 +83,7 @@ viewof selectedCommunity = Inputs.select(
 )
 
 availableColumns = {
-  const subset = l3_pce_outliers_log.filter(d => d.sales_reporting_name === selectedCommunity);
+  const subset = pce_outliers_log.filter(d => d.sales_reporting_name === selectedCommunity);
   return [...new Set(subset.map(d => d.column_tested))];
 }
 
@@ -100,7 +100,7 @@ filteredFullSeries = pce.filter(d =>
   d.sales_reporting_name === selectedCommunity
 )
 
-filteredOutliers = l3_pce_outliers_log.filter(d =>
+filteredOutliers = pce_outliers_log.filter(d =>
   d.sales_reporting_name === selectedCommunity &&
   d.column_tested === selectedColumn
 )
