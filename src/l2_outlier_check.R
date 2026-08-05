@@ -4,26 +4,26 @@ library(readr)
 library(yaml)
 library(fs)
 
-l3_check_outliers <- function(path_in, path_config, output_log_path, path_out) {
+l2_check_outliers <- function(path_in, path_config, output_log_path, path_out) {
 
   config_data <- read_yaml(path_config)
-  l2 <- read_csv(path_in, show_col_types = FALSE)
+  l1 <- read_csv(path_in, show_col_types = FALSE)
 
   # Extract variables from config
   columns_to_check <- unlist(config_data$columns_to_check)
   mad_threshold   <- as.numeric(config_data$settings$mad_threshold)
 
   # Filter down to columns that actually exist in the data
-  columns_to_check <- intersect(columns_to_check, names(l2))
+  columns_to_check <- intersect(columns_to_check, names(l1))
 
   message(paste("Loaded config. Checking", length(columns_to_check), "columns with a MAD threshold of", mad_threshold))
 
   # Add temporary row index to preserve strict row ordering and uniqueness
-  l2_indexed <- l2 %>%
+  l1_indexed <- l1 %>%
     mutate(.row_id = row_number(), .before = 1)
 
   # Pivot based on YAML list of columns & calculate outliers
-  outliers <- l2_indexed %>%
+  outliers <- l1_indexed %>%
     select(.row_id, project_code, sales_reporting_name, date, calendar_year, calendar_month, all_of(columns_to_check)) %>%
     pivot_longer(
       cols = all_of(columns_to_check),
@@ -86,29 +86,29 @@ l3_check_outliers <- function(path_in, path_config, output_log_path, path_out) {
       pivot_wider(names_from = column_tested, values_from = flag_null)
 
     # Left join and NULL out flagged cells
-    l3_clean <- l2_indexed %>%
+    l2_clean <- l1_indexed %>%
       left_join(outliers_to_null, by = ".row_id", suffix = c("", "_is_outlier"))
 
     # Set matching cells to NA
     for (col in columns_to_check) {
       flag_col <- paste0(col, "_is_outlier")
-      if (flag_col %in% names(l3_clean)) {
-        l3_clean <- l3_clean %>%
+      if (flag_col %in% names(l2_clean)) {
+        l2_clean <- l2_clean %>%
           mutate(!!col := if_else(!is.na(.data[[flag_col]]), NA_real_, .data[[col]]))
       }
     }
 
     # Clean up index and temporary join columns
-    l3_clean <- l3_clean %>%
+    l2_clean <- l2_clean %>%
       select(-.row_id, -ends_with("_is_outlier"))
   } else {
-    l3_clean <- l2
+    l2_clean <- l1
   }
 
   # --- Recalculate Derived Metrics Post-Scrubbing ---
   # Ensures scrubbed NAs in fuel or kWh automatically wipe out the derived efficiency
-  if (all(c("fuel_used_gallons", "diesel_kwh_generated") %in% names(l3_clean))) {
-    l3_clean <- l3_clean %>%
+  if (all(c("fuel_used_gallons", "diesel_kwh_generated") %in% names(l2_clean))) {
+    l2_clean <- l2_clean %>%
       mutate(
         fuel_num = as.numeric(fuel_used_gallons),
         kwh_num  = as.numeric(diesel_kwh_generated),
@@ -124,6 +124,6 @@ l3_check_outliers <- function(path_in, path_config, output_log_path, path_out) {
 
   # Write Cleaned Dataset to File
   dir_create(dirname(path_out))
-  write_csv(l3_clean, path_out)
+  write_csv(l2_clean, path_out)
   message(paste("Cleaned dataset saved with", nrow(outliers), "outliers scrubbed to NA at:", path_out))
 }

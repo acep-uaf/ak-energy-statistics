@@ -27,17 +27,6 @@ todo:
 3. add community names to outputted files (outliers, etc)
 
 
-4. charts for outliers
-    - single chart
-    - dropdowns
-        community
-        column containing outliers
-    - what's charted? full timeseries of column for community? yes
-    - add flag for outliers within the timeseries
-    - scrollable data table below, interacting with graph above
-    - click on record, charts above
-    - field for note (ex: "transcription error")
-
 
 5. AVEC negative fuel reporting
     - at end of year, AVEC reports values in order to adjust previous values

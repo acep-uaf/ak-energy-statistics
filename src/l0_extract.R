@@ -37,7 +37,7 @@ l0_pce_extract_rename_write <- function(
   path_in,
   sheets = c('HeaderData', 'RateLineData'),
   schema_config = 'config/schema/l0_pce_schema.yml',
-  dir_out = 'data/l0_extracted/monthly'
+  dir_out = 'data/l0/monthly'
 ) {
 
   for (sheet in sheets) {
