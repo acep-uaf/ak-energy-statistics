@@ -79,6 +79,14 @@ l2_check_outliers(
   path_out = "data/l2/consolidated/l2_pce.csv"
 )
 
+l2_generate_imputation_options(
+  pce_path = 'data/l1/consolidated/l1_pce.csv',
+  pce_outliers_log_path = 'data/l2/logs/l2_pce_outliers_log.csv',
+  path_out = 'data/l2/logs/l2_imputation_options.csv')
+
+
+
+
 
 start_time <- Sys.time()
 l3_impute_columns(
