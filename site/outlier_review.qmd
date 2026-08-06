@@ -18,11 +18,10 @@ Tabulator = window.Tabulator
 ### Outlier Review
 
 
-
 ```{ojs}
-// load data
-
-pce_outliers_log = FileAttachment("data/l2/logs/l2_pce_outliers_log.csv")
+// Load data
+// Imputation options
+pce_outliers_log = FileAttachment("data/l2/logs/l2_pce_imputation_options.csv")
   .csv()
   .then(data => {
     return data.map(d => {
@@ -42,10 +41,15 @@ pce_outliers_log = FileAttachment("data/l2/logs/l2_pce_outliers_log.csv")
         }
       }
 
+      if (!cleanedRow.status) {
+        cleanedRow.status = "Carry forward";
+      }
+
       return cleanedRow;
     })
   })
 
+// L1 PCE
 pce = FileAttachment("data/l1/consolidated/l1_pce.csv")
   .csv()
   .then(data => {
@@ -72,8 +76,9 @@ pce = FileAttachment("data/l1/consolidated/l1_pce.csv")
   })
 ```
 
+
 ```{ojs}
-// dropdown selections
+// Dropdowns
 
 communities = [...new Set(pce_outliers_log.map(d => d.sales_reporting_name))]
 
@@ -91,25 +96,41 @@ viewof selectedColumn = Inputs.select(
   availableColumns,
   { label: "Column:", value: availableColumns[0] }
 )
+
+strategyMap = new Map([
+  ["Value out of bounds, but original value kept", "raw_value"],
+  ["Carry forward", "carry_forward"],
+  ["Annual average", "annual_average"],
+  ["Average of preceding and proceeding months", "avg_preceding_proceeding"],
+  ["Average of months from other years", "avg_same_month_other_years"]
+])
 ```
 
-```{ojs}
-// filter data
 
+
+
+```{ojs}
+// Filters
+// Filter full time series data
 filteredFullSeries = pce.filter(d =>
   d.sales_reporting_name === selectedCommunity
 )
 
-filteredOutliers = pce_outliers_log.filter(d =>
-  d.sales_reporting_name === selectedCommunity &&
-  d.column_tested === selectedColumn
-)
+// Filter outliers based on imputation selection
+imputedOutlierDots = outlierTableData.map(d => {
+  const colName = strategyMap.get(d.status);
+  const imputedVal = colName ? d[colName] : null;
 
+  return {
+    ...d,
+    imputed_value: imputedVal
+  };
+})
 ```
 
 
 ```{ojs}
-// plot lines, dots, outlier dots
+// Plot lines, outlier dots (red), and imputed preview dots (green)
 
 Plot.plot({
   height: 500,
@@ -127,7 +148,7 @@ Plot.plot({
     grid: true
   },
   marks: [
-    // timeseries line
+    // Timeseries line
     Plot.line(filteredFullSeries, {
       x: "date",
       y: d => d[selectedColumn],
@@ -135,7 +156,7 @@ Plot.plot({
       strokeWidth: 1.5
     }),
 
-    // timeseries dots
+    // Timeseries dots
     Plot.dot(filteredFullSeries, {
       x: "date",
       y: d => d[selectedColumn],
@@ -143,16 +164,27 @@ Plot.plot({
       r: 3
     }),
 
-    // outlier dots
-    Plot.dot(filteredOutliers, {
+    // Outlier dots (red)
+    Plot.dot(outlierTableData, {
       x: "date",
-      y: d => d.raw_value ?? d.value,
+      y: d => d.raw_value ?? d[selectedColumn],
       fill: "red",
       stroke: "black",
       strokeWidth: 1,
-      r: 6
+      r: 6,
+      title: d => `Raw Outlier: ${d.raw_value ?? d[selectedColumn]}`
     }),
 
+    // Selected imputation dots (green)
+    Plot.dot(imputedOutlierDots.filter(d => d.imputed_value !== null), {
+      x: "date",
+      y: "imputed_value",
+      fill: "#2ca02c",
+      stroke: "black",
+      strokeWidth: 1.5,
+      r: 7,
+      title: d => `Action (${d.status}): ${d.imputed_value}`
+    }),
 
     Plot.tip(filteredFullSeries, Plot.pointer({
         x: "date",
@@ -173,42 +205,60 @@ Plot.plot({
 ```
 
 
-
-
-
-
 ```{ojs}
-tableContainer = {
+// Interactive Tablulator table
+// Selection informs chart with viewof component
+
+viewof outlierTableData = {
+  const initialData = pce_outliers_log.filter(d =>
+    d.sales_reporting_name === selectedCommunity &&
+    d.column_tested === selectedColumn
+  );
+
   const container = html`<div style="margin-bottom: 20px;"></div>`;
 
   const table = new Tabulator(container, {
-    data: filteredOutliers,
+    data: JSON.parse(JSON.stringify(initialData)),
     layout: "fitDataFill",
     columns: [
       { title: "PCE ID", field: "project_code" },
       { title: "Name", field: "sales_reporting_name" },
       { title: "Year", field: "calendar_year" },
       { title: "Month", field: "calendar_month" },
-      { title: "Column Tested", field: "column_tested"},
+      { title: "Column", field: "column_tested"},
       { title: "Orig Value", field: "raw_value" },
-      { title: "Override Value", field: "override_value" },
+      { title: "Carry Fwd", field: "carry_forward" },
+      { title: "Annual Avg", field: "annual_average" },
+      { title: "Pre/Post Avg", field: "avg_preceding_proceeding" },
+      { title: "Same Month Avg", field: "avg_same_month_other_years" },
       {
         title: "Override Action",
         field: "status",
         editor: "list",
-        editorParams: { values: [
+        editorParams: {
+          values: [
             "Value out of bounds, but original value kept",
             "Carry forward",
             "Annual average",
             "Average of preceding and proceeding months",
             "Average of months from other years",
             "Manual override: expert opinion"
-            ] }
+          ]
+        }
       }
     ]
   });
 
-  window.currentTable = table;
+
+  const updateData = () => {
+    container.value = table.getData();
+    container.dispatchEvent(new CustomEvent("input"));
+  };
+
+  table.on("cellEdited", updateData);
+  table.on("tableBuilt", updateData);
+
+  container.value = initialData;
   return container;
 }
 ```
