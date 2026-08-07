@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://acep-uaf.github.io/ak-energy-statistics/data.html</loc>
-    <lastmod>2026-08-06T22:22:01.006Z</lastmod>
-  </url>
-  <url>
     <loc>https://acep-uaf.github.io/ak-energy-statistics/quality_and_outliers.html</loc>
-    <lastmod>2026-08-06T22:22:01.007Z</lastmod>
+    <lastmod>2026-08-07T20:37:01.405Z</lastmod>
   </url>
   <url>
-    <loc>https://acep-uaf.github.io/ak-energy-statistics/index.html</loc>
-    <lastmod>2026-08-06T22:22:01.006Z</lastmod>
-  </url>
-  <url>
-    <loc>https://acep-uaf.github.io/ak-energy-statistics/process.html</loc>
-    <lastmod>2026-08-06T22:22:01.007Z</lastmod>
+    <loc>https://acep-uaf.github.io/ak-energy-statistics/data.html</loc>
+    <lastmod>2026-08-07T20:37:01.404Z</lastmod>
   </url>
   <url>
     <loc>https://acep-uaf.github.io/ak-energy-statistics/outlier_review.html</loc>
-    <lastmod>2026-08-06T22:22:01.006Z</lastmod>
+    <lastmod>2026-08-07T20:37:01.404Z</lastmod>
+  </url>
+  <url>
+    <loc>https://acep-uaf.github.io/ak-energy-statistics/process.html</loc>
+    <lastmod>2026-08-07T20:37:01.405Z</lastmod>
+  </url>
+  <url>
+    <loc>https://acep-uaf.github.io/ak-energy-statistics/index.html</loc>
+    <lastmod>2026-08-07T20:37:01.404Z</lastmod>
   </url>
 </urlset>
