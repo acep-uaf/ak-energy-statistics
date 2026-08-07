@@ -182,13 +182,29 @@ Plot.plot({
       fill: "#2ca02c",
       stroke: "black",
       strokeWidth: 1.5,
-      r: 7,
-      title: d => `Action (${d.status}): ${d.imputed_value}`
+      r: 7
     }),
+
+    Plot.tip(imputedOutlierDots.filter(d => d.imputed_value !== null), Plot.pointer({
+        x: "date",
+        y: "imputed_value",
+        maxRadius: 10,
+        channels: {
+            "Community": "sales_reporting_name",
+            "Year": "calendar_year",
+            "Month": "calendar_month",
+            "Imputed Value": "imputed_value"
+        },
+        format: {
+            x: false,
+            y: false
+        }
+    })),
 
     Plot.tip(filteredFullSeries, Plot.pointer({
         x: "date",
         y: d => d[selectedColumn],
+        maxRadius: 10,
         channels: {
             "Community": "sales_reporting_name",
             "Year": "calendar_year",
