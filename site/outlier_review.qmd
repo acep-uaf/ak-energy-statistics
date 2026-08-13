@@ -8,18 +8,55 @@ format:
     include-in-header:
       - text: |
           <link href="https://cdn.jsdelivr.net/npm/tabulator-tables@5.5.0/dist/css/tabulator_bootstrap5.min.css" rel="stylesheet">
-          <script src="https://cdn.jsdelivr.net/npm/tabulator-tables@5.5.0/dist/js/tabulator.min.js"></script>
+ 
 ---
 
+
 ```{ojs}
-Tabulator = window.Tabulator
+Tabulator = require("tabulator-tables@5.5.0")
+idb = require("idb@8/build/umd.js")
 ```
+
+```{ojs}
+// IDB initialization
+
+db = idb.openDB("OutlierReviewDB", 1, {
+  upgrade(db) {
+    if (!db.objectStoreNames.contains("reviews")) {
+      db.createObjectStore("reviews", { keyPath: "identifier" });
+    }
+  }
+})
+
+// Helper to save or update an edited record
+saveReview = async (record) => {
+  if (!record || !record.identifier) return;
+  const database = await db;
+  await database.put("reviews", record);
+}
+
+// Helper to retrieve all saved records for CSV download
+getAllSavedReviews = async () => {
+  const database = await db;
+  return await database.getAll("reviews");
+}
+
+// Helper to get saved state for a specific set of records
+getSavedReviewsMap = async () => {
+  const database = await db;
+  const all = await database.getAll("reviews");
+  return new Map(all.map(item => [item.identifier, item.status]));
+}
+```
+
+
 
 ### Outlier Review
 
 
 ```{ojs}
 // Load data
+
 // Imputation options
 pce_outliers_log = FileAttachment("data/l2/logs/l2_pce_imputation_options.csv")
   .csv()
@@ -42,7 +79,7 @@ pce_outliers_log = FileAttachment("data/l2/logs/l2_pce_imputation_options.csv")
       }
 
       if (!cleanedRow.status) {
-        cleanedRow.status = "Carry forward";
+        cleanedRow.status = null;
       }
 
       return cleanedRow;
@@ -98,7 +135,7 @@ viewof selectedColumn = Inputs.select(
 )
 
 strategyMap = new Map([
-  ["Value out of bounds, but original value kept", "raw_value"],
+  ["Keep original value", "raw_value"],
   ["Carry forward", "carry_forward"],
   ["Annual average", "annual_average"],
   ["Average of preceding and proceeding months", "avg_preceding_proceeding"],
@@ -111,6 +148,7 @@ strategyMap = new Map([
 
 ```{ojs}
 // Filters
+
 // Filter full time series data
 filteredFullSeries = pce.filter(d =>
   d.sales_reporting_name === selectedCommunity
@@ -222,19 +260,28 @@ Plot.plot({
 
 
 ```{ojs}
-// Interactive Tablulator table
-// Selection informs chart with viewof component
+// Tabulator Table with IDB Hydration & Persistence
 
 viewof outlierTableData = {
+  // get filtered raw records
   const initialData = pce_outliers_log.filter(d =>
     d.sales_reporting_name === selectedCommunity &&
     d.column_tested === selectedColumn
   );
 
+  // hydrate status from IDB
+  const savedMap = await getSavedReviewsMap();
+  const hydratedData = initialData.map(row => {
+    if (savedMap.has(row.identifier)) {
+      return { ...row, status: savedMap.get(row.identifier) };
+    }
+    return row;
+  });
+
   const container = html`<div style="margin-bottom: 20px;"></div>`;
 
   const table = new Tabulator(container, {
-    data: JSON.parse(JSON.stringify(initialData)),
+    data: JSON.parse(JSON.stringify(hydratedData)),
     layout: "fitDataFill",
     columns: [
       { title: "PCE ID", field: "project_code" },
@@ -253,7 +300,7 @@ viewof outlierTableData = {
         editor: "list",
         editorParams: {
           values: [
-            "Value out of bounds, but original value kept",
+            "Keep original value",
             "Carry forward",
             "Annual average",
             "Average of preceding and proceeding months",
@@ -265,16 +312,58 @@ viewof outlierTableData = {
     ]
   });
 
-
-  const updateData = () => {
+  // send changes to chart AND save row to IDB
+  const updateData = async (cell) => {
+    if (cell) {
+      const rowData = cell.getRow().getData();
+      await saveReview(rowData); // save edit immediately into IDB
+    }
     container.value = table.getData();
     container.dispatchEvent(new CustomEvent("input"));
   };
 
   table.on("cellEdited", updateData);
-  table.on("tableBuilt", updateData);
+  table.on("tableBuilt", () => updateData());
 
-  container.value = initialData;
+  container.value = hydratedData;
   return container;
 }
+```
+
+
+
+
+
+
+```{ojs}
+// Download Button
+
+viewof downloadAction = Inputs.button("Download Saved Reviews (CSV)", {
+  value: null,
+  reduce: async () => {
+    const savedRecords = await getAllSavedReviews();
+    
+    if (savedRecords.length === 0) {
+      alert("No saved overrides found in local storage.");
+      return;
+    }
+
+    // convert JSON records to CSV string
+    const headers = Object.keys(savedRecords[0]).join(",");
+    const rows = savedRecords.map(row => 
+      Object.values(row).map(v => `"${v ?? ''}"`).join(",")
+    );
+    const csvContent = [headers, ...rows].join("\n");
+
+    // trigger download
+    const blob = new Blob([csvContent], { type: "text/csv;charset=utf-8;" });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement("a");
+    link.setAttribute("href", url);
+    link.setAttribute("download", `outlier_reviews_${new Date().toISOString().slice(0, 10)}.csv`);
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
+})
 ```
