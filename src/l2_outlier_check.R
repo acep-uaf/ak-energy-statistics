@@ -24,7 +24,7 @@ l2_check_outliers <- function(path_in, path_config, output_log_path, path_out) {
 
   # Pivot based on YAML list of columns & calculate outliers
   outliers <- l1_indexed %>%
-    select(.row_id, project_code, sales_reporting_name, date, calendar_year, calendar_month, all_of(columns_to_check)) %>%
+    select(.row_id, identifier, project_code, sales_reporting_name, date, calendar_year, calendar_month, all_of(columns_to_check)) %>%
     pivot_longer(
       cols = all_of(columns_to_check),
       names_to = "column_tested",
@@ -67,7 +67,7 @@ l2_check_outliers <- function(path_in, path_config, output_log_path, path_out) {
     ungroup() %>%
     mutate(mad_score = round(mad_score, 0)) %>%
     filter(anomaly_severity %in% c("Strong", "Extreme")) %>%
-    select(.row_id, project_code, sales_reporting_name, date, calendar_year, calendar_month, column_tested, raw_value, median_val, mad_score, anomaly_severity) %>%
+    select(.row_id, identifier, project_code, sales_reporting_name, date, calendar_year, calendar_month, column_tested, raw_value, median_val, mad_score, anomaly_severity) %>%
     arrange(sales_reporting_name, calendar_year, calendar_month)
 
   # Write Outlier Log to File

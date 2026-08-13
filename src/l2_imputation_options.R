@@ -1,4 +1,7 @@
 library(dplyr)
+library(readr)
+library(fs)
+library(yaml)
 library(lubridate)
 library(tidyr)
 
@@ -95,6 +98,7 @@ l2_generate_imputation_options <- function(
 
     # organize
     select(
+      identifier,
       any_of(names(pce_outliers_log)),
       carry_forward,
       annual_average,
