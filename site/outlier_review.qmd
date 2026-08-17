@@ -189,7 +189,8 @@ strategyMap = new Map([
   ["Carry forward", "carry_forward"],
   ["Annual average", "annual_average"],
   ["Average of preceding and proceeding months", "avg_preceding_proceeding"],
-  ["Average of months from other years", "avg_same_month_other_years"]
+  ["Average of months from other years", "avg_same_month_other_years"],
+  ["Manual override", "manual_override"]
 ])
 ```
 
@@ -303,7 +304,6 @@ chartContainer = {
 
 ```{ojs}
 // Tabulator Table with IDB Hydration & Persistence
-
 viewof outlierTableData = {
   const initialData = pce_outliers_log.filter(d =>
     d.sales_reporting_name === currentComm &&
@@ -313,7 +313,24 @@ viewof outlierTableData = {
   const savedMap = await getSavedReviewsMap();
   const hydratedData = initialData.map(row => {
     if (savedMap.has(row.identifier)) {
-      return { ...row, status: savedMap.get(row.identifier) };
+      // Hydrate status and any saved manual values
+      return { 
+        ...row, 
+        status: savedMap.get(row.identifier),
+        // Ensure we pull in the saved manual value if it exists in IDB
+        manual_override: savedMap.has(row.identifier) ? undefined : row.manual_override // Wait, we need the whole row from IDB
+      };
+    }
+    return row;
+  });
+  
+  // Actually, to make sure we get the manual value out of IDB, let's grab the whole row:
+  const allSaved = await getAllSavedReviews();
+  const savedDict = Object.fromEntries(allSaved.map(item => [item.identifier, item]));
+  
+  const fullyHydratedData = initialData.map(row => {
+    if (savedDict[row.identifier]) {
+      return { ...row, ...savedDict[row.identifier] };
     }
     return row;
   });
@@ -321,7 +338,7 @@ viewof outlierTableData = {
   const container = html`<div style="margin-bottom: 20px;"></div>`;
 
   const table = new Tabulator(container, {
-    data: JSON.parse(JSON.stringify(hydratedData)),
+    data: JSON.parse(JSON.stringify(fullyHydratedData)),
     layout: "fitDataFill",
     columns: [
       { title: "PCE ID", field: "project_code" },
@@ -334,6 +351,15 @@ viewof outlierTableData = {
       { title: "Annual Avg", field: "annual_average" },
       { title: "Pre/Post Avg", field: "avg_preceding_proceeding" },
       { title: "Same Month Avg", field: "avg_same_month_other_years" },
+      // NEW: Editable manual value column
+      { 
+        title: "Manual Value", 
+        field: "manual_override", 
+        editor: "number",
+        editorParams: {
+          step: "any" // Allows decimals
+        }
+      },
       {
         title: "Override Action",
         field: "status",
@@ -345,7 +371,7 @@ viewof outlierTableData = {
             "Annual average",
             "Average of preceding and proceeding months",
             "Average of months from other years",
-            "Manual override: expert opinion"
+            "Manual override"
           ]
         }
       }
@@ -354,7 +380,17 @@ viewof outlierTableData = {
 
   const updateData = async (cell) => {
     if (cell) {
-      const rowData = cell.getRow().getData();
+      const row = cell.getRow();
+      const field = cell.getField();
+      
+      if (field === "manual_override") {
+        const val = cell.getValue();
+        if (val !== null && val !== "" && !isNaN(val)) {
+          await row.update({ status: "Manual override" });
+        }
+      }
+
+      const rowData = row.getData();
       await saveReview(rowData); 
       mutable idbTrigger++; 
     }
@@ -365,7 +401,7 @@ viewof outlierTableData = {
   table.on("cellEdited", updateData);
   table.on("tableBuilt", () => updateData());
 
-  container.value = hydratedData;
+  container.value = fullyHydratedData;
   return container;
 }
 ```
@@ -390,11 +426,13 @@ downloadAction = {
       return;
     }
 
-    // Convert JSON records to CSV string
-    const headers = Object.keys(savedRecords[0]).join(",");
+    const allKeys = Array.from(new Set(savedRecords.flatMap(Object.keys)));
+    const headers = allKeys.join(",");
+    
     const rows = savedRecords.map(row =>
-      Object.values(row).map(v => `"${v ?? ''}"`).join(",")
+      allKeys.map(key => `"${row[key] ?? ''}"`).join(",")
     );
+    
     const csvContent = [headers, ...rows].join("\n");
 
     // Trigger browser download
