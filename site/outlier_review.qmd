@@ -13,8 +13,8 @@ format:
 
 
 ```{ojs}
-Tabulator = require("tabulator-tables@5.5.0")
-idb = require("idb@8/build/umd.js")
+Tabulator = require("tabulator-tables@5.5.2")
+idb = require("idb@8.0.0/build/umd.js")
 ```
 
 ```{ojs}
@@ -338,24 +338,26 @@ viewof outlierTableData = {
 ```{ojs}
 // Download Button
 
-viewof downloadAction = Inputs.button("Download Saved Reviews (CSV)", {
-  value: null,
-  reduce: async () => {
+// generate download button
+downloadAction = {
+  const btn = html`<button class="btn btn-primary my-3"><i class="bi bi-download me-1"></i> Download All Selected Override Actions (CSV)</button>`;
+
+  btn.onclick = async () => {
     const savedRecords = await getAllSavedReviews();
-    
-    if (savedRecords.length === 0) {
+
+    if (!savedRecords || savedRecords.length === 0) {
       alert("No saved overrides found in local storage.");
       return;
     }
 
-    // convert JSON records to CSV string
+    // Convert JSON records to CSV string
     const headers = Object.keys(savedRecords[0]).join(",");
-    const rows = savedRecords.map(row => 
+    const rows = savedRecords.map(row =>
       Object.values(row).map(v => `"${v ?? ''}"`).join(",")
     );
     const csvContent = [headers, ...rows].join("\n");
 
-    // trigger download
+    // Trigger Browser Download
     const blob = new Blob([csvContent], { type: "text/csv;charset=utf-8;" });
     const url = URL.createObjectURL(blob);
     const link = document.createElement("a");
@@ -364,6 +366,8 @@ viewof downloadAction = Inputs.button("Download Saved Reviews (CSV)", {
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
-  }
-})
+  };
+
+  return btn;
+}
 ```
