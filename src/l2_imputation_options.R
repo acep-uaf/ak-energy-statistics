@@ -95,6 +95,11 @@ l2_generate_imputation_options <- function(
       avg_preceding_proceeding = round(rowMeans(across(c(carry_forward, next_month_val)), na.rm = TRUE), 0),
       avg_preceding_proceeding = ifelse(is.nan(avg_preceding_proceeding), NA_real_, avg_preceding_proceeding)
     ) %>%
+    
+    # empty column for manual overrides
+    mutate(
+      manual_override = NA
+    ) %>%
 
     # organize
     select(
@@ -103,7 +108,8 @@ l2_generate_imputation_options <- function(
       carry_forward,
       annual_average,
       avg_preceding_proceeding,
-      avg_same_month_other_years
+      avg_same_month_other_years,
+      manual_override
     )
 
   dir_create(dirname(path_out))
