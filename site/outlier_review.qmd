@@ -47,6 +47,28 @@ getSavedReviewsMap = async () => {
   const all = await database.getAll("reviews");
   return new Map(all.map(item => [item.identifier, item.status]));
 }
+
+// Trigger to tell our dropdowns when to recalculate checkmarks
+mutable idbTrigger = 0;
+
+// Reactive map of all statuses across the entire dataset
+globalStatusMap = {
+  idbTrigger;
+  
+  const map = new Map();
+  // Base statuses from original dataset
+  pce_outliers_log.forEach(d => {
+    if (d.status) map.set(d.identifier, d.status);
+  });
+  
+  // Overrides from IDB
+  const saved = await getAllSavedReviews();
+  saved.forEach(d => {
+    if (d.status) map.set(d.identifier, d.status);
+  });
+  
+  return map;
+}
 ```
 
 
@@ -114,25 +136,53 @@ pce = FileAttachment("data/l1/consolidated/l1_pce.csv")
 ```
 
 
+
+
+
+
 ```{ojs}
 // Dropdowns
 
 communities = [...new Set(pce_outliers_log.map(d => d.sales_reporting_name))]
+mutable currentComm = communities[0]
 
-viewof selectedCommunity = Inputs.select(
-  communities,
-  { label: "Community:", value: communities[0] }
-)
+// Build dynamic options with emojis
+communityOptions = new Map(communities.map(comm => {
+  const commData = pce_outliers_log.filter(d => d.sales_reporting_name === comm);
+  const isComplete = commData.every(d => globalStatusMap.get(d.identifier));
+  
+  return [isComplete ? `🍏 ${comm}` : comm, comm]; 
+}))
 
-availableColumns = {
-  const subset = pce_outliers_log.filter(d => d.sales_reporting_name === selectedCommunity);
-  return [...new Set(subset.map(d => d.column_tested))];
+viewof selectedCommunity = {
+  const el = Inputs.select(communityOptions, { label: "Community:", value: currentComm });
+  el.addEventListener("input", () => { mutable currentComm = el.value; });
+  return el;
 }
 
-viewof selectedColumn = Inputs.select(
-  availableColumns,
-  { label: "Column:", value: availableColumns[0] }
-)
+availableColumns = {
+  const subset = pce_outliers_log.filter(d => d.sales_reporting_name === currentComm);
+  return [...new Set(subset.map(d => d.column_tested))];
+}
+mutable currentCol = availableColumns[0]
+
+columnOptions = new Map(availableColumns.map(col => {
+  const colData = pce_outliers_log.filter(d => 
+    d.sales_reporting_name === currentComm && d.column_tested === col
+  );
+  const isComplete = colData.every(d => globalStatusMap.get(d.identifier));
+  
+  return [isComplete ? `🍏 ${col}` : col, col];
+}))
+
+viewof selectedColumn = {
+  const validCol = availableColumns.includes(currentCol) ? currentCol : availableColumns[0];
+  if (currentCol !== validCol) mutable currentCol = validCol;
+
+  const el = Inputs.select(columnOptions, { label: "Column:", value: validCol });
+  el.addEventListener("input", () => { mutable currentCol = el.value; });
+  return el;
+}
 
 strategyMap = new Map([
   ["Keep original value", "raw_value"],
@@ -151,7 +201,7 @@ strategyMap = new Map([
 
 // Filter full time series data
 filteredFullSeries = pce.filter(d =>
-  d.sales_reporting_name === selectedCommunity
+  d.sales_reporting_name === currentComm
 )
 
 // Filter outliers based on imputation selection
@@ -170,92 +220,84 @@ imputedOutlierDots = outlierTableData.map(d => {
 ```{ojs}
 // Plot lines, outlier dots (red), and imputed preview dots (green)
 
-Plot.plot({
-  height: 500,
-  width: 1600,
-  marginLeft: 60,
-  grid: false,
-  x: {
-    type: "utc",
-    label: "Date",
-    ticks: 20,
-    tickFormat: "%Y"
-  },
-  y: {
-    label: selectedColumn !== "All" ? selectedColumn : "Value",
-    grid: true
-  },
-  marks: [
-    // Timeseries line
-    Plot.line(filteredFullSeries, {
-      x: "date",
-      y: d => d[selectedColumn],
-      stroke: "#ccc",
-      strokeWidth: 1.5
-    }),
-
-    // Timeseries dots
-    Plot.dot(filteredFullSeries, {
-      x: "date",
-      y: d => d[selectedColumn],
-      fill: "#888888",
-      r: 3
-    }),
-
-    // Outlier dots (red)
-    Plot.dot(outlierTableData, {
-      x: "date",
-      y: d => d.raw_value ?? d[selectedColumn],
-      fill: "red",
-      stroke: "black",
-      strokeWidth: 1,
-      r: 6,
-      title: d => `Raw Outlier: ${d.raw_value ?? d[selectedColumn]}`
-    }),
-
-    // Selected imputation dots (green)
-    Plot.dot(imputedOutlierDots.filter(d => d.imputed_value !== null), {
-      x: "date",
-      y: "imputed_value",
-      fill: "#2ca02c",
-      stroke: "black",
-      strokeWidth: 1.5,
-      r: 7
-    }),
-
-    Plot.tip(imputedOutlierDots.filter(d => d.imputed_value !== null), Plot.pointer({
+chartContainer = {
+  const container = html`<div style="min-height: 500px; width: 100%;"></div>`;
+  
+  const plot = Plot.plot({
+    height: 500,
+    width: 1600,
+    marginLeft: 60,
+    grid: false,
+    x: {
+      type: "utc",
+      label: "Date",
+      ticks: 20,
+      tickFormat: "%Y"
+    },
+    y: {
+      label: currentCol !== "All" ? currentCol : "Value", 
+      grid: true
+    },
+    marks: [
+      Plot.line(filteredFullSeries, {
+        x: "date",
+        y: d => d[currentCol],
+        stroke: "#ccc",
+        strokeWidth: 1.5
+      }),
+      Plot.dot(filteredFullSeries, {
+        x: "date",
+        y: d => d[currentCol], 
+        fill: "#888888",
+        r: 3
+      }),
+      Plot.dot(outlierTableData, {
+        x: "date",
+        y: d => d.raw_value ?? d[currentCol],
+        fill: "red",
+        stroke: "black",
+        strokeWidth: 1,
+        r: 6,
+        title: d => `Raw Outlier: ${d.raw_value ?? d[currentCol]}`
+      }),
+      Plot.dot(imputedOutlierDots.filter(d => d.imputed_value !== null), {
         x: "date",
         y: "imputed_value",
-        maxRadius: 10,
-        channels: {
-            "Community": "sales_reporting_name",
-            "Year": "calendar_year",
-            "Month": "calendar_month",
-            "Imputed Value": "imputed_value"
-        },
-        format: {
-            x: false,
-            y: false
-        }
-    })),
-
-    Plot.tip(filteredFullSeries, Plot.pointer({
-        x: "date",
-        y: d => d[selectedColumn],
-        maxRadius: 10,
-        channels: {
-            "Community": "sales_reporting_name",
-            "Year": "calendar_year",
-            "Month": "calendar_month",
-            [selectedColumn]: d => d[selectedColumn]
-        },
-        format: {
-            x: false,
-            y: false
-        }
-    }))
-  ]
-})
+        fill: "#2ca02c",
+        stroke: "black",
+        strokeWidth: 1.5,
+        r: 7
+      }),
+      Plot.tip(imputedOutlierDots.filter(d => d.imputed_value !== null), Plot.pointer({
+          x: "date",
+          y: "imputed_value",
+          maxRadius: 10,
+          channels: {
+              "Community": "sales_reporting_name",
+              "Year": "calendar_year",
+              "Month": "calendar_month",
+              "Imputed Value": "imputed_value"
+          },
+          format: { x: false, y: false }
+      })),
+      Plot.tip(filteredFullSeries, Plot.pointer({
+          x: "date",
+          y: d => d[currentCol], 
+          maxRadius: 10,
+          channels: {
+              "Community": "sales_reporting_name",
+              "Year": "calendar_year",
+              "Month": "calendar_month",
+              [currentCol]: d => d[currentCol]
+          },
+          format: { x: false, y: false }
+      }))
+    ]
+  });
+  
+  container.appendChild(plot);
+  return container;
+}
 ```
 
 
@@ -263,13 +305,11 @@ Plot.plot({
 // Tabulator Table with IDB Hydration & Persistence
 
 viewof outlierTableData = {
-  // get filtered raw records
   const initialData = pce_outliers_log.filter(d =>
-    d.sales_reporting_name === selectedCommunity &&
-    d.column_tested === selectedColumn
+    d.sales_reporting_name === currentComm &&
+    d.column_tested === currentCol
   );
 
-  // hydrate status from IDB
   const savedMap = await getSavedReviewsMap();
   const hydratedData = initialData.map(row => {
     if (savedMap.has(row.identifier)) {
@@ -312,11 +352,11 @@ viewof outlierTableData = {
     ]
   });
 
-  // send changes to chart AND save row to IDB
   const updateData = async (cell) => {
     if (cell) {
       const rowData = cell.getRow().getData();
-      await saveReview(rowData); // save edit immediately into IDB
+      await saveReview(rowData); 
+      mutable idbTrigger++; 
     }
     container.value = table.getData();
     container.dispatchEvent(new CustomEvent("input"));
@@ -338,7 +378,7 @@ viewof outlierTableData = {
 ```{ojs}
 // Download Button
 
-// generate download button
+// Generate download button
 downloadAction = {
   const btn = html`<button class="btn btn-primary my-3"><i class="bi bi-download me-1"></i> Download All Selected Override Actions (CSV)</button>`;
 
@@ -357,7 +397,7 @@ downloadAction = {
     );
     const csvContent = [headers, ...rows].join("\n");
 
-    // Trigger Browser Download
+    // Trigger browser download
     const blob = new Blob([csvContent], { type: "text/csv;charset=utf-8;" });
     const url = URL.createObjectURL(blob);
     const link = document.createElement("a");
