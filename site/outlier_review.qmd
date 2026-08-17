@@ -45,26 +45,26 @@ getAllSavedReviews = async () => {
 getSavedReviewsMap = async () => {
   const database = await db;
   const all = await database.getAll("reviews");
-  return new Map(all.map(item => [item.identifier, item.status]));
+  return new Map(all.map(item => [item.identifier, item.decision]));
 }
 
 // Trigger to tell our dropdowns when to recalculate checkmarks
 mutable idbTrigger = 0;
 
-// Reactive map of all statuses across the entire dataset
-globalStatusMap = {
+// Reactive map of all decisiones across the entire dataset
+globalDecisionMap = {
   idbTrigger;
   
   const map = new Map();
-  // Base statuses from original dataset
+  // Base decisiones from original dataset
   pce_outliers_log.forEach(d => {
-    if (d.status) map.set(d.identifier, d.status);
+    if (d.decision) map.set(d.identifier, d.decision);
   });
   
   // Overrides from IDB
   const saved = await getAllSavedReviews();
   saved.forEach(d => {
-    if (d.status) map.set(d.identifier, d.status);
+    if (d.decision) map.set(d.identifier, d.decision);
   });
   
   return map;
@@ -100,8 +100,8 @@ pce_outliers_log = FileAttachment("data/l2/logs/l2_pce_imputation_options.csv")
         }
       }
 
-      if (!cleanedRow.status) {
-        cleanedRow.status = null;
+      if (!cleanedRow.decision) {
+        cleanedRow.decision = null;
       }
 
       return cleanedRow;
@@ -149,7 +149,7 @@ mutable currentComm = communities[0]
 // Build dynamic options with emojis
 communityOptions = new Map(communities.map(comm => {
   const commData = pce_outliers_log.filter(d => d.sales_reporting_name === comm);
-  const isComplete = commData.every(d => globalStatusMap.get(d.identifier));
+  const isComplete = commData.every(d => globalDecisionMap.get(d.identifier));
   
   return [isComplete ? `🍏 ${comm}` : comm, comm]; 
 }))
@@ -170,7 +170,7 @@ columnOptions = new Map(availableColumns.map(col => {
   const colData = pce_outliers_log.filter(d => 
     d.sales_reporting_name === currentComm && d.column_tested === col
   );
-  const isComplete = colData.every(d => globalStatusMap.get(d.identifier));
+  const isComplete = colData.every(d => globalDecisionMap.get(d.identifier));
   
   return [isComplete ? `🍏 ${col}` : col, col];
 }))
@@ -207,7 +207,7 @@ filteredFullSeries = pce.filter(d =>
 
 // Filter outliers based on imputation selection
 imputedOutlierDots = outlierTableData.map(d => {
-  const colName = strategyMap.get(d.status);
+  const colName = strategyMap.get(d.decision);
   const imputedVal = colName ? d[colName] : null;
 
   return {
@@ -315,7 +315,7 @@ viewof outlierTableData = {
     if (savedMap.has(row.identifier)) {
       return { 
         ...row, 
-        status: savedMap.get(row.identifier),
+        decision: savedMap.get(row.identifier),
         manual_override: savedMap.has(row.identifier) ? undefined : row.manual_override
       };
     }
@@ -363,7 +363,7 @@ viewof outlierTableData = {
       },
       {
         title: "Override Action",
-        field: "status",
+        field: "decision",
         minWidth: 180,
         editor: "list",
         editorParams: {
@@ -388,7 +388,7 @@ viewof outlierTableData = {
       if (field === "manual_override") {
         const val = cell.getValue();
         if (val !== null && val !== "" && !isNaN(val)) {
-          await row.update({ status: "Manual override" });
+          await row.update({ decision: "Manual override" });
         }
       }
 
@@ -432,7 +432,13 @@ downloadAction = {
     const headers = allKeys.join(",");
     
     const rows = savedRecords.map(row =>
-      allKeys.map(key => `"${row[key] ?? ''}"`).join(",")
+      allKeys.map(key => {
+        let val = row[key];
+        if (key === "decision" && val) {
+          val = strategyMap.get(val) || val;
+        }
+        return `"${val ?? ''}"`;
+      }).join(",")
     );
     
     const csvContent = [headers, ...rows].join("\n");
