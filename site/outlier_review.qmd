@@ -226,7 +226,7 @@ chartContainer = {
   
   const plot = Plot.plot({
     height: 500,
-    width: 1600,
+    width: width,
     marginLeft: 60,
     grid: false,
     x: {
@@ -313,18 +313,15 @@ viewof outlierTableData = {
   const savedMap = await getSavedReviewsMap();
   const hydratedData = initialData.map(row => {
     if (savedMap.has(row.identifier)) {
-      // Hydrate status and any saved manual values
       return { 
         ...row, 
         status: savedMap.get(row.identifier),
-        // Ensure we pull in the saved manual value if it exists in IDB
-        manual_override: savedMap.has(row.identifier) ? undefined : row.manual_override // Wait, we need the whole row from IDB
+        manual_override: savedMap.has(row.identifier) ? undefined : row.manual_override
       };
     }
     return row;
   });
   
-  // Actually, to make sure we get the manual value out of IDB, let's grab the whole row:
   const allSaved = await getAllSavedReviews();
   const savedDict = Object.fromEntries(allSaved.map(item => [item.identifier, item]));
   
@@ -335,23 +332,27 @@ viewof outlierTableData = {
     return row;
   });
 
-  const container = html`<div style="margin-bottom: 20px;"></div>`;
+  const container = html`<div style="margin-bottom: 20px; width: 100%;"></div>`;
 
   const table = new Tabulator(container, {
     data: JSON.parse(JSON.stringify(fullyHydratedData)),
-    layout: "fitDataFill",
+    layout: "fitColumns",
+    headerWordWrap: true,
+    columnDefaults: {
+      minWidth: 90, // in pixels, adjust as needed
+    },
     columns: [
       { title: "PCE ID", field: "project_code" },
       { title: "Name", field: "sales_reporting_name" },
       { title: "Year", field: "calendar_year" },
       { title: "Month", field: "calendar_month" },
-      { title: "Column", field: "column_tested"},
+      { title: "Column", field: "column_tested" },
       { title: "Orig Value", field: "raw_value" },
       { title: "Carry Fwd", field: "carry_forward" },
       { title: "Annual Avg", field: "annual_average" },
       { title: "Pre/Post Avg", field: "avg_preceding_proceeding" },
       { title: "Same Month Avg", field: "avg_same_month_other_years" },
-      // NEW: Editable manual value column
+      // Editable manual value column
       { 
         title: "Manual Value", 
         field: "manual_override", 
@@ -363,6 +364,7 @@ viewof outlierTableData = {
       {
         title: "Override Action",
         field: "status",
+        minWidth: 180,
         editor: "list",
         editorParams: {
           values: [
@@ -416,7 +418,7 @@ viewof outlierTableData = {
 
 // Generate download button
 downloadAction = {
-  const btn = html`<button class="btn btn-primary my-3"><i class="bi bi-download me-1"></i> Download All Selected Override Actions (CSV)</button>`;
+  const btn = html`<button class="btn btn-primary my-3"><i class="bi bi-download me-1"></i> Download All Decisions (CSV)</button>`;
 
   btn.onclick = async () => {
     const savedRecords = await getAllSavedReviews();
