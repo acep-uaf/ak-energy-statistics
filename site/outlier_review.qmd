@@ -205,6 +205,11 @@ filteredFullSeries = pce.filter(d =>
   d.sales_reporting_name === currentComm
 )
 
+viewof hideDecided = Inputs.toggle({ 
+  label: html`<b>Hide decided</b>`, 
+  value: true 
+})
+
 // Filter outliers based on imputation selection
 imputedOutlierDots = outlierTableData.map(d => {
   const colName = strategyMap.get(d.decision);
@@ -335,7 +340,10 @@ chartContainer = {
 
 ```{ojs}
 // Tabulator Table with IDB Hydration & Persistence
+
 viewof outlierTableData = {
+  hideDecided; 
+
   const initialData = pce_outliers_log.filter(d =>
     d.sales_reporting_name === currentComm &&
     d.column_tested === currentCol
@@ -416,6 +424,13 @@ viewof outlierTableData = {
     ]
   });
 
+  // Apply the filter if 'hide decided' toggle checked
+  if (hideDecided) {
+    table.setFilter(row => {
+      return !row.decision || row.decision.trim() === "";
+    });
+  }
+
   const updateData = async (cell) => {
     if (cell) {
       const row = cell.getRow();
@@ -432,6 +447,7 @@ viewof outlierTableData = {
       await saveReview(rowData); 
       mutable idbTrigger++; 
     }
+    
     container.value = table.getData();
     container.dispatchEvent(new CustomEvent("input"));
   };
