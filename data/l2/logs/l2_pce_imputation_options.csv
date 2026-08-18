@@ -1,4 +1,4 @@
-identifier,project_code,sales_reporting_name,date,calendar_year,calendar_month,column_tested,raw_value,carry_forward,annual_average,avg_preceding_proceeding,avg_same_month_other_years,manual_override,decision,comment
+identifier,project_code,sales_reporting_name,date,calendar_year,calendar_month,column,raw_value,carry_forward,annual_average,avg_preceding_proceeding,avg_same_month_other_years,manual_override,decision,comment
 A3310050921225003,331005,Adak,2021-03-01,2021,3,fuel_used_gallons,6097,13579,13226,13579,12866,NA,NA,NA
 A3310051023225003,331005,Adak,2023-04-01,2023,4,diesel_kwh_generated,249556,137836,162351,185640,173570,NA,NA,NA
 A3310050924225003,331005,Adak,2024-03-01,2024,3,powerhouse_consumption_kwh,77093,47732,46038,60602,26939,NA,NA,NA

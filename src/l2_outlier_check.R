@@ -27,11 +27,11 @@ l2_check_outliers <- function(path_in, path_config, output_log_path, path_out) {
     select(.row_id, identifier, project_code, sales_reporting_name, date, calendar_year, calendar_month, all_of(columns_to_check)) %>%
     pivot_longer(
       cols = all_of(columns_to_check),
-      names_to = "column_tested",
+      names_to = "column",
       values_to = "raw_value"
     ) %>%
     filter(!is.na(raw_value)) %>%
-    group_by(project_code, column_tested) %>%
+    group_by(project_code, column) %>%
     mutate(
       points_in_group = n(),
       median_val = median(raw_value, na.rm = TRUE),
@@ -67,7 +67,7 @@ l2_check_outliers <- function(path_in, path_config, output_log_path, path_out) {
     ungroup() %>%
     mutate(mad_score = round(mad_score, 0)) %>%
     filter(anomaly_severity %in% c("Strong", "Extreme")) %>%
-    select(.row_id, identifier, project_code, sales_reporting_name, date, calendar_year, calendar_month, column_tested, raw_value, median_val, mad_score, anomaly_severity) %>%
+    select(.row_id, identifier, project_code, sales_reporting_name, date, calendar_year, calendar_month, column, raw_value, median_val, mad_score, anomaly_severity) %>%
     arrange(sales_reporting_name, calendar_year, calendar_month)
 
   # Write Outlier Log to File
@@ -81,9 +81,9 @@ l2_check_outliers <- function(path_in, path_config, output_log_path, path_out) {
   if (nrow(outliers) > 0) {
     # Pivot outliers to wide format to easily mask matching cells
     outliers_to_null <- outliers %>%
-      select(.row_id, column_tested) %>%
+      select(.row_id, column) %>%
       mutate(flag_null = TRUE) %>%
-      pivot_wider(names_from = column_tested, values_from = flag_null)
+      pivot_wider(names_from = column, values_from = flag_null)
 
     # Left join and NULL out flagged cells
     l2_clean <- l1_indexed %>%

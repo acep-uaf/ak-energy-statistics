@@ -162,13 +162,13 @@ viewof selectedCommunity = {
 
 availableColumns = {
   const subset = pce_outliers_log.filter(d => d.sales_reporting_name === currentComm);
-  return [...new Set(subset.map(d => d.column_tested))];
+  return [...new Set(subset.map(d => d.column))];
 }
 mutable currentCol = availableColumns[0]
 
 columnOptions = new Map(availableColumns.map(col => {
   const colData = pce_outliers_log.filter(d => 
-    d.sales_reporting_name === currentComm && d.column_tested === col
+    d.sales_reporting_name === currentComm && d.column === col
   );
   const isComplete = colData.every(d => globalDecisionMap.get(d.identifier));
   
@@ -346,7 +346,7 @@ viewof outlierTableData = {
 
   const initialData = pce_outliers_log.filter(d =>
     d.sales_reporting_name === currentComm &&
-    d.column_tested === currentCol
+    d.column === currentCol
   );
 
   const savedMap = await getSavedReviewsMap();
@@ -375,17 +375,18 @@ viewof outlierTableData = {
 
   const table = new Tabulator(container, {
     data: JSON.parse(JSON.stringify(fullyHydratedData)),
-    layout: "fitColumns",
+    layout: "fitData",
     headerWordWrap: true,
     columnDefaults: {
-      minWidth: 90, // in pixels
+      minWidth: 30, // in pixels
+      headerSort: false,
     },
     columns: [
       { title: "PCE ID", field: "project_code" },
       { title: "Name", field: "sales_reporting_name" },
       { title: "Year", field: "calendar_year" },
       { title: "Month", field: "calendar_month" },
-      { title: "Column", field: "column_tested" },
+      { title: "Column", field: "column"},
       { title: "Orig Value", field: "raw_value" },
       { title: "Carry Fwd", field: "carry_forward" },
       { title: "Annual Avg", field: "annual_average" },
@@ -402,7 +403,6 @@ viewof outlierTableData = {
       {
         title: "Override Action",
         field: "decision",
-        minWidth: 180,
         editor: "list",
         editorParams: {
           values: [
@@ -419,7 +419,6 @@ viewof outlierTableData = {
         title: "Comment",
         field: "comment",
         editor: "input",
-        minWidth: 150
       }
     ]
   });
