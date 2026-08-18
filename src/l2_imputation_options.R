@@ -98,7 +98,9 @@ l2_generate_imputation_options <- function(
     
     # empty column for manual overrides
     mutate(
-      manual_override = NA
+      manual_override = NA,
+      decision = NA,
+      comment = NA
     ) %>%
 
     # organize
@@ -109,7 +111,9 @@ l2_generate_imputation_options <- function(
       annual_average,
       avg_preceding_proceeding,
       avg_same_month_other_years,
-      manual_override
+      manual_override,
+      decision,
+      comment
     )
 
   dir_create(dirname(path_out))
