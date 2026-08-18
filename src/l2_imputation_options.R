@@ -1,4 +1,7 @@
 library(dplyr)
+library(readr)
+library(fs)
+library(yaml)
 library(lubridate)
 library(tidyr)
 
@@ -22,7 +25,7 @@ l2_generate_imputation_options <- function(
   pce_long <- pce %>%
     pivot_longer(
       cols = any_of(valid_cols),
-      names_to = "column_tested",
+      names_to = "column",
       values_to = "val",
       values_transform = list(val = as.numeric)
     )
@@ -30,7 +33,7 @@ l2_generate_imputation_options <- function(
   # avg same calendar year
   same_year_avg_df <- pce_long %>%
     mutate(year_num = year(date)) %>%
-    group_by(project_code, column_tested, year_num) %>%
+    group_by(project_code, column, year_num) %>%
     summarise(
       annual_average = round(mean(val, na.rm = TRUE), 0),
       .groups = "drop"
@@ -42,7 +45,7 @@ l2_generate_imputation_options <- function(
       month_num = month(date),
       year_num  = year(date)
     ) %>%
-    select(project_code, column_tested, month_num, year_num, val)
+    select(project_code, column, month_num, year_num, val)
 
   # build decision dataframe
   df_out <- pce_outliers_log %>%
@@ -55,51 +58,62 @@ l2_generate_imputation_options <- function(
 
     # last observation carry forward
     left_join(
-      pce_long %>% select(project_code, date, column_tested, val),
-      by = c("project_code", "prev_month" = "date", "column_tested")
+      pce_long %>% select(project_code, date, column, val),
+      by = c("project_code", "prev_month" = "date", "column")
     ) %>%
     rename(carry_forward = val) %>%
 
     # next month helper
     left_join(
-      pce_long %>% select(project_code, date, column_tested, val),
-      by = c("project_code", "next_month" = "date", "column_tested")
+      pce_long %>% select(project_code, date, column, val),
+      by = c("project_code", "next_month" = "date", "column")
     ) %>%
     rename(next_month_val = val) %>%
 
     # annual average
     left_join(
       same_year_avg_df,
-      by = c("project_code", "column_tested", "year_num")
+      by = c("project_code", "column", "year_num")
     ) %>%
 
     # average of same month from other years
     left_join(
       same_month_avg_df,
-      by = c("project_code", "column_tested", "month_num"),
+      by = c("project_code", "column", "month_num"),
       relationship = "many-to-many"
     ) %>%
     filter(year_num.x != year_num.y | is.na(year_num.y)) %>% # exclude outlier's own year
-    group_by(project_code, date, column_tested) %>%
+    group_by(project_code, date, column) %>%
     mutate(
       avg_same_month_other_years = round(mean(val, na.rm = TRUE), 0)
     ) %>%
     ungroup() %>%
-    distinct(project_code, date, column_tested, .keep_all = TRUE) %>%
+    distinct(project_code, date, column, .keep_all = TRUE) %>%
 
     # average of preceding and proceeding months
     mutate(
       avg_preceding_proceeding = round(rowMeans(across(c(carry_forward, next_month_val)), na.rm = TRUE), 0),
       avg_preceding_proceeding = ifelse(is.nan(avg_preceding_proceeding), NA_real_, avg_preceding_proceeding)
     ) %>%
+    
+    # empty column for manual overrides
+    mutate(
+      manual_override = NA,
+      decision = NA,
+      comment = NA
+    ) %>%
 
     # organize
     select(
+      identifier,
       any_of(names(pce_outliers_log)),
       carry_forward,
       annual_average,
       avg_preceding_proceeding,
-      avg_same_month_other_years
+      avg_same_month_other_years,
+      manual_override,
+      decision,
+      comment
     )
 
   dir_create(dirname(path_out))

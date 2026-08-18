@@ -8,18 +8,77 @@ format:
     include-in-header:
       - text: |
           <link href="https://cdn.jsdelivr.net/npm/tabulator-tables@5.5.0/dist/css/tabulator_bootstrap5.min.css" rel="stylesheet">
-          <script src="https://cdn.jsdelivr.net/npm/tabulator-tables@5.5.0/dist/js/tabulator.min.js"></script>
+ 
 ---
 
+
 ```{ojs}
-Tabulator = window.Tabulator
+Tabulator = require("tabulator-tables@5.5.2")
+idb = require("idb@8.0.0/build/umd.js")
 ```
+
+```{ojs}
+// IDB initialization
+
+db = idb.openDB("OutlierReviewDB", 1, {
+  upgrade(db) {
+    if (!db.objectStoreNames.contains("reviews")) {
+      db.createObjectStore("reviews", { keyPath: "identifier" });
+    }
+  }
+})
+
+// Helper to save or update an edited record
+saveReview = async (record) => {
+  if (!record || !record.identifier) return;
+  const database = await db;
+  await database.put("reviews", record);
+}
+
+// Helper to retrieve all saved records for CSV download
+getAllSavedReviews = async () => {
+  const database = await db;
+  return await database.getAll("reviews");
+}
+
+// Helper to get saved state for a specific set of records
+getSavedReviewsMap = async () => {
+  const database = await db;
+  const all = await database.getAll("reviews");
+  return new Map(all.map(item => [item.identifier, item.decision]));
+}
+
+// Trigger to tell our dropdowns when to recalculate checkmarks
+mutable idbTrigger = 0;
+
+// Reactive map of all decisiones across the entire dataset
+globalDecisionMap = {
+  idbTrigger;
+  
+  const map = new Map();
+  // Base decisiones from original dataset
+  pce_outliers_log.forEach(d => {
+    if (d.decision) map.set(d.identifier, d.decision);
+  });
+  
+  // Overrides from IDB
+  const saved = await getAllSavedReviews();
+  saved.forEach(d => {
+    if (d.decision) map.set(d.identifier, d.decision);
+  });
+  
+  return map;
+}
+```
+
+
 
 ### Outlier Review
 
 
 ```{ojs}
 // Load data
+
 // Imputation options
 pce_outliers_log = FileAttachment("data/l2/logs/l2_pce_imputation_options.csv")
   .csv()
@@ -41,8 +100,8 @@ pce_outliers_log = FileAttachment("data/l2/logs/l2_pce_imputation_options.csv")
         }
       }
 
-      if (!cleanedRow.status) {
-        cleanedRow.status = "Carry forward";
+      if (!cleanedRow.decision) {
+        cleanedRow.decision = null;
       }
 
       return cleanedRow;
@@ -77,32 +136,61 @@ pce = FileAttachment("data/l1/consolidated/l1_pce.csv")
 ```
 
 
+
+
+
+
 ```{ojs}
 // Dropdowns
 
 communities = [...new Set(pce_outliers_log.map(d => d.sales_reporting_name))]
+mutable currentComm = communities[0]
 
-viewof selectedCommunity = Inputs.select(
-  communities,
-  { label: "Community:", value: communities[0] }
-)
+// Build dynamic options with emojis
+communityOptions = new Map(communities.map(comm => {
+  const commData = pce_outliers_log.filter(d => d.sales_reporting_name === comm);
+  const isComplete = commData.every(d => globalDecisionMap.get(d.identifier));
+  
+  return [isComplete ? `🍏 ${comm}` : comm, comm]; 
+}))
 
-availableColumns = {
-  const subset = pce_outliers_log.filter(d => d.sales_reporting_name === selectedCommunity);
-  return [...new Set(subset.map(d => d.column_tested))];
+viewof selectedCommunity = {
+  const el = Inputs.select(communityOptions, { label: "Community:", value: currentComm });
+  el.addEventListener("input", () => { mutable currentComm = el.value; });
+  return el;
 }
 
-viewof selectedColumn = Inputs.select(
-  availableColumns,
-  { label: "Column:", value: availableColumns[0] }
-)
+availableColumns = {
+  const subset = pce_outliers_log.filter(d => d.sales_reporting_name === currentComm);
+  return [...new Set(subset.map(d => d.column))];
+}
+mutable currentCol = availableColumns[0]
+
+columnOptions = new Map(availableColumns.map(col => {
+  const colData = pce_outliers_log.filter(d => 
+    d.sales_reporting_name === currentComm && d.column === col
+  );
+  const isComplete = colData.every(d => globalDecisionMap.get(d.identifier));
+  
+  return [isComplete ? `🍏 ${col}` : col, col];
+}))
+
+viewof selectedColumn = {
+  const validCol = availableColumns.includes(currentCol) ? currentCol : availableColumns[0];
+  if (currentCol !== validCol) mutable currentCol = validCol;
+
+  const el = Inputs.select(columnOptions, { label: "Column:", value: validCol });
+  el.addEventListener("input", () => { mutable currentCol = el.value; });
+  return el;
+}
 
 strategyMap = new Map([
-  ["Value out of bounds, but original value kept", "raw_value"],
+  ["Keep original value", "raw_value"],
   ["Carry forward", "carry_forward"],
   ["Annual average", "annual_average"],
   ["Average of preceding and proceeding months", "avg_preceding_proceeding"],
-  ["Average of months from other years", "avg_same_month_other_years"]
+  ["Average of months from other years", "avg_same_month_other_years"],
+  ["Manual override", "manual_override"]
 ])
 ```
 
@@ -111,14 +199,20 @@ strategyMap = new Map([
 
 ```{ojs}
 // Filters
+
 // Filter full time series data
 filteredFullSeries = pce.filter(d =>
-  d.sales_reporting_name === selectedCommunity
+  d.sales_reporting_name === currentComm
 )
+
+viewof hideDecided = Inputs.toggle({ 
+  label: html`<b>Hide decided</b>`, 
+  value: true 
+})
 
 // Filter outliers based on imputation selection
 imputedOutlierDots = outlierTableData.map(d => {
-  const colName = strategyMap.get(d.status);
+  const colName = strategyMap.get(d.decision);
   const imputedVal = colName ? d[colName] : null;
 
   return {
@@ -130,151 +224,297 @@ imputedOutlierDots = outlierTableData.map(d => {
 
 
 ```{ojs}
-// Plot lines, outlier dots (red), and imputed preview dots (green)
+// Plot lines, outlier dots (red), imputed preview dots (green), table hover rings (orange), and smart tooltip
 
-Plot.plot({
-  height: 500,
-  width: 1600,
-  marginLeft: 60,
-  grid: false,
-  x: {
-    type: "utc",
-    label: "Date",
-    ticks: 20,
-    tickFormat: "%Y"
-  },
-  y: {
-    label: selectedColumn !== "All" ? selectedColumn : "Value",
-    grid: true
-  },
-  marks: [
-    // Timeseries line
-    Plot.line(filteredFullSeries, {
-      x: "date",
-      y: d => d[selectedColumn],
-      stroke: "#ccc",
-      strokeWidth: 1.5
-    }),
+chartContainer = {
+  hoveredId; 
 
-    // Timeseries dots
-    Plot.dot(filteredFullSeries, {
-      x: "date",
-      y: d => d[selectedColumn],
-      fill: "#888888",
-      r: 3
-    }),
+  const container = html`<div style="min-height: 500px; width: 100%;"></div>`;
+  
+  const activeImputedDots = imputedOutlierDots.filter(d => d.imputed_value !== null);
+  
+  const unifiedTooltipData = [];
+  const outlierDates = new Set(outlierTableData.map(d => String(d.date)));
+  
+  // Gray dots
+  filteredFullSeries.forEach(d => {
+    if (!outlierDates.has(String(d.date))) {
+      unifiedTooltipData.push({ 
+        ...d, tip_x: d.date, tip_y: d[currentCol], tip_type: "Original Value" 
+      });
+    }
+  });
+  
+  // Red dots
+  outlierTableData.forEach(d => {
+    const raw_y = d.raw_value ?? d[currentCol];
+    if (d.imputed_value !== raw_y) {
+      unifiedTooltipData.push({ 
+        ...d, tip_x: d.date, tip_y: raw_y, tip_type: "Raw Outlier" 
+      });
+    }
+  });
+  
+  // Green dots
+  activeImputedDots.forEach(d => {
+    unifiedTooltipData.push({ 
+      ...d, tip_x: d.date, tip_y: d.imputed_value, tip_type: "Imputed Value" 
+    });
+  });
 
-    // Outlier dots (red)
-    Plot.dot(outlierTableData, {
-      x: "date",
-      y: d => d.raw_value ?? d[selectedColumn],
-      fill: "red",
-      stroke: "black",
-      strokeWidth: 1,
-      r: 6,
-      title: d => `Raw Outlier: ${d.raw_value ?? d[selectedColumn]}`
-    }),
+  // Data from table hover
+  const hoveredData = hoveredId 
+    ? unifiedTooltipData.filter(d => d.identifier === hoveredId) 
+    : [];
+  
+  const plot = Plot.plot({
+    height: 500,
+    width: width,
+    marginLeft: 60,
+    grid: false,
+    x: { type: "utc", label: "Date", ticks: 20, tickFormat: "%Y" },
+    y: { label: currentCol !== "All" ? currentCol : "Value", grid: true },
+    marks: [
+      Plot.line(filteredFullSeries, { x: "date", y: d => d[currentCol], stroke: "#ccc", strokeWidth: 1.5 }),
+      Plot.dot(filteredFullSeries, { x: "date", y: d => d[currentCol], fill: "#888888", r: 3 }),
+      Plot.dot(outlierTableData, { x: "date", y: d => d.raw_value ?? d[currentCol], fill: "red", stroke: "black", strokeWidth: 1, r: 6 }),
+      Plot.dot(activeImputedDots, { x: "date", y: "imputed_value", fill: "#2ca02c", stroke: "black", strokeWidth: 1.5, r: 7 }),
+      
+      // Highlight ring on table hover
+      Plot.dot(hoveredData, {
+        x: "tip_x",
+        y: "tip_y",
+        r: 13,
+        stroke: "#ff9900",
+        strokeWidth: 3,
+        fill: "none"
+      }),
 
-    // Selected imputation dots (green)
-    Plot.dot(imputedOutlierDots.filter(d => d.imputed_value !== null), {
-      x: "date",
-      y: "imputed_value",
-      fill: "#2ca02c",
-      stroke: "black",
-      strokeWidth: 1.5,
-      r: 7
-    }),
+      // Tooltip on table hover
+      Plot.tip(hoveredData, {
+          x: "tip_x",
+          y: "tip_y",
+          dy: -5,
+          channels: {
+              "Community": "sales_reporting_name", "Year": "calendar_year", "Month": "calendar_month",
+              "Point Type": "tip_type", "Value": "tip_y", "Comment": "comment"
+          },
+          format: { x: false, y: false }
+      }),
 
-    Plot.tip(imputedOutlierDots.filter(d => d.imputed_value !== null), Plot.pointer({
-        x: "date",
-        y: "imputed_value",
-        maxRadius: 10,
-        channels: {
-            "Community": "sales_reporting_name",
-            "Year": "calendar_year",
-            "Month": "calendar_month",
-            "Imputed Value": "imputed_value"
-        },
-        format: {
-            x: false,
-            y: false
-        }
-    })),
-
-    Plot.tip(filteredFullSeries, Plot.pointer({
-        x: "date",
-        y: d => d[selectedColumn],
-        maxRadius: 10,
-        channels: {
-            "Community": "sales_reporting_name",
-            "Year": "calendar_year",
-            "Month": "calendar_month",
-            [selectedColumn]: d => d[selectedColumn]
-        },
-        format: {
-            x: false,
-            y: false
-        }
-    }))
-  ]
-})
+      // Smart tooltip
+      Plot.tip(unifiedTooltipData, Plot.pointer({
+          x: "tip_x",
+          y: "tip_y",
+          maxRadius: 15,
+          channels: {
+              "Community": "sales_reporting_name", "Year": "calendar_year", "Month": "calendar_month",
+              "Point Type": "tip_type", "Value": "tip_y", "Comment": "comment"
+          },
+          format: { x: false, y: false }
+      }))
+    ]
+  });
+  
+  container.appendChild(plot);
+  return container;
+}
 ```
 
 
 ```{ojs}
-// Interactive Tablulator table
-// Selection informs chart with viewof component
+// Tracks the ID of the row hovered in the table
+mutable hoveredId = null;
+```
+
+
+```{ojs}
+// Tabulator Table with IDB Hydration & Persistence
 
 viewof outlierTableData = {
+  hideDecided; 
+
   const initialData = pce_outliers_log.filter(d =>
-    d.sales_reporting_name === selectedCommunity &&
-    d.column_tested === selectedColumn
+    d.sales_reporting_name === currentComm &&
+    d.column === currentCol
   );
 
-  const container = html`<div style="margin-bottom: 20px;"></div>`;
+  const savedMap = await getSavedReviewsMap();
+  const hydratedData = initialData.map(row => {
+    if (savedMap.has(row.identifier)) {
+      return { 
+        ...row, 
+        decision: savedMap.get(row.identifier),
+        manual_override: savedMap.has(row.identifier) ? undefined : row.manual_override
+      };
+    }
+    return row;
+  });
+  
+  const allSaved = await getAllSavedReviews();
+  const savedDict = Object.fromEntries(allSaved.map(item => [item.identifier, item]));
+  
+  const fullyHydratedData = initialData.map(row => {
+    if (savedDict[row.identifier]) {
+      return { ...row, ...savedDict[row.identifier] };
+    }
+    return row;
+  });
+
+  const container = html`<div style="margin-bottom: 20px; width: 100%;"></div>`;
 
   const table = new Tabulator(container, {
-    data: JSON.parse(JSON.stringify(initialData)),
-    layout: "fitDataFill",
+    data: JSON.parse(JSON.stringify(fullyHydratedData)),
+    layout: "fitData",
+    maxHeight: "400px",
+    headerWordWrap: true,
+    columnDefaults: {
+      minWidth: 30, // in pixels
+      headerSort: false,
+    },
     columns: [
       { title: "PCE ID", field: "project_code" },
-      { title: "Name", field: "sales_reporting_name" },
-      { title: "Year", field: "calendar_year" },
-      { title: "Month", field: "calendar_month" },
-      { title: "Column", field: "column_tested"},
+      { title: "Name", field: "sales_reporting_name", maxWidth: 90 },
+      { title: "Year", field: "calendar_year", maxWidth: 70 },
+      { title: "Month", field: "calendar_month", maxWidth: 75 },
+      { title: "Column", field: "column", maxWidth: 170},
       { title: "Orig Value", field: "raw_value" },
       { title: "Carry Fwd", field: "carry_forward" },
       { title: "Annual Avg", field: "annual_average" },
       { title: "Pre/Post Avg", field: "avg_preceding_proceeding" },
-      { title: "Same Month Avg", field: "avg_same_month_other_years" },
+      { title: "Same Month Avg", field: "avg_same_month_other_years" , maxWidth: 150},
+      { 
+        title: "Manual Value", 
+        field: "manual_override", 
+        editor: "number",
+        editorParams: {
+          step: "any"
+        },
+        maxWidth: 100
+      },
       {
         title: "Override Action",
-        field: "status",
+        field: "decision",
         editor: "list",
         editorParams: {
           values: [
-            "Value out of bounds, but original value kept",
+            "Keep original value",
             "Carry forward",
             "Annual average",
             "Average of preceding and proceeding months",
             "Average of months from other years",
-            "Manual override: expert opinion"
+            "Manual override"
           ]
-        }
+        },
+        maxWidth: 150
+      },
+      {
+        title: "Comment",
+        field: "comment",
+        editor: "input",
+        maxWidth: 100
       }
     ]
   });
 
+  // Apply the filter if 'hide decided' toggle checked
+  if (hideDecided) {
+    table.setFilter(row => {
+      return !row.decision || row.decision.trim() === "";
+    });
+  }
 
-  const updateData = () => {
+  const updateData = async (cell) => {
+    if (cell) {
+      const row = cell.getRow();
+      const field = cell.getField();
+      
+      if (field === "manual_override") {
+        const val = cell.getValue();
+        if (val !== null && val !== "" && !isNaN(val)) {
+          await row.update({ decision: "Manual override" });
+        }
+      }
+
+      const rowData = row.getData();
+      await saveReview(rowData); 
+      mutable idbTrigger++; 
+    }
+    
     container.value = table.getData();
     container.dispatchEvent(new CustomEvent("input"));
   };
 
-  table.on("cellEdited", updateData);
-  table.on("tableBuilt", updateData);
+  table.on("rowMouseEnter", (e, row) => {
+    mutable hoveredId = row.getData().identifier;
+  });
 
-  container.value = initialData;
+  table.on("rowMouseLeave", () => {
+    mutable hoveredId = null;
+  });
+
+  table.on("cellEdited", updateData);
+  table.on("tableBuilt", () => updateData());
+
+  container.value = fullyHydratedData;
   return container;
+}
+```
+
+
+
+
+
+
+```{ojs}
+// Download Button
+
+// Generate download button
+downloadAction = {
+  const btn = html`<button class="btn btn-primary my-3"><i class="bi bi-download me-1"></i> Download All Decisions (CSV)</button>`;
+
+  btn.onclick = async () => {
+    const savedRecords = await getAllSavedReviews();
+
+    if (!savedRecords || savedRecords.length === 0) {
+      alert("No saved overrides found in local storage.");
+      return;
+    }
+
+    const allKeys = Array.from(new Set(savedRecords.flatMap(Object.keys)));
+    const headers = allKeys.join(",");
+    
+    const rows = savedRecords.map(row =>
+      allKeys.map(key => {
+        let val = row[key];
+        
+        if (key === "decision" && val) {
+          val = strategyMap.get(val) || val;
+        }
+        
+        let safeVal = String(val ?? '');
+        
+        // escape double quotes
+        safeVal = safeVal.replace(/"/g, '""');
+        
+        // wrap in quotes
+        return `"${safeVal}"`;
+      }).join(",")
+    );
+    
+    const csvContent = [headers, ...rows].join("\n");
+
+    // Trigger browser download
+    const blob = new Blob([csvContent], { type: "text/csv;charset=utf-8;" });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement("a");
+    link.setAttribute("href", url);
+    link.setAttribute("download", `outlier_reviews_${new Date().toISOString().slice(0, 10)}.csv`);
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
+  return btn;
 }
 ```
