@@ -224,9 +224,11 @@ imputedOutlierDots = outlierTableData.map(d => {
 
 
 ```{ojs}
-// Plot lines, outlier dots (red), imputed preview dots (green), and smart tooltip
+// Plot lines, outlier dots (red), imputed preview dots (green), table hover rings (orange), and smart tooltip
 
 chartContainer = {
+  hoveredId; 
+
   const container = html`<div style="min-height: 500px; width: 100%;"></div>`;
   
   const activeImputedDots = imputedOutlierDots.filter(d => d.imputed_value !== null);
@@ -238,10 +240,7 @@ chartContainer = {
   filteredFullSeries.forEach(d => {
     if (!outlierDates.has(String(d.date))) {
       unifiedTooltipData.push({ 
-        ...d, 
-        tip_x: d.date, 
-        tip_y: d[currentCol], 
-        tip_type: "Original Value" 
+        ...d, tip_x: d.date, tip_y: d[currentCol], tip_type: "Original Value" 
       });
     }
   });
@@ -251,10 +250,7 @@ chartContainer = {
     const raw_y = d.raw_value ?? d[currentCol];
     if (d.imputed_value !== raw_y) {
       unifiedTooltipData.push({ 
-        ...d, 
-        tip_x: d.date, 
-        tip_y: raw_y, 
-        tip_type: "Raw Outlier" 
+        ...d, tip_x: d.date, tip_y: raw_y, tip_type: "Raw Outlier" 
       });
     }
   });
@@ -262,70 +258,58 @@ chartContainer = {
   // Green dots
   activeImputedDots.forEach(d => {
     unifiedTooltipData.push({ 
-      ...d, 
-      tip_x: d.date, 
-      tip_y: d.imputed_value, 
-      tip_type: "Imputed Value" 
+      ...d, tip_x: d.date, tip_y: d.imputed_value, tip_type: "Imputed Value" 
     });
   });
+
+  // Data from table hover
+  const hoveredData = hoveredId 
+    ? unifiedTooltipData.filter(d => d.identifier === hoveredId) 
+    : [];
   
   const plot = Plot.plot({
     height: 500,
     width: width,
     marginLeft: 60,
     grid: false,
-    x: {
-      type: "utc",
-      label: "Date",
-      ticks: 20,
-      tickFormat: "%Y"
-    },
-    y: {
-      label: currentCol !== "All" ? currentCol : "Value", 
-      grid: true
-    },
+    x: { type: "utc", label: "Date", ticks: 20, tickFormat: "%Y" },
+    y: { label: currentCol !== "All" ? currentCol : "Value", grid: true },
     marks: [
-      Plot.line(filteredFullSeries, {
-        x: "date",
-        y: d => d[currentCol],
-        stroke: "#ccc",
-        strokeWidth: 1.5
-      }),
-      Plot.dot(filteredFullSeries, {
-        x: "date",
-        y: d => d[currentCol], 
-        fill: "#888888",
-        r: 3
-      }),
-      Plot.dot(outlierTableData, {
-        x: "date",
-        y: d => d.raw_value ?? d[currentCol],
-        fill: "red",
-        stroke: "black",
-        strokeWidth: 1,
-        r: 6
-      }),
-      Plot.dot(activeImputedDots, {
-        x: "date",
-        y: "imputed_value",
-        fill: "#2ca02c",
-        stroke: "black",
-        strokeWidth: 1.5,
-        r: 7
-      }),
+      Plot.line(filteredFullSeries, { x: "date", y: d => d[currentCol], stroke: "#ccc", strokeWidth: 1.5 }),
+      Plot.dot(filteredFullSeries, { x: "date", y: d => d[currentCol], fill: "#888888", r: 3 }),
+      Plot.dot(outlierTableData, { x: "date", y: d => d.raw_value ?? d[currentCol], fill: "red", stroke: "black", strokeWidth: 1, r: 6 }),
+      Plot.dot(activeImputedDots, { x: "date", y: "imputed_value", fill: "#2ca02c", stroke: "black", strokeWidth: 1.5, r: 7 }),
       
+      // Highlight ring on table hover
+      Plot.dot(hoveredData, {
+        x: "tip_x",
+        y: "tip_y",
+        r: 13,
+        stroke: "#ff9900",
+        strokeWidth: 3,
+        fill: "none"
+      }),
+
+      // Tooltip on table hover
+      Plot.tip(hoveredData, {
+          x: "tip_x",
+          y: "tip_y",
+          dy: -5,
+          channels: {
+              "Community": "sales_reporting_name", "Year": "calendar_year", "Month": "calendar_month",
+              "Point Type": "tip_type", "Value": "tip_y", "Comment": "comment"
+          },
+          format: { x: false, y: false }
+      }),
+
       // Smart tooltip
       Plot.tip(unifiedTooltipData, Plot.pointer({
           x: "tip_x",
           y: "tip_y",
           maxRadius: 15,
           channels: {
-              "Community": "sales_reporting_name",
-              "Year": "calendar_year",
-              "Month": "calendar_month",
-              "Point Type": "tip_type",
-              "Value": "tip_y",
-              "Comment": "comment"
+              "Community": "sales_reporting_name", "Year": "calendar_year", "Month": "calendar_month",
+              "Point Type": "tip_type", "Value": "tip_y", "Comment": "comment"
           },
           format: { x: false, y: false }
       }))
@@ -335,6 +319,12 @@ chartContainer = {
   container.appendChild(plot);
   return container;
 }
+```
+
+
+```{ojs}
+// Tracks the ID of the row hovered in the table
+mutable hoveredId = null;
 ```
 
 
@@ -376,6 +366,7 @@ viewof outlierTableData = {
   const table = new Tabulator(container, {
     data: JSON.parse(JSON.stringify(fullyHydratedData)),
     layout: "fitData",
+    maxHeight: "400px",
     headerWordWrap: true,
     columnDefaults: {
       minWidth: 30, // in pixels
@@ -383,22 +374,23 @@ viewof outlierTableData = {
     },
     columns: [
       { title: "PCE ID", field: "project_code" },
-      { title: "Name", field: "sales_reporting_name" },
-      { title: "Year", field: "calendar_year" },
-      { title: "Month", field: "calendar_month" },
-      { title: "Column", field: "column"},
+      { title: "Name", field: "sales_reporting_name", maxWidth: 90 },
+      { title: "Year", field: "calendar_year", maxWidth: 70 },
+      { title: "Month", field: "calendar_month", maxWidth: 75 },
+      { title: "Column", field: "column", maxWidth: 170},
       { title: "Orig Value", field: "raw_value" },
       { title: "Carry Fwd", field: "carry_forward" },
       { title: "Annual Avg", field: "annual_average" },
       { title: "Pre/Post Avg", field: "avg_preceding_proceeding" },
-      { title: "Same Month Avg", field: "avg_same_month_other_years" },
+      { title: "Same Month Avg", field: "avg_same_month_other_years" , maxWidth: 150},
       { 
         title: "Manual Value", 
         field: "manual_override", 
         editor: "number",
         editorParams: {
           step: "any"
-        }
+        },
+        maxWidth: 100
       },
       {
         title: "Override Action",
@@ -413,12 +405,14 @@ viewof outlierTableData = {
             "Average of months from other years",
             "Manual override"
           ]
-        }
+        },
+        maxWidth: 150
       },
       {
         title: "Comment",
         field: "comment",
         editor: "input",
+        maxWidth: 100
       }
     ]
   });
@@ -450,6 +444,14 @@ viewof outlierTableData = {
     container.value = table.getData();
     container.dispatchEvent(new CustomEvent("input"));
   };
+
+  table.on("rowMouseEnter", (e, row) => {
+    mutable hoveredId = row.getData().identifier;
+  });
+
+  table.on("rowMouseLeave", () => {
+    mutable hoveredId = null;
+  });
 
   table.on("cellEdited", updateData);
   table.on("tableBuilt", () => updateData());
