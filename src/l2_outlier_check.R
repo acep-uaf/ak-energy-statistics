@@ -57,6 +57,7 @@ l2_check_outliers <- function(path_in, path_config, output_log_path, path_out) {
           .default = "Mild"
         ),
 
+        is.na(mad_score) ~ "Normal",
         absolute_diff < 50 ~ "Normal",
         mad_score < mad_threshold ~ "Normal",
         mad_score < (mad_threshold * 1.5) ~ "Mild",
@@ -114,9 +115,9 @@ l2_check_outliers <- function(path_in, path_config, output_log_path, path_out) {
         kwh_num  = as.numeric(diesel_kwh_generated),
 
         diesel_efficiency = if_else(
-          is.na(fuel_num) | is.na(kwh_num) | kwh_num == 0,
+          is.na(kwh_num) | is.na(fuel_num) | fuel_num == 0,
           NA_real_,
-          fuel_num / kwh_num
+          kwh_num / fuel_num
         )
       ) %>%
       select(-fuel_num, -kwh_num)
