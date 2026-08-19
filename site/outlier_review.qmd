@@ -20,51 +20,47 @@ idb = require("idb@8.0.0/build/umd.js")
 ```{ojs}
 // IDB initialization
 
-db = idb.openDB("OutlierReviewDB", 1, {
+db = idb.openDB("OutlierReviewDB", 2, {
   upgrade(db) {
-    if (!db.objectStoreNames.contains("reviews")) {
-      db.createObjectStore("reviews", { keyPath: "identifier" });
+    if (!db.objectStoreNames.contains("reviews_v2")) {
+      db.createObjectStore("reviews_v2", { keyPath: "id" });
     }
   }
 })
 
 // Helper to save or update an edited record
 saveReview = async (record) => {
-  if (!record || !record.identifier) return;
+  if (!record || !record.id) return;
   const database = await db;
-  await database.put("reviews", record);
+  await database.put("reviews_v2", record);
 }
 
 // Helper to retrieve all saved records for CSV download
 getAllSavedReviews = async () => {
   const database = await db;
-  return await database.getAll("reviews");
+  return await database.getAll("reviews_v2");
 }
 
 // Helper to get saved state for a specific set of records
 getSavedReviewsMap = async () => {
   const database = await db;
-  const all = await database.getAll("reviews");
-  return new Map(all.map(item => [item.identifier, item.decision]));
+  const all = await database.getAll("reviews_v2");
+  return new Map(all.map(item => [item.id, item.decision]));
 }
 
-// Trigger to tell our dropdowns when to recalculate checkmarks
 mutable idbTrigger = 0;
 
-// Reactive map of all decisiones across the entire dataset
 globalDecisionMap = {
   idbTrigger;
   
   const map = new Map();
-  // Base decisiones from original dataset
   pce_outliers_log.forEach(d => {
-    if (d.decision) map.set(d.identifier, d.decision);
+    if (d.decision) map.set(d.id, d.decision);
   });
   
-  // Overrides from IDB
   const saved = await getAllSavedReviews();
   saved.forEach(d => {
-    if (d.decision) map.set(d.identifier, d.decision);
+    if (d.decision) map.set(d.id, d.decision);
   });
   
   return map;
@@ -149,7 +145,7 @@ mutable currentComm = communities[0]
 // Build dynamic options with emojis
 communityOptions = new Map(communities.map(comm => {
   const commData = pce_outliers_log.filter(d => d.sales_reporting_name === comm);
-  const isComplete = commData.every(d => globalDecisionMap.get(d.identifier));
+  const isComplete = commData.every(d => globalDecisionMap.get(d.id));
   
   return [isComplete ? `🍏 ${comm}` : comm, comm]; 
 }))
@@ -170,7 +166,7 @@ columnOptions = new Map(availableColumns.map(col => {
   const colData = pce_outliers_log.filter(d => 
     d.sales_reporting_name === currentComm && d.column === col
   );
-  const isComplete = colData.every(d => globalDecisionMap.get(d.identifier));
+  const isComplete = colData.every(d => globalDecisionMap.get(d.id));
   
   return [isComplete ? `🍏 ${col}` : col, col];
 }))
@@ -264,7 +260,7 @@ chartContainer = {
 
   // Data from table hover
   const hoveredData = hoveredId 
-    ? unifiedTooltipData.filter(d => d.identifier === hoveredId) 
+    ? unifiedTooltipData.filter(d => d.id === hoveredId) 
     : [];
   
   const plot = Plot.plot({
@@ -341,22 +337,22 @@ viewof outlierTableData = {
 
   const savedMap = await getSavedReviewsMap();
   const hydratedData = initialData.map(row => {
-    if (savedMap.has(row.identifier)) {
+    if (savedMap.has(row.id)) {
       return { 
         ...row, 
-        decision: savedMap.get(row.identifier),
-        manual_override: savedMap.has(row.identifier) ? undefined : row.manual_override
+        decision: savedMap.get(row.id),
+        manual_override: savedMap.has(row.id) ? undefined : row.manual_override
       };
     }
     return row;
   });
   
   const allSaved = await getAllSavedReviews();
-  const savedDict = Object.fromEntries(allSaved.map(item => [item.identifier, item]));
+  const savedDict = Object.fromEntries(allSaved.map(item => [item.id, item]));
   
   const fullyHydratedData = initialData.map(row => {
-    if (savedDict[row.identifier]) {
-      return { ...row, ...savedDict[row.identifier] };
+    if (savedDict[row.id]) {
+      return { ...row, ...savedDict[row.id] };
     }
     return row;
   });
@@ -446,7 +442,7 @@ viewof outlierTableData = {
   };
 
   table.on("rowMouseEnter", (e, row) => {
-    mutable hoveredId = row.getData().identifier;
+    mutable hoveredId = row.getData().id;
   });
 
   table.on("rowMouseLeave", () => {
