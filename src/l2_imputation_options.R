@@ -96,8 +96,10 @@ l2_generate_imputation_options <- function(
       avg_preceding_proceeding = ifelse(is.nan(avg_preceding_proceeding), NA_real_, avg_preceding_proceeding)
     ) %>%
     
-    # empty column for manual overrides
+    # create empty columns for manual overrides
+    # create composite_id
     mutate(
+      id = paste0(identifier, "_", column),
       manual_override = NA,
       decision = NA,
       comment = NA
@@ -105,6 +107,7 @@ l2_generate_imputation_options <- function(
 
     # organize
     select(
+      id,
       identifier,
       any_of(names(pce_outliers_log)),
       carry_forward,
