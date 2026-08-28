@@ -479,7 +479,16 @@ downloadAction = {
   btn.onclick = async () => {
     const savedRecords = await getAllSavedReviews();
 
-    const deltaRecords = savedRecords.filter(row => !row.cleaned_during_energy_stats);
+    // Create a dynamic lookup map from the main CSV data
+    const mergedUpstreamMap = new Map(pce_outliers_log.map(d => [d.id, d.cleaned_during_energy_stats]));
+
+    // Filter out stale browser entries and only export active, unmerged deltas
+    const deltaRecords = savedRecords.filter(row => {
+      const hasDecision = row.decision && row.decision.trim() !== "";
+      const isMerged = mergedUpstreamMap.get(row.id) === true;
+      
+      return hasDecision && !isMerged;
+    });
 
     if (!deltaRecords || deltaRecords.length === 0) {
       alert("No new pending overrides found to export.");
