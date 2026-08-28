@@ -5,7 +5,8 @@ source('src/l1_quality_check.R')
 source('src/l1_transform.R')
 source('src/l2_outlier_check.R')
 source('src/l2_imputation_options.R')
-source('src/l2_undecided_imputations.R')
+source('src/l2_combine_imputation_decisions.R')
+source('src/l2_flag_decided_imputations.R')
 source('src/l3_impute.R')
 
 
@@ -86,11 +87,15 @@ l2_generate_imputation_options(
   pce_outliers_log_path = 'data/l2/logs/l2_pce_outliers_log.csv',
   path_out = 'data/l2/logs/l2_pce_imputation_options.csv')
 
+l2_combine_imputation_decisions(
+  path_in_dir = 'data/raw/imputation_decisions/sessions',
+  path_out = 'data/raw/imputation_decisions/pce_imputation_decisions_cumulative.csv'
+)
 
-generate_undecided_imputations(
+l2_flag_decided_imputations(
   pce_inputation_options_path = 'data/l2/logs/l2_pce_imputation_options.csv',
-  pce_inputation_decisions_path = 'data/raw/imputation_decisions/pce_imputation_decisions.csv',
-  path_out = 'data/l2/logs/l2_pce_imputations_undecided.csv'
+  pce_inputation_decisions_path = 'data/raw/imputation_decisions/pce_imputation_decisions_cumulative.csv',
+  path_out = 'data/l2/logs/l2_pce_imputations_flagged.csv'
 )
 
 
