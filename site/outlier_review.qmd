@@ -76,7 +76,7 @@ globalDecisionMap = {
 // Load data
 
 // Imputation options
-pce_outliers_log = FileAttachment("data/l2/logs/l2_pce_imputation_options.csv")
+pce_outliers_log = FileAttachment("data/l2/logs/l2_pce_imputations_flagged.csv")
   .csv()
   .then(data => {
     return data.map(d => {
@@ -87,6 +87,9 @@ pce_outliers_log = FileAttachment("data/l2/logs/l2_pce_imputation_options.csv")
 
         if (val === "" || val === "NA" || val === null || val === undefined) {
           cleanedRow[key] = null;
+        }
+        else if (key === "cleaned_during_energy_stats") {
+          cleanedRow[key] = (val === "TRUE" || val === "true" || val === true);
         }
         else if (key === "date" || isNaN(val) || isNaN(Number(val))) {
           cleanedRow[key] = val;
@@ -416,7 +419,11 @@ viewof outlierTableData = {
   // Apply the filter if 'hide decided' toggle checked
   if (hideDecided) {
     table.setFilter(row => {
-      return !row.decision || row.decision.trim() === "";
+      const hasLocalDecision = row.decision && row.decision.trim() !== "";
+      const isMergedUpstream = row.cleaned_during_energy_stats === true;
+      
+      // Show only if it's both undecided locally AND unmerged upstream
+      return !hasLocalDecision && !isMergedUpstream;
     });
   }
 
@@ -472,28 +479,33 @@ downloadAction = {
   btn.onclick = async () => {
     const savedRecords = await getAllSavedReviews();
 
-    if (!savedRecords || savedRecords.length === 0) {
-      alert("No saved overrides found in local storage.");
+    // Create a dynamic lookup map from the main CSV data
+    const mergedUpstreamMap = new Map(pce_outliers_log.map(d => [d.id, d.cleaned_during_energy_stats]));
+
+    // Filter out stale browser entries and only export active, unmerged deltas
+    const deltaRecords = savedRecords.filter(row => {
+      const hasDecision = row.decision && row.decision.trim() !== "";
+      const isMerged = mergedUpstreamMap.get(row.id) === true;
+      
+      return hasDecision && !isMerged;
+    });
+
+    if (!deltaRecords || deltaRecords.length === 0) {
+      alert("No new pending overrides found to export.");
       return;
     }
 
-    const allKeys = Array.from(new Set(savedRecords.flatMap(Object.keys)));
+    const allKeys = Array.from(new Set(deltaRecords.flatMap(Object.keys)));
     const headers = allKeys.join(",");
     
-    const rows = savedRecords.map(row =>
+    const rows = deltaRecords.map(row =>
       allKeys.map(key => {
         let val = row[key];
-        
         if (key === "decision" && val) {
           val = strategyMap.get(val) || val;
         }
-        
         let safeVal = String(val ?? '');
-        
-        // escape double quotes
         safeVal = safeVal.replace(/"/g, '""');
-        
-        // wrap in quotes
         return `"${safeVal}"`;
       }).join(",")
     );
