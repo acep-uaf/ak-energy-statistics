@@ -5,6 +5,7 @@ source('src/l1_quality_check.R')
 source('src/l1_transform.R')
 source('src/l2_outlier_check.R')
 source('src/l2_imputation_options.R')
+source('src/l2_undecided_imputations.R')
 source('src/l3_impute.R')
 
 
@@ -86,7 +87,11 @@ l2_generate_imputation_options(
   path_out = 'data/l2/logs/l2_pce_imputation_options.csv')
 
 
-
+generate_undecided_imputations(
+  pce_inputation_options_path = 'data/l2/logs/l2_pce_imputation_options.csv',
+  pce_inputation_decisions_path = 'data/raw/imputation_decisions/pce_imputation_decisions.csv',
+  path_out = 'data/l2/logs/l2_pce_imputations_undecided.csv'
+)
 
 
 start_time <- Sys.time()
