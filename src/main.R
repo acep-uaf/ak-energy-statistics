@@ -99,11 +99,8 @@ l2_flag_decided_imputations(
 )
 
 
-start_time <- Sys.time()
 l3_impute_columns(
-  path_in = "data/l2/consolidated/l2_pce.csv",
-  path_config = "config/imputations/l3_impute.yml",
-  path_out = "data/l3/consolidated/l3_pce.csv"
+  path_in = 'data/l2/consolidated/l2_pce.csv',
+  path_overrides = 'data/l2/logs/l2_pce_imputations_flagged.csv',
+  path_out = 'data/l3/consolidated/l3_pce.csv'
 )
-end_time <- Sys.time()
-print(end_time - start_time)
