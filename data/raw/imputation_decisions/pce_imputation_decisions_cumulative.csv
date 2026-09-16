@@ -11,9 +11,11 @@ A3310051124225003_powerhouse_consumption_kwh,A3310051124225003,331005,Adak,2024-
 A3310051126225003_diesel_kwh_generated,A3310051126225003,331005,Adak,2026-05-01,2026,5,diesel_kwh_generated,67375,106298,97015,106298,170996,NA,raw_value,NA,NA
 A3310051126225003_fuel_used_gallons,A3310051126225003,331005,Adak,2026-05-01,2026,5,fuel_used_gallons,5639,8746,8081,8746,13703,NA,raw_value,NA,NA
 A3310051224225003_powerhouse_consumption_kwh,A3310051224225003,331005,Adak,2024-06-01,2024,6,powerhouse_consumption_kwh,63535,67798,46038,60471,25573,NA,raw_value,NA,NA
+A3310051226225003_diesel_kwh_generated,A3310051226225003,331005,Adak,2026-06-01,2026,6,diesel_kwh_generated,79998,67375,93306,77722,160558,NA,raw_value,NA,false
 A3310100122225003_fuel_used_gallons,A3310100122225003,331010,Akhiok,2021-07-01,2021,7,fuel_used_gallons,1165,2909,2206,2037,2364,NA,raw_value,NA,NA
 A3310100222225003_fuel_used_gallons,A3310100222225003,331010,Akhiok,2021-08-01,2021,8,fuel_used_gallons,1165,1165,2206,1210,2170,NA,raw_value,NA,NA
 A3310100226225003_fuel_used_gallons,A3310100226225003,331010,Akhiok,2025-08-01,2025,8,fuel_used_gallons,0,2760,2546,2760,2299,NA,raw_value,NA,NA
+A3310100322225003_fuel_used_gallons,A3310100322225003,331010,Akhiok,2021-09-01,2021,9,fuel_used_gallons,1255,1165,2206,1846,2462,NA,raw_value,NA,false
 A3310100425225003_diesel_kwh_generated,A3310100425225003,331010,Akhiok,2024-10-01,2024,10,diesel_kwh_generated,71382,24609,34415,19332,23788,NA,annual_average,NA,NA
 A3310100425225003_powerhouse_consumption_kwh,A3310100425225003,331010,Akhiok,2024-10-01,2024,10,powerhouse_consumption_kwh,4801,NA,2346,1282,993,NA,annual_average,NA,NA
 A3310100622225003_commercial_sold_to,A3310100622225003,331010,Akhiok,2021-12-01,2021,12,commercial_sold_to,19102,14143,11448,12496,10099,NA,avg_preceding_proceeding,NA,NA
@@ -27,7 +29,9 @@ A3310100921225003_fuel_used_gallons,A3310100921225003,331010,Akhiok,2021-03-01,2
 A3310100923225003_peak_consumption_kw,A3310100923225003,331010,Akhiok,2023-03-01,2023,3,peak_consumption_kw,2202,101,285,78,67,NA,carry_forward,NA,NA
 A3310101223225003_residential_sold_to,A3310101223225003,331010,Akhiok,2023-06-01,2023,6,residential_sold_to,14682,2836,7874,7065,7231,NA,avg_same_month_other_years,NA,NA
 A3310200118225003_residential_customers,A3310200118225003,331020,Akiachak,2017-07-01,2017,7,residential_customers,136,191,186,190,191,NA,carry_forward,NA,NA
+A3310200122225003_powerhouse_consumption_kwh,A3310200122225003,331020,Akiachak,2021-07-01,2021,7,powerhouse_consumption_kwh,5962,6129,4417,5866,3694,NA,raw_value,NA,false
 A3310200126225003_wind_kwh_generated,A3310200126225003,331020,Akiachak,2025-07-01,2025,7,wind_kwh_generated,16988,19353,12855,17316,0,NA,raw_value,NA,NA
+A3310200127225003_wind_kwh_generated,A3310200127225003,331020,Akiachak,2026-07-01,2026,7,wind_kwh_generated,17278,24842,21432,24842,5663,NA,raw_value,NA,false
 A3310200223225003_powerhouse_consumption_kwh,A3310200223225003,331020,Akiachak,2022-08-01,2022,8,powerhouse_consumption_kwh,8293,NA,4335,4000,3885,NA,avg_preceding_proceeding,NA,NA
 A3310200226225003_wind_kwh_generated,A3310200226225003,331020,Akiachak,2025-08-01,2025,8,wind_kwh_generated,15280,16988,12855,17996,0,NA,raw_value,NA,NA
 A3310200323225003_unbilled_sold_to,A3310200323225003,331020,Akiachak,2022-09-01,2022,9,unbilled_sold_to,95852,2266,11458,3506,4057,NA,avg_preceding_proceeding,NA,NA
@@ -128,9 +132,11 @@ A3310601026225003_powerhouse_consumption_kwh,A3310601026225003,331060,"Bettles, 
 A3310601123225003_powerhouse_consumption_kwh,A3310601123225003,331060,"Bettles, Evansville",2023-05-01,2023,5,powerhouse_consumption_kwh,1721,2290,2098,2080,741,NA,raw_value,NA,false
 A3310601124225003_powerhouse_consumption_kwh,A3310601124225003,331060,"Bettles, Evansville",2024-05-01,2024,5,powerhouse_consumption_kwh,1925,2454,2293,2094,719,NA,raw_value,NA,false
 A3310601125225003_powerhouse_consumption_kwh,A3310601125225003,331060,"Bettles, Evansville",2025-05-01,2025,5,powerhouse_consumption_kwh,2555,3337,3096,2656,649,NA,raw_value,NA,false
+A3310601126225003_powerhouse_consumption_kwh,A3310601126225003,331060,"Bettles, Evansville",2026-05-01,2026,5,powerhouse_consumption_kwh,3797,4693,4329,3920,839,NA,raw_value,NA,false
 A3310601223225003_powerhouse_consumption_kwh,A3310601223225003,331060,"Bettles, Evansville",2023-06-01,2023,6,powerhouse_consumption_kwh,1871,1721,2098,1678,624,NA,raw_value,NA,false
 A3310601224225003_powerhouse_consumption_kwh,A3310601224225003,331060,"Bettles, Evansville",2024-06-01,2024,6,powerhouse_consumption_kwh,1734,1925,2293,1734,640,NA,raw_value,NA,false
 A3310601225225003_powerhouse_consumption_kwh,A3310601225225003,331060,"Bettles, Evansville",2025-06-01,2025,6,powerhouse_consumption_kwh,1975,2555,3096,2767,613,NA,raw_value,NA,false
+A3310601226225003_powerhouse_consumption_kwh,A3310601226225003,331060,"Bettles, Evansville",2026-06-01,2026,6,powerhouse_consumption_kwh,3146,3797,4329,3797,749,NA,raw_value,NA,false
 A3310700120225003_powerhouse_consumption_kwh,A3310700120225003,331070,Chistochina,2019-07-01,2019,7,powerhouse_consumption_kwh,268,181,164,172,121,NA,raw_value,NA,false
 A3310700216225003_powerhouse_consumption_kwh,A3310700216225003,331070,Chistochina,2015-08-01,2015,8,powerhouse_consumption_kwh,752,NA,814,NA,124,NA,raw_value,NA,false
 A3310700417225003_powerhouse_consumption_kwh,A3310700417225003,331070,Chistochina,2016-10-01,2016,10,powerhouse_consumption_kwh,257,193,590,212,144,NA,raw_value,NA,false
@@ -255,7 +261,9 @@ A3311201122225003_diesel_kwh_generated,A3311201122225003,331120,"Haines, Covenan
 A3311201122225003_fuel_used_gallons,A3311201122225003,331120,"Haines, Covenant Life",2022-05-01,2022,5,fuel_used_gallons,21819,8896,8820,4693,6354,NA,raw_value,NA,false
 A3311201123225003_diesel_kwh_generated,A3311201123225003,331120,"Haines, Covenant Life",2023-05-01,2023,5,diesel_kwh_generated,171099,7242,46071,14256,128799,NA,raw_value,NA,false
 A3311201123225003_fuel_used_gallons,A3311201123225003,331120,"Haines, Covenant Life",2023-05-01,2023,5,fuel_used_gallons,11758,607,3117,1007,7360,NA,raw_value,NA,false
+A3311400622225003_powerhouse_consumption_kwh,A3311400622225003,331140,Hollis,2021-12-01,2021,12,powerhouse_consumption_kwh,2768,1534,1458,2350,1428,NA,raw_value,NA,false
 A3311400722225003_powerhouse_consumption_kwh,A3311400722225003,331140,Hollis,2022-01-01,2022,1,powerhouse_consumption_kwh,3165,2768,1864,2769,1514,NA,raw_value,NA,false
+A3311400822225003_powerhouse_consumption_kwh,A3311400822225003,331140,Hollis,2022-02-01,2022,2,powerhouse_consumption_kwh,2770,3165,1864,2840,1568,NA,raw_value,NA,false
 A3311401022225003_powerhouse_consumption_kwh,A3311401022225003,331140,Hollis,2022-04-01,2022,4,powerhouse_consumption_kwh,2801,2516,1864,2551,1453,NA,raw_value,NA,false
 A3311500621225003_commercial_sold_to,A3311500621225003,331150,Hydaburg,2020-12-01,2020,12,commercial_sold_to,97894,41408,45184,45774,36997,NA,avg_preceding_proceeding,NA,false
 A3311501016225003_residential_customers,A3311501016225003,331150,Hydaburg,2016-04-01,2016,4,residential_customers,175,129,133,130,117,NA,avg_preceding_proceeding,NA,false
@@ -393,6 +401,7 @@ A3312400926225003_commercial_sold_to,A3312400926225003,331240,Alakanuk,2026-03-0
 A3312401016225003_fuel_used_gallons,A3312401016225003,331240,Alakanuk,2016-04-01,2016,4,fuel_used_gallons,13309,14196,7993,13563,0,NA,raw_value,NA,NA
 A3312401026225003_commercial_sold_to,A3312401026225003,331240,Alakanuk,2026-04-01,2026,4,commercial_sold_to,26631,32495,27320,32495,13655,NA,raw_value,NA,NA
 A3312401116225003_fuel_used_gallons,A3312401116225003,331240,Alakanuk,2016-05-01,2016,5,fuel_used_gallons,12930,13309,7993,12036,0,NA,raw_value,NA,NA
+A3312401126225003_commercial_sold_to,A3312401126225003,331240,Alakanuk,2026-05-01,2026,5,commercial_sold_to,0,26631,21856,26631,13238,NA,annual_average,NA,false
 A3312401216225003_fuel_used_gallons,A3312401216225003,331240,Alakanuk,2016-06-01,2016,6,fuel_used_gallons,10763,12930,7993,11848,0,NA,raw_value,NA,NA
 A3312500116225003_commercial_sold_to,A3312500116225003,331250,Ambler,2015-07-01,2015,7,commercial_sold_to,12461,NA,17785,12762,3683,NA,raw_value,NA,NA
 A3312500216225003_commercial_sold_to,A3312500216225003,331250,Ambler,2015-08-01,2015,8,commercial_sold_to,12762,12461,17785,14042,3516,NA,raw_value,NA,NA
@@ -417,6 +426,7 @@ A3312500926225003_commercial_sold_to,A3312500926225003,331250,Ambler,2026-03-01,
 A3312500926225003_fuel_used_gallons,A3312500926225003,331250,Ambler,2026-03-01,2026,3,fuel_used_gallons,0,0,0,0,9141,NA,raw_value,NA,NA
 A3312501026225003_commercial_sold_to,A3312501026225003,331250,Ambler,2026-04-01,2026,4,commercial_sold_to,11701,12925,13352,12925,3206,NA,raw_value,NA,NA
 A3312501026225003_fuel_used_gallons,A3312501026225003,331250,Ambler,2026-04-01,2026,4,fuel_used_gallons,0,0,0,0,8153,NA,raw_value,NA,NA
+A3312501126225003_commercial_sold_to,A3312501126225003,331250,Ambler,2026-05-01,2026,5,commercial_sold_to,0,11701,10681,11701,3189,NA,annual_average,NA,false
 A3312600116225003_com_facil_sold_to,A3312600116225003,331260,Anvik,2015-07-01,2015,7,com_facil_sold_to,4177,NA,4815,4183,10738,NA,raw_value,NA,NA
 A3312600216225003_com_facil_sold_to,A3312600216225003,331260,Anvik,2015-08-01,2015,8,com_facil_sold_to,4183,4177,4815,4412,10564,NA,raw_value,NA,NA
 A3312600217225003_residential_customers,A3312600217225003,331260,Anvik,2016-08-01,2016,8,residential_customers,122,40,68,40,38,NA,avg_preceding_proceeding,NA,NA
@@ -429,6 +439,7 @@ A3312600520225003_com_facil_sold_to,A3312600520225003,331260,Anvik,2019-11-01,20
 A3312600526225003_com_facil_sold_to,A3312600526225003,331260,Anvik,2025-11-01,2025,11,com_facil_sold_to,4359,10257,9390,7193,10983,NA,raw_value,NA,NA
 A3312600526225003_commercial_sold_to,A3312600526225003,331260,Anvik,2025-11-01,2025,11,commercial_sold_to,10073,0,1671,4987,927,NA,raw_value,NA,NA
 A3312600526225003_fuel_used_gallons,A3312600526225003,331260,Anvik,2025-11-01,2025,11,fuel_used_gallons,0,2714,2274,1357,3094,NA,avg_same_month_other_years,NA,false
+A3312600526225003_wind_kwh_generated,A3312600526225003,331260,Anvik,2025-11-01,2025,11,wind_kwh_generated,190906,NA,190906,NA,0,0,manual_override,NA,false
 A3312600616225003_com_facil_sold_to,A3312600616225003,331260,Anvik,2015-12-01,2015,12,com_facil_sold_to,5530,5530,4815,5545,10989,NA,raw_value,NA,NA
 A3312600616225003_commercial_sold_to,A3312600616225003,331260,Anvik,2015-12-01,2015,12,commercial_sold_to,10356,9271,8405,9960,997,NA,raw_value,NA,NA
 A3312600620225003_com_facil_sold_to,A3312600620225003,331260,Anvik,2019-12-01,2019,12,com_facil_sold_to,16859,15273,12254,14284,9856,NA,raw_value,NA,NA
@@ -443,13 +454,21 @@ A3312600826225003_com_facil_sold_to,A3312600826225003,331260,Anvik,2026-02-01,20
 A3312600826225003_govt_facil_sold_to,A3312600826225003,331260,Anvik,2026-02-01,2026,2,govt_facil_sold_to,31922,4765,15551,8758,9072,13922,manual_override,Assume type transposing first two digits,NA
 A3312600926225003_com_facil_sold_to,A3312600926225003,331260,Anvik,2026-03-01,2026,3,com_facil_sold_to,4626,4237,4294,4048,11240,NA,raw_value,NA,NA
 A3312601026225003_com_facil_sold_to,A3312601026225003,331260,Anvik,2026-04-01,2026,4,com_facil_sold_to,3859,4626,4294,4626,11407,NA,raw_value,NA,NA
+A3312601126225003_com_facil_sold_to,A3312601126225003,331260,Anvik,2026-05-01,2026,5,com_facil_sold_to,0,3859,3436,3859,10535,NA,annual_average,NA,false
+A3312700526225003_com_facil_sold_to,A3312700526225003,331270,Brevig Mission,2025-11-01,2025,11,com_facil_sold_to,762,24427,21388,12594,24051,NA,avg_same_month_other_years,NA,false
 A3312700526225003_commercial_sold_to,A3312700526225003,331270,Brevig Mission,2025-11-01,2025,11,commercial_sold_to,32361,5619,9345,19451,4499,NA,raw_value,NA,false
 A3312700623225003_fuel_used_gallons,A3312700623225003,331270,Brevig Mission,2022-12-01,2022,12,fuel_used_gallons,14655,7759,8300,9118,7891,NA,raw_value,NA,false
+A3312700626225003_com_facil_sold_to,A3312700626225003,331270,Brevig Mission,2025-12-01,2025,12,com_facil_sold_to,761,762,21388,750,26263,NA,avg_same_month_other_years,NA,false
 A3312700626225003_commercial_sold_to,A3312700626225003,331270,Brevig Mission,2025-12-01,2025,12,commercial_sold_to,33283,32361,9345,35013,4818,NA,raw_value,NA,false
+A3312700726225003_com_facil_sold_to,A3312700726225003,331270,Brevig Mission,2026-01-01,2026,1,com_facil_sold_to,738,761,491,712,28268,NA,avg_same_month_other_years,NA,false
 A3312700726225003_commercial_sold_to,A3312700726225003,331270,Brevig Mission,2026-01-01,2026,1,commercial_sold_to,37665,33283,34866,33872,5174,NA,raw_value,NA,false
+A3312700826225003_com_facil_sold_to,A3312700826225003,331270,Brevig Mission,2026-02-01,2026,2,com_facil_sold_to,662,738,491,632,27200,NA,avg_same_month_other_years,NA,false
 A3312700826225003_commercial_sold_to,A3312700826225003,331270,Brevig Mission,2026-02-01,2026,2,commercial_sold_to,34460,37665,34866,36760,3511,NA,raw_value,NA,false
+A3312700926225003_com_facil_sold_to,A3312700926225003,331270,Brevig Mission,2026-03-01,2026,3,com_facil_sold_to,525,662,491,596,28120,NA,avg_preceding_proceeding,NA,false
 A3312700926225003_commercial_sold_to,A3312700926225003,331270,Brevig Mission,2026-03-01,2026,3,commercial_sold_to,35854,34460,34866,32973,3531,NA,raw_value,NA,false
+A3312701026225003_com_facil_sold_to,A3312701026225003,331270,Brevig Mission,2026-04-01,2026,4,com_facil_sold_to,529,525,491,262,26213,NA,avg_same_month_other_years,NA,false
 A3312701026225003_commercial_sold_to,A3312701026225003,331270,Brevig Mission,2026-04-01,2026,4,commercial_sold_to,31486,35854,34866,35854,3426,NA,raw_value,NA,false
+A3312701126225003_com_facil_sold_to,A3312701126225003,331270,Brevig Mission,2026-05-01,2026,5,com_facil_sold_to,0,529,491,529,23728,NA,avg_same_month_other_years,NA,false
 A3312800116225003_commercial_sold_to,A3312800116225003,331280,Chevak,2015-07-01,2015,7,commercial_sold_to,31280,NA,32606,31715,15309,NA,raw_value,NA,false
 A3312800216225003_commercial_sold_to,A3312800216225003,331280,Chevak,2015-08-01,2015,8,commercial_sold_to,31715,31280,32606,31928,15409,NA,raw_value,NA,false
 A3312800217225003_residential_customers,A3312800217225003,331280,Chevak,2016-08-01,2016,8,residential_customers,66,209,175,210,204,209,manual_override,NA,false
@@ -470,6 +489,8 @@ A3312800817225003_residential_customers,A3312800817225003,331280,Chevak,2017-02-
 A3312800826225003_commercial_sold_to,A3312800826225003,331280,Chevak,2026-02-01,2026,2,commercial_sold_to,31754,36772,33568,35752,16106,NA,raw_value,NA,false
 A3312800926225003_commercial_sold_to,A3312800926225003,331280,Chevak,2026-03-01,2026,3,commercial_sold_to,34732,31754,33568,31384,16418,NA,raw_value,NA,false
 A3312801026225003_commercial_sold_to,A3312801026225003,331280,Chevak,2026-04-01,2026,4,commercial_sold_to,31015,34732,33568,34732,15965,NA,raw_value,NA,false
+A3312801126225003_commercial_sold_to,A3312801126225003,331280,Chevak,2026-05-01,2026,5,commercial_sold_to,0,31015,26855,31015,15560,NA,avg_preceding_proceeding,NA,false
+A3312801126225003_govt_facil_sold_to,A3312801126225003,331280,Chevak,2026-05-01,2026,5,govt_facil_sold_to,0,28465,37416,28465,53690,NA,annual_average,NA,false
 A3312900126225003_powerhouse_consumption_kwh,A3312900126225003,331290,Eek,2025-07-01,2025,7,powerhouse_consumption_kwh,6735,4106,4783,5152,1683,NA,raw_value,NA,false
 A3312900226225003_powerhouse_consumption_kwh,A3312900226225003,331290,Eek,2025-08-01,2025,8,powerhouse_consumption_kwh,6197,6735,4783,7048,1646,NA,raw_value,NA,false
 A3312900326225003_powerhouse_consumption_kwh,A3312900326225003,331290,Eek,2025-09-01,2025,9,powerhouse_consumption_kwh,7362,6197,4783,6780,1570,NA,raw_value,NA,false
@@ -478,6 +499,7 @@ A3312900516225003_commercial_sold_to,A3312900516225003,331290,Eek,2015-11-01,201
 A3312900526225003_commercial_sold_to,A3312900526225003,331290,Eek,2025-11-01,2025,11,commercial_sold_to,32472,11432,15807,23148,11414,NA,raw_value,NA,false
 A3312900616225003_commercial_sold_to,A3312900616225003,331290,Eek,2015-12-01,2015,12,commercial_sold_to,23144,24815,17741,27938,13627,NA,raw_value,NA,false
 A3312900626225003_commercial_sold_to,A3312900626225003,331290,Eek,2025-12-01,2025,12,commercial_sold_to,34864,32472,15807,35138,12455,NA,raw_value,NA,false
+A3312900626225003_powerhouse_consumption_kwh,A3312900626225003,331290,Eek,2025-12-01,2025,12,powerhouse_consumption_kwh,4306,4036,4494,4126,1702,NA,raw_value,NA,false
 A3312900716225003_commercial_sold_to,A3312900716225003,331290,Eek,2016-01-01,2016,1,commercial_sold_to,31061,23144,10479,16456,14832,NA,raw_value,NA,false
 A3312900722225003_com_facil_sold_to,A3312900722225003,331290,Eek,2022-01-01,2022,1,com_facil_sold_to,51642,44734,35221,47202,23078,NA,raw_value,NA,false
 A3312900726225003_commercial_sold_to,A3312900726225003,331290,Eek,2026-01-01,2026,1,commercial_sold_to,37804,34864,36320,35450,14158,NA,raw_value,NA,false
@@ -485,6 +507,7 @@ A3312900826225003_commercial_sold_to,A3312900826225003,331290,Eek,2026-02-01,202
 A3312900926225003_commercial_sold_to,A3312900926225003,331290,Eek,2026-03-01,2026,3,commercial_sold_to,39970,36037,36320,33754,11534,NA,raw_value,NA,false
 A3312901026225003_commercial_sold_to,A3312901026225003,331290,Eek,2026-04-01,2026,4,commercial_sold_to,31471,39970,36320,39970,11199,NA,raw_value,NA,false
 A3313000217225003_residential_customers,A3313000217225003,331300,Elim,2016-08-01,2016,8,residential_customers,170,89,102,89,90,NA,carry_forward,NA,false
+A3313000226225003_fuel_used_gallons,A3313000226225003,331300,Elim,2025-08-01,2025,8,fuel_used_gallons,3290,3663,5290,3590,7609,NA,raw_value,NA,false
 A3313000320225003_powerhouse_consumption_kwh,A3313000320225003,331300,Elim,2019-09-01,2019,9,powerhouse_consumption_kwh,2278,1933,1896,2036,1482,NA,raw_value,NA,false
 A3313000520225003_powerhouse_consumption_kwh,A3313000520225003,331300,Elim,2019-11-01,2019,11,powerhouse_consumption_kwh,2374,2140,1896,2208,1426,NA,raw_value,NA,false
 A3313000620225003_powerhouse_consumption_kwh,A3313000620225003,331300,Elim,2019-12-01,2019,12,powerhouse_consumption_kwh,2276,2374,1896,2357,1558,NA,raw_value,NA,false
@@ -498,9 +521,13 @@ A3313100120225003_commercial_sold_to,A3313100120225003,331310,Emmonak,2019-07-01
 A3313100216225003_commercial_sold_to,A3313100216225003,331310,Emmonak,2015-08-01,2015,8,commercial_sold_to,221463,191364,121051,146842,108656,NA,raw_value,NA,false
 A3313100219225003_commercial_sold_to,A3313100219225003,331310,Emmonak,2018-08-01,2018,8,commercial_sold_to,183240,206784,92979,169760,112478,NA,raw_value,NA,false
 A3313100220225003_commercial_sold_to,A3313100220225003,331310,Emmonak,2019-08-01,2019,8,commercial_sold_to,187129,191747,91319,151508,112089,NA,raw_value,NA,false
+A3313100526225003_wind_kwh_generated,A3313100526225003,331310,Emmonak,2025-11-01,2025,11,wind_kwh_generated,136673,NA,71968,31502,48952,NA,raw_value,NA,false
+A3313101126225003_com_facil_sold_to,A3313101126225003,331310,Emmonak,2026-05-01,2026,5,com_facil_sold_to,0,53836,48159,53836,68236,NA,avg_same_month_other_years,NA,false
+A3313101126225003_govt_facil_sold_to,A3313101126225003,331310,Emmonak,2026-05-01,2026,5,govt_facil_sold_to,0,71388,60607,71388,53275,NA,avg_same_month_other_years,NA,false
 A3313200216225003_powerhouse_consumption_kwh,A3313200216225003,331320,Gambell,2015-08-01,2015,8,powerhouse_consumption_kwh,16874,4681,12362,14912,7805,NA,raw_value,NA,false
 A3313200217225003_powerhouse_consumption_kwh,A3313200217225003,331320,Gambell,2016-08-01,2016,8,powerhouse_consumption_kwh,23329,5021,8083,12455,7160,NA,raw_value,NA,false
 A3313200217225003_residential_customers,A3313200217225003,331320,Gambell,2016-08-01,2016,8,residential_customers,110,160,150,161,165,161,manual_override,NA,false
+A3313200223225003_powerhouse_consumption_kwh,A3313200223225003,331320,Gambell,2022-08-01,2022,8,powerhouse_consumption_kwh,11444,5580,5493,5371,8348,NA,raw_value,NA,false
 A3313200316225003_powerhouse_consumption_kwh,A3313200316225003,331320,Gambell,2015-09-01,2015,9,powerhouse_consumption_kwh,25142,16874,12362,17237,7314,NA,raw_value,NA,false
 A3313200317225003_powerhouse_consumption_kwh,A3313200317225003,331320,Gambell,2016-09-01,2016,9,powerhouse_consumption_kwh,19889,23329,8083,15522,7839,NA,raw_value,NA,false
 A3313200319225003_powerhouse_consumption_kwh,A3313200319225003,331320,Gambell,2018-09-01,2018,9,powerhouse_consumption_kwh,12385,8696,8903,10983,8590,NA,raw_value,NA,false
@@ -511,6 +538,7 @@ A3313200517225003_residential_customers,A3313200517225003,331320,Gambell,2016-11
 A3313200522225003_powerhouse_consumption_kwh,A3313200522225003,331320,Gambell,2021-11-01,2021,11,powerhouse_consumption_kwh,11783,6017,6093,9117,5521,NA,raw_value,NA,false
 A3313200618225003_powerhouse_consumption_kwh,A3313200618225003,331320,Gambell,2017-12-01,2017,12,powerhouse_consumption_kwh,13507,6734,6988,10286,5788,NA,raw_value,NA,false
 A3313200622225003_powerhouse_consumption_kwh,A3313200622225003,331320,Gambell,2021-12-01,2021,12,powerhouse_consumption_kwh,12217,11783,6093,8838,5932,NA,raw_value,NA,false
+A3313200626225003_commercial_sold_to,A3313200626225003,331320,Gambell,2025-12-01,2025,12,commercial_sold_to,42593,42338,29274,46301,19897,NA,raw_value,NA,false
 A3313200717225003_residential_customers,A3313200717225003,331320,Gambell,2017-01-01,2017,1,residential_customers,109,165,156,137,166,165,manual_override,NA,false
 A3313200718225003_powerhouse_consumption_kwh,A3313200718225003,331320,Gambell,2018-01-01,2018,1,powerhouse_consumption_kwh,13837,13507,8903,11976,5926,NA,raw_value,NA,false
 A3313200726225003_commercial_sold_to,A3313200726225003,331320,Gambell,2026-01-01,2026,1,commercial_sold_to,50264,42593,47612,44855,22760,NA,raw_value,NA,false
@@ -519,21 +547,28 @@ A3313200820225003_powerhouse_consumption_kwh,A3313200820225003,331320,Gambell,20
 A3313200826225003_commercial_sold_to,A3313200826225003,331320,Gambell,2026-02-01,2026,2,commercial_sold_to,47117,50264,47612,49752,18597,NA,raw_value,NA,false
 A3313200926225003_commercial_sold_to,A3313200926225003,331320,Gambell,2026-03-01,2026,3,commercial_sold_to,49241,47117,47612,45472,19332,NA,raw_value,NA,false
 A3313201026225003_commercial_sold_to,A3313201026225003,331320,Gambell,2026-04-01,2026,4,commercial_sold_to,43828,49241,47612,49241,19012,NA,raw_value,NA,false
+A3313201126225003_govt_facil_sold_to,A3313201126225003,331320,Gambell,2026-05-01,2026,5,govt_facil_sold_to,0,38435,32423,38435,39096,NA,avg_same_month_other_years,NA,false
 A3313300217225003_residential_customers,A3313300217225003,331330,Goodnews Bay,2016-08-01,2016,8,residential_customers,135,74,91,75,78,75,manual_override,NA,false
 A3313300417225003_residential_customers,A3313300417225003,331330,Goodnews Bay,2016-10-01,2016,10,residential_customers,139,76,91,107,78,76,manual_override,NA,false
 A3313300516225003_commercial_sold_to,A3313300516225003,331330,Goodnews Bay,2015-11-01,2015,11,commercial_sold_to,8550,8327,7930,8586,4442,NA,raw_value,NA,false
 A3313300517225003_residential_customers,A3313300517225003,331330,Goodnews Bay,2016-11-01,2016,11,residential_customers,138,139,91,108,78,76,manual_override,NA,false
 A3313300526225003_commercial_sold_to,A3313300526225003,331330,Goodnews Bay,2025-11-01,2025,11,commercial_sold_to,11430,2500,4325,7064,4154,NA,raw_value,NA,false
+A3313300526225003_powerhouse_consumption_kwh,A3313300526225003,331330,Goodnews Bay,2025-11-01,2025,11,powerhouse_consumption_kwh,8899,2710,2854,5596,1264,NA,raw_value,NA,false
 A3313300616225003_commercial_sold_to,A3313300616225003,331330,Goodnews Bay,2015-12-01,2015,12,commercial_sold_to,8844,8550,7930,9203,4646,NA,raw_value,NA,false
 A3313300623225003_fuel_used_gallons,A3313300623225003,331330,Goodnews Bay,2022-12-01,2022,12,fuel_used_gallons,14511,4902,5601,5443,4614,NA,raw_value,NA,false
 A3313300626225003_commercial_sold_to,A3313300626225003,331330,Goodnews Bay,2025-12-01,2025,12,commercial_sold_to,11627,11430,4325,12300,4368,NA,raw_value,NA,false
+A3313300626225003_powerhouse_consumption_kwh,A3313300626225003,331330,Goodnews Bay,2025-12-01,2025,12,powerhouse_consumption_kwh,8483,8899,2854,9126,1346,NA,raw_value,NA,false
 A3313300716225003_commercial_sold_to,A3313300716225003,331330,Goodnews Bay,2016-01-01,2016,1,commercial_sold_to,9856,8844,4965,6755,4930,NA,raw_value,NA,false
 A3313300717225003_residential_customers,A3313300717225003,331330,Goodnews Bay,2017-01-01,2017,1,residential_customers,139,76,88,107,78,76,manual_override,NA,false
 A3313300726225003_commercial_sold_to,A3313300726225003,331330,Goodnews Bay,2026-01-01,2026,1,commercial_sold_to,13169,11627,12717,11571,4599,NA,raw_value,NA,false
+A3313300726225003_peak_consumption_kw,A3313300726225003,331330,Goodnews Bay,2026-01-01,2026,1,peak_consumption_kw,482,187,251,195,NA,NA,raw_value,NA,false
+A3313300726225003_powerhouse_consumption_kwh,A3313300726225003,331330,Goodnews Bay,2026-01-01,2026,1,powerhouse_consumption_kwh,9353,8483,4894,8002,1292,NA,raw_value,NA,false
 A3313300817225003_residential_customers,A3313300817225003,331330,Goodnews Bay,2017-02-01,2017,2,residential_customers,138,139,88,108,78,77,manual_override,NA,false
 A3313300826225003_commercial_sold_to,A3313300826225003,331330,Goodnews Bay,2026-02-01,2026,2,commercial_sold_to,11515,13169,12717,13544,3915,NA,raw_value,NA,false
+A3313300826225003_powerhouse_consumption_kwh,A3313300826225003,331330,Goodnews Bay,2026-02-01,2026,2,powerhouse_consumption_kwh,7521,9353,4894,6586,1296,NA,raw_value,NA,false
 A3313300921225003_powerhouse_consumption_kwh,A3313300921225003,331330,Goodnews Bay,2021-03-01,2021,3,powerhouse_consumption_kwh,3874,2273,2004,2627,1189,NA,raw_value,NA,false
 A3313300926225003_commercial_sold_to,A3313300926225003,331330,Goodnews Bay,2026-03-01,2026,3,commercial_sold_to,13920,11515,12717,11890,4194,NA,raw_value,NA,false
+A3313300926225003_powerhouse_consumption_kwh,A3313300926225003,331330,Goodnews Bay,2026-03-01,2026,3,powerhouse_consumption_kwh,3818,7521,4894,4579,1457,NA,raw_value,NA,false
 A3313301021225003_powerhouse_consumption_kwh,A3313301021225003,331330,Goodnews Bay,2021-04-01,2021,4,powerhouse_consumption_kwh,2981,3874,2004,2633,1424,NA,raw_value,NA,false
 A3313301026225003_commercial_sold_to,A3313301026225003,331330,Goodnews Bay,2026-04-01,2026,4,commercial_sold_to,12264,13920,12717,13920,4160,NA,raw_value,NA,false
 A3313400116225003_commercial_sold_to,A3313400116225003,331340,Grayling,2015-07-01,2015,7,commercial_sold_to,8253,NA,8209,8428,3356,NA,raw_value,NA,false
@@ -544,6 +579,7 @@ A3313400325225003_powerhouse_consumption_kwh,A3313400325225003,331340,Grayling,2
 A3313400416225003_commercial_sold_to,A3313400416225003,331340,Grayling,2015-10-01,2015,10,commercial_sold_to,7520,7991,8209,7872,2834,NA,raw_value,NA,false
 A3313400425225003_powerhouse_consumption_kwh,A3313400425225003,331340,Grayling,2024-10-01,2024,10,powerhouse_consumption_kwh,7388,5866,6547,7508,2620,NA,raw_value,NA,false
 A3313400516225003_commercial_sold_to,A3313400516225003,331340,Grayling,2015-11-01,2015,11,commercial_sold_to,7752,7520,8209,8415,3417,NA,raw_value,NA,false
+A3313400524225003_powerhouse_consumption_kwh,A3313400524225003,331340,Grayling,2023-11-01,2023,11,powerhouse_consumption_kwh,5458,4968,3291,5568,2592,NA,raw_value,NA,false
 A3313400525225003_powerhouse_consumption_kwh,A3313400525225003,331340,Grayling,2024-11-01,2024,11,powerhouse_consumption_kwh,9150,7388,6547,8622,2295,NA,raw_value,NA,false
 A3313400526225003_commercial_sold_to,A3313400526225003,331340,Grayling,2025-11-01,2025,11,commercial_sold_to,8585,2494,3339,5555,3334,NA,raw_value,NA,false
 A3313400616225003_commercial_sold_to,A3313400616225003,331340,Grayling,2015-12-01,2015,12,commercial_sold_to,9310,7752,8209,8344,3533,NA,raw_value,NA,false
@@ -564,6 +600,7 @@ A3313400926225003_commercial_sold_to,A3313400926225003,331340,Grayling,2026-03-0
 A3313401024225003_powerhouse_consumption_kwh,A3313401024225003,331340,Grayling,2024-04-01,2024,4,powerhouse_consumption_kwh,7983,7703,6547,6938,1907,NA,raw_value,NA,false
 A3313401026225003_commercial_sold_to,A3313401026225003,331340,Grayling,2026-04-01,2026,4,commercial_sold_to,9467,10817,9968,10817,2863,NA,raw_value,NA,false
 A3313401124225003_powerhouse_consumption_kwh,A3313401124225003,331340,Grayling,2024-05-01,2024,5,powerhouse_consumption_kwh,6173,7983,6547,6298,2156,NA,raw_value,NA,false
+A3313401126225003_com_facil_sold_to,A3313401126225003,331340,Grayling,2026-05-01,2026,5,com_facil_sold_to,0,12812,11532,12812,15508,NA,avg_same_month_other_years,NA,false
 A3313500616225003_fuel_used_gallons,A3313500616225003,331350,Holy Cross,2015-12-01,2015,12,fuel_used_gallons,6581,3822,4128,4001,5238,NA,raw_value,NA,false
 A3313500617225003_fuel_used_gallons,A3313500617225003,331350,Holy Cross,2016-12-01,2016,12,fuel_used_gallons,13564,4050,4434,4423,4462,NA,raw_value,NA,false
 A3313500620225003_fuel_used_gallons,A3313500620225003,331350,Holy Cross,2019-12-01,2019,12,fuel_used_gallons,9198,3882,4040,4424,4947,NA,raw_value,NA,false
@@ -592,6 +629,9 @@ A3313600726225003_commercial_sold_to,A3313600726225003,331360,Hooper Bay,2026-01
 A3313600817225003_residential_customers,A3313600817225003,331360,Hooper Bay,2017-02-01,2017,2,residential_customers,108,106,238,186,264,266,manual_override,NA,false
 A3313600923225003_com_facil_sold_to,A3313600923225003,331360,Hooper Bay,2023-03-01,2023,3,com_facil_sold_to,131754,75187,72550,76110,76910,NA,raw_value,NA,false
 A3313601122225003_com_facil_sold_to,A3313601122225003,331360,Hooper Bay,2022-05-01,2022,5,com_facil_sold_to,130587,69626,73636,64105,65647,NA,raw_value,NA,false
+A3313601126225003_com_facil_sold_to,A3313601126225003,331360,Hooper Bay,2026-05-01,2026,5,com_facil_sold_to,0,61239,55488,61239,72141,NA,avg_same_month_other_years,NA,false
+A3313601126225003_commercial_sold_to,A3313601126225003,331360,Hooper Bay,2026-05-01,2026,5,commercial_sold_to,0,44051,40227,44051,32150,NA,avg_same_month_other_years,NA,false
+A3313601126225003_govt_facil_sold_to,A3313601126225003,331360,Hooper Bay,2026-05-01,2026,5,govt_facil_sold_to,0,77908,68509,77908,62125,NA,avg_same_month_other_years,NA,false
 A3313700217225003_residential_customers,A3313700217225003,331370,Huslia,2016-08-01,2016,8,residential_customers,42,101,88,102,104,102,manual_override,NA,false
 A3313700417225003_residential_customers,A3313700417225003,331370,Huslia,2016-10-01,2016,10,residential_customers,41,103,88,72,104,102,manual_override,NA,false
 A3313700517225003_residential_customers,A3313700517225003,331370,Huslia,2016-11-01,2016,11,residential_customers,41,41,88,72,105,102,manual_override,NA,false
@@ -620,6 +660,8 @@ A3313800516225003_com_facil_sold_to,A3313800516225003,331380,Kaltag,2015-11-01,2
 A3313800523225003_commercial_sold_to,A3313800523225003,331380,Kaltag,2022-11-01,2022,11,commercial_sold_to,14486,17008,5470,8504,779,NA,raw_value,NA,false
 A3313800616225003_com_facil_sold_to,A3313800616225003,331380,Kaltag,2015-12-01,2015,12,com_facil_sold_to,3361,2685,2810,3082,12761,NA,raw_value,NA,false
 A3313800823225003_fuel_used_gallons,A3313800823225003,331380,Kaltag,2023-02-01,2023,2,fuel_used_gallons,1907,5970,4343,5506,4038,NA,raw_value,NA,false
+A3313801126225003_com_facil_sold_to,A3313801126225003,331380,Kaltag,2026-05-01,2026,5,com_facil_sold_to,0,8191,7200,8191,13240,NA,avg_same_month_other_years,NA,false
+A3313801126225003_govt_facil_sold_to,A3313801126225003,331380,Kaltag,2026-05-01,2026,5,govt_facil_sold_to,0,15297,13249,15297,15570,NA,avg_same_month_other_years,NA,false
 A3313801217225003_commercial_sold_to,A3313801217225003,331380,Kaltag,2017-06-01,2017,6,commercial_sold_to,11135,0,5763,18850,1256,NA,raw_value,NA,false
 A3313900217225003_residential_customers,A3313900217225003,331390,Kasigluk,2016-08-01,2016,8,residential_customers,228,122,123,121,118,NA,carry_forward,NA,false
 A3313900716225003_wind_kwh_generated,A3313900716225003,331390,Kasigluk,2016-01-01,2016,1,wind_kwh_generated,104977,49928,48316,65928,32814,NA,raw_value,NA,false
@@ -629,6 +671,7 @@ A3314000626225003_commercial_sold_to,A3314000626225003,331400,Kiana,2025-12-01,2
 A3314000726225003_commercial_sold_to,A3314000726225003,331400,Kiana,2026-01-01,2026,1,commercial_sold_to,32812,31319,30826,31205,19156,NA,raw_value,NA,false
 A3314000826225003_commercial_sold_to,A3314000826225003,331400,Kiana,2026-02-01,2026,2,commercial_sold_to,31091,32812,30826,32184,17141,NA,raw_value,NA,false
 A3314000926225003_commercial_sold_to,A3314000926225003,331400,Kiana,2026-03-01,2026,3,commercial_sold_to,31557,31091,30826,29467,18202,NA,raw_value,NA,false
+A3314001126225003_commercial_sold_to,A3314001126225003,331400,Kiana,2026-05-01,2026,5,commercial_sold_to,0,27843,24661,27843,17456,NA,avg_same_month_other_years,NA,false
 A3314100121225003_commercial_sold_to,A3314100121225003,331410,Kivalina,2020-07-01,2020,7,commercial_sold_to,35985,42524,46422,39936,11605,NA,raw_value,NA,false
 A3314100123225003_commercial_sold_to,A3314100123225003,331410,Kivalina,2022-07-01,2022,7,commercial_sold_to,35648,43298,54067,42150,11638,NA,raw_value,NA,false
 A3314100217225003_residential_customers,A3314100217225003,331410,Kivalina,2016-08-01,2016,8,residential_customers,186,86,112,86,88,86,manual_override,NA,false
@@ -700,9 +743,14 @@ A3314200726225003_commercial_sold_to,A3314200726225003,331420,Koyuk,2026-01-01,2
 A3314200826225003_commercial_sold_to,A3314200826225003,331420,Koyuk,2026-02-01,2026,2,commercial_sold_to,29381,37318,31571,35300,12693,NA,raw_value,NA,false
 A3314200926225003_commercial_sold_to,A3314200926225003,331420,Koyuk,2026-03-01,2026,3,commercial_sold_to,33282,29381,31571,27842,13135,NA,raw_value,NA,false
 A3314201026225003_commercial_sold_to,A3314201026225003,331420,Koyuk,2026-04-01,2026,4,commercial_sold_to,26304,33282,31571,33282,12925,NA,raw_value,NA,false
+A3314201126225003_commercial_sold_to,A3314201126225003,331420,Koyuk,2026-05-01,2026,5,commercial_sold_to,0,26304,25257,26304,13094,NA,avg_same_month_other_years,NA,false
+A3314201126225003_govt_facil_sold_to,A3314201126225003,331420,Koyuk,2026-05-01,2026,5,govt_facil_sold_to,0,28227,23742,28227,24411,NA,avg_same_month_other_years,NA,false
 A3314300516225003_commercial_sold_to,A3314300516225003,331430,Lower Kalskag,2015-11-01,2015,11,commercial_sold_to,11740,NA,11502,11264,5216,NA,raw_value,NA,false
 A3314300616225003_commercial_sold_to,A3314300616225003,331430,Lower Kalskag,2015-12-01,2015,12,commercial_sold_to,11264,11740,11502,11412,5741,NA,raw_value,NA,false
+A3314300626225003_fuel_used_gallons,A3314300626225003,331430,Lower Kalskag,2025-12-01,2025,12,fuel_used_gallons,20085,0,1674,0,0,0,manual_override,NA,false
+A3314300626225003_wind_kwh_generated,A3314300626225003,331430,Lower Kalskag,2025-12-01,2025,12,wind_kwh_generated,22485,NA,22485,NA,0,0,manual_override,NA,false
 A3314300716225003_commercial_sold_to,A3314300716225003,331430,Lower Kalskag,2016-01-01,2016,1,commercial_sold_to,11083,11264,6071,8684,5616,NA,raw_value,NA,false
+A3314301126225003_commercial_sold_to,A3314301126225003,331430,Lower Kalskag,2026-05-01,2026,5,commercial_sold_to,0,4573,4314,4573,5018,NA,avg_same_month_other_years,NA,false
 A3314400116225003_commercial_sold_to,A3314400116225003,331440,Marshall,2015-07-01,2015,7,commercial_sold_to,18994,NA,21297,19343,9646,NA,raw_value,NA,false
 A3314400125225003_commercial_sold_to,A3314400125225003,331440,Marshall,2024-07-01,2024,7,commercial_sold_to,17374,17337,12819,18641,9808,NA,raw_value,NA,false
 A3314400216225003_commercial_sold_to,A3314400216225003,331440,Marshall,2015-08-01,2015,8,commercial_sold_to,19343,18994,21297,20318,9388,NA,raw_value,NA,false
@@ -719,13 +767,17 @@ A3314400616225003_commercial_sold_to,A3314400616225003,331440,Marshall,2015-12-0
 A3314400618225003_fuel_used_gallons,A3314400618225003,331440,Marshall,2017-12-01,2017,12,fuel_used_gallons,16927,8895,9420,9406,10585,NA,raw_value,NA,false
 A3314400620225003_fuel_used_gallons,A3314400620225003,331440,Marshall,2019-12-01,2019,12,fuel_used_gallons,24038,8659,9836,9872,9874,NA,raw_value,NA,false
 A3314400626225003_commercial_sold_to,A3314400626225003,331440,Marshall,2025-12-01,2025,12,commercial_sold_to,23267,21900,12485,23992,8824,NA,raw_value,NA,false
+A3314400626225003_powerhouse_consumption_kwh,A3314400626225003,331440,Marshall,2025-12-01,2025,12,powerhouse_consumption_kwh,6648,5421,3442,6056,2469,NA,raw_value,NA,false
 A3314400716225003_commercial_sold_to,A3314400716225003,331440,Marshall,2016-01-01,2016,1,commercial_sold_to,23447,22199,9001,15080,9267,NA,raw_value,NA,false
 A3314400726225003_commercial_sold_to,A3314400726225003,331440,Marshall,2026-01-01,2026,1,commercial_sold_to,26083,23267,25066,24198,9003,NA,raw_value,NA,false
+A3314400726225003_powerhouse_consumption_kwh,A3314400726225003,331440,Marshall,2026-01-01,2026,1,powerhouse_consumption_kwh,6691,6648,4728,5457,2477,NA,raw_value,NA,false
 A3314400826225003_commercial_sold_to,A3314400826225003,331440,Marshall,2026-02-01,2026,2,commercial_sold_to,25130,26083,25066,26338,6704,NA,raw_value,NA,false
 A3314400926225003_commercial_sold_to,A3314400926225003,331440,Marshall,2026-03-01,2026,3,commercial_sold_to,26594,25130,25066,23792,7551,NA,raw_value,NA,false
 A3314401026225003_commercial_sold_to,A3314401026225003,331440,Marshall,2026-04-01,2026,4,commercial_sold_to,22455,26594,25066,26594,8114,NA,raw_value,NA,false
 A3314401124225003_commercial_sold_to,A3314401124225003,331440,Marshall,2024-05-01,2024,5,commercial_sold_to,18251,10795,12819,14066,9128,NA,raw_value,NA,false
 A3314401125225003_commercial_sold_to,A3314401125225003,331440,Marshall,2025-05-01,2025,5,commercial_sold_to,16377,6938,12485,11362,9336,NA,raw_value,NA,false
+A3314401126225003_commercial_sold_to,A3314401126225003,331440,Marshall,2026-05-01,2026,5,commercial_sold_to,0,22455,20052,22455,10040,NA,avg_same_month_other_years,NA,false
+A3314401126225003_govt_facil_sold_to,A3314401126225003,331440,Marshall,2026-05-01,2026,5,govt_facil_sold_to,0,42121,35093,42121,32525,NA,avg_same_month_other_years,NA,false
 A3314401224225003_commercial_sold_to,A3314401224225003,331440,Marshall,2024-06-01,2024,6,commercial_sold_to,17337,18251,12819,17812,8940,NA,raw_value,NA,false
 A3314401225225003_commercial_sold_to,A3314401225225003,331440,Marshall,2025-06-01,2025,6,commercial_sold_to,15785,16377,12485,14700,9113,NA,raw_value,NA,false
 A3314500119225003_powerhouse_consumption_kwh,A3314500119225003,331450,Mekoryuk,2018-07-01,2018,7,powerhouse_consumption_kwh,13366,8072,5142,7324,4120,NA,raw_value,NA,false
@@ -737,22 +789,28 @@ A3314500623225003_fuel_used_gallons,A3314500623225003,331450,Mekoryuk,2022-12-01
 A3314500716225003_commercial_sold_to,A3314500716225003,331450,Mekoryuk,2016-01-01,2016,1,commercial_sold_to,16310,16367,10017,12415,9415,NA,raw_value,NA,false
 A3314500726225003_commercial_sold_to,A3314500726225003,331450,Mekoryuk,2026-01-01,2026,1,commercial_sold_to,14614,11343,13030,11873,9585,NA,raw_value,NA,false
 A3314500926225003_commercial_sold_to,A3314500926225003,331450,Mekoryuk,2026-03-01,2026,3,commercial_sold_to,13812,12403,13030,11846,8286,NA,raw_value,NA,false
+A3314501126225003_commercial_sold_to,A3314501126225003,331450,Mekoryuk,2026-05-01,2026,5,commercial_sold_to,0,11290,10424,11290,8483,NA,avg_same_month_other_years,NA,false
 A3314600526225003_commercial_sold_to,A3314600526225003,331460,Minto,2025-11-01,2025,11,commercial_sold_to,26128,0,3618,8643,662,NA,raw_value,NA,false
 A3314600526225003_govt_facil_sold_to,A3314600526225003,331460,Minto,2025-11-01,2025,11,govt_facil_sold_to,36013,13570,18512,18544,8941,NA,raw_value,NA,false
+A3314600526225003_powerhouse_consumption_kwh,A3314600526225003,331460,Minto,2025-11-01,2025,11,powerhouse_consumption_kwh,5329,3820,2318,4878,710,NA,raw_value,NA,false
 A3314600625225003_govt_facil_sold_to,A3314600625225003,331460,Minto,2024-12-01,2024,12,govt_facil_sold_to,78961,1818,16312,12254,11260,NA,raw_value,NA,false
 A3314600626225003_commercial_sold_to,A3314600626225003,331460,Minto,2025-12-01,2025,12,commercial_sold_to,17286,26128,3618,20371,775,NA,raw_value,NA,false
 A3314600626225003_govt_facil_sold_to,A3314600626225003,331460,Minto,2025-12-01,2025,12,govt_facil_sold_to,23518,36013,18512,30676,16805,NA,raw_value,NA,false
+A3314600626225003_powerhouse_consumption_kwh,A3314600626225003,331460,Minto,2025-12-01,2025,12,powerhouse_consumption_kwh,5935,5329,2318,5687,992,NA,raw_value,NA,false
 A3314600724225003_diesel_kwh_generated,A3314600724225003,331460,Minto,2024-01-01,2024,1,diesel_kwh_generated,126996,104723,82593,98994,77614,NA,raw_value,NA,false
 A3314600724225003_fuel_used_gallons,A3314600724225003,331460,Minto,2024-01-01,2024,1,fuel_used_gallons,10568,7947,7038,8464,5571,NA,raw_value,NA,false
 A3314600724225003_govt_facil_sold_to,A3314600724225003,331460,Minto,2024-01-01,2024,1,govt_facil_sold_to,32869,19487,16312,20960,12574,NA,raw_value,NA,false
 A3314600725225003_govt_facil_sold_to,A3314600725225003,331460,Minto,2025-01-01,2025,1,govt_facil_sold_to,22690,78961,18512,49267,13592,NA,raw_value,NA,false
 A3314600726225003_commercial_sold_to,A3314600726225003,331460,Minto,2026-01-01,2026,1,commercial_sold_to,14614,17286,16438,16920,900,NA,raw_value,NA,false
+A3314600726225003_diesel_kwh_generated,A3314600726225003,331460,Minto,2026-01-01,2026,1,diesel_kwh_generated,134242,130017,109266,123438,82552,NA,raw_value,NA,false
 A3314600726225003_govt_facil_sold_to,A3314600726225003,331460,Minto,2026-01-01,2026,1,govt_facil_sold_to,25339,23518,23468,24178,13327,NA,raw_value,NA,false
+A3314600726225003_powerhouse_consumption_kwh,A3314600726225003,331460,Minto,2026-01-01,2026,1,powerhouse_consumption_kwh,6045,5935,4125,4605,1219,NA,raw_value,NA,false
 A3314600824225003_govt_facil_sold_to,A3314600824225003,331460,Minto,2024-02-01,2024,2,govt_facil_sold_to,22434,32869,16312,25206,12083,NA,raw_value,NA,false
 A3314600826225003_commercial_sold_to,A3314600826225003,331460,Minto,2026-02-01,2026,2,commercial_sold_to,16553,14614,16438,16789,0,NA,raw_value,NA,false
 A3314600826225003_govt_facil_sold_to,A3314600826225003,331460,Minto,2026-02-01,2026,2,govt_facil_sold_to,24838,25339,23468,25262,11843,NA,raw_value,NA,false
 A3314600926225003_commercial_sold_to,A3314600926225003,331460,Minto,2026-03-01,2026,3,commercial_sold_to,18964,16553,16438,16088,0,NA,raw_value,NA,false
 A3314600926225003_govt_facil_sold_to,A3314600926225003,331460,Minto,2026-03-01,2026,3,govt_facil_sold_to,25185,24838,23468,21675,10630,NA,raw_value,NA,false
+A3314600926225003_powerhouse_consumption_kwh,A3314600926225003,331460,Minto,2026-03-01,2026,3,powerhouse_consumption_kwh,4104,3275,4125,3402,888,NA,raw_value,NA,false
 A3314601026225003_commercial_sold_to,A3314601026225003,331460,Minto,2026-04-01,2026,4,commercial_sold_to,15622,18964,16438,18964,0,NA,raw_value,NA,false
 A3314700217225003_residential_customers,A3314700217225003,331470,Mountain Village,2016-08-01,2016,8,residential_customers,71,182,167,184,170,NA,avg_preceding_proceeding,NA,false
 A3314700316225003_commercial_sold_to,A3314700316225003,331470,Mountain Village,2015-09-01,2015,9,commercial_sold_to,42779,42351,42512,42576,29570,NA,raw_value,NA,false
@@ -766,6 +824,7 @@ A3314700726225003_commercial_sold_to,A3314700726225003,331470,Mountain Village,2
 A3314700826225003_commercial_sold_to,A3314700826225003,331470,Mountain Village,2026-02-01,2026,2,commercial_sold_to,46869,47786,47202,51282,29412,NA,raw_value,NA,false
 A3314700926225003_commercial_sold_to,A3314700926225003,331470,Mountain Village,2026-03-01,2026,3,commercial_sold_to,54778,46869,47202,43121,29898,NA,raw_value,NA,false
 A3314700926225003_residential_sold_to,A3314700926225003,331470,Mountain Village,2026-03-01,2026,3,residential_sold_to,126874,72790,84751,68924,81163,NA,raw_value,NA,false
+A3314701126225003_commercial_sold_to,A3314701126225003,331470,Mountain Village,2026-05-01,2026,5,commercial_sold_to,0,39373,37761,39373,30356,NA,avg_same_month_other_years,NA,false
 A3314800116225003_commercial_sold_to,A3314800116225003,331480,New Stuyahok,2015-07-01,2015,7,commercial_sold_to,19107,NA,20046,18882,6992,NA,raw_value,NA,false
 A3314800125225003_powerhouse_consumption_kwh,A3314800125225003,331480,New Stuyahok,2024-07-01,2024,7,powerhouse_consumption_kwh,7159,5888,7060,6813,3397,NA,raw_value,NA,false
 A3314800216225003_commercial_sold_to,A3314800216225003,331480,New Stuyahok,2015-08-01,2015,8,commercial_sold_to,18882,19107,20046,20373,6449,NA,raw_value,NA,false
@@ -784,6 +843,9 @@ A3314800826225003_commercial_sold_to,A3314800826225003,331480,New Stuyahok,2026-
 A3314800924225003_powerhouse_consumption_kwh,A3314800924225003,331480,New Stuyahok,2024-03-01,2024,3,powerhouse_consumption_kwh,14957,3530,7060,4954,3987,NA,raw_value,NA,false
 A3314800926225003_commercial_sold_to,A3314800926225003,331480,New Stuyahok,2026-03-01,2026,3,commercial_sold_to,26907,24144,25162,23673,6431,NA,raw_value,NA,false
 A3314801026225003_commercial_sold_to,A3314801026225003,331480,New Stuyahok,2026-04-01,2026,4,commercial_sold_to,23202,26907,25162,26907,6633,NA,raw_value,NA,false
+A3314801126225003_com_facil_sold_to,A3314801126225003,331480,New Stuyahok,2026-05-01,2026,5,com_facil_sold_to,0,7690,6226,7690,21977,NA,avg_preceding_proceeding,NA,false
+A3314801126225003_commercial_sold_to,A3314801126225003,331480,New Stuyahok,2026-05-01,2026,5,commercial_sold_to,0,23202,20129,23202,6584,NA,avg_same_month_other_years,NA,false
+A3314801126225003_govt_facil_sold_to,A3314801126225003,331480,New Stuyahok,2026-05-01,2026,5,govt_facil_sold_to,0,41846,30609,41846,32412,NA,avg_same_month_other_years,NA,false
 A3314900217225003_residential_customers,A3314900217225003,331490,Nightmute,2016-08-01,2016,8,residential_customers,262,56,108,56,53,56,manual_override,NA,false
 A3314900417225003_residential_customers,A3314900417225003,331490,Nightmute,2016-10-01,2016,10,residential_customers,259,56,108,159,55,57,manual_override,NA,false
 A3314900516225003_commercial_sold_to,A3314900516225003,331490,Nightmute,2015-11-01,2015,11,commercial_sold_to,8688,NA,9203,9718,2916,NA,raw_value,NA,false
@@ -830,6 +892,7 @@ A3315001024225003_solar_kwh_generated,A3315001024225003,331500,Noatak,2024-04-01
 A3315001026225003_commercial_sold_to,A3315001026225003,331500,Noatak,2026-04-01,2026,4,commercial_sold_to,20731,26907,18654,26907,10766,NA,raw_value,NA,false
 A3315001124225003_solar_kwh_generated,A3315001124225003,331500,Noatak,2024-05-01,2024,5,solar_kwh_generated,45141,35382,21676,35845,17578,NA,raw_value,NA,false
 A3315001125225003_solar_kwh_generated,A3315001125225003,331500,Noatak,2025-05-01,2025,5,solar_kwh_generated,17578,NA,17578,NA,45141,NA,raw_value,NA,false
+A3315001126225003_commercial_sold_to,A3315001126225003,331500,Noatak,2026-05-01,2026,5,commercial_sold_to,0,20731,14923,20731,10097,NA,avg_same_month_other_years,NA,false
 A3315001224225003_solar_kwh_generated,A3315001224225003,331500,Noatak,2024-06-01,2024,6,solar_kwh_generated,36308,45141,21676,45141,NA,NA,raw_value,NA,false
 A3315100217225003_residential_customers,A3315100217225003,331510,Noorvik,2016-08-01,2016,8,residential_customers,85,132,124,134,134,134,manual_override,NA,false
 A3315100417225003_residential_customers,A3315100417225003,331510,Noorvik,2016-10-01,2016,10,residential_customers,84,136,124,110,135,137,manual_override,NA,false
@@ -838,9 +901,11 @@ A3315100526225003_commercial_sold_to,A3315100526225003,331510,Noorvik,2025-11-01
 A3315100626225003_commercial_sold_to,A3315100626225003,331510,Noorvik,2025-12-01,2025,12,commercial_sold_to,24490,25886,14957,25706,15597,NA,raw_value,NA,false
 A3315100717225003_residential_customers,A3315100717225003,331510,Noorvik,2017-01-01,2017,1,residential_customers,83,139,127,112,136,139,manual_override,NA,false
 A3315100726225003_commercial_sold_to,A3315100726225003,331510,Noorvik,2026-01-01,2026,1,commercial_sold_to,25527,24490,24666,24718,16512,NA,raw_value,NA,false
+A3315100726225003_powerhouse_consumption_kwh,A3315100726225003,331510,Noorvik,2026-01-01,2026,1,powerhouse_consumption_kwh,6910,3513,4605,3738,3684,NA,raw_value,NA,false
 A3315100817225003_residential_customers,A3315100817225003,331510,Noorvik,2017-02-01,2017,2,residential_customers,85,83,127,110,136,138,manual_override,NA,false
 A3315100826225003_commercial_sold_to,A3315100826225003,331510,Noorvik,2026-02-01,2026,2,commercial_sold_to,24947,25527,24666,26185,14636,NA,raw_value,NA,false
 A3315100926225003_commercial_sold_to,A3315100926225003,331510,Noorvik,2026-03-01,2026,3,commercial_sold_to,26843,24947,24666,23148,14067,NA,raw_value,NA,false
+A3315101126225003_commercial_sold_to,A3315101126225003,331510,Noorvik,2026-05-01,2026,5,commercial_sold_to,0,21348,19733,21348,11178,NA,avg_same_month_other_years,NA,false
 A3315200217225003_residential_customers,A3315200217225003,331520,Nulato,2016-08-01,2016,8,residential_customers,1859,109,552,109,109,NA,avg_same_month_other_years,NA,false
 A3315200417225003_residential_customers,A3315200417225003,331520,Nulato,2016-10-01,2016,10,residential_customers,1893,109,552,994,107,NA,avg_same_month_other_years,NA,false
 A3315200517225003_residential_customers,A3315200517225003,331520,Nulato,2016-11-01,2016,11,residential_customers,1880,1893,552,1000,108,NA,avg_same_month_other_years,NA,false
@@ -848,6 +913,7 @@ A3315200616225003_commercial_sold_to,A3315200616225003,331520,Nulato,2015-12-01,
 A3315200626225003_commercial_sold_to,A3315200626225003,331520,Nulato,2025-12-01,2025,12,commercial_sold_to,10015,8948,1580,10356,1197,NA,raw_value,NA,false
 A3315200716225003_commercial_sold_to,A3315200716225003,331520,Nulato,2016-01-01,2016,1,commercial_sold_to,12488,11969,1041,5984,1176,NA,raw_value,NA,false
 A3315200717225003_residential_customers,A3315200717225003,331520,Nulato,2017-01-01,2017,1,residential_customers,1864,107,399,984,108,NA,avg_same_month_other_years,NA,false
+A3315200723225003_com_facil_sold_to,A3315200723225003,331520,Nulato,2023-01-01,2023,1,com_facil_sold_to,47336,32165,28555,31336,27609,NA,raw_value,NA,false
 A3315200726225003_commercial_sold_to,A3315200726225003,331520,Nulato,2026-01-01,2026,1,commercial_sold_to,11763,10015,10680,9932,1249,NA,raw_value,NA,false
 A3315200817225003_residential_customers,A3315200817225003,331520,Nulato,2017-02-01,2017,2,residential_customers,1861,1864,399,986,108,NA,avg_same_month_other_years,NA,false
 A3315200926225003_commercial_sold_to,A3315200926225003,331520,Nulato,2026-03-01,2026,3,commercial_sold_to,11849,9849,10680,9554,0,NA,raw_value,NA,false
@@ -868,6 +934,7 @@ A3315300824225003_commercial_sold_to,A3315300824225003,331530,Nunapitchuk,2024-0
 A3315300924225003_commercial_sold_to,A3315300924225003,331530,Nunapitchuk,2024-03-01,2024,3,commercial_sold_to,16798,15858,13257,16514,9823,NA,raw_value,NA,false
 A3315300926225003_commercial_sold_to,A3315300926225003,331530,Nunapitchuk,2026-03-01,2026,3,commercial_sold_to,15706,13739,14333,12866,9932,NA,raw_value,NA,false
 A3315301024225003_commercial_sold_to,A3315301024225003,331530,Nunapitchuk,2024-04-01,2024,4,commercial_sold_to,17171,16798,13257,15427,9204,NA,raw_value,NA,false
+A3315301126225003_commercial_sold_to,A3315301126225003,331530,Nunapitchuk,2026-05-01,2026,5,commercial_sold_to,0,11994,11467,11994,9297,NA,avg_same_month_other_years,NA,false
 A3315400116225003_commercial_sold_to,A3315400116225003,331540,Old Harbor,2015-07-01,2015,7,commercial_sold_to,10037,NA,8082,11869,0,NA,raw_value,NA,false
 A3315400216225003_commercial_sold_to,A3315400216225003,331540,Old Harbor,2015-08-01,2015,8,commercial_sold_to,11869,10037,8082,10080,0,NA,raw_value,NA,false
 A3315400217225003_residential_customers,A3315400217225003,331540,Old Harbor,2016-08-01,2016,8,residential_customers,203,93,123,94,88,NA,avg_preceding_proceeding,NA,false
@@ -875,17 +942,24 @@ A3315400316225003_commercial_sold_to,A3315400316225003,331540,Old Harbor,2015-09
 A3315400417225003_residential_customers,A3315400417225003,331540,Old Harbor,2016-10-01,2016,10,residential_customers,208,95,123,151,88,NA,carry_forward,NA,false
 A3315400517225003_residential_customers,A3315400517225003,331540,Old Harbor,2016-11-01,2016,11,residential_customers,207,208,123,153,90,96,manual_override,NA,false
 A3315400617225003_fuel_used_gallons,A3315400617225003,331540,Old Harbor,2016-12-01,2016,12,fuel_used_gallons,7148,5165,5180,5285,3629,NA,raw_value,NA,false
+A3315400626225003_fuel_used_gallons,A3315400626225003,331540,Old Harbor,2025-12-01,2025,12,fuel_used_gallons,7076,6441,4560,6210,5059,NA,raw_value,NA,false
+A3315400626225003_powerhouse_consumption_kwh,A3315400626225003,331540,Old Harbor,2025-12-01,2025,12,powerhouse_consumption_kwh,14745,3613,4195,3746,3243,NA,avg_same_month_other_years,NA,false
 A3315400717225003_residential_customers,A3315400717225003,331540,Old Harbor,2017-01-01,2017,1,residential_customers,207,98,115,152,90,NA,carry_forward,NA,false
 A3315400722225003_fuel_used_gallons,A3315400722225003,331540,Old Harbor,2022-01-01,2022,1,fuel_used_gallons,7347,4444,5014,4864,4952,NA,raw_value,NA,false
+A3315400726225003_peak_consumption_kw,A3315400726225003,331540,Old Harbor,2026-01-01,2026,1,peak_consumption_kw,1670,148,461,148,NA,NA,avg_preceding_proceeding,NA,false
 A3315400817225003_residential_customers,A3315400817225003,331540,Old Harbor,2017-02-01,2017,2,residential_customers,207,207,115,152,90,98,manual_override,NA,false
+A3315401126225003_com_facil_sold_to,A3315401126225003,331540,Old Harbor,2026-05-01,2026,5,com_facil_sold_to,0,14800,12260,14800,22833,NA,avg_same_month_other_years,NA,false
+A3315401126225003_govt_facil_sold_to,A3315401126225003,331540,Old Harbor,2026-05-01,2026,5,govt_facil_sold_to,0,13251,10423,13251,11175,NA,avg_same_month_other_years,NA,false
 A3315500124225003_commercial_sold_to,A3315500124225003,331550,Pilot Station,2023-07-01,2023,7,commercial_sold_to,30201,8471,18696,15957,21694,19336,manual_override,Assume split of two months' data,false
 A3315500217225003_residential_customers,A3315500217225003,331550,Pilot Station,2016-08-01,2016,8,residential_customers,36,136,113,137,132,NA,avg_preceding_proceeding,NA,false
 A3315500417225003_residential_customers,A3315500417225003,331550,Pilot Station,2016-10-01,2016,10,residential_customers,37,138,113,87,132,NA,carry_forward,NA,false
+A3315500426225003_peak_consumption_kw,A3315500426225003,331550,Pilot Station,2025-10-01,2025,10,peak_consumption_kw,894,NA,548,386,NA,NA,avg_preceding_proceeding,NA,false
 A3315500517225003_residential_customers,A3315500517225003,331550,Pilot Station,2016-11-01,2016,11,residential_customers,36,37,113,88,132,138,manual_override,NA,false
 A3315500622225003_fuel_used_gallons,A3315500622225003,331550,Pilot Station,2021-12-01,2021,12,fuel_used_gallons,29783,17628,13866,16414,11013,NA,raw_value,NA,false
 A3315500717225003_residential_customers,A3315500717225003,331550,Pilot Station,2017-01-01,2017,1,residential_customers,38,138,120,88,132,138,manual_override,NA,false
 A3315500817225003_residential_customers,A3315500817225003,331550,Pilot Station,2017-02-01,2017,2,residential_customers,38,38,120,90,133,138,manual_override,NA,false
 A3315500918225003_residential_sold_to,A3315500918225003,331550,Pilot Station,2018-03-01,2018,3,residential_sold_to,1061401,57559,144528,57559,64376,NA,carry_forward,NA,false
+A3315501126225003_commercial_sold_to,A3315501126225003,331550,Pilot Station,2026-05-01,2026,5,commercial_sold_to,0,20426,19482,20426,19509,NA,avg_same_month_other_years,NA,false
 A3315501223225003_commercial_sold_to,A3315501223225003,331550,Pilot Station,2023-06-01,2023,6,commercial_sold_to,8471,20538,18696,25370,20182,19336,manual_override,Assume split of two months' data,false
 A3315600217225003_residential_customers,A3315600217225003,331560,Pitkas Point,2016-08-01,2016,8,residential_customers,90,30,54,30,27,NA,carry_forward,NA,false
 A3315600417225003_residential_customers,A3315600417225003,331560,Pitkas Point,2016-10-01,2016,10,residential_customers,141,30,54,86,27,NA,carry_forward,NA,false
@@ -1223,6 +1297,7 @@ A3317200923225003_commercial_sold_to,A3317200923225003,331720,Kalskag,2023-03-01
 A3317200923225003_fuel_used_gallons,A3317200923225003,331720,Kalskag,2023-03-01,2023,3,fuel_used_gallons,0,5868,8161,8222,9290,NA,raw_value,NA,false
 A3317200926225003_commercial_sold_to,A3317200926225003,331720,Kalskag,2026-03-01,2026,3,commercial_sold_to,16195,14461,16070,13884,4986,NA,raw_value,NA,false
 A3317201026225003_commercial_sold_to,A3317201026225003,331720,Kalskag,2026-04-01,2026,4,commercial_sold_to,13307,16195,16070,16195,5874,NA,raw_value,NA,false
+A3317201126225003_commercial_sold_to,A3317201126225003,331720,Kalskag,2026-05-01,2026,5,commercial_sold_to,0,13307,12856,13307,5520,NA,avg_same_month_other_years,NA,false
 A3317300116225003_commercial_sold_to,A3317300116225003,331730,Wales,2015-07-01,2015,7,commercial_sold_to,10225,NA,11964,11040,4200,NA,raw_value,NA,false
 A3317300124225003_com_facil_sold_to,A3317300124225003,331730,Wales,2023-07-01,2023,7,com_facil_sold_to,24356,29125,32375,28106,11937,NA,raw_value,NA,false
 A3317300216225003_commercial_sold_to,A3317300216225003,331730,Wales,2015-08-01,2015,8,commercial_sold_to,11040,10225,11964,11408,4869,NA,raw_value,NA,false
@@ -1325,6 +1400,7 @@ A3317700925225003_unbilled_sold_to,A3317700925225003,331770,Arctic Village,2025-
 A3317701018225003_govt_facil_sold_to,A3317701018225003,331770,Arctic Village,2018-04-01,2018,4,govt_facil_sold_to,2432,NA,840,NA,616,NA,annual_average,NA,NA
 A3317701024225003_commercial_sold_to,A3317701024225003,331770,Arctic Village,2024-04-01,2024,4,commercial_sold_to,51862,51862,36488,51862,18081,NA,raw_value,NA,NA
 A3317701124225003_commercial_sold_to,A3317701124225003,331770,Arctic Village,2024-05-01,2024,5,commercial_sold_to,51862,51862,36488,51876,9391,NA,raw_value,NA,NA
+A3317701126225003_unbilled_sold_to,A3317701126225003,331770,Arctic Village,2026-05-01,2026,5,unbilled_sold_to,12851,5701,8255,5240,2066,NA,raw_value,NA,false
 A3317701224225003_commercial_sold_to,A3317701224225003,331770,Arctic Village,2024-06-01,2024,6,commercial_sold_to,51890,51862,36488,58185,11803,NA,raw_value,NA,NA
 A3317800118225003_govt_facil_sold_to,A3317800118225003,331780,Atmautluak,2017-07-01,2017,7,govt_facil_sold_to,13628,1172,2618,906,726,NA,avg_preceding_proceeding,NA,NA
 A3317800123225003_powerhouse_consumption_kwh,A3317800123225003,331780,Atmautluak,2022-07-01,2022,7,powerhouse_consumption_kwh,6186,6029,6549,7024,3368,NA,raw_value,NA,NA
@@ -1382,6 +1458,8 @@ A3318000726225003_commercial_sold_to,A3318000726225003,331800,"Bethel, Oscarvill
 A3318000726225003_residential_sold_to,A3318000726225003,331800,"Bethel, Oscarville",2026-01-01,2026,1,residential_sold_to,1525259,1306519,1297200,1266446,1100268,NA,raw_value,NA,false
 A3318000817225003_residential_customers,A3318000817225003,331800,"Bethel, Oscarville",2017-02-01,2017,2,residential_customers,232,232,1605,1066,1807,1890,manual_override,NA,false
 A3318000926225003_commercial_sold_to,A3318000926225003,331800,"Bethel, Oscarville",2026-03-01,2026,3,commercial_sold_to,2001330,1797750,1875726,1746210,1326772,NA,raw_value,NA,false
+A3318001126225003_commercial_sold_to,A3318001126225003,331800,"Bethel, Oscarville",2026-05-01,2026,5,commercial_sold_to,0,1694671,1500581,1694671,1268236,NA,annual_average,NA,false
+A3318001126225003_govt_facil_sold_to,A3318001126225003,331800,"Bethel, Oscarville",2026-05-01,2026,5,govt_facil_sold_to,0,594983,517406,594983,458590,NA,annual_average,NA,false
 A3318100222225003_peak_consumption_kw,A3318100222225003,331810,Birch Creek,2021-08-01,2021,8,peak_consumption_kw,149,28,42,39,30,NA,raw_value,NA,false
 A3318100718225003_powerhouse_consumption_kwh,A3318100718225003,331810,Birch Creek,2018-01-01,2018,1,powerhouse_consumption_kwh,1021,664,372,386,314,NA,raw_value,NA,false
 A3318100722225003_peak_consumption_kw,A3318100722225003,331810,Birch Creek,2022-01-01,2022,1,peak_consumption_kw,612,73,145,44,33,NA,raw_value,NA,false
@@ -1389,6 +1467,7 @@ A3318100822225003_residential_sold_to,A3318100822225003,331810,Birch Creek,2022-
 A3318101022225003_peak_consumption_kw,A3318101022225003,331810,Birch Creek,2022-04-01,2022,4,peak_consumption_kw,123,40,145,40,32,NA,raw_value,NA,false
 A3318101022225003_residential_sold_to,A3318101022225003,331810,Birch Creek,2022-04-01,2022,4,residential_sold_to,5848,3227,4498,4209,1526,NA,raw_value,NA,false
 A3318101219225003_peak_consumption_kw,A3318101219225003,331810,Birch Creek,2019-06-01,2019,6,peak_consumption_kw,401,40,70,40,25,NA,raw_value,NA,false
+A3318200225225003_solar_kwh_generated,A3318200225225003,331820,Buckland,2024-08-01,2024,8,solar_kwh_generated,36580,NA,36580,NA,15000,NA,avg_same_month_other_years,NA,false
 A3318200523225003_govt_facil_sold_to,A3318200523225003,331820,Buckland,2022-11-01,2022,11,govt_facil_sold_to,49701,8217,13581,8604,8299,NA,avg_preceding_proceeding,NA,false
 A3318200723225003_unbilled_customers,A3318200723225003,331820,Buckland,2023-01-01,2023,1,unbilled_customers,969,3,166,498,2,NA,avg_same_month_other_years,NA,false
 A3318200823225003_unbilled_customers,A3318200823225003,331820,Buckland,2023-02-01,2023,2,unbilled_customers,992,969,166,486,2,NA,avg_same_month_other_years,NA,false
@@ -1396,6 +1475,7 @@ A3318200826225003_total_kwh_purchased,A3318200826225003,331820,Buckland,2026-02-
 A3318200921225003_fuel_used_gallons,A3318200921225003,331820,Buckland,2021-03-01,2021,3,fuel_used_gallons,25444,13226,13350,19335,12676,NA,raw_value,NA,false
 A3318200922225003_powerhouse_consumption_kwh,A3318200922225003,331820,Buckland,2022-03-01,2022,3,powerhouse_consumption_kwh,21233,NA,7860,3824,4145,NA,raw_value,NA,false
 A3318200923225003_fuel_used_gallons,A3318200923225003,331820,Buckland,2023-03-01,2023,3,fuel_used_gallons,34946,14925,16123,18982,11621,NA,raw_value,NA,false
+A3318200925225003_solar_kwh_generated,A3318200925225003,331820,Buckland,2025-03-01,2025,3,solar_kwh_generated,34305,NA,14326,NA,NA,NA,avg_same_month_other_years,NA,false
 A3318201021225003_fuel_used_gallons,A3318201021225003,331820,Buckland,2021-04-01,2021,4,fuel_used_gallons,25444,25444,13350,18242,12330,NA,raw_value,NA,false
 A3318201022225003_com_facil_sold_to,A3318201022225003,331820,Buckland,2022-04-01,2022,4,com_facil_sold_to,31984,11134,12904,11134,11880,NA,raw_value,NA,false
 A3318201026225003_com_facil_sold_to,A3318201026225003,331820,Buckland,2026-04-01,2026,4,com_facil_sold_to,23558,12412,14156,10672,12816,NA,raw_value,NA,false
@@ -1404,6 +1484,7 @@ A3318300123225003_powerhouse_consumption_kwh,A3318300123225003,331830,Central,20
 A3318300219225003_peak_consumption_kw,A3318300219225003,331830,Central,2018-08-01,2018,8,peak_consumption_kw,180,92,128,96,99,NA,raw_value,NA,false
 A3318300223225003_powerhouse_consumption_kwh,A3318300223225003,331830,Central,2022-08-01,2022,8,powerhouse_consumption_kwh,2273,2365,1505,2098,1442,NA,raw_value,NA,false
 A3318300621225003_powerhouse_consumption_kwh,A3318300621225003,331830,Central,2020-12-01,2020,12,powerhouse_consumption_kwh,2081,1846,1459,1894,1321,NA,raw_value,NA,false
+A3318300921225003_powerhouse_consumption_kwh,A3318300921225003,331830,Central,2021-03-01,2021,3,powerhouse_consumption_kwh,2003,1800,1513,1599,1236,NA,raw_value,NA,false
 A3318301118225003_peak_consumption_kw,A3318301118225003,331830,Central,2018-05-01,2018,5,peak_consumption_kw,250,128,128,124,81,NA,raw_value,NA,false
 A3318301223225003_powerhouse_consumption_kwh,A3318301223225003,331830,Central,2023-06-01,2023,6,powerhouse_consumption_kwh,2485,1834,1389,1719,1406,NA,raw_value,NA,false
 A3318400320225003_fuel_used_gallons,A3318400320225003,331840,Chalkyitsik,2019-09-01,2019,9,fuel_used_gallons,4419,1974,2331,1930,2329,NA,raw_value,NA,false
@@ -1468,6 +1549,7 @@ A3318501220225003_fuel_used_gallons,A3318501220225003,331850,Chenega Bay,2020-06
 A3318501224225003_peak_consumption_kw,A3318501224225003,331850,Chenega Bay,2024-06-01,2024,6,peak_consumption_kw,115,115,115,115,62,NA,raw_value,NA,false
 A3318501225225003_govt_facil_sold_to,A3318501225225003,331850,Chenega Bay,2025-06-01,2025,6,govt_facil_sold_to,2161,302,876,1889,180,NA,raw_value,NA,false
 A3318501225225003_peak_consumption_kw,A3318501225225003,331850,Chenega Bay,2025-06-01,2025,6,peak_consumption_kw,115,115,115,115,62,NA,raw_value,NA,false
+A3318501226225003_peak_consumption_kw,A3318501226225003,331850,Chenega Bay,2026-06-01,2026,6,peak_consumption_kw,115,115,115,115,68,NA,carry_forward,NA,false
 A3318600118225003_powerhouse_consumption_kwh,A3318600118225003,331860,Chignik,2017-07-01,2017,7,powerhouse_consumption_kwh,4957,2422,2048,2342,2189,NA,raw_value,NA,false
 A3318600119225003_commercial_sold_to,A3318600119225003,331860,Chignik,2018-07-01,2018,7,commercial_sold_to,71922,71408,36360,56676,41355,NA,raw_value,NA,false
 A3318600119225003_diesel_kwh_generated,A3318600119225003,331860,Chignik,2018-07-01,2018,7,diesel_kwh_generated,108503,101651,70222,100082,73852,NA,raw_value,NA,false
@@ -1499,6 +1581,7 @@ A3318700319225003_unbilled_sold_to,A3318700319225003,331870,Chignik Lagoon,2018-
 A3318700417225003_unbilled_sold_to,A3318700417225003,331870,Chignik Lagoon,2016-10-01,2016,10,unbilled_sold_to,18440,11725,14655,15521,1412,NA,raw_value,NA,false
 A3318700419225003_unbilled_sold_to,A3318700419225003,331870,Chignik Lagoon,2018-10-01,2018,10,unbilled_sold_to,8080,4417,8645,2510,2564,NA,raw_value,NA,false
 A3318700517225003_unbilled_sold_to,A3318700517225003,331870,Chignik Lagoon,2016-11-01,2016,11,unbilled_sold_to,19317,18440,14655,9250,632,NA,raw_value,NA,false
+A3318700618225003_peak_consumption_kw,A3318700618225003,331870,Chignik Lagoon,2017-12-01,2017,12,peak_consumption_kw,123,82,89,98,38,NA,raw_value,NA,false
 A3318700618225003_unbilled_sold_to,A3318700618225003,331870,Chignik Lagoon,2017-12-01,2017,12,unbilled_sold_to,12470,81,1352,3862,653,NA,raw_value,NA,false
 A3318700622225003_powerhouse_consumption_kwh,A3318700622225003,331870,Chignik Lagoon,2021-12-01,2021,12,powerhouse_consumption_kwh,8306,678,1778,2744,1890,NA,raw_value,NA,false
 A3318700626225003_commercial_sold_to,A3318700626225003,331870,Chignik Lagoon,2025-12-01,2025,12,commercial_sold_to,18557,12198,11577,13786,11018,NA,raw_value,NA,false
@@ -1513,6 +1596,7 @@ A3318701116225003_unbilled_sold_to,A3318701116225003,331870,Chignik Lagoon,2016-
 A3318701118225003_unbilled_sold_to,A3318701118225003,331870,Chignik Lagoon,2018-05-01,2018,5,unbilled_sold_to,18345,16823,8645,18248,5412,NA,raw_value,NA,false
 A3318701119225003_unbilled_sold_to,A3318701119225003,331870,Chignik Lagoon,2019-05-01,2019,5,unbilled_sold_to,22620,19608,7452,17716,4985,NA,raw_value,NA,false
 A3318701121225003_commercial_sold_to,A3318701121225003,331870,Chignik Lagoon,2021-05-01,2021,5,commercial_sold_to,1655,10024,10629,10456,10255,NA,raw_value,NA,false
+A3318701216225003_peak_consumption_kw,A3318701216225003,331870,Chignik Lagoon,2016-06-01,2016,6,peak_consumption_kw,121,75,89,97,21,NA,raw_value,NA,false
 A3318701216225003_unbilled_sold_to,A3318701216225003,331870,Chignik Lagoon,2016-06-01,2016,6,unbilled_sold_to,26198,29518,14655,26868,3708,NA,raw_value,NA,false
 A3318701218225003_unbilled_sold_to,A3318701218225003,331870,Chignik Lagoon,2018-06-01,2018,6,unbilled_sold_to,19674,18345,8645,19866,4361,NA,raw_value,NA,false
 A3318701219225003_unbilled_sold_to,A3318701219225003,331870,Chignik Lagoon,2019-06-01,2019,6,unbilled_sold_to,15823,22620,7452,11513,4746,NA,raw_value,NA,false
@@ -1540,6 +1624,9 @@ A3318801024225003_com_facil_sold_to,A3318801024225003,331880,Chignik Lake,2024-0
 A3318801223225003_powerhouse_consumption_kwh,A3318801223225003,331880,Chignik Lake,2023-06-01,2023,6,powerhouse_consumption_kwh,1800,856,1515,773,819,NA,raw_value,NA,false
 A3318900121225003_peak_consumption_kw,A3318900121225003,331890,Chitina,2020-07-01,2020,7,peak_consumption_kw,190,174,104,132,105,NA,raw_value,NA,false
 A3318900126225003_commercial_sold_to,A3318900126225003,331890,Chitina,2025-07-01,2025,7,commercial_sold_to,30538,26180,19106,25215,24555,NA,raw_value,NA,false
+A3318900127225003_com_facil_sold_to,A3318900127225003,331890,Chitina,2026-07-01,2026,7,com_facil_sold_to,3593,2738,2733,2738,1125,NA,raw_value,NA,false
+A3318900127225003_fuel_used_gallons,A3318900127225003,331890,Chitina,2026-07-01,2026,7,fuel_used_gallons,6495,3156,3427,3156,3507,NA,avg_same_month_other_years,NA,false
+A3318900127225003_peak_consumption_kw,A3318900127225003,331890,Chitina,2026-07-01,2026,7,peak_consumption_kw,199,127,114,127,113,NA,raw_value,NA,false
 A3318900323225003_fuel_used_gallons,A3318900323225003,331890,Chitina,2022-09-01,2022,9,fuel_used_gallons,6736,3427,3552,3171,2863,NA,raw_value,NA,false
 A3318900626225003_com_facil_sold_to,A3318900626225003,331890,Chitina,2025-12-01,2025,12,com_facil_sold_to,3703,2308,2242,2772,1409,NA,raw_value,NA,false
 A3318900721225003_unbilled_sold_to,A3318900721225003,331890,Chitina,2021-01-01,2021,1,unbilled_sold_to,0,575,527,575,498,NA,avg_preceding_proceeding,NA,false
@@ -1571,7 +1658,9 @@ A3319100924225003_unbilled_sold_to,A3319100924225003,331910,Clark's Point,2024-0
 A3319100925225003_unbilled_sold_to,A3319100925225003,331910,Clark's Point,2025-03-01,2025,3,unbilled_sold_to,203,79,79,60,37,NA,raw_value,NA,false
 A3319101024225003_unbilled_sold_to,A3319101024225003,331910,Clark's Point,2024-04-01,2024,4,unbilled_sold_to,128,66,56,54,13,NA,raw_value,NA,false
 A3319101026225003_unbilled_sold_to,A3319101026225003,331910,Clark's Point,2026-04-01,2026,4,unbilled_sold_to,69,0,34,11,19,NA,raw_value,NA,false
+A3319101126225003_fuel_used_gallons,A3319101126225003,331910,Clark's Point,2026-05-01,2026,5,fuel_used_gallons,0,NA,1712,0,2532,NA,avg_same_month_other_years,NA,false
 A3319101219225003_unbilled_sold_to,A3319101219225003,331910,Clark's Point,2019-06-01,2019,6,unbilled_sold_to,71,10,32,9,13,NA,raw_value,NA,false
+A3319101226225003_fuel_used_gallons,A3319101226225003,331910,Clark's Point,2026-06-01,2026,6,fuel_used_gallons,0,0,1712,0,2507,NA,avg_same_month_other_years,NA,false
 A3319200117225003_commercial_customers,A3319200117225003,331920,"Cordova, Eyak",2016-07-01,2016,7,commercial_customers,866,625,708,742,629,NA,raw_value,NA,false
 A3319200117225003_commercial_sold_to,A3319200117225003,331920,"Cordova, Eyak",2016-07-01,2016,7,commercial_sold_to,2412164,1610670,1209118,1822251,2778796,NA,raw_value,NA,false
 A3319200117225003_peak_consumption_kw,A3319200117225003,331920,"Cordova, Eyak",2016-07-01,2016,7,peak_consumption_kw,8776,7341,4825,7682,7194,NA,raw_value,NA,false
@@ -1596,6 +1685,8 @@ A3319200125225003_commercial_sold_to,A3319200125225003,331920,"Cordova, Eyak",20
 A3319200126225003_commercial_sold_to,A3319200126225003,331920,"Cordova, Eyak",2025-07-01,2025,7,commercial_sold_to,3626529,1958461,1411733,2255082,2643866,NA,raw_value,NA,false
 A3319200126225003_peak_consumption_kw,A3319200126225003,331920,"Cordova, Eyak",2025-07-01,2025,7,peak_consumption_kw,8558,7337,4849,7530,7218,NA,raw_value,NA,false
 A3319200126225003_residential_sold_to,A3319200126225003,331920,"Cordova, Eyak",2025-07-01,2025,7,residential_sold_to,179961,366882,383876,365236,616811,NA,avg_preceding_proceeding,NA,false
+A3319200127225003_commercial_customers,A3319200127225003,331920,"Cordova, Eyak",2026-07-01,2026,7,commercial_customers,48,659,539,659,652,NA,carry_forward,NA,false
+A3319200127225003_residential_customers,A3319200127225003,331920,"Cordova, Eyak",2026-07-01,2026,7,residential_customers,750,1000,856,1000,903,NA,carry_forward,NA,false
 A3319200217225003_commercial_customers,A3319200217225003,331920,"Cordova, Eyak",2016-08-01,2016,8,commercial_customers,858,866,708,854,629,NA,raw_value,NA,false
 A3319200217225003_commercial_sold_to,A3319200217225003,331920,"Cordova, Eyak",2016-08-01,2016,8,commercial_sold_to,2033832,2412164,1209118,1790922,2605544,NA,raw_value,NA,false
 A3319200217225003_peak_consumption_kw,A3319200217225003,331920,"Cordova, Eyak",2016-08-01,2016,8,peak_consumption_kw,8022,8776,4825,6450,7744,NA,raw_value,NA,false
@@ -1621,6 +1712,7 @@ A3319200417225003_residential_customers,A3319200417225003,331920,"Cordova, Eyak"
 A3319200517225003_residential_customers,A3319200517225003,331920,"Cordova, Eyak",2016-11-01,2016,11,residential_customers,712,714,831,714,971,NA,raw_value,NA,false
 A3319200523225003_commercial_customers,A3319200523225003,331920,"Cordova, Eyak",2022-11-01,2022,11,commercial_customers,208,621,612,618,598,NA,raw_value,NA,false
 A3319200523225003_govt_facil_customers,A3319200523225003,331920,"Cordova, Eyak",2022-11-01,2022,11,govt_facil_customers,455,45,80,45,46,NA,avg_preceding_proceeding,NA,false
+A3319200617225003_govt_facil_sold_to,A3319200617225003,331920,"Cordova, Eyak",2016-12-01,2016,12,govt_facil_sold_to,252170,212205,152056,234803,143015,NA,raw_value,NA,false
 A3319200617225003_residential_customers,A3319200617225003,331920,"Cordova, Eyak",2016-12-01,2016,12,residential_customers,715,712,831,716,971,NA,raw_value,NA,false
 A3319200619225003_peak_consumption_kw,A3319200619225003,331920,"Cordova, Eyak",2018-12-01,2018,12,peak_consumption_kw,17075,3220,5398,3233,3478,NA,raw_value,NA,false
 A3319200717225003_govt_facil_sold_to,A3319200717225003,331920,"Cordova, Eyak",2017-01-01,2017,1,govt_facil_sold_to,257401,252170,158196,207846,149952,NA,raw_value,NA,false
@@ -1648,9 +1740,14 @@ A3319201223225003_peak_consumption_kw,A3319201223225003,331920,"Cordova, Eyak",2
 A3319201225225003_commercial_sold_to,A3319201225225003,331920,"Cordova, Eyak",2025-06-01,2025,6,commercial_sold_to,1958461,1157629,1411733,2392079,1790852,NA,raw_value,NA,false
 A3319300118225003_govt_facil_sold_to,A3319300118225003,331930,Diomede,2017-07-01,2017,7,govt_facil_sold_to,1238,NA,2044,656,180,NA,raw_value,NA,false
 A3319300119225003_govt_facil_sold_to,A3319300119225003,331930,Diomede,2018-07-01,2018,7,govt_facil_sold_to,583,552,550,578,262,NA,raw_value,NA,false
+A3319300120225003_commercial_sold_to,A3319300120225003,331930,Diomede,2019-07-01,2019,7,commercial_sold_to,32595,NA,18516,4633,15574,NA,avg_same_month_other_years,NA,false
+A3319300122225003_unbilled_sold_to,A3319300122225003,331930,Diomede,2021-07-01,2021,7,unbilled_sold_to,4556,0,1814,0,1924,NA,annual_average,NA,false
 A3319300218225003_govt_facil_sold_to,A3319300218225003,331930,Diomede,2017-08-01,2017,8,govt_facil_sold_to,656,1238,2044,1148,184,NA,raw_value,NA,false
+A3319300218225003_peak_consumption_kw,A3319300218225003,331930,Diomede,2017-08-01,2017,8,peak_consumption_kw,179,93,123,101,79,NA,annual_average,NA,false
 A3319300219225003_govt_facil_sold_to,A3319300219225003,331930,Diomede,2018-08-01,2018,8,govt_facil_sold_to,604,583,550,583,190,NA,raw_value,NA,false
 A3319300318225003_govt_facil_sold_to,A3319300318225003,331930,Diomede,2017-09-01,2017,9,govt_facil_sold_to,1057,656,2044,7386,91,NA,raw_value,NA,false
+A3319300322225003_unbilled_sold_to,A3319300322225003,331930,Diomede,2021-09-01,2021,9,unbilled_sold_to,7671,0,1814,907,1677,NA,annual_average,NA,false
+A3319300418225003_com_facil_sold_to,A3319300418225003,331930,Diomede,2017-10-01,2017,10,com_facil_sold_to,14810,1755,3601,1462,1049,NA,annual_average,NA,false
 A3319300418225003_govt_facil_sold_to,A3319300418225003,331930,Diomede,2017-10-01,2017,10,govt_facil_sold_to,14115,1057,2044,780,129,NA,avg_preceding_proceeding,NA,false
 A3319300517225003_govt_facil_sold_to,A3319300517225003,331930,Diomede,2016-11-01,2016,11,govt_facil_sold_to,595,NA,646,696,123,NA,raw_value,NA,false
 A3319300518225003_govt_facil_sold_to,A3319300518225003,331930,Diomede,2017-11-01,2017,11,govt_facil_sold_to,503,14115,2044,7379,135,NA,raw_value,NA,false
@@ -1660,13 +1757,17 @@ A3319300617225003_govt_facil_sold_to,A3319300617225003,331930,Diomede,2016-12-01
 A3319300618225003_govt_facil_sold_to,A3319300618225003,331930,Diomede,2017-12-01,2017,12,govt_facil_sold_to,643,503,2044,554,167,NA,raw_value,NA,false
 A3319300623225003_commercial_sold_to,A3319300623225003,331930,Diomede,2022-12-01,2022,12,commercial_sold_to,47719,0,19640,10088,18075,23859,manual_override,"Assume two months' value, divided in half",false
 A3319300623225003_diesel_kwh_generated,A3319300623225003,331930,Diomede,2022-12-01,2022,12,diesel_kwh_generated,78953,NA,41339,39706,40942,39476,manual_override,"Assume two months' value, divided in half",false
+A3319300623225003_unbilled_sold_to,A3319300623225003,331930,Diomede,2022-12-01,2022,12,unbilled_sold_to,3837,0,1444,2018,2106,NA,annual_average,NA,false
 A3319300717225003_govt_facil_sold_to,A3319300717225003,331930,Diomede,2017-01-01,2017,1,govt_facil_sold_to,783,696,2044,652,200,NA,raw_value,NA,false
 A3319300717225003_residential_sold_to,A3319300717225003,331930,Diomede,2017-01-01,2017,1,residential_sold_to,25865,22528,18802,20740,11126,NA,raw_value,NA,false
 A3319300718225003_govt_facil_sold_to,A3319300718225003,331930,Diomede,2018-01-01,2018,1,govt_facil_sold_to,605,643,550,562,223,NA,raw_value,NA,false
+A3319300718225003_powerhouse_consumption_kwh,A3319300718225003,331930,Diomede,2018-01-01,2018,1,powerhouse_consumption_kwh,15022,3041,6949,2881,3759,NA,avg_preceding_proceeding,NA,false
+A3319300723225003_unbilled_sold_to,A3319300723225003,331930,Diomede,2023-01-01,2023,1,unbilled_sold_to,4035,3837,1860,2481,1644,NA,annual_average,NA,false
 A3319300817225003_govt_facil_sold_to,A3319300817225003,331930,Diomede,2017-02-01,2017,2,govt_facil_sold_to,609,783,2044,726,161,NA,raw_value,NA,false
 A3319300818225003_govt_facil_sold_to,A3319300818225003,331930,Diomede,2018-02-01,2018,2,govt_facil_sold_to,482,605,550,593,177,NA,raw_value,NA,false
 A3319300917225003_govt_facil_sold_to,A3319300917225003,331930,Diomede,2017-03-01,2017,3,govt_facil_sold_to,668,609,2044,698,198,NA,raw_value,NA,false
 A3319300918225003_govt_facil_sold_to,A3319300918225003,331930,Diomede,2018-03-01,2018,3,govt_facil_sold_to,581,482,550,502,209,NA,raw_value,NA,false
+A3319300918225003_unbilled_sold_to,A3319300918225003,331930,Diomede,2018-03-01,2018,3,unbilled_sold_to,4464,1619,2405,1544,1480,NA,avg_preceding_proceeding,NA,false
 A3319300921225003_peak_consumption_kw,A3319300921225003,331930,Diomede,2021-03-01,2021,3,peak_consumption_kw,198,102,98,96,84,NA,raw_value,NA,false
 A3319301017225003_com_facil_sold_to,A3319301017225003,331930,Diomede,2017-04-01,2017,4,com_facil_sold_to,4673,2780,3601,3880,1083,NA,raw_value,NA,false
 A3319301017225003_govt_facil_sold_to,A3319301017225003,331930,Diomede,2017-04-01,2017,4,govt_facil_sold_to,788,668,2044,1047,174,NA,raw_value,NA,false
@@ -1676,7 +1777,9 @@ A3319301018225003_residential_sold_to,A3319301018225003,331930,Diomede,2018-04-0
 A3319301117225003_com_facil_sold_to,A3319301117225003,331930,Diomede,2017-05-01,2017,5,com_facil_sold_to,4981,4673,3601,4673,994,NA,raw_value,NA,false
 A3319301117225003_govt_facil_sold_to,A3319301117225003,331930,Diomede,2017-05-01,2017,5,govt_facil_sold_to,1426,788,2044,788,170,NA,raw_value,NA,false
 A3319301117225003_residential_sold_to,A3319301117225003,331930,Diomede,2017-05-01,2017,5,residential_sold_to,23111,25738,18802,25738,10308,NA,raw_value,NA,false
+A3319301118225003_govt_facil_sold_to,A3319301118225003,331930,Diomede,2018-05-01,2018,5,govt_facil_sold_to,476,521,550,536,289,NA,raw_value,NA,false
 A3319301218225003_govt_facil_sold_to,A3319301218225003,331930,Diomede,2018-06-01,2018,6,govt_facil_sold_to,552,476,550,530,131,NA,raw_value,NA,false
+A3319301218225003_unbilled_sold_to,A3319301218225003,331930,Diomede,2018-06-01,2018,6,unbilled_sold_to,4201,1573,2405,1704,1380,NA,avg_preceding_proceeding,NA,false
 A3319400117225003_commercial_sold_to,A3319400117225003,331940,Egegik,2016-07-01,2016,7,commercial_sold_to,53677,60723,20947,35017,52034,NA,raw_value,NA,false
 A3319400118225003_commercial_sold_to,A3319400118225003,331940,Egegik,2017-07-01,2017,7,commercial_sold_to,54092,53734,21869,32318,51988,NA,raw_value,NA,false
 A3319400118225003_diesel_kwh_generated,A3319400118225003,331940,Egegik,2017-07-01,2017,7,diesel_kwh_generated,100856,88849,48847,63672,103220,NA,raw_value,NA,false
@@ -1760,6 +1863,8 @@ A3319500726225003_commercial_sold_to,A3319500726225003,331950,Ekwok,2026-01-01,2
 A3319500826225003_com_facil_sold_to,A3319500826225003,331950,Ekwok,2026-02-01,2026,2,com_facil_sold_to,1405,1440,2262,1416,10092,NA,raw_value,NA,false
 A3319500926225003_com_facil_sold_to,A3319500926225003,331950,Ekwok,2026-03-01,2026,3,com_facil_sold_to,1391,1405,2262,3108,10401,NA,raw_value,NA,false
 A3319501026225003_commercial_sold_to,A3319501026225003,331950,Ekwok,2026-04-01,2026,4,commercial_sold_to,12224,9947,10528,9947,0,NA,raw_value,NA,false
+A3319501126225003_com_facil_sold_to,A3319501126225003,331950,Ekwok,2026-05-01,2026,5,com_facil_sold_to,0,4811,1809,4811,9696,NA,annual_average,NA,false
+A3319501126225003_govt_facil_sold_to,A3319501126225003,331950,Ekwok,2026-05-01,2026,5,govt_facil_sold_to,0,9865,6536,9865,7452,NA,avg_same_month_other_years,NA,false
 A3319600117225003_commercial_sold_to,A3319600117225003,331960,Elfin Cove,2016-07-01,2016,7,commercial_sold_to,27609,29247,11349,30036,40563,NA,raw_value,NA,false
 A3319600117225003_diesel_kwh_generated,A3319600117225003,331960,Elfin Cove,2016-07-01,2016,7,diesel_kwh_generated,53986,58013,26399,59926,66688,NA,raw_value,NA,false
 A3319600117225003_fuel_used_gallons,A3319600117225003,331960,Elfin Cove,2016-07-01,2016,7,fuel_used_gallons,4133,4407,2259,4652,4999,NA,raw_value,NA,false
@@ -2036,6 +2141,8 @@ A3320101225225003_diesel_kwh_generated,A3320101225225003,332010,Gustavus,2025-06
 A3320101225225003_fuel_used_gallons,A3320101225225003,332010,Gustavus,2025-06-01,2025,6,fuel_used_gallons,11436,30,3113,363,934,NA,raw_value,NA,false
 A3320101225225003_govt_facil_sold_to,A3320101225225003,332010,Gustavus,2025-06-01,2025,6,govt_facil_sold_to,107843,113790,106388,104956,28630,NA,raw_value,NA,false
 A3320101225225003_total_kwh_purchased,A3320101225225003,332010,Gustavus,2025-06-01,2025,6,total_kwh_purchased,199520,331437,293608,338337,0,NA,raw_value,NA,false
+A3320101226225003_govt_facil_sold_to,A3320101226225003,332010,Gustavus,2026-06-01,2026,6,govt_facil_sold_to,109314,122707,121806,122707,36551,NA,raw_value,NA,false
+A3320101226225003_total_kwh_purchased,A3320101226225003,332010,Gustavus,2026-06-01,2026,6,total_kwh_purchased,371393,330489,266678,330489,19952,NA,raw_value,NA,false
 A3320200617225003_fuel_used_gallons,A3320200617225003,332020,Fort Yukon,2016-12-01,2016,12,fuel_used_gallons,66384,22713,25221,22713,23394,33192,manual_override,Assume two month's value,false
 A3320201022225003_com_facil_customers,A3320201022225003,332020,Fort Yukon,2022-04-01,2022,4,com_facil_customers,70,17,21,17,17,17,manual_override,NA,false
 A3320300521225003_commercial_sold_to,A3320300521225003,332030,Hughes,2020-11-01,2020,11,commercial_sold_to,21262,13215,13330,17068,11787,NA,raw_value,NA,false
@@ -2054,6 +2161,7 @@ A3320400426225003_powerhouse_consumption_kwh,A3320400426225003,332040,Igiugig,20
 A3320400525225003_powerhouse_consumption_kwh,A3320400525225003,332040,Igiugig,2024-11-01,2024,11,powerhouse_consumption_kwh,4118,3836,2707,4874,1427,NA,raw_value,NA,false
 A3320400526225003_powerhouse_consumption_kwh,A3320400526225003,332040,Igiugig,2025-11-01,2025,11,powerhouse_consumption_kwh,3072,4890,3311,4592,1532,NA,raw_value,NA,false
 A3320400625225003_powerhouse_consumption_kwh,A3320400625225003,332040,Igiugig,2024-12-01,2024,12,powerhouse_consumption_kwh,5911,4118,2707,3632,1821,NA,raw_value,NA,false
+A3320400626225003_fuel_used_gallons,A3320400626225003,332040,Igiugig,2025-12-01,2025,12,fuel_used_gallons,3380,2001,2092,2722,2424,NA,raw_value,NA,false
 A3320400626225003_powerhouse_consumption_kwh,A3320400626225003,332040,Igiugig,2025-12-01,2025,12,powerhouse_consumption_kwh,4294,3072,3311,3706,1983,NA,raw_value,NA,false
 A3320400725225003_powerhouse_consumption_kwh,A3320400725225003,332040,Igiugig,2025-01-01,2025,1,powerhouse_consumption_kwh,3146,5911,3311,4720,1794,NA,raw_value,NA,false
 A3320400726225003_fuel_used_gallons,A3320400726225003,332040,Igiugig,2026-01-01,2026,1,fuel_used_gallons,3444,3380,2650,2872,2489,NA,raw_value,NA,false
@@ -2065,6 +2173,7 @@ A3320400926225003_powerhouse_consumption_kwh,A3320400926225003,332040,Igiugig,20
 A3320401026225003_powerhouse_consumption_kwh,A3320401026225003,332040,Igiugig,2026-04-01,2026,4,powerhouse_consumption_kwh,2878,3452,3269,3083,1501,NA,raw_value,NA,false
 A3320401224225003_peak_consumption_kw,A3320401224225003,332040,Igiugig,2024-06-01,2024,6,peak_consumption_kw,148,128,114,130,72,NA,raw_value,NA,false
 A3320500118225003_fuel_used_gallons,A3320500118225003,332050,"Iliamna, Newhalen, Nondalton",2017-07-01,2017,7,fuel_used_gallons,1063,0,255,460,69,NA,raw_value,NA,false
+A3320500127225003_peak_consumption_kw,A3320500127225003,332050,"Iliamna, Newhalen, Nondalton",2026-07-01,2026,7,peak_consumption_kw,1275,554,702,554,580,NA,raw_value,NA,false
 A3320500218225003_fuel_used_gallons,A3320500218225003,332050,"Iliamna, Newhalen, Nondalton",2017-08-01,2017,8,fuel_used_gallons,921,1063,255,590,102,NA,raw_value,NA,false
 A3320500224225003_peak_consumption_kw,A3320500224225003,332050,"Iliamna, Newhalen, Nondalton",2023-08-01,2023,8,peak_consumption_kw,1275,628,779,643,637,NA,raw_value,NA,false
 A3320500320225003_diesel_kwh_generated,A3320500320225003,332050,"Iliamna, Newhalen, Nondalton",2019-09-01,2019,9,diesel_kwh_generated,27200,3260,8444,3830,3786,NA,raw_value,NA,false
@@ -2103,6 +2212,9 @@ A3320501123225003_peak_consumption_kw,A3320501123225003,332050,"Iliamna, Newhale
 A3320501218225003_diesel_kwh_generated,A3320501218225003,332050,"Iliamna, Newhalen, Nondalton",2018-06-01,2018,6,diesel_kwh_generated,21150,NA,9068,250,1787,NA,raw_value,NA,false
 A3320501218225003_fuel_used_gallons,A3320501218225003,332050,"Iliamna, Newhalen, Nondalton",2018-06-01,2018,6,fuel_used_gallons,1587,0,514,9,115,NA,raw_value,NA,false
 A3320600125225003_unbilled_sold_to,A3320600125225003,332060,Deering,2024-07-01,2024,7,unbilled_sold_to,3817,234,672,185,203,NA,raw_value,NA,false
+A3320600222225003_powerhouse_consumption_kwh,A3320600222225003,332060,Deering,2021-08-01,2021,8,powerhouse_consumption_kwh,22,2363,1881,1190,2700,NA,avg_same_month_other_years,NA,false
+A3320600322225003_powerhouse_consumption_kwh,A3320600322225003,332060,Deering,2021-09-01,2021,9,powerhouse_consumption_kwh,16,22,1881,22,2316,NA,avg_same_month_other_years,NA,false
+A3320600422225003_powerhouse_consumption_kwh,A3320600422225003,332060,Deering,2021-10-01,2021,10,powerhouse_consumption_kwh,23,16,1881,1487,2551,NA,avg_same_month_other_years,NA,false
 A3320600422225003_unbilled_sold_to,A3320600422225003,332060,Deering,2021-10-01,2021,10,unbilled_sold_to,5623,17,559,92,202,NA,raw_value,NA,false
 A3320600426225003_unbilled_sold_to,A3320600426225003,332060,Deering,2025-10-01,2025,10,unbilled_sold_to,844,114,358,322,733,NA,raw_value,NA,false
 A3320600616225003_unbilled_sold_to,A3320600616225003,332060,Deering,2015-12-01,2015,12,unbilled_sold_to,2165,156,833,584,435,NA,raw_value,NA,false
@@ -2117,8 +2229,19 @@ A3320600816225003_unbilled_sold_to,A3320600816225003,332060,Deering,2016-02-01,2
 A3320600820225003_powerhouse_consumption_kwh,A3320600820225003,332060,Deering,2020-02-01,2020,2,powerhouse_consumption_kwh,5462,NA,2762,3680,2385,NA,raw_value,NA,false
 A3320600925225003_unbilled_sold_to,A3320600925225003,332060,Deering,2025-03-01,2025,3,unbilled_sold_to,1021,0,358,97,244,NA,raw_value,NA,false
 A3320601124225003_unbilled_sold_to,A3320601124225003,332060,Deering,2024-05-01,2024,5,unbilled_sold_to,797,479,672,356,108,NA,raw_value,NA,false
+A3320700126225003_commercial_customers,A3320700126225003,332070,King Cove,2025-07-01,2025,7,commercial_customers,121,NA,121,121,208,NA,raw_value,NA,false
 A3320700218225003_powerhouse_consumption_kwh,A3320700218225003,332070,King Cove,2017-08-01,2017,8,powerhouse_consumption_kwh,21547,5498,8299,5498,4776,NA,raw_value,NA,false
+A3320700226225003_commercial_customers,A3320700226225003,332070,King Cove,2025-08-01,2025,8,commercial_customers,121,121,121,121,208,NA,raw_value,NA,false
 A3320700318225003_com_facil_sold_to,A3320700318225003,332070,King Cove,2017-09-01,2017,9,com_facil_sold_to,205473,73770,98380,79420,93500,NA,raw_value,NA,false
+A3320700326225003_commercial_customers,A3320700326225003,332070,King Cove,2025-09-01,2025,9,commercial_customers,121,121,121,121,209,NA,raw_value,NA,false
+A3320700426225003_commercial_customers,A3320700426225003,332070,King Cove,2025-10-01,2025,10,commercial_customers,121,121,121,121,210,NA,raw_value,NA,false
+A3320700526225003_commercial_customers,A3320700526225003,332070,King Cove,2025-11-01,2025,11,commercial_customers,121,121,121,122,209,NA,raw_value,NA,false
+A3320700626225003_commercial_customers,A3320700626225003,332070,King Cove,2025-12-01,2025,12,commercial_customers,123,121,121,122,208,NA,raw_value,NA,false
+A3320700726225003_commercial_customers,A3320700726225003,332070,King Cove,2026-01-01,2026,1,commercial_customers,123,123,132,123,208,NA,raw_value,NA,false
+A3320700826225003_commercial_customers,A3320700826225003,332070,King Cove,2026-02-01,2026,2,commercial_customers,123,123,132,123,208,NA,raw_value,NA,false
+A3320700926225003_commercial_customers,A3320700926225003,332070,King Cove,2026-03-01,2026,3,commercial_customers,123,123,132,123,208,NA,raw_value,NA,false
+A3320701026225003_commercial_customers,A3320701026225003,332070,King Cove,2026-04-01,2026,4,commercial_customers,123,123,132,135,208,NA,raw_value,NA,false
+A3320701126225003_commercial_customers,A3320701126225003,332070,King Cove,2026-05-01,2026,5,commercial_customers,147,123,132,138,210,NA,carry_forward,NA,false
 A3320800117225003_unbilled_customers,A3320800117225003,332080,Kipnuk,2016-07-01,2016,7,unbilled_customers,64,66,60,65,18,NA,raw_value,NA,false
 A3320800118225003_unbilled_sold_to,A3320800118225003,332080,Kipnuk,2017-07-01,2017,7,unbilled_sold_to,12881,7903,10566,11868,2252,NA,raw_value,NA,false
 A3320800217225003_unbilled_customers,A3320800217225003,332080,Kipnuk,2016-08-01,2016,8,unbilled_customers,64,64,60,64,13,NA,raw_value,NA,false
@@ -2170,6 +2293,7 @@ A3320900824225003_commercial_sold_to,A3320900824225003,332090,Kobuk,2024-02-01,2
 A3320900826225003_commercial_sold_to,A3320900826225003,332090,Kobuk,2026-02-01,2026,2,commercial_sold_to,12264,14084,12783,13638,8229,NA,raw_value,NA,false
 A3320900926225003_commercial_sold_to,A3320900926225003,332090,Kobuk,2026-03-01,2026,3,commercial_sold_to,13193,12264,12783,11928,7771,NA,raw_value,NA,false
 A3320901026225003_commercial_sold_to,A3320901026225003,332090,Kobuk,2026-04-01,2026,4,commercial_sold_to,11591,13193,12783,13193,7465,NA,raw_value,NA,false
+A3320901126225003_commercial_sold_to,A3320901126225003,332090,Kobuk,2026-05-01,2026,5,commercial_sold_to,0,11591,10226,11591,6780,NA,avg_same_month_other_years,NA,false
 A3321000322225003_fuel_used_gallons,A3321000322225003,332100,Kokhanok,2021-09-01,2021,9,fuel_used_gallons,8526,2852,3726,3188,3344,NA,raw_value,NA,false
 A3321000322225003_residential_sold_to,A3321000322225003,332100,Kokhanok,2021-09-01,2021,9,residential_sold_to,39440,13676,17794,18089,15638,NA,raw_value,NA,false
 A3321000523225003_commercial_sold_to,A3321000523225003,332100,Kokhanok,2022-11-01,2022,11,commercial_sold_to,19893,3989,6020,4148,7145,NA,raw_value,NA,false
@@ -2206,6 +2330,9 @@ A3321101218225003_powerhouse_consumption_kwh,A3321101218225003,332110,Koliganek,
 A3321200516225003_commercial_sold_to,A3321200516225003,332120,Kotlik,2015-11-01,2015,11,commercial_sold_to,40143,37061,37708,39870,24367,NA,raw_value,NA,false
 A3321200616225003_commercial_sold_to,A3321200616225003,332120,Kotlik,2015-12-01,2015,12,commercial_sold_to,42680,40143,37708,41263,26620,NA,raw_value,NA,false
 A3321200716225003_commercial_sold_to,A3321200716225003,332120,Kotlik,2016-01-01,2016,1,commercial_sold_to,42383,42680,28884,34016,28415,NA,raw_value,NA,false
+A3321201126225003_commercial_sold_to,A3321201126225003,332120,Kotlik,2026-05-01,2026,5,commercial_sold_to,0,32159,28050,32159,24310,NA,avg_preceding_proceeding,NA,false
+A3321201126225003_govt_facil_sold_to,A3321201126225003,332120,Kotlik,2026-05-01,2026,5,govt_facil_sold_to,0,50941,44026,50941,46814,NA,avg_same_month_other_years,NA,false
+A3321201126225003_peak_consumption_kw,A3321201126225003,332120,Kotlik,2026-05-01,2026,5,peak_consumption_kw,230,381,363,381,NA,NA,raw_value,NA,false
 A3321300324225003_com_facil_sold_to,A3321300324225003,332130,Kotzebue,2023-09-01,2023,9,com_facil_sold_to,226662,135761,159288,141366,129209,NA,raw_value,NA,false
 A3321300424225003_solar_kwh_generated,A3321300424225003,332130,Kotzebue,2023-10-01,2023,10,solar_kwh_generated,913987,101655,257697,57078,79795,91398,manual_override,Assume misplaced decimal,false
 A3321300626225003_peak_consumption_kw,A3321300626225003,332130,Kotzebue,2025-12-01,2025,12,peak_consumption_kw,1323,2856,2705,3086,3090,NA,raw_value,NA,false
@@ -2354,6 +2481,7 @@ A3321900720225003_govt_facil_sold_to,A3321900720225003,332190,Lime Village,2020-
 A3321900721225003_govt_facil_sold_to,A3321900721225003,332190,Lime Village,2021-01-01,2021,1,govt_facil_sold_to,969,NA,484,0,436,NA,raw_value,NA,false
 A3321900724225003_com_facil_sold_to,A3321900724225003,332190,Lime Village,2024-01-01,2024,1,com_facil_sold_to,8078,8078,4574,8078,1271,NA,raw_value,NA,false
 A3321900724225003_govt_facil_sold_to,A3321900724225003,332190,Lime Village,2024-01-01,2024,1,govt_facil_sold_to,702,702,339,702,480,NA,raw_value,NA,false
+A3321900818225003_commercial_sold_to,A3321900818225003,332190,Lime Village,2018-02-01,2018,2,commercial_sold_to,3275,NA,1528,NA,1403,NA,raw_value,NA,false
 A3321900818225003_diesel_kwh_generated,A3321900818225003,332190,Lime Village,2018-02-01,2018,2,diesel_kwh_generated,16121,NA,9052,NA,7691,NA,raw_value,NA,false
 A3321900818225003_fuel_used_gallons,A3321900818225003,332190,Lime Village,2018-02-01,2018,2,fuel_used_gallons,1814,NA,1191,NA,606,NA,raw_value,NA,false
 A3321900818225003_govt_facil_sold_to,A3321900818225003,332190,Lime Village,2018-02-01,2018,2,govt_facil_sold_to,577,NA,174,NA,192,NA,raw_value,NA,false
@@ -2626,6 +2754,10 @@ A3322801225225003_commercial_sold_to,A3322801225225003,332280,"Naknek, South Nak
 A3322801225225003_diesel_kwh_generated,A3322801225225003,332280,"Naknek, South Naknek, King Salmon",2025-06-01,2025,6,diesel_kwh_generated,3570295,1699843,1814918,3953791,2981424,NA,raw_value,NA,false
 A3322801225225003_fuel_used_gallons,A3322801225225003,332280,"Naknek, South Naknek, King Salmon",2025-06-01,2025,6,fuel_used_gallons,248517,123238,127001,264567,206715,NA,raw_value,NA,false
 A3322801225225003_peak_consumption_kw,A3322801225225003,332280,"Naknek, South Naknek, King Salmon",2025-06-01,2025,6,peak_consumption_kw,14400,3600,4353,9404,9466,NA,raw_value,NA,false
+A3322801226225003_commercial_sold_to,A3322801226225003,332280,"Naknek, South Naknek, King Salmon",2026-06-01,2026,6,commercial_sold_to,2373551,1083349,841721,1083349,2163327,NA,raw_value,NA,false
+A3322801226225003_diesel_kwh_generated,A3322801226225003,332280,"Naknek, South Naknek, King Salmon",2026-06-01,2026,6,diesel_kwh_generated,3112267,1866053,1660529,1866053,3040311,NA,raw_value,NA,false
+A3322801226225003_fuel_used_gallons,A3322801226225003,332280,"Naknek, South Naknek, King Salmon",2026-06-01,2026,6,fuel_used_gallons,224788,124690,116645,124690,210895,NA,raw_value,NA,false
+A3322801226225003_peak_consumption_kw,A3322801226225003,332280,"Naknek, South Naknek, King Salmon",2026-06-01,2026,6,peak_consumption_kw,13100,2058,4037,2058,10014,NA,raw_value,NA,false
 A3322900117225003_unbilled_sold_to,A3322900117225003,332290,Napakiak,2016-07-01,2016,7,unbilled_sold_to,0,0,0,0,4482,NA,raw_value,NA,false
 A3322900118225003_unbilled_sold_to,A3322900118225003,332290,Napakiak,2017-07-01,2017,7,unbilled_sold_to,0,0,502,0,4482,NA,raw_value,NA,false
 A3322900217225003_unbilled_sold_to,A3322900217225003,332290,Napakiak,2016-08-01,2016,8,unbilled_sold_to,0,0,0,0,4212,NA,raw_value,NA,false
@@ -2691,23 +2823,55 @@ A3323100922225003_unbilled_sold_to,A3323100922225003,332310,Chefornak,2022-03-01
 A3323101122225003_peak_consumption_kw,A3323101122225003,332310,Chefornak,2022-05-01,2022,5,peak_consumption_kw,700,178,372,439,313,NA,raw_value,NA,false
 A3323101221225003_powerhouse_consumption_kwh,A3323101221225003,332310,Chefornak,2021-06-01,2021,6,powerhouse_consumption_kwh,7469,6006,5444,6032,2818,NA,raw_value,NA,false
 A3323101222225003_peak_consumption_kw,A3323101222225003,332310,Chefornak,2022-06-01,2022,6,peak_consumption_kw,700,700,372,448,300,NA,raw_value,NA,false
+A3323200117225003_peak_consumption_kw,A3323200117225003,332320,Nelson Lagoon,2016-07-01,2016,7,peak_consumption_kw,720,720,720,720,5782,70,manual_override,NA,false
 A3323200125225003_commercial_sold_to,A3323200125225003,332320,Nelson Lagoon,2024-07-01,2024,7,commercial_sold_to,16132,16305,8906,14293,7261,NA,raw_value,NA,false
 A3323200126225003_commercial_sold_to,A3323200126225003,332320,Nelson Lagoon,2025-07-01,2025,7,commercial_sold_to,14285,22278,9124,13959,7467,NA,raw_value,NA,false
+A3323200127225003_commercial_sold_to,A3323200127225003,332320,Nelson Lagoon,2026-07-01,2026,7,commercial_sold_to,24504,19778,11735,19778,8148,NA,raw_value,NA,false
+A3323200127225003_fuel_used_gallons,A3323200127225003,332320,Nelson Lagoon,2026-07-01,2026,7,fuel_used_gallons,3797,3225,3561,3225,2453,NA,raw_value,NA,false
+A3323200127225003_peak_consumption_kw,A3323200127225003,332320,Nelson Lagoon,2026-07-01,2026,7,peak_consumption_kw,100,96,67,96,5906,NA,raw_value,NA,false
+A3323200217225003_peak_consumption_kw,A3323200217225003,332320,Nelson Lagoon,2016-08-01,2016,8,peak_consumption_kw,720,720,720,720,7202,70,manual_override,NA,false
 A3323200226225003_fuel_used_gallons,A3323200226225003,332320,Nelson Lagoon,2025-08-01,2025,8,fuel_used_gallons,4860,2439,2948,4034,2406,NA,raw_value,NA,false
+A3323200317225003_peak_consumption_kw,A3323200317225003,332320,Nelson Lagoon,2016-09-01,2016,9,peak_consumption_kw,720,720,720,720,5419,70,manual_override,NA,false
 A3323200326225003_fuel_used_gallons,A3323200326225003,332320,Nelson Lagoon,2025-09-01,2025,9,fuel_used_gallons,5628,4860,2948,5142,2094,NA,raw_value,NA,false
+A3323200326225003_peak_consumption_kw,A3323200326225003,332320,Nelson Lagoon,2025-09-01,2025,9,peak_consumption_kw,70,7202,4823,3634,5582,69,manual_override,NA,false
+A3323200417225003_peak_consumption_kw,A3323200417225003,332320,Nelson Lagoon,2016-10-01,2016,10,peak_consumption_kw,720,720,720,720,5418,70,manual_override,NA,false
 A3323200426225003_fuel_used_gallons,A3323200426225003,332320,Nelson Lagoon,2025-10-01,2025,10,fuel_used_gallons,5425,5628,2948,3880,1995,NA,raw_value,NA,false
+A3323200426225003_peak_consumption_kw,A3323200426225003,332320,Nelson Lagoon,2025-10-01,2025,10,peak_consumption_kw,65,70,4823,66,5582,70,raw_value,NA,false
+A3323200517225003_peak_consumption_kw,A3323200517225003,332320,Nelson Lagoon,2016-11-01,2016,11,peak_consumption_kw,720,720,720,720,5417,70,manual_override,NA,false
+A3323200526225003_peak_consumption_kw,A3323200526225003,332320,Nelson Lagoon,2025-11-01,2025,11,peak_consumption_kw,63,65,4823,66,5582,3,raw_value,NA,false
+A3323200616225003_peak_consumption_kw,A3323200616225003,332320,Nelson Lagoon,2015-12-01,2015,12,peak_consumption_kw,720,NA,720,720,4479,70,manual_override,NA,false
+A3323200617225003_peak_consumption_kw,A3323200617225003,332320,Nelson Lagoon,2016-12-01,2016,12,peak_consumption_kw,720,720,720,720,4479,70,manual_override,NA,false
 A3323200618225003_fuel_used_gallons,A3323200618225003,332320,Nelson Lagoon,2017-12-01,2017,12,fuel_used_gallons,4253,2349,2482,2280,2478,NA,raw_value,NA,false
+A3323200626225003_peak_consumption_kw,A3323200626225003,332320,Nelson Lagoon,2025-12-01,2025,12,peak_consumption_kw,67,63,4823,68,4609,70,raw_value,NA,false
+A3323200716225003_peak_consumption_kw,A3323200716225003,332320,Nelson Lagoon,2016-01-01,2016,1,peak_consumption_kw,720,720,720,720,4480,70,manual_override,NA,false
+A3323200717225003_peak_consumption_kw,A3323200717225003,332320,Nelson Lagoon,2017-01-01,2017,1,peak_consumption_kw,720,720,720,720,4480,70,manual_override,NA,false
 A3323200723225003_com_facil_sold_to,A3323200723225003,332320,Nelson Lagoon,2023-01-01,2023,1,com_facil_sold_to,8649,1845,3116,2807,2603,NA,raw_value,NA,false
+A3323200726225003_peak_consumption_kw,A3323200726225003,332320,Nelson Lagoon,2026-01-01,2026,1,peak_consumption_kw,72,67,67,62,4609,70,raw_value,NA,false
+A3323200816225003_peak_consumption_kw,A3323200816225003,332320,Nelson Lagoon,2016-02-01,2016,2,peak_consumption_kw,720,720,720,720,4931,70,manual_override,NA,false
 A3323200816225003_powerhouse_consumption_kwh,A3323200816225003,332320,Nelson Lagoon,2016-02-01,2016,2,powerhouse_consumption_kwh,5229,1974,2193,1950,1052,NA,raw_value,NA,false
+A3323200817225003_peak_consumption_kw,A3323200817225003,332320,Nelson Lagoon,2017-02-01,2017,2,peak_consumption_kw,720,720,720,720,4931,70,manual_override,NA,false
+A3323200826225003_peak_consumption_kw,A3323200826225003,332320,Nelson Lagoon,2026-02-01,2026,2,peak_consumption_kw,57,72,67,56,5041,NA,raw_value,NA,false
 A3323200826225003_total_kwh_purchased,A3323200826225003,332320,Nelson Lagoon,2026-02-01,2026,2,total_kwh_purchased,25279,0,4213,0,0,NA,carry_forward,NA,false
+A3323200916225003_peak_consumption_kw,A3323200916225003,332320,Nelson Lagoon,2016-03-01,2016,3,peak_consumption_kw,720,720,720,720,4928,70,manual_override,NA,false
+A3323200917225003_peak_consumption_kw,A3323200917225003,332320,Nelson Lagoon,2017-03-01,2017,3,peak_consumption_kw,720,720,720,720,4928,70,manual_override,NA,false
 A3323200920225003_fuel_used_gallons,A3323200920225003,332320,Nelson Lagoon,2020-03-01,2020,3,fuel_used_gallons,6690,2255,3064,5466,2224,NA,raw_value,NA,false
+A3323200926225003_peak_consumption_kw,A3323200926225003,332320,Nelson Lagoon,2026-03-01,2026,3,peak_consumption_kw,40,57,67,50,5041,NA,raw_value,NA,false
+A3323201016225003_peak_consumption_kw,A3323201016225003,332320,Nelson Lagoon,2016-04-01,2016,4,peak_consumption_kw,720,720,720,720,5253,70,manual_override,NA,false
+A3323201017225003_peak_consumption_kw,A3323201017225003,332320,Nelson Lagoon,2017-04-01,2017,4,peak_consumption_kw,720,720,720,720,5253,70,manual_override,NA,false
 A3323201020225003_fuel_used_gallons,A3323201020225003,332320,Nelson Lagoon,2020-04-01,2020,4,fuel_used_gallons,8677,6690,3064,4380,3952,NA,raw_value,NA,false
 A3323201022225003_fuel_used_gallons,A3323201022225003,332320,Nelson Lagoon,2022-04-01,2022,4,fuel_used_gallons,6092,2268,2518,2243,4211,NA,raw_value,NA,false
 A3323201024225003_fuel_used_gallons,A3323201024225003,332320,Nelson Lagoon,2024-04-01,2024,4,fuel_used_gallons,8261,2283,2988,2283,3994,NA,raw_value,NA,false
 A3323201026225003_fuel_used_gallons,A3323201026225003,332320,Nelson Lagoon,2026-04-01,2026,4,fuel_used_gallons,9551,1854,3521,1816,3865,NA,raw_value,NA,false
+A3323201026225003_peak_consumption_kw,A3323201026225003,332320,Nelson Lagoon,2026-04-01,2026,4,peak_consumption_kw,42,40,67,50,5350,NA,raw_value,NA,false
+A3323201116225003_peak_consumption_kw,A3323201116225003,332320,Nelson Lagoon,2016-05-01,2016,5,peak_consumption_kw,720,720,720,720,5256,69,manual_override,NA,false
+A3323201117225003_peak_consumption_kw,A3323201117225003,332320,Nelson Lagoon,2017-05-01,2017,5,peak_consumption_kw,720,720,720,720,5256,69,manual_override,NA,false
+A3323201126225003_peak_consumption_kw,A3323201126225003,332320,Nelson Lagoon,2026-05-01,2026,5,peak_consumption_kw,61,42,67,69,5350,NA,raw_value,NA,false
+A3323201216225003_peak_consumption_kw,A3323201216225003,332320,Nelson Lagoon,2016-06-01,2016,6,peak_consumption_kw,720,720,720,720,5261,70,manual_override,NA,false
+A3323201217225003_peak_consumption_kw,A3323201217225003,332320,Nelson Lagoon,2017-06-01,2017,6,peak_consumption_kw,720,720,720,720,5261,70,manual_override,NA,false
 A3323201224225003_commercial_sold_to,A3323201224225003,332320,Nelson Lagoon,2024-06-01,2024,6,commercial_sold_to,16305,6099,8906,11116,9795,NA,raw_value,NA,false
 A3323201225225003_commercial_sold_to,A3323201225225003,332320,Nelson Lagoon,2025-06-01,2025,6,commercial_sold_to,22278,12528,9124,13406,9198,NA,raw_value,NA,false
 A3323201226225003_commercial_sold_to,A3323201226225003,332320,Nelson Lagoon,2026-06-01,2026,6,commercial_sold_to,19778,9085,9607,9085,9448,NA,raw_value,NA,false
+A3323201226225003_peak_consumption_kw,A3323201226225003,332320,Nelson Lagoon,2026-06-01,2026,6,peak_consumption_kw,96,61,67,80,5350,NA,raw_value,NA,false
 A3323300122225003_fuel_used_gallons,A3323300122225003,332330,Nikolai,2021-07-01,2021,7,fuel_used_gallons,9079,NA,5161,8457,3070,NA,raw_value,NA,false
 A3323300122225003_powerhouse_consumption_kwh,A3323300122225003,332330,Nikolai,2021-07-01,2021,7,powerhouse_consumption_kwh,5872,NA,2518,2552,1317,NA,raw_value,NA,false
 A3323300220225003_commercial_sold_to,A3323300220225003,332330,Nikolai,2019-08-01,2019,8,commercial_sold_to,26314,NA,14676,9194,9644,NA,raw_value,NA,false
@@ -2723,6 +2887,7 @@ A3323300622225003_residential_sold_to,A3323300622225003,332330,Nikolai,2021-12-0
 A3323300719225003_fuel_used_gallons,A3323300719225003,332330,Nikolai,2019-01-01,2019,1,fuel_used_gallons,7597,NA,4729,3436,3693,NA,raw_value,NA,false
 A3323300719225003_residential_sold_to,A3323300719225003,332330,Nikolai,2019-01-01,2019,1,residential_sold_to,27661,NA,14845,10397,14866,NA,raw_value,NA,false
 A3323300726225003_govt_facil_sold_to,A3323300726225003,332330,Nikolai,2026-01-01,2026,1,govt_facil_sold_to,12108,NA,6266,4319,3266,NA,raw_value,NA,false
+A3323300726225003_powerhouse_consumption_kwh,A3323300726225003,332330,Nikolai,2026-01-01,2026,1,powerhouse_consumption_kwh,3886,NA,2046,1963,1718,NA,raw_value,NA,false
 A3323300726225003_residential_sold_to,A3323300726225003,332330,Nikolai,2026-01-01,2026,1,residential_sold_to,25097,NA,18408,16166,15122,NA,raw_value,NA,false
 A3323300726225003_unbilled_sold_to,A3323300726225003,332330,Nikolai,2026-01-01,2026,1,unbilled_sold_to,10917,NA,4102,1830,3717,NA,raw_value,NA,false
 A3323300822225003_unbilled_sold_to,A3323300822225003,332330,Nikolai,2022-02-01,2022,2,unbilled_sold_to,12526,0,2796,1706,2470,NA,raw_value,NA,false
@@ -2733,6 +2898,8 @@ A3323400121225003_powerhouse_consumption_kwh,A3323400121225003,332340,Nome,2020-
 A3323400324225003_peak_consumption_kw,A3323400324225003,332340,Nome,2023-09-01,2023,9,peak_consumption_kw,8169,3629,4648,3934,3924,NA,avg_preceding_proceeding,NA,false
 A3323400325225003_residential_customers,A3323400325225003,332340,Nome,2024-09-01,2024,9,residential_customers,1315,1787,1738,1786,1761,NA,avg_preceding_proceeding,NA,false
 A3323400825225003_powerhouse_consumption_kwh,A3323400825225003,332340,Nome,2025-02-01,2025,2,powerhouse_consumption_kwh,159368,109913,113545,105307,117368,NA,raw_value,NA,false
+A3323401126225003_commercial_customers,A3323401126225003,332340,Nome,2026-05-01,2026,5,commercial_customers,381,360,366,370,316,NA,raw_value,NA,false
+A3323401226225003_commercial_customers,A3323401226225003,332340,Nome,2026-06-01,2026,6,commercial_customers,381,381,366,381,315,NA,raw_value,NA,false
 A3323500617225003_peak_consumption_kw,A3323500617225003,332350,Anaktuvuk Pass,2016-12-01,2016,12,peak_consumption_kw,1134,628,654,658,654,NA,raw_value,NA,NA
 A3323500721225003_peak_consumption_kw,A3323500721225003,332350,Anaktuvuk Pass,2021-01-01,2021,1,peak_consumption_kw,1519,640,922,844,738,NA,raw_value,NA,NA
 A3323500722225003_peak_consumption_kw,A3323500722225003,332350,Anaktuvuk Pass,2022-01-01,2022,1,peak_consumption_kw,1183,853,608,750,771,NA,raw_value,NA,NA
@@ -2763,6 +2930,8 @@ A3323800425225003_powerhouse_consumption_kwh,A3323800425225003,332380,Nuiqsut,20
 A3323800821225003_peak_consumption_kw,A3323800821225003,332380,Nuiqsut,2021-02-01,2021,2,peak_consumption_kw,2522,1263,1227,1372,1326,NA,avg_preceding_proceeding,NA,false
 A3323800926225003_peak_consumption_kw,A3323800926225003,332380,Nuiqsut,2026-03-01,2026,3,peak_consumption_kw,3802,1406,1797,1304,1353,NA,avg_preceding_proceeding,NA,false
 A3323801019225003_peak_consumption_kw,A3323801019225003,332380,Nuiqsut,2019-04-01,2019,4,peak_consumption_kw,5077,1191,1401,1124,1201,NA,avg_preceding_proceeding,NA,false
+A3323900321225003_powerhouse_consumption_kwh,A3323900321225003,332390,Point Hope,2020-09-01,2020,9,powerhouse_consumption_kwh,37860,30395,27153,31855,23632,NA,raw_value,NA,false
+A3323900916225003_powerhouse_consumption_kwh,A3323900916225003,332390,Point Hope,2016-03-01,2016,3,powerhouse_consumption_kwh,39162,20652,23965,20908,23503,NA,raw_value,NA,false
 A3324100216225003_peak_consumption_kw,A3324100216225003,332410,Wainwright,2015-08-01,2015,8,peak_consumption_kw,1724,NA,1236,1087,1252,NA,avg_same_month_other_years,NA,false
 A3324100218225003_peak_consumption_kw,A3324100218225003,332410,Wainwright,2017-08-01,2017,8,peak_consumption_kw,4272,922,1321,946,998,NA,avg_preceding_proceeding,NA,false
 A3324100718225003_peak_consumption_kw,A3324100718225003,332410,Wainwright,2018-01-01,2018,1,peak_consumption_kw,7847,1137,1610,1155,1195,NA,avg_preceding_proceeding,NA,false
@@ -2801,6 +2970,7 @@ A3324300124225003_commercial_sold_to,A3324300124225003,332430,"Dillingham, Alekn
 A3324300124225003_diesel_kwh_generated,A3324300124225003,332430,"Dillingham, Aleknagik",2023-07-01,2023,7,diesel_kwh_generated,3098114,1624182,1605642,1893814,2781130,NA,raw_value,NA,false
 A3324300124225003_fuel_used_gallons,A3324300124225003,332430,"Dillingham, Aleknagik",2023-07-01,2023,7,fuel_used_gallons,204672,108487,107381,126187,177767,NA,raw_value,NA,false
 A3324300124225003_peak_consumption_kw,A3324300124225003,332430,"Dillingham, Aleknagik",2023-07-01,2023,7,peak_consumption_kw,6555,2985,3139,4782,5570,NA,raw_value,NA,false
+A3324300124225003_powerhouse_consumption_kwh,A3324300124225003,332430,"Dillingham, Aleknagik",2023-07-01,2023,7,powerhouse_consumption_kwh,86084,40421,48478,52803,70527,NA,raw_value,NA,false
 A3324300125225003_commercial_sold_to,A3324300125225003,332430,"Dillingham, Aleknagik",2024-07-01,2024,7,commercial_sold_to,2036558,909336,866541,1054168,2168513,NA,raw_value,NA,false
 A3324300125225003_diesel_kwh_generated,A3324300125225003,332430,"Dillingham, Aleknagik",2024-07-01,2024,7,diesel_kwh_generated,2718892,1521905,1539532,1649112,2823266,NA,raw_value,NA,false
 A3324300125225003_fuel_used_gallons,A3324300125225003,332430,"Dillingham, Aleknagik",2024-07-01,2024,7,fuel_used_gallons,178032,102754,103762,111066,180727,NA,raw_value,NA,false
@@ -2809,6 +2979,7 @@ A3324300126225003_commercial_sold_to,A3324300126225003,332430,"Dillingham, Alekn
 A3324300126225003_diesel_kwh_generated,A3324300126225003,332430,"Dillingham, Aleknagik",2025-07-01,2025,7,diesel_kwh_generated,3278944,1511228,1567162,1710757,2761038,NA,raw_value,NA,false
 A3324300126225003_fuel_used_gallons,A3324300126225003,332430,"Dillingham, Aleknagik",2025-07-01,2025,7,fuel_used_gallons,213975,98952,106028,113480,176733,NA,raw_value,NA,false
 A3324300126225003_peak_consumption_kw,A3324300126225003,332430,"Dillingham, Aleknagik",2025-07-01,2025,7,peak_consumption_kw,6650,2780,2967,4122,5559,NA,raw_value,NA,false
+A3324300126225003_powerhouse_consumption_kwh,A3324300126225003,332430,"Dillingham, Aleknagik",2025-07-01,2025,7,powerhouse_consumption_kwh,86143,41923,47818,50996,70521,NA,raw_value,NA,false
 A3324300217225003_commercial_sold_to,A3324300217225003,332430,"Dillingham, Aleknagik",2016-08-01,2016,8,commercial_sold_to,1386851,1682902,871304,1221770,1278302,NA,raw_value,NA,false
 A3324300217225003_fuel_used_gallons,A3324300217225003,332430,"Dillingham, Aleknagik",2016-08-01,2016,8,fuel_used_gallons,140763,96153,99803,96232,131402,NA,raw_value,NA,false
 A3324300217225003_peak_consumption_kw,A3324300217225003,332430,"Dillingham, Aleknagik",2016-08-01,2016,8,peak_consumption_kw,4210,4240,2775,3390,5374,NA,raw_value,NA,false
@@ -2836,39 +3007,101 @@ A3324300226225003_commercial_sold_to,A3324300226225003,332430,"Dillingham, Alekn
 A3324300226225003_peak_consumption_kw,A3324300226225003,332430,"Dillingham, Aleknagik",2025-08-01,2025,8,peak_consumption_kw,5465,6650,2967,4352,5235,NA,raw_value,NA,false
 A3324300720225003_unbilled_sold_to,A3324300720225003,332430,"Dillingham, Aleknagik",2020-01-01,2020,1,unbilled_sold_to,13438,5185,1120,2592,1108,NA,raw_value,NA,false
 A3324300817225003_com_facil_sold_to,A3324300817225003,332430,"Dillingham, Aleknagik",2017-02-01,2017,2,com_facil_sold_to,151902,86230,91180,82635,88849,NA,raw_value,NA,false
+A3324300826225003_residential_customers,A3324300826225003,332430,"Dillingham, Aleknagik",2026-02-01,2026,2,residential_customers,829,941,880,882,964,NA,carry_forward,NA,false
+A3324300926225003_residential_customers,A3324300926225003,332430,"Dillingham, Aleknagik",2026-03-01,2026,3,residential_customers,822,829,880,878,964,941,manual_override,NA,false
 A3324301122225003_commercial_sold_to,A3324301122225003,332430,"Dillingham, Aleknagik",2022-05-01,2022,5,commercial_sold_to,1244815,763940,970597,888686,765593,NA,raw_value,NA,false
 A3324301122225003_peak_consumption_kw,A3324301122225003,332430,"Dillingham, Aleknagik",2022-05-01,2022,5,peak_consumption_kw,3974,2340,3260,3148,2408,NA,raw_value,NA,false
+A3324301126225003_residential_customers,A3324301126225003,332430,"Dillingham, Aleknagik",2026-05-01,2026,5,residential_customers,825,926,880,932,973,NA,carry_forward,NA,false
 A3324301222225003_peak_consumption_kw,A3324301222225003,332430,"Dillingham, Aleknagik",2022-06-01,2022,6,peak_consumption_kw,3955,3974,3260,5227,2968,NA,raw_value,NA,false
 A3324400819225003_govt_facil_sold_to,A3324400819225003,332440,Ouzinkie,2019-02-01,2019,2,govt_facil_sold_to,2025,926,885,1192,1074,NA,raw_value,NA,false
 A3324500123225003_powerhouse_consumption_kwh,A3324500123225003,332450,Pedro Bay,2022-07-01,2022,7,powerhouse_consumption_kwh,3075,3083,1489,2566,1341,NA,raw_value,NA,false
 A3324500425225003_peak_consumption_kw,A3324500425225003,332450,Pedro Bay,2024-10-01,2024,10,peak_consumption_kw,123,56,64,59,55,NA,raw_value,NA,false
 A3324501222225003_powerhouse_consumption_kwh,A3324501222225003,332450,Pedro Bay,2022-06-01,2022,6,powerhouse_consumption_kwh,3083,1186,1489,2130,1144,NA,raw_value,NA,false
+A3324600122225003_fuel_used_gallons,A3324600122225003,332460,Pelican,2021-07-01,2021,7,fuel_used_gallons,350,NA,1072,57,0,NA,raw_value,NA,false
+A3324600225225003_fuel_used_gallons,A3324600225225003,332460,Pelican,2024-08-01,2024,8,fuel_used_gallons,1769,0,847,0,38,NA,raw_value,NA,false
+A3324600323225003_fuel_used_gallons,A3324600323225003,332460,Pelican,2022-09-01,2022,9,fuel_used_gallons,697,0,2001,1593,72,NA,raw_value,NA,false
 A3324600325225003_govt_facil_sold_to,A3324600325225003,332460,Pelican,2024-09-01,2024,9,govt_facil_sold_to,860,276,746,734,286,NA,raw_value,NA,false
+A3324600422225003_fuel_used_gallons,A3324600422225003,332460,Pelican,2021-10-01,2021,10,fuel_used_gallons,856,115,1072,70,967,NA,raw_value,NA,false
+A3324600423225003_fuel_used_gallons,A3324600423225003,332460,Pelican,2022-10-01,2022,10,fuel_used_gallons,3186,697,2001,4376,384,NA,raw_value,NA,false
+A3324600425225003_fuel_used_gallons,A3324600425225003,332460,Pelican,2024-10-01,2024,10,fuel_used_gallons,682,0,847,150,1010,NA,raw_value,NA,false
 A3324600425225003_govt_facil_sold_to,A3324600425225003,332460,Pelican,2024-10-01,2024,10,govt_facil_sold_to,1191,860,746,1516,311,NA,raw_value,NA,false
 A3324600517225003_powerhouse_consumption_kwh,A3324600517225003,332460,Pelican,2016-11-01,2016,11,powerhouse_consumption_kwh,13667,4863,15600,60258,6232,NA,avg_same_month_other_years,NA,false
+A3324600523225003_fuel_used_gallons,A3324600523225003,332460,Pelican,2022-11-01,2022,11,fuel_used_gallons,8054,3186,2001,5516,65,NA,raw_value,NA,false
 A3324600525225003_govt_facil_sold_to,A3324600525225003,332460,Pelican,2024-11-01,2024,11,govt_facil_sold_to,2172,1191,746,1800,395,NA,raw_value,NA,false
 A3324600617225003_powerhouse_consumption_kwh,A3324600617225003,332460,Pelican,2016-12-01,2016,12,powerhouse_consumption_kwh,115654,13667,15600,13667,6372,NA,avg_same_month_other_years,NA,false
+A3324600622225003_fuel_used_gallons,A3324600622225003,332460,Pelican,2021-12-01,2021,12,fuel_used_gallons,5027,24,1072,1742,2321,NA,raw_value,NA,false
+A3324600623225003_fuel_used_gallons,A3324600623225003,332460,Pelican,2022-12-01,2022,12,fuel_used_gallons,7847,8054,2001,7803,1616,NA,raw_value,NA,false
+A3324600625225003_fuel_used_gallons,A3324600625225003,332460,Pelican,2024-12-01,2024,12,fuel_used_gallons,1436,301,847,1545,3218,NA,raw_value,NA,false
 A3324600625225003_govt_facil_sold_to,A3324600625225003,332460,Pelican,2024-12-01,2024,12,govt_facil_sold_to,2408,2172,746,2020,417,NA,raw_value,NA,false
+A3324600722225003_fuel_used_gallons,A3324600722225003,332460,Pelican,2022-01-01,2022,1,fuel_used_gallons,3461,5027,2001,2514,3450,NA,raw_value,NA,false
+A3324600723225003_fuel_used_gallons,A3324600723225003,332460,Pelican,2023-01-01,2023,1,fuel_used_gallons,7552,7847,1604,5292,2428,NA,raw_value,NA,false
+A3324600724225003_fuel_used_gallons,A3324600724225003,332460,Pelican,2024-01-01,2024,1,fuel_used_gallons,3461,0,847,296,3450,NA,raw_value,NA,false
+A3324600725225003_fuel_used_gallons,A3324600725225003,332460,Pelican,2025-01-01,2025,1,fuel_used_gallons,2789,1436,1419,2779,3618,NA,raw_value,NA,false
 A3324600725225003_govt_facil_sold_to,A3324600725225003,332460,Pelican,2025-01-01,2025,1,govt_facil_sold_to,1869,2408,1578,2412,379,NA,raw_value,NA,false
+A3324600823225003_fuel_used_gallons,A3324600823225003,332460,Pelican,2023-02-01,2023,2,fuel_used_gallons,2738,7552,1604,5736,1178,NA,raw_value,NA,false
+A3324600824225003_fuel_used_gallons,A3324600824225003,332460,Pelican,2024-02-01,2024,2,fuel_used_gallons,592,3461,847,2666,1715,NA,raw_value,NA,false
+A3324600825225003_fuel_used_gallons,A3324600825225003,332460,Pelican,2025-02-01,2025,2,fuel_used_gallons,4122,2789,1419,2171,832,NA,raw_value,NA,false
 A3324600825225003_govt_facil_sold_to,A3324600825225003,332460,Pelican,2025-02-01,2025,2,govt_facil_sold_to,2415,1869,1578,1822,322,NA,raw_value,NA,false
 A3324600922225003_com_facil_customers,A3324600922225003,332460,Pelican,2022-03-01,2022,3,com_facil_customers,24789,18,2080,18,18,NA,avg_preceding_proceeding,NA,false
 A3324600922225003_commercial_customers,A3324600922225003,332460,Pelican,2022-03-01,2022,3,commercial_customers,24989,34,2111,34,26,NA,avg_preceding_proceeding,NA,false
 A3324600922225003_govt_facil_customers,A3324600922225003,332460,Pelican,2022-03-01,2022,3,govt_facil_customers,297,1,26,1,1,NA,avg_preceding_proceeding,NA,false
 A3324600922225003_residential_customers,A3324600922225003,332460,Pelican,2022-03-01,2022,3,residential_customers,25971,72,2230,72,73,NA,avg_preceding_proceeding,NA,false
 A3324600922225003_unbilled_customers,A3324600922225003,332460,Pelican,2022-03-01,2022,3,unbilled_customers,24436,2,2038,2,2,NA,avg_preceding_proceeding,NA,false
+A3324600923225003_fuel_used_gallons,A3324600923225003,332460,Pelican,2023-03-01,2023,3,fuel_used_gallons,3920,2738,1604,2738,866,NA,raw_value,NA,false
+A3324600924225003_fuel_used_gallons,A3324600924225003,332460,Pelican,2024-03-01,2024,3,fuel_used_gallons,1871,592,847,296,1378,NA,raw_value,NA,false
+A3324600925225003_fuel_used_gallons,A3324600925225003,332460,Pelican,2025-03-01,2025,3,fuel_used_gallons,1553,4122,1419,2061,1457,NA,raw_value,NA,false
 A3324600925225003_govt_facil_sold_to,A3324600925225003,332460,Pelican,2025-03-01,2025,3,govt_facil_sold_to,1775,2415,1578,2014,299,NA,raw_value,NA,false
+A3324601022225003_fuel_used_gallons,A3324601022225003,332460,Pelican,2022-04-01,2022,4,fuel_used_gallons,727,38,2001,19,0,NA,raw_value,NA,false
 A3324601025225003_govt_facil_sold_to,A3324601025225003,332460,Pelican,2025-04-01,2025,4,govt_facil_sold_to,1613,1775,1578,1435,284,NA,raw_value,NA,false
 A3324601125225003_govt_facil_sold_to,A3324601125225003,332460,Pelican,2025-05-01,2025,5,govt_facil_sold_to,1095,1613,1578,1156,276,NA,raw_value,NA,false
 A3324601225225003_govt_facil_sold_to,A3324601225225003,332460,Pelican,2025-06-01,2025,6,govt_facil_sold_to,699,1095,1578,1095,247,NA,raw_value,NA,false
+A3324700519225003_diesel_kwh_generated,A3324700519225003,332470,Perryville,2018-11-01,2018,11,diesel_kwh_generated,116640,NA,116640,NA,36826,NA,avg_same_month_other_years,NA,false
 A3324700619225003_commercial_sold_to,A3324700619225003,332470,Perryville,2018-12-01,2018,12,commercial_sold_to,83046,26908,29476,25150,34606,NA,avg_preceding_proceeding,NA,false
+A3324700620225003_peak_consumption_kw,A3324700620225003,332470,Perryville,2019-12-01,2019,12,peak_consumption_kw,101,NA,101,99,NA,NA,raw_value,NA,false
 A3324700716225003_com_facil_sold_to,A3324700716225003,332470,Perryville,2016-01-01,2016,1,com_facil_sold_to,10352,0,5138,2586,0,NA,raw_value,NA,false
+A3324700719225003_diesel_kwh_generated,A3324700719225003,332470,Perryville,2019-01-01,2019,1,diesel_kwh_generated,107040,NA,63320,112560,40959,NA,avg_same_month_other_years,NA,false
+A3324700720225003_peak_consumption_kw,A3324700720225003,332470,Perryville,2020-01-01,2020,1,peak_consumption_kw,99,101,17,51,NA,NA,raw_value,NA,false
+A3324700819225003_diesel_kwh_generated,A3324700819225003,332470,Perryville,2019-02-01,2019,2,diesel_kwh_generated,112560,107040,63320,104960,43044,NA,avg_same_month_other_years,NA,false
+A3324700919225003_diesel_kwh_generated,A3324700919225003,332470,Perryville,2019-03-01,2019,3,diesel_kwh_generated,102880,112560,63320,112560,38565,NA,avg_same_month_other_years,NA,false
 A3324800122225003_residential_sold_to,A3324800122225003,332480,Pilot Point,2021-07-01,2021,7,residential_sold_to,20436,13541,11873,11534,17751,NA,raw_value,NA,false
 A3324800123225003_residential_sold_to,A3324800123225003,332480,Pilot Point,2022-07-01,2022,7,residential_sold_to,20036,12974,11578,11298,17795,NA,raw_value,NA,false
 A3324800717225003_peak_consumption_kw,A3324800717225003,332480,Pilot Point,2017-01-01,2017,1,peak_consumption_kw,191,102,112,106,117,NA,raw_value,NA,false
 A3324800724225003_powerhouse_consumption_kwh,A3324800724225003,332480,Pilot Point,2024-01-01,2024,1,powerhouse_consumption_kwh,9848,1606,2452,1630,2163,NA,avg_preceding_proceeding,NA,false
+A3325000117225003_peak_consumption_kw,A3325000117225003,332500,Port Heiden,2016-07-01,2016,7,peak_consumption_kw,301,53,266,177,160,NA,raw_value,NA,false
+A3325000118225003_peak_consumption_kw,A3325000118225003,332500,Port Heiden,2017-07-01,2017,7,peak_consumption_kw,718,257,387,488,100,NA,raw_value,NA,false
+A3325000124225003_diesel_kwh_generated,A3325000124225003,332500,Port Heiden,2023-07-01,2023,7,diesel_kwh_generated,127213,NA,117871,137712,37348,NA,avg_same_month_other_years,NA,false
+A3325000124225003_fuel_used_gallons,A3325000124225003,332500,Port Heiden,2023-07-01,2023,7,fuel_used_gallons,10910,NA,9766,12134,3208,NA,avg_same_month_other_years,NA,false
+A3325000217225003_peak_consumption_kw,A3325000217225003,332500,Port Heiden,2016-08-01,2016,8,peak_consumption_kw,301,301,266,301,161,NA,raw_value,NA,false
+A3325000218225003_peak_consumption_kw,A3325000218225003,332500,Port Heiden,2017-08-01,2017,8,peak_consumption_kw,718,718,387,718,102,NA,raw_value,NA,false
+A3325000224225003_diesel_kwh_generated,A3325000224225003,332500,Port Heiden,2023-08-01,2023,8,diesel_kwh_generated,137712,127213,117871,83275,43039,NA,avg_same_month_other_years,NA,false
+A3325000224225003_fuel_used_gallons,A3325000224225003,332500,Port Heiden,2023-08-01,2023,8,fuel_used_gallons,12134,10910,9766,7018,3373,NA,avg_same_month_other_years,NA,false
+A3325000317225003_peak_consumption_kw,A3325000317225003,332500,Port Heiden,2016-09-01,2016,9,peak_consumption_kw,301,301,266,301,162,NA,raw_value,NA,false
+A3325000318225003_peak_consumption_kw,A3325000318225003,332500,Port Heiden,2017-09-01,2017,9,peak_consumption_kw,718,718,387,718,103,NA,raw_value,NA,false
+A3325000417225003_peak_consumption_kw,A3325000417225003,332500,Port Heiden,2016-10-01,2016,10,peak_consumption_kw,301,301,266,301,181,NA,raw_value,NA,false
+A3325000418225003_peak_consumption_kw,A3325000418225003,332500,Port Heiden,2017-10-01,2017,10,peak_consumption_kw,718,718,387,382,112,NA,raw_value,NA,false
+A3325000517225003_peak_consumption_kw,A3325000517225003,332500,Port Heiden,2016-11-01,2016,11,peak_consumption_kw,301,301,266,301,75,NA,raw_value,NA,false
+A3325000521225003_com_facil_sold_to,A3325000521225003,332500,Port Heiden,2020-11-01,2020,11,com_facil_sold_to,13415,4714,4527,5178,4954,NA,raw_value,NA,false
+A3325000525225003_commercial_sold_to,A3325000525225003,332500,Port Heiden,2024-11-01,2024,11,commercial_sold_to,23902,4819,12201,6056,10036,NA,avg_same_month_other_years,NA,false
+A3325000617225003_peak_consumption_kw,A3325000617225003,332500,Port Heiden,2016-12-01,2016,12,peak_consumption_kw,301,301,266,301,90,NA,raw_value,NA,false
+A3325000620225003_com_facil_sold_to,A3325000620225003,332500,Port Heiden,2019-12-01,2019,12,com_facil_sold_to,10131,4287,4658,3715,4956,NA,raw_value,NA,false
+A3325000717225003_peak_consumption_kw,A3325000717225003,332500,Port Heiden,2017-01-01,2017,1,peak_consumption_kw,301,301,387,301,75,NA,raw_value,NA,false
+A3325000723225003_commercial_sold_to,A3325000723225003,332500,Port Heiden,2023-01-01,2023,1,commercial_sold_to,39511,7083,12352,7083,10724,NA,avg_same_month_other_years,NA,false
+A3325000726225003_com_facil_sold_to,A3325000726225003,332500,Port Heiden,2026-01-01,2026,1,com_facil_sold_to,9572,4086,3603,3387,4577,NA,raw_value,NA,false
+A3325000817225003_peak_consumption_kw,A3325000817225003,332500,Port Heiden,2017-02-01,2017,2,peak_consumption_kw,301,301,387,301,83,NA,raw_value,NA,false
+A3325000824225003_commercial_sold_to,A3325000824225003,332500,Port Heiden,2024-02-01,2024,2,commercial_sold_to,22729,NA,12201,NA,8669,NA,avg_same_month_other_years,NA,false
+A3325000824225003_govt_facil_sold_to,A3325000824225003,332500,Port Heiden,2024-02-01,2024,2,govt_facil_sold_to,42180,NA,14339,NA,15580,NA,avg_same_month_other_years,NA,false
+A3325000824225003_residential_sold_to,A3325000824225003,332500,Port Heiden,2024-02-01,2024,2,residential_sold_to,38156,NA,19963,NA,15578,NA,avg_same_month_other_years,NA,false
+A3325000917225003_peak_consumption_kw,A3325000917225003,332500,Port Heiden,2017-03-01,2017,3,peak_consumption_kw,301,301,387,279,77,NA,raw_value,NA,false
+A3325000923225003_commercial_sold_to,A3325000923225003,332500,Port Heiden,2023-03-01,2023,3,commercial_sold_to,19475,NA,12352,9166,8349,NA,avg_same_month_other_years,NA,false
+A3325000923225003_govt_facil_sold_to,A3325000923225003,332500,Port Heiden,2023-03-01,2023,3,govt_facil_sold_to,47323,NA,11204,12592,12363,NA,avg_preceding_proceeding,NA,false
+A3325001019225003_peak_consumption_kw,A3325001019225003,332500,Port Heiden,2019-04-01,2019,4,peak_consumption_kw,470,40,93,40,107,NA,avg_preceding_proceeding,NA,false
+A3325001023225003_diesel_kwh_generated,A3325001023225003,332500,Port Heiden,2023-04-01,2023,4,diesel_kwh_generated,347100,NA,117871,NA,51995,NA,avg_same_month_other_years,NA,false
+A3325001023225003_fuel_used_gallons,A3325001023225003,332500,Port Heiden,2023-04-01,2023,4,fuel_used_gallons,27720,NA,9766,NA,3880,NA,avg_same_month_other_years,NA,false
+A3325001023225003_powerhouse_consumption_kwh,A3325001023225003,332500,Port Heiden,2023-04-01,2023,4,powerhouse_consumption_kwh,9656,NA,3628,NA,2531,NA,avg_same_month_other_years,NA,false
 A3325100117225003_residential_customers,A3325100117225003,332510,Kongiganak,2016-07-01,2016,7,residential_customers,102,104,103,103,142,NA,raw_value,NA,false
 A3325100119225003_total_kwh_purchased,A3325100119225003,332510,Kongiganak,2018-07-01,2018,7,total_kwh_purchased,12113,8779,10052,4390,846,NA,raw_value,NA,false
 A3325100126225003_fuel_used_gallons,A3325100126225003,332510,Kongiganak,2025-07-01,2025,7,fuel_used_gallons,13388,5984,9344,7372,5709,NA,raw_value,NA,false
+A3325100127225003_govt_facil_sold_to,A3325100127225003,332510,Kongiganak,2026-07-01,2026,7,govt_facil_sold_to,7719,270,2273,270,251,NA,avg_same_month_other_years,NA,false
 A3325100217225003_residential_customers,A3325100217225003,332510,Kongiganak,2016-08-01,2016,8,residential_customers,102,102,103,102,140,NA,raw_value,NA,false
 A3325100317225003_residential_customers,A3325100317225003,332510,Kongiganak,2016-09-01,2016,9,residential_customers,102,102,103,104,140,NA,raw_value,NA,false
 A3325100318225003_peak_consumption_kw,A3325100318225003,332510,Kongiganak,2017-09-01,2017,9,peak_consumption_kw,421,230,256,326,205,NA,raw_value,NA,false
@@ -3027,6 +3260,8 @@ A3325900726225003_diesel_kwh_generated,A3325900726225003,332590,Port Alsworth,20
 A3325900818225003_powerhouse_consumption_kwh,A3325900818225003,332590,Port Alsworth,2018-02-01,2018,2,powerhouse_consumption_kwh,2890,2124,2035,2242,1584,NA,raw_value,NA,false
 A3325900824225003_peak_consumption_kw,A3325900824225003,332590,Port Alsworth,2024-02-01,2024,2,peak_consumption_kw,395,312,245,254,183,NA,raw_value,NA,false
 A3325900917225003_govt_facil_sold_to,A3325900917225003,332590,Port Alsworth,2017-03-01,2017,3,govt_facil_sold_to,10814,8019,8090,8045,6792,NA,raw_value,NA,false
+A3325900926225003_peak_consumption_kw,A3325900926225003,332590,Port Alsworth,2026-03-01,2026,3,peak_consumption_kw,600,241,359,420,174,NA,avg_same_month_other_years,NA,false
+A3325901026225003_peak_consumption_kw,A3325901026225003,332590,Port Alsworth,2026-04-01,2026,4,peak_consumption_kw,600,600,359,408,165,NA,avg_same_month_other_years,NA,false
 A3326000525225003_peak_consumption_kw,A3326000525225003,332600,Tanana,2024-11-01,2024,11,peak_consumption_kw,372,220,243,237,241,NA,raw_value,NA,false
 A3326000626225003_residential_sold_to,A3326000626225003,332600,Tanana,2025-12-01,2025,12,residential_sold_to,51471,30696,30731,33503,31976,NA,raw_value,NA,false
 A3326100122225003_powerhouse_consumption_kwh,A3326100122225003,332610,Tatitlek,2021-07-01,2021,7,powerhouse_consumption_kwh,7699,5463,3182,3844,2902,NA,raw_value,NA,false
@@ -3052,6 +3287,7 @@ A3326300823225003_peak_consumption_kw,A3326300823225003,332630,Tenakee Springs,2
 A3326500126225003_commercial_sold_to,A3326500126225003,332650,Angoon,2025-07-01,2025,7,commercial_sold_to,84044,58271,60070,75342,42287,NA,raw_value,NA,NA
 A3326500127225003_commercial_sold_to,A3326500127225003,332650,Angoon,2026-07-01,2026,7,commercial_sold_to,88260,56279,58858,56279,41904,NA,raw_value,NA,NA
 A3326500226225003_commercial_sold_to,A3326500226225003,332650,Angoon,2025-08-01,2025,8,commercial_sold_to,92412,84044,60070,84345,39024,NA,raw_value,NA,NA
+A3326500227225003_commercial_sold_to,A3326500227225003,332650,Angoon,2026-08-01,2026,8,commercial_sold_to,90320,88260,62791,88260,43878,NA,raw_value,NA,false
 A3326500326225003_commercial_sold_to,A3326500326225003,332650,Angoon,2025-09-01,2025,9,commercial_sold_to,84646,92412,60070,69615,42167,NA,raw_value,NA,NA
 A3326500726225003_residential_sold_to,A3326500726225003,332650,Angoon,2026-01-01,2026,1,residential_sold_to,101165,81215,76580,79814,82192,NA,raw_value,NA,NA
 A3326500826225003_residential_customers,A3326500826225003,332650,Angoon,2026-02-01,2026,2,residential_customers,142,190,169,166,193,NA,carry_forward,NA,NA
@@ -3280,6 +3516,7 @@ A3327401123225003_fuel_used_gallons,A3327401123225003,332740,Nikolski,2023-05-01
 A3327401126225003_fuel_used_gallons,A3327401126225003,332740,Nikolski,2026-05-01,2026,5,fuel_used_gallons,2962,3493,3128,3493,1945,NA,raw_value,NA,false
 A3327401224225003_diesel_kwh_generated,A3327401224225003,332740,Nikolski,2024-06-01,2024,6,diesel_kwh_generated,44654,27419,21704,23889,15575,NA,raw_value,NA,false
 A3327401224225003_fuel_used_gallons,A3327401224225003,332740,Nikolski,2024-06-01,2024,6,fuel_used_gallons,4610,2823,2137,2244,1515,NA,raw_value,NA,false
+A3327401226225003_fuel_used_gallons,A3327401226225003,332740,Nikolski,2026-06-01,2026,6,fuel_used_gallons,3151,2962,3132,2962,1859,NA,raw_value,NA,false
 A3328500219225003_unbilled_sold_to,A3328500219225003,332850,Unalakleet,2018-08-01,2018,8,unbilled_sold_to,1818,90,700,954,64,NA,raw_value,NA,false
 A3328500319225003_unbilled_sold_to,A3328500319225003,332850,Unalakleet,2018-09-01,2018,9,unbilled_sold_to,1818,1818,700,945,82,NA,raw_value,NA,false
 A3328500619225003_unbilled_sold_to,A3328500619225003,332850,Unalakleet,2018-12-01,2018,12,unbilled_sold_to,1944,72,700,189,409,NA,raw_value,NA,false
@@ -3326,6 +3563,7 @@ A3328700626225003_diesel_kwh_generated,A3328700626225003,332870,Newtok,2025-12-0
 A3328700626225003_fuel_used_gallons,A3328700626225003,332870,Newtok,2025-12-01,2025,12,fuel_used_gallons,10781,5287,6688,8034,4955,NA,raw_value,NA,false
 A3328700626225003_govt_facil_sold_to,A3328700626225003,332870,Newtok,2025-12-01,2025,12,govt_facil_sold_to,1776,653,1209,1182,518,NA,raw_value,NA,false
 A3328700626225003_residential_sold_to,A3328700626225003,332870,Newtok,2025-12-01,2025,12,residential_sold_to,53739,21277,31879,27177,26376,NA,raw_value,NA,false
+A3328700716225003_govt_facil_sold_to,A3328700716225003,332870,Newtok,2016-01-01,2016,1,govt_facil_sold_to,1132,489,381,592,549,NA,raw_value,NA,false
 A3328700722225003_fuel_used_gallons,A3328700722225003,332870,Newtok,2022-01-01,2022,1,fuel_used_gallons,9037,9552,5336,7990,4992,NA,raw_value,NA,false
 A3328700724225003_fuel_used_gallons,A3328700724225003,332870,Newtok,2024-01-01,2024,1,fuel_used_gallons,7074,7074,8124,9405,5273,NA,raw_value,NA,false
 A3328700725225003_govt_facil_sold_to,A3328700725225003,332870,Newtok,2025-01-01,2025,1,govt_facil_sold_to,1326,1324,1209,1145,530,NA,raw_value,NA,false
@@ -3367,10 +3605,14 @@ A3328701124225003_govt_facil_sold_to,A3328701124225003,332870,Newtok,2024-05-01,
 A3328701125225003_fuel_used_gallons,A3328701125225003,332870,Newtok,2025-05-01,2025,5,fuel_used_gallons,13764,13414,6688,13414,4431,NA,raw_value,NA,false
 A3328701125225003_govt_facil_sold_to,A3328701125225003,332870,Newtok,2025-05-01,2025,5,govt_facil_sold_to,3720,0,1209,698,325,NA,raw_value,NA,false
 A3328701125225003_powerhouse_consumption_kwh,A3328701125225003,332870,Newtok,2025-05-01,2025,5,powerhouse_consumption_kwh,3815,8954,4510,8954,840,NA,raw_value,NA,false
+A3328701126225003_diesel_kwh_generated,A3328701126225003,332870,Newtok,2026-05-01,2026,5,diesel_kwh_generated,123496,123496,112033,92622,53389,NA,raw_value,NA,false
+A3328701126225003_fuel_used_gallons,A3328701126225003,332870,Newtok,2026-05-01,2026,5,fuel_used_gallons,12648,12648,11010,9486,5598,NA,raw_value,NA,false
+A3328701126225003_peak_consumption_kw,A3328701126225003,332870,Newtok,2026-05-01,2026,5,peak_consumption_kw,240,240,212,219,93,NA,raw_value,NA,false
 A3328701222225003_fuel_used_gallons,A3328701222225003,332870,Newtok,2022-06-01,2022,6,fuel_used_gallons,12958,2670,5336,2984,3420,NA,raw_value,NA,false
 A3328701222225003_powerhouse_consumption_kwh,A3328701222225003,332870,Newtok,2022-06-01,2022,6,powerhouse_consumption_kwh,3964,NA,2244,NA,522,NA,raw_value,NA,false
 A3328701224225003_govt_facil_sold_to,A3328701224225003,332870,Newtok,2024-06-01,2024,6,govt_facil_sold_to,1502,1435,758,1657,268,NA,raw_value,NA,false
 A3328701225225003_govt_facil_sold_to,A3328701225225003,332870,Newtok,2025-06-01,2025,6,govt_facil_sold_to,1395,3720,1209,2558,281,NA,raw_value,NA,false
+A3328701226225003_peak_consumption_kw,A3328701226225003,332870,Newtok,2026-06-01,2026,6,peak_consumption_kw,198,240,212,240,85,NA,raw_value,NA,false
 A3328800416225003_govt_facil_sold_to,A3328800416225003,332880,Venetie,2015-10-01,2015,10,govt_facil_sold_to,2291,1145,1114,972,595,NA,raw_value,NA,false
 A3328800618225003_commercial_sold_to,A3328800618225003,332880,Venetie,2017-12-01,2017,12,commercial_sold_to,40550,NA,16855,16928,13946,NA,raw_value,NA,false
 A3328800618225003_diesel_kwh_generated,A3328800618225003,332880,Venetie,2017-12-01,2017,12,diesel_kwh_generated,143300,NA,63182,NA,61483,NA,raw_value,NA,false
