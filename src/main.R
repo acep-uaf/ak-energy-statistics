@@ -56,10 +56,18 @@ l1_clean_lookup_pce_floor(
 
 
 
-l1_check_quality_pce_dir(
-  dir_in = 'data/l0/consolidated',
-  pattern = 'l0_pce',
-  config = 'config/check_data/l1_pce_quality_check.yml'
+l1_check_quality(
+  path_in = 'data/l0/consolidated/l0_pce_header.csv',
+  config = 'config/check_data/l1_pce_quality_check.yml',
+  path_out = 'data/l1/consolidated/l1_pce_header.csv',
+  path_log_out = 'data/l1/logs/l1_pce_header_quality_log.csv'
+)
+
+l1_check_quality(
+  path_in = 'data/l0/consolidated/l0_pce_rate_line.csv',
+  config = 'config/check_data/l1_pce_quality_check.yml',
+  path_out = 'data/l1/consolidated/l1_pce_rate_line.csv',
+  path_log_out = 'data/l1/logs/l1_pce_rate_line_quality_log.csv'
 )
 
 

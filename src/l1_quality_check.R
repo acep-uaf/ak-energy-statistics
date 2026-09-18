@@ -283,7 +283,7 @@ validate_l1_data <- function(df, cfg) {
 # COORDINATOR & RUNNER
 # -------------------------------------------------------------------------
 
-l1_check_quality <- function(path_in, config) {
+l1_check_quality <- function(path_in, config, path_out, path_log_out) {
   file_name <- path_file(path_in)
   cli_h1("Running Data Quality Checks: {.file {file_name}}")
 
@@ -316,9 +316,7 @@ l1_check_quality <- function(path_in, config) {
     stop("Possible data quality issues, see above checklist for specifics.", call. = FALSE)
   }
 
-  # Egress Setup
-  path_out <- path_in %>%
-    str_replace_all("l0", "l1")
+  # Write to file
 
   dir_create(dirname(path_out))
   write_csv(df, file = path_out)
@@ -327,10 +325,6 @@ l1_check_quality <- function(path_in, config) {
   if (exists(".pce_violations", envir = .GlobalEnv) && !is.null(get(".pce_violations", envir = .GlobalEnv))) {
     violations_df <- get(".pce_violations", envir = .GlobalEnv) %>%
       mutate(file = file_name, .before = 1)
-
-
-    log_file_name <- path_ext_set(str_c(path_ext_remove(file_name), "_quality_log"), "csv")
-    path_log_out <- path(path_dir(path_dir(path_in)), "logs", log_file_name)
 
     dir_create(dirname(path_log_out))
     write_csv(violations_df, file = path_log_out)
@@ -344,14 +338,3 @@ l1_check_quality <- function(path_in, config) {
   cli_alert_success("Success! {file_name} passed all data quality checks, writing to {path_file(path_out)}.")
 }
 
-# Loop through directory
-l1_check_quality_pce_dir <- function(dir_in, pattern, config) {
-  files <- dir_ls(path = dir_in, regexp = pattern)
-
-  for (file in files) {
-    l1_check_quality(
-      path_in = file,
-      config = config
-    )
-  }
-}

@@ -11,6 +11,14 @@ l2_generate_imputation_options <- function(
   outlier_config_path = 'config/check_data/l2_pce_outlier_check.yml',
   path_out) {
 
+# TODO:
+  # generalize this function so we can run it on l1 quality_checked data
+    # may struggle to generalize for the different config files, probably could write some sort of fallback
+  # instead of writing to file, return df
+    # run three times, one for each dataset
+    # wrap in new function that cbinds the three outputs and writes to file
+    # this function is then run from main.R
+  
   pce <- read_csv(pce_path, show_col_types = FALSE)
 
   pce_outliers_log <- read_csv(pce_outliers_log_path, show_col_types = FALSE) %>%
@@ -134,3 +142,16 @@ l2_generate_imputation_options <- function(
           # "Average of preceding and proceeding months",
           # "Average of months from other years",
           # "Manual override: expert opinion"
+
+
+# l2_generate_imputation_options(
+#   pce_path = 'data/l1/consolidated/l1_pce.csv',
+#   pce_outliers_log_path = 'data/l2/logs/l2_pce_outliers_log.csv',
+#   path_out = 'data/l2/logs/l2_pce_imputation_options.csv')
+
+
+
+# l2_generate_imputation_options(
+#   pce_path = 'data/l0/consolidated/l0_pce_header.csv',
+#   pce_outliers_log_path = 'data/l0/logs/l2_pce_outliers_log.csv',
+#   path_out = 'data/l2/logs/l2_pce_imputation_options.csv')
