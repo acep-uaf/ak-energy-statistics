@@ -330,7 +330,7 @@ l1_check_quality <- function(path_in, config) {
 
 
     log_file_name <- path_ext_set(str_c(path_ext_remove(file_name), "_quality_log"), "csv")
-    path_log_out <- path(path_dir(path_dir(path_out)), "logs", log_file_name)
+    path_log_out <- path(path_dir(path_dir(path_in)), "logs", log_file_name)
 
     dir_create(dirname(path_log_out))
     write_csv(violations_df, file = path_log_out)
