@@ -4,6 +4,7 @@ source('src/l1_lookup.R')
 source('src/l1_quality_check.R')
 source('src/l1_transform.R')
 source('src/l2_outlier_check.R')
+source('src/l2_combine_outliers_and_quality_violations.R')
 source('src/l2_imputation_options.R')
 source('src/l2_combine_imputation_decisions.R')
 source('src/l2_flag_decided_imputations.R')
@@ -54,8 +55,6 @@ l1_clean_lookup_pce_floor(
   path_out = "data/l1/lookup/l1_lookup_pce_floor.csv"
 )
 
-
-
 l1_check_quality(
   path_in = 'data/l0/consolidated/l0_pce_header.csv',
   config = 'config/check_data/l1_pce_quality_check.yml',
@@ -70,8 +69,6 @@ l1_check_quality(
   path_log_out = 'data/l1/logs/l1_pce_rate_line_quality_log.csv'
 )
 
-
-
 l1_transform_pce(
   l1_consolidated_dir = "data/l1/consolidated",
   l1_lookup_sales_report_path = "data/l1/lookup/l1_lookup_sales_report.csv",
@@ -81,8 +78,6 @@ l1_transform_pce(
   config = "config/schema/l1_pce_schema.yml"
 )
 
-
-
 l2_check_outliers(
   path_in         = "data/l1/consolidated/l1_pce.csv",
   path_config     = "config/check_data/l2_pce_outlier_check.yml",
@@ -90,9 +85,19 @@ l2_check_outliers(
   path_out = "data/l2/consolidated/l2_pce.csv"
 )
 
+l2_combine_outliers_and_quality_violations(
+  l1_pce_header_quality_log_path = 'data/l1/logs/l1_pce_header_quality_log.csv',
+  l1_pce_rate_line_quality_log_path = 'data/l1/logs/l1_pce_rate_line_quality_log.csv',
+  l2_pce_outliers_log_path = 'data/l2/logs/l2_pce_outliers_log.csv',
+  l1_pce_path = 'data/l1/consolidated/l1_pce.csv',
+  path_out = 'data/l2/logs/l2_combined_outliers_and_quality_violations_log.csv'
+)
+
 l2_generate_imputation_options(
   pce_path = 'data/l1/consolidated/l1_pce.csv',
-  pce_outliers_log_path = 'data/l2/logs/l2_pce_outliers_log.csv',
+  combined_outliers_and_quality_violations_log_path = 'data/l2/logs/l2_pce_outliers_log.csv',
+  l1_pce_quality_config_path = 'config/check_data/l1_pce_quality_check.yml',
+  l2_pce_outlier_config_path = 'config/check_data/l2_pce_outlier_check.yml',
   path_out = 'data/l2/logs/l2_pce_imputation_options.csv')
 
 l2_combine_imputation_decisions(

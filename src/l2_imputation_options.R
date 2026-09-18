@@ -2,30 +2,31 @@ library(dplyr)
 library(readr)
 library(fs)
 library(yaml)
+library(purrr)
 library(lubridate)
 library(tidyr)
 
 l2_generate_imputation_options <- function(
   pce_path,
-  pce_outliers_log_path,
-  outlier_config_path = 'config/check_data/l2_pce_outlier_check.yml',
+  combined_outliers_and_quality_violations_log_path,
+  l1_pce_quality_config_path,
+  l2_pce_outlier_config_path,
   path_out) {
 
-# TODO:
-  # generalize this function so we can run it on l1 quality_checked data
-    # may struggle to generalize for the different config files, probably could write some sort of fallback
-  # instead of writing to file, return df
-    # run three times, one for each dataset
-    # wrap in new function that cbinds the three outputs and writes to file
-    # this function is then run from main.R
   
   pce <- read_csv(pce_path, show_col_types = FALSE)
 
-  pce_outliers_log <- read_csv(pce_outliers_log_path, show_col_types = FALSE) %>%
+  combined_outliers_and_quality_violations_log <- read_csv(combined_outliers_and_quality_violations_log_path, show_col_types = FALSE) %>%
     select(-any_of(c("median_val", "mad_score", "anomaly_severity")))
 
-  config <- read_yaml(outlier_config_path)
-  target_cols <- config$columns_to_check
+  l1_pce_quality_config <- read_yaml(l1_pce_quality_config_path)
+  l2_pce_outlier_config <- read_yaml(l2_pce_outlier_config_path)
+
+  rate_line_cols <- names(l1_pce_quality_config$l0_pce_rate_line$bounds)
+  header_cols <- names(l1_pce_quality_config$l0_pce_header$bounds)
+  outlier_cols <- unlist(l2_pce_outlier_config$columns_to_check)
+
+  target_cols <- unique(c(rate_line_cols, header_cols, outlier_cols))
 
   valid_cols <- intersect(target_cols, names(pce))
 
@@ -56,7 +57,7 @@ l2_generate_imputation_options <- function(
     select(project_code, column, month_num, year_num, val)
 
   # build decision dataframe
-  df_out <- pce_outliers_log %>%
+  df_out <- combined_outliers_and_quality_violations_log %>%
     mutate(
       prev_month = date %m-% months(1),
       next_month = date %m+% months(1),
@@ -117,7 +118,7 @@ l2_generate_imputation_options <- function(
     select(
       id,
       identifier,
-      any_of(names(pce_outliers_log)),
+      any_of(names(combined_outliers_and_quality_violations_log)),
       carry_forward,
       annual_average,
       avg_preceding_proceeding,
@@ -142,16 +143,3 @@ l2_generate_imputation_options <- function(
           # "Average of preceding and proceeding months",
           # "Average of months from other years",
           # "Manual override: expert opinion"
-
-
-# l2_generate_imputation_options(
-#   pce_path = 'data/l1/consolidated/l1_pce.csv',
-#   pce_outliers_log_path = 'data/l2/logs/l2_pce_outliers_log.csv',
-#   path_out = 'data/l2/logs/l2_pce_imputation_options.csv')
-
-
-
-# l2_generate_imputation_options(
-#   pce_path = 'data/l0/consolidated/l0_pce_header.csv',
-#   pce_outliers_log_path = 'data/l0/logs/l2_pce_outliers_log.csv',
-#   path_out = 'data/l2/logs/l2_pce_imputation_options.csv')

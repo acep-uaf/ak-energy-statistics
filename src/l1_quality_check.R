@@ -7,6 +7,7 @@ library(fs)
 library(stringr)
 library(purrr)
 library(cli)
+library(yaml)
 
 # -------------------------------------------------------------------------
 # DATA PREP & CLEANING ENGINE
@@ -87,7 +88,7 @@ recast_l1_data <- function(df, cfg) {
 
 # Null values that fall outside of YAML-specified boundaries
 enforce_l1_bounds <- function(df, cfg) {
-  if (!"bounds" %in% names(cfg)) return(df)
+  if (!"bounds" %in% names(cfg)) return(list(data = df, violations = tibble::tibble()))
 
   cli_h2("Enforcing Range Boundaries")
 
@@ -97,7 +98,7 @@ enforce_l1_bounds <- function(df, cfg) {
   for (col in names(cfg$bounds)) {
     limits <- cfg$bounds[[col]]
 
-    # Normalize target_cols into a character vector (handles single strings, lists, or NULL)
+    # Normalize target_cols into a character vector
     target_cols <- if ("target_columns" %in% names(limits)) {
       as.character(unlist(limits$target_columns))
     } else if ("target_column" %in% names(limits)) {
@@ -120,6 +121,7 @@ enforce_l1_bounds <- function(df, cfg) {
     # Build logical masks for violations
     low_mask  <- rep(FALSE, length(val_vector))
     high_mask <- rep(FALSE, length(val_vector))
+    rule_desc <- ""
 
     # Check lower bound
     if ("min" %in% names(limits) && !is.null(limits$min) && !is.na(limits$min)) {
@@ -207,13 +209,7 @@ enforce_l1_bounds <- function(df, cfg) {
     }
   }
 
-  if (length(violation_list) > 0) {
-    .pce_violations <<- purrr::list_rbind(violation_list)
-  } else {
-    .pce_violations <<- NULL
-  }
-
-  return(df)
+  return(list(data = df, violations = list_rbind(violation_list)))
 }
 
 # -------------------------------------------------------------------------
@@ -296,7 +292,7 @@ l1_check_quality <- function(path_in, config, path_out, path_log_out) {
   }
   cfg <- cfg_whole[[config_key]]
 
-  # Ingest every column strictly as character text, silencing all internal guessing logs
+  # Read all as character for safety
   df <- read_csv(
     path_in,
     col_types = readr::cols(.default = readr::col_character()),
@@ -306,7 +302,10 @@ l1_check_quality <- function(path_in, config, path_out, path_log_out) {
 
   # Process data (Recast -> Enforce Bounds)
   df <- recast_l1_data(df, cfg)
-  df <- enforce_l1_bounds(df, cfg)
+  
+  bounds_result <- enforce_l1_bounds(df, cfg)
+  df <- bounds_result$data
+  violations_df <- bounds_result$violations
 
   # Validate data types and structural database constraints
   all_passed <- validate_l1_data(df, cfg)
@@ -316,25 +315,13 @@ l1_check_quality <- function(path_in, config, path_out, path_log_out) {
     stop("Possible data quality issues, see above checklist for specifics.", call. = FALSE)
   }
 
-  # Write to file
+  # Write log to file
+  dir_create(dirname(path_log_out))
+  write_csv(violations_df, file = path_log_out)
+  cli_alert_info("Quality log saved to {.file {path_file(path_log_out)}} ({nrow(violations_df)} entries).")
 
+  # Write data to file
   dir_create(dirname(path_out))
   write_csv(df, file = path_out)
-
-  # Write out log file if violations were flagged
-  if (exists(".pce_violations", envir = .GlobalEnv) && !is.null(get(".pce_violations", envir = .GlobalEnv))) {
-    violations_df <- get(".pce_violations", envir = .GlobalEnv) %>%
-      mutate(file = file_name, .before = 1)
-
-    dir_create(dirname(path_log_out))
-    write_csv(violations_df, file = path_log_out)
-
-    cli_alert_info("Quality log saved to {.file {path_file(path_log_out)}} ({nrow(violations_df)} entries).")
-
-    # Securely remove temporary state variable from workspace environment
-    rm(.pce_violations, envir = .GlobalEnv)
-  }
-
   cli_alert_success("Success! {file_name} passed all data quality checks, writing to {path_file(path_out)}.")
 }
-
