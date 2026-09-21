@@ -15,6 +15,17 @@ format:
 ```{ojs}
 Tabulator = require("tabulator-tables@5.5.2")
 idb = require("idb@8.0.0/build/umd.js")
+
+strategyMap = new Map([
+  ["Keep original value", "raw_value"],
+  ["Carry forward", "carry_forward"],
+  ["Annual average", "annual_average"],
+  ["Average of preceding and proceeding months", "avg_preceding_proceeding"],
+  ["Average of months from other years", "avg_same_month_other_years"],
+  ["Manual override", "manual_override"]
+])
+
+reverseStrategyMap = new Map(Array.from(strategyMap.entries()).map(([k, v]) => [v, k]))
 ```
 
 ```{ojs}
@@ -101,6 +112,8 @@ pce_outliers_log = FileAttachment("data/l2/logs/l2_pce_imputations_flagged.csv")
 
       if (!cleanedRow.decision) {
         cleanedRow.decision = null;
+      } else if (reverseStrategyMap.has(cleanedRow.decision)) {
+        cleanedRow.decision = reverseStrategyMap.get(cleanedRow.decision);
       }
 
       return cleanedRow;
@@ -182,15 +195,6 @@ viewof selectedColumn = {
   el.addEventListener("input", () => { mutable currentCol = el.value; });
   return el;
 }
-
-strategyMap = new Map([
-  ["Keep original value", "raw_value"],
-  ["Carry forward", "carry_forward"],
-  ["Annual average", "annual_average"],
-  ["Average of preceding and proceeding months", "avg_preceding_proceeding"],
-  ["Average of months from other years", "avg_same_month_other_years"],
-  ["Manual override", "manual_override"]
-])
 ```
 
 
@@ -211,8 +215,8 @@ viewof hideDecided = Inputs.toggle({
 
 // Filter outliers based on imputation selection
 imputedOutlierDots = outlierTableData.map(d => {
-  const colName = strategyMap.get(d.decision);
-  const imputedVal = colName ? d[colName] : null;
+  const colName = strategyMap.get(d.decision) || (reverseStrategyMap.has(d.decision) ? d.decision : null);
+  const imputedVal = (colName && d[colName] !== null && d[colName] !== undefined) ? d[colName] : null;
 
   return {
     ...d,
@@ -256,8 +260,9 @@ chartContainer = {
   
   // Green dots
   activeImputedDots.forEach(d => {
+    const isKept = d.decision === "Keep original value" || d.decision === "raw_value";
     unifiedTooltipData.push({ 
-      ...d, tip_x: d.date, tip_y: d.imputed_value, tip_type: "Imputed Value" 
+      ...d, tip_x: d.date, tip_y: d.imputed_value, tip_type: isKept ? "Original Value Kept" : "Imputed Value" 
     });
   });
 
@@ -338,26 +343,18 @@ viewof outlierTableData = {
     d.column === currentCol
   );
 
-  const savedMap = await getSavedReviewsMap();
-  const hydratedData = initialData.map(row => {
-    if (savedMap.has(row.id)) {
-      return { 
-        ...row, 
-        decision: savedMap.get(row.id),
-        manual_override: savedMap.has(row.id) ? undefined : row.manual_override
-      };
-    }
-    return row;
-  });
-  
   const allSaved = await getAllSavedReviews();
   const savedDict = Object.fromEntries(allSaved.map(item => [item.id, item]));
   
   const fullyHydratedData = initialData.map(row => {
+    let finalRow = row;
     if (savedDict[row.id]) {
-      return { ...row, ...savedDict[row.id] };
+      finalRow = { ...row, ...savedDict[row.id] };
     }
-    return row;
+    if (finalRow.decision && reverseStrategyMap.has(finalRow.decision)) {
+      finalRow = { ...finalRow, decision: reverseStrategyMap.get(finalRow.decision) };
+    }
+    return finalRow;
   });
 
   const container = html`<div style="margin-bottom: 20px; width: 100%;"></div>`;
