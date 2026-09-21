@@ -9,6 +9,7 @@ source('src/l2_imputation_options.R')
 source('src/l2_combine_imputation_decisions.R')
 source('src/l2_flag_decided_imputations.R')
 source('src/l3_impute.R')
+source('src/l3_clean_historical.R')
 
 
 unlink('data/l0', recursive = T)
@@ -109,9 +110,14 @@ l2_flag_decided_imputations(
   path_out = 'data/l2/logs/l2_pce_imputations_flagged.csv'
 )
 
-
 l3_impute_columns(
   path_in = 'data/l2/consolidated/l2_pce.csv',
   path_overrides = 'data/l2/logs/l2_pce_imputations_flagged.csv',
   path_out = 'data/l3/consolidated/l3_pce.csv'
+)
+
+l3_clean_historical(
+  path_in = 'data/raw/historical_workbooks/PCE 2001-2020 Q1 v2.xlsx',
+  sheet = 'PCE 2001-20',
+  path_out = 'data/l3/consolidated/l3_pce_historical_2001-2020.csv'
 )
