@@ -95,9 +95,7 @@ l2_combine_outliers_and_quality_violations(
 
 l2_generate_imputation_options(
   pce_path = 'data/l1/consolidated/l1_pce.csv',
-  combined_outliers_and_quality_violations_log_path = 'data/l2/logs/l2_pce_outliers_log.csv',
-  l1_pce_quality_config_path = 'config/check_data/l1_pce_quality_check.yml',
-  l2_pce_outlier_config_path = 'config/check_data/l2_pce_outlier_check.yml',
+  combined_outliers_and_quality_violations_log_path = 'data/l2/logs/l2_combined_outliers_and_quality_violations_log.csv',
   path_out = 'data/l2/logs/l2_pce_imputation_options.csv')
 
 l2_combine_imputation_decisions(
