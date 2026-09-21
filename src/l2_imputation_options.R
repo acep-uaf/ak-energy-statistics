@@ -1,27 +1,36 @@
 library(dplyr)
 library(readr)
 library(fs)
-library(yaml)
+library(purrr)
 library(lubridate)
 library(tidyr)
 
 l2_generate_imputation_options <- function(
   pce_path,
-  pce_outliers_log_path,
-  outlier_config_path = 'config/check_data/l2_pce_outlier_check.yml',
+  combined_outliers_and_quality_violations_log_path,
   path_out) {
 
   pce <- read_csv(pce_path, show_col_types = FALSE)
 
-  pce_outliers_log <- read_csv(pce_outliers_log_path, show_col_types = FALSE) %>%
+  combined_outliers_and_quality_violations_log <- read_csv(
+    combined_outliers_and_quality_violations_log_path, 
+    show_col_types = FALSE
+  ) %>%
     select(-any_of(c("median_val", "mad_score", "anomaly_severity")))
 
-  config <- read_yaml(outlier_config_path)
-  target_cols <- config$columns_to_check
+  col_name_in_log <- if ("target_column" %in% names(combined_outliers_and_quality_violations_log)) {
+    "target_column"
+  } else {
+    "column"
+  }
+
+  target_cols <- combined_outliers_and_quality_violations_log[[col_name_in_log]] %>%
+    unique() %>%
+    na.omit()
 
   valid_cols <- intersect(target_cols, names(pce))
 
-  # pivot long for speed
+  # Pivot full dataset long
   pce_long <- pce %>%
     pivot_longer(
       cols = any_of(valid_cols),
@@ -30,8 +39,27 @@ l2_generate_imputation_options <- function(
       values_transform = list(val = as.numeric)
     )
 
-  # avg same calendar year
-  same_year_avg_df <- pce_long %>%
+  # -------------------------------------------------------------------------
+  # 1. CREATE CLEAN DATASET FOR IMPUTATION CALCULATIONS
+  # -------------------------------------------------------------------------
+  
+  # Build flagged lookup keys using project_code + date + column to avoid 
+  # missing identifier column issues in pce_long
+  flagged_cells <- combined_outliers_and_quality_violations_log %>%
+    select(project_code, date, column = all_of(col_name_in_log)) %>%
+    distinct() %>%
+    filter(!is.na(project_code) & !is.na(date) & !is.na(column))
+
+  # Exclude flagged cells from clean calculation pool
+  pce_long_clean <- pce_long %>%
+    anti_join(flagged_cells, by = c("project_code", "date", "column"))
+
+  # -------------------------------------------------------------------------
+  # 2. CALCULATE CLEAN SUMMARY METRICS
+  # -------------------------------------------------------------------------
+  
+  # Annual Averages (using only un-flagged clean data)
+  same_year_avg_df <- pce_long_clean %>%
     mutate(year_num = year(date)) %>%
     group_by(project_code, column, year_num) %>%
     summarise(
@@ -39,16 +67,24 @@ l2_generate_imputation_options <- function(
       .groups = "drop"
     )
 
-  # same month in other years (select ONLY key columns)
-  same_month_avg_df <- pce_long %>%
+  # Same Month Across Other Years
+  same_month_avg_df <- pce_long_clean %>%
     mutate(
       month_num = month(date),
       year_num  = year(date)
     ) %>%
-    select(project_code, column, month_num, year_num, val)
+    group_by(project_code, column, month_num, year_num) %>%
+    summarise(month_year_val = mean(val, na.rm = TRUE), .groups = "drop")
 
-  # build decision dataframe
-  df_out <- pce_outliers_log %>%
+  # -------------------------------------------------------------------------
+  # 3. BUILD IMPUTATION OPTIONS FOR REVIEW LOG
+  # -------------------------------------------------------------------------
+  
+  # Clean lookup table for carry_forward and next_month_val
+  clean_lookup <- pce_long_clean %>% 
+    select(project_code, date, column, val)
+
+  df_out <- combined_outliers_and_quality_violations_log %>%
     mutate(
       prev_month = date %m-% months(1),
       next_month = date %m+% months(1),
@@ -56,60 +92,60 @@ l2_generate_imputation_options <- function(
       year_num   = year(date)
     ) %>%
 
-    # last observation carry forward
+    # Last Observation Carried Forward
     left_join(
-      pce_long %>% select(project_code, date, column, val),
+      clean_lookup,
       by = c("project_code", "prev_month" = "date", "column")
     ) %>%
     rename(carry_forward = val) %>%
 
-    # next month helper
+    # Next Month Value
     left_join(
-      pce_long %>% select(project_code, date, column, val),
+      clean_lookup,
       by = c("project_code", "next_month" = "date", "column")
     ) %>%
     rename(next_month_val = val) %>%
 
-    # annual average
+    # Annual Average
     left_join(
       same_year_avg_df,
       by = c("project_code", "column", "year_num")
     ) %>%
 
-    # average of same month from other years
+    # Average of Same Month from Other Years
     left_join(
       same_month_avg_df,
       by = c("project_code", "column", "month_num"),
       relationship = "many-to-many"
     ) %>%
-    filter(year_num.x != year_num.y | is.na(year_num.y)) %>% # exclude outlier's own year
-    group_by(project_code, date, column) %>%
+    filter(year_num.x != year_num.y | is.na(year_num.y)) %>%
+    
+    # GROUP BY COMPOSITE PRIMARY KEY 'id'
+    group_by(id, identifier, column, date) %>%
     mutate(
-      avg_same_month_other_years = round(mean(val, na.rm = TRUE), 0)
+      avg_same_month_other_years = round(mean(month_year_val, na.rm = TRUE), 0)
     ) %>%
     ungroup() %>%
-    distinct(project_code, date, column, .keep_all = TRUE) %>%
+    distinct(id, .keep_all = TRUE) %>%
 
-    # average of preceding and proceeding months
+    # Average of Preceding & Succeeding Months
     mutate(
       avg_preceding_proceeding = round(rowMeans(across(c(carry_forward, next_month_val)), na.rm = TRUE), 0),
       avg_preceding_proceeding = ifelse(is.nan(avg_preceding_proceeding), NA_real_, avg_preceding_proceeding)
     ) %>%
-    
-    # create empty columns for manual overrides
-    # create composite_id
+
+    # Placeholders for expert review
     mutate(
-      id = paste0(identifier, "_", column),
-      manual_override = NA,
-      decision = NA,
-      comment = NA
+      manual_override = NA_real_,
+      decision = NA_character_,
+      comment = NA_character_
     ) %>%
 
-    # organize
+    # Final Formatting
     select(
       id,
       identifier,
-      any_of(names(pce_outliers_log)),
+      any_of(names(combined_outliers_and_quality_violations_log)),
       carry_forward,
       annual_average,
       avg_preceding_proceeding,
@@ -123,14 +159,3 @@ l2_generate_imputation_options <- function(
   write_csv(df_out, path_out)
   message(paste("Outlier imputation options saved to:", path_out))
 }
-
-
-
-
-# Options:
-          # "Value out of bounds, but original value kept",
-          # "Carry forward",
-          # "Annual average",
-          # "Average of preceding and proceeding months",
-          # "Average of months from other years",
-          # "Manual override: expert opinion"
