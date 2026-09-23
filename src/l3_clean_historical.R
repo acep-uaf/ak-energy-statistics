@@ -15,7 +15,7 @@ l3_clean_historical <- function(path_in, sheet, path_out) {
     rename(
       reporter_id = 'Sales Reporter ID',
       pce_id = 'PCE ID',
-      pce_pperator_acronym = 'PCE_operator_acronym',
+      pce_operator_acronym = 'PCE_operator_acronym',
       aea_operator_id = 'AEA Operator ID',
       total_sales = 'Total Sales'
     )

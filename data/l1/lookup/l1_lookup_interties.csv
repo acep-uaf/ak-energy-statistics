@@ -1,0 +1,204 @@
+intertie_id,current_id,communities_intertied,month_of_intertie,year_of_intertie
+001-0000,TRUE,Akhiok,NA,NA
+002-0000,TRUE,Akiachak,NA,NA
+003-0000,TRUE,Akiak,NA,NA
+004-0000,TRUE,Akutan,NA,NA
+005-0000,TRUE,"Allakaket, Alatna",NA,NA
+007-0000,TRUE,"Bettles, Evansville",NA,NA
+009-0000,TRUE,"Eagle, Eagle Village",NA,NA
+011-0000,TRUE,Healy Lake,NA,NA
+012-0000,TRUE,"Northway, Northway Village, Northway Junction",NA,NA
+014-1990,TRUE,"Cordova, Eyak",NA,NA
+015-1975,FALSE,"Tok; Tanacross; Dot Lake, Dot Lake Village",NA,1975
+015-2008,TRUE,"Tok; Tanacross; Tetlin; Dot Lake, Dot Lake Village",3,2008
+023-1987,FALSE,Craig; Klawock,NA,1987
+023-1999,FALSE,"Craig; Klawock; Thorne Bay, Kasaan",NA,1999
+023-2004,FALSE,"Craig; Klawock; Thorne Bay, Kasaan; Hollis",3,2004
+023-2006,FALSE,"Craig; Klawock; Thorne Bay, Kasaan; Hollis; Hydaburg",1,2006
+023-2011,FALSE,"Craig; Klawock; Thorne Bay, Kasaan; Hollis; Hydaburg; Coffman Cove",10,2011
+023-2015,TRUE,"Craig; Klawock; Thorne Bay, Kasaan; Hollis; Hydaburg; Coffman Cove; Naukati Bay",2,2015
+026-0000,FALSE,Slana,NA,NA
+026-2010,FALSE,Slana; Chistochina,1,2010
+026-2012,TRUE,Slana; Chistochina; Mentasta Lake,1,2012
+032-1993,FALSE,"Haines, Covenant Life; Klukwan; Chilkat Valley",NA,1993
+032-1998,TRUE,"Haines, Covenant Life; Klukwan; Chilkat Valley; Skagway",NA,1998
+034-1980,FALSE,Bethel; Napakiak,NA,1980
+034-1988,TRUE,"Bethel, Oscarville; Napakiak",NA,1988
+035-0000,TRUE,Ambler,NA,NA
+036-0000,TRUE,Anvik,NA,NA
+039-0000,TRUE,Brevig Mission,NA,NA
+040-0000,TRUE,Chevak,NA,NA
+041-0000,TRUE,Eek,NA,NA
+043-0000,TRUE,Elim,NA,NA
+045-0000,FALSE,Emmonak,NA,NA
+045-2016,TRUE,Emmonak; Alakanuk,9,2016
+046-0000,TRUE,Gambell,NA,NA
+047-0000,TRUE,Goodnews Bay,NA,NA
+048-0000,TRUE,Grayling,NA,NA
+049-0000,TRUE,Holy Cross,NA,NA
+050-0000,TRUE,Hooper Bay,NA,NA
+051-0000,TRUE,Huslia,NA,NA
+052-0000,FALSE,Kalskag; Lower Kalskag,NA,NA
+054-0000,TRUE,Kaltag,NA,NA
+055-0000,FALSE,Kasigluk,NA,NA
+055-2006,TRUE,Kasigluk; Nunapitchuk,10,2006
+057-0000,TRUE,Kiana,NA,NA
+058-0000,TRUE,Kivalina,NA,NA
+059-0000,TRUE,Kotlik,NA,NA
+060-0000,TRUE,Koyuk,NA,NA
+061-0000,TRUE,Marshall,NA,NA
+062-0000,TRUE,Mekoryuk,NA,NA
+063-0000,TRUE,Minto,NA,NA
+064-0000,FALSE,Mountain Village,NA,NA
+065-0000,FALSE,New Stuyahok,NA,NA
+065-2016,TRUE,New Stuyahok; Ekwok,NA,2016
+066-0000,TRUE,Noatak,NA,NA
+067-0000,TRUE,Noorvik,NA,NA
+068-0000,TRUE,Nulato,NA,NA
+069-0000,TRUE,Old Harbor,NA,NA
+070-0000,TRUE,Pilot Station,NA,NA
+071-0000,TRUE,Quinhagak,NA,NA
+072-0000,TRUE,Russian Mission,NA,NA
+075-1985,FALSE,"Saint Mary's, Andreafsky; Pitkas Point",NA,1985
+075-2020,TRUE,"Saint Mary's, Andreafsky; Pitkas Point; Mountain Village",NA,2020
+076-0000,TRUE,Savoonga,NA,NA
+077-0000,TRUE,Scammon Bay,NA,NA
+078-0000,TRUE,Selawik,NA,NA
+079-0000,TRUE,Shageluk,NA,NA
+080-0000,TRUE,Shaktoolik,NA,NA
+081-0000,TRUE,Shishmaref,NA,NA
+084-0000,FALSE,Stebbins,NA,NA
+084-2015,TRUE,Stebbins; Saint Michael,9,2015
+085-0000,TRUE,Teller,NA,NA
+086-0000,FALSE,Togiak,NA,NA
+086-2020,TRUE,Togiak; Twin Hills,NA,2020
+088-0000,FALSE,Toksook Bay,NA,NA
+088-2006,FALSE,Toksook Bay; Tununak,4,2006
+088-2008,TRUE,Tooksook Bay; Tununak; Nightmute,5,2008
+090-0000,TRUE,Wales,NA,NA
+091-0000,TRUE,Yakutat,NA,NA
+092-0000,TRUE,Karluk,NA,NA
+093-0000,TRUE,Aniak,NA,NA
+094-0000,TRUE,Arctic Village,NA,NA
+095-0000,TRUE,Atka,NA,NA
+096-0000,TRUE,Atmautluak,NA,NA
+097-0000,TRUE,Beaver,NA,NA
+098-0000,TRUE,Birch Creek,NA,NA
+099-0000,TRUE,Buckland,NA,NA
+100-0000,TRUE,Chalkyitsik,NA,NA
+101-0000,TRUE,Chenega Bay,NA,NA
+102-0000,TRUE,Chignik Lagoon,NA,NA
+103-0000,TRUE,Chignik Lake,NA,NA
+104-0000,TRUE,Chignik,NA,NA
+105-0000,TRUE,Chitina,NA,NA
+106-0000,TRUE,Circle,NA,NA
+107-0000,TRUE,Clark's Point,NA,NA
+110-0000,TRUE,Diomede,NA,NA
+111-0000,TRUE,Egegik,NA,NA
+112-0000,TRUE,Elfin Cove,NA,NA
+113-0000,TRUE,False Pass,NA,NA
+114-0000,TRUE,Cold Bay,NA,NA
+115-0000,TRUE,Galena,NA,NA
+116-0000,TRUE,Central,NA,NA
+117-0000,TRUE,Golovin,NA,NA
+118-0000,TRUE,Gustavus,NA,NA
+119-0000,TRUE,Fort Yukon,NA,NA
+120-0000,TRUE,Hughes,NA,NA
+121-0000,TRUE,Igiugig,NA,NA
+123-1983,TRUE,"Iliamna, Newhalen, Nondalton",NA,1983
+125-0000,TRUE,Angoon,NA,NA
+128-0000,TRUE,Hoonah,NA,NA
+129-0000,TRUE,Kake,NA,NA
+130-0000,TRUE,Deering,NA,NA
+131-0000,TRUE,King Cove,NA,NA
+132-0000,TRUE,Kipnuk,NA,NA
+134-0000,TRUE,Kokhanok,NA,NA
+135-0000,TRUE,Kotzebue,NA,NA
+136-0000,TRUE,Koyukuk,NA,NA
+137-0000,TRUE,Kwethluk,NA,NA
+138-0000,TRUE,Kwigillingok,NA,NA
+139-0000,TRUE,Larsen Bay,NA,NA
+140-0000,TRUE,Levelock,NA,NA
+141-0000,TRUE,Lime Village,NA,NA
+142-0000,TRUE,Manokotak,NA,NA
+143-0000,TRUE,McGrath,NA,NA
+144-0000,TRUE,Chuathbaluk,NA,NA
+145-0000,TRUE,Crooked Creek,NA,NA
+146-0000,TRUE,Red Devil,NA,NA
+147-0000,TRUE,Sleetmute,NA,NA
+148-0000,TRUE,Stony River,NA,NA
+149-1980,TRUE,Shungnak; Kobuk,NA,1980
+150-0000,TRUE,"Naknek, South Naknek, King Salmon",NA,NA
+153-0000,TRUE,Napaskiak,NA,NA
+154-0000,TRUE,Chefornak,NA,NA
+155-0000,TRUE,Perryville,NA,NA
+156-0000,TRUE,Nelson Lagoon,NA,NA
+157-0000,TRUE,Koliganek,NA,NA
+158-0000,TRUE,Nikolai,NA,NA
+159-0000,TRUE,Nome,NA,NA
+160-0000,TRUE,Anaktuvuk Pass,NA,NA
+161-0000,TRUE,Atqasuk,NA,NA
+162-0000,TRUE,Kaktovik,NA,NA
+163-0000,TRUE,Nuiqsut,NA,NA
+164-0000,TRUE,Point Hope,NA,NA
+165-0000,TRUE,Point Lay,NA,NA
+166-0000,TRUE,Wainwright,NA,NA
+167-0000,TRUE,Nunam Iqua,NA,NA
+169-0000,TRUE,"Dillingham, Aleknagik",NA,NA
+170-0000,TRUE,Ouzinkie,NA,NA
+171-0000,TRUE,Pedro Bay,NA,NA
+172-0000,TRUE,Pelican,NA,NA
+173-0000,TRUE,Pilot Point,NA,NA
+174-0000,TRUE,Platinum,NA,NA
+175-0000,TRUE,Port Heiden,NA,NA
+176-0000,TRUE,Kongiganak,NA,NA
+177-0000,TRUE,Rampart,NA,NA
+178-0000,TRUE,Ruby,NA,NA
+179-0000,TRUE,Saint George,NA,NA
+180-0000,TRUE,Saint Paul,NA,NA
+181-0000,TRUE,Stevens Village,NA,NA
+182-0000,TRUE,Takotna,NA,NA
+183-0000,TRUE,Port Alsworth,NA,NA
+184-0000,TRUE,Tanana,NA,NA
+185-0000,TRUE,Tatitlek,NA,NA
+186-0000,TRUE,Adak,NA,NA
+187-0000,TRUE,Sand Point,NA,NA
+188-0000,TRUE,Manley Hot Springs,NA,NA
+189-0000,TRUE,Tenakee Springs,NA,NA
+190-0000,TRUE,Tuluksak,NA,NA
+191-0000,TRUE,Tuntutuliak,NA,NA
+192-0000,FALSE,Twin Hills,NA,NA
+193-0000,TRUE,Nikolski,NA,NA
+194-0000,TRUE,Unalakleet,NA,NA
+195-0000,TRUE,Unalaska,NA,NA
+196-0000,TRUE,Newtok,NA,NA
+197-0000,TRUE,Venetie,NA,NA
+198-0000,TRUE,White Mountain,NA,NA
+199-0000,FALSE,Kobuk,NA,NA
+200-0000,FALSE,Tununak,NA,NA
+201-0000,FALSE,Nightmute,NA,NA
+202-0000,FALSE,Saint Michael,NA,NA
+203-0000,FALSE,Pitkas Point,NA,NA
+204-0000,FALSE,Nunapitchuk,NA,NA
+206-0000,FALSE,Chistochina,NA,NA
+207-0000,FALSE,Coffman Cove,NA,NA
+208-0000,FALSE,Ekwok,NA,NA
+209-0000,FALSE,Hollis,NA,NA
+210-0000,FALSE,Hydaburg,NA,NA
+211-0000,FALSE,Naukati Bay,NA,NA
+212-0000,FALSE,Tetlin,NA,NA
+213-0000,TRUE,Whale Pass,NA,NA
+214-0000,FALSE,Mentasta Lake,NA,NA
+215-1985,TRUE,NA,NA,1985
+216-1982,TRUE,NA,NA,1982
+217-2009,TRUE,"Ketchikan, Petersburg, Wrangell",10,2009
+218-0000,FALSE,Alakanuk,NA,NA
+219-0000,TRUE,Sitka,NA,NA
+221-0000,TRUE,Utqiagvik,NA,NA
+222-0000,TRUE,"Juneau, Douglas",NA,NA
+223-0000,TRUE,"Kodiak, Kodiak Station, Port Lions, Chiniak, Woody Island",NA,NA
+224_0000,TRUE,Deadhorse,NA,NA
+225_0000,TRUE,Metlakatla,NA,NA
+226_0000,TRUE,Paxson,NA,NA
+227-0000,FALSE,Ketchikan,NA,NA
+228-1981,FALSE,Wrangell-Petersburg,NA,1981

@@ -1,183 +1,180 @@
-project_code,ak_operator_id,operator_name
-331010,AK-OP-001,"Akhiok, City of"
-331020,AK-OP-003,Akiachak Native Community
-331030,AK-OP-002,Akiak City Council
-331040,AK-OP-004,"Akutan, City of"
-331050,AK-OP-005,Alaska Power & Telephone Company
-331060,AK-OP-005,Alaska Power & Telephone Company
-331070,AK-OP-005,Alaska Power & Telephone Company
-331080,AK-OP-005,Alaska Power & Telephone Company
-331090,AK-OP-005,Alaska Power & Telephone Company
-331100,AK-OP-005,Alaska Power & Telephone Company
-331110,AK-OP-005,Alaska Power & Telephone Company
-331120,AK-OP-005,Alaska Power & Telephone Company
-331130,AK-OP-005,Alaska Power & Telephone Company
-331140,AK-OP-005,Alaska Power & Telephone Company
-331150,AK-OP-005,Alaska Power & Telephone Company
-331155,AK-OP-005,Alaska Power & Telephone Company
-331160,AK-OP-005,Alaska Power & Telephone Company
-331170,AK-OP-005,Alaska Power & Telephone Company
-331180,AK-OP-005,Alaska Power & Telephone Company
-331190,AK-OP-005,Alaska Power & Telephone Company
-331195,AK-OP-005,Alaska Power & Telephone Company
-331200,AK-OP-005,Alaska Power & Telephone Company
-331210,AK-OP-005,Alaska Power & Telephone Company
-331220,AK-OP-005,Alaska Power & Telephone Company
-331230,AK-OP-005,Alaska Power & Telephone Company
-332010,AK-OP-005,Alaska Power & Telephone Company
-331240,AK-OP-006,Alaska Village Electric Cooperative
-331250,AK-OP-006,Alaska Village Electric Cooperative
-331260,AK-OP-006,Alaska Village Electric Cooperative
-331270,AK-OP-006,Alaska Village Electric Cooperative
-331280,AK-OP-006,Alaska Village Electric Cooperative
-331290,AK-OP-006,Alaska Village Electric Cooperative
-331300,AK-OP-006,Alaska Village Electric Cooperative
-331310,AK-OP-006,Alaska Village Electric Cooperative
-331320,AK-OP-006,Alaska Village Electric Cooperative
-331330,AK-OP-006,Alaska Village Electric Cooperative
-331340,AK-OP-006,Alaska Village Electric Cooperative
-331350,AK-OP-006,Alaska Village Electric Cooperative
-331360,AK-OP-006,Alaska Village Electric Cooperative
-331370,AK-OP-006,Alaska Village Electric Cooperative
-331380,AK-OP-006,Alaska Village Electric Cooperative
-331390,AK-OP-006,Alaska Village Electric Cooperative
-331400,AK-OP-006,Alaska Village Electric Cooperative
-331410,AK-OP-006,Alaska Village Electric Cooperative
-331420,AK-OP-006,Alaska Village Electric Cooperative
-331430,AK-OP-006,Alaska Village Electric Cooperative
-331440,AK-OP-006,Alaska Village Electric Cooperative
-331450,AK-OP-006,Alaska Village Electric Cooperative
-331460,AK-OP-006,Alaska Village Electric Cooperative
-331470,AK-OP-006,Alaska Village Electric Cooperative
-331480,AK-OP-006,Alaska Village Electric Cooperative
-331490,AK-OP-006,Alaska Village Electric Cooperative
-331500,AK-OP-006,Alaska Village Electric Cooperative
-331510,AK-OP-006,Alaska Village Electric Cooperative
-331520,AK-OP-006,Alaska Village Electric Cooperative
-331530,AK-OP-006,Alaska Village Electric Cooperative
-331540,AK-OP-006,Alaska Village Electric Cooperative
-331550,AK-OP-006,Alaska Village Electric Cooperative
-331560,AK-OP-006,Alaska Village Electric Cooperative
-331570,AK-OP-006,Alaska Village Electric Cooperative
-331580,AK-OP-006,Alaska Village Electric Cooperative
-331590,AK-OP-006,Alaska Village Electric Cooperative
-331600,AK-OP-006,Alaska Village Electric Cooperative
-331610,AK-OP-006,Alaska Village Electric Cooperative
-331620,AK-OP-006,Alaska Village Electric Cooperative
-331630,AK-OP-006,Alaska Village Electric Cooperative
-331640,AK-OP-006,Alaska Village Electric Cooperative
-331650,AK-OP-006,Alaska Village Electric Cooperative
-331660,AK-OP-006,Alaska Village Electric Cooperative
-331670,AK-OP-006,Alaska Village Electric Cooperative
-331680,AK-OP-006,Alaska Village Electric Cooperative
-331685,AK-OP-006,Alaska Village Electric Cooperative
-331690,AK-OP-006,Alaska Village Electric Cooperative
-331700,AK-OP-006,Alaska Village Electric Cooperative
-331710,AK-OP-006,Alaska Village Electric Cooperative
-331720,AK-OP-006,Alaska Village Electric Cooperative
-331730,AK-OP-006,Alaska Village Electric Cooperative
-331800,AK-OP-006,Alaska Village Electric Cooperative
-331950,AK-OP-006,Alaska Village Electric Cooperative
-332090,AK-OP-006,Alaska Village Electric Cooperative
-332120,AK-OP-006,Alaska Village Electric Cooperative
-332730,AK-OP-006,Alaska Village Electric Cooperative
-332900,AK-OP-006,Alaska Village Electric Cooperative
-331740,AK-OP-007,Alutiiq Power Company
-331760,AK-OP-009,Aniak Light & Power
-331770,AK-OP-010,Arctic Village Electric Company
-331750,AK-OP-011,"Atka, City of"
-331780,AK-OP-012,Atmautluak Tribal Utilities
-331790,AK-OP-013,Beaver Joint Utilities
-331810,AK-OP-015,Birch Creek Electric Company
-331820,AK-OP-016,"Buckland, City of"
-331840,AK-OP-019,Chalkyitsik Village Council
-331850,AK-OP-020,Chenega Ira Council
-331870,AK-OP-023,Chignik Lagoon Power Utility
-331880,AK-OP-022,Chignik Lake Electric Utility
-331860,AK-OP-021,"Chignik, City of"
-331890,AK-OP-024,Chitina Electric Inc
-331900,AK-OP-025,Circle Electric Utility
-331910,AK-OP-026,"Clark's Point, City of"
-331920,AK-OP-027,Cordova Electric Cooperative
-331930,AK-OP-028,Diomede Joint Utilities
-331940,AK-OP-029,Egegik Light & Power Co
-331960,AK-OP-031,Elfin Cove Utility Commission
-331970,AK-OP-032,"False Pass, City of"
-331980,AK-OP-034,G & K Inc
-331990,AK-OP-033,"Galena, City of"
-331830,AK-OP-139,Gold Country Energy
-332000,AK-OP-035,Golovin Power Utilities
-332020,AK-OP-037,Gwitchyaa Zhee Utilities Company
-332030,AK-OP-038,Hughes Power & Light
-332050,AK-OP-040,"I-N-N Electric Coop, Inc"
-332040,AK-OP-039,Igiugig Electric Company
-332650,AK-OP-041,Inside Passage Electric
-332660,AK-OP-041,Inside Passage Electric
-332670,AK-OP-041,Inside Passage Electric
-332680,AK-OP-041,Inside Passage Electric
-332690,AK-OP-041,Inside Passage Electric
-332700,AK-OP-041,Inside Passage Electric
-332060,AK-OP-042,Ipnatchiaq Electric Company
-332070,AK-OP-043,"King Cove, City of"
-332080,AK-OP-044,Kipnuk Light Plant
-332100,AK-OP-046,Kokhanok Village Council
-332130,AK-OP-048,Kotzebue Electric Association
-332140,AK-OP-049,"Koyukuk, City of"
-332150,AK-OP-050,Kwethluk Incorporated d/b/a Kuiggluum Kallugvia
-332160,AK-OP-051,Kwigillingok Power Company
-332170,AK-OP-052,Larsen Bay Utility Company
-332180,AK-OP-053,Levelock Electrical Coop
-332190,AK-OP-054,Lime Village Electric Utility
-332210,AK-OP-056,Manokotak Power Company
-332220,AK-OP-057,McGrath Light & Power
-332230,AK-OP-058,Middle Kuskokwim Electric
-332240,AK-OP-058,Middle Kuskokwim Electric
-332250,AK-OP-058,Middle Kuskokwim Electric
-332260,AK-OP-058,Middle Kuskokwim Electric
-332270,AK-OP-058,Middle Kuskokwim Electric
-332280,AK-OP-059,Naknek Electric Association
-332290,AK-OP-060,Napakiak Ircinraq
-332300,AK-OP-061,Napaskiak Electric Utility
-332310,AK-OP-062,Naterkaq Light Plant (City of Chefornak)
-332470,AK-OP-073,Native Village of Perryville
-332320,AK-OP-063,Nelson Lagoon Electrical Coop
-332110,AK-OP-064,New Koliganek Village Council
-332330,AK-OP-065,"Nikolai, City of"
-332340,AK-OP-066,Nome Joint Utility Systems
-332350,AK-OP-067,North Slope Borough Power & Light
-332360,AK-OP-067,North Slope Borough Power & Light
-332370,AK-OP-067,North Slope Borough Power & Light
-332380,AK-OP-067,North Slope Borough Power & Light
-332390,AK-OP-067,North Slope Borough Power & Light
-332400,AK-OP-067,North Slope Borough Power & Light
-332410,AK-OP-067,North Slope Borough Power & Light
-332420,AK-OP-068,Nunam Iqua Electric Company
-332430,AK-OP-069,Nushagak Electric Cooperative
-332440,AK-OP-070,"Ouzinkie, City of"
-332450,AK-OP-071,Pedro Bay Village Council
-332460,AK-OP-072,Pelican Utility
-332480,AK-OP-074,Pilot Point Electric Utility
-332490,AK-OP-076,Platinum Commercial Company LLC.
-332500,AK-OP-077,Port Heiden Utilities
-332510,AK-OP-078,Puvurnaq Power Company
-332520,AK-OP-079,Rampart Village Council
-332530,AK-OP-080,"Ruby, City of"
-332550,AK-OP-082,"Saint George, City of"
-332560,AK-OP-083,Saint Paul Municipal Electric
-332540,AK-OP-089,"Sand Point Generating, LLC"
-332570,AK-OP-081,Stevens Village Ira Council
-331005,AK-OP-088,TDX Adak Generating LLC
-332200,AK-OP-090,TDX Manley Generating LLC
-332580,AK-OP-084,Takotna Community Assoc Inc
-332590,AK-OP-085,Tanalian Electric Cooperative
-332600,AK-OP-086,Tanana Power Company Inc
-332610,AK-OP-087,Tatitlek Village Ira Council
-332630,AK-OP-092,"Tenakee Springs, City of"
-332710,AK-OP-093,Tuluksak Traditional
-332720,AK-OP-094,Tuntutuliak Community
-332740,AK-OP-096,Umnak Power Company
-332850,AK-OP-098,Unalakleet Valley Electric Cooperative
-332860,AK-OP-097,"Unalaska, City of"
-332870,AK-OP-099,Ungusraq Power Company
-332880,AK-OP-100,Venetie Village Electric
-332890,AK-OP-101,"White Mountain, City of"
+ak_operator_id,pce_utility_code,operator_utility_type_name,rca_regulatory_status_name,operator_cpcn_status,pce_eligible,power_generation_end_use
+AK-OP-001,AKHI,Public Electric Utility,Not Regulated,Active,TRUE,Retail
+AK-OP-002,AKIA,Public Electric Utility,Not Regulated,Active,TRUE,Retail
+AK-OP-003,AKIANCE,Private Electric Utility,Not Regulated,Active,TRUE,Retail
+AK-OP-004,AKUT,Public Electric Utility,Not Regulated,Active,TRUE,Retail
+AK-OP-005,ALASPCA,Private Electric Utility,Regulated,Active,TRUE,Retail
+AK-OP-006,ALASVEC,Electric Co-op,Not Regulated,Active,TRUE,Retail
+AK-OP-007,ALUTPC,Private Electric Utility,"Regulated, rate exemption",Active,TRUE,Retail
+AK-OP-008,ANDRE,Private Electric Utility,Not Regulated,Inactive,FALSE,Retail
+AK-OP-009,ANIALPC,Private Electric Utility,Regulated,Active,TRUE,Retail
+AK-OP-010,ARCTVC,Electric Co-op,Not Regulated,Active,TRUE,Retail
+AK-OP-011,ATKA,Public Electric Utility,Not Regulated,Active,TRUE,Retail
+AK-OP-012,ATMATU,Private Electric Utility,Not Regulated,Active,TRUE,Retail
+AK-OP-013,BEAVJU,Private Electric Utility,Not Regulated,Active,TRUE,Retail
+AK-OP-014,BETHUC,Private Electric Utility,Regulated,Inactive,FALSE,Retail
+AK-OP-015,BIRCCEC,Public Electric Utility,Not Regulated,Active,TRUE,Retail
+AK-OP-016,BUCK,Public Electric Utility,Not Regulated,Active,TRUE,Retail
+AK-OP-018,CENTEI,Private Electric Utility,Regulated,Inactive,FALSE,Retail
+AK-OP-019,CHALVC,Private Electric Utility,"Regulated, rate exemption",Active,TRUE,Retail
+AK-OP-020,CHENVC,Private Electric Utility,"Regulated, rate exemption",Active,TRUE,Retail
+AK-OP-021,CHIG,Private Electric Utility,Not Regulated,Active,TRUE,Retail
+AK-OP-022,CHIGLEU,Private Electric Utility,Not Regulated,Active,TRUE,Retail
+AK-OP-023,CHIGLPU,Private Electric Utility,"Regulated, rate exemption",Active,TRUE,Retail
+AK-OP-024,CHITE,Private Electric Utility,Not Regulated,Active,TRUE,Retail
+AK-OP-025,CIRCE,Private Electric Utility,Not Regulated,Active,TRUE,Retail
+AK-OP-026,CLARPVC,Public Electric Utility,Not Regulated,Active,TRUE,Retail
+AK-OP-027,CORDEC,Electric Co-op,Not Regulated,Active,TRUE,Retail
+AK-OP-028,DIOMJU,Public Electric Utility,Not Regulated,Active,TRUE,Retail
+AK-OP-029,EGEG,Public Electric Utility,Not Regulated,Active,TRUE,Retail
+AK-OP-030,EKWO,Private Electric Utility,Not Regulated,Inactive,FALSE,Retail
+AK-OP-031,ELFICEU,Electric Co-op,Not Regulated,Active,TRUE,Retail
+AK-OP-032,FALSPE,Public Electric Utility,Not Regulated,Active,TRUE,Retail
+AK-OP-033,GALE,Public Electric Utility,Not Regulated,Active,TRUE,Retail
+AK-OP-034,GK,Private Electric Utility,Regulated,Active,TRUE,Retail
+AK-OP-035,GOLOPU,Public Electric Utility,Not Regulated,Active,TRUE,Retail
+AK-OP-036,GUSTE,Private Electric Utility,Regulated,Inactive,FALSE,Retail
+AK-OP-037,GWITZU,Private Electric Utility,Regulated,Active,TRUE,Retail
+AK-OP-038,HUGHPL,Public Electric Utility,Not Regulated,Active,TRUE,Retail
+AK-OP-039,IGIUEC,Private Electric Utility,"Regulated, rate exemption",Active,TRUE,Retail
+AK-OP-040,ILIANNE,Electric Co-op,Not Regulated,Active,TRUE,Retail
+AK-OP-041,INSIPEC,Electric Co-op,Not Regulated,Active,TRUE,Retail
+AK-OP-042,IPNAEC,Private Electric Utility,Not Regulated,Active,TRUE,Retail
+AK-OP-043,KINGC,Public Electric Utility,Not Regulated,Active,TRUE,Retail
+AK-OP-044,KIPNLP,Private Electric Utility,Not Regulated,Active,TRUE,Retail
+AK-OP-045,KOBUVEC,Electric Co-op,Not Regulated,Inactive,FALSE,Retail
+AK-OP-046,KOKHVC,Public Electric Utility,"Regulated, rate exemption",Active,TRUE,Retail
+AK-OP-047,KOTLES,Public Electric Utility,Not Regulated,Inactive,FALSE,Retail
+AK-OP-048,KOTZEA,Public Electric Utility,Not Regulated,Active,TRUE,Retail
+AK-OP-049,KOYU,Public Electric Utility,Not Regulated,Active,TRUE,Retail
+AK-OP-050,KWET,Public Electric Utility,Not Regulated,Active,TRUE,Retail
+AK-OP-051,KWIGPC,Public Electric Utility,Not Regulated,Active,TRUE,Retail
+AK-OP-052,LARSBUC,Public Electric Utility,Not Regulated,Active,TRUE,Retail
+AK-OP-053,LEVEEC,Public Electric Utility,Not Regulated,Active,TRUE,Retail
+AK-OP-054,LIMEVTC,Public Electric Utility,Not Regulated,Active,TRUE,Retail
+AK-OP-055,MANLU,Private Electric Utility,Regulated,Inactive,FALSE,Retail
+AK-OP-056,MANOPC,Private Electric Utility,Not Regulated,Active,TRUE,Retail
+AK-OP-057,MCGRLP,Private Electric Utility,Regulated,Active,TRUE,Retail
+AK-OP-058,MIDDKEC,Electric Co-op,Regulated,Active,TRUE,Retail
+AK-OP-059,NAKNEA,Electric Co-op,Not Regulated,Active,TRUE,Retail
+AK-OP-060,NAPAC,Private Electric Utility,Not Regulated,Active,TRUE,Retail
+AK-OP-061,NAPAEU,Public Electric Utility,Not Regulated,Active,TRUE,Retail
+AK-OP-062,NATELP,Private Electric Utility,Not Regulated,Active,TRUE,Retail
+AK-OP-063,NELSLEC,Electric Co-op,Not Regulated,Active,TRUE,Retail
+AK-OP-064,NEWKVC,Private Electric Utility,"Regulated, rate exemption",Active,TRUE,Retail
+AK-OP-065,NIKO,Public Electric Utility,Not Regulated,Active,TRUE,Retail
+AK-OP-066,NOMEJUS,Private Electric Utility,Not Regulated,Active,TRUE,Retail
+AK-OP-067,NORTSB,Public Electric Utility,Not Regulated,Active,TRUE,Retail
+AK-OP-068,NUNAIEC,Public Electric Utility,Not Regulated,Active,TRUE,Retail
+AK-OP-069,NUSHEC,Electric Co-op,Not Regulated,Active,TRUE,Retail
+AK-OP-070,OUZI,Public Electric Utility,Not Regulated,Active,TRUE,Retail
+AK-OP-071,PEDRBV,Private Electric Utility,"Regulated, rate exemption",Active,TRUE,Retail
+AK-OP-072,PELIU,Public Electric Utility,Not Regulated,Active,TRUE,Retail
+AK-OP-073,PERR,Public Electric Utility,"Regulated, rate exemption",Active,TRUE,Retail
+AK-OP-074,PILOPEU,Public Electric Utility,Not Regulated,Active,TRUE,Retail
+AK-OP-075,PLAT,Public Electric Utility,N/A,Inactive,FALSE,Retail
+AK-OP-076,PLATCC,Private Electric Utility,Regulated,Active,TRUE,Retail
+AK-OP-077,PORTHU,Public Electric Utility,Not Regulated,Active,TRUE,Retail
+AK-OP-078,PUVUPC,Private Electric Utility,"Regulated, rate exemption",Active,TRUE,Retail
+AK-OP-079,RAMP,Public Electric Utility,Not Regulated,Active,TRUE,Retail
+AK-OP-080,RUBY,Public Electric Utility,Not Regulated,Active,TRUE,Retail
+AK-OP-081,STEVVIC,Public Electric Utility,Not Regulated,Active,TRUE,Retail
+AK-OP-082,STGEORGE,Public Electric Utility,Not Regulated,Active,TRUE,Retail
+AK-OP-083,STPMEU,Public Electric Utility,Not Regulated,Active,TRUE,Retail
+AK-OP-084,TAKOC,Public Electric Utility,Not Regulated,Active,TRUE,Retail
+AK-OP-085,TANAEC,Public Electric Utility,Not Regulated,Active,TRUE,Retail
+AK-OP-086,TANAPC,Private Electric Utility,Regulated,Active,TRUE,Retail
+AK-OP-087,TATIVIC,Private Electric Utility,Not Regulated,Active,TRUE,Retail
+AK-OP-088,TDXA,Private Electric Utility,Regulated,Active,TRUE,Retail
+AK-OP-089,TDXC,Private Electric Utility,Regulated,Active,TRUE,Retail
+AK-OP-090,TDXM,Private Electric Utility,Regulated,Active,TRUE,Retail
+AK-OP-091,TELLPC,Private Electric Utility,Regulated,Inactive,FALSE,Retail
+AK-OP-092,TENAS,Public Electric Utility,Not Regulated,Active,TRUE,Retail
+AK-OP-093,TULUTPU,Private Electric Utility,"Regulated, rate exemption",Active,TRUE,Retail
+AK-OP-094,TUNTCSA,Electric Co-op,"Regulated, rate exemption",Active,TRUE,Retail
+AK-OP-095,TWINHVC,Private Electric Utility,Not Regulated,Active,TRUE,Retail
+AK-OP-096,UMNAP,Private Electric Utility,Not Regulated,Active,TRUE,Retail
+AK-OP-097,UNAL,Public Electric Utility,Not Regulated,Active,TRUE,Retail
+AK-OP-098,UNALVEC,Electric Co-op,Not Regulated,Active,TRUE,Retail
+AK-OP-099,UNGUPC,Private Electric Utility,Not Regulated,Active,TRUE,Retail
+AK-OP-100,VENEVE,Private Electric Utility,"Regulated, rate exemption",Active,TRUE,Retail
+AK-OP-101,WHITMU,Public Electric Utility,Not Regulated,Active,TRUE,Retail
+AK-OP-102,YAKUP,Public Electric Utility,Regulated,Inactive,FALSE,Retail
+AK-OP-103,NA,Private Electric Utility,Not Regulated,Active,FALSE,Retail
+AK-OP-104,NA,Private Electric Utility,Regulated,Active,FALSE,Retail
+AK-OP-105,NA,Private Electric Utility,Regulated,Active,FALSE,Retail
+AK-OP-106,NA,Electric Co-op,Regulated,Active,FALSE,Retail
+AK-OP-107,NA,Electric Co-op,Regulated,Active,FALSE,Retail
+AK-OP-108,NA,Private Electric Utility,N/A,N/A,FALSE,Retail
+AK-OP-109,NA,Public Electric Utility,Regulated,Inactive,FALSE,Retail
+AK-OP-110,NA,Public Electric Utility,Not Regulated,Active,FALSE,Retail
+AK-OP-111,NA,Public Electric Utility,Not Regulated,Active,FALSE,Retail
+AK-OP-112,NA,Subsidiary,Regulated,Active,FALSE,Wholesale
+AK-OP-113,NA,Independent Power Producer,Regulated,Active,FALSE,Wholesale
+AK-OP-114,NA,Independent Power Producer,Regulated,Active,FALSE,Wholesale
+AK-OP-115,NA,Independent Power Producer,N/A,N/A,FALSE,Wholesale
+AK-OP-116,NA,Military,Not Regulated,Active,FALSE,Consumed by facility
+AK-OP-117,NA,Private Electric Utility,Regulated,Active,FALSE,Consumed by facility
+AK-OP-118,NA,Military,Not Regulated,Active,FALSE,Consumed by facility
+AK-OP-120,NA,Military,N/A,N/A,FALSE,Consumed by facility
+AK-OP-121,NA,Industrial,N/A,N/A,FALSE,Consumed by facility
+AK-OP-122,NA,Private Electric Utility,Regulated,Active,FALSE,Consumed by facility
+AK-OP-124,NA,State Government,N/A,N/A,FALSE,Wholesale
+AK-OP-125,NA,Industrial,N/A,N/A,FALSE,Consumed by facility
+AK-OP-126,NA,Industrial,N/A,N/A,FALSE,Consumed by facility
+AK-OP-127,NA,Industrial,Not Regulated,Active,FALSE,Consumed by facility
+AK-OP-128,NA,Industrial,N/A,N/A,FALSE,Consumed by facility
+AK-OP-129,NA,State Government,N/A,N/A,FALSE,Wholesale
+AK-OP-130,NA,Public Electric Utility,Not Regulated,Active,FALSE,Retail
+AK-OP-131,NA,Public Electric Utility,Not Regulated,Active,FALSE,Retail
+AK-OP-132,NA,Electric Co-op,Regulated,Active,FALSE,Retail
+AK-OP-133,NA,Private Electric Utility,Regulated,Active,FALSE,Retail
+AK-OP-134,NA,Electric Co-op,Not Regulated,Active,FALSE,Retail
+AK-OP-135,NA,Public Electric Utility,Not Regulated,Active,FALSE,Retail
+AK-OP-137,NA,Public Electric Utility,Not Regulated,Active,FALSE,Retail
+AK-OP-138,KINGCC,Public Electric Utility,Not Regulated,Inactive,FALSE,Retail
+AK-OP-139,GOLDCE,Private Electric Utility,Regulated,Active,TRUE,Retail
+AK-OP-140,NA,Private Electric Utility,Regulated,Active,FALSE,Wholesale
+AK-OP-141,NA,State Government,Not Regulated,Active,FALSE,Wholesale
+AK-OP-142,NA,State Government,Not Regulated,Active,FALSE,Wholesale
+AK-OP-143,NA,Independent Power Producer,Regulated,Active,FALSE,Wholesale
+AK-OP-144,NA,Subsidiary,Regulated,Active,FALSE,Wholesale
+AK-OP-145,NA,Private Electric Utility,Not Regulated,Active,FALSE,Consumed by facility
+AK-OP-146,NA,Subsidiary,Regulated,Active,FALSE,Wholesale
+AK-OP-147,NA,NA,N/A,N/A,FALSE,NA
+AK-OP-148,NA,Public Electric Utility,Not Regulated,Active,FALSE,Retail
+AK-OP-149,NA,Private Electric Utility,Regulated,Active,FALSE,Retail
+AK-OP-150,NA,NA,N/A,N/A,FALSE,Consumed by facility
+AK-OP-151,NA,Independent Power Producer,N/A,N/A,FALSE,Wholesale
+AK-OP-152,NA,Independent Power Producer,N/A,N/A,FALSE,Wholesale
+AK-OP-154,NA,Industrial,N/A,Active,FALSE,Consumed by facility
+AK-OP-155,NA,Private Electric Utility,Regulated,Active,FALSE,Wholesale
+AK-OP-156,NA,Private Electric Utility,Not Regulated,Revoked,FALSE,Retail
+AK-OP-157,NA,Private Electric Utility,Not Regulated,Active,FALSE,Retail
+AK-OP-158,NA,Private Electric Utility,Not Regulated,Active,FALSE,Retail
+AK-OP-159,NA,Independent Power Producer,Regulated,N/A,FALSE,Wholesale
+AK-OP-160,NA,Subsidiary,N/A,N/A,FALSE,Wholesale
+AK-OP-161,NA,Industrial,N/A,N/A,FALSE,Consumed by facility
+AK-OP-162,NA,Industrial,N/A,N/A,FALSE,Consumed by facility
+AK-OP-163,NA,Industrial,N/A,N/A,FALSE,Consumed by facility
+AK-OP-164,NA,Industrial,N/A,N/A,FALSE,Consumed by facility
+AK-OP-165,NA,Industrial,N/A,N/A,FALSE,Consumed by facility
+AK-OP-166,NA,Industrial,N/A,N/A,FALSE,Consumed by facility
+AK-OP-168,NA,Industrial,N/A,N/A,FALSE,Consumed by facility
+AK-OP-169,NA,Industrial,N/A,N/A,FALSE,Consumed by facility
+AK-OP-171,NA,Private Electric Utility,Regulated,Inactive,FALSE,Consumed by facility
+AK-OP-172,NA,Public Electric Utility,N/A,N/A,FALSE,Retail
+AK-OP-173,NA,NA,NA,N/A,FALSE,NA
+AK-OP-174,NA,Military,N/A,N/A,FALSE,Consumed by facility
+AK-OP-175,NA,Independent Power Producer,Regulated,Active,FALSE,Wholesale
+AK-OP-176,NA,NA,N/A,N/A,FALSE,NA
+AK-OP-177,NA,Independent Power Producer,N/A,N/A,FALSE,Wholesale
+AK-OP-178,NA,Independent Power Producer,N/A,N/A,FALSE,Wholesale
+AK-OP-179,NA,Independent Power Producer,N/A,N/A,FALSE,Wholesale
+AK-OP-180,NA,Independent Power Producer,N/A,N/A,FALSE,NA
+AK-OP-181,NA,Subsidiary,Regulated,Active,FALSE,Wholesale
+AK-OP-182,NA,Independent Power Producer,N/A,Active,FALSE,NA
+AK-OP-183,NA,Independent Power Producer,N/A,N/A,FALSE,NA
+AK-OP-184,NA,Independent Power Producer,N/A,N/A,FALSE,Wholesale
+AK-OP-185,NA,Independent Power Producer,NA,N/A,FALSE,NA
+AK-OP-186,NA,Private Electric Utility,NA,NA,NA,NA
