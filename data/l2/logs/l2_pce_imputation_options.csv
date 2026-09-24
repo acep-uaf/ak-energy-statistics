@@ -429,7 +429,8 @@ A3317800224225003_powerhouse_consumption_kwh,A3317800224225003,331780,Atmautluak
 A3317800324225003_powerhouse_consumption_kwh,A3317800324225003,331780,Atmautluak,2023-09-01,2023,9,powerhouse_consumption_kwh,9083,outlier_check,NA,4256,NA,2993,NA,NA,NA
 A3317800424225003_powerhouse_consumption_kwh,A3317800424225003,331780,Atmautluak,2023-10-01,2023,10,powerhouse_consumption_kwh,10103,outlier_check,NA,4256,NA,3001,NA,NA,NA
 A3317800524225003_powerhouse_consumption_kwh,A3317800524225003,331780,Atmautluak,2023-11-01,2023,11,powerhouse_consumption_kwh,9451,outlier_check,NA,4256,3049,3265,NA,NA,NA
-A3317800126225003_residential_rate,A3317800126225003,331780,Atmautluak,2025-07-01,2025,7,residential_rate,99.99,outlier_check,0.66,1,1,1,NA,NA,NA
+A3317800126225003_residential_rate,A3317800126225003,331780,Atmautluak,2025-07-01,2025,7,residential_rate,99.99,outlier_check,0.66,1,1,1,NA,carry_forward,NA
+A3317800126225003_effective_residential_rate,A3317800126225003,331780,Atmautluak,2025-07-01,2025,7,effective_residential_rate,99.5292,outlier_check,0.19920000000000004,0,0,0,NA,carry_forward,NA
 A3323600420225003_govt_facil_sold_to,A3323600420225003,332360,Atqasuk,2019-10-01,2019,10,govt_facil_sold_to,5493,outlier_check,3988,2543,3988,1300,NA,NA,NA
 A3323600520225003_govt_facil_sold_to,A3323600520225003,332360,Atqasuk,2019-11-01,2019,11,govt_facil_sold_to,8298,outlier_check,NA,2543,NA,1416,NA,NA,NA
 A3323600620225003_govt_facil_sold_to,A3323600620225003,332360,Atqasuk,2019-12-01,2019,12,govt_facil_sold_to,11150,outlier_check,NA,2543,NA,2076,NA,NA,NA
@@ -1251,7 +1252,8 @@ A3320600625225003_unbilled_sold_to,A3320600625225003,332060,Deering,2024-12-01,2
 A3320600925225003_unbilled_sold_to,A3320600925225003,332060,Deering,2025-03-01,2025,3,unbilled_sold_to,1021,outlier_check,0,107,97,244,NA,NA,NA
 A3320600426225003_unbilled_sold_to,A3320600426225003,332060,Deering,2025-10-01,2025,10,unbilled_sold_to,844,outlier_check,114,107,322,122,NA,NA,NA
 A3320600626225003_unbilled_sold_to,A3320600626225003,332060,Deering,2025-12-01,2025,12,unbilled_sold_to,1465,outlier_check,531,107,532,248,NA,NA,NA
-A3320600127225003_residential_rate,A3320600127225003,332060,Deering,2026-07-01,2026,7,residential_rate,99.99,outlier_check,0.7127,1,1,1,NA,NA,NA
+A3320600127225003_residential_rate,A3320600127225003,332060,Deering,2026-07-01,2026,7,residential_rate,99.99,outlier_check,0.7127,1,1,1,NA,carry_forward,NA
+A3320600127225003_effective_residential_rate,A3320600127225003,332060,Deering,2026-07-01,2026,7,effective_residential_rate,99.4811,outlier_check,0.2038,0,0,0,NA,carry_forward,NA
 A3324300117225003_diesel_kwh_generated,A3324300117225003,332430,"Dillingham, Aleknagik",2016-07-01,2016,7,diesel_kwh_generated,2275400,outlier_check,1539000,1473073,1798700,NA,NA,NA,NA
 A3324300117225003_peak_consumption_kw,A3324300117225003,332430,"Dillingham, Aleknagik",2016-07-01,2016,7,peak_consumption_kw,4240,outlier_check,2770,2485,2770,NA,NA,NA,NA
 A3324300117225003_commercial_sold_to,A3324300117225003,332430,"Dillingham, Aleknagik",2016-07-01,2016,7,commercial_sold_to,1682902,outlier_check,893206,738589,893206,NA,NA,NA,NA
@@ -2130,7 +2132,7 @@ A3311400825225003_amount,A3311400825225003,331140,Hollis,2025-02-01,2025,2,amoun
 A3311400925225003_amount,A3311400925225003,331140,Hollis,2025-03-01,2025,3,amount,5594.98,outlier_check,NA,3751,NA,969,NA,NA,NA
 A3311401025225003_amount,A3311401025225003,331140,Hollis,2025-04-01,2025,4,amount,5423.33,outlier_check,NA,3751,NA,1328,NA,NA,NA
 A3311401125225003_amount,A3311401125225003,331140,Hollis,2025-05-01,2025,5,amount,5108.13,outlier_check,NA,3751,4495,1235,NA,NA,NA
-A3311400526225003_most_recent_fuel_purch_price,A3311400526225003,331140,Hollis,2025-11-01,2025,11,most_recent_fuel_purch_price,34294,outlier_check,2.9513,3,3,3,NA,NA,NA
+A3311400526225003_most_recent_fuel_purch_price,A3311400526225003,331140,Hollis,2025-11-01,2025,11,most_recent_fuel_purch_price,34294,outlier_check,2.9513,3,3,3,NA,carry_forward,NA
 A3313500616225003_fuel_used_gallons,A3313500616225003,331350,Holy Cross,2015-12-01,2015,12,fuel_used_gallons,6581,outlier_check,3822,3638,4001,4185,NA,NA,NA
 A3313500617225003_fuel_used_gallons,A3313500617225003,331350,Holy Cross,2016-12-01,2016,12,fuel_used_gallons,13564,outlier_check,4050,3604,4423,4185,NA,NA,NA
 A3313500617225003_fuel_cost,A3313500617225003,331350,Holy Cross,2016-12-01,2016,12,fuel_cost,35324.72,outlier_check,10547.82,10106,11519,9335,NA,NA,NA
@@ -2247,7 +2249,8 @@ A3320400626225003_fuel_used_gallons,A3320400626225003,332040,Igiugig,2025-12-01,
 A3320400626225003_powerhouse_consumption_kwh,A3320400626225003,332040,Igiugig,2025-12-01,2025,12,powerhouse_consumption_kwh,4294,outlier_check,NA,2448,NA,1546,NA,NA,NA
 A3320400726225003_fuel_used_gallons,A3320400726225003,332040,Igiugig,2026-01-01,2026,1,fuel_used_gallons,3444,outlier_check,NA,2392,2365,2489,NA,NA,NA
 A3320400726225003_powerhouse_consumption_kwh,A3320400726225003,332040,Igiugig,2026-01-01,2026,1,powerhouse_consumption_kwh,4340,outlier_check,NA,2648,NA,1511,NA,NA,NA
-A3320400826225003_residential_rate,A3320400826225003,332040,Igiugig,2026-02-01,2026,2,residential_rate,90.9,outlier_check,0.9157,1,1,1,NA,NA,NA
+A3320400826225003_residential_rate,A3320400826225003,332040,Igiugig,2026-02-01,2026,2,residential_rate,90.9,outlier_check,0.9157,1,1,1,NA,carry_forward,NA
+A3320400826225003_effective_residential_rate,A3320400826225003,332040,Igiugig,2026-02-01,2026,2,effective_residential_rate,90.1881,outlier_check,0.2038,0,0,0,NA,carry_forward,NA
 A3320400826225003_powerhouse_consumption_kwh,A3320400826225003,332040,Igiugig,2026-02-01,2026,2,powerhouse_consumption_kwh,2963,outlier_check,NA,2648,NA,1277,NA,NA,NA
 A3320400926225003_powerhouse_consumption_kwh,A3320400926225003,332040,Igiugig,2026-03-01,2026,3,powerhouse_consumption_kwh,3452,outlier_check,NA,2648,NA,1352,NA,NA,NA
 A3320401026225003_powerhouse_consumption_kwh,A3320401026225003,332040,Igiugig,2026-04-01,2026,4,powerhouse_consumption_kwh,2878,outlier_check,NA,2648,2714,1501,NA,NA,NA
@@ -2872,7 +2875,8 @@ A3321501024225003_diesel_kwh_generated,A3321501024225003,332150,Kwethluk,2024-04
 A3321501124225003_fuel_used_gallons,A3321501124225003,332150,Kwethluk,2024-05-01,2024,5,fuel_used_gallons,0,outlier_check,NA,13386,11270,12500,NA,NA,NA
 A3321500225225003_peak_consumption_kw,A3321500225225003,332150,Kwethluk,2024-08-01,2024,8,peak_consumption_kw,678,outlier_check,389,242,500,279,NA,NA,NA
 A3321500425225003_peak_consumption_kw,A3321500425225003,332150,Kwethluk,2024-10-01,2024,10,peak_consumption_kw,618,outlier_check,611,242,604,252,NA,NA,NA
-A3321500126225003_residential_rate,A3321500126225003,332150,Kwethluk,2025-07-01,2025,7,residential_rate,99.99,outlier_check,NA,1,NA,1,NA,NA,NA
+A3321500126225003_residential_rate,A3321500126225003,332150,Kwethluk,2025-07-01,2025,7,residential_rate,99.99,outlier_check,NA,1,NA,1,NA,carry_forward,NA
+A3321500126225003_effective_residential_rate,A3321500126225003,332150,Kwethluk,2025-07-01,2025,7,effective_residential_rate,99.5692,outlier_check,0.1992,0,0,0,NA,carry_forward,NA
 A3321500426225003_unbilled_sold_to,A3321500426225003,332150,Kwethluk,2025-10-01,2025,10,unbilled_sold_to,45906,outlier_check,10468,12727,14937,10220,NA,NA,NA
 A3321600416225003_pce_eligible_community_kwh,A3321600416225003,332160,Kwigillingok,2015-10-01,2015,10,pce_eligible_community_kwh,13121,outlier_check,NA,8319,NA,3121,NA,NA,NA
 A3321600416225003_wind_kwh_generated,A3321600416225003,332160,Kwigillingok,2015-10-01,2015,10,wind_kwh_generated,116614,outlier_check,NA,52005,NA,25133,NA,NA,NA
@@ -3080,7 +3084,8 @@ A3322100124225003_commercial_sold_to,A3322100124225003,332210,Manokotak,2023-07-
 A3322100525225003_pce_eligible_community_kwh,A3322100525225003,332210,Manokotak,2024-11-01,2024,11,pce_eligible_community_kwh,12334,outlier_check,4708,6235,5166,5094,NA,NA,NA
 A3322100525225003_com_facil_sold_to,A3322100525225003,332210,Manokotak,2024-11-01,2024,11,com_facil_sold_to,12334,outlier_check,4708,6235,5166,5474,NA,NA,NA
 A3322100625225003_unbilled_sold_to,A3322100625225003,332210,Manokotak,2024-12-01,2024,12,unbilled_sold_to,10303,outlier_check,5679,4620,6152,4568,NA,NA,NA
-A3322100726225003_residential_rate,A3322100726225003,332210,Manokotak,2026-01-01,2026,1,residential_rate,3966,outlier_check,0.7,1,1,1,NA,NA,NA
+A3322100726225003_residential_rate,A3322100726225003,332210,Manokotak,2026-01-01,2026,1,residential_rate,3966,outlier_check,0.7,1,1,1,NA,carry_forward,NA
+A3322100726225003_effective_residential_rate,A3322100726225003,332210,Manokotak,2026-01-01,2026,1,effective_residential_rate,3965.6597,outlier_check,0.35969999999999996,0,0,0,NA,carry_forward,NA
 A3314400116225003_commercial_sold_to,A3314400116225003,331440,Marshall,2015-07-01,2015,7,commercial_sold_to,18994,outlier_check,NA,NA,NA,8788,NA,NA,NA
 A3314400216225003_commercial_sold_to,A3314400216225003,331440,Marshall,2015-08-01,2015,8,commercial_sold_to,19343,outlier_check,NA,NA,NA,8215,NA,NA,NA
 A3314400316225003_commercial_sold_to,A3314400316225003,331440,Marshall,2015-09-01,2015,9,commercial_sold_to,21643,outlier_check,NA,NA,NA,8196,NA,NA,NA
@@ -3383,7 +3388,8 @@ A3323000826225003_commercial_sold_to,A3323000826225003,332300,Napaskiak,2026-02-
 A3323000926225003_commercial_sold_to,A3323000926225003,332300,Napaskiak,2026-03-01,2026,3,commercial_sold_to,47799,outlier_check,NA,29103,NA,15882,NA,NA,NA
 A3323001026225003_commercial_sold_to,A3323001026225003,332300,Napaskiak,2026-04-01,2026,4,commercial_sold_to,45362,outlier_check,NA,29103,39145,13993,NA,NA,NA
 A3323001226225003_peak_consumption_kw,A3323001226225003,332300,Napaskiak,2026-06-01,2026,6,peak_consumption_kw,492,outlier_check,92,246,208,161,NA,NA,NA
-A3323000127225003_residential_rate,A3323000127225003,332300,Napaskiak,2026-07-01,2026,7,residential_rate,11242.16,outlier_check,1.1,1,1,1,NA,NA,NA
+A3323000127225003_residential_rate,A3323000127225003,332300,Napaskiak,2026-07-01,2026,7,residential_rate,11242.16,outlier_check,1.1,1,1,1,NA,carry_forward,NA
+A3323000127225003_effective_residential_rate,A3323000127225003,332300,Napaskiak,2026-07-01,2026,7,effective_residential_rate,11241.7934,outlier_check,0.7334,1,1,0,NA,carry_forward,NA
 A3311700726225003_residential_sold_to,A3311700726225003,331170,Naukati Bay,2026-01-01,2026,1,residential_sold_to,61259,outlier_check,52096,45813,51658,43347,NA,NA,NA
 A3323200716225003_fuel_used_gallons,A3323200716225003,332320,Nelson Lagoon,2016-01-01,2016,1,fuel_used_gallons,8875,outlier_check,3359,2275,2752,2320,NA,NA,NA
 A3323200716225003_fuel_cost,A3323200716225003,332320,Nelson Lagoon,2016-01-01,2016,1,fuel_cost,39660.6,outlier_check,15010.7,12201,12298,10224,NA,NA,NA
@@ -4441,7 +4447,8 @@ A3325600621225003_total_kwh_purchased,A3325600621225003,332560,Saint Paul,2020-1
 A3325600721225003_total_kwh_purchased,A3325600721225003,332560,Saint Paul,2021-01-01,2021,1,total_kwh_purchased,27543,outlier_check,NA,0,0,0,NA,NA,NA
 A3325600921225003_pce_eligible_community_kwh,A3325600921225003,332560,Saint Paul,2021-03-01,2021,3,pce_eligible_community_kwh,9913,outlier_check,26950,26098,26950,27453,NA,NA,NA
 A3325600122225003_pce_eligible_community_kwh,A3325600122225003,332560,Saint Paul,2021-07-01,2021,7,pce_eligible_community_kwh,21605,outlier_check,23189,26098,23430,26627,NA,NA,NA
-A3325601023225003_residential_rate,A3325601023225003,332560,Saint Paul,2023-04-01,2023,4,residential_rate,57,outlier_check,0.57,1,1,0,NA,NA,NA
+A3325601023225003_residential_rate,A3325601023225003,332560,Saint Paul,2023-04-01,2023,4,residential_rate,57,outlier_check,0.57,1,1,0,NA,carry_forward,NA
+A3325601023225003_effective_residential_rate,A3325601023225003,332560,Saint Paul,2023-04-01,2023,4,effective_residential_rate,56.6258,outlier_check,0.19579999999999995,0,0,0,NA,carry_forward,NA
 A3325600225225003_fuel_cost,A3325600225225003,332560,Saint Paul,2024-08-01,2024,8,fuel_cost,152691.57,outlier_check,131918.78,126747,137425,76824,NA,NA,NA
 A3325600625225003_fuel_used_gallons,A3325600625225003,332560,Saint Paul,2024-12-01,2024,12,fuel_used_gallons,28791,outlier_check,27041,22476,27041,20723,NA,NA,NA
 A3325600625225003_fuel_cost,A3325600625225003,332560,Saint Paul,2024-12-01,2024,12,fuel_cost,170730.63,outlier_check,137373.69,126747,137374,79534,NA,NA,NA
@@ -5055,7 +5062,8 @@ A3327100925225003_fuel_cost,A3327100925225003,332710,Tuluksak,2025-03-01,2025,3,
 A3327101025225003_fuel_cost,A3327101025225003,332710,Tuluksak,2025-04-01,2025,4,fuel_cost,91139.8,outlier_check,NA,NA,NA,15516,NA,NA,NA
 A3327101125225003_fuel_cost,A3327101125225003,332710,Tuluksak,2025-05-01,2025,5,fuel_cost,77346.95,outlier_check,NA,NA,NA,15578,NA,NA,NA
 A3327101225225003_fuel_cost,A3327101225225003,332710,Tuluksak,2025-06-01,2025,6,fuel_cost,70680.61,outlier_check,NA,NA,NA,18673,NA,NA,NA
-A3327100126225003_residential_rate,A3327100126225003,332710,Tuluksak,2025-07-01,2025,7,residential_rate,99.99,outlier_check,0.75,1,1,1,NA,NA,NA
+A3327100126225003_residential_rate,A3327100126225003,332710,Tuluksak,2025-07-01,2025,7,residential_rate,99.99,outlier_check,0.75,1,1,1,NA,carry_forward,NA
+A3327100126225003_effective_residential_rate,A3327100126225003,332710,Tuluksak,2025-07-01,2025,7,effective_residential_rate,99.4392,outlier_check,0.19920000000000004,0,0,0,NA,carry_forward,NA
 A3327100126225003_fuel_cost,A3327100126225003,332710,Tuluksak,2025-07-01,2025,7,fuel_cost,57982.23,outlier_check,NA,NA,NA,17951,NA,NA,NA
 A3327100226225003_fuel_cost,A3327100226225003,332710,Tuluksak,2025-08-01,2025,8,fuel_cost,67621.06,outlier_check,NA,NA,NA,15856,NA,NA,NA
 A3327100326225003_fuel_cost,A3327100326225003,332710,Tuluksak,2025-09-01,2025,9,fuel_cost,75506.24,outlier_check,NA,NA,NA,13838,NA,NA,NA
@@ -5201,7 +5209,8 @@ A3328601218225003_govt_facil_sold_to,A3328601218225003,332860,Unalaska,2018-06-0
 A3328600120225003_powerhouse_consumption_kwh,A3328600120225003,332860,Unalaska,2019-07-01,2019,7,powerhouse_consumption_kwh,127369,outlier_check,84990,79818,84990,82803,NA,NA,NA
 A3328600220225003_powerhouse_consumption_kwh,A3328600220225003,332860,Unalaska,2019-08-01,2019,8,powerhouse_consumption_kwh,156709,outlier_check,NA,79818,109738,95614,NA,NA,NA
 A3328600223225003_fuel_cost,A3328600223225003,332860,Unalaska,2022-08-01,2022,8,fuel_cost,1737028.49,outlier_check,1327489.51,957418,1328049,717485,NA,NA,NA
-A3328600226225003_residential_rate,A3328600226225003,332860,Unalaska,2025-08-01,2025,8,residential_rate,99.99,outlier_check,0.4735,0,0,0,NA,NA,NA
+A3328600226225003_residential_rate,A3328600226225003,332860,Unalaska,2025-08-01,2025,8,residential_rate,99.99,outlier_check,0.4735,0,0,0,NA,carry_forward,NA
+A3328600226225003_effective_residential_rate,A3328600226225003,332860,Unalaska,2025-08-01,2025,8,effective_residential_rate,99.7377,outlier_check,0.251,0,0,0,NA,carry_forward,NA
 A3328800416225003_govt_facil_sold_to,A3328800416225003,332880,Venetie,2015-10-01,2015,10,govt_facil_sold_to,2291,outlier_check,1145,820,972,595,NA,NA,NA
 A3328800618225003_diesel_kwh_generated,A3328800618225003,332880,Venetie,2017-12-01,2017,12,diesel_kwh_generated,143300,outlier_check,NA,55170,0,52700,NA,NA,NA
 A3328800618225003_commercial_sold_to,A3328800618225003,332880,Venetie,2017-12-01,2017,12,commercial_sold_to,40550,outlier_check,NA,14486,16928,13946,NA,NA,NA
@@ -5346,43 +5355,43 @@ A3312500823225003_fuel_used_gallons,A3312500823225003,331250,Ambler,2023-02-01,2
 A3312500823225003_diesel_kwh_generated,A3312500823225003,331250,Ambler,2023-02-01,2023,2,diesel_kwh_generated,118438,quality_check,142214,111521,134261,127259,NA,NA,NA
 A3312501125225003_diesel_kwh_generated,A3312501125225003,331250,Ambler,2025-05-01,2025,5,diesel_kwh_generated,98641,quality_check,113198,121077,96978,94433,NA,NA,NA
 A3312501223225003_diesel_kwh_generated,A3312501223225003,331250,Ambler,2023-06-01,2023,6,diesel_kwh_generated,79758,quality_check,107394,111521,93454,77942,NA,NA,NA
-A3312500323225003_residential_rate,A3312500323225003,331250,Ambler,2022-09-01,2022,9,residential_rate,0.8399,quality_check,0.8746,1,1,1,NA,NA,NA
-A3312500423225003_residential_rate,A3312500423225003,331250,Ambler,2022-10-01,2022,10,residential_rate,0.8399,quality_check,NA,1,1,1,NA,NA,NA
-A3312501223225003_residential_rate,A3312501223225003,331250,Ambler,2023-06-01,2023,6,residential_rate,0.858,quality_check,0.858,1,1,1,NA,NA,NA
-A3323500117225003_residential_rate,A3323500117225003,332350,Anaktuvuk Pass,2016-07-01,2016,7,residential_rate,0.15,quality_check,0.15,0,0,0,NA,NA,NA
-A3323500118225003_residential_rate,A3323500118225003,332350,Anaktuvuk Pass,2017-07-01,2017,7,residential_rate,0.15,quality_check,0.2293,0,0,0,NA,NA,NA
-A3323500123225003_residential_rate,A3323500123225003,332350,Anaktuvuk Pass,2022-07-01,2022,7,residential_rate,0.15,quality_check,NA,0,0,0,NA,NA,NA
-A3323500216225003_residential_rate,A3323500216225003,332350,Anaktuvuk Pass,2015-08-01,2015,8,residential_rate,0.15,quality_check,NA,NA,NA,0,NA,NA,NA
-A3323500217225003_residential_rate,A3323500217225003,332350,Anaktuvuk Pass,2016-08-01,2016,8,residential_rate,0.15,quality_check,NA,0,NA,0,NA,NA,NA
-A3323500218225003_residential_rate,A3323500218225003,332350,Anaktuvuk Pass,2017-08-01,2017,8,residential_rate,0.15,quality_check,NA,0,0,0,NA,NA,NA
-A3323500316225003_residential_rate,A3323500316225003,332350,Anaktuvuk Pass,2015-09-01,2015,9,residential_rate,0.15,quality_check,NA,NA,NA,0,NA,NA,NA
-A3323500317225003_residential_rate,A3323500317225003,332350,Anaktuvuk Pass,2016-09-01,2016,9,residential_rate,0.15,quality_check,NA,0,NA,0,NA,NA,NA
-A3323500416225003_residential_rate,A3323500416225003,332350,Anaktuvuk Pass,2015-10-01,2015,10,residential_rate,0.15,quality_check,NA,NA,NA,0,NA,NA,NA
-A3323500417225003_residential_rate,A3323500417225003,332350,Anaktuvuk Pass,2016-10-01,2016,10,residential_rate,0.15,quality_check,NA,0,NA,0,NA,NA,NA
-A3323500516225003_residential_rate,A3323500516225003,332350,Anaktuvuk Pass,2015-11-01,2015,11,residential_rate,0.15,quality_check,NA,NA,NA,0,NA,NA,NA
-A3323500517225003_residential_rate,A3323500517225003,332350,Anaktuvuk Pass,2016-11-01,2016,11,residential_rate,0.15,quality_check,NA,0,NA,0,NA,NA,NA
-A3323500616225003_residential_rate,A3323500616225003,332350,Anaktuvuk Pass,2015-12-01,2015,12,residential_rate,0.15,quality_check,NA,NA,NA,0,NA,NA,NA
-A3323500617225003_residential_rate,A3323500617225003,332350,Anaktuvuk Pass,2016-12-01,2016,12,residential_rate,0.15,quality_check,NA,0,NA,0,NA,NA,NA
-A3323500716225003_residential_rate,A3323500716225003,332350,Anaktuvuk Pass,2016-01-01,2016,1,residential_rate,0.15,quality_check,NA,0,NA,0,NA,NA,NA
-A3323500717225003_residential_rate,A3323500717225003,332350,Anaktuvuk Pass,2017-01-01,2017,1,residential_rate,0.15,quality_check,NA,0,NA,0,NA,NA,NA
-A3323500816225003_residential_rate,A3323500816225003,332350,Anaktuvuk Pass,2016-02-01,2016,2,residential_rate,0.15,quality_check,NA,0,NA,0,NA,NA,NA
-A3323500817225003_residential_rate,A3323500817225003,332350,Anaktuvuk Pass,2017-02-01,2017,2,residential_rate,0.15,quality_check,NA,0,NA,0,NA,NA,NA
-A3323500916225003_residential_rate,A3323500916225003,332350,Anaktuvuk Pass,2016-03-01,2016,3,residential_rate,0.15,quality_check,NA,0,NA,0,NA,NA,NA
-A3323500917225003_residential_rate,A3323500917225003,332350,Anaktuvuk Pass,2017-03-01,2017,3,residential_rate,0.1891,quality_check,NA,0,NA,0,NA,NA,NA
-A3323500919225003_residential_rate,A3323500919225003,332350,Anaktuvuk Pass,2019-03-01,2019,3,residential_rate,0.1517,quality_check,0.16,0,0,0,NA,NA,NA
-A3323500921225003_residential_rate,A3323500921225003,332350,Anaktuvuk Pass,2021-03-01,2021,3,residential_rate,0.15,quality_check,0.15,0,0,0,NA,NA,NA
-A3323500922225003_residential_rate,A3323500922225003,332350,Anaktuvuk Pass,2022-03-01,2022,3,residential_rate,0.15,quality_check,0.15,0,0,0,NA,NA,NA
-A3323501016225003_residential_rate,A3323501016225003,332350,Anaktuvuk Pass,2016-04-01,2016,4,residential_rate,0.15,quality_check,NA,0,NA,0,NA,NA,NA
-A3323501017225003_residential_rate,A3323501017225003,332350,Anaktuvuk Pass,2017-04-01,2017,4,residential_rate,0.1651,quality_check,NA,0,NA,0,NA,NA,NA
-A3323501019225003_residential_rate,A3323501019225003,332350,Anaktuvuk Pass,2019-04-01,2019,4,residential_rate,0.15,quality_check,NA,0,NA,0,NA,NA,NA
-A3323501021225003_residential_rate,A3323501021225003,332350,Anaktuvuk Pass,2021-04-01,2021,4,residential_rate,0.15,quality_check,NA,0,NA,0,NA,NA,NA
-A3323501116225003_residential_rate,A3323501116225003,332350,Anaktuvuk Pass,2016-05-01,2016,5,residential_rate,0.15,quality_check,NA,0,0,0,NA,NA,NA
-A3323501117225003_residential_rate,A3323501117225003,332350,Anaktuvuk Pass,2017-05-01,2017,5,residential_rate,0.1548,quality_check,NA,0,0,0,NA,NA,NA
-A3323501119225003_residential_rate,A3323501119225003,332350,Anaktuvuk Pass,2019-05-01,2019,5,residential_rate,0.1665,quality_check,NA,0,0,0,NA,NA,NA
-A3323501121225003_residential_rate,A3323501121225003,332350,Anaktuvuk Pass,2021-05-01,2021,5,residential_rate,0.15,quality_check,NA,0,NA,0,NA,NA,NA
-A3323501122225003_residential_rate,A3323501122225003,332350,Anaktuvuk Pass,2022-05-01,2022,5,residential_rate,0.15,quality_check,0.15,0,0,0,NA,NA,NA
-A3323501221225003_residential_rate,A3323501221225003,332350,Anaktuvuk Pass,2021-06-01,2021,6,residential_rate,0.15,quality_check,NA,0,0,0,NA,NA,NA
-A3323501222225003_residential_rate,A3323501222225003,332350,Anaktuvuk Pass,2022-06-01,2022,6,residential_rate,0.15,quality_check,NA,0,NA,0,NA,NA,NA
+A3312500323225003_residential_rate,A3312500323225003,331250,Ambler,2022-09-01,2022,9,residential_rate,0.8399,quality_check,0.8746,1,1,1,NA,carry_forward,NA
+A3312500423225003_residential_rate,A3312500423225003,331250,Ambler,2022-10-01,2022,10,residential_rate,0.8399,quality_check,NA,1,1,1,NA,carry_forward,NA
+A3312501223225003_residential_rate,A3312501223225003,331250,Ambler,2023-06-01,2023,6,residential_rate,0.858,quality_check,0.858,1,1,1,NA,carry_forward,NA
+A3323500117225003_residential_rate,A3323500117225003,332350,Anaktuvuk Pass,2016-07-01,2016,7,residential_rate,0.15,quality_check,0.15,0,0,0,NA,carry_forward,NA
+A3323500118225003_residential_rate,A3323500118225003,332350,Anaktuvuk Pass,2017-07-01,2017,7,residential_rate,0.15,quality_check,0.2293,0,0,0,NA,carry_forward,NA
+A3323500123225003_residential_rate,A3323500123225003,332350,Anaktuvuk Pass,2022-07-01,2022,7,residential_rate,0.15,quality_check,NA,0,0,0,NA,carry_forward,NA
+A3323500216225003_residential_rate,A3323500216225003,332350,Anaktuvuk Pass,2015-08-01,2015,8,residential_rate,0.15,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3323500217225003_residential_rate,A3323500217225003,332350,Anaktuvuk Pass,2016-08-01,2016,8,residential_rate,0.15,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3323500218225003_residential_rate,A3323500218225003,332350,Anaktuvuk Pass,2017-08-01,2017,8,residential_rate,0.15,quality_check,NA,0,0,0,NA,carry_forward,NA
+A3323500316225003_residential_rate,A3323500316225003,332350,Anaktuvuk Pass,2015-09-01,2015,9,residential_rate,0.15,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3323500317225003_residential_rate,A3323500317225003,332350,Anaktuvuk Pass,2016-09-01,2016,9,residential_rate,0.15,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3323500416225003_residential_rate,A3323500416225003,332350,Anaktuvuk Pass,2015-10-01,2015,10,residential_rate,0.15,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3323500417225003_residential_rate,A3323500417225003,332350,Anaktuvuk Pass,2016-10-01,2016,10,residential_rate,0.15,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3323500516225003_residential_rate,A3323500516225003,332350,Anaktuvuk Pass,2015-11-01,2015,11,residential_rate,0.15,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3323500517225003_residential_rate,A3323500517225003,332350,Anaktuvuk Pass,2016-11-01,2016,11,residential_rate,0.15,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3323500616225003_residential_rate,A3323500616225003,332350,Anaktuvuk Pass,2015-12-01,2015,12,residential_rate,0.15,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3323500617225003_residential_rate,A3323500617225003,332350,Anaktuvuk Pass,2016-12-01,2016,12,residential_rate,0.15,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3323500716225003_residential_rate,A3323500716225003,332350,Anaktuvuk Pass,2016-01-01,2016,1,residential_rate,0.15,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3323500717225003_residential_rate,A3323500717225003,332350,Anaktuvuk Pass,2017-01-01,2017,1,residential_rate,0.15,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3323500816225003_residential_rate,A3323500816225003,332350,Anaktuvuk Pass,2016-02-01,2016,2,residential_rate,0.15,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3323500817225003_residential_rate,A3323500817225003,332350,Anaktuvuk Pass,2017-02-01,2017,2,residential_rate,0.15,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3323500916225003_residential_rate,A3323500916225003,332350,Anaktuvuk Pass,2016-03-01,2016,3,residential_rate,0.15,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3323500917225003_residential_rate,A3323500917225003,332350,Anaktuvuk Pass,2017-03-01,2017,3,residential_rate,0.1891,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3323500919225003_residential_rate,A3323500919225003,332350,Anaktuvuk Pass,2019-03-01,2019,3,residential_rate,0.1517,quality_check,0.16,0,0,0,NA,carry_forward,NA
+A3323500921225003_residential_rate,A3323500921225003,332350,Anaktuvuk Pass,2021-03-01,2021,3,residential_rate,0.15,quality_check,0.15,0,0,0,NA,carry_forward,NA
+A3323500922225003_residential_rate,A3323500922225003,332350,Anaktuvuk Pass,2022-03-01,2022,3,residential_rate,0.15,quality_check,0.15,0,0,0,NA,carry_forward,NA
+A3323501016225003_residential_rate,A3323501016225003,332350,Anaktuvuk Pass,2016-04-01,2016,4,residential_rate,0.15,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3323501017225003_residential_rate,A3323501017225003,332350,Anaktuvuk Pass,2017-04-01,2017,4,residential_rate,0.1651,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3323501019225003_residential_rate,A3323501019225003,332350,Anaktuvuk Pass,2019-04-01,2019,4,residential_rate,0.15,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3323501021225003_residential_rate,A3323501021225003,332350,Anaktuvuk Pass,2021-04-01,2021,4,residential_rate,0.15,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3323501116225003_residential_rate,A3323501116225003,332350,Anaktuvuk Pass,2016-05-01,2016,5,residential_rate,0.15,quality_check,NA,0,0,0,NA,carry_forward,NA
+A3323501117225003_residential_rate,A3323501117225003,332350,Anaktuvuk Pass,2017-05-01,2017,5,residential_rate,0.1548,quality_check,NA,0,0,0,NA,carry_forward,NA
+A3323501119225003_residential_rate,A3323501119225003,332350,Anaktuvuk Pass,2019-05-01,2019,5,residential_rate,0.1665,quality_check,NA,0,0,0,NA,carry_forward,NA
+A3323501121225003_residential_rate,A3323501121225003,332350,Anaktuvuk Pass,2021-05-01,2021,5,residential_rate,0.15,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3323501122225003_residential_rate,A3323501122225003,332350,Anaktuvuk Pass,2022-05-01,2022,5,residential_rate,0.15,quality_check,0.15,0,0,0,NA,carry_forward,NA
+A3323501221225003_residential_rate,A3323501221225003,332350,Anaktuvuk Pass,2021-06-01,2021,6,residential_rate,0.15,quality_check,NA,0,0,0,NA,carry_forward,NA
+A3323501222225003_residential_rate,A3323501222225003,332350,Anaktuvuk Pass,2022-06-01,2022,6,residential_rate,0.15,quality_check,NA,0,NA,0,NA,carry_forward,NA
 A3312600616225003_diesel_kwh_generated,A3312600616225003,331260,Anvik,2015-12-01,2015,12,diesel_kwh_generated,44222,quality_check,42176,33888,42973,37524,NA,NA,NA
 A3312600617225003_diesel_kwh_generated,A3312600617225003,331260,Anvik,2016-12-01,2016,12,diesel_kwh_generated,45120,quality_check,38367,34605,40143,37524,NA,NA,NA
 A3312600618225003_diesel_kwh_generated,A3312600618225003,331260,Anvik,2017-12-01,2017,12,diesel_kwh_generated,37266,quality_check,35881,33166,36796,37524,NA,NA,NA
@@ -5451,36 +5460,36 @@ A3317501019225003_diesel_kwh_generated,A3317501019225003,331750,Atka,2019-04-01,
 A3317501120225003_diesel_kwh_generated,A3317501120225003,331750,Atka,2020-05-01,2020,5,diesel_kwh_generated,1824,quality_check,0,6636,0,4767,NA,NA,NA
 A3317500820225003_diesel_kwh_generated,A3317500820225003,331750,Atka,2020-02-01,2020,2,diesel_kwh_generated,1593,quality_check,NA,6636,2125,11143,NA,NA,NA
 A3317501217225003_diesel_kwh_generated,A3317501217225003,331750,Atka,2017-06-01,2017,6,diesel_kwh_generated,1027,quality_check,0,5987,0,6149,NA,NA,NA
-A3323600117225003_residential_rate,A3323600117225003,332360,Atqasuk,2016-07-01,2016,7,residential_rate,0.15,quality_check,NA,NA,NA,0,NA,NA,NA
-A3323600123225003_residential_rate,A3323600123225003,332360,Atqasuk,2022-07-01,2022,7,residential_rate,0.15,quality_check,NA,0,0,0,NA,NA,NA
-A3323600217225003_residential_rate,A3323600217225003,332360,Atqasuk,2016-08-01,2016,8,residential_rate,0.15,quality_check,NA,NA,NA,0,NA,NA,NA
-A3323600218225003_residential_rate,A3323600218225003,332360,Atqasuk,2017-08-01,2017,8,residential_rate,0.15,quality_check,0.2234,0,0,0,NA,NA,NA
-A3323600316225003_residential_rate,A3323600316225003,332360,Atqasuk,2015-09-01,2015,9,residential_rate,0.15,quality_check,0.2642,0,0,0,NA,NA,NA
-A3323600317225003_residential_rate,A3323600317225003,332360,Atqasuk,2016-09-01,2016,9,residential_rate,0.15,quality_check,NA,NA,NA,0,NA,NA,NA
-A3323600416225003_residential_rate,A3323600416225003,332360,Atqasuk,2015-10-01,2015,10,residential_rate,0.15,quality_check,NA,0,NA,0,NA,NA,NA
-A3323600417225003_residential_rate,A3323600417225003,332360,Atqasuk,2016-10-01,2016,10,residential_rate,0.15,quality_check,NA,NA,NA,0,NA,NA,NA
-A3323600516225003_residential_rate,A3323600516225003,332360,Atqasuk,2015-11-01,2015,11,residential_rate,0.15,quality_check,NA,0,NA,0,NA,NA,NA
-A3323600517225003_residential_rate,A3323600517225003,332360,Atqasuk,2016-11-01,2016,11,residential_rate,0.15,quality_check,NA,NA,NA,0,NA,NA,NA
-A3323600616225003_residential_rate,A3323600616225003,332360,Atqasuk,2015-12-01,2015,12,residential_rate,0.15,quality_check,NA,0,NA,0,NA,NA,NA
-A3323600617225003_residential_rate,A3323600617225003,332360,Atqasuk,2016-12-01,2016,12,residential_rate,0.15,quality_check,NA,NA,NA,0,NA,NA,NA
-A3323600716225003_residential_rate,A3323600716225003,332360,Atqasuk,2016-01-01,2016,1,residential_rate,0.15,quality_check,NA,NA,NA,0,NA,NA,NA
-A3323600717225003_residential_rate,A3323600717225003,332360,Atqasuk,2017-01-01,2017,1,residential_rate,0.15,quality_check,NA,0,NA,0,NA,NA,NA
-A3323600816225003_residential_rate,A3323600816225003,332360,Atqasuk,2016-02-01,2016,2,residential_rate,0.15,quality_check,NA,NA,NA,0,NA,NA,NA
-A3323600817225003_residential_rate,A3323600817225003,332360,Atqasuk,2017-02-01,2017,2,residential_rate,0.15,quality_check,NA,0,0,0,NA,NA,NA
-A3323600916225003_residential_rate,A3323600916225003,332360,Atqasuk,2016-03-01,2016,3,residential_rate,0.15,quality_check,NA,NA,NA,0,NA,NA,NA
-A3323600921225003_residential_rate,A3323600921225003,332360,Atqasuk,2021-03-01,2021,3,residential_rate,0.15,quality_check,0.15,0,0,0,NA,NA,NA
-A3323600922225003_residential_rate,A3323600922225003,332360,Atqasuk,2022-03-01,2022,3,residential_rate,0.15,quality_check,0.15,0,0,0,NA,NA,NA
-A3323601016225003_residential_rate,A3323601016225003,332360,Atqasuk,2016-04-01,2016,4,residential_rate,0.15,quality_check,NA,NA,NA,0,NA,NA,NA
-A3323601021225003_residential_rate,A3323601021225003,332360,Atqasuk,2021-04-01,2021,4,residential_rate,0.15,quality_check,NA,0,NA,0,NA,NA,NA
-A3323601022225003_residential_rate,A3323601022225003,332360,Atqasuk,2022-04-01,2022,4,residential_rate,0.15,quality_check,NA,0,NA,0,NA,NA,NA
-A3323601116225003_residential_rate,A3323601116225003,332360,Atqasuk,2016-05-01,2016,5,residential_rate,0.15,quality_check,NA,NA,NA,0,NA,NA,NA
-A3323601117225003_residential_rate,A3323601117225003,332360,Atqasuk,2017-05-01,2017,5,residential_rate,0.1933,quality_check,0.2519,0,0,0,NA,NA,NA
-A3323601121225003_residential_rate,A3323601121225003,332360,Atqasuk,2021-05-01,2021,5,residential_rate,0.15,quality_check,NA,0,NA,0,NA,NA,NA
-A3323601122225003_residential_rate,A3323601122225003,332360,Atqasuk,2022-05-01,2022,5,residential_rate,0.15,quality_check,NA,0,NA,0,NA,NA,NA
-A3323601216225003_residential_rate,A3323601216225003,332360,Atqasuk,2016-06-01,2016,6,residential_rate,0.15,quality_check,NA,NA,NA,0,NA,NA,NA
-A3323601217225003_residential_rate,A3323601217225003,332360,Atqasuk,2017-06-01,2017,6,residential_rate,0.1854,quality_check,NA,0,0,0,NA,NA,NA
-A3323601221225003_residential_rate,A3323601221225003,332360,Atqasuk,2021-06-01,2021,6,residential_rate,0.15,quality_check,NA,0,0,0,NA,NA,NA
-A3323601222225003_residential_rate,A3323601222225003,332360,Atqasuk,2022-06-01,2022,6,residential_rate,0.15,quality_check,NA,0,NA,0,NA,NA,NA
+A3323600117225003_residential_rate,A3323600117225003,332360,Atqasuk,2016-07-01,2016,7,residential_rate,0.15,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3323600123225003_residential_rate,A3323600123225003,332360,Atqasuk,2022-07-01,2022,7,residential_rate,0.15,quality_check,NA,0,0,0,NA,carry_forward,NA
+A3323600217225003_residential_rate,A3323600217225003,332360,Atqasuk,2016-08-01,2016,8,residential_rate,0.15,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3323600218225003_residential_rate,A3323600218225003,332360,Atqasuk,2017-08-01,2017,8,residential_rate,0.15,quality_check,0.2234,0,0,0,NA,carry_forward,NA
+A3323600316225003_residential_rate,A3323600316225003,332360,Atqasuk,2015-09-01,2015,9,residential_rate,0.15,quality_check,0.2642,0,0,0,NA,carry_forward,NA
+A3323600317225003_residential_rate,A3323600317225003,332360,Atqasuk,2016-09-01,2016,9,residential_rate,0.15,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3323600416225003_residential_rate,A3323600416225003,332360,Atqasuk,2015-10-01,2015,10,residential_rate,0.15,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3323600417225003_residential_rate,A3323600417225003,332360,Atqasuk,2016-10-01,2016,10,residential_rate,0.15,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3323600516225003_residential_rate,A3323600516225003,332360,Atqasuk,2015-11-01,2015,11,residential_rate,0.15,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3323600517225003_residential_rate,A3323600517225003,332360,Atqasuk,2016-11-01,2016,11,residential_rate,0.15,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3323600616225003_residential_rate,A3323600616225003,332360,Atqasuk,2015-12-01,2015,12,residential_rate,0.15,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3323600617225003_residential_rate,A3323600617225003,332360,Atqasuk,2016-12-01,2016,12,residential_rate,0.15,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3323600716225003_residential_rate,A3323600716225003,332360,Atqasuk,2016-01-01,2016,1,residential_rate,0.15,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3323600717225003_residential_rate,A3323600717225003,332360,Atqasuk,2017-01-01,2017,1,residential_rate,0.15,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3323600816225003_residential_rate,A3323600816225003,332360,Atqasuk,2016-02-01,2016,2,residential_rate,0.15,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3323600817225003_residential_rate,A3323600817225003,332360,Atqasuk,2017-02-01,2017,2,residential_rate,0.15,quality_check,NA,0,0,0,NA,carry_forward,NA
+A3323600916225003_residential_rate,A3323600916225003,332360,Atqasuk,2016-03-01,2016,3,residential_rate,0.15,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3323600921225003_residential_rate,A3323600921225003,332360,Atqasuk,2021-03-01,2021,3,residential_rate,0.15,quality_check,0.15,0,0,0,NA,carry_forward,NA
+A3323600922225003_residential_rate,A3323600922225003,332360,Atqasuk,2022-03-01,2022,3,residential_rate,0.15,quality_check,0.15,0,0,0,NA,carry_forward,NA
+A3323601016225003_residential_rate,A3323601016225003,332360,Atqasuk,2016-04-01,2016,4,residential_rate,0.15,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3323601021225003_residential_rate,A3323601021225003,332360,Atqasuk,2021-04-01,2021,4,residential_rate,0.15,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3323601022225003_residential_rate,A3323601022225003,332360,Atqasuk,2022-04-01,2022,4,residential_rate,0.15,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3323601116225003_residential_rate,A3323601116225003,332360,Atqasuk,2016-05-01,2016,5,residential_rate,0.15,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3323601117225003_residential_rate,A3323601117225003,332360,Atqasuk,2017-05-01,2017,5,residential_rate,0.1933,quality_check,0.2519,0,0,0,NA,carry_forward,NA
+A3323601121225003_residential_rate,A3323601121225003,332360,Atqasuk,2021-05-01,2021,5,residential_rate,0.15,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3323601122225003_residential_rate,A3323601122225003,332360,Atqasuk,2022-05-01,2022,5,residential_rate,0.15,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3323601216225003_residential_rate,A3323601216225003,332360,Atqasuk,2016-06-01,2016,6,residential_rate,0.15,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3323601217225003_residential_rate,A3323601217225003,332360,Atqasuk,2017-06-01,2017,6,residential_rate,0.1854,quality_check,NA,0,0,0,NA,carry_forward,NA
+A3323601221225003_residential_rate,A3323601221225003,332360,Atqasuk,2021-06-01,2021,6,residential_rate,0.15,quality_check,NA,0,0,0,NA,carry_forward,NA
+A3323601222225003_residential_rate,A3323601222225003,332360,Atqasuk,2022-06-01,2022,6,residential_rate,0.15,quality_check,NA,0,NA,0,NA,carry_forward,NA
 A3317900517225003_fuel_used_gallons,A3317900517225003,331790,Beaver,2016-11-01,2016,11,fuel_used_gallons,2962,quality_check,2611,2116,2874,2145,NA,NA,NA
 A3318001125225003_diesel_kwh_generated,A3318001125225003,331800,"Bethel, Oscarville",2025-05-01,2025,5,diesel_kwh_generated,3229840,quality_check,3745365,3893913,3497139,3342673,NA,NA,NA
 A3318001223225003_diesel_kwh_generated,A3318001223225003,331800,"Bethel, Oscarville",2023-06-01,2023,6,diesel_kwh_generated,3104384,quality_check,3777382,3723802,3540431,3125216,NA,NA,NA
@@ -5510,16 +5519,16 @@ A3312800623225003_diesel_kwh_generated,A3312800623225003,331280,Chevak,2022-12-0
 A3312800823225003_diesel_kwh_generated,A3312800823225003,331280,Chevak,2023-02-01,2023,2,diesel_kwh_generated,219590,quality_check,264083,182930,237143,182088,NA,NA,NA
 A3312801125225003_diesel_kwh_generated,A3312801125225003,331280,Chevak,2025-05-01,2025,5,diesel_kwh_generated,124403,quality_check,241140,208134,202805,157796,NA,NA,NA
 A3312801223225003_diesel_kwh_generated,A3312801223225003,331280,Chevak,2023-06-01,2023,6,diesel_kwh_generated,146414,quality_check,209739,182930,177164,129592,NA,NA,NA
-A3318600123225003_most_recent_fuel_purch_price,A3318600123225003,331860,Chignik,2022-07-01,2022,7,most_recent_fuel_purch_price,0.2536,quality_check,NA,2,NA,3,NA,NA,NA
-A3318600223225003_most_recent_fuel_purch_price,A3318600223225003,331860,Chignik,2022-08-01,2022,8,most_recent_fuel_purch_price,0.2536,quality_check,NA,2,NA,3,NA,NA,NA
-A3318600323225003_most_recent_fuel_purch_price,A3318600323225003,331860,Chignik,2022-09-01,2022,9,most_recent_fuel_purch_price,0.2536,quality_check,NA,2,NA,3,NA,NA,NA
-A3318600423225003_most_recent_fuel_purch_price,A3318600423225003,331860,Chignik,2022-10-01,2022,10,most_recent_fuel_purch_price,0.2536,quality_check,NA,2,NA,3,NA,NA,NA
-A3318600523225003_most_recent_fuel_purch_price,A3318600523225003,331860,Chignik,2022-11-01,2022,11,most_recent_fuel_purch_price,0.2536,quality_check,NA,2,NA,3,NA,NA,NA
-A3318600623225003_most_recent_fuel_purch_price,A3318600623225003,331860,Chignik,2022-12-01,2022,12,most_recent_fuel_purch_price,0.2536,quality_check,NA,2,0,3,NA,NA,NA
-A3318600922225003_most_recent_fuel_purch_price,A3318600922225003,331860,Chignik,2022-03-01,2022,3,most_recent_fuel_purch_price,0.2536,quality_check,1.643,2,2,3,NA,NA,NA
-A3318601022225003_most_recent_fuel_purch_price,A3318601022225003,331860,Chignik,2022-04-01,2022,4,most_recent_fuel_purch_price,0.2536,quality_check,NA,2,NA,3,NA,NA,NA
-A3318601122225003_most_recent_fuel_purch_price,A3318601122225003,331860,Chignik,2022-05-01,2022,5,most_recent_fuel_purch_price,0.2536,quality_check,NA,2,NA,3,NA,NA,NA
-A3318601222225003_most_recent_fuel_purch_price,A3318601222225003,331860,Chignik,2022-06-01,2022,6,most_recent_fuel_purch_price,0.2536,quality_check,NA,2,NA,3,NA,NA,NA
+A3318600123225003_most_recent_fuel_purch_price,A3318600123225003,331860,Chignik,2022-07-01,2022,7,most_recent_fuel_purch_price,0.2536,quality_check,NA,2,NA,3,NA,carry_forward,NA
+A3318600223225003_most_recent_fuel_purch_price,A3318600223225003,331860,Chignik,2022-08-01,2022,8,most_recent_fuel_purch_price,0.2536,quality_check,NA,2,NA,3,NA,carry_forward,NA
+A3318600323225003_most_recent_fuel_purch_price,A3318600323225003,331860,Chignik,2022-09-01,2022,9,most_recent_fuel_purch_price,0.2536,quality_check,NA,2,NA,3,NA,carry_forward,NA
+A3318600423225003_most_recent_fuel_purch_price,A3318600423225003,331860,Chignik,2022-10-01,2022,10,most_recent_fuel_purch_price,0.2536,quality_check,NA,2,NA,3,NA,carry_forward,NA
+A3318600523225003_most_recent_fuel_purch_price,A3318600523225003,331860,Chignik,2022-11-01,2022,11,most_recent_fuel_purch_price,0.2536,quality_check,NA,2,NA,3,NA,carry_forward,NA
+A3318600623225003_most_recent_fuel_purch_price,A3318600623225003,331860,Chignik,2022-12-01,2022,12,most_recent_fuel_purch_price,0.2536,quality_check,NA,2,0,3,NA,carry_forward,NA
+A3318600922225003_most_recent_fuel_purch_price,A3318600922225003,331860,Chignik,2022-03-01,2022,3,most_recent_fuel_purch_price,0.2536,quality_check,1.643,2,2,3,NA,carry_forward,NA
+A3318601022225003_most_recent_fuel_purch_price,A3318601022225003,331860,Chignik,2022-04-01,2022,4,most_recent_fuel_purch_price,0.2536,quality_check,NA,2,NA,3,NA,carry_forward,NA
+A3318601122225003_most_recent_fuel_purch_price,A3318601122225003,331860,Chignik,2022-05-01,2022,5,most_recent_fuel_purch_price,0.2536,quality_check,NA,2,NA,3,NA,carry_forward,NA
+A3318601222225003_most_recent_fuel_purch_price,A3318601222225003,331860,Chignik,2022-06-01,2022,6,most_recent_fuel_purch_price,0.2536,quality_check,NA,2,NA,3,NA,carry_forward,NA
 A3318601120225003_fuel_used_gallons,A3318601120225003,331860,Chignik,2020-05-01,2020,5,fuel_used_gallons,3326,quality_check,3510,4321,3510,4553,NA,NA,NA
 A3318700419225003_fuel_used_gallons,A3318700419225003,331870,Chignik Lagoon,2018-10-01,2018,10,fuel_used_gallons,20,quality_check,3976,1422,2016,1609,NA,NA,NA
 A3318700825225003_fuel_used_gallons,A3318700825225003,331870,Chignik Lagoon,2025-02-01,2025,2,fuel_used_gallons,119,quality_check,NA,1777,1639,2718,NA,NA,NA
@@ -5564,21 +5573,21 @@ A3318701216225003_diesel_kwh_generated,A3318701216225003,331870,Chignik Lagoon,2
 A3318800222225003_diesel_kwh_generated,A3318800222225003,331880,Chignik Lake,2021-08-01,2021,8,diesel_kwh_generated,16815,quality_check,23479,19257,20161,27366,NA,NA,NA
 A3318801125225003_diesel_kwh_generated,A3318801125225003,331880,Chignik Lake,2025-05-01,2025,5,diesel_kwh_generated,20842,quality_check,24978,30214,24978,24717,NA,NA,NA
 A3318801225225003_diesel_kwh_generated,A3318801225225003,331880,Chignik Lake,2025-06-01,2025,6,diesel_kwh_generated,20842,quality_check,NA,30214,NA,24084,NA,NA,NA
-A3318800626225003_residential_rate,A3318800626225003,331880,Chignik Lake,2025-12-01,2025,12,residential_rate,9.999,quality_check,0.9999,1,1,1,NA,NA,NA
-A3318800726225003_residential_rate,A3318800726225003,331880,Chignik Lake,2026-01-01,2026,1,residential_rate,9.999,quality_check,NA,1,NA,1,NA,NA,NA
-A3318800826225003_residential_rate,A3318800826225003,331880,Chignik Lake,2026-02-01,2026,2,residential_rate,9.9999,quality_check,NA,1,NA,1,NA,NA,NA
-A3318800926225003_residential_rate,A3318800926225003,331880,Chignik Lake,2026-03-01,2026,3,residential_rate,9.9999,quality_check,NA,1,NA,1,NA,NA,NA
-A3318801026225003_residential_rate,A3318801026225003,331880,Chignik Lake,2026-04-01,2026,4,residential_rate,9.9999,quality_check,NA,1,NA,1,NA,NA,NA
-A3318801126225003_residential_rate,A3318801126225003,331880,Chignik Lake,2026-05-01,2026,5,residential_rate,9.9999,quality_check,NA,1,1,1,NA,NA,NA
+A3318800626225003_residential_rate,A3318800626225003,331880,Chignik Lake,2025-12-01,2025,12,residential_rate,9.999,quality_check,0.9999,1,1,1,NA,carry_forward,NA
+A3318800726225003_residential_rate,A3318800726225003,331880,Chignik Lake,2026-01-01,2026,1,residential_rate,9.999,quality_check,NA,1,NA,1,NA,carry_forward,NA
+A3318800826225003_residential_rate,A3318800826225003,331880,Chignik Lake,2026-02-01,2026,2,residential_rate,9.9999,quality_check,NA,1,NA,1,NA,carry_forward,NA
+A3318800926225003_residential_rate,A3318800926225003,331880,Chignik Lake,2026-03-01,2026,3,residential_rate,9.9999,quality_check,NA,1,NA,1,NA,carry_forward,NA
+A3318801026225003_residential_rate,A3318801026225003,331880,Chignik Lake,2026-04-01,2026,4,residential_rate,9.9999,quality_check,NA,1,NA,1,NA,carry_forward,NA
+A3318801126225003_residential_rate,A3318801126225003,331880,Chignik Lake,2026-05-01,2026,5,residential_rate,9.9999,quality_check,NA,1,1,1,NA,carry_forward,NA
 A3326900325225003_diesel_kwh_generated,A3326900325225003,332690,Chilkat Valley/Klukwan,2024-09-01,2024,9,diesel_kwh_generated,1,quality_check,0,0,0,0,NA,NA,NA
 A3326900425225003_diesel_kwh_generated,A3326900425225003,332690,Chilkat Valley/Klukwan,2024-10-01,2024,10,diesel_kwh_generated,7,quality_check,NA,0,NA,0,NA,NA,NA
 A3326900525225003_diesel_kwh_generated,A3326900525225003,332690,Chilkat Valley/Klukwan,2024-11-01,2024,11,diesel_kwh_generated,2,quality_check,NA,0,0,0,NA,NA,NA
-A3322300718225003_residential_rate,A3322300718225003,332230,Chuathbaluk,2018-01-01,2018,1,residential_rate,0.78,quality_check,1.151,1,1,1,NA,NA,NA
+A3322300718225003_residential_rate,A3322300718225003,332230,Chuathbaluk,2018-01-01,2018,1,residential_rate,0.78,quality_check,1.151,1,1,1,NA,carry_forward,NA
 A3319100625225003_fuel_used_gallons,A3319100625225003,331910,Clark's Point,2024-12-01,2024,12,fuel_used_gallons,1038,quality_check,951,3033,2878,2954,NA,NA,NA
 A3319100625225003_diesel_kwh_generated,A3319100625225003,331910,Clark's Point,2024-12-01,2024,12,diesel_kwh_generated,43008,quality_check,16944,36327,37276,30895,NA,NA,NA
 A3319100926225003_diesel_kwh_generated,A3319100926225003,331910,Clark's Point,2026-03-01,2026,3,diesel_kwh_generated,53805,quality_check,NA,7315,NA,32526,NA,NA,NA
 A3319101026225003_diesel_kwh_generated,A3319101026225003,331910,Clark's Point,2026-04-01,2026,4,diesel_kwh_generated,53805,quality_check,NA,7315,0,26422,NA,NA,NA
-A3319100423225003_residential_rate,A3319100423225003,331910,Clark's Point,2022-10-01,2022,10,residential_rate,0.8,quality_check,0.8,1,1,1,NA,NA,NA
+A3319100423225003_residential_rate,A3319100423225003,331910,Clark's Point,2022-10-01,2022,10,residential_rate,0.8,quality_check,0.8,1,1,1,NA,carry_forward,NA
 A3319201224225003_diesel_kwh_generated,A3319201224225003,331920,"Cordova, Eyak",2024-06-01,2024,6,diesel_kwh_generated,13895,quality_check,9057,428926,21892,80771,NA,NA,NA
 A3310900121225003_fuel_used_gallons,A3310900121225003,331090,Craig,2020-07-01,2020,7,fuel_used_gallons,783,quality_check,144,6638,116,4440,NA,NA,NA
 A3310900222225003_fuel_used_gallons,A3310900222225003,331090,Craig,2021-08-01,2021,8,fuel_used_gallons,51,quality_check,0,7938,382,10962,NA,NA,NA
@@ -5593,7 +5602,7 @@ A3310900423225003_diesel_kwh_generated,A3310900423225003,331090,Craig,2022-10-01
 A3310900822225003_diesel_kwh_generated,A3310900822225003,331090,Craig,2022-02-01,2022,2,diesel_kwh_generated,243,quality_check,538650,103429,270523,103083,NA,NA,NA
 A3320600916225003_diesel_kwh_generated,A3320600916225003,332060,Deering,2016-03-01,2016,3,diesel_kwh_generated,67442,quality_check,62063,52930,62063,67880,NA,NA,NA
 A3320601016225003_diesel_kwh_generated,A3320601016225003,332060,Deering,2016-04-01,2016,4,diesel_kwh_generated,59488,quality_check,NA,52930,50328,52079,NA,NA,NA
-A3324300722225003_most_recent_fuel_purch_price,A3324300722225003,332430,"Dillingham, Aleknagik",2022-01-01,2022,1,most_recent_fuel_purch_price,0.4135,quality_check,2.1337,3,2,3,NA,NA,NA
+A3324300722225003_most_recent_fuel_purch_price,A3324300722225003,332430,"Dillingham, Aleknagik",2022-01-01,2022,1,most_recent_fuel_purch_price,0.4135,quality_check,2.1337,3,2,3,NA,carry_forward,NA
 A3319300220225003_fuel_used_gallons,A3319300220225003,331930,Diomede,2019-08-01,2019,8,fuel_used_gallons,6167,quality_check,3275,3628,4721,3418,NA,NA,NA
 A3319300222225003_diesel_kwh_generated,A3319300222225003,331930,Diomede,2021-08-01,2021,8,diesel_kwh_generated,19879,quality_check,31562,35067,31562,36147,NA,NA,NA
 A3319300322225003_diesel_kwh_generated,A3319300322225003,331930,Diomede,2021-09-01,2021,9,diesel_kwh_generated,27883,quality_check,NA,35067,43696,33294,NA,NA,NA
@@ -5619,7 +5628,7 @@ A3313100616225003_diesel_kwh_generated,A3313100616225003,331310,Emmonak,2015-12-
 A3313100823225003_diesel_kwh_generated,A3313100823225003,331310,Emmonak,2023-02-01,2023,2,diesel_kwh_generated,493600,quality_check,614340,455691,537800,455874,NA,NA,NA
 A3313101125225003_diesel_kwh_generated,A3313101125225003,331310,Emmonak,2025-05-01,2025,5,diesel_kwh_generated,362511,quality_check,491405,481886,447488,384763,NA,NA,NA
 A3313101223225003_diesel_kwh_generated,A3313101223225003,331310,Emmonak,2023-06-01,2023,6,diesel_kwh_generated,368723,quality_check,441550,455691,420874,380477,NA,NA,NA
-A3313100125225003_residential_rate,A3313100125225003,331310,Emmonak,2024-07-01,2024,7,residential_rate,0.01,quality_check,0.7984,1,1,1,NA,NA,NA
+A3313100125225003_residential_rate,A3313100125225003,331310,Emmonak,2024-07-01,2024,7,residential_rate,0.01,quality_check,0.7984,1,1,1,NA,carry_forward,NA
 A3319700225225003_fuel_used_gallons,A3319700225225003,331970,False Pass,2024-08-01,2024,8,fuel_used_gallons,1087,quality_check,1087,2719,2178,3354,NA,NA,NA
 A3319700526225003_fuel_used_gallons,A3319700526225003,331970,False Pass,2025-11-01,2025,11,fuel_used_gallons,1761,quality_check,1761,3611,2978,3991,NA,NA,NA
 A3319700724225003_fuel_used_gallons,A3319700724225003,331970,False Pass,2024-01-01,2024,1,fuel_used_gallons,1288,quality_check,2654,2719,2894,4273,NA,NA,NA
@@ -5628,7 +5637,7 @@ A3319700225225003_diesel_kwh_generated,A3319700225225003,331970,False Pass,2024-
 A3319700526225003_diesel_kwh_generated,A3319700526225003,331970,False Pass,2025-11-01,2025,11,diesel_kwh_generated,58959,quality_check,51792,54296,57360,58666,NA,NA,NA
 A3319700724225003_diesel_kwh_generated,A3319700724225003,331970,False Pass,2024-01-01,2024,1,diesel_kwh_generated,47525,quality_check,51193,49168,50832,62719,NA,NA,NA
 A3319700926225003_diesel_kwh_generated,A3319700926225003,331970,False Pass,2026-03-01,2026,3,diesel_kwh_generated,75301,quality_check,53605,54918,55982,58004,NA,NA,NA
-A3320200118225003_most_recent_fuel_purch_price,A3320200118225003,332020,Fort Yukon,2017-07-01,2017,7,most_recent_fuel_purch_price,0.4029,quality_check,5.864,6,6,6,NA,NA,NA
+A3320200118225003_most_recent_fuel_purch_price,A3320200118225003,332020,Fort Yukon,2017-07-01,2017,7,most_recent_fuel_purch_price,0.4029,quality_check,5.864,6,6,6,NA,carry_forward,NA
 A3320200717225003_fuel_used_gallons,A3320200717225003,332020,Fort Yukon,2017-01-01,2017,1,fuel_used_gallons,10206,quality_check,NA,18879,21775,23229,NA,NA,NA
 A3320200717225003_diesel_kwh_generated,A3320200717225003,332020,Fort Yukon,2017-01-01,2017,1,diesel_kwh_generated,371761,quality_check,318709,262469,321160,337481,NA,NA,NA
 A3313200823225003_fuel_used_gallons,A3313200823225003,331320,Gambell,2023-02-01,2023,2,fuel_used_gallons,1294,quality_check,20274,13914,17919,13560,NA,NA,NA
@@ -5640,7 +5649,7 @@ A3320000424225003_fuel_used_gallons,A3320000424225003,332000,Golovin,2023-10-01,
 A3320000822225003_fuel_used_gallons,A3320000822225003,332000,Golovin,2022-02-01,2022,2,fuel_used_gallons,2267,quality_check,6759,5855,6755,6805,NA,NA,NA
 A3320000424225003_diesel_kwh_generated,A3320000424225003,332000,Golovin,2023-10-01,2023,10,diesel_kwh_generated,81243,quality_check,73484,80956,80602,78777,NA,NA,NA
 A3320000822225003_diesel_kwh_generated,A3320000822225003,332000,Golovin,2022-02-01,2022,2,diesel_kwh_generated,92573,quality_check,96038,75524,94519,86253,NA,NA,NA
-A3320000416225003_residential_rate,A3320000416225003,332000,Golovin,2015-10-01,2015,10,residential_rate,0.4,quality_check,NA,0,0,0,NA,NA,NA
+A3320000416225003_residential_rate,A3320000416225003,332000,Golovin,2015-10-01,2015,10,residential_rate,0.4,quality_check,NA,0,0,0,NA,carry_forward,NA
 A3313300823225003_fuel_used_gallons,A3313300823225003,331330,Goodnews Bay,2023-02-01,2023,2,fuel_used_gallons,124,quality_check,5984,4638,5812,5406,NA,NA,NA
 A3313300621225003_diesel_kwh_generated,A3313300621225003,331330,Goodnews Bay,2020-12-01,2020,12,diesel_kwh_generated,75602,quality_check,65512,61496,68577,76127,NA,NA,NA
 A3313300622225003_diesel_kwh_generated,A3313300622225003,331330,Goodnews Bay,2021-12-01,2021,12,diesel_kwh_generated,82311,quality_check,84397,63415,83989,76127,NA,NA,NA
@@ -5678,38 +5687,38 @@ A3320500823225003_diesel_kwh_generated,A3320500823225003,332050,"Iliamna, Newhal
 A3320500722225003_diesel_kwh_generated,A3320500722225003,332050,"Iliamna, Newhalen, Nondalton",2022-01-01,2022,1,diesel_kwh_generated,440,quality_check,NA,2916,5930,5705,NA,NA,NA
 A3320500724225003_diesel_kwh_generated,A3320500724225003,332050,"Iliamna, Newhalen, Nondalton",2024-01-01,2024,1,diesel_kwh_generated,10,quality_check,0,1094,1195,5705,NA,NA,NA
 A3320501122225003_diesel_kwh_generated,A3320501122225003,332050,"Iliamna, Newhalen, Nondalton",2022-05-01,2022,5,diesel_kwh_generated,70,quality_check,850,2916,890,379,NA,NA,NA
-A3323700117225003_residential_rate,A3323700117225003,332370,Kaktovik,2016-07-01,2016,7,residential_rate,0.15,quality_check,NA,0,NA,0,NA,NA,NA
-A3323700118225003_residential_rate,A3323700118225003,332370,Kaktovik,2017-07-01,2017,7,residential_rate,0.1573,quality_check,NA,0,NA,0,NA,NA,NA
-A3323700123225003_residential_rate,A3323700123225003,332370,Kaktovik,2022-07-01,2022,7,residential_rate,0.15,quality_check,NA,0,0,0,NA,NA,NA
-A3323700216225003_residential_rate,A3323700216225003,332370,Kaktovik,2015-08-01,2015,8,residential_rate,0.1902,quality_check,NA,NA,NA,0,NA,NA,NA
-A3323700217225003_residential_rate,A3323700217225003,332370,Kaktovik,2016-08-01,2016,8,residential_rate,0.15,quality_check,NA,0,NA,0,NA,NA,NA
-A3323700218225003_residential_rate,A3323700218225003,332370,Kaktovik,2017-08-01,2017,8,residential_rate,0.15,quality_check,NA,0,0,0,NA,NA,NA
-A3323700316225003_residential_rate,A3323700316225003,332370,Kaktovik,2015-09-01,2015,9,residential_rate,0.15,quality_check,NA,NA,NA,0,NA,NA,NA
-A3323700317225003_residential_rate,A3323700317225003,332370,Kaktovik,2016-09-01,2016,9,residential_rate,0.15,quality_check,NA,0,NA,0,NA,NA,NA
-A3323700416225003_residential_rate,A3323700416225003,332370,Kaktovik,2015-10-01,2015,10,residential_rate,0.15,quality_check,NA,NA,NA,0,NA,NA,NA
-A3323700417225003_residential_rate,A3323700417225003,332370,Kaktovik,2016-10-01,2016,10,residential_rate,0.15,quality_check,NA,0,NA,0,NA,NA,NA
-A3323700516225003_residential_rate,A3323700516225003,332370,Kaktovik,2015-11-01,2015,11,residential_rate,0.15,quality_check,NA,NA,NA,0,NA,NA,NA
-A3323700517225003_residential_rate,A3323700517225003,332370,Kaktovik,2016-11-01,2016,11,residential_rate,0.15,quality_check,NA,0,NA,0,NA,NA,NA
-A3323700616225003_residential_rate,A3323700616225003,332370,Kaktovik,2015-12-01,2015,12,residential_rate,0.15,quality_check,NA,NA,NA,0,NA,NA,NA
-A3323700617225003_residential_rate,A3323700617225003,332370,Kaktovik,2016-12-01,2016,12,residential_rate,0.15,quality_check,NA,0,NA,0,NA,NA,NA
-A3323700716225003_residential_rate,A3323700716225003,332370,Kaktovik,2016-01-01,2016,1,residential_rate,0.15,quality_check,NA,0,0,0,NA,NA,NA
-A3323700717225003_residential_rate,A3323700717225003,332370,Kaktovik,2017-01-01,2017,1,residential_rate,0.15,quality_check,NA,0,NA,0,NA,NA,NA
-A3323700817225003_residential_rate,A3323700817225003,332370,Kaktovik,2017-02-01,2017,2,residential_rate,0.15,quality_check,NA,0,0,0,NA,NA,NA
-A3323700916225003_residential_rate,A3323700916225003,332370,Kaktovik,2016-03-01,2016,3,residential_rate,0.15,quality_check,0.15,0,0,0,NA,NA,NA
-A3323700921225003_residential_rate,A3323700921225003,332370,Kaktovik,2021-03-01,2021,3,residential_rate,0.15,quality_check,0.15,0,0,0,NA,NA,NA
-A3323700922225003_residential_rate,A3323700922225003,332370,Kaktovik,2022-03-01,2022,3,residential_rate,0.15,quality_check,0.15,0,0,0,NA,NA,NA
-A3323701016225003_residential_rate,A3323701016225003,332370,Kaktovik,2016-04-01,2016,4,residential_rate,0.15,quality_check,NA,0,NA,0,NA,NA,NA
-A3323701019225003_residential_rate,A3323701019225003,332370,Kaktovik,2019-04-01,2019,4,residential_rate,0.15,quality_check,0.2726,0,0,0,NA,NA,NA
-A3323701021225003_residential_rate,A3323701021225003,332370,Kaktovik,2021-04-01,2021,4,residential_rate,0.15,quality_check,NA,0,NA,0,NA,NA,NA
-A3323701022225003_residential_rate,A3323701022225003,332370,Kaktovik,2022-04-01,2022,4,residential_rate,0.15,quality_check,NA,0,NA,0,NA,NA,NA
-A3323701116225003_residential_rate,A3323701116225003,332370,Kaktovik,2016-05-01,2016,5,residential_rate,0.15,quality_check,NA,0,NA,0,NA,NA,NA
-A3323701121225003_residential_rate,A3323701121225003,332370,Kaktovik,2021-05-01,2021,5,residential_rate,0.15,quality_check,NA,0,NA,0,NA,NA,NA
-A3323701122225003_residential_rate,A3323701122225003,332370,Kaktovik,2022-05-01,2022,5,residential_rate,0.15,quality_check,NA,0,NA,0,NA,NA,NA
-A3323701216225003_residential_rate,A3323701216225003,332370,Kaktovik,2016-06-01,2016,6,residential_rate,0.15,quality_check,NA,0,NA,0,NA,NA,NA
-A3323701217225003_residential_rate,A3323701217225003,332370,Kaktovik,2017-06-01,2017,6,residential_rate,0.1613,quality_check,0.243,0,0,0,NA,NA,NA
-A3323701221225003_residential_rate,A3323701221225003,332370,Kaktovik,2021-06-01,2021,6,residential_rate,0.15,quality_check,NA,0,0,0,NA,NA,NA
-A3323701222225003_residential_rate,A3323701222225003,332370,Kaktovik,2022-06-01,2022,6,residential_rate,0.15,quality_check,NA,0,NA,0,NA,NA,NA
-A3323700321225003_residential_rate,A3323700321225003,332370,Kaktovik,2020-09-01,2020,9,residential_rate,3.6313,quality_check,0.1977,0,0,0,NA,NA,NA
+A3323700117225003_residential_rate,A3323700117225003,332370,Kaktovik,2016-07-01,2016,7,residential_rate,0.15,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3323700118225003_residential_rate,A3323700118225003,332370,Kaktovik,2017-07-01,2017,7,residential_rate,0.1573,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3323700123225003_residential_rate,A3323700123225003,332370,Kaktovik,2022-07-01,2022,7,residential_rate,0.15,quality_check,NA,0,0,0,NA,carry_forward,NA
+A3323700216225003_residential_rate,A3323700216225003,332370,Kaktovik,2015-08-01,2015,8,residential_rate,0.1902,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3323700217225003_residential_rate,A3323700217225003,332370,Kaktovik,2016-08-01,2016,8,residential_rate,0.15,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3323700218225003_residential_rate,A3323700218225003,332370,Kaktovik,2017-08-01,2017,8,residential_rate,0.15,quality_check,NA,0,0,0,NA,carry_forward,NA
+A3323700316225003_residential_rate,A3323700316225003,332370,Kaktovik,2015-09-01,2015,9,residential_rate,0.15,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3323700317225003_residential_rate,A3323700317225003,332370,Kaktovik,2016-09-01,2016,9,residential_rate,0.15,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3323700416225003_residential_rate,A3323700416225003,332370,Kaktovik,2015-10-01,2015,10,residential_rate,0.15,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3323700417225003_residential_rate,A3323700417225003,332370,Kaktovik,2016-10-01,2016,10,residential_rate,0.15,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3323700516225003_residential_rate,A3323700516225003,332370,Kaktovik,2015-11-01,2015,11,residential_rate,0.15,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3323700517225003_residential_rate,A3323700517225003,332370,Kaktovik,2016-11-01,2016,11,residential_rate,0.15,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3323700616225003_residential_rate,A3323700616225003,332370,Kaktovik,2015-12-01,2015,12,residential_rate,0.15,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3323700617225003_residential_rate,A3323700617225003,332370,Kaktovik,2016-12-01,2016,12,residential_rate,0.15,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3323700716225003_residential_rate,A3323700716225003,332370,Kaktovik,2016-01-01,2016,1,residential_rate,0.15,quality_check,NA,0,0,0,NA,carry_forward,NA
+A3323700717225003_residential_rate,A3323700717225003,332370,Kaktovik,2017-01-01,2017,1,residential_rate,0.15,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3323700817225003_residential_rate,A3323700817225003,332370,Kaktovik,2017-02-01,2017,2,residential_rate,0.15,quality_check,NA,0,0,0,NA,carry_forward,NA
+A3323700916225003_residential_rate,A3323700916225003,332370,Kaktovik,2016-03-01,2016,3,residential_rate,0.15,quality_check,0.15,0,0,0,NA,carry_forward,NA
+A3323700921225003_residential_rate,A3323700921225003,332370,Kaktovik,2021-03-01,2021,3,residential_rate,0.15,quality_check,0.15,0,0,0,NA,carry_forward,NA
+A3323700922225003_residential_rate,A3323700922225003,332370,Kaktovik,2022-03-01,2022,3,residential_rate,0.15,quality_check,0.15,0,0,0,NA,carry_forward,NA
+A3323701016225003_residential_rate,A3323701016225003,332370,Kaktovik,2016-04-01,2016,4,residential_rate,0.15,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3323701019225003_residential_rate,A3323701019225003,332370,Kaktovik,2019-04-01,2019,4,residential_rate,0.15,quality_check,0.2726,0,0,0,NA,carry_forward,NA
+A3323701021225003_residential_rate,A3323701021225003,332370,Kaktovik,2021-04-01,2021,4,residential_rate,0.15,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3323701022225003_residential_rate,A3323701022225003,332370,Kaktovik,2022-04-01,2022,4,residential_rate,0.15,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3323701116225003_residential_rate,A3323701116225003,332370,Kaktovik,2016-05-01,2016,5,residential_rate,0.15,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3323701121225003_residential_rate,A3323701121225003,332370,Kaktovik,2021-05-01,2021,5,residential_rate,0.15,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3323701122225003_residential_rate,A3323701122225003,332370,Kaktovik,2022-05-01,2022,5,residential_rate,0.15,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3323701216225003_residential_rate,A3323701216225003,332370,Kaktovik,2016-06-01,2016,6,residential_rate,0.15,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3323701217225003_residential_rate,A3323701217225003,332370,Kaktovik,2017-06-01,2017,6,residential_rate,0.1613,quality_check,0.243,0,0,0,NA,carry_forward,NA
+A3323701221225003_residential_rate,A3323701221225003,332370,Kaktovik,2021-06-01,2021,6,residential_rate,0.15,quality_check,NA,0,0,0,NA,carry_forward,NA
+A3323701222225003_residential_rate,A3323701222225003,332370,Kaktovik,2022-06-01,2022,6,residential_rate,0.15,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3323700321225003_residential_rate,A3323700321225003,332370,Kaktovik,2020-09-01,2020,9,residential_rate,3.6313,quality_check,0.1977,0,0,0,NA,carry_forward,NA
 A3317201125225003_diesel_kwh_generated,A3317201125225003,331720,Kalskag,2025-05-01,2025,5,diesel_kwh_generated,105940,quality_check,132352,128434,113086,114520,NA,NA,NA
 A3317201223225003_diesel_kwh_generated,A3317201223225003,331720,Kalskag,2023-06-01,2023,6,diesel_kwh_generated,94930,quality_check,125987,130557,112082,96727,NA,NA,NA
 A3313800318225003_commercial_sold_to,A3313800318225003,331380,Kaltag,2017-09-01,2017,9,commercial_sold_to,-3288,quality_check,NA,0,0,584,NA,NA,NA
@@ -5752,16 +5761,16 @@ A3314100619225003_diesel_kwh_generated,A3314100619225003,331410,Kivalina,2018-12
 A3314100823225003_diesel_kwh_generated,A3314100823225003,331410,Kivalina,2023-02-01,2023,2,diesel_kwh_generated,166559,quality_check,236771,144554,191816,162808,NA,NA,NA
 A3314101125225003_diesel_kwh_generated,A3314101125225003,331410,Kivalina,2025-05-01,2025,5,diesel_kwh_generated,115482,quality_check,134665,137164,119007,122592,NA,NA,NA
 A3314101223225003_diesel_kwh_generated,A3314101223225003,331410,Kivalina,2023-06-01,2023,6,diesel_kwh_generated,115714,quality_check,146455,144554,132176,102828,NA,NA,NA
-A3314100323225003_residential_rate,A3314100323225003,331410,Kivalina,2022-09-01,2022,9,residential_rate,0.8046,quality_check,0.8393,1,1,1,NA,NA,NA
-A3320900323225003_residential_rate,A3320900323225003,332090,Kobuk,2022-09-01,2022,9,residential_rate,0.9119,quality_check,0.9466,1,1,1,NA,NA,NA
-A3320901123225003_residential_rate,A3320901123225003,332090,Kobuk,2023-05-01,2023,5,residential_rate,0.0967,quality_check,1.1084,1,1,1,NA,NA,NA
-A3320901223225003_residential_rate,A3320901223225003,332090,Kobuk,2023-06-01,2023,6,residential_rate,0.0967,quality_check,NA,1,1,1,NA,NA,NA
+A3314100323225003_residential_rate,A3314100323225003,331410,Kivalina,2022-09-01,2022,9,residential_rate,0.8046,quality_check,0.8393,1,1,1,NA,carry_forward,NA
+A3320900323225003_residential_rate,A3320900323225003,332090,Kobuk,2022-09-01,2022,9,residential_rate,0.9119,quality_check,0.9466,1,1,1,NA,carry_forward,NA
+A3320901123225003_residential_rate,A3320901123225003,332090,Kobuk,2023-05-01,2023,5,residential_rate,0.0967,quality_check,1.1084,1,1,1,NA,carry_forward,NA
+A3320901223225003_residential_rate,A3320901223225003,332090,Kobuk,2023-06-01,2023,6,residential_rate,0.0967,quality_check,NA,1,1,1,NA,carry_forward,NA
 A3321000125225003_diesel_kwh_generated,A3321000125225003,332100,Kokhanok,2024-07-01,2024,7,diesel_kwh_generated,34400,quality_check,31400,41025,34830,30133,NA,NA,NA
 A3321000624225003_diesel_kwh_generated,A3321000624225003,332100,Kokhanok,2023-12-01,2023,12,diesel_kwh_generated,44990,quality_check,42700,34931,42700,44825,NA,NA,NA
 A3321001024225003_diesel_kwh_generated,A3321001024225003,332100,Kokhanok,2024-04-01,2024,4,diesel_kwh_generated,37800,quality_check,44560,41025,39925,38460,NA,NA,NA
 A3321000724225003_diesel_kwh_generated,A3321000724225003,332100,Kokhanok,2024-01-01,2024,1,diesel_kwh_generated,51700,quality_check,NA,41025,NA,48447,NA,NA,NA
 A3321000824225003_diesel_kwh_generated,A3321000824225003,332100,Kokhanok,2024-02-01,2024,2,diesel_kwh_generated,45510,quality_check,NA,41025,44560,43353,NA,NA,NA
-A3321000125225003_residential_rate,A3321000125225003,332100,Kokhanok,2024-07-01,2024,7,residential_rate,99,quality_check,0.97,1,1,1,NA,NA,NA
+A3321000125225003_residential_rate,A3321000125225003,332100,Kokhanok,2024-07-01,2024,7,residential_rate,99,quality_check,0.97,1,1,1,NA,carry_forward,NA
 A3325100127225003_diesel_kwh_generated,A3325100127225003,332510,Kongiganak,2026-07-01,2026,7,diesel_kwh_generated,91780,quality_check,90110,87193,90110,69493,NA,NA,NA
 A3321200621225003_fuel_used_gallons,A3321200621225003,332120,Kotlik,2020-12-01,2020,12,fuel_used_gallons,1863,quality_check,13460,12608,13945,14871,NA,NA,NA
 A3321200621225003_diesel_kwh_generated,A3321200621225003,332120,Kotlik,2020-12-01,2020,12,diesel_kwh_generated,202209,quality_check,176364,169220,178334,197252,NA,NA,NA
@@ -5783,14 +5792,14 @@ A3321500824225003_diesel_kwh_generated,A3321500824225003,332150,Kwethluk,2024-02
 A3321500924225003_diesel_kwh_generated,A3321500924225003,332150,Kwethluk,2024-03-01,2024,3,diesel_kwh_generated,188092,quality_check,NA,187093,NA,178965,NA,NA,NA
 A3321501124225003_diesel_kwh_generated,A3321501124225003,332150,Kwethluk,2024-05-01,2024,5,diesel_kwh_generated,152588,quality_check,NA,187093,148375,152528,NA,NA,NA
 A3321500523225003_diesel_kwh_generated,A3321500523225003,332150,Kwethluk,2022-11-01,2022,11,diesel_kwh_generated,170698,quality_check,NA,155124,194201,185898,NA,NA,NA
-A3321500226225003_residential_rate,A3321500226225003,332150,Kwethluk,2025-08-01,2025,8,residential_rate,0.62,quality_check,NA,1,NA,1,NA,NA,NA
-A3321500326225003_residential_rate,A3321500326225003,332150,Kwethluk,2025-09-01,2025,9,residential_rate,0.62,quality_check,NA,1,NA,1,NA,NA,NA
-A3321500426225003_residential_rate,A3321500426225003,332150,Kwethluk,2025-10-01,2025,10,residential_rate,0.62,quality_check,NA,1,NA,1,NA,NA,NA
-A3321500526225003_residential_rate,A3321500526225003,332150,Kwethluk,2025-11-01,2025,11,residential_rate,0.62,quality_check,NA,1,NA,1,NA,NA,NA
-A3321500626225003_residential_rate,A3321500626225003,332150,Kwethluk,2025-12-01,2025,12,residential_rate,0.62,quality_check,NA,1,NA,1,NA,NA,NA
-A3321500726225003_residential_rate,A3321500726225003,332150,Kwethluk,2026-01-01,2026,1,residential_rate,0.62,quality_check,NA,1,1,1,NA,NA,NA
-A3321501125225003_residential_rate,A3321501125225003,332150,Kwethluk,2025-05-01,2025,5,residential_rate,0.62,quality_check,0.62,1,1,1,NA,NA,NA
-A3321501225225003_residential_rate,A3321501225225003,332150,Kwethluk,2025-06-01,2025,6,residential_rate,0.62,quality_check,NA,1,NA,1,NA,NA,NA
+A3321500226225003_residential_rate,A3321500226225003,332150,Kwethluk,2025-08-01,2025,8,residential_rate,0.62,quality_check,NA,1,NA,1,NA,carry_forward,NA
+A3321500326225003_residential_rate,A3321500326225003,332150,Kwethluk,2025-09-01,2025,9,residential_rate,0.62,quality_check,NA,1,NA,1,NA,carry_forward,NA
+A3321500426225003_residential_rate,A3321500426225003,332150,Kwethluk,2025-10-01,2025,10,residential_rate,0.62,quality_check,NA,1,NA,1,NA,carry_forward,NA
+A3321500526225003_residential_rate,A3321500526225003,332150,Kwethluk,2025-11-01,2025,11,residential_rate,0.62,quality_check,NA,1,NA,1,NA,carry_forward,NA
+A3321500626225003_residential_rate,A3321500626225003,332150,Kwethluk,2025-12-01,2025,12,residential_rate,0.62,quality_check,NA,1,NA,1,NA,carry_forward,NA
+A3321500726225003_residential_rate,A3321500726225003,332150,Kwethluk,2026-01-01,2026,1,residential_rate,0.62,quality_check,NA,1,1,1,NA,carry_forward,NA
+A3321501125225003_residential_rate,A3321501125225003,332150,Kwethluk,2025-05-01,2025,5,residential_rate,0.62,quality_check,0.62,1,1,1,NA,carry_forward,NA
+A3321501225225003_residential_rate,A3321501225225003,332150,Kwethluk,2025-06-01,2025,6,residential_rate,0.62,quality_check,NA,1,NA,1,NA,carry_forward,NA
 A3321600420225003_diesel_kwh_generated,A3321600420225003,332160,Kwigillingok,2019-10-01,2019,10,diesel_kwh_generated,108290,quality_check,88150,71609,89425,109762,NA,NA,NA
 A3321700720225003_fuel_used_gallons,A3321700720225003,332170,Larsen Bay,2020-01-01,2020,1,fuel_used_gallons,2,quality_check,112,241,112,0,NA,NA,NA
 A3321700219225003_fuel_used_gallons,A3321700219225003,332170,Larsen Bay,2018-08-01,2018,8,fuel_used_gallons,935,quality_check,0,229,593,370,NA,NA,NA
@@ -5862,123 +5871,123 @@ A3314601125225003_diesel_kwh_generated,A3314601125225003,331460,Minto,2025-05-01
 A3314601223225003_diesel_kwh_generated,A3314601223225003,331460,Minto,2023-06-01,2023,6,diesel_kwh_generated,58043,quality_check,73730,80218,70660,51404,NA,NA,NA
 A3314700616225003_fuel_used_gallons,A3314700616225003,331470,Mountain Village,2015-12-01,2015,12,fuel_used_gallons,5913,quality_check,19154,16327,19760,9007,NA,NA,NA
 A3314700616225003_diesel_kwh_generated,A3314700616225003,331470,Mountain Village,2015-12-01,2015,12,diesel_kwh_generated,282529,quality_check,259288,215435,273253,119396,NA,NA,NA
-A3322900118225003_most_recent_fuel_purch_price,A3322900118225003,332290,Napakiak,2017-07-01,2017,7,most_recent_fuel_purch_price,0.2902,quality_check,NA,NA,NA,0,NA,NA,NA
-A3322900119225003_most_recent_fuel_purch_price,A3322900119225003,332290,Napakiak,2018-07-01,2018,7,most_recent_fuel_purch_price,0.2986,quality_check,NA,NA,NA,0,NA,NA,NA
-A3322900120225003_most_recent_fuel_purch_price,A3322900120225003,332290,Napakiak,2019-07-01,2019,7,most_recent_fuel_purch_price,0.3143,quality_check,NA,NA,NA,0,NA,NA,NA
-A3322900121225003_most_recent_fuel_purch_price,A3322900121225003,332290,Napakiak,2020-07-01,2020,7,most_recent_fuel_purch_price,0.3628,quality_check,NA,NA,NA,0,NA,NA,NA
-A3322900122225003_most_recent_fuel_purch_price,A3322900122225003,332290,Napakiak,2021-07-01,2021,7,most_recent_fuel_purch_price,0.3021,quality_check,NA,NA,NA,0,NA,NA,NA
-A3322900123225003_most_recent_fuel_purch_price,A3322900123225003,332290,Napakiak,2022-07-01,2022,7,most_recent_fuel_purch_price,0.2769,quality_check,NA,NA,NA,0,NA,NA,NA
-A3322900124225003_most_recent_fuel_purch_price,A3322900124225003,332290,Napakiak,2023-07-01,2023,7,most_recent_fuel_purch_price,0.2776,quality_check,NA,NA,NA,0,NA,NA,NA
-A3322900125225003_most_recent_fuel_purch_price,A3322900125225003,332290,Napakiak,2024-07-01,2024,7,most_recent_fuel_purch_price,0.2742,quality_check,NA,NA,NA,0,NA,NA,NA
-A3322900126225003_most_recent_fuel_purch_price,A3322900126225003,332290,Napakiak,2025-07-01,2025,7,most_recent_fuel_purch_price,0.4876,quality_check,0.5838,1,1,0,NA,NA,NA
-A3322900127225003_most_recent_fuel_purch_price,A3322900127225003,332290,Napakiak,2026-07-01,2026,7,most_recent_fuel_purch_price,0.4279,quality_check,NA,NA,NA,0,NA,NA,NA
-A3322900218225003_most_recent_fuel_purch_price,A3322900218225003,332290,Napakiak,2017-08-01,2017,8,most_recent_fuel_purch_price,0.2902,quality_check,NA,NA,NA,0,NA,NA,NA
-A3322900219225003_most_recent_fuel_purch_price,A3322900219225003,332290,Napakiak,2018-08-01,2018,8,most_recent_fuel_purch_price,0.2986,quality_check,NA,NA,NA,0,NA,NA,NA
-A3322900220225003_most_recent_fuel_purch_price,A3322900220225003,332290,Napakiak,2019-08-01,2019,8,most_recent_fuel_purch_price,0.3657,quality_check,NA,NA,NA,0,NA,NA,NA
-A3322900221225003_most_recent_fuel_purch_price,A3322900221225003,332290,Napakiak,2020-08-01,2020,8,most_recent_fuel_purch_price,0.3628,quality_check,NA,NA,NA,0,NA,NA,NA
-A3322900222225003_most_recent_fuel_purch_price,A3322900222225003,332290,Napakiak,2021-08-01,2021,8,most_recent_fuel_purch_price,0.3021,quality_check,NA,NA,NA,0,NA,NA,NA
-A3322900223225003_most_recent_fuel_purch_price,A3322900223225003,332290,Napakiak,2022-08-01,2022,8,most_recent_fuel_purch_price,0.2769,quality_check,NA,NA,NA,0,NA,NA,NA
-A3322900224225003_most_recent_fuel_purch_price,A3322900224225003,332290,Napakiak,2023-08-01,2023,8,most_recent_fuel_purch_price,0.2776,quality_check,NA,NA,NA,0,NA,NA,NA
-A3322900225225003_most_recent_fuel_purch_price,A3322900225225003,332290,Napakiak,2024-08-01,2024,8,most_recent_fuel_purch_price,0.4665,quality_check,NA,NA,NA,0,NA,NA,NA
-A3322900226225003_most_recent_fuel_purch_price,A3322900226225003,332290,Napakiak,2025-08-01,2025,8,most_recent_fuel_purch_price,0.4876,quality_check,NA,1,NA,0,NA,NA,NA
-A3322900318225003_most_recent_fuel_purch_price,A3322900318225003,332290,Napakiak,2017-09-01,2017,9,most_recent_fuel_purch_price,0.2902,quality_check,NA,NA,NA,0,NA,NA,NA
-A3322900319225003_most_recent_fuel_purch_price,A3322900319225003,332290,Napakiak,2018-09-01,2018,9,most_recent_fuel_purch_price,0.2986,quality_check,NA,NA,NA,0,NA,NA,NA
-A3322900320225003_most_recent_fuel_purch_price,A3322900320225003,332290,Napakiak,2019-09-01,2019,9,most_recent_fuel_purch_price,0.3657,quality_check,NA,NA,NA,0,NA,NA,NA
-A3322900321225003_most_recent_fuel_purch_price,A3322900321225003,332290,Napakiak,2020-09-01,2020,9,most_recent_fuel_purch_price,0.3628,quality_check,NA,NA,NA,0,NA,NA,NA
-A3322900322225003_most_recent_fuel_purch_price,A3322900322225003,332290,Napakiak,2021-09-01,2021,9,most_recent_fuel_purch_price,0.3021,quality_check,NA,NA,NA,0,NA,NA,NA
-A3322900323225003_most_recent_fuel_purch_price,A3322900323225003,332290,Napakiak,2022-09-01,2022,9,most_recent_fuel_purch_price,0.2769,quality_check,NA,NA,NA,0,NA,NA,NA
-A3322900324225003_most_recent_fuel_purch_price,A3322900324225003,332290,Napakiak,2023-09-01,2023,9,most_recent_fuel_purch_price,0.2765,quality_check,NA,NA,NA,0,NA,NA,NA
-A3322900325225003_most_recent_fuel_purch_price,A3322900325225003,332290,Napakiak,2024-09-01,2024,9,most_recent_fuel_purch_price,0.4665,quality_check,NA,NA,NA,0,NA,NA,NA
-A3322900326225003_most_recent_fuel_purch_price,A3322900326225003,332290,Napakiak,2025-09-01,2025,9,most_recent_fuel_purch_price,0.4751,quality_check,NA,1,NA,0,NA,NA,NA
-A3322900418225003_most_recent_fuel_purch_price,A3322900418225003,332290,Napakiak,2017-10-01,2017,10,most_recent_fuel_purch_price,0.2902,quality_check,NA,NA,NA,0,NA,NA,NA
-A3322900419225003_most_recent_fuel_purch_price,A3322900419225003,332290,Napakiak,2018-10-01,2018,10,most_recent_fuel_purch_price,0.319,quality_check,NA,NA,NA,0,NA,NA,NA
-A3322900420225003_most_recent_fuel_purch_price,A3322900420225003,332290,Napakiak,2019-10-01,2019,10,most_recent_fuel_purch_price,0.3809,quality_check,NA,NA,NA,0,NA,NA,NA
-A3322900421225003_most_recent_fuel_purch_price,A3322900421225003,332290,Napakiak,2020-10-01,2020,10,most_recent_fuel_purch_price,0.3628,quality_check,NA,NA,NA,0,NA,NA,NA
-A3322900422225003_most_recent_fuel_purch_price,A3322900422225003,332290,Napakiak,2021-10-01,2021,10,most_recent_fuel_purch_price,0.2859,quality_check,NA,NA,NA,0,NA,NA,NA
-A3322900423225003_most_recent_fuel_purch_price,A3322900423225003,332290,Napakiak,2022-10-01,2022,10,most_recent_fuel_purch_price,0.2761,quality_check,NA,NA,NA,0,NA,NA,NA
-A3322900424225003_most_recent_fuel_purch_price,A3322900424225003,332290,Napakiak,2023-10-01,2023,10,most_recent_fuel_purch_price,0.2765,quality_check,NA,NA,NA,0,NA,NA,NA
-A3322900425225003_most_recent_fuel_purch_price,A3322900425225003,332290,Napakiak,2024-10-01,2024,10,most_recent_fuel_purch_price,0.4565,quality_check,NA,NA,NA,0,NA,NA,NA
-A3322900426225003_most_recent_fuel_purch_price,A3322900426225003,332290,Napakiak,2025-10-01,2025,10,most_recent_fuel_purch_price,0.4778,quality_check,NA,1,NA,0,NA,NA,NA
-A3322900518225003_most_recent_fuel_purch_price,A3322900518225003,332290,Napakiak,2017-11-01,2017,11,most_recent_fuel_purch_price,0.3642,quality_check,NA,NA,NA,0,NA,NA,NA
-A3322900519225003_most_recent_fuel_purch_price,A3322900519225003,332290,Napakiak,2018-11-01,2018,11,most_recent_fuel_purch_price,0.319,quality_check,NA,NA,NA,0,NA,NA,NA
-A3322900520225003_most_recent_fuel_purch_price,A3322900520225003,332290,Napakiak,2019-11-01,2019,11,most_recent_fuel_purch_price,0.275,quality_check,NA,NA,NA,0,NA,NA,NA
-A3322900521225003_most_recent_fuel_purch_price,A3322900521225003,332290,Napakiak,2020-11-01,2020,11,most_recent_fuel_purch_price,0.3586,quality_check,NA,NA,NA,0,NA,NA,NA
-A3322900522225003_most_recent_fuel_purch_price,A3322900522225003,332290,Napakiak,2021-11-01,2021,11,most_recent_fuel_purch_price,0.2977,quality_check,NA,NA,NA,0,NA,NA,NA
-A3322900523225003_most_recent_fuel_purch_price,A3322900523225003,332290,Napakiak,2022-11-01,2022,11,most_recent_fuel_purch_price,0.2769,quality_check,NA,NA,NA,0,NA,NA,NA
-A3322900524225003_most_recent_fuel_purch_price,A3322900524225003,332290,Napakiak,2023-11-01,2023,11,most_recent_fuel_purch_price,0.2765,quality_check,NA,NA,NA,0,NA,NA,NA
-A3322900525225003_most_recent_fuel_purch_price,A3322900525225003,332290,Napakiak,2024-11-01,2024,11,most_recent_fuel_purch_price,0.4565,quality_check,NA,NA,NA,0,NA,NA,NA
-A3322900526225003_most_recent_fuel_purch_price,A3322900526225003,332290,Napakiak,2025-11-01,2025,11,most_recent_fuel_purch_price,0.4778,quality_check,NA,1,NA,0,NA,NA,NA
-A3322900616225003_most_recent_fuel_purch_price,A3322900616225003,332290,Napakiak,2015-12-01,2015,12,most_recent_fuel_purch_price,0.4662,quality_check,NA,NA,NA,NA,NA,NA,NA
-A3322900617225003_most_recent_fuel_purch_price,A3322900617225003,332290,Napakiak,2016-12-01,2016,12,most_recent_fuel_purch_price,0.3394,quality_check,0,0,0,NA,NA,NA,NA
-A3322900618225003_most_recent_fuel_purch_price,A3322900618225003,332290,Napakiak,2017-12-01,2017,12,most_recent_fuel_purch_price,0.2902,quality_check,NA,NA,NA,NA,NA,NA,NA
-A3322900619225003_most_recent_fuel_purch_price,A3322900619225003,332290,Napakiak,2018-12-01,2018,12,most_recent_fuel_purch_price,0.275,quality_check,NA,NA,NA,NA,NA,NA,NA
-A3322900620225003_most_recent_fuel_purch_price,A3322900620225003,332290,Napakiak,2019-12-01,2019,12,most_recent_fuel_purch_price,0.3809,quality_check,NA,NA,NA,NA,NA,NA,NA
-A3322900621225003_most_recent_fuel_purch_price,A3322900621225003,332290,Napakiak,2020-12-01,2020,12,most_recent_fuel_purch_price,0.3586,quality_check,NA,NA,NA,NA,NA,NA,NA
-A3322900622225003_most_recent_fuel_purch_price,A3322900622225003,332290,Napakiak,2021-12-01,2021,12,most_recent_fuel_purch_price,0.2977,quality_check,NA,NA,NA,NA,NA,NA,NA
-A3322900623225003_most_recent_fuel_purch_price,A3322900623225003,332290,Napakiak,2022-12-01,2022,12,most_recent_fuel_purch_price,0.2755,quality_check,NA,NA,NA,NA,NA,NA,NA
-A3322900624225003_most_recent_fuel_purch_price,A3322900624225003,332290,Napakiak,2023-12-01,2023,12,most_recent_fuel_purch_price,0.2747,quality_check,NA,NA,NA,NA,NA,NA,NA
-A3322900625225003_most_recent_fuel_purch_price,A3322900625225003,332290,Napakiak,2024-12-01,2024,12,most_recent_fuel_purch_price,0.4565,quality_check,NA,NA,1,NA,NA,NA,NA
-A3322900626225003_most_recent_fuel_purch_price,A3322900626225003,332290,Napakiak,2025-12-01,2025,12,most_recent_fuel_purch_price,0.4778,quality_check,NA,1,NA,NA,NA,NA,NA
-A3322900716225003_most_recent_fuel_purch_price,A3322900716225003,332290,Napakiak,2016-01-01,2016,1,most_recent_fuel_purch_price,0.442,quality_check,NA,0,NA,1,NA,NA,NA
-A3322900717225003_most_recent_fuel_purch_price,A3322900717225003,332290,Napakiak,2017-01-01,2017,1,most_recent_fuel_purch_price,0.3394,quality_check,NA,NA,NA,1,NA,NA,NA
-A3322900718225003_most_recent_fuel_purch_price,A3322900718225003,332290,Napakiak,2018-01-01,2018,1,most_recent_fuel_purch_price,0.2642,quality_check,NA,NA,NA,1,NA,NA,NA
-A3322900719225003_most_recent_fuel_purch_price,A3322900719225003,332290,Napakiak,2019-01-01,2019,1,most_recent_fuel_purch_price,0.319,quality_check,NA,NA,NA,1,NA,NA,NA
-A3322900720225003_most_recent_fuel_purch_price,A3322900720225003,332290,Napakiak,2020-01-01,2020,1,most_recent_fuel_purch_price,0.3809,quality_check,NA,NA,NA,1,NA,NA,NA
-A3322900721225003_most_recent_fuel_purch_price,A3322900721225003,332290,Napakiak,2021-01-01,2021,1,most_recent_fuel_purch_price,0.3429,quality_check,NA,NA,NA,1,NA,NA,NA
-A3322900722225003_most_recent_fuel_purch_price,A3322900722225003,332290,Napakiak,2022-01-01,2022,1,most_recent_fuel_purch_price,0.2977,quality_check,NA,NA,NA,1,NA,NA,NA
-A3322900723225003_most_recent_fuel_purch_price,A3322900723225003,332290,Napakiak,2023-01-01,2023,1,most_recent_fuel_purch_price,0.2755,quality_check,NA,NA,NA,1,NA,NA,NA
-A3322900724225003_most_recent_fuel_purch_price,A3322900724225003,332290,Napakiak,2024-01-01,2024,1,most_recent_fuel_purch_price,0.2747,quality_check,NA,NA,NA,1,NA,NA,NA
-A3322900726225003_most_recent_fuel_purch_price,A3322900726225003,332290,Napakiak,2026-01-01,2026,1,most_recent_fuel_purch_price,0.4634,quality_check,NA,NA,NA,1,NA,NA,NA
-A3322900816225003_most_recent_fuel_purch_price,A3322900816225003,332290,Napakiak,2016-02-01,2016,2,most_recent_fuel_purch_price,0.442,quality_check,NA,0,NA,1,NA,NA,NA
-A3322900817225003_most_recent_fuel_purch_price,A3322900817225003,332290,Napakiak,2017-02-01,2017,2,most_recent_fuel_purch_price,0.3394,quality_check,NA,NA,NA,1,NA,NA,NA
-A3322900818225003_most_recent_fuel_purch_price,A3322900818225003,332290,Napakiak,2018-02-01,2018,2,most_recent_fuel_purch_price,0.2642,quality_check,NA,NA,NA,1,NA,NA,NA
-A3322900819225003_most_recent_fuel_purch_price,A3322900819225003,332290,Napakiak,2019-02-01,2019,2,most_recent_fuel_purch_price,0.3156,quality_check,NA,NA,NA,1,NA,NA,NA
-A3322900820225003_most_recent_fuel_purch_price,A3322900820225003,332290,Napakiak,2020-02-01,2020,2,most_recent_fuel_purch_price,0.3827,quality_check,NA,NA,NA,1,NA,NA,NA
-A3322900821225003_most_recent_fuel_purch_price,A3322900821225003,332290,Napakiak,2021-02-01,2021,2,most_recent_fuel_purch_price,0.3221,quality_check,NA,NA,NA,1,NA,NA,NA
-A3322900822225003_most_recent_fuel_purch_price,A3322900822225003,332290,Napakiak,2022-02-01,2022,2,most_recent_fuel_purch_price,0.284,quality_check,NA,NA,NA,1,NA,NA,NA
-A3322900823225003_most_recent_fuel_purch_price,A3322900823225003,332290,Napakiak,2023-02-01,2023,2,most_recent_fuel_purch_price,0.2755,quality_check,NA,NA,NA,1,NA,NA,NA
-A3322900824225003_most_recent_fuel_purch_price,A3322900824225003,332290,Napakiak,2024-02-01,2024,2,most_recent_fuel_purch_price,0.2747,quality_check,NA,NA,NA,1,NA,NA,NA
-A3322900826225003_most_recent_fuel_purch_price,A3322900826225003,332290,Napakiak,2026-02-01,2026,2,most_recent_fuel_purch_price,0.4634,quality_check,NA,NA,NA,1,NA,NA,NA
-A3322900916225003_most_recent_fuel_purch_price,A3322900916225003,332290,Napakiak,2016-03-01,2016,3,most_recent_fuel_purch_price,0.442,quality_check,NA,0,NA,1,NA,NA,NA
-A3322900917225003_most_recent_fuel_purch_price,A3322900917225003,332290,Napakiak,2017-03-01,2017,3,most_recent_fuel_purch_price,0.3394,quality_check,NA,NA,NA,1,NA,NA,NA
-A3322900918225003_most_recent_fuel_purch_price,A3322900918225003,332290,Napakiak,2018-03-01,2018,3,most_recent_fuel_purch_price,0.3276,quality_check,NA,NA,NA,1,NA,NA,NA
-A3322900919225003_most_recent_fuel_purch_price,A3322900919225003,332290,Napakiak,2019-03-01,2019,3,most_recent_fuel_purch_price,0.3156,quality_check,NA,NA,NA,1,NA,NA,NA
-A3322900920225003_most_recent_fuel_purch_price,A3322900920225003,332290,Napakiak,2020-03-01,2020,3,most_recent_fuel_purch_price,0.3825,quality_check,NA,NA,NA,1,NA,NA,NA
-A3322900921225003_most_recent_fuel_purch_price,A3322900921225003,332290,Napakiak,2021-03-01,2021,3,most_recent_fuel_purch_price,0.3221,quality_check,NA,NA,NA,1,NA,NA,NA
-A3322900922225003_most_recent_fuel_purch_price,A3322900922225003,332290,Napakiak,2022-03-01,2022,3,most_recent_fuel_purch_price,0.284,quality_check,NA,NA,NA,1,NA,NA,NA
-A3322900923225003_most_recent_fuel_purch_price,A3322900923225003,332290,Napakiak,2023-03-01,2023,3,most_recent_fuel_purch_price,0.2769,quality_check,NA,NA,NA,1,NA,NA,NA
-A3322900924225003_most_recent_fuel_purch_price,A3322900924225003,332290,Napakiak,2024-03-01,2024,3,most_recent_fuel_purch_price,0.2747,quality_check,NA,NA,NA,1,NA,NA,NA
-A3322900926225003_most_recent_fuel_purch_price,A3322900926225003,332290,Napakiak,2026-03-01,2026,3,most_recent_fuel_purch_price,0.4634,quality_check,NA,NA,NA,1,NA,NA,NA
-A3322901016225003_most_recent_fuel_purch_price,A3322901016225003,332290,Napakiak,2016-04-01,2016,4,most_recent_fuel_purch_price,0.442,quality_check,NA,0,NA,1,NA,NA,NA
-A3322901017225003_most_recent_fuel_purch_price,A3322901017225003,332290,Napakiak,2017-04-01,2017,4,most_recent_fuel_purch_price,0.3394,quality_check,NA,NA,NA,1,NA,NA,NA
-A3322901018225003_most_recent_fuel_purch_price,A3322901018225003,332290,Napakiak,2018-04-01,2018,4,most_recent_fuel_purch_price,0.275,quality_check,NA,NA,NA,1,NA,NA,NA
-A3322901019225003_most_recent_fuel_purch_price,A3322901019225003,332290,Napakiak,2019-04-01,2019,4,most_recent_fuel_purch_price,0.3143,quality_check,NA,NA,NA,1,NA,NA,NA
-A3322901020225003_most_recent_fuel_purch_price,A3322901020225003,332290,Napakiak,2020-04-01,2020,4,most_recent_fuel_purch_price,0.3765,quality_check,NA,NA,NA,1,NA,NA,NA
-A3322901021225003_most_recent_fuel_purch_price,A3322901021225003,332290,Napakiak,2021-04-01,2021,4,most_recent_fuel_purch_price,0.3221,quality_check,NA,NA,NA,1,NA,NA,NA
-A3322901022225003_most_recent_fuel_purch_price,A3322901022225003,332290,Napakiak,2022-04-01,2022,4,most_recent_fuel_purch_price,0.2771,quality_check,NA,NA,NA,1,NA,NA,NA
-A3322901023225003_most_recent_fuel_purch_price,A3322901023225003,332290,Napakiak,2023-04-01,2023,4,most_recent_fuel_purch_price,0.2787,quality_check,NA,NA,NA,1,NA,NA,NA
-A3322901024225003_most_recent_fuel_purch_price,A3322901024225003,332290,Napakiak,2024-04-01,2024,4,most_recent_fuel_purch_price,0.2742,quality_check,NA,NA,NA,1,NA,NA,NA
-A3322901026225003_most_recent_fuel_purch_price,A3322901026225003,332290,Napakiak,2026-04-01,2026,4,most_recent_fuel_purch_price,0.4863,quality_check,NA,NA,NA,1,NA,NA,NA
-A3322901116225003_most_recent_fuel_purch_price,A3322901116225003,332290,Napakiak,2016-05-01,2016,5,most_recent_fuel_purch_price,0.442,quality_check,NA,0,NA,1,NA,NA,NA
-A3322901117225003_most_recent_fuel_purch_price,A3322901117225003,332290,Napakiak,2017-05-01,2017,5,most_recent_fuel_purch_price,0.3394,quality_check,NA,NA,NA,1,NA,NA,NA
-A3322901118225003_most_recent_fuel_purch_price,A3322901118225003,332290,Napakiak,2018-05-01,2018,5,most_recent_fuel_purch_price,0.275,quality_check,NA,NA,NA,1,NA,NA,NA
-A3322901119225003_most_recent_fuel_purch_price,A3322901119225003,332290,Napakiak,2019-05-01,2019,5,most_recent_fuel_purch_price,0.3143,quality_check,NA,NA,NA,1,NA,NA,NA
-A3322901120225003_most_recent_fuel_purch_price,A3322901120225003,332290,Napakiak,2020-05-01,2020,5,most_recent_fuel_purch_price,0.3765,quality_check,NA,NA,NA,1,NA,NA,NA
-A3322901121225003_most_recent_fuel_purch_price,A3322901121225003,332290,Napakiak,2021-05-01,2021,5,most_recent_fuel_purch_price,0.3221,quality_check,NA,NA,NA,1,NA,NA,NA
-A3322901122225003_most_recent_fuel_purch_price,A3322901122225003,332290,Napakiak,2022-05-01,2022,5,most_recent_fuel_purch_price,0.2771,quality_check,NA,NA,NA,1,NA,NA,NA
-A3322901123225003_most_recent_fuel_purch_price,A3322901123225003,332290,Napakiak,2023-05-01,2023,5,most_recent_fuel_purch_price,0.2787,quality_check,NA,NA,NA,1,NA,NA,NA
-A3322901124225003_most_recent_fuel_purch_price,A3322901124225003,332290,Napakiak,2024-05-01,2024,5,most_recent_fuel_purch_price,0.2742,quality_check,NA,NA,NA,1,NA,NA,NA
-A3322901126225003_most_recent_fuel_purch_price,A3322901126225003,332290,Napakiak,2026-05-01,2026,5,most_recent_fuel_purch_price,0.4279,quality_check,NA,NA,NA,1,NA,NA,NA
-A3322901216225003_most_recent_fuel_purch_price,A3322901216225003,332290,Napakiak,2016-06-01,2016,6,most_recent_fuel_purch_price,0.3887,quality_check,NA,0,0,1,NA,NA,NA
-A3322901217225003_most_recent_fuel_purch_price,A3322901217225003,332290,Napakiak,2017-06-01,2017,6,most_recent_fuel_purch_price,0.2902,quality_check,NA,NA,NA,1,NA,NA,NA
-A3322901218225003_most_recent_fuel_purch_price,A3322901218225003,332290,Napakiak,2018-06-01,2018,6,most_recent_fuel_purch_price,0.2986,quality_check,NA,NA,NA,1,NA,NA,NA
-A3322901219225003_most_recent_fuel_purch_price,A3322901219225003,332290,Napakiak,2019-06-01,2019,6,most_recent_fuel_purch_price,0.3143,quality_check,NA,NA,NA,1,NA,NA,NA
-A3322901220225003_most_recent_fuel_purch_price,A3322901220225003,332290,Napakiak,2020-06-01,2020,6,most_recent_fuel_purch_price,0.3628,quality_check,NA,NA,NA,1,NA,NA,NA
-A3322901221225003_most_recent_fuel_purch_price,A3322901221225003,332290,Napakiak,2021-06-01,2021,6,most_recent_fuel_purch_price,0.3021,quality_check,NA,NA,NA,1,NA,NA,NA
-A3322901222225003_most_recent_fuel_purch_price,A3322901222225003,332290,Napakiak,2022-06-01,2022,6,most_recent_fuel_purch_price,0.2769,quality_check,NA,NA,NA,1,NA,NA,NA
-A3322901223225003_most_recent_fuel_purch_price,A3322901223225003,332290,Napakiak,2023-06-01,2023,6,most_recent_fuel_purch_price,0.2776,quality_check,NA,NA,NA,1,NA,NA,NA
-A3322901224225003_most_recent_fuel_purch_price,A3322901224225003,332290,Napakiak,2024-06-01,2024,6,most_recent_fuel_purch_price,0.2742,quality_check,NA,NA,NA,1,NA,NA,NA
-A3322901226225003_most_recent_fuel_purch_price,A3322901226225003,332290,Napakiak,2026-06-01,2026,6,most_recent_fuel_purch_price,0.4279,quality_check,NA,NA,NA,1,NA,NA,NA
+A3322900118225003_most_recent_fuel_purch_price,A3322900118225003,332290,Napakiak,2017-07-01,2017,7,most_recent_fuel_purch_price,0.2902,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3322900119225003_most_recent_fuel_purch_price,A3322900119225003,332290,Napakiak,2018-07-01,2018,7,most_recent_fuel_purch_price,0.2986,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3322900120225003_most_recent_fuel_purch_price,A3322900120225003,332290,Napakiak,2019-07-01,2019,7,most_recent_fuel_purch_price,0.3143,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3322900121225003_most_recent_fuel_purch_price,A3322900121225003,332290,Napakiak,2020-07-01,2020,7,most_recent_fuel_purch_price,0.3628,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3322900122225003_most_recent_fuel_purch_price,A3322900122225003,332290,Napakiak,2021-07-01,2021,7,most_recent_fuel_purch_price,0.3021,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3322900123225003_most_recent_fuel_purch_price,A3322900123225003,332290,Napakiak,2022-07-01,2022,7,most_recent_fuel_purch_price,0.2769,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3322900124225003_most_recent_fuel_purch_price,A3322900124225003,332290,Napakiak,2023-07-01,2023,7,most_recent_fuel_purch_price,0.2776,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3322900125225003_most_recent_fuel_purch_price,A3322900125225003,332290,Napakiak,2024-07-01,2024,7,most_recent_fuel_purch_price,0.2742,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3322900126225003_most_recent_fuel_purch_price,A3322900126225003,332290,Napakiak,2025-07-01,2025,7,most_recent_fuel_purch_price,0.4876,quality_check,0.5838,1,1,0,NA,carry_forward,NA
+A3322900127225003_most_recent_fuel_purch_price,A3322900127225003,332290,Napakiak,2026-07-01,2026,7,most_recent_fuel_purch_price,0.4279,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3322900218225003_most_recent_fuel_purch_price,A3322900218225003,332290,Napakiak,2017-08-01,2017,8,most_recent_fuel_purch_price,0.2902,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3322900219225003_most_recent_fuel_purch_price,A3322900219225003,332290,Napakiak,2018-08-01,2018,8,most_recent_fuel_purch_price,0.2986,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3322900220225003_most_recent_fuel_purch_price,A3322900220225003,332290,Napakiak,2019-08-01,2019,8,most_recent_fuel_purch_price,0.3657,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3322900221225003_most_recent_fuel_purch_price,A3322900221225003,332290,Napakiak,2020-08-01,2020,8,most_recent_fuel_purch_price,0.3628,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3322900222225003_most_recent_fuel_purch_price,A3322900222225003,332290,Napakiak,2021-08-01,2021,8,most_recent_fuel_purch_price,0.3021,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3322900223225003_most_recent_fuel_purch_price,A3322900223225003,332290,Napakiak,2022-08-01,2022,8,most_recent_fuel_purch_price,0.2769,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3322900224225003_most_recent_fuel_purch_price,A3322900224225003,332290,Napakiak,2023-08-01,2023,8,most_recent_fuel_purch_price,0.2776,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3322900225225003_most_recent_fuel_purch_price,A3322900225225003,332290,Napakiak,2024-08-01,2024,8,most_recent_fuel_purch_price,0.4665,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3322900226225003_most_recent_fuel_purch_price,A3322900226225003,332290,Napakiak,2025-08-01,2025,8,most_recent_fuel_purch_price,0.4876,quality_check,NA,1,NA,0,NA,carry_forward,NA
+A3322900318225003_most_recent_fuel_purch_price,A3322900318225003,332290,Napakiak,2017-09-01,2017,9,most_recent_fuel_purch_price,0.2902,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3322900319225003_most_recent_fuel_purch_price,A3322900319225003,332290,Napakiak,2018-09-01,2018,9,most_recent_fuel_purch_price,0.2986,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3322900320225003_most_recent_fuel_purch_price,A3322900320225003,332290,Napakiak,2019-09-01,2019,9,most_recent_fuel_purch_price,0.3657,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3322900321225003_most_recent_fuel_purch_price,A3322900321225003,332290,Napakiak,2020-09-01,2020,9,most_recent_fuel_purch_price,0.3628,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3322900322225003_most_recent_fuel_purch_price,A3322900322225003,332290,Napakiak,2021-09-01,2021,9,most_recent_fuel_purch_price,0.3021,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3322900323225003_most_recent_fuel_purch_price,A3322900323225003,332290,Napakiak,2022-09-01,2022,9,most_recent_fuel_purch_price,0.2769,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3322900324225003_most_recent_fuel_purch_price,A3322900324225003,332290,Napakiak,2023-09-01,2023,9,most_recent_fuel_purch_price,0.2765,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3322900325225003_most_recent_fuel_purch_price,A3322900325225003,332290,Napakiak,2024-09-01,2024,9,most_recent_fuel_purch_price,0.4665,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3322900326225003_most_recent_fuel_purch_price,A3322900326225003,332290,Napakiak,2025-09-01,2025,9,most_recent_fuel_purch_price,0.4751,quality_check,NA,1,NA,0,NA,carry_forward,NA
+A3322900418225003_most_recent_fuel_purch_price,A3322900418225003,332290,Napakiak,2017-10-01,2017,10,most_recent_fuel_purch_price,0.2902,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3322900419225003_most_recent_fuel_purch_price,A3322900419225003,332290,Napakiak,2018-10-01,2018,10,most_recent_fuel_purch_price,0.319,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3322900420225003_most_recent_fuel_purch_price,A3322900420225003,332290,Napakiak,2019-10-01,2019,10,most_recent_fuel_purch_price,0.3809,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3322900421225003_most_recent_fuel_purch_price,A3322900421225003,332290,Napakiak,2020-10-01,2020,10,most_recent_fuel_purch_price,0.3628,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3322900422225003_most_recent_fuel_purch_price,A3322900422225003,332290,Napakiak,2021-10-01,2021,10,most_recent_fuel_purch_price,0.2859,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3322900423225003_most_recent_fuel_purch_price,A3322900423225003,332290,Napakiak,2022-10-01,2022,10,most_recent_fuel_purch_price,0.2761,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3322900424225003_most_recent_fuel_purch_price,A3322900424225003,332290,Napakiak,2023-10-01,2023,10,most_recent_fuel_purch_price,0.2765,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3322900425225003_most_recent_fuel_purch_price,A3322900425225003,332290,Napakiak,2024-10-01,2024,10,most_recent_fuel_purch_price,0.4565,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3322900426225003_most_recent_fuel_purch_price,A3322900426225003,332290,Napakiak,2025-10-01,2025,10,most_recent_fuel_purch_price,0.4778,quality_check,NA,1,NA,0,NA,carry_forward,NA
+A3322900518225003_most_recent_fuel_purch_price,A3322900518225003,332290,Napakiak,2017-11-01,2017,11,most_recent_fuel_purch_price,0.3642,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3322900519225003_most_recent_fuel_purch_price,A3322900519225003,332290,Napakiak,2018-11-01,2018,11,most_recent_fuel_purch_price,0.319,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3322900520225003_most_recent_fuel_purch_price,A3322900520225003,332290,Napakiak,2019-11-01,2019,11,most_recent_fuel_purch_price,0.275,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3322900521225003_most_recent_fuel_purch_price,A3322900521225003,332290,Napakiak,2020-11-01,2020,11,most_recent_fuel_purch_price,0.3586,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3322900522225003_most_recent_fuel_purch_price,A3322900522225003,332290,Napakiak,2021-11-01,2021,11,most_recent_fuel_purch_price,0.2977,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3322900523225003_most_recent_fuel_purch_price,A3322900523225003,332290,Napakiak,2022-11-01,2022,11,most_recent_fuel_purch_price,0.2769,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3322900524225003_most_recent_fuel_purch_price,A3322900524225003,332290,Napakiak,2023-11-01,2023,11,most_recent_fuel_purch_price,0.2765,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3322900525225003_most_recent_fuel_purch_price,A3322900525225003,332290,Napakiak,2024-11-01,2024,11,most_recent_fuel_purch_price,0.4565,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3322900526225003_most_recent_fuel_purch_price,A3322900526225003,332290,Napakiak,2025-11-01,2025,11,most_recent_fuel_purch_price,0.4778,quality_check,NA,1,NA,0,NA,carry_forward,NA
+A3322900616225003_most_recent_fuel_purch_price,A3322900616225003,332290,Napakiak,2015-12-01,2015,12,most_recent_fuel_purch_price,0.4662,quality_check,NA,NA,NA,NA,NA,carry_forward,NA
+A3322900617225003_most_recent_fuel_purch_price,A3322900617225003,332290,Napakiak,2016-12-01,2016,12,most_recent_fuel_purch_price,0.3394,quality_check,0,0,0,NA,NA,carry_forward,NA
+A3322900618225003_most_recent_fuel_purch_price,A3322900618225003,332290,Napakiak,2017-12-01,2017,12,most_recent_fuel_purch_price,0.2902,quality_check,NA,NA,NA,NA,NA,carry_forward,NA
+A3322900619225003_most_recent_fuel_purch_price,A3322900619225003,332290,Napakiak,2018-12-01,2018,12,most_recent_fuel_purch_price,0.275,quality_check,NA,NA,NA,NA,NA,carry_forward,NA
+A3322900620225003_most_recent_fuel_purch_price,A3322900620225003,332290,Napakiak,2019-12-01,2019,12,most_recent_fuel_purch_price,0.3809,quality_check,NA,NA,NA,NA,NA,carry_forward,NA
+A3322900621225003_most_recent_fuel_purch_price,A3322900621225003,332290,Napakiak,2020-12-01,2020,12,most_recent_fuel_purch_price,0.3586,quality_check,NA,NA,NA,NA,NA,carry_forward,NA
+A3322900622225003_most_recent_fuel_purch_price,A3322900622225003,332290,Napakiak,2021-12-01,2021,12,most_recent_fuel_purch_price,0.2977,quality_check,NA,NA,NA,NA,NA,carry_forward,NA
+A3322900623225003_most_recent_fuel_purch_price,A3322900623225003,332290,Napakiak,2022-12-01,2022,12,most_recent_fuel_purch_price,0.2755,quality_check,NA,NA,NA,NA,NA,carry_forward,NA
+A3322900624225003_most_recent_fuel_purch_price,A3322900624225003,332290,Napakiak,2023-12-01,2023,12,most_recent_fuel_purch_price,0.2747,quality_check,NA,NA,NA,NA,NA,carry_forward,NA
+A3322900625225003_most_recent_fuel_purch_price,A3322900625225003,332290,Napakiak,2024-12-01,2024,12,most_recent_fuel_purch_price,0.4565,quality_check,NA,NA,1,NA,NA,carry_forward,NA
+A3322900626225003_most_recent_fuel_purch_price,A3322900626225003,332290,Napakiak,2025-12-01,2025,12,most_recent_fuel_purch_price,0.4778,quality_check,NA,1,NA,NA,NA,carry_forward,NA
+A3322900716225003_most_recent_fuel_purch_price,A3322900716225003,332290,Napakiak,2016-01-01,2016,1,most_recent_fuel_purch_price,0.442,quality_check,NA,0,NA,1,NA,carry_forward,NA
+A3322900717225003_most_recent_fuel_purch_price,A3322900717225003,332290,Napakiak,2017-01-01,2017,1,most_recent_fuel_purch_price,0.3394,quality_check,NA,NA,NA,1,NA,carry_forward,NA
+A3322900718225003_most_recent_fuel_purch_price,A3322900718225003,332290,Napakiak,2018-01-01,2018,1,most_recent_fuel_purch_price,0.2642,quality_check,NA,NA,NA,1,NA,carry_forward,NA
+A3322900719225003_most_recent_fuel_purch_price,A3322900719225003,332290,Napakiak,2019-01-01,2019,1,most_recent_fuel_purch_price,0.319,quality_check,NA,NA,NA,1,NA,carry_forward,NA
+A3322900720225003_most_recent_fuel_purch_price,A3322900720225003,332290,Napakiak,2020-01-01,2020,1,most_recent_fuel_purch_price,0.3809,quality_check,NA,NA,NA,1,NA,carry_forward,NA
+A3322900721225003_most_recent_fuel_purch_price,A3322900721225003,332290,Napakiak,2021-01-01,2021,1,most_recent_fuel_purch_price,0.3429,quality_check,NA,NA,NA,1,NA,carry_forward,NA
+A3322900722225003_most_recent_fuel_purch_price,A3322900722225003,332290,Napakiak,2022-01-01,2022,1,most_recent_fuel_purch_price,0.2977,quality_check,NA,NA,NA,1,NA,carry_forward,NA
+A3322900723225003_most_recent_fuel_purch_price,A3322900723225003,332290,Napakiak,2023-01-01,2023,1,most_recent_fuel_purch_price,0.2755,quality_check,NA,NA,NA,1,NA,carry_forward,NA
+A3322900724225003_most_recent_fuel_purch_price,A3322900724225003,332290,Napakiak,2024-01-01,2024,1,most_recent_fuel_purch_price,0.2747,quality_check,NA,NA,NA,1,NA,carry_forward,NA
+A3322900726225003_most_recent_fuel_purch_price,A3322900726225003,332290,Napakiak,2026-01-01,2026,1,most_recent_fuel_purch_price,0.4634,quality_check,NA,NA,NA,1,NA,carry_forward,NA
+A3322900816225003_most_recent_fuel_purch_price,A3322900816225003,332290,Napakiak,2016-02-01,2016,2,most_recent_fuel_purch_price,0.442,quality_check,NA,0,NA,1,NA,carry_forward,NA
+A3322900817225003_most_recent_fuel_purch_price,A3322900817225003,332290,Napakiak,2017-02-01,2017,2,most_recent_fuel_purch_price,0.3394,quality_check,NA,NA,NA,1,NA,carry_forward,NA
+A3322900818225003_most_recent_fuel_purch_price,A3322900818225003,332290,Napakiak,2018-02-01,2018,2,most_recent_fuel_purch_price,0.2642,quality_check,NA,NA,NA,1,NA,carry_forward,NA
+A3322900819225003_most_recent_fuel_purch_price,A3322900819225003,332290,Napakiak,2019-02-01,2019,2,most_recent_fuel_purch_price,0.3156,quality_check,NA,NA,NA,1,NA,carry_forward,NA
+A3322900820225003_most_recent_fuel_purch_price,A3322900820225003,332290,Napakiak,2020-02-01,2020,2,most_recent_fuel_purch_price,0.3827,quality_check,NA,NA,NA,1,NA,carry_forward,NA
+A3322900821225003_most_recent_fuel_purch_price,A3322900821225003,332290,Napakiak,2021-02-01,2021,2,most_recent_fuel_purch_price,0.3221,quality_check,NA,NA,NA,1,NA,carry_forward,NA
+A3322900822225003_most_recent_fuel_purch_price,A3322900822225003,332290,Napakiak,2022-02-01,2022,2,most_recent_fuel_purch_price,0.284,quality_check,NA,NA,NA,1,NA,carry_forward,NA
+A3322900823225003_most_recent_fuel_purch_price,A3322900823225003,332290,Napakiak,2023-02-01,2023,2,most_recent_fuel_purch_price,0.2755,quality_check,NA,NA,NA,1,NA,carry_forward,NA
+A3322900824225003_most_recent_fuel_purch_price,A3322900824225003,332290,Napakiak,2024-02-01,2024,2,most_recent_fuel_purch_price,0.2747,quality_check,NA,NA,NA,1,NA,carry_forward,NA
+A3322900826225003_most_recent_fuel_purch_price,A3322900826225003,332290,Napakiak,2026-02-01,2026,2,most_recent_fuel_purch_price,0.4634,quality_check,NA,NA,NA,1,NA,carry_forward,NA
+A3322900916225003_most_recent_fuel_purch_price,A3322900916225003,332290,Napakiak,2016-03-01,2016,3,most_recent_fuel_purch_price,0.442,quality_check,NA,0,NA,1,NA,carry_forward,NA
+A3322900917225003_most_recent_fuel_purch_price,A3322900917225003,332290,Napakiak,2017-03-01,2017,3,most_recent_fuel_purch_price,0.3394,quality_check,NA,NA,NA,1,NA,carry_forward,NA
+A3322900918225003_most_recent_fuel_purch_price,A3322900918225003,332290,Napakiak,2018-03-01,2018,3,most_recent_fuel_purch_price,0.3276,quality_check,NA,NA,NA,1,NA,carry_forward,NA
+A3322900919225003_most_recent_fuel_purch_price,A3322900919225003,332290,Napakiak,2019-03-01,2019,3,most_recent_fuel_purch_price,0.3156,quality_check,NA,NA,NA,1,NA,carry_forward,NA
+A3322900920225003_most_recent_fuel_purch_price,A3322900920225003,332290,Napakiak,2020-03-01,2020,3,most_recent_fuel_purch_price,0.3825,quality_check,NA,NA,NA,1,NA,carry_forward,NA
+A3322900921225003_most_recent_fuel_purch_price,A3322900921225003,332290,Napakiak,2021-03-01,2021,3,most_recent_fuel_purch_price,0.3221,quality_check,NA,NA,NA,1,NA,carry_forward,NA
+A3322900922225003_most_recent_fuel_purch_price,A3322900922225003,332290,Napakiak,2022-03-01,2022,3,most_recent_fuel_purch_price,0.284,quality_check,NA,NA,NA,1,NA,carry_forward,NA
+A3322900923225003_most_recent_fuel_purch_price,A3322900923225003,332290,Napakiak,2023-03-01,2023,3,most_recent_fuel_purch_price,0.2769,quality_check,NA,NA,NA,1,NA,carry_forward,NA
+A3322900924225003_most_recent_fuel_purch_price,A3322900924225003,332290,Napakiak,2024-03-01,2024,3,most_recent_fuel_purch_price,0.2747,quality_check,NA,NA,NA,1,NA,carry_forward,NA
+A3322900926225003_most_recent_fuel_purch_price,A3322900926225003,332290,Napakiak,2026-03-01,2026,3,most_recent_fuel_purch_price,0.4634,quality_check,NA,NA,NA,1,NA,carry_forward,NA
+A3322901016225003_most_recent_fuel_purch_price,A3322901016225003,332290,Napakiak,2016-04-01,2016,4,most_recent_fuel_purch_price,0.442,quality_check,NA,0,NA,1,NA,carry_forward,NA
+A3322901017225003_most_recent_fuel_purch_price,A3322901017225003,332290,Napakiak,2017-04-01,2017,4,most_recent_fuel_purch_price,0.3394,quality_check,NA,NA,NA,1,NA,carry_forward,NA
+A3322901018225003_most_recent_fuel_purch_price,A3322901018225003,332290,Napakiak,2018-04-01,2018,4,most_recent_fuel_purch_price,0.275,quality_check,NA,NA,NA,1,NA,carry_forward,NA
+A3322901019225003_most_recent_fuel_purch_price,A3322901019225003,332290,Napakiak,2019-04-01,2019,4,most_recent_fuel_purch_price,0.3143,quality_check,NA,NA,NA,1,NA,carry_forward,NA
+A3322901020225003_most_recent_fuel_purch_price,A3322901020225003,332290,Napakiak,2020-04-01,2020,4,most_recent_fuel_purch_price,0.3765,quality_check,NA,NA,NA,1,NA,carry_forward,NA
+A3322901021225003_most_recent_fuel_purch_price,A3322901021225003,332290,Napakiak,2021-04-01,2021,4,most_recent_fuel_purch_price,0.3221,quality_check,NA,NA,NA,1,NA,carry_forward,NA
+A3322901022225003_most_recent_fuel_purch_price,A3322901022225003,332290,Napakiak,2022-04-01,2022,4,most_recent_fuel_purch_price,0.2771,quality_check,NA,NA,NA,1,NA,carry_forward,NA
+A3322901023225003_most_recent_fuel_purch_price,A3322901023225003,332290,Napakiak,2023-04-01,2023,4,most_recent_fuel_purch_price,0.2787,quality_check,NA,NA,NA,1,NA,carry_forward,NA
+A3322901024225003_most_recent_fuel_purch_price,A3322901024225003,332290,Napakiak,2024-04-01,2024,4,most_recent_fuel_purch_price,0.2742,quality_check,NA,NA,NA,1,NA,carry_forward,NA
+A3322901026225003_most_recent_fuel_purch_price,A3322901026225003,332290,Napakiak,2026-04-01,2026,4,most_recent_fuel_purch_price,0.4863,quality_check,NA,NA,NA,1,NA,carry_forward,NA
+A3322901116225003_most_recent_fuel_purch_price,A3322901116225003,332290,Napakiak,2016-05-01,2016,5,most_recent_fuel_purch_price,0.442,quality_check,NA,0,NA,1,NA,carry_forward,NA
+A3322901117225003_most_recent_fuel_purch_price,A3322901117225003,332290,Napakiak,2017-05-01,2017,5,most_recent_fuel_purch_price,0.3394,quality_check,NA,NA,NA,1,NA,carry_forward,NA
+A3322901118225003_most_recent_fuel_purch_price,A3322901118225003,332290,Napakiak,2018-05-01,2018,5,most_recent_fuel_purch_price,0.275,quality_check,NA,NA,NA,1,NA,carry_forward,NA
+A3322901119225003_most_recent_fuel_purch_price,A3322901119225003,332290,Napakiak,2019-05-01,2019,5,most_recent_fuel_purch_price,0.3143,quality_check,NA,NA,NA,1,NA,carry_forward,NA
+A3322901120225003_most_recent_fuel_purch_price,A3322901120225003,332290,Napakiak,2020-05-01,2020,5,most_recent_fuel_purch_price,0.3765,quality_check,NA,NA,NA,1,NA,carry_forward,NA
+A3322901121225003_most_recent_fuel_purch_price,A3322901121225003,332290,Napakiak,2021-05-01,2021,5,most_recent_fuel_purch_price,0.3221,quality_check,NA,NA,NA,1,NA,carry_forward,NA
+A3322901122225003_most_recent_fuel_purch_price,A3322901122225003,332290,Napakiak,2022-05-01,2022,5,most_recent_fuel_purch_price,0.2771,quality_check,NA,NA,NA,1,NA,carry_forward,NA
+A3322901123225003_most_recent_fuel_purch_price,A3322901123225003,332290,Napakiak,2023-05-01,2023,5,most_recent_fuel_purch_price,0.2787,quality_check,NA,NA,NA,1,NA,carry_forward,NA
+A3322901124225003_most_recent_fuel_purch_price,A3322901124225003,332290,Napakiak,2024-05-01,2024,5,most_recent_fuel_purch_price,0.2742,quality_check,NA,NA,NA,1,NA,carry_forward,NA
+A3322901126225003_most_recent_fuel_purch_price,A3322901126225003,332290,Napakiak,2026-05-01,2026,5,most_recent_fuel_purch_price,0.4279,quality_check,NA,NA,NA,1,NA,carry_forward,NA
+A3322901216225003_most_recent_fuel_purch_price,A3322901216225003,332290,Napakiak,2016-06-01,2016,6,most_recent_fuel_purch_price,0.3887,quality_check,NA,0,0,1,NA,carry_forward,NA
+A3322901217225003_most_recent_fuel_purch_price,A3322901217225003,332290,Napakiak,2017-06-01,2017,6,most_recent_fuel_purch_price,0.2902,quality_check,NA,NA,NA,1,NA,carry_forward,NA
+A3322901218225003_most_recent_fuel_purch_price,A3322901218225003,332290,Napakiak,2018-06-01,2018,6,most_recent_fuel_purch_price,0.2986,quality_check,NA,NA,NA,1,NA,carry_forward,NA
+A3322901219225003_most_recent_fuel_purch_price,A3322901219225003,332290,Napakiak,2019-06-01,2019,6,most_recent_fuel_purch_price,0.3143,quality_check,NA,NA,NA,1,NA,carry_forward,NA
+A3322901220225003_most_recent_fuel_purch_price,A3322901220225003,332290,Napakiak,2020-06-01,2020,6,most_recent_fuel_purch_price,0.3628,quality_check,NA,NA,NA,1,NA,carry_forward,NA
+A3322901221225003_most_recent_fuel_purch_price,A3322901221225003,332290,Napakiak,2021-06-01,2021,6,most_recent_fuel_purch_price,0.3021,quality_check,NA,NA,NA,1,NA,carry_forward,NA
+A3322901222225003_most_recent_fuel_purch_price,A3322901222225003,332290,Napakiak,2022-06-01,2022,6,most_recent_fuel_purch_price,0.2769,quality_check,NA,NA,NA,1,NA,carry_forward,NA
+A3322901223225003_most_recent_fuel_purch_price,A3322901223225003,332290,Napakiak,2023-06-01,2023,6,most_recent_fuel_purch_price,0.2776,quality_check,NA,NA,NA,1,NA,carry_forward,NA
+A3322901224225003_most_recent_fuel_purch_price,A3322901224225003,332290,Napakiak,2024-06-01,2024,6,most_recent_fuel_purch_price,0.2742,quality_check,NA,NA,NA,1,NA,carry_forward,NA
+A3322901226225003_most_recent_fuel_purch_price,A3322901226225003,332290,Napakiak,2026-06-01,2026,6,most_recent_fuel_purch_price,0.4279,quality_check,NA,NA,NA,1,NA,carry_forward,NA
 A3322900118225003_fuel_used_gallons,A3322900118225003,332290,Napakiak,2017-07-01,2017,7,fuel_used_gallons,4637,quality_check,0,0,0,0,NA,NA,NA
 A3322900218225003_fuel_used_gallons,A3322900218225003,332290,Napakiak,2017-08-01,2017,8,fuel_used_gallons,3227,quality_check,NA,0,0,0,NA,NA,NA
 A3322900118225003_diesel_kwh_generated,A3322900118225003,332290,Napakiak,2017-07-01,2017,7,diesel_kwh_generated,106,quality_check,0,0,0,0,NA,NA,NA
@@ -6015,7 +6024,7 @@ A3314800623225003_diesel_kwh_generated,A3314800623225003,331480,New Stuyahok,202
 A3314800823225003_diesel_kwh_generated,A3314800823225003,331480,New Stuyahok,2023-02-01,2023,2,diesel_kwh_generated,149320,quality_check,199915,164257,184400,160079,NA,NA,NA
 A3314801125225003_diesel_kwh_generated,A3314801125225003,331480,New Stuyahok,2025-05-01,2025,5,diesel_kwh_generated,146507,quality_check,160930,163318,143815,147203,NA,NA,NA
 A3314801223225003_diesel_kwh_generated,A3314801223225003,331480,New Stuyahok,2023-06-01,2023,6,diesel_kwh_generated,125477,quality_check,166048,164257,150866,122175,NA,NA,NA
-A3328700821225003_most_recent_fuel_purch_price,A3328700821225003,332870,Newtok,2021-02-01,2021,2,most_recent_fuel_purch_price,0.0698,quality_check,3.5588,3,4,4,NA,NA,NA
+A3328700821225003_most_recent_fuel_purch_price,A3328700821225003,332870,Newtok,2021-02-01,2021,2,most_recent_fuel_purch_price,0.0698,quality_check,3.5588,3,4,4,NA,carry_forward,NA
 A3328700522225003_fuel_used_gallons,A3328700522225003,332870,Newtok,2021-11-01,2021,11,fuel_used_gallons,2670,quality_check,0,2609,0,2610,NA,NA,NA
 A3328700223225003_diesel_kwh_generated,A3328700223225003,332870,Newtok,2022-08-01,2022,8,diesel_kwh_generated,53205,quality_check,50171,18699,50118,30779,NA,NA,NA
 A3328700423225003_diesel_kwh_generated,A3328700423225003,332870,Newtok,2022-10-01,2022,10,diesel_kwh_generated,36572,quality_check,50066,18699,43185,42323,NA,NA,NA
@@ -6047,9 +6056,9 @@ A3315000823225003_diesel_kwh_generated,A3315000823225003,331500,Noatak,2023-02-0
 A3315000926225003_diesel_kwh_generated,A3315000926225003,331500,Noatak,2026-03-01,2026,3,diesel_kwh_generated,200417,quality_check,198158,190414,192078,176618,NA,NA,NA
 A3315001125225003_diesel_kwh_generated,A3315001125225003,331500,Noatak,2025-05-01,2025,5,diesel_kwh_generated,134754,quality_check,177827,178745,154844,142614,NA,NA,NA
 A3315001223225003_diesel_kwh_generated,A3315001223225003,331500,Noatak,2023-06-01,2023,6,diesel_kwh_generated,116881,quality_check,159593,167832,142023,118411,NA,NA,NA
-A3315000323225003_residential_rate,A3315000323225003,331500,Noatak,2022-09-01,2022,9,residential_rate,0.9922,quality_check,1.0269,1,1,1,NA,NA,NA
-A3315001123225003_residential_rate,A3315001123225003,331500,Noatak,2023-05-01,2023,5,residential_rate,0.6678,quality_check,1.1851,1,1,1,NA,NA,NA
-A3315001223225003_residential_rate,A3315001223225003,331500,Noatak,2023-06-01,2023,6,residential_rate,0.6678,quality_check,NA,1,1,1,NA,NA,NA
+A3315000323225003_residential_rate,A3315000323225003,331500,Noatak,2022-09-01,2022,9,residential_rate,0.9922,quality_check,1.0269,1,1,1,NA,carry_forward,NA
+A3315001123225003_residential_rate,A3315001123225003,331500,Noatak,2023-05-01,2023,5,residential_rate,0.6678,quality_check,1.1851,1,1,1,NA,carry_forward,NA
+A3315001223225003_residential_rate,A3315001223225003,331500,Noatak,2023-06-01,2023,6,residential_rate,0.6678,quality_check,NA,1,1,1,NA,carry_forward,NA
 A3315100616225003_fuel_used_gallons,A3315100616225003,331510,Noorvik,2015-12-01,2015,12,fuel_used_gallons,-270,quality_check,16069,11803,15770,15293,NA,NA,NA
 A3315100823225003_fuel_used_gallons,A3315100823225003,331510,Noorvik,2023-02-01,2023,2,fuel_used_gallons,3799,quality_check,16894,12420,15840,14628,NA,NA,NA
 A3315100616225003_diesel_kwh_generated,A3315100616225003,331510,Noorvik,2015-12-01,2015,12,diesel_kwh_generated,205727,quality_check,195004,149303,194232,211524,NA,NA,NA
@@ -6066,91 +6075,91 @@ A3323800322225003_diesel_kwh_generated,A3323800322225003,332380,Nuiqsut,2021-09-
 A3323800425225003_diesel_kwh_generated,A3323800425225003,332380,Nuiqsut,2024-10-01,2024,10,diesel_kwh_generated,21817,quality_check,201463,242592,271780,93834,NA,NA,NA
 A3323800123225003_diesel_kwh_generated,A3323800123225003,332380,Nuiqsut,2022-07-01,2022,7,diesel_kwh_generated,27083,quality_check,12030,80029,12030,104004,NA,NA,NA
 A3323800717225003_diesel_kwh_generated,A3323800717225003,332380,Nuiqsut,2017-01-01,2017,1,diesel_kwh_generated,214,quality_check,5720,45627,2860,118701,NA,NA,NA
-A3323800117225003_residential_rate,A3323800117225003,332380,Nuiqsut,2016-07-01,2016,7,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,NA,NA
-A3323800118225003_residential_rate,A3323800118225003,332380,Nuiqsut,2017-07-01,2017,7,residential_rate,0.08,quality_check,NA,0,NA,0,NA,NA,NA
-A3323800123225003_residential_rate,A3323800123225003,332380,Nuiqsut,2022-07-01,2022,7,residential_rate,0.08,quality_check,NA,0,NA,0,NA,NA,NA
-A3323800124225003_residential_rate,A3323800124225003,332380,Nuiqsut,2023-07-01,2023,7,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,NA,NA
-A3323800125225003_residential_rate,A3323800125225003,332380,Nuiqsut,2024-07-01,2024,7,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,NA,NA
-A3323800126225003_residential_rate,A3323800126225003,332380,Nuiqsut,2025-07-01,2025,7,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,NA,NA
-A3323800216225003_residential_rate,A3323800216225003,332380,Nuiqsut,2015-08-01,2015,8,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,NA,NA
-A3323800217225003_residential_rate,A3323800217225003,332380,Nuiqsut,2016-08-01,2016,8,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,NA,NA
-A3323800218225003_residential_rate,A3323800218225003,332380,Nuiqsut,2017-08-01,2017,8,residential_rate,0.15,quality_check,NA,0,NA,0,NA,NA,NA
-A3323800223225003_residential_rate,A3323800223225003,332380,Nuiqsut,2022-08-01,2022,8,residential_rate,0.08,quality_check,NA,0,NA,0,NA,NA,NA
-A3323800224225003_residential_rate,A3323800224225003,332380,Nuiqsut,2023-08-01,2023,8,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,NA,NA
-A3323800225225003_residential_rate,A3323800225225003,332380,Nuiqsut,2024-08-01,2024,8,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,NA,NA
-A3323800226225003_residential_rate,A3323800226225003,332380,Nuiqsut,2025-08-01,2025,8,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,NA,NA
-A3323800316225003_residential_rate,A3323800316225003,332380,Nuiqsut,2015-09-01,2015,9,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,NA,NA
-A3323800317225003_residential_rate,A3323800317225003,332380,Nuiqsut,2016-09-01,2016,9,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,NA,NA
-A3323800318225003_residential_rate,A3323800318225003,332380,Nuiqsut,2017-09-01,2017,9,residential_rate,8e-4,quality_check,NA,0,0,0,NA,NA,NA
-A3323800323225003_residential_rate,A3323800323225003,332380,Nuiqsut,2022-09-01,2022,9,residential_rate,0.08,quality_check,NA,0,NA,0,NA,NA,NA
-A3323800324225003_residential_rate,A3323800324225003,332380,Nuiqsut,2023-09-01,2023,9,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,NA,NA
-A3323800325225003_residential_rate,A3323800325225003,332380,Nuiqsut,2024-09-01,2024,9,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,NA,NA
-A3323800326225003_residential_rate,A3323800326225003,332380,Nuiqsut,2025-09-01,2025,9,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,NA,NA
-A3323800416225003_residential_rate,A3323800416225003,332380,Nuiqsut,2015-10-01,2015,10,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,NA,NA
-A3323800417225003_residential_rate,A3323800417225003,332380,Nuiqsut,2016-10-01,2016,10,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,NA,NA
-A3323800423225003_residential_rate,A3323800423225003,332380,Nuiqsut,2022-10-01,2022,10,residential_rate,0.08,quality_check,NA,0,NA,0,NA,NA,NA
-A3323800424225003_residential_rate,A3323800424225003,332380,Nuiqsut,2023-10-01,2023,10,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,NA,NA
-A3323800425225003_residential_rate,A3323800425225003,332380,Nuiqsut,2024-10-01,2024,10,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,NA,NA
-A3323800426225003_residential_rate,A3323800426225003,332380,Nuiqsut,2025-10-01,2025,10,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,NA,NA
-A3323800516225003_residential_rate,A3323800516225003,332380,Nuiqsut,2015-11-01,2015,11,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,NA,NA
-A3323800517225003_residential_rate,A3323800517225003,332380,Nuiqsut,2016-11-01,2016,11,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,NA,NA
-A3323800523225003_residential_rate,A3323800523225003,332380,Nuiqsut,2022-11-01,2022,11,residential_rate,0.08,quality_check,NA,0,NA,0,NA,NA,NA
-A3323800524225003_residential_rate,A3323800524225003,332380,Nuiqsut,2023-11-01,2023,11,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,NA,NA
-A3323800525225003_residential_rate,A3323800525225003,332380,Nuiqsut,2024-11-01,2024,11,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,NA,NA
-A3323800526225003_residential_rate,A3323800526225003,332380,Nuiqsut,2025-11-01,2025,11,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,NA,NA
-A3323800616225003_residential_rate,A3323800616225003,332380,Nuiqsut,2015-12-01,2015,12,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,NA,NA
-A3323800617225003_residential_rate,A3323800617225003,332380,Nuiqsut,2016-12-01,2016,12,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,NA,NA
-A3323800623225003_residential_rate,A3323800623225003,332380,Nuiqsut,2022-12-01,2022,12,residential_rate,0.08,quality_check,NA,0,NA,0,NA,NA,NA
-A3323800624225003_residential_rate,A3323800624225003,332380,Nuiqsut,2023-12-01,2023,12,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,NA,NA
-A3323800625225003_residential_rate,A3323800625225003,332380,Nuiqsut,2024-12-01,2024,12,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,NA,NA
-A3323800626225003_residential_rate,A3323800626225003,332380,Nuiqsut,2025-12-01,2025,12,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,NA,NA
-A3323800716225003_residential_rate,A3323800716225003,332380,Nuiqsut,2016-01-01,2016,1,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,NA,NA
-A3323800717225003_residential_rate,A3323800717225003,332380,Nuiqsut,2017-01-01,2017,1,residential_rate,0.08,quality_check,NA,0,NA,0,NA,NA,NA
-A3323800723225003_residential_rate,A3323800723225003,332380,Nuiqsut,2023-01-01,2023,1,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,NA,NA
-A3323800724225003_residential_rate,A3323800724225003,332380,Nuiqsut,2024-01-01,2024,1,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,NA,NA
-A3323800725225003_residential_rate,A3323800725225003,332380,Nuiqsut,2025-01-01,2025,1,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,NA,NA
-A3323800726225003_residential_rate,A3323800726225003,332380,Nuiqsut,2026-01-01,2026,1,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,NA,NA
-A3323800816225003_residential_rate,A3323800816225003,332380,Nuiqsut,2016-02-01,2016,2,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,NA,NA
-A3323800817225003_residential_rate,A3323800817225003,332380,Nuiqsut,2017-02-01,2017,2,residential_rate,0.08,quality_check,NA,0,NA,0,NA,NA,NA
-A3323800823225003_residential_rate,A3323800823225003,332380,Nuiqsut,2023-02-01,2023,2,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,NA,NA
-A3323800824225003_residential_rate,A3323800824225003,332380,Nuiqsut,2024-02-01,2024,2,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,NA,NA
-A3323800825225003_residential_rate,A3323800825225003,332380,Nuiqsut,2025-02-01,2025,2,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,NA,NA
-A3323800826225003_residential_rate,A3323800826225003,332380,Nuiqsut,2026-02-01,2026,2,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,NA,NA
-A3323800916225003_residential_rate,A3323800916225003,332380,Nuiqsut,2016-03-01,2016,3,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,NA,NA
-A3323800917225003_residential_rate,A3323800917225003,332380,Nuiqsut,2017-03-01,2017,3,residential_rate,0.08,quality_check,NA,0,NA,0,NA,NA,NA
-A3323800919225003_residential_rate,A3323800919225003,332380,Nuiqsut,2019-03-01,2019,3,residential_rate,0.08,quality_check,0.08,0,0,0,NA,NA,NA
-A3323800921225003_residential_rate,A3323800921225003,332380,Nuiqsut,2021-03-01,2021,3,residential_rate,0.08,quality_check,0.15,0,0,0,NA,NA,NA
-A3323800922225003_residential_rate,A3323800922225003,332380,Nuiqsut,2022-03-01,2022,3,residential_rate,0.08,quality_check,0.08,0,0,0,NA,NA,NA
-A3323800923225003_residential_rate,A3323800923225003,332380,Nuiqsut,2023-03-01,2023,3,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,NA,NA
-A3323800924225003_residential_rate,A3323800924225003,332380,Nuiqsut,2024-03-01,2024,3,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,NA,NA
-A3323800925225003_residential_rate,A3323800925225003,332380,Nuiqsut,2025-03-01,2025,3,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,NA,NA
-A3323800926225003_residential_rate,A3323800926225003,332380,Nuiqsut,2026-03-01,2026,3,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,NA,NA
-A3323801016225003_residential_rate,A3323801016225003,332380,Nuiqsut,2016-04-01,2016,4,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,NA,NA
-A3323801017225003_residential_rate,A3323801017225003,332380,Nuiqsut,2017-04-01,2017,4,residential_rate,0.08,quality_check,NA,0,NA,0,NA,NA,NA
-A3323801019225003_residential_rate,A3323801019225003,332380,Nuiqsut,2019-04-01,2019,4,residential_rate,0.08,quality_check,NA,0,NA,0,NA,NA,NA
-A3323801021225003_residential_rate,A3323801021225003,332380,Nuiqsut,2021-04-01,2021,4,residential_rate,0.08,quality_check,NA,0,NA,0,NA,NA,NA
-A3323801022225003_residential_rate,A3323801022225003,332380,Nuiqsut,2022-04-01,2022,4,residential_rate,0.08,quality_check,NA,0,NA,0,NA,NA,NA
-A3323801023225003_residential_rate,A3323801023225003,332380,Nuiqsut,2023-04-01,2023,4,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,NA,NA
-A3323801024225003_residential_rate,A3323801024225003,332380,Nuiqsut,2024-04-01,2024,4,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,NA,NA
-A3323801025225003_residential_rate,A3323801025225003,332380,Nuiqsut,2025-04-01,2025,4,residential_rate,0.0818,quality_check,NA,NA,NA,0,NA,NA,NA
-A3323801026225003_residential_rate,A3323801026225003,332380,Nuiqsut,2026-04-01,2026,4,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,NA,NA
-A3323801116225003_residential_rate,A3323801116225003,332380,Nuiqsut,2016-05-01,2016,5,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,NA,NA
-A3323801117225003_residential_rate,A3323801117225003,332380,Nuiqsut,2017-05-01,2017,5,residential_rate,0.08,quality_check,NA,0,NA,0,NA,NA,NA
-A3323801119225003_residential_rate,A3323801119225003,332380,Nuiqsut,2019-05-01,2019,5,residential_rate,0.08,quality_check,NA,0,0,0,NA,NA,NA
-A3323801121225003_residential_rate,A3323801121225003,332380,Nuiqsut,2021-05-01,2021,5,residential_rate,0.08,quality_check,NA,0,NA,0,NA,NA,NA
-A3323801122225003_residential_rate,A3323801122225003,332380,Nuiqsut,2022-05-01,2022,5,residential_rate,0.08,quality_check,NA,0,NA,0,NA,NA,NA
-A3323801123225003_residential_rate,A3323801123225003,332380,Nuiqsut,2023-05-01,2023,5,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,NA,NA
-A3323801124225003_residential_rate,A3323801124225003,332380,Nuiqsut,2024-05-01,2024,5,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,NA,NA
-A3323801125225003_residential_rate,A3323801125225003,332380,Nuiqsut,2025-05-01,2025,5,residential_rate,0.0818,quality_check,NA,NA,NA,0,NA,NA,NA
-A3323801126225003_residential_rate,A3323801126225003,332380,Nuiqsut,2026-05-01,2026,5,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,NA,NA
-A3323801216225003_residential_rate,A3323801216225003,332380,Nuiqsut,2016-06-01,2016,6,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,NA,NA
-A3323801217225003_residential_rate,A3323801217225003,332380,Nuiqsut,2017-06-01,2017,6,residential_rate,0.08,quality_check,NA,0,NA,0,NA,NA,NA
-A3323801221225003_residential_rate,A3323801221225003,332380,Nuiqsut,2021-06-01,2021,6,residential_rate,0.08,quality_check,NA,0,0,0,NA,NA,NA
-A3323801222225003_residential_rate,A3323801222225003,332380,Nuiqsut,2022-06-01,2022,6,residential_rate,0.08,quality_check,NA,0,NA,0,NA,NA,NA
-A3323801223225003_residential_rate,A3323801223225003,332380,Nuiqsut,2023-06-01,2023,6,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,NA,NA
-A3323801224225003_residential_rate,A3323801224225003,332380,Nuiqsut,2024-06-01,2024,6,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,NA,NA
-A3323801225225003_residential_rate,A3323801225225003,332380,Nuiqsut,2025-06-01,2025,6,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,NA,NA
-A3323801226225003_residential_rate,A3323801226225003,332380,Nuiqsut,2026-06-01,2026,6,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,NA,NA
+A3323800117225003_residential_rate,A3323800117225003,332380,Nuiqsut,2016-07-01,2016,7,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3323800118225003_residential_rate,A3323800118225003,332380,Nuiqsut,2017-07-01,2017,7,residential_rate,0.08,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3323800123225003_residential_rate,A3323800123225003,332380,Nuiqsut,2022-07-01,2022,7,residential_rate,0.08,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3323800124225003_residential_rate,A3323800124225003,332380,Nuiqsut,2023-07-01,2023,7,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3323800125225003_residential_rate,A3323800125225003,332380,Nuiqsut,2024-07-01,2024,7,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3323800126225003_residential_rate,A3323800126225003,332380,Nuiqsut,2025-07-01,2025,7,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3323800216225003_residential_rate,A3323800216225003,332380,Nuiqsut,2015-08-01,2015,8,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3323800217225003_residential_rate,A3323800217225003,332380,Nuiqsut,2016-08-01,2016,8,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3323800218225003_residential_rate,A3323800218225003,332380,Nuiqsut,2017-08-01,2017,8,residential_rate,0.15,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3323800223225003_residential_rate,A3323800223225003,332380,Nuiqsut,2022-08-01,2022,8,residential_rate,0.08,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3323800224225003_residential_rate,A3323800224225003,332380,Nuiqsut,2023-08-01,2023,8,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3323800225225003_residential_rate,A3323800225225003,332380,Nuiqsut,2024-08-01,2024,8,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3323800226225003_residential_rate,A3323800226225003,332380,Nuiqsut,2025-08-01,2025,8,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3323800316225003_residential_rate,A3323800316225003,332380,Nuiqsut,2015-09-01,2015,9,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3323800317225003_residential_rate,A3323800317225003,332380,Nuiqsut,2016-09-01,2016,9,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3323800318225003_residential_rate,A3323800318225003,332380,Nuiqsut,2017-09-01,2017,9,residential_rate,8e-4,quality_check,NA,0,0,0,NA,carry_forward,NA
+A3323800323225003_residential_rate,A3323800323225003,332380,Nuiqsut,2022-09-01,2022,9,residential_rate,0.08,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3323800324225003_residential_rate,A3323800324225003,332380,Nuiqsut,2023-09-01,2023,9,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3323800325225003_residential_rate,A3323800325225003,332380,Nuiqsut,2024-09-01,2024,9,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3323800326225003_residential_rate,A3323800326225003,332380,Nuiqsut,2025-09-01,2025,9,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3323800416225003_residential_rate,A3323800416225003,332380,Nuiqsut,2015-10-01,2015,10,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3323800417225003_residential_rate,A3323800417225003,332380,Nuiqsut,2016-10-01,2016,10,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3323800423225003_residential_rate,A3323800423225003,332380,Nuiqsut,2022-10-01,2022,10,residential_rate,0.08,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3323800424225003_residential_rate,A3323800424225003,332380,Nuiqsut,2023-10-01,2023,10,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3323800425225003_residential_rate,A3323800425225003,332380,Nuiqsut,2024-10-01,2024,10,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3323800426225003_residential_rate,A3323800426225003,332380,Nuiqsut,2025-10-01,2025,10,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3323800516225003_residential_rate,A3323800516225003,332380,Nuiqsut,2015-11-01,2015,11,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3323800517225003_residential_rate,A3323800517225003,332380,Nuiqsut,2016-11-01,2016,11,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3323800523225003_residential_rate,A3323800523225003,332380,Nuiqsut,2022-11-01,2022,11,residential_rate,0.08,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3323800524225003_residential_rate,A3323800524225003,332380,Nuiqsut,2023-11-01,2023,11,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3323800525225003_residential_rate,A3323800525225003,332380,Nuiqsut,2024-11-01,2024,11,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3323800526225003_residential_rate,A3323800526225003,332380,Nuiqsut,2025-11-01,2025,11,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3323800616225003_residential_rate,A3323800616225003,332380,Nuiqsut,2015-12-01,2015,12,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3323800617225003_residential_rate,A3323800617225003,332380,Nuiqsut,2016-12-01,2016,12,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3323800623225003_residential_rate,A3323800623225003,332380,Nuiqsut,2022-12-01,2022,12,residential_rate,0.08,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3323800624225003_residential_rate,A3323800624225003,332380,Nuiqsut,2023-12-01,2023,12,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3323800625225003_residential_rate,A3323800625225003,332380,Nuiqsut,2024-12-01,2024,12,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3323800626225003_residential_rate,A3323800626225003,332380,Nuiqsut,2025-12-01,2025,12,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3323800716225003_residential_rate,A3323800716225003,332380,Nuiqsut,2016-01-01,2016,1,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3323800717225003_residential_rate,A3323800717225003,332380,Nuiqsut,2017-01-01,2017,1,residential_rate,0.08,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3323800723225003_residential_rate,A3323800723225003,332380,Nuiqsut,2023-01-01,2023,1,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3323800724225003_residential_rate,A3323800724225003,332380,Nuiqsut,2024-01-01,2024,1,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3323800725225003_residential_rate,A3323800725225003,332380,Nuiqsut,2025-01-01,2025,1,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3323800726225003_residential_rate,A3323800726225003,332380,Nuiqsut,2026-01-01,2026,1,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3323800816225003_residential_rate,A3323800816225003,332380,Nuiqsut,2016-02-01,2016,2,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3323800817225003_residential_rate,A3323800817225003,332380,Nuiqsut,2017-02-01,2017,2,residential_rate,0.08,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3323800823225003_residential_rate,A3323800823225003,332380,Nuiqsut,2023-02-01,2023,2,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3323800824225003_residential_rate,A3323800824225003,332380,Nuiqsut,2024-02-01,2024,2,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3323800825225003_residential_rate,A3323800825225003,332380,Nuiqsut,2025-02-01,2025,2,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3323800826225003_residential_rate,A3323800826225003,332380,Nuiqsut,2026-02-01,2026,2,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3323800916225003_residential_rate,A3323800916225003,332380,Nuiqsut,2016-03-01,2016,3,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3323800917225003_residential_rate,A3323800917225003,332380,Nuiqsut,2017-03-01,2017,3,residential_rate,0.08,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3323800919225003_residential_rate,A3323800919225003,332380,Nuiqsut,2019-03-01,2019,3,residential_rate,0.08,quality_check,0.08,0,0,0,NA,carry_forward,NA
+A3323800921225003_residential_rate,A3323800921225003,332380,Nuiqsut,2021-03-01,2021,3,residential_rate,0.08,quality_check,0.15,0,0,0,NA,carry_forward,NA
+A3323800922225003_residential_rate,A3323800922225003,332380,Nuiqsut,2022-03-01,2022,3,residential_rate,0.08,quality_check,0.08,0,0,0,NA,carry_forward,NA
+A3323800923225003_residential_rate,A3323800923225003,332380,Nuiqsut,2023-03-01,2023,3,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3323800924225003_residential_rate,A3323800924225003,332380,Nuiqsut,2024-03-01,2024,3,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3323800925225003_residential_rate,A3323800925225003,332380,Nuiqsut,2025-03-01,2025,3,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3323800926225003_residential_rate,A3323800926225003,332380,Nuiqsut,2026-03-01,2026,3,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3323801016225003_residential_rate,A3323801016225003,332380,Nuiqsut,2016-04-01,2016,4,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3323801017225003_residential_rate,A3323801017225003,332380,Nuiqsut,2017-04-01,2017,4,residential_rate,0.08,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3323801019225003_residential_rate,A3323801019225003,332380,Nuiqsut,2019-04-01,2019,4,residential_rate,0.08,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3323801021225003_residential_rate,A3323801021225003,332380,Nuiqsut,2021-04-01,2021,4,residential_rate,0.08,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3323801022225003_residential_rate,A3323801022225003,332380,Nuiqsut,2022-04-01,2022,4,residential_rate,0.08,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3323801023225003_residential_rate,A3323801023225003,332380,Nuiqsut,2023-04-01,2023,4,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3323801024225003_residential_rate,A3323801024225003,332380,Nuiqsut,2024-04-01,2024,4,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3323801025225003_residential_rate,A3323801025225003,332380,Nuiqsut,2025-04-01,2025,4,residential_rate,0.0818,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3323801026225003_residential_rate,A3323801026225003,332380,Nuiqsut,2026-04-01,2026,4,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3323801116225003_residential_rate,A3323801116225003,332380,Nuiqsut,2016-05-01,2016,5,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3323801117225003_residential_rate,A3323801117225003,332380,Nuiqsut,2017-05-01,2017,5,residential_rate,0.08,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3323801119225003_residential_rate,A3323801119225003,332380,Nuiqsut,2019-05-01,2019,5,residential_rate,0.08,quality_check,NA,0,0,0,NA,carry_forward,NA
+A3323801121225003_residential_rate,A3323801121225003,332380,Nuiqsut,2021-05-01,2021,5,residential_rate,0.08,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3323801122225003_residential_rate,A3323801122225003,332380,Nuiqsut,2022-05-01,2022,5,residential_rate,0.08,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3323801123225003_residential_rate,A3323801123225003,332380,Nuiqsut,2023-05-01,2023,5,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3323801124225003_residential_rate,A3323801124225003,332380,Nuiqsut,2024-05-01,2024,5,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3323801125225003_residential_rate,A3323801125225003,332380,Nuiqsut,2025-05-01,2025,5,residential_rate,0.0818,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3323801126225003_residential_rate,A3323801126225003,332380,Nuiqsut,2026-05-01,2026,5,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3323801216225003_residential_rate,A3323801216225003,332380,Nuiqsut,2016-06-01,2016,6,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3323801217225003_residential_rate,A3323801217225003,332380,Nuiqsut,2017-06-01,2017,6,residential_rate,0.08,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3323801221225003_residential_rate,A3323801221225003,332380,Nuiqsut,2021-06-01,2021,6,residential_rate,0.08,quality_check,NA,0,0,0,NA,carry_forward,NA
+A3323801222225003_residential_rate,A3323801222225003,332380,Nuiqsut,2022-06-01,2022,6,residential_rate,0.08,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3323801223225003_residential_rate,A3323801223225003,332380,Nuiqsut,2023-06-01,2023,6,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3323801224225003_residential_rate,A3323801224225003,332380,Nuiqsut,2024-06-01,2024,6,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3323801225225003_residential_rate,A3323801225225003,332380,Nuiqsut,2025-06-01,2025,6,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3323801226225003_residential_rate,A3323801226225003,332380,Nuiqsut,2026-06-01,2026,6,residential_rate,0.08,quality_check,NA,NA,NA,0,NA,carry_forward,NA
 A3315200617225003_fuel_used_gallons,A3315200617225003,331520,Nulato,2016-12-01,2016,12,fuel_used_gallons,2363,quality_check,7869,6905,8364,8837,NA,NA,NA
 A3315200621225003_fuel_used_gallons,A3315200621225003,331520,Nulato,2020-12-01,2020,12,fuel_used_gallons,2544,quality_check,7696,6743,7776,8837,NA,NA,NA
 A3315200616225003_diesel_kwh_generated,A3315200616225003,331520,Nulato,2015-12-01,2015,12,diesel_kwh_generated,103281,quality_check,97591,78003,101780,109322,NA,NA,NA
@@ -6162,7 +6171,7 @@ A3315200623225003_diesel_kwh_generated,A3315200623225003,331520,Nulato,2022-12-0
 A3315200823225003_diesel_kwh_generated,A3315200823225003,331520,Nulato,2023-02-01,2023,2,diesel_kwh_generated,92356,quality_check,119828,98555,109572,100626,NA,NA,NA
 A3315201125225003_diesel_kwh_generated,A3315201125225003,331520,Nulato,2025-05-01,2025,5,diesel_kwh_generated,89184,quality_check,98293,102407,89336,84408,NA,NA,NA
 A3315201223225003_diesel_kwh_generated,A3315201223225003,331520,Nulato,2023-06-01,2023,6,diesel_kwh_generated,69790,quality_check,96333,98555,87590,71211,NA,NA,NA
-A3315201223225003_residential_rate,A3315201223225003,331520,Nulato,2023-06-01,2023,6,residential_rate,0.7676,quality_check,0.7676,1,1,1,NA,NA,NA
+A3315201223225003_residential_rate,A3315201223225003,331520,Nulato,2023-06-01,2023,6,residential_rate,0.7676,quality_check,0.7676,1,1,1,NA,carry_forward,NA
 A3315400616225003_diesel_kwh_generated,A3315400616225003,331540,Old Harbor,2015-12-01,2015,12,diesel_kwh_generated,74224,quality_check,73362,66961,75717,77528,NA,NA,NA
 A3315400618225003_diesel_kwh_generated,A3315400618225003,331540,Old Harbor,2017-12-01,2017,12,diesel_kwh_generated,77414,quality_check,71560,71362,73106,77528,NA,NA,NA
 A3315400619225003_diesel_kwh_generated,A3315400619225003,331540,Old Harbor,2018-12-01,2018,12,diesel_kwh_generated,77578,quality_check,67711,66582,71133,77528,NA,NA,NA
@@ -6174,29 +6183,29 @@ A3315401223225003_diesel_kwh_generated,A3315401223225003,331540,Old Harbor,2023-
 A3324400417225003_fuel_used_gallons,A3324400417225003,332440,Ouzinkie,2016-10-01,2016,10,fuel_used_gallons,2209,quality_check,3518,2521,4388,3880,NA,NA,NA
 A3324401223225003_diesel_kwh_generated,A3324401223225003,332440,Ouzinkie,2023-06-01,2023,6,diesel_kwh_generated,5400,quality_check,26000,34346,26035,35152,NA,NA,NA
 A3324400417225003_diesel_kwh_generated,A3324400417225003,332440,Ouzinkie,2016-10-01,2016,10,diesel_kwh_generated,5741,quality_check,26286,26255,46408,48709,NA,NA,NA
-A3324400826225003_residential_rate,A3324400826225003,332440,Ouzinkie,2026-02-01,2026,2,residential_rate,5.73,quality_check,0.526,1,1,0,NA,NA,NA
-A3324401223225003_residential_rate,A3324401223225003,332440,Ouzinkie,2023-06-01,2023,6,residential_rate,9.99,quality_check,0.9999,1,1,0,NA,NA,NA
+A3324400826225003_residential_rate,A3324400826225003,332440,Ouzinkie,2026-02-01,2026,2,residential_rate,5.73,quality_check,0.526,1,1,0,NA,carry_forward,NA
+A3324401223225003_residential_rate,A3324401223225003,332440,Ouzinkie,2023-06-01,2023,6,residential_rate,9.99,quality_check,0.9999,1,1,0,NA,carry_forward,NA
 A3324600416225003_diesel_kwh_generated,A3324600416225003,332460,Pelican,2015-10-01,2015,10,diesel_kwh_generated,632,quality_check,0,0,0,0,NA,NA,NA
-A3324600123225003_residential_rate,A3324600123225003,332460,Pelican,2022-07-01,2022,7,residential_rate,0.2611,quality_check,NA,0,NA,0,NA,NA,NA
-A3324600124225003_residential_rate,A3324600124225003,332460,Pelican,2023-07-01,2023,7,residential_rate,0.2541,quality_check,NA,NA,NA,0,NA,NA,NA
-A3324600223225003_residential_rate,A3324600223225003,332460,Pelican,2022-08-01,2022,8,residential_rate,0.2611,quality_check,NA,0,NA,0,NA,NA,NA
-A3324600224225003_residential_rate,A3324600224225003,332460,Pelican,2023-08-01,2023,8,residential_rate,0.2541,quality_check,NA,NA,NA,0,NA,NA,NA
-A3324600323225003_residential_rate,A3324600323225003,332460,Pelican,2022-09-01,2022,9,residential_rate,0.2611,quality_check,NA,0,NA,0,NA,NA,NA
-A3324600324225003_residential_rate,A3324600324225003,332460,Pelican,2023-09-01,2023,9,residential_rate,0.2541,quality_check,NA,NA,NA,0,NA,NA,NA
-A3324600423225003_residential_rate,A3324600423225003,332460,Pelican,2022-10-01,2022,10,residential_rate,0.2541,quality_check,NA,0,NA,0,NA,NA,NA
-A3324600424225003_residential_rate,A3324600424225003,332460,Pelican,2023-10-01,2023,10,residential_rate,0.2541,quality_check,NA,NA,NA,0,NA,NA,NA
-A3324600523225003_residential_rate,A3324600523225003,332460,Pelican,2022-11-01,2022,11,residential_rate,0.2541,quality_check,NA,0,NA,0,NA,NA,NA
-A3324600524225003_residential_rate,A3324600524225003,332460,Pelican,2023-11-01,2023,11,residential_rate,0.2541,quality_check,NA,NA,NA,0,NA,NA,NA
-A3324600623225003_residential_rate,A3324600623225003,332460,Pelican,2022-12-01,2022,12,residential_rate,0.2541,quality_check,NA,0,NA,0,NA,NA,NA
-A3324600624225003_residential_rate,A3324600624225003,332460,Pelican,2023-12-01,2023,12,residential_rate,0.2541,quality_check,NA,NA,NA,0,NA,NA,NA
-A3324600723225003_residential_rate,A3324600723225003,332460,Pelican,2023-01-01,2023,1,residential_rate,0.2541,quality_check,NA,NA,NA,0,NA,NA,NA
-A3324600724225003_residential_rate,A3324600724225003,332460,Pelican,2024-01-01,2024,1,residential_rate,0.2541,quality_check,NA,0,NA,0,NA,NA,NA
-A3324600823225003_residential_rate,A3324600823225003,332460,Pelican,2023-02-01,2023,2,residential_rate,0.2541,quality_check,NA,NA,NA,0,NA,NA,NA
-A3324600824225003_residential_rate,A3324600824225003,332460,Pelican,2024-02-01,2024,2,residential_rate,0.2541,quality_check,NA,0,NA,0,NA,NA,NA
-A3324600923225003_residential_rate,A3324600923225003,332460,Pelican,2023-03-01,2023,3,residential_rate,0.2541,quality_check,NA,NA,NA,0,NA,NA,NA
-A3324600924225003_residential_rate,A3324600924225003,332460,Pelican,2024-03-01,2024,3,residential_rate,0.2541,quality_check,NA,0,NA,0,NA,NA,NA
-A3324601024225003_residential_rate,A3324601024225003,332460,Pelican,2024-04-01,2024,4,residential_rate,0.2541,quality_check,NA,0,0,0,NA,NA,NA
-A3324601222225003_residential_rate,A3324601222225003,332460,Pelican,2022-06-01,2022,6,residential_rate,0.2611,quality_check,0.2611,0,0,0,NA,NA,NA
+A3324600123225003_residential_rate,A3324600123225003,332460,Pelican,2022-07-01,2022,7,residential_rate,0.2611,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3324600124225003_residential_rate,A3324600124225003,332460,Pelican,2023-07-01,2023,7,residential_rate,0.2541,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3324600223225003_residential_rate,A3324600223225003,332460,Pelican,2022-08-01,2022,8,residential_rate,0.2611,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3324600224225003_residential_rate,A3324600224225003,332460,Pelican,2023-08-01,2023,8,residential_rate,0.2541,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3324600323225003_residential_rate,A3324600323225003,332460,Pelican,2022-09-01,2022,9,residential_rate,0.2611,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3324600324225003_residential_rate,A3324600324225003,332460,Pelican,2023-09-01,2023,9,residential_rate,0.2541,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3324600423225003_residential_rate,A3324600423225003,332460,Pelican,2022-10-01,2022,10,residential_rate,0.2541,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3324600424225003_residential_rate,A3324600424225003,332460,Pelican,2023-10-01,2023,10,residential_rate,0.2541,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3324600523225003_residential_rate,A3324600523225003,332460,Pelican,2022-11-01,2022,11,residential_rate,0.2541,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3324600524225003_residential_rate,A3324600524225003,332460,Pelican,2023-11-01,2023,11,residential_rate,0.2541,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3324600623225003_residential_rate,A3324600623225003,332460,Pelican,2022-12-01,2022,12,residential_rate,0.2541,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3324600624225003_residential_rate,A3324600624225003,332460,Pelican,2023-12-01,2023,12,residential_rate,0.2541,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3324600723225003_residential_rate,A3324600723225003,332460,Pelican,2023-01-01,2023,1,residential_rate,0.2541,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3324600724225003_residential_rate,A3324600724225003,332460,Pelican,2024-01-01,2024,1,residential_rate,0.2541,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3324600823225003_residential_rate,A3324600823225003,332460,Pelican,2023-02-01,2023,2,residential_rate,0.2541,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3324600824225003_residential_rate,A3324600824225003,332460,Pelican,2024-02-01,2024,2,residential_rate,0.2541,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3324600923225003_residential_rate,A3324600923225003,332460,Pelican,2023-03-01,2023,3,residential_rate,0.2541,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3324600924225003_residential_rate,A3324600924225003,332460,Pelican,2024-03-01,2024,3,residential_rate,0.2541,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3324601024225003_residential_rate,A3324601024225003,332460,Pelican,2024-04-01,2024,4,residential_rate,0.2541,quality_check,NA,0,0,0,NA,carry_forward,NA
+A3324601222225003_residential_rate,A3324601222225003,332460,Pelican,2022-06-01,2022,6,residential_rate,0.2611,quality_check,0.2611,0,0,0,NA,carry_forward,NA
 A3324700116225003_fuel_used_gallons,A3324700116225003,332470,Perryville,2015-07-01,2015,7,fuel_used_gallons,1063,quality_check,NA,1854,1317,2363,NA,NA,NA
 A3324700119225003_fuel_used_gallons,A3324700119225003,332470,Perryville,2018-07-01,2018,7,fuel_used_gallons,2361,quality_check,NA,3276,NA,2363,NA,NA,NA
 A3324700219225003_fuel_used_gallons,A3324700219225003,332470,Perryville,2018-08-01,2018,8,fuel_used_gallons,3087,quality_check,NA,3276,NA,2421,NA,NA,NA
@@ -6219,56 +6228,56 @@ A3315501223225003_diesel_kwh_generated,A3315501223225003,331550,Pilot Station,20
 A3323900916225003_fuel_used_gallons,A3323900916225003,332390,Point Hope,2016-03-01,2016,3,fuel_used_gallons,20994,quality_check,37574,37941,37120,49318,NA,NA,NA
 A3323900617225003_diesel_kwh_generated,A3323900617225003,332390,Point Hope,2016-12-01,2016,12,diesel_kwh_generated,642351,quality_check,592915,546461,611798,650326,NA,NA,NA
 A3323900916225003_diesel_kwh_generated,A3323900916225003,332390,Point Hope,2016-03-01,2016,3,diesel_kwh_generated,711391,quality_check,444217,546461,495897,646840,NA,NA,NA
-A3323900117225003_residential_rate,A3323900117225003,332390,Point Hope,2016-07-01,2016,7,residential_rate,0.15,quality_check,0.15,0,0,0,NA,NA,NA
-A3323900118225003_residential_rate,A3323900118225003,332390,Point Hope,2017-07-01,2017,7,residential_rate,0.15,quality_check,0.2246,0,0,0,NA,NA,NA
-A3323900123225003_residential_rate,A3323900123225003,332390,Point Hope,2022-07-01,2022,7,residential_rate,0.15,quality_check,NA,0,0,0,NA,NA,NA
-A3323900217225003_residential_rate,A3323900217225003,332390,Point Hope,2016-08-01,2016,8,residential_rate,0.15,quality_check,NA,0,NA,0,NA,NA,NA
-A3323900218225003_residential_rate,A3323900218225003,332390,Point Hope,2017-08-01,2017,8,residential_rate,0.15,quality_check,NA,0,0,0,NA,NA,NA
-A3323900316225003_residential_rate,A3323900316225003,332390,Point Hope,2015-09-01,2015,9,residential_rate,0.15,quality_check,0.2277,0,0,0,NA,NA,NA
-A3323900317225003_residential_rate,A3323900317225003,332390,Point Hope,2016-09-01,2016,9,residential_rate,0.15,quality_check,NA,0,NA,0,NA,NA,NA
-A3323900320225003_residential_rate,A3323900320225003,332390,Point Hope,2019-09-01,2019,9,residential_rate,0.109,quality_check,0.1795,0,0,0,NA,NA,NA
-A3323900416225003_residential_rate,A3323900416225003,332390,Point Hope,2015-10-01,2015,10,residential_rate,0.15,quality_check,NA,0,NA,0,NA,NA,NA
-A3323900417225003_residential_rate,A3323900417225003,332390,Point Hope,2016-10-01,2016,10,residential_rate,0.15,quality_check,NA,0,NA,0,NA,NA,NA
-A3323900516225003_residential_rate,A3323900516225003,332390,Point Hope,2015-11-01,2015,11,residential_rate,0.15,quality_check,NA,0,NA,0,NA,NA,NA
-A3323900517225003_residential_rate,A3323900517225003,332390,Point Hope,2016-11-01,2016,11,residential_rate,0.15,quality_check,NA,0,NA,0,NA,NA,NA
-A3323900616225003_residential_rate,A3323900616225003,332390,Point Hope,2015-12-01,2015,12,residential_rate,0.15,quality_check,NA,0,NA,0,NA,NA,NA
-A3323900617225003_residential_rate,A3323900617225003,332390,Point Hope,2016-12-01,2016,12,residential_rate,0.15,quality_check,NA,0,NA,0,NA,NA,NA
-A3323900716225003_residential_rate,A3323900716225003,332390,Point Hope,2016-01-01,2016,1,residential_rate,0.15,quality_check,NA,0,NA,0,NA,NA,NA
-A3323900717225003_residential_rate,A3323900717225003,332390,Point Hope,2017-01-01,2017,1,residential_rate,0.15,quality_check,NA,0,NA,0,NA,NA,NA
-A3323900816225003_residential_rate,A3323900816225003,332390,Point Hope,2016-02-01,2016,2,residential_rate,0.15,quality_check,NA,0,NA,0,NA,NA,NA
-A3323900817225003_residential_rate,A3323900817225003,332390,Point Hope,2017-02-01,2017,2,residential_rate,0.15,quality_check,NA,0,0,0,NA,NA,NA
-A3323900916225003_residential_rate,A3323900916225003,332390,Point Hope,2016-03-01,2016,3,residential_rate,0.15,quality_check,NA,0,NA,0,NA,NA,NA
-A3323900921225003_residential_rate,A3323900921225003,332390,Point Hope,2021-03-01,2021,3,residential_rate,0.15,quality_check,0.15,0,0,0,NA,NA,NA
-A3323900922225003_residential_rate,A3323900922225003,332390,Point Hope,2022-03-01,2022,3,residential_rate,0.15,quality_check,0.15,0,0,0,NA,NA,NA
-A3323901016225003_residential_rate,A3323901016225003,332390,Point Hope,2016-04-01,2016,4,residential_rate,0.15,quality_check,NA,0,NA,0,NA,NA,NA
-A3323901021225003_residential_rate,A3323901021225003,332390,Point Hope,2021-04-01,2021,4,residential_rate,0.15,quality_check,NA,0,NA,0,NA,NA,NA
-A3323901022225003_residential_rate,A3323901022225003,332390,Point Hope,2022-04-01,2022,4,residential_rate,0.15,quality_check,NA,0,NA,0,NA,NA,NA
-A3323901116225003_residential_rate,A3323901116225003,332390,Point Hope,2016-05-01,2016,5,residential_rate,0.15,quality_check,NA,0,0,0,NA,NA,NA
-A3323901121225003_residential_rate,A3323901121225003,332390,Point Hope,2021-05-01,2021,5,residential_rate,0.15,quality_check,NA,0,0,0,NA,NA,NA
-A3323901122225003_residential_rate,A3323901122225003,332390,Point Hope,2022-05-01,2022,5,residential_rate,0.15,quality_check,NA,0,NA,0,NA,NA,NA
-A3323901222225003_residential_rate,A3323901222225003,332390,Point Hope,2022-06-01,2022,6,residential_rate,0.15,quality_check,NA,0,NA,0,NA,NA,NA
+A3323900117225003_residential_rate,A3323900117225003,332390,Point Hope,2016-07-01,2016,7,residential_rate,0.15,quality_check,0.15,0,0,0,NA,carry_forward,NA
+A3323900118225003_residential_rate,A3323900118225003,332390,Point Hope,2017-07-01,2017,7,residential_rate,0.15,quality_check,0.2246,0,0,0,NA,carry_forward,NA
+A3323900123225003_residential_rate,A3323900123225003,332390,Point Hope,2022-07-01,2022,7,residential_rate,0.15,quality_check,NA,0,0,0,NA,carry_forward,NA
+A3323900217225003_residential_rate,A3323900217225003,332390,Point Hope,2016-08-01,2016,8,residential_rate,0.15,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3323900218225003_residential_rate,A3323900218225003,332390,Point Hope,2017-08-01,2017,8,residential_rate,0.15,quality_check,NA,0,0,0,NA,carry_forward,NA
+A3323900316225003_residential_rate,A3323900316225003,332390,Point Hope,2015-09-01,2015,9,residential_rate,0.15,quality_check,0.2277,0,0,0,NA,carry_forward,NA
+A3323900317225003_residential_rate,A3323900317225003,332390,Point Hope,2016-09-01,2016,9,residential_rate,0.15,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3323900320225003_residential_rate,A3323900320225003,332390,Point Hope,2019-09-01,2019,9,residential_rate,0.109,quality_check,0.1795,0,0,0,NA,carry_forward,NA
+A3323900416225003_residential_rate,A3323900416225003,332390,Point Hope,2015-10-01,2015,10,residential_rate,0.15,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3323900417225003_residential_rate,A3323900417225003,332390,Point Hope,2016-10-01,2016,10,residential_rate,0.15,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3323900516225003_residential_rate,A3323900516225003,332390,Point Hope,2015-11-01,2015,11,residential_rate,0.15,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3323900517225003_residential_rate,A3323900517225003,332390,Point Hope,2016-11-01,2016,11,residential_rate,0.15,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3323900616225003_residential_rate,A3323900616225003,332390,Point Hope,2015-12-01,2015,12,residential_rate,0.15,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3323900617225003_residential_rate,A3323900617225003,332390,Point Hope,2016-12-01,2016,12,residential_rate,0.15,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3323900716225003_residential_rate,A3323900716225003,332390,Point Hope,2016-01-01,2016,1,residential_rate,0.15,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3323900717225003_residential_rate,A3323900717225003,332390,Point Hope,2017-01-01,2017,1,residential_rate,0.15,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3323900816225003_residential_rate,A3323900816225003,332390,Point Hope,2016-02-01,2016,2,residential_rate,0.15,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3323900817225003_residential_rate,A3323900817225003,332390,Point Hope,2017-02-01,2017,2,residential_rate,0.15,quality_check,NA,0,0,0,NA,carry_forward,NA
+A3323900916225003_residential_rate,A3323900916225003,332390,Point Hope,2016-03-01,2016,3,residential_rate,0.15,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3323900921225003_residential_rate,A3323900921225003,332390,Point Hope,2021-03-01,2021,3,residential_rate,0.15,quality_check,0.15,0,0,0,NA,carry_forward,NA
+A3323900922225003_residential_rate,A3323900922225003,332390,Point Hope,2022-03-01,2022,3,residential_rate,0.15,quality_check,0.15,0,0,0,NA,carry_forward,NA
+A3323901016225003_residential_rate,A3323901016225003,332390,Point Hope,2016-04-01,2016,4,residential_rate,0.15,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3323901021225003_residential_rate,A3323901021225003,332390,Point Hope,2021-04-01,2021,4,residential_rate,0.15,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3323901022225003_residential_rate,A3323901022225003,332390,Point Hope,2022-04-01,2022,4,residential_rate,0.15,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3323901116225003_residential_rate,A3323901116225003,332390,Point Hope,2016-05-01,2016,5,residential_rate,0.15,quality_check,NA,0,0,0,NA,carry_forward,NA
+A3323901121225003_residential_rate,A3323901121225003,332390,Point Hope,2021-05-01,2021,5,residential_rate,0.15,quality_check,NA,0,0,0,NA,carry_forward,NA
+A3323901122225003_residential_rate,A3323901122225003,332390,Point Hope,2022-05-01,2022,5,residential_rate,0.15,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3323901222225003_residential_rate,A3323901222225003,332390,Point Hope,2022-06-01,2022,6,residential_rate,0.15,quality_check,NA,0,NA,0,NA,carry_forward,NA
 A3324000616225003_diesel_kwh_generated,A3324000616225003,332400,Point Lay,2015-12-01,2015,12,diesel_kwh_generated,337575,quality_check,307773,286825,327430,340553,NA,NA,NA
-A3324000216225003_residential_rate,A3324000216225003,332400,Point Lay,2015-08-01,2015,8,residential_rate,0.15,quality_check,NA,NA,NA,0,NA,NA,NA
-A3324000217225003_residential_rate,A3324000217225003,332400,Point Lay,2016-08-01,2016,8,residential_rate,0.15,quality_check,0.15,0,0,0,NA,NA,NA
-A3324000316225003_residential_rate,A3324000316225003,332400,Point Lay,2015-09-01,2015,9,residential_rate,0.15,quality_check,NA,NA,NA,0,NA,NA,NA
-A3324000317225003_residential_rate,A3324000317225003,332400,Point Lay,2016-09-01,2016,9,residential_rate,0.15,quality_check,NA,0,NA,0,NA,NA,NA
-A3324000416225003_residential_rate,A3324000416225003,332400,Point Lay,2015-10-01,2015,10,residential_rate,0.15,quality_check,NA,NA,NA,0,NA,NA,NA
-A3324000417225003_residential_rate,A3324000417225003,332400,Point Lay,2016-10-01,2016,10,residential_rate,0.15,quality_check,NA,0,NA,0,NA,NA,NA
-A3324000516225003_residential_rate,A3324000516225003,332400,Point Lay,2015-11-01,2015,11,residential_rate,0.15,quality_check,NA,NA,NA,0,NA,NA,NA
-A3324000517225003_residential_rate,A3324000517225003,332400,Point Lay,2016-11-01,2016,11,residential_rate,0.15,quality_check,NA,0,NA,0,NA,NA,NA
-A3324000616225003_residential_rate,A3324000616225003,332400,Point Lay,2015-12-01,2015,12,residential_rate,0.15,quality_check,NA,NA,NA,0,NA,NA,NA
-A3324000617225003_residential_rate,A3324000617225003,332400,Point Lay,2016-12-01,2016,12,residential_rate,0.15,quality_check,NA,0,NA,0,NA,NA,NA
-A3324000716225003_residential_rate,A3324000716225003,332400,Point Lay,2016-01-01,2016,1,residential_rate,0.15,quality_check,NA,0,NA,0,NA,NA,NA
-A3324000717225003_residential_rate,A3324000717225003,332400,Point Lay,2017-01-01,2017,1,residential_rate,0.15,quality_check,NA,0,NA,0,NA,NA,NA
-A3324000816225003_residential_rate,A3324000816225003,332400,Point Lay,2016-02-01,2016,2,residential_rate,0.15,quality_check,NA,0,NA,0,NA,NA,NA
-A3324000817225003_residential_rate,A3324000817225003,332400,Point Lay,2017-02-01,2017,2,residential_rate,0.15,quality_check,NA,0,NA,0,NA,NA,NA
-A3324000916225003_residential_rate,A3324000916225003,332400,Point Lay,2016-03-01,2016,3,residential_rate,0.15,quality_check,NA,0,0,0,NA,NA,NA
-A3324000917225003_residential_rate,A3324000917225003,332400,Point Lay,2017-03-01,2017,3,residential_rate,0.2123,quality_check,NA,0,0,0,NA,NA,NA
-A3324000921225003_residential_rate,A3324000921225003,332400,Point Lay,2021-03-01,2021,3,residential_rate,0.15,quality_check,0.15,0,0,0,NA,NA,NA
-A3324000922225003_residential_rate,A3324000922225003,332400,Point Lay,2022-03-01,2022,3,residential_rate,0.15,quality_check,0.15,0,0,0,NA,NA,NA
-A3324001021225003_residential_rate,A3324001021225003,332400,Point Lay,2021-04-01,2021,4,residential_rate,0.15,quality_check,NA,0,0,0,NA,NA,NA
-A3324001022225003_residential_rate,A3324001022225003,332400,Point Lay,2022-04-01,2022,4,residential_rate,0.15,quality_check,NA,0,NA,0,NA,NA,NA
-A3324001122225003_residential_rate,A3324001122225003,332400,Point Lay,2022-05-01,2022,5,residential_rate,0.15,quality_check,NA,0,0,0,NA,NA,NA
+A3324000216225003_residential_rate,A3324000216225003,332400,Point Lay,2015-08-01,2015,8,residential_rate,0.15,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3324000217225003_residential_rate,A3324000217225003,332400,Point Lay,2016-08-01,2016,8,residential_rate,0.15,quality_check,0.15,0,0,0,NA,carry_forward,NA
+A3324000316225003_residential_rate,A3324000316225003,332400,Point Lay,2015-09-01,2015,9,residential_rate,0.15,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3324000317225003_residential_rate,A3324000317225003,332400,Point Lay,2016-09-01,2016,9,residential_rate,0.15,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3324000416225003_residential_rate,A3324000416225003,332400,Point Lay,2015-10-01,2015,10,residential_rate,0.15,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3324000417225003_residential_rate,A3324000417225003,332400,Point Lay,2016-10-01,2016,10,residential_rate,0.15,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3324000516225003_residential_rate,A3324000516225003,332400,Point Lay,2015-11-01,2015,11,residential_rate,0.15,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3324000517225003_residential_rate,A3324000517225003,332400,Point Lay,2016-11-01,2016,11,residential_rate,0.15,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3324000616225003_residential_rate,A3324000616225003,332400,Point Lay,2015-12-01,2015,12,residential_rate,0.15,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3324000617225003_residential_rate,A3324000617225003,332400,Point Lay,2016-12-01,2016,12,residential_rate,0.15,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3324000716225003_residential_rate,A3324000716225003,332400,Point Lay,2016-01-01,2016,1,residential_rate,0.15,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3324000717225003_residential_rate,A3324000717225003,332400,Point Lay,2017-01-01,2017,1,residential_rate,0.15,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3324000816225003_residential_rate,A3324000816225003,332400,Point Lay,2016-02-01,2016,2,residential_rate,0.15,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3324000817225003_residential_rate,A3324000817225003,332400,Point Lay,2017-02-01,2017,2,residential_rate,0.15,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3324000916225003_residential_rate,A3324000916225003,332400,Point Lay,2016-03-01,2016,3,residential_rate,0.15,quality_check,NA,0,0,0,NA,carry_forward,NA
+A3324000917225003_residential_rate,A3324000917225003,332400,Point Lay,2017-03-01,2017,3,residential_rate,0.2123,quality_check,NA,0,0,0,NA,carry_forward,NA
+A3324000921225003_residential_rate,A3324000921225003,332400,Point Lay,2021-03-01,2021,3,residential_rate,0.15,quality_check,0.15,0,0,0,NA,carry_forward,NA
+A3324000922225003_residential_rate,A3324000922225003,332400,Point Lay,2022-03-01,2022,3,residential_rate,0.15,quality_check,0.15,0,0,0,NA,carry_forward,NA
+A3324001021225003_residential_rate,A3324001021225003,332400,Point Lay,2021-04-01,2021,4,residential_rate,0.15,quality_check,NA,0,0,0,NA,carry_forward,NA
+A3324001022225003_residential_rate,A3324001022225003,332400,Point Lay,2022-04-01,2022,4,residential_rate,0.15,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3324001122225003_residential_rate,A3324001122225003,332400,Point Lay,2022-05-01,2022,5,residential_rate,0.15,quality_check,NA,0,0,0,NA,carry_forward,NA
 A3325000125225003_diesel_kwh_generated,A3325000125225003,332500,Port Heiden,2024-07-01,2024,7,diesel_kwh_generated,38029,quality_check,NA,NA,NA,32680,NA,NA,NA
 A3325000225225003_diesel_kwh_generated,A3325000225225003,332500,Port Heiden,2024-08-01,2024,8,diesel_kwh_generated,37186,quality_check,NA,NA,NA,37660,NA,NA,NA
 A3325000325225003_diesel_kwh_generated,A3325000325225003,332500,Port Heiden,2024-09-01,2024,9,diesel_kwh_generated,34692,quality_check,NA,NA,NA,40292,NA,NA,NA
@@ -6291,7 +6300,7 @@ A3325001125225003_diesel_kwh_generated,A3325001125225003,332500,Port Heiden,2025
 A3325001223225003_diesel_kwh_generated,A3325001223225003,332500,Port Heiden,2023-06-01,2023,6,diesel_kwh_generated,41071,quality_check,NA,53268,NA,37174,NA,NA,NA
 A3325001224225003_diesel_kwh_generated,A3325001224225003,332500,Port Heiden,2024-06-01,2024,6,diesel_kwh_generated,46896,quality_check,NA,NA,NA,37174,NA,NA,NA
 A3325001225225003_diesel_kwh_generated,A3325001225225003,332500,Port Heiden,2025-06-01,2025,6,diesel_kwh_generated,61224,quality_check,NA,0,0,37174,NA,NA,NA
-A3325001223225003_residential_rate,A3325001223225003,332500,Port Heiden,2023-06-01,2023,6,residential_rate,9.99,quality_check,0.65,1,1,1,NA,NA,NA
+A3325001223225003_residential_rate,A3325001223225003,332500,Port Heiden,2023-06-01,2023,6,residential_rate,9.99,quality_check,0.65,1,1,1,NA,carry_forward,NA
 A3315701125225003_diesel_kwh_generated,A3315701125225003,331570,Quinhagak,2025-05-01,2025,5,diesel_kwh_generated,122784,quality_check,193615,189078,170008,127849,NA,NA,NA
 A3315701223225003_diesel_kwh_generated,A3315701223225003,331570,Quinhagak,2023-06-01,2023,6,diesel_kwh_generated,90943,quality_check,119249,162235,111986,109826,NA,NA,NA
 A3325200726225003_fuel_used_gallons,A3325200726225003,332520,Rampart,2026-01-01,2026,1,fuel_used_gallons,745,quality_check,NA,2500,1599,2360,NA,NA,NA
@@ -6326,12 +6335,12 @@ A3316600823225003_diesel_kwh_generated,A3316600823225003,331660,"Saint Mary's, A
 A3316601125225003_diesel_kwh_generated,A3316601125225003,331660,"Saint Mary's, Andreafsky",2025-05-01,2025,5,diesel_kwh_generated,300116,quality_check,530794,488224,463046,278310,NA,NA,NA
 A3316601223225003_diesel_kwh_generated,A3316601223225003,331660,"Saint Mary's, Andreafsky",2023-06-01,2023,6,diesel_kwh_generated,256385,quality_check,353341,318724,324602,238092,NA,NA,NA
 A3316600623225003_diesel_kwh_generated,A3316600623225003,331660,"Saint Mary's, Andreafsky",2022-12-01,2022,12,diesel_kwh_generated,359314,quality_check,261135,313364,346344,350121,NA,NA,NA
-A3316600326225003_residential_rate,A3316600326225003,331660,"Saint Mary's, Andreafsky",2025-09-01,2025,9,residential_rate,0.6451,quality_check,0.6451,1,1,1,NA,NA,NA
-A3316600426225003_residential_rate,A3316600426225003,331660,"Saint Mary's, Andreafsky",2025-10-01,2025,10,residential_rate,0.6451,quality_check,NA,1,NA,1,NA,NA,NA
-A3316600526225003_residential_rate,A3316600526225003,331660,"Saint Mary's, Andreafsky",2025-11-01,2025,11,residential_rate,0.6451,quality_check,NA,1,1,1,NA,NA,NA
-A3325600424225003_residential_rate,A3325600424225003,332560,Saint Paul,2023-10-01,2023,10,residential_rate,0.57,quality_check,0.57,1,1,0,NA,NA,NA
-A3325600525225003_residential_rate,A3325600525225003,332560,Saint Paul,2024-11-01,2024,11,residential_rate,0.57,quality_check,0.62,1,1,0,NA,NA,NA
-A3325600625225003_residential_rate,A3325600625225003,332560,Saint Paul,2024-12-01,2024,12,residential_rate,0.57,quality_check,NA,1,1,0,NA,NA,NA
+A3316600326225003_residential_rate,A3316600326225003,331660,"Saint Mary's, Andreafsky",2025-09-01,2025,9,residential_rate,0.6451,quality_check,0.6451,1,1,1,NA,carry_forward,NA
+A3316600426225003_residential_rate,A3316600426225003,331660,"Saint Mary's, Andreafsky",2025-10-01,2025,10,residential_rate,0.6451,quality_check,NA,1,NA,1,NA,carry_forward,NA
+A3316600526225003_residential_rate,A3316600526225003,331660,"Saint Mary's, Andreafsky",2025-11-01,2025,11,residential_rate,0.6451,quality_check,NA,1,1,1,NA,carry_forward,NA
+A3325600424225003_residential_rate,A3325600424225003,332560,Saint Paul,2023-10-01,2023,10,residential_rate,0.57,quality_check,0.57,1,1,0,NA,carry_forward,NA
+A3325600525225003_residential_rate,A3325600525225003,332560,Saint Paul,2024-11-01,2024,11,residential_rate,0.57,quality_check,0.62,1,1,0,NA,carry_forward,NA
+A3325600625225003_residential_rate,A3325600625225003,332560,Saint Paul,2024-12-01,2024,12,residential_rate,0.57,quality_check,NA,1,1,0,NA,carry_forward,NA
 A3315901125225003_diesel_kwh_generated,A3315901125225003,331590,Savoonga,2025-05-01,2025,5,diesel_kwh_generated,191255,quality_check,209502,209598,189713,190517,NA,NA,NA
 A3315901223225003_diesel_kwh_generated,A3315901223225003,331590,Savoonga,2023-06-01,2023,6,diesel_kwh_generated,167579,quality_check,218727,206536,198938,161251,NA,NA,NA
 A3316000726225003_diesel_kwh_generated,A3316000726225003,331600,Scammon Bay,2026-01-01,2026,1,diesel_kwh_generated,190759,quality_check,164589,162498,163950,174406,NA,NA,NA
@@ -6359,9 +6368,9 @@ A3316401125225003_diesel_kwh_generated,A3316401125225003,331640,Shishmaref,2025-
 A3316401223225003_diesel_kwh_generated,A3316401223225003,331640,Shishmaref,2023-06-01,2023,6,diesel_kwh_generated,123868,quality_check,158667,155300,147648,120815,NA,NA,NA
 A3316501125225003_diesel_kwh_generated,A3316501125225003,331650,Shungnak,2025-05-01,2025,5,diesel_kwh_generated,82606,quality_check,143010,145234,123847,110962,NA,NA,NA
 A3316501223225003_diesel_kwh_generated,A3316501223225003,331650,Shungnak,2023-06-01,2023,6,diesel_kwh_generated,65454,quality_check,94197,127463,79732,91971,NA,NA,NA
-A3316500323225003_residential_rate,A3316500323225003,331650,Shungnak,2022-09-01,2022,9,residential_rate,0.9119,quality_check,0.9466,1,1,1,NA,NA,NA
-A3316501123225003_residential_rate,A3316501123225003,331650,Shungnak,2023-05-01,2023,5,residential_rate,0.0967,quality_check,1.1084,1,1,1,NA,NA,NA
-A3316501223225003_residential_rate,A3316501223225003,331650,Shungnak,2023-06-01,2023,6,residential_rate,0.0967,quality_check,NA,1,1,1,NA,NA,NA
+A3316500323225003_residential_rate,A3316500323225003,331650,Shungnak,2022-09-01,2022,9,residential_rate,0.9119,quality_check,0.9466,1,1,1,NA,carry_forward,NA
+A3316501123225003_residential_rate,A3316501123225003,331650,Shungnak,2023-05-01,2023,5,residential_rate,0.0967,quality_check,1.1084,1,1,1,NA,carry_forward,NA
+A3316501223225003_residential_rate,A3316501223225003,331650,Shungnak,2023-06-01,2023,6,residential_rate,0.0967,quality_check,NA,1,1,1,NA,carry_forward,NA
 A3311900324225003_fuel_used_gallons,A3311900324225003,331190,Skagway,2023-09-01,2023,9,fuel_used_gallons,2315,quality_check,NA,3931,1105,2167,NA,NA,NA
 A3311900421225003_fuel_used_gallons,A3311900421225003,331190,Skagway,2020-10-01,2020,10,fuel_used_gallons,569,quality_check,1230,5895,2130,1529,NA,NA,NA
 A3311900524225003_fuel_used_gallons,A3311900524225003,331190,Skagway,2023-11-01,2023,11,fuel_used_gallons,929,quality_check,1105,3931,850,1813,NA,NA,NA
@@ -6387,8 +6396,8 @@ A3316850617225003_diesel_kwh_generated,A3316850617225003,331685,Teller,2016-12-0
 A3316850618225003_diesel_kwh_generated,A3316850618225003,331685,Teller,2017-12-01,2017,12,diesel_kwh_generated,83395,quality_check,86225,68011,87384,81377,NA,NA,NA
 A3316851125225003_diesel_kwh_generated,A3316851125225003,331685,Teller,2025-05-01,2025,5,diesel_kwh_generated,63914,quality_check,72227,74039,63968,66885,NA,NA,NA
 A3316851223225003_diesel_kwh_generated,A3316851223225003,331685,Teller,2023-06-01,2023,6,diesel_kwh_generated,51121,quality_check,70638,73262,62800,55632,NA,NA,NA
-A3316851123225003_residential_rate,A3316851123225003,331685,Teller,2023-05-01,2023,5,residential_rate,0.5089,quality_check,0.7004,1,1,1,NA,NA,NA
-A3312001225225003_most_recent_fuel_purch_price,A3312001225225003,331200,Tetlin,2025-06-01,2025,6,most_recent_fuel_purch_price,0.2629,quality_check,2.7123,3,3,3,NA,NA,NA
+A3316851123225003_residential_rate,A3316851123225003,331685,Teller,2023-05-01,2023,5,residential_rate,0.5089,quality_check,0.7004,1,1,1,NA,carry_forward,NA
+A3312001225225003_most_recent_fuel_purch_price,A3312001225225003,331200,Tetlin,2025-06-01,2025,6,most_recent_fuel_purch_price,0.2629,quality_check,2.7123,3,3,3,NA,carry_forward,NA
 A3316900926225003_diesel_kwh_generated,A3316900926225003,331690,Togiak,2026-03-01,2026,3,diesel_kwh_generated,302884,quality_check,267485,270126,262714,261553,NA,NA,NA
 A3316901125225003_diesel_kwh_generated,A3316901125225003,331690,Togiak,2025-05-01,2025,5,diesel_kwh_generated,210562,quality_check,241558,240846,219922,241952,NA,NA,NA
 A3316901223225003_diesel_kwh_generated,A3316901223225003,331690,Togiak,2023-06-01,2023,6,diesel_kwh_generated,240016,quality_check,275962,271206,289890,232921,NA,NA,NA
@@ -6400,15 +6409,15 @@ A3327100225225003_fuel_used_gallons,A3327100225225003,332710,Tuluksak,2024-08-01
 A3327100225225003_diesel_kwh_generated,A3327100225225003,332710,Tuluksak,2024-08-01,2024,8,diesel_kwh_generated,46210,quality_check,90996,81750,90996,56863,NA,NA,NA
 A3327100325225003_diesel_kwh_generated,A3327100325225003,332710,Tuluksak,2024-09-01,2024,9,diesel_kwh_generated,73413,quality_check,NA,81750,NA,53416,NA,NA,NA
 A3327100425225003_diesel_kwh_generated,A3327100425225003,332710,Tuluksak,2024-10-01,2024,10,diesel_kwh_generated,60083,quality_check,NA,81750,73276,59840,NA,NA,NA
-A3317100826225003_residential_rate,A3317100826225003,331710,Tununak,2026-02-01,2026,2,residential_rate,0.2941,quality_check,0.645,1,1,1,NA,NA,NA
-A3317100926225003_residential_rate,A3317100926225003,331710,Tununak,2026-03-01,2026,3,residential_rate,0.2941,quality_check,NA,1,NA,1,NA,NA,NA
-A3317101026225003_residential_rate,A3317101026225003,331710,Tununak,2026-04-01,2026,4,residential_rate,0.2941,quality_check,NA,1,NA,1,NA,NA,NA
-A3317101126225003_residential_rate,A3317101126225003,331710,Tununak,2026-05-01,2026,5,residential_rate,0.2941,quality_check,NA,1,NA,1,NA,NA,NA
-A3327300623225003_most_recent_fuel_purch_price,A3327300623225003,332730,Twin Hills,2022-12-01,2022,12,most_recent_fuel_purch_price,0.4014,quality_check,2.7607,3,3,3,NA,NA,NA
-A3327300723225003_most_recent_fuel_purch_price,A3327300723225003,332730,Twin Hills,2023-01-01,2023,1,most_recent_fuel_purch_price,0.4014,quality_check,NA,2,NA,3,NA,NA,NA
-A3327300823225003_most_recent_fuel_purch_price,A3327300823225003,332730,Twin Hills,2023-02-01,2023,2,most_recent_fuel_purch_price,0.4014,quality_check,NA,2,NA,3,NA,NA,NA
-A3327300923225003_most_recent_fuel_purch_price,A3327300923225003,332730,Twin Hills,2023-03-01,2023,3,most_recent_fuel_purch_price,0.4014,quality_check,NA,2,0,3,NA,NA,NA
-A3327300324225003_residential_rate,A3327300324225003,332730,Twin Hills,2023-09-01,2023,9,residential_rate,0.619,quality_check,NA,1,1,1,NA,NA,NA
+A3317100826225003_residential_rate,A3317100826225003,331710,Tununak,2026-02-01,2026,2,residential_rate,0.2941,quality_check,0.645,1,1,1,NA,carry_forward,NA
+A3317100926225003_residential_rate,A3317100926225003,331710,Tununak,2026-03-01,2026,3,residential_rate,0.2941,quality_check,NA,1,NA,1,NA,carry_forward,NA
+A3317101026225003_residential_rate,A3317101026225003,331710,Tununak,2026-04-01,2026,4,residential_rate,0.2941,quality_check,NA,1,NA,1,NA,carry_forward,NA
+A3317101126225003_residential_rate,A3317101126225003,331710,Tununak,2026-05-01,2026,5,residential_rate,0.2941,quality_check,NA,1,NA,1,NA,carry_forward,NA
+A3327300623225003_most_recent_fuel_purch_price,A3327300623225003,332730,Twin Hills,2022-12-01,2022,12,most_recent_fuel_purch_price,0.4014,quality_check,2.7607,3,3,3,NA,carry_forward,NA
+A3327300723225003_most_recent_fuel_purch_price,A3327300723225003,332730,Twin Hills,2023-01-01,2023,1,most_recent_fuel_purch_price,0.4014,quality_check,NA,2,NA,3,NA,carry_forward,NA
+A3327300823225003_most_recent_fuel_purch_price,A3327300823225003,332730,Twin Hills,2023-02-01,2023,2,most_recent_fuel_purch_price,0.4014,quality_check,NA,2,NA,3,NA,carry_forward,NA
+A3327300923225003_most_recent_fuel_purch_price,A3327300923225003,332730,Twin Hills,2023-03-01,2023,3,most_recent_fuel_purch_price,0.4014,quality_check,NA,2,0,3,NA,carry_forward,NA
+A3327300324225003_residential_rate,A3327300324225003,332730,Twin Hills,2023-09-01,2023,9,residential_rate,0.619,quality_check,NA,1,1,1,NA,carry_forward,NA
 A3328600220225003_diesel_kwh_generated,A3328600220225003,332860,Unalaska,2019-08-01,2019,8,diesel_kwh_generated,6664315,quality_check,6069592,4049554,5447794,4914700,NA,NA,NA
 A3328800123225003_diesel_kwh_generated,A3328800123225003,332880,Venetie,2022-07-01,2022,7,diesel_kwh_generated,39849,quality_check,0,42883,0,39550,NA,NA,NA
 A3328800124225003_diesel_kwh_generated,A3328800124225003,332880,Venetie,2023-07-01,2023,7,diesel_kwh_generated,62262,quality_check,NA,NA,NA,39550,NA,NA,NA
@@ -6440,33 +6449,33 @@ A3328801123225003_diesel_kwh_generated,A3328801123225003,332880,Venetie,2023-05-
 A3328801125225003_diesel_kwh_generated,A3328801125225003,332880,Venetie,2025-05-01,2025,5,diesel_kwh_generated,38456,quality_check,NA,0,NA,51157,NA,NA,NA
 A3328801224225003_diesel_kwh_generated,A3328801224225003,332880,Venetie,2024-06-01,2024,6,diesel_kwh_generated,48839,quality_check,NA,NA,NA,49483,NA,NA,NA
 A3328801225225003_diesel_kwh_generated,A3328801225225003,332880,Venetie,2025-06-01,2025,6,diesel_kwh_generated,33285,quality_check,NA,0,0,49483,NA,NA,NA
-A3324100117225003_residential_rate,A3324100117225003,332410,Wainwright,2016-07-01,2016,7,residential_rate,0.15,quality_check,0.15,0,0,0,NA,NA,NA
-A3324100216225003_residential_rate,A3324100216225003,332410,Wainwright,2015-08-01,2015,8,residential_rate,0.1786,quality_check,NA,NA,NA,0,NA,NA,NA
-A3324100217225003_residential_rate,A3324100217225003,332410,Wainwright,2016-08-01,2016,8,residential_rate,0.15,quality_check,NA,0,NA,0,NA,NA,NA
-A3324100218225003_residential_rate,A3324100218225003,332410,Wainwright,2017-08-01,2017,8,residential_rate,0.15,quality_check,0.15,0,0,0,NA,NA,NA
-A3324100316225003_residential_rate,A3324100316225003,332410,Wainwright,2015-09-01,2015,9,residential_rate,0.15,quality_check,NA,NA,NA,0,NA,NA,NA
-A3324100317225003_residential_rate,A3324100317225003,332410,Wainwright,2016-09-01,2016,9,residential_rate,0.15,quality_check,NA,0,NA,0,NA,NA,NA
-A3324100416225003_residential_rate,A3324100416225003,332410,Wainwright,2015-10-01,2015,10,residential_rate,0.15,quality_check,NA,NA,NA,0,NA,NA,NA
-A3324100417225003_residential_rate,A3324100417225003,332410,Wainwright,2016-10-01,2016,10,residential_rate,0.15,quality_check,NA,0,NA,0,NA,NA,NA
-A3324100516225003_residential_rate,A3324100516225003,332410,Wainwright,2015-11-01,2015,11,residential_rate,0.15,quality_check,NA,NA,NA,0,NA,NA,NA
-A3324100517225003_residential_rate,A3324100517225003,332410,Wainwright,2016-11-01,2016,11,residential_rate,0.15,quality_check,NA,0,NA,0,NA,NA,NA
-A3324100616225003_residential_rate,A3324100616225003,332410,Wainwright,2015-12-01,2015,12,residential_rate,0.15,quality_check,NA,NA,NA,0,NA,NA,NA
-A3324100617225003_residential_rate,A3324100617225003,332410,Wainwright,2016-12-01,2016,12,residential_rate,0.15,quality_check,NA,0,NA,0,NA,NA,NA
-A3324100716225003_residential_rate,A3324100716225003,332410,Wainwright,2016-01-01,2016,1,residential_rate,0.15,quality_check,NA,0,NA,0,NA,NA,NA
-A3324100717225003_residential_rate,A3324100717225003,332410,Wainwright,2017-01-01,2017,1,residential_rate,0.15,quality_check,NA,0,NA,0,NA,NA,NA
-A3324100816225003_residential_rate,A3324100816225003,332410,Wainwright,2016-02-01,2016,2,residential_rate,0.15,quality_check,NA,0,NA,0,NA,NA,NA
-A3324100817225003_residential_rate,A3324100817225003,332410,Wainwright,2017-02-01,2017,2,residential_rate,0.15,quality_check,NA,0,0,0,NA,NA,NA
-A3324100916225003_residential_rate,A3324100916225003,332410,Wainwright,2016-03-01,2016,3,residential_rate,0.15,quality_check,NA,0,NA,0,NA,NA,NA
-A3324100921225003_residential_rate,A3324100921225003,332410,Wainwright,2021-03-01,2021,3,residential_rate,0.15,quality_check,0.15,0,0,0,NA,NA,NA
-A3324100922225003_residential_rate,A3324100922225003,332410,Wainwright,2022-03-01,2022,3,residential_rate,0.15,quality_check,0.15,0,0,0,NA,NA,NA
-A3324101016225003_residential_rate,A3324101016225003,332410,Wainwright,2016-04-01,2016,4,residential_rate,0.15,quality_check,NA,0,0,0,NA,NA,NA
-A3324101017225003_residential_rate,A3324101017225003,332410,Wainwright,2017-04-01,2017,4,residential_rate,0.1768,quality_check,0.2806,0,0,0,NA,NA,NA
-A3324101019225003_residential_rate,A3324101019225003,332410,Wainwright,2019-04-01,2019,4,residential_rate,0.1826,quality_check,0.1917,0,0,0,NA,NA,NA
-A3324101021225003_residential_rate,A3324101021225003,332410,Wainwright,2021-04-01,2021,4,residential_rate,0.15,quality_check,NA,0,NA,0,NA,NA,NA
-A3324101022225003_residential_rate,A3324101022225003,332410,Wainwright,2022-04-01,2022,4,residential_rate,0.15,quality_check,NA,0,NA,0,NA,NA,NA
-A3324101117225003_residential_rate,A3324101117225003,332410,Wainwright,2017-05-01,2017,5,residential_rate,0.1775,quality_check,NA,0,0,0,NA,NA,NA
-A3324101121225003_residential_rate,A3324101121225003,332410,Wainwright,2021-05-01,2021,5,residential_rate,0.15,quality_check,NA,0,0,0,NA,NA,NA
-A3324101122225003_residential_rate,A3324101122225003,332410,Wainwright,2022-05-01,2022,5,residential_rate,0.15,quality_check,NA,0,0,0,NA,NA,NA
+A3324100117225003_residential_rate,A3324100117225003,332410,Wainwright,2016-07-01,2016,7,residential_rate,0.15,quality_check,0.15,0,0,0,NA,carry_forward,NA
+A3324100216225003_residential_rate,A3324100216225003,332410,Wainwright,2015-08-01,2015,8,residential_rate,0.1786,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3324100217225003_residential_rate,A3324100217225003,332410,Wainwright,2016-08-01,2016,8,residential_rate,0.15,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3324100218225003_residential_rate,A3324100218225003,332410,Wainwright,2017-08-01,2017,8,residential_rate,0.15,quality_check,0.15,0,0,0,NA,carry_forward,NA
+A3324100316225003_residential_rate,A3324100316225003,332410,Wainwright,2015-09-01,2015,9,residential_rate,0.15,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3324100317225003_residential_rate,A3324100317225003,332410,Wainwright,2016-09-01,2016,9,residential_rate,0.15,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3324100416225003_residential_rate,A3324100416225003,332410,Wainwright,2015-10-01,2015,10,residential_rate,0.15,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3324100417225003_residential_rate,A3324100417225003,332410,Wainwright,2016-10-01,2016,10,residential_rate,0.15,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3324100516225003_residential_rate,A3324100516225003,332410,Wainwright,2015-11-01,2015,11,residential_rate,0.15,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3324100517225003_residential_rate,A3324100517225003,332410,Wainwright,2016-11-01,2016,11,residential_rate,0.15,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3324100616225003_residential_rate,A3324100616225003,332410,Wainwright,2015-12-01,2015,12,residential_rate,0.15,quality_check,NA,NA,NA,0,NA,carry_forward,NA
+A3324100617225003_residential_rate,A3324100617225003,332410,Wainwright,2016-12-01,2016,12,residential_rate,0.15,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3324100716225003_residential_rate,A3324100716225003,332410,Wainwright,2016-01-01,2016,1,residential_rate,0.15,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3324100717225003_residential_rate,A3324100717225003,332410,Wainwright,2017-01-01,2017,1,residential_rate,0.15,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3324100816225003_residential_rate,A3324100816225003,332410,Wainwright,2016-02-01,2016,2,residential_rate,0.15,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3324100817225003_residential_rate,A3324100817225003,332410,Wainwright,2017-02-01,2017,2,residential_rate,0.15,quality_check,NA,0,0,0,NA,carry_forward,NA
+A3324100916225003_residential_rate,A3324100916225003,332410,Wainwright,2016-03-01,2016,3,residential_rate,0.15,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3324100921225003_residential_rate,A3324100921225003,332410,Wainwright,2021-03-01,2021,3,residential_rate,0.15,quality_check,0.15,0,0,0,NA,carry_forward,NA
+A3324100922225003_residential_rate,A3324100922225003,332410,Wainwright,2022-03-01,2022,3,residential_rate,0.15,quality_check,0.15,0,0,0,NA,carry_forward,NA
+A3324101016225003_residential_rate,A3324101016225003,332410,Wainwright,2016-04-01,2016,4,residential_rate,0.15,quality_check,NA,0,0,0,NA,carry_forward,NA
+A3324101017225003_residential_rate,A3324101017225003,332410,Wainwright,2017-04-01,2017,4,residential_rate,0.1768,quality_check,0.2806,0,0,0,NA,carry_forward,NA
+A3324101019225003_residential_rate,A3324101019225003,332410,Wainwright,2019-04-01,2019,4,residential_rate,0.1826,quality_check,0.1917,0,0,0,NA,carry_forward,NA
+A3324101021225003_residential_rate,A3324101021225003,332410,Wainwright,2021-04-01,2021,4,residential_rate,0.15,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3324101022225003_residential_rate,A3324101022225003,332410,Wainwright,2022-04-01,2022,4,residential_rate,0.15,quality_check,NA,0,NA,0,NA,carry_forward,NA
+A3324101117225003_residential_rate,A3324101117225003,332410,Wainwright,2017-05-01,2017,5,residential_rate,0.1775,quality_check,NA,0,0,0,NA,carry_forward,NA
+A3324101121225003_residential_rate,A3324101121225003,332410,Wainwright,2021-05-01,2021,5,residential_rate,0.15,quality_check,NA,0,0,0,NA,carry_forward,NA
+A3324101122225003_residential_rate,A3324101122225003,332410,Wainwright,2022-05-01,2022,5,residential_rate,0.15,quality_check,NA,0,0,0,NA,carry_forward,NA
 A3317300616225003_fuel_used_gallons,A3317300616225003,331730,Wales,2015-12-01,2015,12,fuel_used_gallons,1328,quality_check,4292,4019,4628,6475,NA,NA,NA
 A3317300618225003_fuel_used_gallons,A3317300618225003,331730,Wales,2017-12-01,2017,12,fuel_used_gallons,1267,quality_check,4372,4250,4400,6475,NA,NA,NA
 A3317300621225003_fuel_used_gallons,A3317300621225003,331730,Wales,2020-12-01,2020,12,fuel_used_gallons,207,quality_check,4716,4279,4866,6475,NA,NA,NA
@@ -6482,4 +6491,4 @@ A3329000622225003_fuel_used_gallons,A3329000622225003,332900,Yakutat,2021-12-01,
 A3329000622225003_diesel_kwh_generated,A3329000622225003,332900,Yakutat,2021-12-01,2021,12,diesel_kwh_generated,547236,quality_check,547869,541757,534028,495360,NA,NA,NA
 A3329001125225003_diesel_kwh_generated,A3329001125225003,332900,Yakutat,2025-05-01,2025,5,diesel_kwh_generated,537208,quality_check,583101,552008,554034,545869,NA,NA,NA
 A3329001223225003_diesel_kwh_generated,A3329001223225003,332900,Yakutat,2023-06-01,2023,6,diesel_kwh_generated,517628,quality_check,622528,533792,591974,502666,NA,NA,NA
-A3329000724225003_residential_rate,A3329000724225003,332900,Yakutat,2024-01-01,2024,1,residential_rate,0.5521,quality_check,0.4959,1,1,0,NA,NA,NA
+A3329000724225003_residential_rate,A3329000724225003,332900,Yakutat,2024-01-01,2024,1,residential_rate,0.5521,quality_check,0.4959,1,1,0,NA,carry_forward,NA

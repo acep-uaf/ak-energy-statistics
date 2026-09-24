@@ -1,0 +1,5 @@
+carry_forward:
+  - most_recent_fuel_purch_price
+  - residential_rate
+  - effective_residential_rate
+  - fuel_price

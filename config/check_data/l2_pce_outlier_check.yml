@@ -3,6 +3,7 @@ settings:
 
 columns_to_check:
   - residential_rate
+  - effective_residential_rate
   - pce_rate 
   - pce_eligible_residential_kwh
   - pce_eligible_community_kwh

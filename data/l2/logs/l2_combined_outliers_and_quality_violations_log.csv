@@ -430,6 +430,7 @@ A3317800324225003_powerhouse_consumption_kwh,A3317800324225003,331780,Atmautluak
 A3317800424225003_powerhouse_consumption_kwh,A3317800424225003,331780,Atmautluak,2023-10-01,2023,10,powerhouse_consumption_kwh,10103,outlier_check
 A3317800524225003_powerhouse_consumption_kwh,A3317800524225003,331780,Atmautluak,2023-11-01,2023,11,powerhouse_consumption_kwh,9451,outlier_check
 A3317800126225003_residential_rate,A3317800126225003,331780,Atmautluak,2025-07-01,2025,7,residential_rate,99.99,outlier_check
+A3317800126225003_effective_residential_rate,A3317800126225003,331780,Atmautluak,2025-07-01,2025,7,effective_residential_rate,99.5292,outlier_check
 A3323600420225003_govt_facil_sold_to,A3323600420225003,332360,Atqasuk,2019-10-01,2019,10,govt_facil_sold_to,5493,outlier_check
 A3323600520225003_govt_facil_sold_to,A3323600520225003,332360,Atqasuk,2019-11-01,2019,11,govt_facil_sold_to,8298,outlier_check
 A3323600620225003_govt_facil_sold_to,A3323600620225003,332360,Atqasuk,2019-12-01,2019,12,govt_facil_sold_to,11150,outlier_check
@@ -1252,6 +1253,7 @@ A3320600925225003_unbilled_sold_to,A3320600925225003,332060,Deering,2025-03-01,2
 A3320600426225003_unbilled_sold_to,A3320600426225003,332060,Deering,2025-10-01,2025,10,unbilled_sold_to,844,outlier_check
 A3320600626225003_unbilled_sold_to,A3320600626225003,332060,Deering,2025-12-01,2025,12,unbilled_sold_to,1465,outlier_check
 A3320600127225003_residential_rate,A3320600127225003,332060,Deering,2026-07-01,2026,7,residential_rate,99.99,outlier_check
+A3320600127225003_effective_residential_rate,A3320600127225003,332060,Deering,2026-07-01,2026,7,effective_residential_rate,99.4811,outlier_check
 A3324300117225003_diesel_kwh_generated,A3324300117225003,332430,"Dillingham, Aleknagik",2016-07-01,2016,7,diesel_kwh_generated,2275400,outlier_check
 A3324300117225003_peak_consumption_kw,A3324300117225003,332430,"Dillingham, Aleknagik",2016-07-01,2016,7,peak_consumption_kw,4240,outlier_check
 A3324300117225003_commercial_sold_to,A3324300117225003,332430,"Dillingham, Aleknagik",2016-07-01,2016,7,commercial_sold_to,1682902,outlier_check
@@ -2248,6 +2250,7 @@ A3320400626225003_powerhouse_consumption_kwh,A3320400626225003,332040,Igiugig,20
 A3320400726225003_fuel_used_gallons,A3320400726225003,332040,Igiugig,2026-01-01,2026,1,fuel_used_gallons,3444,outlier_check
 A3320400726225003_powerhouse_consumption_kwh,A3320400726225003,332040,Igiugig,2026-01-01,2026,1,powerhouse_consumption_kwh,4340,outlier_check
 A3320400826225003_residential_rate,A3320400826225003,332040,Igiugig,2026-02-01,2026,2,residential_rate,90.9,outlier_check
+A3320400826225003_effective_residential_rate,A3320400826225003,332040,Igiugig,2026-02-01,2026,2,effective_residential_rate,90.1881,outlier_check
 A3320400826225003_powerhouse_consumption_kwh,A3320400826225003,332040,Igiugig,2026-02-01,2026,2,powerhouse_consumption_kwh,2963,outlier_check
 A3320400926225003_powerhouse_consumption_kwh,A3320400926225003,332040,Igiugig,2026-03-01,2026,3,powerhouse_consumption_kwh,3452,outlier_check
 A3320401026225003_powerhouse_consumption_kwh,A3320401026225003,332040,Igiugig,2026-04-01,2026,4,powerhouse_consumption_kwh,2878,outlier_check
@@ -2873,6 +2876,7 @@ A3321501124225003_fuel_used_gallons,A3321501124225003,332150,Kwethluk,2024-05-01
 A3321500225225003_peak_consumption_kw,A3321500225225003,332150,Kwethluk,2024-08-01,2024,8,peak_consumption_kw,678,outlier_check
 A3321500425225003_peak_consumption_kw,A3321500425225003,332150,Kwethluk,2024-10-01,2024,10,peak_consumption_kw,618,outlier_check
 A3321500126225003_residential_rate,A3321500126225003,332150,Kwethluk,2025-07-01,2025,7,residential_rate,99.99,outlier_check
+A3321500126225003_effective_residential_rate,A3321500126225003,332150,Kwethluk,2025-07-01,2025,7,effective_residential_rate,99.5692,outlier_check
 A3321500426225003_unbilled_sold_to,A3321500426225003,332150,Kwethluk,2025-10-01,2025,10,unbilled_sold_to,45906,outlier_check
 A3321600416225003_pce_eligible_community_kwh,A3321600416225003,332160,Kwigillingok,2015-10-01,2015,10,pce_eligible_community_kwh,13121,outlier_check
 A3321600416225003_wind_kwh_generated,A3321600416225003,332160,Kwigillingok,2015-10-01,2015,10,wind_kwh_generated,116614,outlier_check
@@ -3081,6 +3085,7 @@ A3322100525225003_pce_eligible_community_kwh,A3322100525225003,332210,Manokotak,
 A3322100525225003_com_facil_sold_to,A3322100525225003,332210,Manokotak,2024-11-01,2024,11,com_facil_sold_to,12334,outlier_check
 A3322100625225003_unbilled_sold_to,A3322100625225003,332210,Manokotak,2024-12-01,2024,12,unbilled_sold_to,10303,outlier_check
 A3322100726225003_residential_rate,A3322100726225003,332210,Manokotak,2026-01-01,2026,1,residential_rate,3966,outlier_check
+A3322100726225003_effective_residential_rate,A3322100726225003,332210,Manokotak,2026-01-01,2026,1,effective_residential_rate,3965.6597,outlier_check
 A3314400116225003_commercial_sold_to,A3314400116225003,331440,Marshall,2015-07-01,2015,7,commercial_sold_to,18994,outlier_check
 A3314400216225003_commercial_sold_to,A3314400216225003,331440,Marshall,2015-08-01,2015,8,commercial_sold_to,19343,outlier_check
 A3314400316225003_commercial_sold_to,A3314400316225003,331440,Marshall,2015-09-01,2015,9,commercial_sold_to,21643,outlier_check
@@ -3384,6 +3389,7 @@ A3323000926225003_commercial_sold_to,A3323000926225003,332300,Napaskiak,2026-03-
 A3323001026225003_commercial_sold_to,A3323001026225003,332300,Napaskiak,2026-04-01,2026,4,commercial_sold_to,45362,outlier_check
 A3323001226225003_peak_consumption_kw,A3323001226225003,332300,Napaskiak,2026-06-01,2026,6,peak_consumption_kw,492,outlier_check
 A3323000127225003_residential_rate,A3323000127225003,332300,Napaskiak,2026-07-01,2026,7,residential_rate,11242.16,outlier_check
+A3323000127225003_effective_residential_rate,A3323000127225003,332300,Napaskiak,2026-07-01,2026,7,effective_residential_rate,11241.7934,outlier_check
 A3311700726225003_residential_sold_to,A3311700726225003,331170,Naukati Bay,2026-01-01,2026,1,residential_sold_to,61259,outlier_check
 A3323200716225003_fuel_used_gallons,A3323200716225003,332320,Nelson Lagoon,2016-01-01,2016,1,fuel_used_gallons,8875,outlier_check
 A3323200716225003_fuel_cost,A3323200716225003,332320,Nelson Lagoon,2016-01-01,2016,1,fuel_cost,39660.6,outlier_check
@@ -4442,6 +4448,7 @@ A3325600721225003_total_kwh_purchased,A3325600721225003,332560,Saint Paul,2021-0
 A3325600921225003_pce_eligible_community_kwh,A3325600921225003,332560,Saint Paul,2021-03-01,2021,3,pce_eligible_community_kwh,9913,outlier_check
 A3325600122225003_pce_eligible_community_kwh,A3325600122225003,332560,Saint Paul,2021-07-01,2021,7,pce_eligible_community_kwh,21605,outlier_check
 A3325601023225003_residential_rate,A3325601023225003,332560,Saint Paul,2023-04-01,2023,4,residential_rate,57,outlier_check
+A3325601023225003_effective_residential_rate,A3325601023225003,332560,Saint Paul,2023-04-01,2023,4,effective_residential_rate,56.6258,outlier_check
 A3325600225225003_fuel_cost,A3325600225225003,332560,Saint Paul,2024-08-01,2024,8,fuel_cost,152691.57,outlier_check
 A3325600625225003_fuel_used_gallons,A3325600625225003,332560,Saint Paul,2024-12-01,2024,12,fuel_used_gallons,28791,outlier_check
 A3325600625225003_fuel_cost,A3325600625225003,332560,Saint Paul,2024-12-01,2024,12,fuel_cost,170730.63,outlier_check
@@ -5056,6 +5063,7 @@ A3327101025225003_fuel_cost,A3327101025225003,332710,Tuluksak,2025-04-01,2025,4,
 A3327101125225003_fuel_cost,A3327101125225003,332710,Tuluksak,2025-05-01,2025,5,fuel_cost,77346.95,outlier_check
 A3327101225225003_fuel_cost,A3327101225225003,332710,Tuluksak,2025-06-01,2025,6,fuel_cost,70680.61,outlier_check
 A3327100126225003_residential_rate,A3327100126225003,332710,Tuluksak,2025-07-01,2025,7,residential_rate,99.99,outlier_check
+A3327100126225003_effective_residential_rate,A3327100126225003,332710,Tuluksak,2025-07-01,2025,7,effective_residential_rate,99.4392,outlier_check
 A3327100126225003_fuel_cost,A3327100126225003,332710,Tuluksak,2025-07-01,2025,7,fuel_cost,57982.23,outlier_check
 A3327100226225003_fuel_cost,A3327100226225003,332710,Tuluksak,2025-08-01,2025,8,fuel_cost,67621.06,outlier_check
 A3327100326225003_fuel_cost,A3327100326225003,332710,Tuluksak,2025-09-01,2025,9,fuel_cost,75506.24,outlier_check
@@ -5202,6 +5210,7 @@ A3328600120225003_powerhouse_consumption_kwh,A3328600120225003,332860,Unalaska,2
 A3328600220225003_powerhouse_consumption_kwh,A3328600220225003,332860,Unalaska,2019-08-01,2019,8,powerhouse_consumption_kwh,156709,outlier_check
 A3328600223225003_fuel_cost,A3328600223225003,332860,Unalaska,2022-08-01,2022,8,fuel_cost,1737028.49,outlier_check
 A3328600226225003_residential_rate,A3328600226225003,332860,Unalaska,2025-08-01,2025,8,residential_rate,99.99,outlier_check
+A3328600226225003_effective_residential_rate,A3328600226225003,332860,Unalaska,2025-08-01,2025,8,effective_residential_rate,99.7377,outlier_check
 A3328800416225003_govt_facil_sold_to,A3328800416225003,332880,Venetie,2015-10-01,2015,10,govt_facil_sold_to,2291,outlier_check
 A3328800618225003_diesel_kwh_generated,A3328800618225003,332880,Venetie,2017-12-01,2017,12,diesel_kwh_generated,143300,outlier_check
 A3328800618225003_commercial_sold_to,A3328800618225003,332880,Venetie,2017-12-01,2017,12,commercial_sold_to,40550,outlier_check
