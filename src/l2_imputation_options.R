@@ -1,14 +1,19 @@
 library(dplyr)
 library(readr)
 library(fs)
+library(yaml)
 library(purrr)
 library(lubridate)
 library(tidyr)
 
 l2_generate_imputation_options <- function(
   pce_path,
+  overrides_path,
   combined_outliers_and_quality_violations_log_path,
   path_out) {
+  
+  overrides <- read_yaml(overrides_path)
+  carry_forward_columns <- unlist(overrides$carry_forward)
 
   pce <- read_csv(pce_path, show_col_types = FALSE)
 
@@ -153,6 +158,14 @@ l2_generate_imputation_options <- function(
       manual_override,
       decision,
       comment
+    ) %>%
+    
+    mutate(
+      decision = if_else(
+        column %in% carry_forward_columns, 
+        "carry_forward", 
+        decision
+      )
     )
 
   dir_create(dirname(path_out))

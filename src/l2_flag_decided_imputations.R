@@ -24,7 +24,7 @@ l2_flag_decided_imputations <- function(
       decision        = coalesce(new_decision, decision),
       comment         = coalesce(new_comment, comment),
       
-      cleaned_during_energy_stats = !is.na(new_decision)
+      cleaned_during_energy_statistics = !is.na(new_decision)
     ) %>%
     select(-starts_with("new_"))
 

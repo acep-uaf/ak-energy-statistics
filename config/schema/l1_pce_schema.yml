@@ -37,6 +37,7 @@ pce_columns:
   - com_facil_sold_to
   - govt_facil_sold_to
   - unbilled_sold_to
+  - total_sales
 
   - most_recent_fuel_purch_price
   - non_fuel_expenses
