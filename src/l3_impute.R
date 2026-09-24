@@ -39,15 +39,29 @@ l3_impute_columns <- function(path_in, path_overrides, path_out) {
 
   valid_id <- which(!is.na(row_coords) & !is.na(col_coords) & !is.na(overrides$decided_value))
 
-  imputed_matrix <- matrix(FALSE, nrow = nrow(df), ncol = ncol(df), dimnames = list(NULL, names(df)))
+  imputed_matrix <- matrix(
+    NA_character_, 
+    nrow = nrow(df), 
+    ncol = ncol(df), 
+    dimnames = list(NULL, names(df))
+  )
 
   for (i in valid_id) {
     df[row_coords[i], col_coords[i]] <- overrides$decided_value[i]
-    imputed_matrix[row_coords[i], col_coords[i]] <- TRUE
+    
+    dec_text <- overrides$decision[i]
+    cmnt_text <- overrides$comment[i]
+    
+    label <- if (!is.na(cmnt_text) && cmnt_text != "") {
+      paste0(dec_text, " - ", cmnt_text)
+    } else {
+      dec_text
+    }
+    
+    imputed_matrix[row_coords[i], col_coords[i]] <- label
   }
 
-  imputed_cols <- names(which(colSums(imputed_matrix) > 0))
-
+  imputed_cols <- names(which(colSums(!is.na(imputed_matrix)) > 0))
 
   flags_df <- as_tibble(imputed_matrix[, imputed_cols, drop = FALSE]) %>%
     rename_with(~ paste0("imputed_", .x))
