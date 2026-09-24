@@ -46,7 +46,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-ae1c0ec92b441d122aa59c6365a48af9.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-40bbb09be55ea0632ff9a1d1c85b786b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -189,6 +189,8 @@ ul.task-list li input[type="checkbox"] {
 <section id="pce" class="level3">
 <h3 class="anchored" data-anchor-id="pce">PCE</h3>
 <p>Level 3 data applies statistical outlier checks in order to screen values for statistical anomalies. <a href="https://en.wikipedia.org/wiki/Median_absolute_deviation">Mean Absolute Deviation (MAD)</a> was calculated for the following columns, then strong and extreme outliers were flagged/removed from the data.</p>
+<pre><code>Warning in readLines(file, warn = readLines.warn): incomplete final line found
+on '../config/check_data/l2_pce_outlier_check.yml'</code></pre>
 <p><strong>Outlier Detection (MAD)</strong></p>
 <ul>
 <li><strong>Method:</strong> Median Absolute Deviation (MAD)</li>
@@ -205,67 +207,97 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: left;"><code>residential_rate</code></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><code>most_recent_fuel_purch_price</code></td>
+<td style="text-align: left;"><code>effective_residential_rate</code></td>
 </tr>
 <tr class="odd">
+<td style="text-align: left;"><code>pce_rate</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>pce_eligible_residential_kwh</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>pce_eligible_community_kwh</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>amount</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>most_recent_fuel_purch_price</code></td>
+</tr>
+<tr class="even">
 <td style="text-align: left;"><code>fuel_used_gallons</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>diesel_efficiency</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>diesel_kwh_generated</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>hydro_kwh_generated</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>natural_gas_kwh_generated</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>wind_kwh_generated</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>solar_kwh_generated</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>total_kwh_purchased</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>powerhouse_consumption_kwh</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>peak_consumption_kw</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>residential_sold_to</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>commercial_sold_to</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>com_facil_sold_to</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>govt_facil_sold_to</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>unbilled_sold_to</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>residential_customers</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>commercial_customers</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>com_facil_customers</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>govt_facil_customers</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>unbilled_customers</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>other_customers</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>fuel_price</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>pro_rata_rate</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>fuel_cost</code></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><code>diesel_efficiency</code></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><code>diesel_kwh_generated</code></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><code>hydro_kwh_generated</code></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><code>natural_gas_kwh_generated</code></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><code>wind_kwh_generated</code></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><code>solar_kwh_generated</code></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><code>total_kwh_purchased</code></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><code>powerhouse_consumption_kwh</code></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><code>peak_consumption_kw</code></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><code>residential_sold_to</code></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><code>commercial_sold_to</code></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><code>com_facil_sold_to</code></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><code>govt_facil_sold_to</code></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><code>unbilled_sold_to</code></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><code>residential_customers</code></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><code>commercial_customers</code></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><code>com_facil_customers</code></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><code>govt_facil_customers</code></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><code>unbilled_customers</code></td>
 </tr>
 </tbody>
 </table>
@@ -287,8 +319,18 @@ ul.task-list li input[type="checkbox"] {
 <tbody>
 <tr class="odd">
 <td><code>l3_pce.csv</code></td>
-<td>8.63M</td>
+<td>10.1M</td>
 <td><a href="data/l3/consolidated/l3_pce.csv" download="l3_pce.csv">Download CSV</a></td>
+</tr>
+<tr class="even">
+<td><code>l3_pce_historical_2001-2020.csv</code></td>
+<td>20.1M</td>
+<td><a href="data/l3/consolidated/l3_pce_historical_2001-2020.csv" download="l3_pce_historical_2001-2020.csv">Download CSV</a></td>
+</tr>
+<tr class="odd">
+<td><code>l3_pce_aligned.csv</code></td>
+<td>9.98M</td>
+<td><a href="data/l3/consolidated/l3_pce_aligned.csv" download="l3_pce_aligned.csv">Download CSV</a></td>
 </tr>
 </tbody>
 </table>
@@ -317,7 +359,7 @@ ul.task-list li input[type="checkbox"] {
 <tbody>
 <tr class="odd">
 <td><code>l2_pce.csv</code></td>
-<td>8.5M</td>
+<td>8.63M</td>
 <td><a href="data/l2/consolidated/l2_pce.csv" download="l2_pce.csv">Download CSV</a></td>
 </tr>
 </tbody>
@@ -403,7 +445,7 @@ ul.task-list li input[type="checkbox"] {
 <tbody>
 <tr class="odd">
 <td><code>l1_pce.csv</code></td>
-<td>8.54M</td>
+<td>8.68M</td>
 <td><a href="data/l1/consolidated/l1_pce.csv" download="l1_pce.csv">Download CSV</a></td>
 </tr>
 <tr class="even">
