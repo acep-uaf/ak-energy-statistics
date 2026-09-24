@@ -19,6 +19,7 @@ add_missing_cols <- function(data, ...) {
 
 l3_align_current_pce <- function(
   path_in, 
+  path_to_historical,
   path_to_lookup_sales_report, 
   path_to_lookup_pce_floor, 
   path_to_lookup_interties, 
@@ -26,7 +27,8 @@ l3_align_current_pce <- function(
   path_to_lookup_operators,
   path_out) {
 
-  tmp <- read_csv(path_in, show_col_types=F)
+  df <- read_csv(path_in, show_col_types=F)
+  df_historical <- read_csv(path_to_historical, show_col_types=F)
 
   lookup_sales_report <- read_csv(path_to_lookup_sales_report, show_col_types=F) %>%
     select(pce_id, cpcn_id, eia_id, communities_reported)
@@ -41,7 +43,7 @@ l3_align_current_pce <- function(
 
 
 
-  joined_lookups <- tmp %>% 
+  joined_lookups <- df %>% 
     left_join(lookup_pce_floor, by = join_by(fiscal_year)) %>%
     left_join(lookup_sales_report, by = join_by(project_code == pce_id)) %>%
     left_join(lookup_interties, by = join_by(intertie_id)) %>%
@@ -49,7 +51,24 @@ l3_align_current_pce <- function(
 
   df_out <- joined_lookups %>%
     add_missing_cols(
-      notes = NA_character_
+      notes = NA_character_,
+      pce_community_intertied_to_another_pce_community = NA_character_,
+
+      imputed_residential_rate = NA_character_,
+      imputed_pce_rate = NA_character_,
+      imputed_pro_rata_rate = NA_character_,
+      imputed_effective_rate = NA_character_,
+      imputed_fuel_price = NA_character_,
+      imputed_fuel_cost = NA_character_,
+      imputed_nonfuel_expenses = NA_character_,
+      imputed_diesel_efficiency = NA_character_,
+      imputed_other_customers = NA_character_,
+      other_2_kwh_generated_imputed = NA_character_,
+      purchased_from_imputed = NA_character_,
+      total_kwh_purchased_imputed = NA_character_,
+      pce_eligible_community_kwh_imputed = NA_character_
+      
+
     ) %>%
     mutate(
       season = if_else(calendar_month >= 4 & calendar_month <= 9, 'summer', 'winter')
@@ -74,7 +93,7 @@ l3_align_current_pce <- function(
       season,
       intertie_id,
       intertie_name,
-      # pce_community_intertied_to_another_pce_community, # boolean, not in current lookups, need to add from somewhere
+      pce_community_intertied_to_another_pce_community,
       year_of_intertie,
       communities_intertied,
       residential_rate,
@@ -82,8 +101,8 @@ l3_align_current_pce <- function(
       pro_rata_rate,
       effective_rate = effective_residential_rate,
       pce_eligible_residential_kwh,
-      # pce_eligible_commercial_kwh,
-      # pce_eligible_community_kwh,    # problem in l3_pce.csv concerning this data, investigate
+      pce_eligible_commercial_kwh = pce_eligible_com_facil_kwh,  # careful, com_facil represents commercial here, community elsewhere
+      pce_eligible_community_kwh, 
       pce_eligible_total_kwh,
       disbursement = amount,   
       fuel_price = most_recent_fuel_purch_price,
@@ -115,15 +134,15 @@ l3_align_current_pce <- function(
       other_customers_description,
       notes,
       cleaned_during_energy_statistics,
-      # imputed_residential_rate,
-      # imputed_pce_rate,
-      # imputed_pro_rata_rate,
-      # imputed_effective_rate,
-      # imputed_fuel_price,
+      imputed_residential_rate,
+      imputed_pce_rate,
+      imputed_pro_rata_rate,
+      imputed_effective_rate,
+      imputed_fuel_price,
       imputed_fuel_used_gal = imputed_fuel_used_gallons,
-      # imputed_fuel_cost,
-      # imputed_nonfuel_expenses,
-      # imputed_diesel_efficiency,
+      imputed_fuel_cost,
+      imputed_nonfuel_expenses,
+      imputed_diesel_efficiency,
       imputed_diesel_kwh_generated,
       imputed_hydro_kwh_generated,
       imputed_powerhouse_consumption_kwh,
@@ -137,41 +156,22 @@ l3_align_current_pce <- function(
       imputed_commercial_customers,
       imputed_community_customers = imputed_com_facil_customers,
       imputed_government_customers = imputed_govt_facil_customers,
-      imputed_unbilled_customers
-      # imputed_other_customers,
-      # other_2_kwh_generated_imputed,
-      # purchased_from_imputed,
-      # total_kwh_purchased_imputed,
-      # pce_eligible_community_kwh_imputed
+      imputed_unbilled_customers,
+      imputed_other_customers,
+      other_2_kwh_generated_imputed,
+      purchased_from_imputed,
+      total_kwh_purchased_imputed,
+      pce_eligible_community_kwh_imputed
     )
+  
+  test <- rbind(df_out, df_historical)
 
+  dir_create(dirname(path_out))
+  write_csv(df_out, path_out)
+  
+  message(paste("Historically-aligned PCE data written as CSV to:", path_out))
 
-
-  return(df_out)
+  # return(df_out)
 }
-
-
-
-target <- read_csv('data/l3/consolidated/l3_pce_historical_2001-2020.csv')
-
-target_cols <- names(target) %>%
-  tibble(column_name = .)
-
-rbind(df_out, target)
-
-
-current <- l3_align_current_pce(
-  path_in = 'data/l3/consolidated/l3_pce.csv',
-  path_to_lookup_sales_report = 'data/l1/lookup/l1_lookup_sales_report.csv',
-  path_to_lookup_pce_floor = 'data/l1/lookup/l1_lookup_pce_floor.csv',
-  path_to_lookup_interties = 'data/l1/lookup/l1_lookup_interties.csv',
-  path_to_lookup_pce_utility_operators = 'data/l1/lookup/l1_lookup_pce_utility_operators.csv',
-  path_to_lookup_operators = 'data/l1/lookup/l1_lookup_operators.csv',
-  path_out = 'data/l3/consolidated/l3_pce_aligned.csv'
-)
-
-
-
-
 
 

@@ -10,6 +10,7 @@ source('src/l2_combine_imputation_decisions.R')
 source('src/l2_flag_decided_imputations.R')
 source('src/l3_impute.R')
 source('src/l3_clean_historical.R')
+source('src/l3_align_current.R')
 
 
 unlink('data/l0', recursive = T)
@@ -135,3 +136,13 @@ l3_clean_historical(
 )
 
 
+l3_align_current_pce(
+  path_in = 'data/l3/consolidated/l3_pce.csv',
+  path_to_historical = 'data/l3/consolidated/l3_pce_historical_2001-2020.csv',
+  path_to_lookup_sales_report = 'data/l1/lookup/l1_lookup_sales_report.csv',
+  path_to_lookup_pce_floor = 'data/l1/lookup/l1_lookup_pce_floor.csv',
+  path_to_lookup_interties = 'data/l1/lookup/l1_lookup_interties.csv',
+  path_to_lookup_pce_utility_operators = 'data/l1/lookup/l1_lookup_pce_utility_operators.csv',
+  path_to_lookup_operators = 'data/l1/lookup/l1_lookup_operators.csv',
+  path_out = 'data/l3/consolidated/l3_pce_aligned.csv'
+)
