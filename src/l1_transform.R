@@ -118,6 +118,7 @@ l1_transform_pce <- function(
   l1_consolidated_dir,
   l1_lookup_sales_report_path,
   l1_lookup_plants_path,
+  l1_lookup_pce_utility_operators_path,
   l1_lookup_operators_path,
   l1_lookup_pce_floor_path,
   config = "config/schema/l1_pce_schema.yml") {
@@ -127,20 +128,23 @@ l1_transform_pce <- function(
 
   lookup_sales_report <- read_csv(l1_lookup_sales_report_path, show_col_types = FALSE)
   lookup_plants <- read_csv(l1_lookup_plants_path, show_col_types = FALSE)
+  lookup_pce_utility_operators <- read_csv(l1_lookup_pce_utility_operators_path, show_col_types = FALSE)
   lookup_operators <- read_csv(l1_lookup_operators_path, show_col_types = FALSE)
   lookup_pce_floor <- read_csv(l1_lookup_pce_floor_path, show_col_types = FALSE)
 
   joined <- header %>%
     left_join(rate_line, by = "identifier") %>%
-    left_join(lookup_sales_report, by = join_by(project_code == pce_reporting_id)) %>%
+    left_join(lookup_sales_report, by = join_by(project_code == pce_id)) %>%
     left_join(lookup_plants, by = join_by(project_code == pce_reporting_id)) %>%
-    left_join(lookup_operators, by = join_by(project_code == project_code)) %>%
+    left_join(lookup_pce_utility_operators, by = join_by(project_code)) %>%
+    left_join(lookup_operators, by = join_by(ak_operator_id)) %>%
     left_join(lookup_pce_floor, by = join_by(fiscal_year))
 
   calculated <- joined %>%
     mutate(
       residential_kwh_per_customer_per_month = residential_sold_to / residential_customers,
-      pce_residential_kwh_per_customer_per_month = pce_eligible_residential_kwh / residential_customers
+      pce_residential_kwh_per_customer_per_month = pce_eligible_residential_kwh / residential_customers,
+      total_sales = residential_sold_to + commercial_sold_to + com_facil_sold_to + govt_facil_sold_to + unbilled_sold_to
     )
 
   # Schema from YAML config

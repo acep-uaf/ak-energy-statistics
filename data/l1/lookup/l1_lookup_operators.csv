@@ -1,180 +1,180 @@
-ak_operator_id,pce_utility_code,operator_utility_type_name,rca_regulatory_status_name,operator_cpcn_status,pce_eligible,power_generation_end_use
-AK-OP-001,AKHI,Public Electric Utility,Not Regulated,Active,TRUE,Retail
-AK-OP-002,AKIA,Public Electric Utility,Not Regulated,Active,TRUE,Retail
-AK-OP-003,AKIANCE,Private Electric Utility,Not Regulated,Active,TRUE,Retail
-AK-OP-004,AKUT,Public Electric Utility,Not Regulated,Active,TRUE,Retail
-AK-OP-005,ALASPCA,Private Electric Utility,Regulated,Active,TRUE,Retail
-AK-OP-006,ALASVEC,Electric Co-op,Not Regulated,Active,TRUE,Retail
-AK-OP-007,ALUTPC,Private Electric Utility,"Regulated, rate exemption",Active,TRUE,Retail
-AK-OP-008,ANDRE,Private Electric Utility,Not Regulated,Inactive,FALSE,Retail
-AK-OP-009,ANIALPC,Private Electric Utility,Regulated,Active,TRUE,Retail
-AK-OP-010,ARCTVC,Electric Co-op,Not Regulated,Active,TRUE,Retail
-AK-OP-011,ATKA,Public Electric Utility,Not Regulated,Active,TRUE,Retail
-AK-OP-012,ATMATU,Private Electric Utility,Not Regulated,Active,TRUE,Retail
-AK-OP-013,BEAVJU,Private Electric Utility,Not Regulated,Active,TRUE,Retail
-AK-OP-014,BETHUC,Private Electric Utility,Regulated,Inactive,FALSE,Retail
-AK-OP-015,BIRCCEC,Public Electric Utility,Not Regulated,Active,TRUE,Retail
-AK-OP-016,BUCK,Public Electric Utility,Not Regulated,Active,TRUE,Retail
-AK-OP-018,CENTEI,Private Electric Utility,Regulated,Inactive,FALSE,Retail
-AK-OP-019,CHALVC,Private Electric Utility,"Regulated, rate exemption",Active,TRUE,Retail
-AK-OP-020,CHENVC,Private Electric Utility,"Regulated, rate exemption",Active,TRUE,Retail
-AK-OP-021,CHIG,Private Electric Utility,Not Regulated,Active,TRUE,Retail
-AK-OP-022,CHIGLEU,Private Electric Utility,Not Regulated,Active,TRUE,Retail
-AK-OP-023,CHIGLPU,Private Electric Utility,"Regulated, rate exemption",Active,TRUE,Retail
-AK-OP-024,CHITE,Private Electric Utility,Not Regulated,Active,TRUE,Retail
-AK-OP-025,CIRCE,Private Electric Utility,Not Regulated,Active,TRUE,Retail
-AK-OP-026,CLARPVC,Public Electric Utility,Not Regulated,Active,TRUE,Retail
-AK-OP-027,CORDEC,Electric Co-op,Not Regulated,Active,TRUE,Retail
-AK-OP-028,DIOMJU,Public Electric Utility,Not Regulated,Active,TRUE,Retail
-AK-OP-029,EGEG,Public Electric Utility,Not Regulated,Active,TRUE,Retail
-AK-OP-030,EKWO,Private Electric Utility,Not Regulated,Inactive,FALSE,Retail
-AK-OP-031,ELFICEU,Electric Co-op,Not Regulated,Active,TRUE,Retail
-AK-OP-032,FALSPE,Public Electric Utility,Not Regulated,Active,TRUE,Retail
-AK-OP-033,GALE,Public Electric Utility,Not Regulated,Active,TRUE,Retail
-AK-OP-034,GK,Private Electric Utility,Regulated,Active,TRUE,Retail
-AK-OP-035,GOLOPU,Public Electric Utility,Not Regulated,Active,TRUE,Retail
-AK-OP-036,GUSTE,Private Electric Utility,Regulated,Inactive,FALSE,Retail
-AK-OP-037,GWITZU,Private Electric Utility,Regulated,Active,TRUE,Retail
-AK-OP-038,HUGHPL,Public Electric Utility,Not Regulated,Active,TRUE,Retail
-AK-OP-039,IGIUEC,Private Electric Utility,"Regulated, rate exemption",Active,TRUE,Retail
-AK-OP-040,ILIANNE,Electric Co-op,Not Regulated,Active,TRUE,Retail
-AK-OP-041,INSIPEC,Electric Co-op,Not Regulated,Active,TRUE,Retail
-AK-OP-042,IPNAEC,Private Electric Utility,Not Regulated,Active,TRUE,Retail
-AK-OP-043,KINGC,Public Electric Utility,Not Regulated,Active,TRUE,Retail
-AK-OP-044,KIPNLP,Private Electric Utility,Not Regulated,Active,TRUE,Retail
-AK-OP-045,KOBUVEC,Electric Co-op,Not Regulated,Inactive,FALSE,Retail
-AK-OP-046,KOKHVC,Public Electric Utility,"Regulated, rate exemption",Active,TRUE,Retail
-AK-OP-047,KOTLES,Public Electric Utility,Not Regulated,Inactive,FALSE,Retail
-AK-OP-048,KOTZEA,Public Electric Utility,Not Regulated,Active,TRUE,Retail
-AK-OP-049,KOYU,Public Electric Utility,Not Regulated,Active,TRUE,Retail
-AK-OP-050,KWET,Public Electric Utility,Not Regulated,Active,TRUE,Retail
-AK-OP-051,KWIGPC,Public Electric Utility,Not Regulated,Active,TRUE,Retail
-AK-OP-052,LARSBUC,Public Electric Utility,Not Regulated,Active,TRUE,Retail
-AK-OP-053,LEVEEC,Public Electric Utility,Not Regulated,Active,TRUE,Retail
-AK-OP-054,LIMEVTC,Public Electric Utility,Not Regulated,Active,TRUE,Retail
-AK-OP-055,MANLU,Private Electric Utility,Regulated,Inactive,FALSE,Retail
-AK-OP-056,MANOPC,Private Electric Utility,Not Regulated,Active,TRUE,Retail
-AK-OP-057,MCGRLP,Private Electric Utility,Regulated,Active,TRUE,Retail
-AK-OP-058,MIDDKEC,Electric Co-op,Regulated,Active,TRUE,Retail
-AK-OP-059,NAKNEA,Electric Co-op,Not Regulated,Active,TRUE,Retail
-AK-OP-060,NAPAC,Private Electric Utility,Not Regulated,Active,TRUE,Retail
-AK-OP-061,NAPAEU,Public Electric Utility,Not Regulated,Active,TRUE,Retail
-AK-OP-062,NATELP,Private Electric Utility,Not Regulated,Active,TRUE,Retail
-AK-OP-063,NELSLEC,Electric Co-op,Not Regulated,Active,TRUE,Retail
-AK-OP-064,NEWKVC,Private Electric Utility,"Regulated, rate exemption",Active,TRUE,Retail
-AK-OP-065,NIKO,Public Electric Utility,Not Regulated,Active,TRUE,Retail
-AK-OP-066,NOMEJUS,Private Electric Utility,Not Regulated,Active,TRUE,Retail
-AK-OP-067,NORTSB,Public Electric Utility,Not Regulated,Active,TRUE,Retail
-AK-OP-068,NUNAIEC,Public Electric Utility,Not Regulated,Active,TRUE,Retail
-AK-OP-069,NUSHEC,Electric Co-op,Not Regulated,Active,TRUE,Retail
-AK-OP-070,OUZI,Public Electric Utility,Not Regulated,Active,TRUE,Retail
-AK-OP-071,PEDRBV,Private Electric Utility,"Regulated, rate exemption",Active,TRUE,Retail
-AK-OP-072,PELIU,Public Electric Utility,Not Regulated,Active,TRUE,Retail
-AK-OP-073,PERR,Public Electric Utility,"Regulated, rate exemption",Active,TRUE,Retail
-AK-OP-074,PILOPEU,Public Electric Utility,Not Regulated,Active,TRUE,Retail
-AK-OP-075,PLAT,Public Electric Utility,N/A,Inactive,FALSE,Retail
-AK-OP-076,PLATCC,Private Electric Utility,Regulated,Active,TRUE,Retail
-AK-OP-077,PORTHU,Public Electric Utility,Not Regulated,Active,TRUE,Retail
-AK-OP-078,PUVUPC,Private Electric Utility,"Regulated, rate exemption",Active,TRUE,Retail
-AK-OP-079,RAMP,Public Electric Utility,Not Regulated,Active,TRUE,Retail
-AK-OP-080,RUBY,Public Electric Utility,Not Regulated,Active,TRUE,Retail
-AK-OP-081,STEVVIC,Public Electric Utility,Not Regulated,Active,TRUE,Retail
-AK-OP-082,STGEORGE,Public Electric Utility,Not Regulated,Active,TRUE,Retail
-AK-OP-083,STPMEU,Public Electric Utility,Not Regulated,Active,TRUE,Retail
-AK-OP-084,TAKOC,Public Electric Utility,Not Regulated,Active,TRUE,Retail
-AK-OP-085,TANAEC,Public Electric Utility,Not Regulated,Active,TRUE,Retail
-AK-OP-086,TANAPC,Private Electric Utility,Regulated,Active,TRUE,Retail
-AK-OP-087,TATIVIC,Private Electric Utility,Not Regulated,Active,TRUE,Retail
-AK-OP-088,TDXA,Private Electric Utility,Regulated,Active,TRUE,Retail
-AK-OP-089,TDXC,Private Electric Utility,Regulated,Active,TRUE,Retail
-AK-OP-090,TDXM,Private Electric Utility,Regulated,Active,TRUE,Retail
-AK-OP-091,TELLPC,Private Electric Utility,Regulated,Inactive,FALSE,Retail
-AK-OP-092,TENAS,Public Electric Utility,Not Regulated,Active,TRUE,Retail
-AK-OP-093,TULUTPU,Private Electric Utility,"Regulated, rate exemption",Active,TRUE,Retail
-AK-OP-094,TUNTCSA,Electric Co-op,"Regulated, rate exemption",Active,TRUE,Retail
-AK-OP-095,TWINHVC,Private Electric Utility,Not Regulated,Active,TRUE,Retail
-AK-OP-096,UMNAP,Private Electric Utility,Not Regulated,Active,TRUE,Retail
-AK-OP-097,UNAL,Public Electric Utility,Not Regulated,Active,TRUE,Retail
-AK-OP-098,UNALVEC,Electric Co-op,Not Regulated,Active,TRUE,Retail
-AK-OP-099,UNGUPC,Private Electric Utility,Not Regulated,Active,TRUE,Retail
-AK-OP-100,VENEVE,Private Electric Utility,"Regulated, rate exemption",Active,TRUE,Retail
-AK-OP-101,WHITMU,Public Electric Utility,Not Regulated,Active,TRUE,Retail
-AK-OP-102,YAKUP,Public Electric Utility,Regulated,Inactive,FALSE,Retail
-AK-OP-103,NA,Private Electric Utility,Not Regulated,Active,FALSE,Retail
-AK-OP-104,NA,Private Electric Utility,Regulated,Active,FALSE,Retail
-AK-OP-105,NA,Private Electric Utility,Regulated,Active,FALSE,Retail
-AK-OP-106,NA,Electric Co-op,Regulated,Active,FALSE,Retail
-AK-OP-107,NA,Electric Co-op,Regulated,Active,FALSE,Retail
-AK-OP-108,NA,Private Electric Utility,N/A,N/A,FALSE,Retail
-AK-OP-109,NA,Public Electric Utility,Regulated,Inactive,FALSE,Retail
-AK-OP-110,NA,Public Electric Utility,Not Regulated,Active,FALSE,Retail
-AK-OP-111,NA,Public Electric Utility,Not Regulated,Active,FALSE,Retail
-AK-OP-112,NA,Subsidiary,Regulated,Active,FALSE,Wholesale
-AK-OP-113,NA,Independent Power Producer,Regulated,Active,FALSE,Wholesale
-AK-OP-114,NA,Independent Power Producer,Regulated,Active,FALSE,Wholesale
-AK-OP-115,NA,Independent Power Producer,N/A,N/A,FALSE,Wholesale
-AK-OP-116,NA,Military,Not Regulated,Active,FALSE,Consumed by facility
-AK-OP-117,NA,Private Electric Utility,Regulated,Active,FALSE,Consumed by facility
-AK-OP-118,NA,Military,Not Regulated,Active,FALSE,Consumed by facility
-AK-OP-120,NA,Military,N/A,N/A,FALSE,Consumed by facility
-AK-OP-121,NA,Industrial,N/A,N/A,FALSE,Consumed by facility
-AK-OP-122,NA,Private Electric Utility,Regulated,Active,FALSE,Consumed by facility
-AK-OP-124,NA,State Government,N/A,N/A,FALSE,Wholesale
-AK-OP-125,NA,Industrial,N/A,N/A,FALSE,Consumed by facility
-AK-OP-126,NA,Industrial,N/A,N/A,FALSE,Consumed by facility
-AK-OP-127,NA,Industrial,Not Regulated,Active,FALSE,Consumed by facility
-AK-OP-128,NA,Industrial,N/A,N/A,FALSE,Consumed by facility
-AK-OP-129,NA,State Government,N/A,N/A,FALSE,Wholesale
-AK-OP-130,NA,Public Electric Utility,Not Regulated,Active,FALSE,Retail
-AK-OP-131,NA,Public Electric Utility,Not Regulated,Active,FALSE,Retail
-AK-OP-132,NA,Electric Co-op,Regulated,Active,FALSE,Retail
-AK-OP-133,NA,Private Electric Utility,Regulated,Active,FALSE,Retail
-AK-OP-134,NA,Electric Co-op,Not Regulated,Active,FALSE,Retail
-AK-OP-135,NA,Public Electric Utility,Not Regulated,Active,FALSE,Retail
-AK-OP-137,NA,Public Electric Utility,Not Regulated,Active,FALSE,Retail
-AK-OP-138,KINGCC,Public Electric Utility,Not Regulated,Inactive,FALSE,Retail
-AK-OP-139,GOLDCE,Private Electric Utility,Regulated,Active,TRUE,Retail
-AK-OP-140,NA,Private Electric Utility,Regulated,Active,FALSE,Wholesale
-AK-OP-141,NA,State Government,Not Regulated,Active,FALSE,Wholesale
-AK-OP-142,NA,State Government,Not Regulated,Active,FALSE,Wholesale
-AK-OP-143,NA,Independent Power Producer,Regulated,Active,FALSE,Wholesale
-AK-OP-144,NA,Subsidiary,Regulated,Active,FALSE,Wholesale
-AK-OP-145,NA,Private Electric Utility,Not Regulated,Active,FALSE,Consumed by facility
-AK-OP-146,NA,Subsidiary,Regulated,Active,FALSE,Wholesale
-AK-OP-147,NA,NA,N/A,N/A,FALSE,NA
-AK-OP-148,NA,Public Electric Utility,Not Regulated,Active,FALSE,Retail
-AK-OP-149,NA,Private Electric Utility,Regulated,Active,FALSE,Retail
-AK-OP-150,NA,NA,N/A,N/A,FALSE,Consumed by facility
-AK-OP-151,NA,Independent Power Producer,N/A,N/A,FALSE,Wholesale
-AK-OP-152,NA,Independent Power Producer,N/A,N/A,FALSE,Wholesale
-AK-OP-154,NA,Industrial,N/A,Active,FALSE,Consumed by facility
-AK-OP-155,NA,Private Electric Utility,Regulated,Active,FALSE,Wholesale
-AK-OP-156,NA,Private Electric Utility,Not Regulated,Revoked,FALSE,Retail
-AK-OP-157,NA,Private Electric Utility,Not Regulated,Active,FALSE,Retail
-AK-OP-158,NA,Private Electric Utility,Not Regulated,Active,FALSE,Retail
-AK-OP-159,NA,Independent Power Producer,Regulated,N/A,FALSE,Wholesale
-AK-OP-160,NA,Subsidiary,N/A,N/A,FALSE,Wholesale
-AK-OP-161,NA,Industrial,N/A,N/A,FALSE,Consumed by facility
-AK-OP-162,NA,Industrial,N/A,N/A,FALSE,Consumed by facility
-AK-OP-163,NA,Industrial,N/A,N/A,FALSE,Consumed by facility
-AK-OP-164,NA,Industrial,N/A,N/A,FALSE,Consumed by facility
-AK-OP-165,NA,Industrial,N/A,N/A,FALSE,Consumed by facility
-AK-OP-166,NA,Industrial,N/A,N/A,FALSE,Consumed by facility
-AK-OP-168,NA,Industrial,N/A,N/A,FALSE,Consumed by facility
-AK-OP-169,NA,Industrial,N/A,N/A,FALSE,Consumed by facility
-AK-OP-171,NA,Private Electric Utility,Regulated,Inactive,FALSE,Consumed by facility
-AK-OP-172,NA,Public Electric Utility,N/A,N/A,FALSE,Retail
-AK-OP-173,NA,NA,NA,N/A,FALSE,NA
-AK-OP-174,NA,Military,N/A,N/A,FALSE,Consumed by facility
-AK-OP-175,NA,Independent Power Producer,Regulated,Active,FALSE,Wholesale
-AK-OP-176,NA,NA,N/A,N/A,FALSE,NA
-AK-OP-177,NA,Independent Power Producer,N/A,N/A,FALSE,Wholesale
-AK-OP-178,NA,Independent Power Producer,N/A,N/A,FALSE,Wholesale
-AK-OP-179,NA,Independent Power Producer,N/A,N/A,FALSE,Wholesale
-AK-OP-180,NA,Independent Power Producer,N/A,N/A,FALSE,NA
-AK-OP-181,NA,Subsidiary,Regulated,Active,FALSE,Wholesale
-AK-OP-182,NA,Independent Power Producer,N/A,Active,FALSE,NA
-AK-OP-183,NA,Independent Power Producer,N/A,N/A,FALSE,NA
-AK-OP-184,NA,Independent Power Producer,N/A,N/A,FALSE,Wholesale
-AK-OP-185,NA,Independent Power Producer,NA,N/A,FALSE,NA
-AK-OP-186,NA,Private Electric Utility,NA,NA,NA,NA
+ak_operator_id,pce_utility_code,operator_utility_type_name,rca_regulatory_status_name,operator_utility_certificate,operator_cpcn_status,pce_eligible,power_generation_end_use
+AK-OP-001,AKHI,Public Electric Utility,Not Regulated,TRUE,Active,TRUE,Retail
+AK-OP-002,AKIA,Public Electric Utility,Not Regulated,TRUE,Active,TRUE,Retail
+AK-OP-003,AKIANCE,Private Electric Utility,Not Regulated,TRUE,Active,TRUE,Retail
+AK-OP-004,AKUT,Public Electric Utility,Not Regulated,TRUE,Active,TRUE,Retail
+AK-OP-005,ALASPCA,Private Electric Utility,Regulated,TRUE,Active,TRUE,Retail
+AK-OP-006,ALASVEC,Electric Co-op,Not Regulated,TRUE,Active,TRUE,Retail
+AK-OP-007,ALUTPC,Private Electric Utility,"Regulated, rate exemption",TRUE,Active,TRUE,Retail
+AK-OP-008,ANDRE,Private Electric Utility,Not Regulated,TRUE,Inactive,FALSE,Retail
+AK-OP-009,ANIALPC,Private Electric Utility,Regulated,TRUE,Active,TRUE,Retail
+AK-OP-010,ARCTVC,Electric Co-op,Not Regulated,TRUE,Active,TRUE,Retail
+AK-OP-011,ATKA,Public Electric Utility,Not Regulated,TRUE,Active,TRUE,Retail
+AK-OP-012,ATMATU,Private Electric Utility,Not Regulated,TRUE,Active,TRUE,Retail
+AK-OP-013,BEAVJU,Private Electric Utility,Not Regulated,TRUE,Active,TRUE,Retail
+AK-OP-014,BETHUC,Private Electric Utility,Regulated,TRUE,Inactive,FALSE,Retail
+AK-OP-015,BIRCCEC,Public Electric Utility,Not Regulated,TRUE,Active,TRUE,Retail
+AK-OP-016,BUCK,Public Electric Utility,Not Regulated,TRUE,Active,TRUE,Retail
+AK-OP-018,CENTEI,Private Electric Utility,Regulated,TRUE,Inactive,FALSE,Retail
+AK-OP-019,CHALVC,Private Electric Utility,"Regulated, rate exemption",TRUE,Active,TRUE,Retail
+AK-OP-020,CHENVC,Private Electric Utility,"Regulated, rate exemption",TRUE,Active,TRUE,Retail
+AK-OP-021,CHIG,Private Electric Utility,Not Regulated,TRUE,Active,TRUE,Retail
+AK-OP-022,CHIGLEU,Private Electric Utility,Not Regulated,TRUE,Active,TRUE,Retail
+AK-OP-023,CHIGLPU,Private Electric Utility,"Regulated, rate exemption",TRUE,Active,TRUE,Retail
+AK-OP-024,CHITE,Private Electric Utility,Not Regulated,TRUE,Active,TRUE,Retail
+AK-OP-025,CIRCE,Private Electric Utility,Not Regulated,TRUE,Active,TRUE,Retail
+AK-OP-026,CLARPVC,Public Electric Utility,Not Regulated,TRUE,Active,TRUE,Retail
+AK-OP-027,CORDEC,Electric Co-op,Not Regulated,TRUE,Active,TRUE,Retail
+AK-OP-028,DIOMJU,Public Electric Utility,Not Regulated,TRUE,Active,TRUE,Retail
+AK-OP-029,EGEG,Public Electric Utility,Not Regulated,TRUE,Active,TRUE,Retail
+AK-OP-030,EKWO,Private Electric Utility,Not Regulated,TRUE,Inactive,FALSE,Retail
+AK-OP-031,ELFICEU,Electric Co-op,Not Regulated,TRUE,Active,TRUE,Retail
+AK-OP-032,FALSPE,Public Electric Utility,Not Regulated,TRUE,Active,TRUE,Retail
+AK-OP-033,GALE,Public Electric Utility,Not Regulated,TRUE,Active,TRUE,Retail
+AK-OP-034,GK,Private Electric Utility,Regulated,TRUE,Active,TRUE,Retail
+AK-OP-035,GOLOPU,Public Electric Utility,Not Regulated,TRUE,Active,TRUE,Retail
+AK-OP-036,GUSTE,Private Electric Utility,Regulated,TRUE,Inactive,FALSE,Retail
+AK-OP-037,GWITZU,Private Electric Utility,Regulated,TRUE,Active,TRUE,Retail
+AK-OP-038,HUGHPL,Public Electric Utility,Not Regulated,TRUE,Active,TRUE,Retail
+AK-OP-039,IGIUEC,Private Electric Utility,"Regulated, rate exemption",TRUE,Active,TRUE,Retail
+AK-OP-040,ILIANNE,Electric Co-op,Not Regulated,TRUE,Active,TRUE,Retail
+AK-OP-041,INSIPEC,Electric Co-op,Not Regulated,TRUE,Active,TRUE,Retail
+AK-OP-042,IPNAEC,Private Electric Utility,Not Regulated,TRUE,Active,TRUE,Retail
+AK-OP-043,KINGC,Public Electric Utility,Not Regulated,TRUE,Active,TRUE,Retail
+AK-OP-044,KIPNLP,Private Electric Utility,Not Regulated,TRUE,Active,TRUE,Retail
+AK-OP-045,KOBUVEC,Electric Co-op,Not Regulated,TRUE,Inactive,FALSE,Retail
+AK-OP-046,KOKHVC,Public Electric Utility,"Regulated, rate exemption",TRUE,Active,TRUE,Retail
+AK-OP-047,KOTLES,Public Electric Utility,Not Regulated,TRUE,Inactive,FALSE,Retail
+AK-OP-048,KOTZEA,Public Electric Utility,Not Regulated,TRUE,Active,TRUE,Retail
+AK-OP-049,KOYU,Public Electric Utility,Not Regulated,TRUE,Active,TRUE,Retail
+AK-OP-050,KWET,Public Electric Utility,Not Regulated,TRUE,Active,TRUE,Retail
+AK-OP-051,KWIGPC,Public Electric Utility,Not Regulated,TRUE,Active,TRUE,Retail
+AK-OP-052,LARSBUC,Public Electric Utility,Not Regulated,TRUE,Active,TRUE,Retail
+AK-OP-053,LEVEEC,Public Electric Utility,Not Regulated,TRUE,Active,TRUE,Retail
+AK-OP-054,LIMEVTC,Public Electric Utility,Not Regulated,TRUE,Active,TRUE,Retail
+AK-OP-055,MANLU,Private Electric Utility,Regulated,TRUE,Inactive,FALSE,Retail
+AK-OP-056,MANOPC,Private Electric Utility,Not Regulated,TRUE,Active,TRUE,Retail
+AK-OP-057,MCGRLP,Private Electric Utility,Regulated,TRUE,Active,TRUE,Retail
+AK-OP-058,MIDDKEC,Electric Co-op,Regulated,TRUE,Active,TRUE,Retail
+AK-OP-059,NAKNEA,Electric Co-op,Not Regulated,TRUE,Active,TRUE,Retail
+AK-OP-060,NAPAC,Private Electric Utility,Not Regulated,TRUE,Active,TRUE,Retail
+AK-OP-061,NAPAEU,Public Electric Utility,Not Regulated,TRUE,Active,TRUE,Retail
+AK-OP-062,NATELP,Private Electric Utility,Not Regulated,TRUE,Active,TRUE,Retail
+AK-OP-063,NELSLEC,Electric Co-op,Not Regulated,TRUE,Active,TRUE,Retail
+AK-OP-064,NEWKVC,Private Electric Utility,"Regulated, rate exemption",TRUE,Active,TRUE,Retail
+AK-OP-065,NIKO,Public Electric Utility,Not Regulated,TRUE,Active,TRUE,Retail
+AK-OP-066,NOMEJUS,Private Electric Utility,Not Regulated,TRUE,Active,TRUE,Retail
+AK-OP-067,NORTSB,Public Electric Utility,Not Regulated,TRUE,Active,TRUE,Retail
+AK-OP-068,NUNAIEC,Public Electric Utility,Not Regulated,TRUE,Active,TRUE,Retail
+AK-OP-069,NUSHEC,Electric Co-op,Not Regulated,TRUE,Active,TRUE,Retail
+AK-OP-070,OUZI,Public Electric Utility,Not Regulated,TRUE,Active,TRUE,Retail
+AK-OP-071,PEDRBV,Private Electric Utility,"Regulated, rate exemption",TRUE,Active,TRUE,Retail
+AK-OP-072,PELIU,Public Electric Utility,Not Regulated,TRUE,Active,TRUE,Retail
+AK-OP-073,PERR,Public Electric Utility,"Regulated, rate exemption",TRUE,Active,TRUE,Retail
+AK-OP-074,PILOPEU,Public Electric Utility,Not Regulated,TRUE,Active,TRUE,Retail
+AK-OP-075,PLAT,Public Electric Utility,N/A,FALSE,Inactive,FALSE,Retail
+AK-OP-076,PLATCC,Private Electric Utility,Regulated,TRUE,Active,TRUE,Retail
+AK-OP-077,PORTHU,Public Electric Utility,Not Regulated,TRUE,Active,TRUE,Retail
+AK-OP-078,PUVUPC,Private Electric Utility,"Regulated, rate exemption",TRUE,Active,TRUE,Retail
+AK-OP-079,RAMP,Public Electric Utility,Not Regulated,TRUE,Active,TRUE,Retail
+AK-OP-080,RUBY,Public Electric Utility,Not Regulated,TRUE,Active,TRUE,Retail
+AK-OP-081,STEVVIC,Public Electric Utility,Not Regulated,TRUE,Active,TRUE,Retail
+AK-OP-082,STGEORGE,Public Electric Utility,Not Regulated,TRUE,Active,TRUE,Retail
+AK-OP-083,STPMEU,Public Electric Utility,Not Regulated,TRUE,Active,TRUE,Retail
+AK-OP-084,TAKOC,Public Electric Utility,Not Regulated,TRUE,Active,TRUE,Retail
+AK-OP-085,TANAEC,Public Electric Utility,Not Regulated,TRUE,Active,TRUE,Retail
+AK-OP-086,TANAPC,Private Electric Utility,Regulated,TRUE,Active,TRUE,Retail
+AK-OP-087,TATIVIC,Private Electric Utility,Not Regulated,TRUE,Active,TRUE,Retail
+AK-OP-088,TDXA,Private Electric Utility,Regulated,TRUE,Active,TRUE,Retail
+AK-OP-089,TDXC,Private Electric Utility,Regulated,TRUE,Active,TRUE,Retail
+AK-OP-090,TDXM,Private Electric Utility,Regulated,TRUE,Active,TRUE,Retail
+AK-OP-091,TELLPC,Private Electric Utility,Regulated,TRUE,Inactive,FALSE,Retail
+AK-OP-092,TENAS,Public Electric Utility,Not Regulated,TRUE,Active,TRUE,Retail
+AK-OP-093,TULUTPU,Private Electric Utility,"Regulated, rate exemption",TRUE,Active,TRUE,Retail
+AK-OP-094,TUNTCSA,Electric Co-op,"Regulated, rate exemption",TRUE,Active,TRUE,Retail
+AK-OP-095,TWINHVC,Private Electric Utility,Not Regulated,TRUE,Active,TRUE,Retail
+AK-OP-096,UMNAP,Private Electric Utility,Not Regulated,TRUE,Active,TRUE,Retail
+AK-OP-097,UNAL,Public Electric Utility,Not Regulated,TRUE,Active,TRUE,Retail
+AK-OP-098,UNALVEC,Electric Co-op,Not Regulated,TRUE,Active,TRUE,Retail
+AK-OP-099,UNGUPC,Private Electric Utility,Not Regulated,TRUE,Active,TRUE,Retail
+AK-OP-100,VENEVE,Private Electric Utility,"Regulated, rate exemption",TRUE,Active,TRUE,Retail
+AK-OP-101,WHITMU,Public Electric Utility,Not Regulated,TRUE,Active,TRUE,Retail
+AK-OP-102,YAKUP,Public Electric Utility,Regulated,TRUE,Inactive,FALSE,Retail
+AK-OP-103,NA,Private Electric Utility,Not Regulated,TRUE,Active,FALSE,Retail
+AK-OP-104,NA,Private Electric Utility,Regulated,TRUE,Active,FALSE,Retail
+AK-OP-105,NA,Private Electric Utility,Regulated,TRUE,Active,FALSE,Retail
+AK-OP-106,NA,Electric Co-op,Regulated,TRUE,Active,FALSE,Retail
+AK-OP-107,NA,Electric Co-op,Regulated,TRUE,Active,FALSE,Retail
+AK-OP-108,NA,Private Electric Utility,N/A,FALSE,N/A,FALSE,Retail
+AK-OP-109,NA,Public Electric Utility,Regulated,TRUE,Inactive,FALSE,Retail
+AK-OP-110,NA,Public Electric Utility,Not Regulated,TRUE,Active,FALSE,Retail
+AK-OP-111,NA,Public Electric Utility,Not Regulated,TRUE,Active,FALSE,Retail
+AK-OP-112,NA,Subsidiary,Regulated,TRUE,Active,FALSE,Wholesale
+AK-OP-113,NA,Independent Power Producer,Regulated,TRUE,Active,FALSE,Wholesale
+AK-OP-114,NA,Independent Power Producer,Regulated,TRUE,Active,FALSE,Wholesale
+AK-OP-115,NA,Independent Power Producer,N/A,FALSE,N/A,FALSE,Wholesale
+AK-OP-116,NA,Military,Not Regulated,TRUE,Active,FALSE,Consumed by facility
+AK-OP-117,NA,Private Electric Utility,Regulated,TRUE,Active,FALSE,Consumed by facility
+AK-OP-118,NA,Military,Not Regulated,TRUE,Active,FALSE,Consumed by facility
+AK-OP-120,NA,Military,N/A,FALSE,N/A,FALSE,Consumed by facility
+AK-OP-121,NA,Industrial,N/A,FALSE,N/A,FALSE,Consumed by facility
+AK-OP-122,NA,Private Electric Utility,Regulated,FALSE,Active,FALSE,Consumed by facility
+AK-OP-124,NA,State Government,N/A,FALSE,N/A,FALSE,Wholesale
+AK-OP-125,NA,Industrial,N/A,FALSE,N/A,FALSE,Consumed by facility
+AK-OP-126,NA,Industrial,N/A,FALSE,N/A,FALSE,Consumed by facility
+AK-OP-127,NA,Industrial,Not Regulated,TRUE,Active,FALSE,Consumed by facility
+AK-OP-128,NA,Industrial,N/A,FALSE,N/A,FALSE,Consumed by facility
+AK-OP-129,NA,State Government,N/A,FALSE,N/A,FALSE,Wholesale
+AK-OP-130,NA,Public Electric Utility,Not Regulated,TRUE,Active,FALSE,Retail
+AK-OP-131,NA,Public Electric Utility,Not Regulated,TRUE,Active,FALSE,Retail
+AK-OP-132,NA,Electric Co-op,Regulated,TRUE,Active,FALSE,Retail
+AK-OP-133,NA,Private Electric Utility,Regulated,TRUE,Active,FALSE,Retail
+AK-OP-134,NA,Electric Co-op,Not Regulated,TRUE,Active,FALSE,Retail
+AK-OP-135,NA,Public Electric Utility,Not Regulated,TRUE,Active,FALSE,Retail
+AK-OP-137,NA,Public Electric Utility,Not Regulated,TRUE,Active,FALSE,Retail
+AK-OP-138,KINGCC,Public Electric Utility,Not Regulated,TRUE,Inactive,FALSE,Retail
+AK-OP-139,GOLDCE,Private Electric Utility,Regulated,TRUE,Active,TRUE,Retail
+AK-OP-140,NA,Private Electric Utility,Regulated,TRUE,Active,FALSE,Wholesale
+AK-OP-141,NA,State Government,Not Regulated,TRUE,Active,FALSE,Wholesale
+AK-OP-142,NA,State Government,Not Regulated,TRUE,Active,FALSE,Wholesale
+AK-OP-143,NA,Independent Power Producer,Regulated,TRUE,Active,FALSE,Wholesale
+AK-OP-144,NA,Subsidiary,Regulated,TRUE,Active,FALSE,Wholesale
+AK-OP-145,NA,Private Electric Utility,Not Regulated,TRUE,Active,FALSE,Consumed by facility
+AK-OP-146,NA,Subsidiary,Regulated,TRUE,Active,FALSE,Wholesale
+AK-OP-147,NA,NA,N/A,FALSE,N/A,FALSE,NA
+AK-OP-148,NA,Public Electric Utility,Not Regulated,TRUE,Active,FALSE,Retail
+AK-OP-149,NA,Private Electric Utility,Regulated,TRUE,Active,FALSE,Retail
+AK-OP-150,NA,NA,N/A,FALSE,N/A,FALSE,Consumed by facility
+AK-OP-151,NA,Independent Power Producer,N/A,FALSE,N/A,FALSE,Wholesale
+AK-OP-152,NA,Independent Power Producer,N/A,FALSE,N/A,FALSE,Wholesale
+AK-OP-154,NA,Industrial,N/A,FALSE,Active,FALSE,Consumed by facility
+AK-OP-155,NA,Private Electric Utility,Regulated,TRUE,Active,FALSE,Wholesale
+AK-OP-156,NA,Private Electric Utility,Not Regulated,TRUE,Revoked,FALSE,Retail
+AK-OP-157,NA,Private Electric Utility,Not Regulated,TRUE,Active,FALSE,Retail
+AK-OP-158,NA,Private Electric Utility,Not Regulated,TRUE,Active,FALSE,Retail
+AK-OP-159,NA,Independent Power Producer,Regulated,TRUE,N/A,FALSE,Wholesale
+AK-OP-160,NA,Subsidiary,N/A,FALSE,N/A,FALSE,Wholesale
+AK-OP-161,NA,Industrial,N/A,FALSE,N/A,FALSE,Consumed by facility
+AK-OP-162,NA,Industrial,N/A,FALSE,N/A,FALSE,Consumed by facility
+AK-OP-163,NA,Industrial,N/A,FALSE,N/A,FALSE,Consumed by facility
+AK-OP-164,NA,Industrial,N/A,FALSE,N/A,FALSE,Consumed by facility
+AK-OP-165,NA,Industrial,N/A,FALSE,N/A,FALSE,Consumed by facility
+AK-OP-166,NA,Industrial,N/A,FALSE,N/A,FALSE,Consumed by facility
+AK-OP-168,NA,Industrial,N/A,FALSE,N/A,FALSE,Consumed by facility
+AK-OP-169,NA,Industrial,N/A,FALSE,N/A,FALSE,Consumed by facility
+AK-OP-171,NA,Private Electric Utility,Regulated,TRUE,Inactive,FALSE,Consumed by facility
+AK-OP-172,NA,Public Electric Utility,N/A,FALSE,N/A,FALSE,Retail
+AK-OP-173,NA,NA,NA,NA,N/A,FALSE,NA
+AK-OP-174,NA,Military,N/A,FALSE,N/A,FALSE,Consumed by facility
+AK-OP-175,NA,Independent Power Producer,Regulated,NA,Active,FALSE,Wholesale
+AK-OP-176,NA,NA,N/A,NA,N/A,FALSE,NA
+AK-OP-177,NA,Independent Power Producer,N/A,NA,N/A,FALSE,Wholesale
+AK-OP-178,NA,Independent Power Producer,N/A,NA,N/A,FALSE,Wholesale
+AK-OP-179,NA,Independent Power Producer,N/A,NA,N/A,FALSE,Wholesale
+AK-OP-180,NA,Independent Power Producer,N/A,NA,N/A,FALSE,NA
+AK-OP-181,NA,Subsidiary,Regulated,NA,Active,FALSE,Wholesale
+AK-OP-182,NA,Independent Power Producer,N/A,NA,Active,FALSE,NA
+AK-OP-183,NA,Independent Power Producer,N/A,NA,N/A,FALSE,NA
+AK-OP-184,NA,Independent Power Producer,N/A,NA,N/A,FALSE,Wholesale
+AK-OP-185,NA,Independent Power Producer,NA,NA,N/A,FALSE,NA
+AK-OP-186,NA,Private Electric Utility,NA,NA,NA,NA,NA

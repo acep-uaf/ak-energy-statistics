@@ -21,7 +21,7 @@ l3_impute_columns <- function(path_in, path_overrides, path_out) {
       column,
       decision,
       decided_value,
-      cleaned_during_energy_stats,
+      cleaned_during_energy_statistics,
       comment
     )
 
@@ -29,21 +29,30 @@ l3_impute_columns <- function(path_in, path_overrides, path_out) {
     as.data.frame()
 
   flagged_ids <- overrides %>% 
-    filter(cleaned_during_energy_stats == TRUE) %>% 
+    filter(cleaned_during_energy_statistics == TRUE) %>% 
     pull(identifier)
 
-  df$cleaned_during_energy_stats <- df$identifier %in% flagged_ids
+  df$cleaned_during_energy_statistics <- df$identifier %in% flagged_ids
 
   row_coords <- match(overrides$identifier, df$identifier)
   col_coords <- match(overrides$column, names(df))
 
   valid_id <- which(!is.na(row_coords) & !is.na(col_coords) & !is.na(overrides$decided_value))
 
+  imputed_matrix <- matrix(FALSE, nrow = nrow(df), ncol = ncol(df), dimnames = list(NULL, names(df)))
+
   for (i in valid_id) {
     df[row_coords[i], col_coords[i]] <- overrides$decided_value[i]
+    imputed_matrix[row_coords[i], col_coords[i]] <- TRUE
   }
 
-  df_out <- as_tibble(df)
+  imputed_cols <- names(which(colSums(imputed_matrix) > 0))
+
+
+  flags_df <- as_tibble(imputed_matrix[, imputed_cols, drop = FALSE]) %>%
+    rename_with(~ paste0("imputed_", .x))
+
+  df_out <- bind_cols(as_tibble(df), flags_df)
 
   dir_create(dirname(path_out))
   write_csv(df_out, path_out)

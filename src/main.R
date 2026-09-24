@@ -46,15 +46,26 @@ l1_clean_lookup_plants(
   path_out = "data/l1/lookup/l1_lookup_plants.csv"
 )
 
-l1_clean_lookup_operators(
+l1_clean_lookup_pce_utility_operators(
   dir_raw = "data/raw/lookup",
-  path_out = "data/l1/lookup/l1_lookup_operators.csv"
+  path_out = "data/l1/lookup/l1_lookup_pce_utility_operators.csv"
 )
 
 l1_clean_lookup_pce_floor(
   dir_raw = "data/raw/lookup",
   path_out = "data/l1/lookup/l1_lookup_pce_floor.csv"
 )
+
+l1_clean_lookup_interties(
+  dir_raw = "data/raw/lookup",
+  path_out = "data/l1/lookup/l1_lookup_interties.csv"
+)
+
+l1_clean_lookup_operators(
+  dir_raw = "data/raw/lookup",
+  path_out = "data/l1/lookup/l1_lookup_operators.csv"
+)
+
 
 l1_check_quality(
   path_in = 'data/l0/consolidated/l0_pce_header.csv',
@@ -74,6 +85,7 @@ l1_transform_pce(
   l1_consolidated_dir = "data/l1/consolidated",
   l1_lookup_sales_report_path = "data/l1/lookup/l1_lookup_sales_report.csv",
   l1_lookup_plants_path = "data/l1/lookup/l1_lookup_plants.csv",
+  l1_lookup_pce_utility_operators_path = "data/l1/lookup/l1_lookup_pce_utility_operators.csv",
   l1_lookup_operators_path = "data/l1/lookup/l1_lookup_operators.csv",
   l1_lookup_pce_floor_path = "data/l1/lookup/l1_lookup_pce_floor.csv",
   config = "config/schema/l1_pce_schema.yml"
@@ -121,3 +133,5 @@ l3_clean_historical(
   sheet = 'PCE 2001-20',
   path_out = 'data/l3/consolidated/l3_pce_historical_2001-2020.csv'
 )
+
+

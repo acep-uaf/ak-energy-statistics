@@ -18,7 +18,13 @@ l3_clean_historical <- function(path_in, sheet, path_out) {
       pce_operator_acronym = 'PCE_operator_acronym',
       aea_operator_id = 'AEA Operator ID',
       total_sales = 'Total Sales'
-    )
+    ) %>%
+    select(-c(
+      'purchased_power_type', 
+      'purchased_power_price_per_kwh', 
+      'sales_for_resale_kwh_sold',
+      'imputed_sales_for_resale_kwh_sold'
+    ))
 
   dir_create(dirname(path_out))
   write_csv(df_out, path_out)

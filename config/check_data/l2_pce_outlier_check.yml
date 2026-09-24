@@ -3,11 +3,11 @@ settings:
 
 columns_to_check:
   - residential_rate
-  # - pce_rate          # we don't have a column by this name, investigate
-  # - pce_eligible_residential_kwh
-  # - pce_eligible_community_kwh
-  # - disbursement      # we don't have a column by this name, investigate
-  - most_recent_fuel_purch_price # check name, called fuel_price by others
+  - pce_rate 
+  - pce_eligible_residential_kwh
+  - pce_eligible_community_kwh
+  - amount
+  - most_recent_fuel_purch_price 
   - fuel_used_gallons
   - diesel_efficiency
   - diesel_kwh_generated
@@ -15,7 +15,7 @@ columns_to_check:
   - natural_gas_kwh_generated
   - wind_kwh_generated
   - solar_kwh_generated
-  - total_kwh_purchased   # check name, called kwh_purchased by others
+  - total_kwh_purchased
   - powerhouse_consumption_kwh
   - peak_consumption_kw
   - residential_sold_to
@@ -28,3 +28,8 @@ columns_to_check:
   - com_facil_customers
   - govt_facil_customers
   - unbilled_customers
+  - other_customers
+  - fuel_price
+  - pro_rata_rate
+  - fuel_cost
+  - diesel_efficiency

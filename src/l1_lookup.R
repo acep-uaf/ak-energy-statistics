@@ -395,6 +395,16 @@ l1_clean_lookup_operators <- function(
 
   message(paste("Processing raw operators lookup file:", path_in))
 
+  # hackish hardcoded workaround to get utility certificate boolean from historical data
+  utility_certificate <- read_xlsx('data/raw/historical_workbooks/PCE 2001-2020 Q1 v2.xlsx', sheet = 'LOOKUP OPERATOR 08052020') %>%
+    select(
+      ak_operator_id = `AEA_operator Id`,
+      operator_utility_certificate
+    ) %>%
+    mutate(ak_operator_id = str_replace_all(ak_operator_id, 'AEA', 'AK-OP')) %>%
+    group_by(ak_operator_id) %>%
+    slice(1)
+
   df <- read_csv(path_in, show_col_types = FALSE) %>%
     rename(
       ak_operator_id = `AK_operator Id`,
@@ -403,6 +413,7 @@ l1_clean_lookup_operators <- function(
       rca_regulatory_status_name = `operator_rca_regulatory_status_name`,
       power_generation_end_use = `Power Generation End Use`
     ) %>%
+    left_join(utility_certificate, by = join_by(ak_operator_id)) %>%
     group_by(ak_operator_id) %>%
     arrange(pce_utility_code) %>%
     slice(1) %>%
@@ -411,6 +422,7 @@ l1_clean_lookup_operators <- function(
       pce_utility_code,
       operator_utility_type_name,
       rca_regulatory_status_name,
+      operator_utility_certificate,
       operator_cpcn_status,
       pce_eligible,
       power_generation_end_use
