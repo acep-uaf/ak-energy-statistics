@@ -51,22 +51,22 @@ l3_align_current_pce <- function(
 
   df_out <- joined_lookups %>%
     add_missing_cols(
-      notes = NA_character_,
-      pce_community_intertied_to_another_pce_community = NA_character_,
+      notes = "",
+      pce_community_intertied_to_another_pce_community = "",
 
-      imputed_residential_rate = NA_character_,
-      imputed_pce_rate = NA_character_,
-      imputed_pro_rata_rate = NA_character_,
-      imputed_effective_rate = NA_character_,
-      imputed_fuel_price = NA_character_,
-      imputed_fuel_cost = NA_character_,
-      imputed_nonfuel_expenses = NA_character_,
-      imputed_diesel_efficiency = NA_character_,
-      imputed_other_customers = NA_character_,
-      other_2_kwh_generated_imputed = NA_character_,
-      purchased_from_imputed = NA_character_,
-      total_kwh_purchased_imputed = NA_character_,
-      pce_eligible_community_kwh_imputed = NA_character_
+      imputed_residential_rate = "",
+      imputed_pce_rate = "",
+      imputed_pro_rata_rate = "",
+      imputed_effective_rate = "",
+      imputed_fuel_price = "",
+      imputed_fuel_cost = "",
+      imputed_nonfuel_expenses = "",
+      imputed_diesel_efficiency = "",
+      imputed_other_customers = "",
+      other_2_kwh_generated_imputed = "",
+      purchased_from_imputed = "",
+      total_kwh_purchased_imputed = "",
+      pce_eligible_community_kwh_imputed = ""
       
 
     ) %>%
@@ -167,11 +167,10 @@ l3_align_current_pce <- function(
   test <- rbind(df_out, df_historical)
 
   dir_create(dirname(path_out))
-  write_csv(df_out, path_out)
+  write_csv(df_out, path_out, na = "")
   
   message(paste("Historically-aligned PCE data written as CSV to:", path_out))
 
-  # return(df_out)
 }
 
 
