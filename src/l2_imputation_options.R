@@ -48,8 +48,7 @@ l2_generate_imputation_options <- function(
   # 1. CREATE CLEAN DATASET FOR IMPUTATION CALCULATIONS
   # -------------------------------------------------------------------------
   
-  # Build flagged lookup keys using project_code + date + column to avoid 
-  # missing identifier column issues in pce_long
+  # Build flagged lookup keys using project_code + date + column
   flagged_cells <- combined_outliers_and_quality_violations_log %>%
     select(project_code, date, column = all_of(col_name_in_log)) %>%
     distinct() %>%
@@ -81,13 +80,29 @@ l2_generate_imputation_options <- function(
     group_by(project_code, column, month_num, year_num) %>%
     summarise(month_year_val = mean(val, na.rm = TRUE), .groups = "drop")
 
+  # Clean lookup table for next_month_val
+  clean_lookup <- pce_long_clean %>% 
+    select(project_code, date, column, val)
+
   # -------------------------------------------------------------------------
   # 3. BUILD IMPUTATION OPTIONS FOR REVIEW LOG
   # -------------------------------------------------------------------------
   
-  # Clean lookup table for carry_forward and next_month_val
-  clean_lookup <- pce_long_clean %>% 
-    select(project_code, date, column, val)
+  # Compute Last Observation Carried Forward (LOCF) across consecutive outlier gaps
+  pce_long_filled <- pce_long %>%
+    # Tag flagged outlier rows
+    mutate(
+      is_outlier = paste(project_code, date, column) %in% 
+                   paste(flagged_cells$project_code, flagged_cells$date, flagged_cells$column),
+      clean_val = if_else(is_outlier, NA_real_, val)
+    ) %>%
+    arrange(project_code, column, date) %>%
+    group_by(project_code, column) %>%
+    # Carry forward the last non-outlier value across gaps
+    fill(clean_val, .direction = "down") %>%
+    ungroup() %>%
+    select(project_code, date, column, carry_forward = clean_val) %>%
+    distinct(project_code, date, column, .keep_all = TRUE)
 
   df_out <- combined_outliers_and_quality_violations_log %>%
     mutate(
@@ -97,12 +112,11 @@ l2_generate_imputation_options <- function(
       year_num   = year(date)
     ) %>%
 
-    # Last Observation Carried Forward
+    # Join the robust carry_forward values directly by date
     left_join(
-      clean_lookup,
-      by = c("project_code", "prev_month" = "date", "column")
+      pce_long_filled,
+      by = c("project_code", "date", "column")
     ) %>%
-    rename(carry_forward = val) %>%
 
     # Next Month Value
     left_join(

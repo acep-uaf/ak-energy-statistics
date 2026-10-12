@@ -16,3 +16,6 @@ site/data
 
 /.quarto/
 **/*.quarto_ipynb
+
+# block scratch script
+src/scratch.R
