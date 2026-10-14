@@ -109,7 +109,7 @@ intertie_id,Intertie Unique ID Name,Current ID,Communities Intertied,Month of in
 153-0000,Napaskiak_grid,TRUE,Napaskiak,NA,NA,Lower Yukon-Kuskokwim,NA
 211-0000,Naukati_Bay_grid,FALSE,Naukati Bay,NA,NA,Southeast,NA
 156-0000,Nelson Lagoon_grid,TRUE,Nelson Lagoon,NA,NA,Aleutians,NA
-065-0000,New Stuyahok_grid,FALSE,New Stuyahok,NA,NA,Bristol Bay,NA
+065-0000,New_Stuyahok_grid,FALSE,New Stuyahok,NA,NA,Bristol Bay,NA
 065-2016,New_Stuyahok_grid,TRUE,New Stuyahok; Ekwok,NA,2016,Bristol Bay,NA
 123-1983,Newhalen_grid,TRUE,"Iliamna, Newhalen, Nondalton",NA,1983,Bristol Bay,https://www.innelectric.com/our-history.html
 196-0000,Newtok_grid,TRUE,Newtok,NA,NA,Lower Yukon-Kuskokwim,NA
