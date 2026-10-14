@@ -317,7 +317,7 @@ ul.task-list li input[type="checkbox"] {
 <tbody>
 <tr class="odd">
 <td><code>l3_pce.csv</code></td>
-<td>9.07M</td>
+<td>9.09M</td>
 <td><a href="data/l3/consolidated/l3_pce.csv" download="l3_pce.csv">Download CSV</a></td>
 </tr>
 <tr class="even">
@@ -327,7 +327,7 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 <tr class="odd">
 <td><code>l3_pce_aligned.csv</code></td>
-<td>8.49M</td>
+<td>8.48M</td>
 <td><a href="data/l3/consolidated/l3_pce_aligned.csv" download="l3_pce_aligned.csv">Download CSV</a></td>
 </tr>
 </tbody>
@@ -357,7 +357,7 @@ ul.task-list li input[type="checkbox"] {
 <tbody>
 <tr class="odd">
 <td><code>l2_pce.csv</code></td>
-<td>8.63M</td>
+<td>8.62M</td>
 <td><a href="data/l2/consolidated/l2_pce.csv" download="l2_pce.csv">Download CSV</a></td>
 </tr>
 </tbody>
@@ -370,6 +370,8 @@ ul.task-list li input[type="checkbox"] {
 <p>Level 1 data is created by running basic data quality checks against the data and overwriting with NULL for values outside the boundaries. For instance, the column <code>most_recent_fuel_purch_price</code> requires values to be greater than $0.50 and less than $10.00. If a record contains a value of $0.20 or $50.00, the value is discarded. A list of records with out-of-bound values can be seen on <a href="./quality_and_outliers.html">Quality and Outliers</a></p>
 <section id="pce-2" class="level3">
 <h3 class="anchored" data-anchor-id="pce-2">PCE</h3>
+<pre><code>Warning in readLines(file, warn = readLines.warn): incomplete final line found
+on '../config/check_data/l1_pce_quality_check.yml'</code></pre>
 <p><strong>Data Quality Bounds</strong></p>
 <table class="caption-top table">
 <thead>
@@ -405,23 +407,19 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><code>commercial_sold_to</code></td>
-<td style="text-align: left;">≥ 0</td>
+<td style="text-align: left;">≥ 0 (No Zeros)</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><code>com_facil_sold_to</code></td>
-<td style="text-align: left;">≥ 0</td>
+<td style="text-align: left;">≥ 0 (No Zeros)</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><code>govt_facil_sold_to</code></td>
-<td style="text-align: left;">≥ 0</td>
+<td style="text-align: left;">≥ 0 (No Zeros)</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><code>unbilled_sold_to</code></td>
-<td style="text-align: left;">≥ 0</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><code>diesel_efficiency</code></td>
-<td style="text-align: left;">0.03 to 0.3 (No Zeros)</td>
+<td style="text-align: left;">≥ 0 (No Zeros)</td>
 </tr>
 </tbody>
 </table>
@@ -443,12 +441,12 @@ ul.task-list li input[type="checkbox"] {
 <tbody>
 <tr class="odd">
 <td><code>l1_pce.csv</code></td>
-<td>8.68M</td>
+<td>8.67M</td>
 <td><a href="data/l1/consolidated/l1_pce.csv" download="l1_pce.csv">Download CSV</a></td>
 </tr>
 <tr class="even">
 <td><code>l1_pce_rate_line.csv</code></td>
-<td>2.82M</td>
+<td>1.7M</td>
 <td><a href="data/l1/consolidated/l1_pce_rate_line.csv" download="l1_pce_rate_line.csv">Download CSV</a></td>
 </tr>
 <tr class="odd">
