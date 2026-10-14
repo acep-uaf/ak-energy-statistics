@@ -86,24 +86,24 @@ l0_pce_header:
       allow_zero: false
     commercial_sold_to:
       min: 0
-      allow_zero: true
+      allow_zero: false
     com_facil_sold_to:
       min: 0
-      allow_zero: true
+      allow_zero: false
     govt_facil_sold_to:
       min: 0
-      allow_zero: true
+      allow_zero: false
     unbilled_sold_to:
       min: 0
-      allow_zero: true
-
-    diesel_efficiency:
-      min: 0.03
-      max: 0.30
       allow_zero: false
-      target_columns:
-        - fuel_used_gallons
-        - diesel_kwh_generated
+
+    # diesel_efficiency:
+    #   min: 0.03
+    #   max: 0.30
+    #   allow_zero: false
+    #   target_columns:
+    #     - fuel_used_gallons
+    #     - diesel_kwh_generated
 
 
 
@@ -133,11 +133,8 @@ l0_pce_rate_line:
       - line_no
 
   bounds:
-    actual_rate:
-      min: 0
-    effective_residential_rate:
+    # actual_rate:
+    #   min: 0
+    residential_rate:
       min: 0.08
-      max: 2.50
-      allow_zero: false
-      target_columns:
-        - residential_rate
+      max: 5
