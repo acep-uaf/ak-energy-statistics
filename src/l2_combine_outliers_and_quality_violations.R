@@ -32,14 +32,12 @@ l2_combine_outliers_and_quality_violations <- function(
       column = target_column,
       raw_value = observed_value
     ) %>%
-    filter(
-      raw_value != 0
-    ) %>%
     arrange(sales_reporting_name) %>%
     mutate(source = 'quality_check')
   
   df_out <- rbind(l2_pce_outliers_log, combined_quality_logs) %>%
-    mutate(id = str_c(identifier, column, sep = "_"), .before = identifier)
+    mutate(id = str_c(identifier, column, sep = "_"), .before = identifier) %>%
+    arrange(sales_reporting_name, calendar_year, calendar_month)
 
 
   dir_create(dirname(path_out))

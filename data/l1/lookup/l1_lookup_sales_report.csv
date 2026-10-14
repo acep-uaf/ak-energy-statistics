@@ -37,8 +37,8 @@ NA,SR-194,Barrow Utilities & Electric Cooperative Inc.,221-0000,Utqiagvik_grid,2
 331860,SR-38,Chignik,104-0000,Chignik_grid,297,3421,Chignik
 331870,SR-39,Chignik Lagoon,102-0000,Chignik Lagoon_grid,658,NA,Chignik Lagoon
 331880,SR-40,Chignik Lake,103-0000,Chignik Lake_grid,437,NA,Chignik Lake
-332660,SR-41,Chilkat Valley,032-1998,Haines_grid,240,18963,Chilkat Valley
-332690,SR-213,Chilkat Valley/Klukwan,032-1998,Haines_grid,240,18963,Chilkat Valley/Klukwan
+332660,SR-41,Chilkat Valley,032-1998,UpperLynnCanal_grid,240,18963,Chilkat Valley
+332690,SR-213,Chilkat Valley/Klukwan,032-1998,UpperLynnCanal_grid,240,18963,Chilkat Valley/Klukwan
 331070,SR-42,Chistochina,026-2012,Slana_grid,2,219,Chistochina
 331890,SR-43,Chitina,105-0000,Chitina_grid,368,3465,Chitina
 332230,SR-44,Chuathbaluk,144-0000,Chuathbaluk_grid,343,12485,Chuathbaluk
@@ -72,7 +72,7 @@ NA,SR-4,Golden Valley Elec Assn Inc,215-1985,Railbelt_grid,13,7353,"In addition 
 331330,SR-68,Goodnews Bay,047-0000,Goodnews Bay_grid,169,221,Goodnews Bay
 331340,SR-69,Grayling,048-0000,Grayling_grid,169,221,Grayling
 332010,SR-70,Gustavus,118-0000,Gustavus_grid,2,219,Gustavus
-331120,SR-71,"Haines, Covenant Life",032-1998,Haines_grid,2,219,"Haines, Covenant Life"
+331120,SR-71,"Haines, Covenant Life",032-1998,UpperLynnCanal_grid,2,219,"Haines, Covenant Life"
 331130,SR-72,Healy Lake,011-0000,Healy Lake_grid,2,219,Healy Lake
 331140,SR-73,Hollis,023-2015,Prince of Wales Is._grid,2,219,Hollis
 331350,SR-74,Holy Cross,049-0000,Holy Cross_grid,169,221,Holy Cross
@@ -96,7 +96,7 @@ NA,SR-6,Ketchikan Public Utilities,217-2009,SEAPA_grid,103,10210,"Ketchikan, Sax
 332080,SR-90,Kipnuk,132-0000,Kipnuk_grid,446,NA,Kipnuk
 331410,SR-91,Kivalina,058-0000,Kivalina_grid,169,221,Kivalina
 331155,SR-92,Klawock,023-2015,Prince of Wales Is._grid,2,219,Klawock
-332700,SR-93,Klukwan,032-1998,Haines_grid,240,18963,Klukwan
+332700,SR-93,Klukwan,032-1998,UpperLynnCanal_grid,240,18963,Klukwan
 332090,SR-94,Kobuk,149-1980,Shungnak_grid,169,221,Kobuk
 NA,SR-7,Kodiak Electric Assn Inc,223-0000,Kodiak_grid,16,10433,"The KEA service area includes the communities of Port Lions, Chiniak, Womens Bay and Woody Island."
 332100,SR-95,Kokhanok,134-0000,Kokhanok_grid,660,10455,Kokhanok
@@ -175,7 +175,7 @@ NA,SR-199,"Seward, City of",215-1985,Railbelt_grid,108,16955,"The City of Seward
 331640,SR-162,Shishmaref,081-0000,Shishmaref_grid,169,221,Shishmaref
 331650,SR-163,Shungnak,149-1980,Shungnak_grid,169,221,Shungnak
 NA,SR-193,"Sitka, City & Borough of",219-0000,Sitka_grid,100,17271,Sitka
-331190,SR-164,Skagway,032-1998,Haines_grid,2,219,Skagway
+331190,SR-164,Skagway,032-1998,UpperLynnCanal_grid,2,219,Skagway
 331195,SR-165,Slana,026-2012,Slana_grid,2,219,Slana
 332260,SR-166,Sleetmute,147-0000,Sleetmute_grid,343,12485,Sleetmute
 NA,SR-212,Southeast Alaska Power Agency,217-2009,SEAPA_grid,0,60770,"Provides power to Ketchikan, Wrangell, Petersburg"
