@@ -278,8 +278,8 @@ A3312401122225003_most_recent_fuel_purch_price,A3312401122225003,331240,Alakanuk
 A3312401222225003_most_recent_fuel_purch_price,A3312401222225003,331240,Alakanuk,2022-06-01,2022,6,most_recent_fuel_purch_price,0,quality_check,3.083,3,3,4,NA,carry_forward,NA,TRUE
 A3312400123225003_most_recent_fuel_purch_price,A3312400123225003,331240,Alakanuk,2022-07-01,2022,7,most_recent_fuel_purch_price,0,quality_check,3.083,3,3,4,NA,carry_forward,NA,TRUE
 A3312400223225003_most_recent_fuel_purch_price,A3312400223225003,331240,Alakanuk,2022-08-01,2022,8,most_recent_fuel_purch_price,0,quality_check,3.083,3,3,4,NA,carry_forward,NA,TRUE
-A3312400923225003_pce_eligible_residential_kwh,A3312400923225003,331240,Alakanuk,2023-03-01,2023,3,pce_eligible_residential_kwh,0,outlier_check,73764,64161,71556,62118,NA,NA,NA,FALSE
-A3312400923225003_pce_eligible_community_kwh,A3312400923225003,331240,Alakanuk,2023-03-01,2023,3,pce_eligible_community_kwh,0,outlier_check,4817,4608,4768,5547,NA,NA,NA,FALSE
+A3312400923225003_pce_eligible_residential_kwh,A3312400923225003,331240,Alakanuk,2023-03-01,2023,3,pce_eligible_residential_kwh,0,outlier_check,73764,64161,71556,62118,NA,avg_preceding_proceeding,NA,TRUE
+A3312400923225003_pce_eligible_community_kwh,A3312400923225003,331240,Alakanuk,2023-03-01,2023,3,pce_eligible_community_kwh,0,outlier_check,4817,4608,4768,5547,NA,avg_preceding_proceeding,NA,TRUE
 A3312400326225003_most_recent_fuel_purch_price,A3312400326225003,331240,Alakanuk,2025-09-01,2025,9,most_recent_fuel_purch_price,0,quality_check,4.4534,5,4,3,NA,carry_forward,NA,TRUE
 A3312400426225003_most_recent_fuel_purch_price,A3312400426225003,331240,Alakanuk,2025-10-01,2025,10,most_recent_fuel_purch_price,0,quality_check,4.4534,5,4,4,NA,carry_forward,NA,TRUE
 A3312400526225003_most_recent_fuel_purch_price,A3312400526225003,331240,Alakanuk,2025-11-01,2025,11,most_recent_fuel_purch_price,0,quality_check,4.4534,5,4,4,NA,carry_forward,NA,TRUE
@@ -658,9 +658,9 @@ A3318001122225003_most_recent_fuel_purch_price,A3318001122225003,331800,"Bethel,
 A3318001222225003_most_recent_fuel_purch_price,A3318001222225003,331800,"Bethel, Oscarville",2022-06-01,2022,6,most_recent_fuel_purch_price,0,quality_check,3.7199,4,4,4,NA,carry_forward,NA,TRUE
 A3318000123225003_most_recent_fuel_purch_price,A3318000123225003,331800,"Bethel, Oscarville",2022-07-01,2022,7,most_recent_fuel_purch_price,0,quality_check,3.7199,4,4,4,NA,carry_forward,NA,TRUE
 A3318000223225003_most_recent_fuel_purch_price,A3318000223225003,331800,"Bethel, Oscarville",2022-08-01,2022,8,most_recent_fuel_purch_price,0,quality_check,3.7199,4,4,4,NA,carry_forward,NA,TRUE
-A3318000423225003_pce_eligible_community_kwh,A3318000423225003,331800,"Bethel, Oscarville",2022-10-01,2022,10,pce_eligible_community_kwh,224050,outlier_check,16096,18080,17928,22076,NA,NA,NA,FALSE
-A3318000723225003_pce_eligible_community_kwh,A3318000723225003,331800,"Bethel, Oscarville",2023-01-01,2023,1,pce_eligible_community_kwh,280594,outlier_check,20309,19265,20309,24192,NA,NA,NA,FALSE
-A3318000823225003_pce_eligible_community_kwh,A3318000823225003,331800,"Bethel, Oscarville",2023-02-01,2023,2,pce_eligible_community_kwh,0,outlier_check,20309,19265,21348,24533,NA,NA,NA,FALSE
+A3318000423225003_pce_eligible_community_kwh,A3318000423225003,331800,"Bethel, Oscarville",2022-10-01,2022,10,pce_eligible_community_kwh,224050,outlier_check,16096,18080,17928,22076,NA,avg_preceding_proceeding,NA,TRUE
+A3318000723225003_pce_eligible_community_kwh,A3318000723225003,331800,"Bethel, Oscarville",2023-01-01,2023,1,pce_eligible_community_kwh,280594,outlier_check,20309,19265,20309,24192,NA,avg_preceding_proceeding,NA,TRUE
+A3318000823225003_pce_eligible_community_kwh,A3318000823225003,331800,"Bethel, Oscarville",2023-02-01,2023,2,pce_eligible_community_kwh,0,outlier_check,20309,19265,21348,24533,NA,avg_preceding_proceeding,NA,TRUE
 A3318000823225003_residential_rate,A3318000823225003,331800,"Bethel, Oscarville",2023-02-01,2023,2,residential_rate,0,quality_check,0.5428,1,1,0,NA,carry_forward,NA,TRUE
 A3318001223225003_fuel_used_gallons,A3318001223225003,331800,"Bethel, Oscarville",2023-06-01,2023,6,fuel_used_gallons,0,outlier_check,257850,253668,248735,224901,NA,avg_preceding_proceeding,NA,TRUE
 A3318001125225003_fuel_used_gallons,A3318001125225003,331800,"Bethel, Oscarville",2025-05-01,2025,5,fuel_used_gallons,0,outlier_check,259415,266838,240714,237961,NA,avg_preceding_proceeding,NA,TRUE
@@ -918,7 +918,7 @@ A3318500118225003_govt_facil_customers,A3318500118225003,331850,Chenega Bay,2017
 A3318500318225003_pce_eligible_community_kwh,A3318500318225003,331850,Chenega Bay,2017-09-01,2017,9,pce_eligible_community_kwh,1740,outlier_check,1868,2409,1894,3572,NA,NA,NA,FALSE
 A3318500519225003_fuel_used_gallons,A3318500519225003,331850,Chenega Bay,2018-11-01,2018,11,fuel_used_gallons,0,outlier_check,2927,2504,2932,2004,NA,avg_preceding_proceeding,NA,TRUE
 A3318500619225003_govt_facil_sold_to,A3318500619225003,331850,Chenega Bay,2018-12-01,2018,12,govt_facil_sold_to,1933,outlier_check,588,460,660,800,NA,raw_value,NA,TRUE
-A3318501219225003_pce_eligible_community_kwh,A3318501219225003,331850,Chenega Bay,2019-06-01,2019,6,pce_eligible_community_kwh,0,outlier_check,3666,3668,3666,3297,NA,NA,NA,FALSE
+A3318501219225003_pce_eligible_community_kwh,A3318501219225003,331850,Chenega Bay,2019-06-01,2019,6,pce_eligible_community_kwh,0,outlier_check,3666,3668,3666,3297,NA,avg_preceding_proceeding,NA,TRUE
 A3318500320225003_diesel_kwh_generated,A3318500320225003,331850,Chenega Bay,2019-09-01,2019,9,diesel_kwh_generated,0,outlier_check,17017,20545,17017,20682,NA,avg_same_month_other_years,NA,TRUE
 A3318500420225003_diesel_kwh_generated,A3318500420225003,331850,Chenega Bay,2019-10-01,2019,10,diesel_kwh_generated,0,outlier_check,17017,20545,17017,24017,NA,avg_same_month_other_years,NA,TRUE
 A3318500520225003_diesel_kwh_generated,A3318500520225003,331850,Chenega Bay,2019-11-01,2019,11,diesel_kwh_generated,0,outlier_check,17017,20545,17017,25547,NA,avg_same_month_other_years,NA,TRUE
@@ -1414,15 +1414,15 @@ A3319200122225003_peak_consumption_kw,A3319200122225003,331920,"Cordova, Eyak",2
 A3319200122225003_commercial_sold_to,A3319200122225003,331920,"Cordova, Eyak",2021-07-01,2021,7,commercial_sold_to,3170344,outlier_check,1655347,1026444,1655347,1212494,NA,raw_value,NA,TRUE
 A3319200222225003_peak_consumption_kw,A3319200222225003,331920,"Cordova, Eyak",2021-08-01,2021,8,peak_consumption_kw,8030,outlier_check,6857,3949,5947,6475,NA,raw_value,NA,TRUE
 A3319200222225003_commercial_sold_to,A3319200222225003,331920,"Cordova, Eyak",2021-08-01,2021,8,commercial_sold_to,3084777,outlier_check,1655347,1026444,1447682,1559207,NA,raw_value,NA,TRUE
-A3319200722225003_pce_eligible_community_kwh,A3319200722225003,331920,"Cordova, Eyak",2022-01-01,2022,1,pce_eligible_community_kwh,51152,outlier_check,175070,134959,175070,164968,NA,NA,NA,FALSE
-A3319200822225003_pce_eligible_community_kwh,A3319200822225003,331920,"Cordova, Eyak",2022-02-01,2022,2,pce_eligible_community_kwh,49514,outlier_check,175070,134959,171114,161937,NA,NA,NA,FALSE
+A3319200722225003_pce_eligible_community_kwh,A3319200722225003,331920,"Cordova, Eyak",2022-01-01,2022,1,pce_eligible_community_kwh,51152,outlier_check,175070,134959,175070,164968,NA,raw_value,NA,TRUE
+A3319200822225003_pce_eligible_community_kwh,A3319200822225003,331920,"Cordova, Eyak",2022-02-01,2022,2,pce_eligible_community_kwh,49514,outlier_check,175070,134959,171114,161937,NA,raw_value,NA,TRUE
 A3319201222225003_powerhouse_consumption_kwh,A3319201222225003,331920,"Cordova, Eyak",2022-06-01,2022,6,powerhouse_consumption_kwh,140666,outlier_check,115894,71779,95019,38732,NA,raw_value,NA,TRUE
 A3319200123225003_peak_consumption_kw,A3319200123225003,331920,"Cordova, Eyak",2022-07-01,2022,7,peak_consumption_kw,8949,outlier_check,7031,4343,6742,5437,NA,raw_value,NA,TRUE
 A3319200123225003_commercial_sold_to,A3319200123225003,331920,"Cordova, Eyak",2022-07-01,2022,7,commercial_sold_to,3136946,outlier_check,1776153,1110470,1704010,1212494,NA,raw_value,NA,TRUE
 A3319200123225003_residential_customers,A3319200123225003,331920,"Cordova, Eyak",2022-07-01,2022,7,residential_customers,755,outlier_check,982,978,981,981,NA,raw_value,NA,TRUE
 A3319200123225003_commercial_customers,A3319200123225003,331920,"Cordova, Eyak",2022-07-01,2022,7,commercial_customers,886,outlier_check,660,625,654,638,NA,raw_value,NA,TRUE
-A3319200223225003_pce_eligible_community_kwh,A3319200223225003,331920,"Cordova, Eyak",2022-08-01,2022,8,pce_eligible_community_kwh,10499,outlier_check,150167,134959,150167,171813,NA,NA,NA,FALSE
-A3319200323225003_pce_eligible_community_kwh,A3319200323225003,331920,"Cordova, Eyak",2022-09-01,2022,9,pce_eligible_community_kwh,11343,outlier_check,150167,134959,126146,158365,NA,NA,NA,FALSE
+A3319200223225003_pce_eligible_community_kwh,A3319200223225003,331920,"Cordova, Eyak",2022-08-01,2022,8,pce_eligible_community_kwh,10499,outlier_check,150167,134959,150167,171813,NA,raw_value,NA,TRUE
+A3319200323225003_pce_eligible_community_kwh,A3319200323225003,331920,"Cordova, Eyak",2022-09-01,2022,9,pce_eligible_community_kwh,11343,outlier_check,150167,134959,126146,158365,NA,raw_value,NA,TRUE
 A3319200523225003_pce_eligible_community_kwh,A3319200523225003,331920,"Cordova, Eyak",2022-11-01,2022,11,pce_eligible_community_kwh,67603,outlier_check,102124,134959,86572,147196,NA,NA,NA,FALSE
 A3319200523225003_commercial_customers,A3319200523225003,331920,"Cordova, Eyak",2022-11-01,2022,11,commercial_customers,208,outlier_check,621,625,618,598,NA,raw_value,NA,TRUE
 A3319200523225003_govt_facil_customers,A3319200523225003,331920,"Cordova, Eyak",2022-11-01,2022,11,govt_facil_customers,455,outlier_check,45,46,45,46,NA,avg_preceding_proceeding,NA,TRUE
@@ -1432,32 +1432,32 @@ A3319200823225003_amount,A3319200823225003,331920,"Cordova, Eyak",2023-02-01,202
 A3319200823225003_powerhouse_consumption_kwh,A3319200823225003,331920,"Cordova, Eyak",2023-02-01,2023,2,powerhouse_consumption_kwh,185753,outlier_check,95862,52081,62176,23265,NA,raw_value,NA,TRUE
 A3319200923225003_commercial_customers,A3319200923225003,331920,"Cordova, Eyak",2023-03-01,2023,3,commercial_customers,207,outlier_check,608,600,614,595,NA,raw_value,NA,TRUE
 A3319200923225003_govt_facil_customers,A3319200923225003,331920,"Cordova, Eyak",2023-03-01,2023,3,govt_facil_customers,444,outlier_check,44,44,44,46,NA,avg_preceding_proceeding,NA,TRUE
-A3319201223225003_pce_eligible_community_kwh,A3319201223225003,331920,"Cordova, Eyak",2023-06-01,2023,6,pce_eligible_community_kwh,10890,outlier_check,185015,162259,185015,162040,NA,NA,NA,FALSE
+A3319201223225003_pce_eligible_community_kwh,A3319201223225003,331920,"Cordova, Eyak",2023-06-01,2023,6,pce_eligible_community_kwh,10890,outlier_check,185015,162259,185015,162040,NA,raw_value,NA,TRUE
 A3319201223225003_commercial_sold_to,A3319201223225003,331920,"Cordova, Eyak",2023-06-01,2023,6,commercial_sold_to,2035634,outlier_check,1200883,958638,1114376,1689204,NA,raw_value,NA,TRUE
-A3319200124225003_pce_eligible_community_kwh,A3319200124225003,331920,"Cordova, Eyak",2023-07-01,2023,7,pce_eligible_community_kwh,10492,outlier_check,185015,162259,185015,165087,NA,NA,NA,FALSE
+A3319200124225003_pce_eligible_community_kwh,A3319200124225003,331920,"Cordova, Eyak",2023-07-01,2023,7,pce_eligible_community_kwh,10492,outlier_check,185015,162259,185015,165087,NA,raw_value,NA,TRUE
 A3319200124225003_peak_consumption_kw,A3319200124225003,331920,"Cordova, Eyak",2023-07-01,2023,7,peak_consumption_kw,8885,outlier_check,7643,3970,7643,5437,NA,raw_value,NA,TRUE
 A3319200124225003_residential_sold_to,A3319200124225003,331920,"Cordova, Eyak",2023-07-01,2023,7,residential_sold_to,2743630,outlier_check,354375,406828,381254,344374,NA,avg_preceding_proceeding,NA,TRUE
-A3319200224225003_pce_eligible_community_kwh,A3319200224225003,331920,"Cordova, Eyak",2023-08-01,2023,8,pce_eligible_community_kwh,64114,outlier_check,185015,162259,185015,171813,NA,NA,NA,FALSE
+A3319200224225003_pce_eligible_community_kwh,A3319200224225003,331920,"Cordova, Eyak",2023-08-01,2023,8,pce_eligible_community_kwh,64114,outlier_check,185015,162259,185015,171813,NA,raw_value,NA,TRUE
 A3319200224225003_peak_consumption_kw,A3319200224225003,331920,"Cordova, Eyak",2023-08-01,2023,8,peak_consumption_kw,9619,outlier_check,7643,3970,6366,6475,NA,raw_value,NA,TRUE
 A3319200224225003_commercial_sold_to,A3319200224225003,331920,"Cordova, Eyak",2023-08-01,2023,8,commercial_sold_to,3384703,outlier_check,1027869,958638,1185284,1559207,NA,raw_value,NA,TRUE
-A3319200324225003_pce_eligible_community_kwh,A3319200324225003,331920,"Cordova, Eyak",2023-09-01,2023,9,pce_eligible_community_kwh,60060,outlier_check,185015,162259,185015,158365,NA,NA,NA,FALSE
-A3319200424225003_pce_eligible_community_kwh,A3319200424225003,331920,"Cordova, Eyak",2023-10-01,2023,10,pce_eligible_community_kwh,61400,outlier_check,185015,162259,155125,147695,NA,NA,NA,FALSE
-A3319201224225003_pce_eligible_community_kwh,A3319201224225003,331920,"Cordova, Eyak",2024-06-01,2024,6,pce_eligible_community_kwh,65503,outlier_check,176536,145376,176536,162040,NA,NA,NA,FALSE
-A3319200125225003_pce_eligible_community_kwh,A3319200125225003,331920,"Cordova, Eyak",2024-07-01,2024,7,pce_eligible_community_kwh,65893,outlier_check,176536,145376,176536,165087,NA,NA,NA,FALSE
+A3319200324225003_pce_eligible_community_kwh,A3319200324225003,331920,"Cordova, Eyak",2023-09-01,2023,9,pce_eligible_community_kwh,60060,outlier_check,185015,162259,185015,158365,NA,raw_value,NA,TRUE
+A3319200424225003_pce_eligible_community_kwh,A3319200424225003,331920,"Cordova, Eyak",2023-10-01,2023,10,pce_eligible_community_kwh,61400,outlier_check,185015,162259,155125,147695,NA,raw_value,NA,TRUE
+A3319201224225003_pce_eligible_community_kwh,A3319201224225003,331920,"Cordova, Eyak",2024-06-01,2024,6,pce_eligible_community_kwh,65503,outlier_check,176536,145376,176536,162040,NA,raw_value,NA,TRUE
+A3319200125225003_pce_eligible_community_kwh,A3319200125225003,331920,"Cordova, Eyak",2024-07-01,2024,7,pce_eligible_community_kwh,65893,outlier_check,176536,145376,176536,165087,NA,raw_value,NA,TRUE
 A3319200125225003_commercial_sold_to,A3319200125225003,331920,"Cordova, Eyak",2024-07-01,2024,7,commercial_sold_to,2312733,outlier_check,1837054,1025713,1696392,1212494,NA,raw_value,NA,TRUE
-A3319200225225003_pce_eligible_community_kwh,A3319200225225003,331920,"Cordova, Eyak",2024-08-01,2024,8,pce_eligible_community_kwh,60473,outlier_check,176536,145376,176536,171813,NA,NA,NA,FALSE
-A3319200325225003_pce_eligible_community_kwh,A3319200325225003,331920,"Cordova, Eyak",2024-09-01,2024,9,pce_eligible_community_kwh,61823,outlier_check,176536,145376,176536,158365,NA,NA,NA,FALSE
-A3319200425225003_pce_eligible_community_kwh,A3319200425225003,331920,"Cordova, Eyak",2024-10-01,2024,10,pce_eligible_community_kwh,66782,outlier_check,176536,145376,124156,147695,NA,NA,NA,FALSE
-A3319201225225003_pce_eligible_community_kwh,A3319201225225003,331920,"Cordova, Eyak",2025-06-01,2025,6,pce_eligible_community_kwh,63445,outlier_check,171888,150220,171888,162040,NA,NA,NA,FALSE
-A3319200126225003_pce_eligible_community_kwh,A3319200126225003,331920,"Cordova, Eyak",2025-07-01,2025,7,pce_eligible_community_kwh,61926,outlier_check,171888,150220,171888,165087,NA,NA,NA,FALSE
+A3319200225225003_pce_eligible_community_kwh,A3319200225225003,331920,"Cordova, Eyak",2024-08-01,2024,8,pce_eligible_community_kwh,60473,outlier_check,176536,145376,176536,171813,NA,raw_value,NA,TRUE
+A3319200325225003_pce_eligible_community_kwh,A3319200325225003,331920,"Cordova, Eyak",2024-09-01,2024,9,pce_eligible_community_kwh,61823,outlier_check,176536,145376,176536,158365,NA,raw_value,NA,TRUE
+A3319200425225003_pce_eligible_community_kwh,A3319200425225003,331920,"Cordova, Eyak",2024-10-01,2024,10,pce_eligible_community_kwh,66782,outlier_check,176536,145376,124156,147695,NA,raw_value,NA,TRUE
+A3319201225225003_pce_eligible_community_kwh,A3319201225225003,331920,"Cordova, Eyak",2025-06-01,2025,6,pce_eligible_community_kwh,63445,outlier_check,171888,150220,171888,162040,NA,raw_value,NA,TRUE
+A3319200126225003_pce_eligible_community_kwh,A3319200126225003,331920,"Cordova, Eyak",2025-07-01,2025,7,pce_eligible_community_kwh,61926,outlier_check,171888,150220,171888,165087,NA,raw_value,NA,TRUE
 A3319200126225003_peak_consumption_kw,A3319200126225003,331920,"Cordova, Eyak",2025-07-01,2025,7,peak_consumption_kw,8558,outlier_check,7337,4512,7530,5437,NA,raw_value,NA,TRUE
 A3319200126225003_residential_sold_to,A3319200126225003,331920,"Cordova, Eyak",2025-07-01,2025,7,residential_sold_to,179961,outlier_check,366882,402414,365236,344374,NA,avg_preceding_proceeding,NA,TRUE
 A3319200126225003_commercial_sold_to,A3319200126225003,331920,"Cordova, Eyak",2025-07-01,2025,7,commercial_sold_to,3626529,outlier_check,1958461,1076257,1958461,1212494,NA,raw_value,NA,TRUE
-A3319200226225003_pce_eligible_community_kwh,A3319200226225003,331920,"Cordova, Eyak",2025-08-01,2025,8,pce_eligible_community_kwh,59390,outlier_check,171888,150220,171888,171813,NA,NA,NA,FALSE
+A3319200226225003_pce_eligible_community_kwh,A3319200226225003,331920,"Cordova, Eyak",2025-08-01,2025,8,pce_eligible_community_kwh,59390,outlier_check,171888,150220,171888,171813,NA,raw_value,NA,TRUE
 A3319200226225003_commercial_sold_to,A3319200226225003,331920,"Cordova, Eyak",2025-08-01,2025,8,commercial_sold_to,2551702,outlier_check,1958461,1076257,1719786,1559207,NA,raw_value,NA,TRUE
-A3319200326225003_pce_eligible_community_kwh,A3319200326225003,331920,"Cordova, Eyak",2025-09-01,2025,9,pce_eligible_community_kwh,57711,outlier_check,171888,150220,171888,158365,NA,NA,NA,FALSE
-A3319200426225003_pce_eligible_community_kwh,A3319200426225003,331920,"Cordova, Eyak",2025-10-01,2025,10,pce_eligible_community_kwh,66398,outlier_check,171888,150220,171888,147695,NA,NA,NA,FALSE
-A3319200526225003_pce_eligible_community_kwh,A3319200526225003,331920,"Cordova, Eyak",2025-11-01,2025,11,pce_eligible_community_kwh,67134,outlier_check,171888,150220,125296,147196,NA,NA,NA,FALSE
+A3319200326225003_pce_eligible_community_kwh,A3319200326225003,331920,"Cordova, Eyak",2025-09-01,2025,9,pce_eligible_community_kwh,57711,outlier_check,171888,150220,171888,158365,NA,raw_value,NA,TRUE
+A3319200426225003_pce_eligible_community_kwh,A3319200426225003,331920,"Cordova, Eyak",2025-10-01,2025,10,pce_eligible_community_kwh,66398,outlier_check,171888,150220,171888,147695,NA,raw_value,NA,TRUE
+A3319200526225003_pce_eligible_community_kwh,A3319200526225003,331920,"Cordova, Eyak",2025-11-01,2025,11,pce_eligible_community_kwh,67134,outlier_check,171888,150220,125296,147196,NA,raw_value,NA,TRUE
 A3319200926225003_residential_customers,A3319200926225003,331920,"Cordova, Eyak",2026-03-01,2026,3,residential_customers,749,outlier_check,996,998,996,968,NA,raw_value,NA,TRUE
 A3319201026225003_residential_customers,A3319201026225003,331920,"Cordova, Eyak",2026-04-01,2026,4,residential_customers,751,outlier_check,996,998,996,972,NA,raw_value,NA,TRUE
 A3319201126225003_residential_customers,A3319201126225003,331920,"Cordova, Eyak",2026-05-01,2026,5,residential_customers,751,outlier_check,996,998,998,978,NA,raw_value,NA,TRUE
@@ -1606,7 +1606,7 @@ A3324300117225003_commercial_sold_to,A3324300117225003,332430,"Dillingham, Alekn
 A3324300217225003_fuel_used_gallons,A3324300217225003,332430,"Dillingham, Aleknagik",2016-08-01,2016,8,fuel_used_gallons,140763,outlier_check,96153,96079,96232,127487,NA,raw_value,NA,TRUE
 A3324300217225003_peak_consumption_kw,A3324300217225003,332430,"Dillingham, Aleknagik",2016-08-01,2016,8,peak_consumption_kw,4210,outlier_check,2770,2485,2655,NA,NA,raw_value,NA,TRUE
 A3324300217225003_commercial_sold_to,A3324300217225003,332430,"Dillingham, Aleknagik",2016-08-01,2016,8,commercial_sold_to,1386851,outlier_check,893206,738589,826922,1074869,NA,raw_value,NA,TRUE
-A3324300617225003_pce_eligible_community_kwh,A3324300617225003,332430,"Dillingham, Aleknagik",2016-12-01,2016,12,pce_eligible_community_kwh,0,outlier_check,62594,58850,65674,62942,NA,NA,NA,FALSE
+A3324300617225003_pce_eligible_community_kwh,A3324300617225003,332430,"Dillingham, Aleknagik",2016-12-01,2016,12,pce_eligible_community_kwh,0,outlier_check,62594,58850,65674,62942,NA,avg_preceding_proceeding,NA,TRUE
 A3324300817225003_com_facil_sold_to,A3324300817225003,332430,"Dillingham, Aleknagik",2017-02-01,2017,2,com_facil_sold_to,151902,outlier_check,86230,85659,82635,88849,NA,raw_value,NA,TRUE
 A3324300118225003_fuel_used_gallons,A3324300118225003,332430,"Dillingham, Aleknagik",2017-07-01,2017,7,fuel_used_gallons,159096,outlier_check,96116,100410,111638,96153,NA,raw_value,NA,TRUE
 A3324300118225003_diesel_kwh_generated,A3324300118225003,332430,"Dillingham, Aleknagik",2017-07-01,2017,7,diesel_kwh_generated,2389000,outlier_check,1580400,1523107,1712750,NA,NA,raw_value,NA,TRUE
@@ -1635,7 +1635,7 @@ A3324300121225003_peak_consumption_kw,A3324300121225003,332430,"Dillingham, Alek
 A3324300121225003_commercial_sold_to,A3324300121225003,332430,"Dillingham, Aleknagik",2020-07-01,2020,7,commercial_sold_to,1857841,outlier_check,871551,702830,871551,NA,NA,raw_value,NA,TRUE
 A3324300221225003_peak_consumption_kw,A3324300221225003,332430,"Dillingham, Aleknagik",2020-08-01,2020,8,peak_consumption_kw,5525,outlier_check,2910,2452,2518,NA,NA,raw_value,NA,TRUE
 A3324300221225003_commercial_sold_to,A3324300221225003,332430,"Dillingham, Aleknagik",2020-08-01,2020,8,commercial_sold_to,1206792,outlier_check,871551,702830,758052,1074869,NA,raw_value,NA,TRUE
-A3324300521225003_pce_eligible_community_kwh,A3324300521225003,332430,"Dillingham, Aleknagik",2020-11-01,2020,11,pce_eligible_community_kwh,0,outlier_check,55173,61785,61723,58541,NA,NA,NA,FALSE
+A3324300521225003_pce_eligible_community_kwh,A3324300521225003,332430,"Dillingham, Aleknagik",2020-11-01,2020,11,pce_eligible_community_kwh,0,outlier_check,55173,61785,61723,58541,NA,avg_preceding_proceeding,NA,TRUE
 A3324300122225003_fuel_used_gallons,A3324300122225003,332430,"Dillingham, Aleknagik",2021-07-01,2021,7,fuel_used_gallons,202239,outlier_check,99662,97833,115946,96153,NA,raw_value,NA,TRUE
 A3324300122225003_diesel_kwh_generated,A3324300122225003,332430,"Dillingham, Aleknagik",2021-07-01,2021,7,diesel_kwh_generated,3064875,outlier_check,1531881,1457737,1751181,NA,NA,raw_value,NA,TRUE
 A3324300122225003_peak_consumption_kw,A3324300122225003,332430,"Dillingham, Aleknagik",2021-07-01,2021,7,peak_consumption_kw,6255,outlier_check,3225,2425,3225,NA,NA,raw_value,NA,TRUE
@@ -1654,7 +1654,7 @@ A3324300123225003_commercial_sold_to,A3324300123225003,332430,"Dillingham, Alekn
 A3324300123225003_fuel_cost,A3324300123225003,332430,"Dillingham, Aleknagik",2022-07-01,2022,7,fuel_cost,706809.88,outlier_check,233847.7,248573,325329,338708,NA,raw_value,NA,TRUE
 A3324300223225003_peak_consumption_kw,A3324300223225003,332430,"Dillingham, Aleknagik",2022-08-01,2022,8,peak_consumption_kw,5920,outlier_check,2340,2349,2222,NA,NA,raw_value,NA,TRUE
 A3324300223225003_commercial_sold_to,A3324300223225003,332430,"Dillingham, Aleknagik",2022-08-01,2022,8,commercial_sold_to,1183298,outlier_check,1013431,726857,855232,1074869,NA,raw_value,NA,TRUE
-A3324301223225003_pce_eligible_community_kwh,A3324301223225003,332430,"Dillingham, Aleknagik",2023-06-01,2023,6,pce_eligible_community_kwh,0,outlier_check,59149,55665,56709,53858,NA,NA,NA,FALSE
+A3324301223225003_pce_eligible_community_kwh,A3324301223225003,332430,"Dillingham, Aleknagik",2023-06-01,2023,6,pce_eligible_community_kwh,0,outlier_check,59149,55665,56709,53858,NA,avg_preceding_proceeding,NA,TRUE
 A3324300124225003_fuel_used_gallons,A3324300124225003,332430,"Dillingham, Aleknagik",2023-07-01,2023,7,fuel_used_gallons,204672,outlier_check,108487,94002,108487,96153,NA,raw_value,NA,TRUE
 A3324300124225003_diesel_kwh_generated,A3324300124225003,332430,"Dillingham, Aleknagik",2023-07-01,2023,7,diesel_kwh_generated,3098114,outlier_check,1624182,1400615,1624182,NA,NA,raw_value,NA,TRUE
 A3324300124225003_powerhouse_consumption_kwh,A3324300124225003,332430,"Dillingham, Aleknagik",2023-07-01,2023,7,powerhouse_consumption_kwh,86084,outlier_check,40421,45060,52803,60632,NA,raw_value,NA,TRUE
@@ -1670,42 +1670,42 @@ A3324300125225003_diesel_kwh_generated,A3324300125225003,332430,"Dillingham, Ale
 A3324300125225003_peak_consumption_kw,A3324300125225003,332430,"Dillingham, Aleknagik",2024-07-01,2024,7,peak_consumption_kw,5775,outlier_check,2640,2385,2640,NA,NA,raw_value,NA,TRUE
 A3324300125225003_commercial_sold_to,A3324300125225003,332430,"Dillingham, Aleknagik",2024-07-01,2024,7,commercial_sold_to,2036558,outlier_check,909336,716293,909336,NA,NA,raw_value,NA,TRUE
 A3324300125225003_fuel_cost,A3324300125225003,332430,"Dillingham, Aleknagik",2024-07-01,2024,7,fuel_cost,630945.41,outlier_check,364160.18,343802,393618,338708,NA,raw_value,NA,TRUE
-A3324300225225003_pce_eligible_community_kwh,A3324300225225003,332430,"Dillingham, Aleknagik",2024-08-01,2024,8,pce_eligible_community_kwh,0,outlier_check,46479,40902,46479,56774,NA,NA,NA,FALSE
+A3324300225225003_pce_eligible_community_kwh,A3324300225225003,332430,"Dillingham, Aleknagik",2024-08-01,2024,8,pce_eligible_community_kwh,0,outlier_check,46479,40902,46479,56774,NA,raw_value,NA,TRUE
 A3324300225225003_peak_consumption_kw,A3324300225225003,332430,"Dillingham, Aleknagik",2024-08-01,2024,8,peak_consumption_kw,5450,outlier_check,2640,2385,2370,NA,NA,raw_value,NA,TRUE
 A3324300225225003_commercial_sold_to,A3324300225225003,332430,"Dillingham, Aleknagik",2024-08-01,2024,8,commercial_sold_to,1199001,outlier_check,909336,716293,778342,1074869,NA,raw_value,NA,TRUE
-A3324300325225003_pce_eligible_community_kwh,A3324300325225003,332430,"Dillingham, Aleknagik",2024-09-01,2024,9,pce_eligible_community_kwh,0,outlier_check,46479,40902,46479,55510,NA,NA,NA,FALSE
-A3324300425225003_pce_eligible_community_kwh,A3324300425225003,332430,"Dillingham, Aleknagik",2024-10-01,2024,10,pce_eligible_community_kwh,0,outlier_check,46479,40902,46479,57811,NA,NA,NA,FALSE
-A3324300525225003_pce_eligible_community_kwh,A3324300525225003,332430,"Dillingham, Aleknagik",2024-11-01,2024,11,pce_eligible_community_kwh,0,outlier_check,46479,40902,46479,58541,NA,NA,NA,FALSE
-A3324300625225003_pce_eligible_community_kwh,A3324300625225003,332430,"Dillingham, Aleknagik",2024-12-01,2024,12,pce_eligible_community_kwh,0,outlier_check,46479,40902,46479,62942,NA,NA,NA,FALSE
-A3324300725225003_pce_eligible_community_kwh,A3324300725225003,332430,"Dillingham, Aleknagik",2025-01-01,2025,1,pce_eligible_community_kwh,0,outlier_check,46479,NA,46479,64989,NA,NA,NA,FALSE
-A3324300825225003_pce_eligible_community_kwh,A3324300825225003,332430,"Dillingham, Aleknagik",2025-02-01,2025,2,pce_eligible_community_kwh,0,outlier_check,46479,NA,46479,65400,NA,NA,NA,FALSE
-A3324300925225003_pce_eligible_community_kwh,A3324300925225003,332430,"Dillingham, Aleknagik",2025-03-01,2025,3,pce_eligible_community_kwh,0,outlier_check,46479,NA,46479,58374,NA,NA,NA,FALSE
-A3324301025225003_pce_eligible_community_kwh,A3324301025225003,332430,"Dillingham, Aleknagik",2025-04-01,2025,4,pce_eligible_community_kwh,0,outlier_check,46479,NA,46479,57732,NA,NA,NA,FALSE
-A3324301125225003_pce_eligible_community_kwh,A3324301125225003,332430,"Dillingham, Aleknagik",2025-05-01,2025,5,pce_eligible_community_kwh,0,outlier_check,46479,NA,46479,54730,NA,NA,NA,FALSE
-A3324301225225003_pce_eligible_community_kwh,A3324301225225003,332430,"Dillingham, Aleknagik",2025-06-01,2025,6,pce_eligible_community_kwh,0,outlier_check,46479,NA,46479,53858,NA,NA,NA,FALSE
-A3324300126225003_pce_eligible_community_kwh,A3324300126225003,332430,"Dillingham, Aleknagik",2025-07-01,2025,7,pce_eligible_community_kwh,0,outlier_check,46479,NA,46479,57549,NA,NA,NA,FALSE
+A3324300325225003_pce_eligible_community_kwh,A3324300325225003,332430,"Dillingham, Aleknagik",2024-09-01,2024,9,pce_eligible_community_kwh,0,outlier_check,46479,40902,46479,55510,NA,raw_value,NA,TRUE
+A3324300425225003_pce_eligible_community_kwh,A3324300425225003,332430,"Dillingham, Aleknagik",2024-10-01,2024,10,pce_eligible_community_kwh,0,outlier_check,46479,40902,46479,57811,NA,raw_value,NA,TRUE
+A3324300525225003_pce_eligible_community_kwh,A3324300525225003,332430,"Dillingham, Aleknagik",2024-11-01,2024,11,pce_eligible_community_kwh,0,outlier_check,46479,40902,46479,58541,NA,raw_value,NA,TRUE
+A3324300625225003_pce_eligible_community_kwh,A3324300625225003,332430,"Dillingham, Aleknagik",2024-12-01,2024,12,pce_eligible_community_kwh,0,outlier_check,46479,40902,46479,62942,NA,raw_value,NA,TRUE
+A3324300725225003_pce_eligible_community_kwh,A3324300725225003,332430,"Dillingham, Aleknagik",2025-01-01,2025,1,pce_eligible_community_kwh,0,outlier_check,46479,NA,46479,64989,NA,raw_value,NA,TRUE
+A3324300825225003_pce_eligible_community_kwh,A3324300825225003,332430,"Dillingham, Aleknagik",2025-02-01,2025,2,pce_eligible_community_kwh,0,outlier_check,46479,NA,46479,65400,NA,raw_value,NA,TRUE
+A3324300925225003_pce_eligible_community_kwh,A3324300925225003,332430,"Dillingham, Aleknagik",2025-03-01,2025,3,pce_eligible_community_kwh,0,outlier_check,46479,NA,46479,58374,NA,raw_value,NA,TRUE
+A3324301025225003_pce_eligible_community_kwh,A3324301025225003,332430,"Dillingham, Aleknagik",2025-04-01,2025,4,pce_eligible_community_kwh,0,outlier_check,46479,NA,46479,57732,NA,raw_value,NA,TRUE
+A3324301125225003_pce_eligible_community_kwh,A3324301125225003,332430,"Dillingham, Aleknagik",2025-05-01,2025,5,pce_eligible_community_kwh,0,outlier_check,46479,NA,46479,54730,NA,raw_value,NA,TRUE
+A3324301225225003_pce_eligible_community_kwh,A3324301225225003,332430,"Dillingham, Aleknagik",2025-06-01,2025,6,pce_eligible_community_kwh,0,outlier_check,46479,NA,46479,53858,NA,raw_value,NA,TRUE
+A3324300126225003_pce_eligible_community_kwh,A3324300126225003,332430,"Dillingham, Aleknagik",2025-07-01,2025,7,pce_eligible_community_kwh,0,outlier_check,46479,NA,46479,57549,NA,raw_value,NA,TRUE
 A3324300126225003_fuel_used_gallons,A3324300126225003,332430,"Dillingham, Aleknagik",2025-07-01,2025,7,fuel_used_gallons,213975,outlier_check,98952,96215,113480,96153,NA,raw_value,NA,TRUE
 A3324300126225003_diesel_kwh_generated,A3324300126225003,332430,"Dillingham, Aleknagik",2025-07-01,2025,7,diesel_kwh_generated,3278944,outlier_check,1511228,1411546,1710757,NA,NA,raw_value,NA,TRUE
 A3324300126225003_powerhouse_consumption_kwh,A3324300126225003,332430,"Dillingham, Aleknagik",2025-07-01,2025,7,powerhouse_consumption_kwh,86143,outlier_check,41923,44334,50996,60632,NA,raw_value,NA,TRUE
 A3324300126225003_peak_consumption_kw,A3324300126225003,332430,"Dillingham, Aleknagik",2025-07-01,2025,7,peak_consumption_kw,6650,outlier_check,2780,2348,2780,NA,NA,raw_value,NA,TRUE
 A3324300126225003_commercial_sold_to,A3324300126225003,332430,"Dillingham, Aleknagik",2025-07-01,2025,7,commercial_sold_to,2547720,outlier_check,912167,697055,912167,NA,NA,raw_value,NA,TRUE
 A3324300126225003_fuel_cost,A3324300126225003,332430,"Dillingham, Aleknagik",2025-07-01,2025,7,fuel_cost,758327.4,outlier_check,350685.89,340985,402171,338708,NA,raw_value,NA,TRUE
-A3324300226225003_pce_eligible_community_kwh,A3324300226225003,332430,"Dillingham, Aleknagik",2025-08-01,2025,8,pce_eligible_community_kwh,0,outlier_check,46479,NA,46479,56774,NA,NA,NA,FALSE
+A3324300226225003_pce_eligible_community_kwh,A3324300226225003,332430,"Dillingham, Aleknagik",2025-08-01,2025,8,pce_eligible_community_kwh,0,outlier_check,46479,NA,46479,56774,NA,raw_value,NA,TRUE
 A3324300226225003_peak_consumption_kw,A3324300226225003,332430,"Dillingham, Aleknagik",2025-08-01,2025,8,peak_consumption_kw,5465,outlier_check,2780,2348,2417,NA,NA,raw_value,NA,TRUE
 A3324300226225003_commercial_sold_to,A3324300226225003,332430,"Dillingham, Aleknagik",2025-08-01,2025,8,commercial_sold_to,1316540,outlier_check,912167,697055,767842,1074869,NA,raw_value,NA,TRUE
-A3324300326225003_pce_eligible_community_kwh,A3324300326225003,332430,"Dillingham, Aleknagik",2025-09-01,2025,9,pce_eligible_community_kwh,0,outlier_check,46479,NA,46479,55510,NA,NA,NA,FALSE
-A3324300426225003_pce_eligible_community_kwh,A3324300426225003,332430,"Dillingham, Aleknagik",2025-10-01,2025,10,pce_eligible_community_kwh,0,outlier_check,46479,NA,46479,57811,NA,NA,NA,FALSE
-A3324300526225003_pce_eligible_community_kwh,A3324300526225003,332430,"Dillingham, Aleknagik",2025-11-01,2025,11,pce_eligible_community_kwh,0,outlier_check,46479,NA,46479,58541,NA,NA,NA,FALSE
-A3324300626225003_pce_eligible_community_kwh,A3324300626225003,332430,"Dillingham, Aleknagik",2025-12-01,2025,12,pce_eligible_community_kwh,0,outlier_check,46479,NA,46479,62942,NA,NA,NA,FALSE
-A3324300726225003_pce_eligible_community_kwh,A3324300726225003,332430,"Dillingham, Aleknagik",2026-01-01,2026,1,pce_eligible_community_kwh,0,outlier_check,46479,NA,46479,64989,NA,NA,NA,FALSE
-A3324300826225003_pce_eligible_community_kwh,A3324300826225003,332430,"Dillingham, Aleknagik",2026-02-01,2026,2,pce_eligible_community_kwh,0,outlier_check,46479,NA,46479,65400,NA,NA,NA,FALSE
+A3324300326225003_pce_eligible_community_kwh,A3324300326225003,332430,"Dillingham, Aleknagik",2025-09-01,2025,9,pce_eligible_community_kwh,0,outlier_check,46479,NA,46479,55510,NA,raw_value,NA,TRUE
+A3324300426225003_pce_eligible_community_kwh,A3324300426225003,332430,"Dillingham, Aleknagik",2025-10-01,2025,10,pce_eligible_community_kwh,0,outlier_check,46479,NA,46479,57811,NA,raw_value,NA,TRUE
+A3324300526225003_pce_eligible_community_kwh,A3324300526225003,332430,"Dillingham, Aleknagik",2025-11-01,2025,11,pce_eligible_community_kwh,0,outlier_check,46479,NA,46479,58541,NA,raw_value,NA,TRUE
+A3324300626225003_pce_eligible_community_kwh,A3324300626225003,332430,"Dillingham, Aleknagik",2025-12-01,2025,12,pce_eligible_community_kwh,0,outlier_check,46479,NA,46479,62942,NA,raw_value,NA,TRUE
+A3324300726225003_pce_eligible_community_kwh,A3324300726225003,332430,"Dillingham, Aleknagik",2026-01-01,2026,1,pce_eligible_community_kwh,0,outlier_check,46479,NA,46479,64989,NA,raw_value,NA,TRUE
+A3324300826225003_pce_eligible_community_kwh,A3324300826225003,332430,"Dillingham, Aleknagik",2026-02-01,2026,2,pce_eligible_community_kwh,0,outlier_check,46479,NA,46479,65400,NA,raw_value,NA,TRUE
 A3324300826225003_residential_customers,A3324300826225003,332430,"Dillingham, Aleknagik",2026-02-01,2026,2,residential_customers,829,outlier_check,941,935,941,964,NA,carry_forward,NA,TRUE
-A3324300926225003_pce_eligible_community_kwh,A3324300926225003,332430,"Dillingham, Aleknagik",2026-03-01,2026,3,pce_eligible_community_kwh,0,outlier_check,46479,NA,46479,58374,NA,NA,NA,FALSE
+A3324300926225003_pce_eligible_community_kwh,A3324300926225003,332430,"Dillingham, Aleknagik",2026-03-01,2026,3,pce_eligible_community_kwh,0,outlier_check,46479,NA,46479,58374,NA,raw_value,NA,TRUE
 A3324300926225003_residential_customers,A3324300926225003,332430,"Dillingham, Aleknagik",2026-03-01,2026,3,residential_customers,822,outlier_check,941,935,934,964,941,manual_override,NA,TRUE
-A3324301026225003_pce_eligible_community_kwh,A3324301026225003,332430,"Dillingham, Aleknagik",2026-04-01,2026,4,pce_eligible_community_kwh,0,outlier_check,46479,NA,46479,57732,NA,NA,NA,FALSE
-A3324301126225003_pce_eligible_community_kwh,A3324301126225003,332430,"Dillingham, Aleknagik",2026-05-01,2026,5,pce_eligible_community_kwh,0,outlier_check,46479,NA,46479,54730,NA,NA,NA,FALSE
+A3324301026225003_pce_eligible_community_kwh,A3324301026225003,332430,"Dillingham, Aleknagik",2026-04-01,2026,4,pce_eligible_community_kwh,0,outlier_check,46479,NA,46479,57732,NA,raw_value,NA,TRUE
+A3324301126225003_pce_eligible_community_kwh,A3324301126225003,332430,"Dillingham, Aleknagik",2026-05-01,2026,5,pce_eligible_community_kwh,0,outlier_check,46479,NA,46479,54730,NA,raw_value,NA,TRUE
 A3324301126225003_residential_customers,A3324301126225003,332430,"Dillingham, Aleknagik",2026-05-01,2026,5,residential_customers,825,outlier_check,926,935,932,973,NA,carry_forward,NA,TRUE
-A3324301226225003_pce_eligible_community_kwh,A3324301226225003,332430,"Dillingham, Aleknagik",2026-06-01,2026,6,pce_eligible_community_kwh,0,outlier_check,46479,NA,46479,53858,NA,NA,NA,FALSE
+A3324301226225003_pce_eligible_community_kwh,A3324301226225003,332430,"Dillingham, Aleknagik",2026-06-01,2026,6,pce_eligible_community_kwh,0,outlier_check,46479,NA,46479,53858,NA,raw_value,NA,TRUE
 A3319300517225003_govt_facil_sold_to,A3319300517225003,331930,Diomede,2016-11-01,2016,11,govt_facil_sold_to,595,outlier_check,NA,NA,NA,69,NA,raw_value,NA,TRUE
 A3319300617225003_govt_facil_sold_to,A3319300617225003,331930,Diomede,2016-12-01,2016,12,govt_facil_sold_to,696,outlier_check,NA,NA,NA,92,NA,raw_value,NA,TRUE
 A3319300717225003_residential_sold_to,A3319300717225003,331930,Diomede,2017-01-01,2017,1,residential_sold_to,25865,outlier_check,22528,16513,20740,11126,NA,raw_value,NA,TRUE
@@ -2181,15 +2181,15 @@ A3319600227225003_fuel_used_gallons,A3319600227225003,331960,Elfin Cove,2026-08-
 A3319600227225003_diesel_kwh_generated,A3319600227225003,331960,Elfin Cove,2026-08-01,2026,8,diesel_kwh_generated,69007,outlier_check,49743,20984,49743,NA,NA,NA,NA,FALSE
 A3319600227225003_commercial_sold_to,A3319600227225003,331960,Elfin Cove,2026-08-01,2026,8,commercial_sold_to,55017,outlier_check,14821,7511,14821,26665,NA,NA,NA,FALSE
 A3319600227225003_fuel_cost,A3319600227225003,331960,Elfin Cove,2026-08-01,2026,8,fuel_cost,36309.39,outlier_check,24366.37,10672,24366,18746,NA,NA,NA,FALSE
-A3313000516225003_pce_eligible_community_kwh,A3313000516225003,331300,Elim,2015-11-01,2015,11,pce_eligible_community_kwh,5737,outlier_check,4978,4916,4978,4091,NA,NA,NA,FALSE
-A3313000616225003_pce_eligible_community_kwh,A3313000616225003,331300,Elim,2015-12-01,2015,12,pce_eligible_community_kwh,5703,outlier_check,4978,4916,4978,4147,NA,NA,NA,FALSE
-A3313000716225003_pce_eligible_community_kwh,A3313000716225003,331300,Elim,2016-01-01,2016,1,pce_eligible_community_kwh,5680,outlier_check,4978,5032,5091,4267,NA,NA,NA,FALSE
-A3313000916225003_pce_eligible_community_kwh,A3313000916225003,331300,Elim,2016-03-01,2016,3,pce_eligible_community_kwh,5857,outlier_check,5204,5032,5316,4242,NA,NA,NA,FALSE
+A3313000516225003_pce_eligible_community_kwh,A3313000516225003,331300,Elim,2015-11-01,2015,11,pce_eligible_community_kwh,5737,outlier_check,4978,4916,4978,4091,NA,raw_value,NA,TRUE
+A3313000616225003_pce_eligible_community_kwh,A3313000616225003,331300,Elim,2015-12-01,2015,12,pce_eligible_community_kwh,5703,outlier_check,4978,4916,4978,4147,NA,raw_value,NA,TRUE
+A3313000716225003_pce_eligible_community_kwh,A3313000716225003,331300,Elim,2016-01-01,2016,1,pce_eligible_community_kwh,5680,outlier_check,4978,5032,5091,4267,NA,raw_value,NA,TRUE
+A3313000916225003_pce_eligible_community_kwh,A3313000916225003,331300,Elim,2016-03-01,2016,3,pce_eligible_community_kwh,5857,outlier_check,5204,5032,5316,4242,NA,raw_value,NA,TRUE
 A3313000217225003_residential_customers,A3313000217225003,331300,Elim,2016-08-01,2016,8,residential_customers,170,outlier_check,89,96,89,90,NA,carry_forward,NA,TRUE
-A3313000517225003_pce_eligible_community_kwh,A3313000517225003,331300,Elim,2016-11-01,2016,11,pce_eligible_community_kwh,5820,outlier_check,5070,5032,5070,4091,NA,NA,NA,FALSE
-A3313000617225003_pce_eligible_community_kwh,A3313000617225003,331300,Elim,2016-12-01,2016,12,pce_eligible_community_kwh,6165,outlier_check,5070,5032,5070,4147,NA,NA,NA,FALSE
-A3313000717225003_pce_eligible_community_kwh,A3313000717225003,331300,Elim,2017-01-01,2017,1,pce_eligible_community_kwh,6276,outlier_check,5070,3946,5070,4267,NA,NA,NA,FALSE
-A3313000817225003_pce_eligible_community_kwh,A3313000817225003,331300,Elim,2017-02-01,2017,2,pce_eligible_community_kwh,6146,outlier_check,5070,3946,4773,4257,NA,NA,NA,FALSE
+A3313000517225003_pce_eligible_community_kwh,A3313000517225003,331300,Elim,2016-11-01,2016,11,pce_eligible_community_kwh,5820,outlier_check,5070,5032,5070,4091,NA,raw_value,NA,TRUE
+A3313000617225003_pce_eligible_community_kwh,A3313000617225003,331300,Elim,2016-12-01,2016,12,pce_eligible_community_kwh,6165,outlier_check,5070,5032,5070,4147,NA,raw_value,NA,TRUE
+A3313000717225003_pce_eligible_community_kwh,A3313000717225003,331300,Elim,2017-01-01,2017,1,pce_eligible_community_kwh,6276,outlier_check,5070,3946,5070,4267,NA,raw_value,NA,TRUE
+A3313000817225003_pce_eligible_community_kwh,A3313000817225003,331300,Elim,2017-02-01,2017,2,pce_eligible_community_kwh,6146,outlier_check,5070,3946,4773,4257,NA,raw_value,NA,TRUE
 A3313000118225003_most_recent_fuel_purch_price,A3313000118225003,331300,Elim,2017-07-01,2017,7,most_recent_fuel_purch_price,0,quality_check,2.83,3,3,4,NA,carry_forward,NA,TRUE
 A3313000218225003_most_recent_fuel_purch_price,A3313000218225003,331300,Elim,2017-08-01,2017,8,most_recent_fuel_purch_price,0,quality_check,2.83,3,3,4,NA,carry_forward,NA,TRUE
 A3313000318225003_most_recent_fuel_purch_price,A3313000318225003,331300,Elim,2017-09-01,2017,9,most_recent_fuel_purch_price,0,quality_check,2.83,3,3,4,NA,carry_forward,NA,TRUE
@@ -2254,9 +2254,9 @@ A3313100116225003_commercial_sold_to,A3313100116225003,331310,Emmonak,2015-07-01
 A3313100216225003_commercial_sold_to,A3313100216225003,331310,Emmonak,2015-08-01,2015,8,commercial_sold_to,221463,outlier_check,NA,78370,102319,89523,NA,raw_value,NA,TRUE
 A3313100616225003_fuel_used_gallons,A3313100616225003,331310,Emmonak,2015-12-01,2015,12,fuel_used_gallons,4249,outlier_check,17884,23565,17080,34546,NA,raw_value,NA,TRUE
 A3313100117225003_commercial_sold_to,A3313100117225003,331310,Emmonak,2016-07-01,2016,7,commercial_sold_to,230376,outlier_check,52120,71553,99416,84081,NA,raw_value,NA,TRUE
-A3313100717225003_pce_eligible_community_kwh,A3313100717225003,331310,Emmonak,2017-01-01,2017,1,pce_eligible_community_kwh,9818,outlier_check,9666,7973,9666,7375,NA,NA,NA,FALSE
-A3313100817225003_pce_eligible_community_kwh,A3313100817225003,331310,Emmonak,2017-02-01,2017,2,pce_eligible_community_kwh,10032,outlier_check,9666,7973,9666,7369,NA,NA,NA,FALSE
-A3313100917225003_pce_eligible_community_kwh,A3313100917225003,331310,Emmonak,2017-03-01,2017,3,pce_eligible_community_kwh,10063,outlier_check,9666,7973,9229,7395,NA,NA,NA,FALSE
+A3313100717225003_pce_eligible_community_kwh,A3313100717225003,331310,Emmonak,2017-01-01,2017,1,pce_eligible_community_kwh,9818,outlier_check,9666,7973,9666,7375,NA,raw_value,NA,TRUE
+A3313100817225003_pce_eligible_community_kwh,A3313100817225003,331310,Emmonak,2017-02-01,2017,2,pce_eligible_community_kwh,10032,outlier_check,9666,7973,9666,7369,NA,raw_value,NA,TRUE
+A3313100917225003_pce_eligible_community_kwh,A3313100917225003,331310,Emmonak,2017-03-01,2017,3,pce_eligible_community_kwh,10063,outlier_check,9666,7973,9229,7395,NA,raw_value,NA,TRUE
 A3313100118225003_most_recent_fuel_purch_price,A3313100118225003,331310,Emmonak,2017-07-01,2017,7,most_recent_fuel_purch_price,0,quality_check,2.69,3,3,4,NA,carry_forward,NA,TRUE
 A3313100218225003_most_recent_fuel_purch_price,A3313100218225003,331310,Emmonak,2017-08-01,2017,8,most_recent_fuel_purch_price,0,quality_check,2.69,3,3,4,NA,carry_forward,NA,TRUE
 A3313100318225003_most_recent_fuel_purch_price,A3313100318225003,331310,Emmonak,2017-09-01,2017,9,most_recent_fuel_purch_price,0,quality_check,2.69,3,3,3,NA,carry_forward,NA,TRUE
@@ -2647,8 +2647,8 @@ A3313400526225003_commercial_sold_to,A3313400526225003,331340,Grayling,2025-11-0
 A3313400526225003_most_recent_fuel_purch_price,A3313400526225003,331340,Grayling,2025-11-01,2025,11,most_recent_fuel_purch_price,0,quality_check,3.6934,4,4,3,NA,carry_forward,NA,TRUE
 A3313400626225003_commercial_sold_to,A3313400626225003,331340,Grayling,2025-12-01,2025,12,commercial_sold_to,8616,outlier_check,2494,2287,2494,2968,NA,raw_value,NA,TRUE
 A3313400626225003_most_recent_fuel_purch_price,A3313400626225003,331340,Grayling,2025-12-01,2025,12,most_recent_fuel_purch_price,0,quality_check,3.6934,4,4,3,NA,carry_forward,NA,TRUE
-A3313400726225003_pce_eligible_residential_kwh,A3313400726225003,331340,Grayling,2026-01-01,2026,1,pce_eligible_residential_kwh,0,outlier_check,26387,24270,26398,22801,NA,NA,NA,FALSE
-A3313400726225003_pce_eligible_community_kwh,A3313400726225003,331340,Grayling,2026-01-01,2026,1,pce_eligible_community_kwh,8317,outlier_check,4740,4715,4682,5065,NA,NA,NA,FALSE
+A3313400726225003_pce_eligible_residential_kwh,A3313400726225003,331340,Grayling,2026-01-01,2026,1,pce_eligible_residential_kwh,0,outlier_check,26387,24270,26398,22801,NA,avg_preceding_proceeding,NA,TRUE
+A3313400726225003_pce_eligible_community_kwh,A3313400726225003,331340,Grayling,2026-01-01,2026,1,pce_eligible_community_kwh,8317,outlier_check,4740,4715,4682,5065,NA,avg_preceding_proceeding,NA,TRUE
 A3313400726225003_commercial_sold_to,A3313400726225003,331340,Grayling,2026-01-01,2026,1,commercial_sold_to,9902,outlier_check,2494,0,2494,2987,NA,raw_value,NA,TRUE
 A3313400726225003_most_recent_fuel_purch_price,A3313400726225003,331340,Grayling,2026-01-01,2026,1,most_recent_fuel_purch_price,0,quality_check,3.6934,NA,4,3,NA,carry_forward,NA,TRUE
 A3313400826225003_commercial_sold_to,A3313400826225003,331340,Grayling,2026-02-01,2026,2,commercial_sold_to,9684,outlier_check,2494,0,2494,2683,NA,raw_value,NA,TRUE
@@ -2951,18 +2951,18 @@ A3313500726225003_commercial_sold_to,A3313500726225003,331350,Holy Cross,2026-01
 A3313500726225003_most_recent_fuel_purch_price,A3313500726225003,331350,Holy Cross,2026-01-01,2026,1,most_recent_fuel_purch_price,0,quality_check,3.7018,NA,4,3,NA,carry_forward,NA,TRUE
 A3313500826225003_commercial_sold_to,A3313500826225003,331350,Holy Cross,2026-02-01,2026,2,commercial_sold_to,10062,outlier_check,9789,6264,9789,0,NA,raw_value,NA,TRUE
 A3313500826225003_most_recent_fuel_purch_price,A3313500826225003,331350,Holy Cross,2026-02-01,2026,2,most_recent_fuel_purch_price,0,quality_check,3.7018,NA,4,3,NA,carry_forward,NA,TRUE
-A3313500926225003_pce_eligible_community_kwh,A3313500926225003,331350,Holy Cross,2026-03-01,2026,3,pce_eligible_community_kwh,8096,outlier_check,5918,6260,5918,4843,NA,NA,NA,FALSE
+A3313500926225003_pce_eligible_community_kwh,A3313500926225003,331350,Holy Cross,2026-03-01,2026,3,pce_eligible_community_kwh,8096,outlier_check,5918,6260,5918,4843,NA,raw_value,NA,TRUE
 A3313500926225003_commercial_sold_to,A3313500926225003,331350,Holy Cross,2026-03-01,2026,3,commercial_sold_to,11129,outlier_check,9789,6264,9582,0,NA,raw_value,NA,TRUE
 A3313500926225003_most_recent_fuel_purch_price,A3313500926225003,331350,Holy Cross,2026-03-01,2026,3,most_recent_fuel_purch_price,0,quality_check,3.7018,NA,4,3,NA,carry_forward,NA,TRUE
-A3313501026225003_pce_eligible_community_kwh,A3313501026225003,331350,Holy Cross,2026-04-01,2026,4,pce_eligible_community_kwh,7419,outlier_check,5918,6260,5918,4763,NA,NA,NA,FALSE
+A3313501026225003_pce_eligible_community_kwh,A3313501026225003,331350,Holy Cross,2026-04-01,2026,4,pce_eligible_community_kwh,7419,outlier_check,5918,6260,5918,4763,NA,raw_value,NA,TRUE
 A3313501026225003_most_recent_fuel_purch_price,A3313501026225003,331350,Holy Cross,2026-04-01,2026,4,most_recent_fuel_purch_price,0,quality_check,3.7018,NA,4,3,NA,carry_forward,NA,TRUE
-A3313501126225003_pce_eligible_community_kwh,A3313501126225003,331350,Holy Cross,2026-05-01,2026,5,pce_eligible_community_kwh,7967,outlier_check,5918,6260,6590,4322,NA,NA,NA,FALSE
+A3313501126225003_pce_eligible_community_kwh,A3313501126225003,331350,Holy Cross,2026-05-01,2026,5,pce_eligible_community_kwh,7967,outlier_check,5918,6260,6590,4322,NA,raw_value,NA,TRUE
 A3313501126225003_residential_sold_to,A3313501126225003,331350,Holy Cross,2026-05-01,2026,5,residential_sold_to,0,outlier_check,28443,29518,25364,22260,NA,avg_same_month_other_years,NA,TRUE
 A3313501126225003_most_recent_fuel_purch_price,A3313501126225003,331350,Holy Cross,2026-05-01,2026,5,most_recent_fuel_purch_price,0,quality_check,3.7018,NA,4,3,NA,carry_forward,NA,TRUE
 A3313501226225003_most_recent_fuel_purch_price,A3313501226225003,331350,Holy Cross,2026-06-01,2026,6,most_recent_fuel_purch_price,0,quality_check,3.7018,NA,4,3,NA,carry_forward,NA,TRUE
 A3326700716225003_powerhouse_consumption_kwh,A3326700716225003,332670,Hoonah,2016-01-01,2016,1,powerhouse_consumption_kwh,18764,outlier_check,13334,8836,11424,8692,NA,raw_value,NA,TRUE
 A3326701216225003_peak_consumption_kw,A3326701216225003,332670,Hoonah,2016-06-01,2016,6,peak_consumption_kw,1338,outlier_check,764,640,686,700,NA,raw_value,NA,TRUE
-A3326700621225003_pce_eligible_community_kwh,A3326700621225003,332670,Hoonah,2020-12-01,2020,12,pce_eligible_community_kwh,0,outlier_check,54305,46707,54305,57113,NA,NA,NA,FALSE
+A3326700621225003_pce_eligible_community_kwh,A3326700621225003,332670,Hoonah,2020-12-01,2020,12,pce_eligible_community_kwh,0,outlier_check,54305,46707,54305,57113,NA,avg_preceding_proceeding,NA,TRUE
 A3326700226225003_powerhouse_consumption_kwh,A3326700226225003,332670,Hoonah,2025-08-01,2025,8,powerhouse_consumption_kwh,15873,outlier_check,11377,9409,12776,10467,NA,NA,NA,FALSE
 A3326700227225003_powerhouse_consumption_kwh,A3326700227225003,332670,Hoonah,2026-08-01,2026,8,powerhouse_consumption_kwh,16259,outlier_check,13764,11590,13764,10467,NA,NA,NA,FALSE
 A3326700327225003_powerhouse_consumption_kwh,A3326700327225003,332670,Hoonah,2026-09-01,2026,9,powerhouse_consumption_kwh,16600,outlier_check,13764,11590,13764,9460,NA,NA,NA,FALSE
@@ -3137,21 +3137,21 @@ A3313701126225003_most_recent_fuel_purch_price,A3313701126225003,331370,Huslia,2
 A3313701226225003_most_recent_fuel_purch_price,A3313701226225003,331370,Huslia,2026-06-01,2026,6,most_recent_fuel_purch_price,0,quality_check,3.8067,NA,4,4,NA,carry_forward,NA,TRUE
 A3311501016225003_residential_customers,A3311501016225003,331150,Hydaburg,2016-04-01,2016,4,residential_customers,175,outlier_check,129,129,130,117,NA,avg_preceding_proceeding,NA,TRUE
 A3311500621225003_commercial_sold_to,A3311500621225003,331150,Hydaburg,2020-12-01,2020,12,commercial_sold_to,97894,outlier_check,41408,40393,45774,36997,NA,avg_preceding_proceeding,NA,TRUE
-A3320400216225003_pce_eligible_community_kwh,A3320400216225003,332040,Igiugig,2015-08-01,2015,8,pce_eligible_community_kwh,0,outlier_check,NA,NA,NA,2601,NA,NA,NA,FALSE
-A3320400316225003_pce_eligible_community_kwh,A3320400316225003,332040,Igiugig,2015-09-01,2015,9,pce_eligible_community_kwh,0,outlier_check,NA,NA,NA,2721,NA,NA,NA,FALSE
-A3320400416225003_pce_eligible_community_kwh,A3320400416225003,332040,Igiugig,2015-10-01,2015,10,pce_eligible_community_kwh,0,outlier_check,NA,NA,NA,2875,NA,NA,NA,FALSE
-A3320400516225003_pce_eligible_community_kwh,A3320400516225003,332040,Igiugig,2015-11-01,2015,11,pce_eligible_community_kwh,0,outlier_check,NA,NA,NA,3071,NA,NA,NA,FALSE
-A3320400616225003_pce_eligible_community_kwh,A3320400616225003,332040,Igiugig,2015-12-01,2015,12,pce_eligible_community_kwh,0,outlier_check,NA,NA,NA,3191,NA,NA,NA,FALSE
-A3320400716225003_pce_eligible_community_kwh,A3320400716225003,332040,Igiugig,2016-01-01,2016,1,pce_eligible_community_kwh,0,outlier_check,NA,3605,NA,3341,NA,NA,NA,FALSE
-A3320400816225003_pce_eligible_community_kwh,A3320400816225003,332040,Igiugig,2016-02-01,2016,2,pce_eligible_community_kwh,0,outlier_check,NA,3605,NA,3268,NA,NA,NA,FALSE
-A3320400916225003_pce_eligible_community_kwh,A3320400916225003,332040,Igiugig,2016-03-01,2016,3,pce_eligible_community_kwh,0,outlier_check,NA,3605,3710,3259,NA,NA,NA,FALSE
-A3320400217225003_pce_eligible_community_kwh,A3320400217225003,332040,Igiugig,2016-08-01,2016,8,pce_eligible_community_kwh,0,outlier_check,3290,3605,3290,2601,NA,NA,NA,FALSE
-A3320400317225003_pce_eligible_community_kwh,A3320400317225003,332040,Igiugig,2016-09-01,2016,9,pce_eligible_community_kwh,0,outlier_check,3290,3605,3290,2721,NA,NA,NA,FALSE
-A3320400417225003_pce_eligible_community_kwh,A3320400417225003,332040,Igiugig,2016-10-01,2016,10,pce_eligible_community_kwh,0,outlier_check,3290,3605,3290,2875,NA,NA,NA,FALSE
-A3320400517225003_pce_eligible_community_kwh,A3320400517225003,332040,Igiugig,2016-11-01,2016,11,pce_eligible_community_kwh,0,outlier_check,3290,3605,3290,3071,NA,NA,NA,FALSE
-A3320400617225003_pce_eligible_community_kwh,A3320400617225003,332040,Igiugig,2016-12-01,2016,12,pce_eligible_community_kwh,0,outlier_check,3290,3605,3290,3191,NA,NA,NA,FALSE
-A3320400717225003_pce_eligible_community_kwh,A3320400717225003,332040,Igiugig,2017-01-01,2017,1,pce_eligible_community_kwh,0,outlier_check,3290,2664,3290,3341,NA,NA,NA,FALSE
-A3320400817225003_pce_eligible_community_kwh,A3320400817225003,332040,Igiugig,2017-02-01,2017,2,pce_eligible_community_kwh,0,outlier_check,3290,2664,3162,3268,NA,NA,NA,FALSE
+A3320400216225003_pce_eligible_community_kwh,A3320400216225003,332040,Igiugig,2015-08-01,2015,8,pce_eligible_community_kwh,0,outlier_check,NA,NA,NA,2601,NA,avg_same_month_other_years,NA,TRUE
+A3320400316225003_pce_eligible_community_kwh,A3320400316225003,332040,Igiugig,2015-09-01,2015,9,pce_eligible_community_kwh,0,outlier_check,NA,NA,NA,2721,NA,avg_same_month_other_years,NA,TRUE
+A3320400416225003_pce_eligible_community_kwh,A3320400416225003,332040,Igiugig,2015-10-01,2015,10,pce_eligible_community_kwh,0,outlier_check,NA,NA,NA,2875,NA,avg_same_month_other_years,NA,TRUE
+A3320400516225003_pce_eligible_community_kwh,A3320400516225003,332040,Igiugig,2015-11-01,2015,11,pce_eligible_community_kwh,0,outlier_check,NA,NA,NA,3071,NA,avg_same_month_other_years,NA,TRUE
+A3320400616225003_pce_eligible_community_kwh,A3320400616225003,332040,Igiugig,2015-12-01,2015,12,pce_eligible_community_kwh,0,outlier_check,NA,NA,NA,3191,NA,avg_same_month_other_years,NA,TRUE
+A3320400716225003_pce_eligible_community_kwh,A3320400716225003,332040,Igiugig,2016-01-01,2016,1,pce_eligible_community_kwh,0,outlier_check,NA,3605,NA,3341,NA,avg_same_month_other_years,NA,TRUE
+A3320400816225003_pce_eligible_community_kwh,A3320400816225003,332040,Igiugig,2016-02-01,2016,2,pce_eligible_community_kwh,0,outlier_check,NA,3605,NA,3268,NA,avg_same_month_other_years,NA,TRUE
+A3320400916225003_pce_eligible_community_kwh,A3320400916225003,332040,Igiugig,2016-03-01,2016,3,pce_eligible_community_kwh,0,outlier_check,NA,3605,3710,3259,NA,avg_same_month_other_years,NA,TRUE
+A3320400217225003_pce_eligible_community_kwh,A3320400217225003,332040,Igiugig,2016-08-01,2016,8,pce_eligible_community_kwh,0,outlier_check,3290,3605,3290,2601,NA,avg_same_month_other_years,NA,TRUE
+A3320400317225003_pce_eligible_community_kwh,A3320400317225003,332040,Igiugig,2016-09-01,2016,9,pce_eligible_community_kwh,0,outlier_check,3290,3605,3290,2721,NA,avg_same_month_other_years,NA,TRUE
+A3320400417225003_pce_eligible_community_kwh,A3320400417225003,332040,Igiugig,2016-10-01,2016,10,pce_eligible_community_kwh,0,outlier_check,3290,3605,3290,2875,NA,avg_same_month_other_years,NA,TRUE
+A3320400517225003_pce_eligible_community_kwh,A3320400517225003,332040,Igiugig,2016-11-01,2016,11,pce_eligible_community_kwh,0,outlier_check,3290,3605,3290,3071,NA,avg_same_month_other_years,NA,TRUE
+A3320400617225003_pce_eligible_community_kwh,A3320400617225003,332040,Igiugig,2016-12-01,2016,12,pce_eligible_community_kwh,0,outlier_check,3290,3605,3290,3191,NA,avg_same_month_other_years,NA,TRUE
+A3320400717225003_pce_eligible_community_kwh,A3320400717225003,332040,Igiugig,2017-01-01,2017,1,pce_eligible_community_kwh,0,outlier_check,3290,2664,3290,3341,NA,avg_same_month_other_years,NA,TRUE
+A3320400817225003_pce_eligible_community_kwh,A3320400817225003,332040,Igiugig,2017-02-01,2017,2,pce_eligible_community_kwh,0,outlier_check,3290,2664,3162,3268,NA,avg_same_month_other_years,NA,TRUE
 A3320401224225003_peak_consumption_kw,A3320401224225003,332040,Igiugig,2024-06-01,2024,6,peak_consumption_kw,148,outlier_check,128,111,130,74,NA,raw_value,NA,TRUE
 A3320400225225003_total_kwh_purchased,A3320400225225003,332040,Igiugig,2024-08-01,2024,8,total_kwh_purchased,12272,outlier_check,4484,3764,4484,372,NA,raw_value,NA,TRUE
 A3320400325225003_total_kwh_purchased,A3320400325225003,332040,Igiugig,2024-09-01,2024,9,total_kwh_purchased,20094,outlier_check,4484,3764,4395,369,NA,raw_value,NA,TRUE
@@ -3186,7 +3186,7 @@ A3320500517225003_fuel_cost,A3320500517225003,332050,"Iliamna, Newhalen, Nondalt
 A3320500617225003_fuel_used_gallons,A3320500617225003,332050,"Iliamna, Newhalen, Nondalton",2016-12-01,2016,12,fuel_used_gallons,1367,outlier_check,756,110,564,107,NA,raw_value,NA,TRUE
 A3320500617225003_diesel_kwh_generated,A3320500617225003,332050,"Iliamna, Newhalen, Nondalton",2016-12-01,2016,12,diesel_kwh_generated,17797,outlier_check,9715,1437,7376,1550,NA,raw_value,NA,TRUE
 A3320500617225003_fuel_cost,A3320500617225003,332050,"Iliamna, Newhalen, Nondalton",2016-12-01,2016,12,fuel_cost,6536.72,outlier_check,864.25,136,1301,448,NA,raw_value,NA,TRUE
-A3320501217225003_pce_eligible_community_kwh,A3320501217225003,332050,"Iliamna, Newhalen, Nondalton",2017-06-01,2017,6,pce_eligible_community_kwh,0,outlier_check,18350,24942,18336,18910,NA,NA,NA,FALSE
+A3320501217225003_pce_eligible_community_kwh,A3320501217225003,332050,"Iliamna, Newhalen, Nondalton",2017-06-01,2017,6,pce_eligible_community_kwh,0,outlier_check,18350,24942,18336,18910,NA,avg_preceding_proceeding,NA,TRUE
 A3320500118225003_fuel_used_gallons,A3320500118225003,332050,"Iliamna, Newhalen, Nondalton",2017-07-01,2017,7,fuel_used_gallons,1063,outlier_check,0,108,0,99,NA,raw_value,NA,TRUE
 A3320500118225003_diesel_kwh_generated,A3320500118225003,332050,"Iliamna, Newhalen, Nondalton",2017-07-01,2017,7,diesel_kwh_generated,13910,outlier_check,0,1411,0,1165,NA,raw_value,NA,TRUE
 A3320500118225003_fuel_cost,A3320500118225003,332050,"Iliamna, Newhalen, Nondalton",2017-07-01,2017,7,fuel_cost,4965.91,outlier_check,0,502,0,411,NA,raw_value,NA,TRUE
@@ -3242,7 +3242,7 @@ A3320500826225003_diesel_kwh_generated,A3320500826225003,332050,"Iliamna, Newhal
 A3320500826225003_fuel_cost,A3320500826225003,332050,"Iliamna, Newhalen, Nondalton",2026-02-01,2026,2,fuel_cost,5247.99,outlier_check,3020.46,916,1510,829,NA,raw_value,NA,TRUE
 A3320500127225003_peak_consumption_kw,A3320500127225003,332050,"Iliamna, Newhalen, Nondalton",2026-07-01,2026,7,peak_consumption_kw,1275,outlier_check,554,677,827,580,NA,raw_value,NA,TRUE
 A3326800716225003_powerhouse_consumption_kwh,A3326800716225003,332680,Kake,2016-01-01,2016,1,powerhouse_consumption_kwh,15400,outlier_check,6400,6273,3200,6470,NA,raw_value,NA,TRUE
-A3326800621225003_pce_eligible_community_kwh,A3326800621225003,332680,Kake,2020-12-01,2020,12,pce_eligible_community_kwh,0,outlier_check,17060,15451,17268,18639,NA,NA,NA,FALSE
+A3326800621225003_pce_eligible_community_kwh,A3326800621225003,332680,Kake,2020-12-01,2020,12,pce_eligible_community_kwh,0,outlier_check,17060,15451,17268,18639,NA,avg_preceding_proceeding,NA,TRUE
 A3326800621225003_hydro_kwh_generated,A3326800621225003,332680,Kake,2020-12-01,2020,12,hydro_kwh_generated,72577,outlier_check,40127,5066,40127,0,NA,raw_value,NA,TRUE
 A3326800621225003_peak_consumption_kw,A3326800621225003,332680,Kake,2020-12-01,2020,12,peak_consumption_kw,737,outlier_check,346,336,244,416,NA,raw_value,NA,TRUE
 A3326800721225003_hydro_kwh_generated,A3326800721225003,332680,Kake,2021-01-01,2021,1,hydro_kwh_generated,104461,outlier_check,40127,23883,38485,9603,NA,raw_value,NA,TRUE
@@ -3824,8 +3824,8 @@ A3314100326225003_most_recent_fuel_purch_price,A3314100326225003,331410,Kivalina
 A3314100426225003_most_recent_fuel_purch_price,A3314100426225003,331410,Kivalina,2025-10-01,2025,10,most_recent_fuel_purch_price,0,quality_check,4.6571,5,5,4,NA,carry_forward,NA,TRUE
 A3314100526225003_most_recent_fuel_purch_price,A3314100526225003,331410,Kivalina,2025-11-01,2025,11,most_recent_fuel_purch_price,0,quality_check,4.6571,5,5,4,NA,carry_forward,NA,TRUE
 A3314100626225003_most_recent_fuel_purch_price,A3314100626225003,331410,Kivalina,2025-12-01,2025,12,most_recent_fuel_purch_price,0,quality_check,4.6571,5,5,4,NA,carry_forward,NA,TRUE
-A3314100726225003_pce_eligible_residential_kwh,A3314100726225003,331410,Kivalina,2026-01-01,2026,1,pce_eligible_residential_kwh,0,outlier_check,47045,43589,47391,40313,NA,NA,NA,FALSE
-A3314100726225003_pce_eligible_community_kwh,A3314100726225003,331410,Kivalina,2026-01-01,2026,1,pce_eligible_community_kwh,8825,outlier_check,4824,3683,4824,4991,NA,NA,NA,FALSE
+A3314100726225003_pce_eligible_residential_kwh,A3314100726225003,331410,Kivalina,2026-01-01,2026,1,pce_eligible_residential_kwh,0,outlier_check,47045,43589,47391,40313,NA,avg_preceding_proceeding,NA,TRUE
+A3314100726225003_pce_eligible_community_kwh,A3314100726225003,331410,Kivalina,2026-01-01,2026,1,pce_eligible_community_kwh,8825,outlier_check,4824,3683,4824,4991,NA,avg_preceding_proceeding,NA,TRUE
 A3314100726225003_residential_sold_to,A3314100726225003,331410,Kivalina,2026-01-01,2026,1,residential_sold_to,90324,outlier_check,61234,55760,62856,63174,NA,raw_value,NA,TRUE
 A3314100726225003_most_recent_fuel_purch_price,A3314100726225003,331410,Kivalina,2026-01-01,2026,1,most_recent_fuel_purch_price,0,quality_check,4.6571,NA,5,4,NA,carry_forward,NA,TRUE
 A3314100826225003_most_recent_fuel_purch_price,A3314100826225003,331410,Kivalina,2026-02-01,2026,2,most_recent_fuel_purch_price,0,quality_check,4.6571,NA,5,4,NA,carry_forward,NA,TRUE
@@ -3842,7 +3842,7 @@ A3311550826225003_residential_customers,A3311550826225003,331155,Klawock,2026-02
 A3327000116225003_pce_eligible_community_kwh,A3327000116225003,332700,Klukwan,2015-07-01,2015,7,pce_eligible_community_kwh,3720,outlier_check,NA,5880,NA,6420,NA,raw_value,NA,TRUE
 A3327000116225003_most_recent_fuel_purch_price,A3327000116225003,332700,Klukwan,2015-07-01,2015,7,most_recent_fuel_purch_price,0,quality_check,NA,3,3,3,NA,carry_forward,NA,TRUE
 A3327000216225003_pce_eligible_community_kwh,A3327000216225003,332700,Klukwan,2015-08-01,2015,8,pce_eligible_community_kwh,4484,outlier_check,NA,5880,5880,6440,NA,raw_value,NA,TRUE
-A3327000621225003_pce_eligible_community_kwh,A3327000621225003,332700,Klukwan,2020-12-01,2020,12,pce_eligible_community_kwh,0,outlier_check,6650,6612,6650,6330,NA,NA,NA,FALSE
+A3327000621225003_pce_eligible_community_kwh,A3327000621225003,332700,Klukwan,2020-12-01,2020,12,pce_eligible_community_kwh,0,outlier_check,6650,6612,6650,6330,NA,avg_preceding_proceeding,NA,TRUE
 A3327000123225003_diesel_kwh_generated,A3327000123225003,332700,Klukwan,2022-07-01,2022,7,diesel_kwh_generated,32392,outlier_check,0,0,0,0,NA,raw_value,NA,TRUE
 A3327000223225003_diesel_kwh_generated,A3327000223225003,332700,Klukwan,2022-08-01,2022,8,diesel_kwh_generated,29323,outlier_check,0,0,0,0,NA,raw_value,NA,TRUE
 A3327000323225003_diesel_kwh_generated,A3327000323225003,332700,Klukwan,2022-09-01,2022,9,diesel_kwh_generated,33178,outlier_check,0,0,0,0,NA,raw_value,NA,TRUE
@@ -3928,7 +3928,7 @@ A3320901122225003_most_recent_fuel_purch_price,A3320901122225003,332090,Kobuk,20
 A3320901222225003_most_recent_fuel_purch_price,A3320901222225003,332090,Kobuk,2022-06-01,2022,6,most_recent_fuel_purch_price,0,quality_check,5.6056,7,6,8,NA,carry_forward,NA,TRUE
 A3320900123225003_most_recent_fuel_purch_price,A3320900123225003,332090,Kobuk,2022-07-01,2022,7,most_recent_fuel_purch_price,0,quality_check,5.6056,7,6,7,NA,carry_forward,NA,TRUE
 A3320900223225003_most_recent_fuel_purch_price,A3320900223225003,332090,Kobuk,2022-08-01,2022,8,most_recent_fuel_purch_price,0,quality_check,5.6056,7,6,7,NA,carry_forward,NA,TRUE
-A3320900723225003_pce_eligible_community_kwh,A3320900723225003,332090,Kobuk,2023-01-01,2023,1,pce_eligible_community_kwh,10384,outlier_check,2390,2336,2413,2421,NA,NA,NA,FALSE
+A3320900723225003_pce_eligible_community_kwh,A3320900723225003,332090,Kobuk,2023-01-01,2023,1,pce_eligible_community_kwh,10384,outlier_check,2390,2336,2413,2421,NA,avg_preceding_proceeding,NA,TRUE
 A3320900724225003_commercial_sold_to,A3320900724225003,332090,Kobuk,2024-01-01,2024,1,commercial_sold_to,3186,outlier_check,8045,7586,8045,8062,NA,avg_same_month_other_years,NA,TRUE
 A3320900824225003_commercial_sold_to,A3320900824225003,332090,Kobuk,2024-02-01,2024,2,commercial_sold_to,15718,outlier_check,8045,7586,8220,7397,NA,avg_same_month_other_years,NA,TRUE
 A3320900326225003_most_recent_fuel_purch_price,A3320900326225003,332090,Kobuk,2025-09-01,2025,9,most_recent_fuel_purch_price,0,quality_check,7.3519,9,7,7,NA,carry_forward,NA,TRUE
@@ -3995,8 +3995,8 @@ A3321100118225003_powerhouse_consumption_kwh,A3321100118225003,332110,Koliganek,
 A3321100218225003_powerhouse_consumption_kwh,A3321100218225003,332110,Koliganek,2017-08-01,2017,8,powerhouse_consumption_kwh,2957,outlier_check,2020,2008,2177,1713,NA,raw_value,NA,TRUE
 A3321100218225003_commercial_sold_to,A3321100218225003,332110,Koliganek,2017-08-01,2017,8,commercial_sold_to,17511,outlier_check,6098,5453,5728,5118,NA,raw_value,NA,TRUE
 A3321100518225003_govt_facil_sold_to,A3321100518225003,332110,Koliganek,2017-11-01,2017,11,govt_facil_sold_to,36987,outlier_check,23743,4782,16416,16260,NA,raw_value,NA,TRUE
-A3321100618225003_pce_eligible_residential_kwh,A3321100618225003,332110,Koliganek,2017-12-01,2017,12,pce_eligible_residential_kwh,0,outlier_check,20753,19555,20368,20215,NA,NA,NA,FALSE
-A3321100618225003_pce_eligible_community_kwh,A3321100618225003,332110,Koliganek,2017-12-01,2017,12,pce_eligible_community_kwh,0,outlier_check,6748,7756,7624,7192,NA,NA,NA,FALSE
+A3321100618225003_pce_eligible_residential_kwh,A3321100618225003,332110,Koliganek,2017-12-01,2017,12,pce_eligible_residential_kwh,0,outlier_check,20753,19555,20368,20215,NA,avg_preceding_proceeding,NA,TRUE
+A3321100618225003_pce_eligible_community_kwh,A3321100618225003,332110,Koliganek,2017-12-01,2017,12,pce_eligible_community_kwh,0,outlier_check,6748,7756,7624,7192,NA,avg_preceding_proceeding,NA,TRUE
 A3321100618225003_residential_rate,A3321100618225003,332110,Koliganek,2017-12-01,2017,12,residential_rate,0,quality_check,0.5,0,0,0,NA,carry_forward,NA,TRUE
 A3321101218225003_powerhouse_consumption_kwh,A3321101218225003,332110,Koliganek,2018-06-01,2018,6,powerhouse_consumption_kwh,2892,outlier_check,2526,1924,2526,1709,NA,raw_value,NA,TRUE
 A3321100119225003_powerhouse_consumption_kwh,A3321100119225003,332110,Koliganek,2018-07-01,2018,7,powerhouse_consumption_kwh,3117,outlier_check,2526,1924,2526,1768,NA,raw_value,NA,TRUE
@@ -4005,7 +4005,7 @@ A3321100319225003_powerhouse_consumption_kwh,A3321100319225003,332110,Koliganek,
 A3321100419225003_diesel_kwh_generated,A3321100419225003,332110,Koliganek,2018-10-01,2018,10,diesel_kwh_generated,0,outlier_check,59050,63884,59050,59171,NA,avg_same_month_other_years,NA,TRUE
 A3321100519225003_diesel_kwh_generated,A3321100519225003,332110,Koliganek,2018-11-01,2018,11,diesel_kwh_generated,0,outlier_check,59050,63884,67060,61270,NA,avg_same_month_other_years,NA,TRUE
 A3321100519225003_powerhouse_consumption_kwh,A3321100519225003,332110,Koliganek,2018-11-01,2018,11,powerhouse_consumption_kwh,0,outlier_check,1661,1924,1662,1591,NA,avg_preceding_proceeding,NA,TRUE
-A3321100719225003_pce_eligible_community_kwh,A3321100719225003,332110,Koliganek,2019-01-01,2019,1,pce_eligible_community_kwh,11622,outlier_check,9748,6552,9624,7092,NA,NA,NA,FALSE
+A3321100719225003_pce_eligible_community_kwh,A3321100719225003,332110,Koliganek,2019-01-01,2019,1,pce_eligible_community_kwh,11622,outlier_check,9748,6552,9624,7092,NA,raw_value,NA,TRUE
 A3321100122225003_amount,A3321100122225003,332110,Koliganek,2021-07-01,2021,7,amount,0,outlier_check,5828.84,5868,5822,6593,NA,avg_preceding_proceeding,NA,TRUE
 A3321100623225003_fuel_used_gallons,A3321100623225003,332110,Koliganek,2022-12-01,2022,12,fuel_used_gallons,9640,outlier_check,4896,4631,5064,5473,4820,avg_same_month_other_years,NA,TRUE
 A3321100623225003_powerhouse_consumption_kwh,A3321100623225003,332110,Koliganek,2022-12-01,2022,12,powerhouse_consumption_kwh,2806,outlier_check,1437,1545,1442,1499,NA,raw_value,NA,TRUE
@@ -4066,7 +4066,7 @@ A3325100127225003_govt_facil_sold_to,A3325100127225003,332510,Kongiganak,2026-07
 A3325100127225003_fuel_cost,A3325100127225003,332510,Kongiganak,2026-07-01,2026,7,fuel_cost,145919.04,outlier_check,31224.04,38808,35354,18019,NA,raw_value,NA,TRUE
 A3325100227225003_govt_facil_sold_to,A3325100227225003,332510,Kongiganak,2026-08-01,2026,8,govt_facil_sold_to,9460,outlier_check,270,499,270,275,NA,NA,NA,FALSE
 A3321200516225003_commercial_sold_to,A3321200516225003,332120,Kotlik,2015-11-01,2015,11,commercial_sold_to,40143,outlier_check,37061,35857,37061,24367,NA,raw_value,NA,TRUE
-A3321200616225003_pce_eligible_community_kwh,A3321200616225003,332120,Kotlik,2015-12-01,2015,12,pce_eligible_community_kwh,5757,outlier_check,5403,5000,5403,4356,NA,NA,NA,FALSE
+A3321200616225003_pce_eligible_community_kwh,A3321200616225003,332120,Kotlik,2015-12-01,2015,12,pce_eligible_community_kwh,5757,outlier_check,5403,5000,5403,4356,NA,raw_value,NA,TRUE
 A3321200616225003_commercial_sold_to,A3321200616225003,332120,Kotlik,2015-12-01,2015,12,commercial_sold_to,42680,outlier_check,37061,35857,37061,26620,NA,raw_value,NA,TRUE
 A3321200716225003_pce_eligible_community_kwh,A3321200716225003,332120,Kotlik,2016-01-01,2016,1,pce_eligible_community_kwh,5708,outlier_check,5403,4549,5407,4382,NA,NA,NA,FALSE
 A3321200716225003_commercial_sold_to,A3321200716225003,332120,Kotlik,2016-01-01,2016,1,commercial_sold_to,42383,outlier_check,37061,27657,31206,28415,NA,raw_value,NA,TRUE
@@ -4115,7 +4115,7 @@ A3321200326225003_most_recent_fuel_purch_price,A3321200326225003,332120,Kotlik,2
 A3321200426225003_most_recent_fuel_purch_price,A3321200426225003,332120,Kotlik,2025-10-01,2025,10,most_recent_fuel_purch_price,0,quality_check,4.4056,5,4,4,NA,carry_forward,NA,TRUE
 A3321200526225003_most_recent_fuel_purch_price,A3321200526225003,332120,Kotlik,2025-11-01,2025,11,most_recent_fuel_purch_price,0,quality_check,4.4056,5,4,4,NA,carry_forward,NA,TRUE
 A3321200626225003_most_recent_fuel_purch_price,A3321200626225003,332120,Kotlik,2025-12-01,2025,12,most_recent_fuel_purch_price,0,quality_check,4.4056,5,4,4,NA,carry_forward,NA,TRUE
-A3321200726225003_pce_eligible_community_kwh,A3321200726225003,332120,Kotlik,2026-01-01,2026,1,pce_eligible_community_kwh,6217,outlier_check,3934,3983,4019,4382,NA,NA,NA,FALSE
+A3321200726225003_pce_eligible_community_kwh,A3321200726225003,332120,Kotlik,2026-01-01,2026,1,pce_eligible_community_kwh,6217,outlier_check,3934,3983,4019,4382,NA,avg_preceding_proceeding,NA,TRUE
 A3321200726225003_most_recent_fuel_purch_price,A3321200726225003,332120,Kotlik,2026-01-01,2026,1,most_recent_fuel_purch_price,0,quality_check,4.4056,NA,4,4,NA,carry_forward,NA,TRUE
 A3321200826225003_most_recent_fuel_purch_price,A3321200826225003,332120,Kotlik,2026-02-01,2026,2,most_recent_fuel_purch_price,0,quality_check,4.4056,NA,4,4,NA,carry_forward,NA,TRUE
 A3321200926225003_most_recent_fuel_purch_price,A3321200926225003,332120,Kotlik,2026-03-01,2026,3,most_recent_fuel_purch_price,0,quality_check,4.4056,NA,4,4,NA,carry_forward,NA,TRUE
@@ -4132,28 +4132,28 @@ A3321300819225003_diesel_kwh_generated,A3321300819225003,332130,Kotzebue,2019-02
 A3321300819225003_powerhouse_consumption_kwh,A3321300819225003,332130,Kotzebue,2019-02-01,2019,2,powerhouse_consumption_kwh,0,outlier_check,42118,37642,41804,47079,NA,avg_preceding_proceeding,NA,TRUE
 A3321301219225003_diesel_kwh_generated,A3321301219225003,332130,Kotzebue,2019-06-01,2019,6,diesel_kwh_generated,0,outlier_check,1450864,1574570,1468126,1289016,NA,avg_preceding_proceeding,NA,TRUE
 A3321301219225003_powerhouse_consumption_kwh,A3321301219225003,332130,Kotzebue,2019-06-01,2019,6,powerhouse_consumption_kwh,0,outlier_check,32694,37642,36666,37996,NA,avg_preceding_proceeding,NA,TRUE
-A3321300521225003_pce_eligible_community_kwh,A3321300521225003,332130,Kotzebue,2020-11-01,2020,11,pce_eligible_community_kwh,8032,outlier_check,130335,134580,130335,144774,NA,NA,NA,FALSE
-A3321300621225003_pce_eligible_community_kwh,A3321300621225003,332130,Kotzebue,2020-12-01,2020,12,pce_eligible_community_kwh,8071,outlier_check,130335,134580,135542,142494,NA,NA,NA,FALSE
+A3321300521225003_pce_eligible_community_kwh,A3321300521225003,332130,Kotzebue,2020-11-01,2020,11,pce_eligible_community_kwh,8032,outlier_check,130335,134580,130335,144774,NA,avg_preceding_proceeding,NA,TRUE
+A3321300621225003_pce_eligible_community_kwh,A3321300621225003,332130,Kotzebue,2020-12-01,2020,12,pce_eligible_community_kwh,8071,outlier_check,130335,134580,135542,142494,NA,avg_preceding_proceeding,NA,TRUE
 A3321300123225003_diesel_kwh_generated,A3321300123225003,332130,Kotzebue,2022-07-01,2022,7,diesel_kwh_generated,0,outlier_check,1258376,1399426,1248878,1235525,NA,avg_preceding_proceeding,NA,TRUE
 A3321300324225003_com_facil_sold_to,A3321300324225003,332130,Kotzebue,2023-09-01,2023,9,com_facil_sold_to,226662,outlier_check,135761,153163,141366,129209,NA,raw_value,NA,TRUE
 A3321300424225003_solar_kwh_generated,A3321300424225003,332130,Kotzebue,2023-10-01,2023,10,solar_kwh_generated,913987,outlier_check,101655,38934,57078,79795,91398,manual_override,Assume misplaced decimal,TRUE
-A3321300924225003_pce_eligible_community_kwh,A3321300924225003,332130,Kotzebue,2024-03-01,2024,3,pce_eligible_community_kwh,12193,outlier_check,194546,152357,172157,137428,NA,NA,NA,FALSE
-A3321301124225003_pce_eligible_community_kwh,A3321301124225003,332130,Kotzebue,2024-05-01,2024,5,pce_eligible_community_kwh,11600,outlier_check,149768,152357,146787,134300,NA,NA,NA,FALSE
-A3321300125225003_pce_eligible_community_kwh,A3321300125225003,332130,Kotzebue,2024-07-01,2024,7,pce_eligible_community_kwh,10648,outlier_check,143806,152357,135173,122032,NA,NA,NA,FALSE
-A3321301225225003_pce_eligible_community_kwh,A3321301225225003,332130,Kotzebue,2025-06-01,2025,6,pce_eligible_community_kwh,11469,outlier_check,156752,162870,156752,130886,NA,NA,NA,FALSE
-A3321300126225003_pce_eligible_community_kwh,A3321300126225003,332130,Kotzebue,2025-07-01,2025,7,pce_eligible_community_kwh,10890,outlier_check,156752,162870,156752,122032,NA,NA,NA,FALSE
-A3321300226225003_pce_eligible_community_kwh,A3321300226225003,332130,Kotzebue,2025-08-01,2025,8,pce_eligible_community_kwh,11153,outlier_check,156752,162870,156752,125133,NA,NA,NA,FALSE
-A3321300326225003_pce_eligible_community_kwh,A3321300326225003,332130,Kotzebue,2025-09-01,2025,9,pce_eligible_community_kwh,12445,outlier_check,156752,162870,156752,135012,NA,NA,NA,FALSE
-A3321300426225003_pce_eligible_community_kwh,A3321300426225003,332130,Kotzebue,2025-10-01,2025,10,pce_eligible_community_kwh,12179,outlier_check,156752,162870,156752,133176,NA,NA,NA,FALSE
-A3321300526225003_pce_eligible_community_kwh,A3321300526225003,332130,Kotzebue,2025-11-01,2025,11,pce_eligible_community_kwh,11515,outlier_check,156752,162870,156752,144774,NA,NA,NA,FALSE
-A3321300626225003_pce_eligible_community_kwh,A3321300626225003,332130,Kotzebue,2025-12-01,2025,12,pce_eligible_community_kwh,11730,outlier_check,156752,162870,156752,142494,NA,NA,NA,FALSE
+A3321300924225003_pce_eligible_community_kwh,A3321300924225003,332130,Kotzebue,2024-03-01,2024,3,pce_eligible_community_kwh,12193,outlier_check,194546,152357,172157,137428,NA,avg_preceding_proceeding,NA,TRUE
+A3321301124225003_pce_eligible_community_kwh,A3321301124225003,332130,Kotzebue,2024-05-01,2024,5,pce_eligible_community_kwh,11600,outlier_check,149768,152357,146787,134300,NA,avg_preceding_proceeding,NA,TRUE
+A3321300125225003_pce_eligible_community_kwh,A3321300125225003,332130,Kotzebue,2024-07-01,2024,7,pce_eligible_community_kwh,10648,outlier_check,143806,152357,135173,122032,NA,avg_preceding_proceeding,NA,TRUE
+A3321301225225003_pce_eligible_community_kwh,A3321301225225003,332130,Kotzebue,2025-06-01,2025,6,pce_eligible_community_kwh,11469,outlier_check,156752,162870,156752,130886,NA,raw_value,NA,TRUE
+A3321300126225003_pce_eligible_community_kwh,A3321300126225003,332130,Kotzebue,2025-07-01,2025,7,pce_eligible_community_kwh,10890,outlier_check,156752,162870,156752,122032,NA,raw_value,NA,TRUE
+A3321300226225003_pce_eligible_community_kwh,A3321300226225003,332130,Kotzebue,2025-08-01,2025,8,pce_eligible_community_kwh,11153,outlier_check,156752,162870,156752,125133,NA,raw_value,NA,TRUE
+A3321300326225003_pce_eligible_community_kwh,A3321300326225003,332130,Kotzebue,2025-09-01,2025,9,pce_eligible_community_kwh,12445,outlier_check,156752,162870,156752,135012,NA,raw_value,NA,TRUE
+A3321300426225003_pce_eligible_community_kwh,A3321300426225003,332130,Kotzebue,2025-10-01,2025,10,pce_eligible_community_kwh,12179,outlier_check,156752,162870,156752,133176,NA,raw_value,NA,TRUE
+A3321300526225003_pce_eligible_community_kwh,A3321300526225003,332130,Kotzebue,2025-11-01,2025,11,pce_eligible_community_kwh,11515,outlier_check,156752,162870,156752,144774,NA,raw_value,NA,TRUE
+A3321300626225003_pce_eligible_community_kwh,A3321300626225003,332130,Kotzebue,2025-12-01,2025,12,pce_eligible_community_kwh,11730,outlier_check,156752,162870,156752,142494,NA,raw_value,NA,TRUE
 A3321300626225003_peak_consumption_kw,A3321300626225003,332130,Kotzebue,2025-12-01,2025,12,peak_consumption_kw,1323,outlier_check,2856,2830,3086,3090,NA,raw_value,NA,TRUE
-A3321300726225003_pce_eligible_community_kwh,A3321300726225003,332130,Kotzebue,2026-01-01,2026,1,pce_eligible_community_kwh,11684,outlier_check,156752,NA,156752,149828,NA,NA,NA,FALSE
-A3321300826225003_pce_eligible_community_kwh,A3321300826225003,332130,Kotzebue,2026-02-01,2026,2,pce_eligible_community_kwh,11603,outlier_check,156752,NA,156752,156738,NA,NA,NA,FALSE
-A3321300926225003_pce_eligible_community_kwh,A3321300926225003,332130,Kotzebue,2026-03-01,2026,3,pce_eligible_community_kwh,11601,outlier_check,156752,NA,156752,137428,NA,NA,NA,FALSE
-A3321301026225003_pce_eligible_community_kwh,A3321301026225003,332130,Kotzebue,2026-04-01,2026,4,pce_eligible_community_kwh,11600,outlier_check,156752,NA,156752,145706,NA,NA,NA,FALSE
-A3321301126225003_pce_eligible_community_kwh,A3321301126225003,332130,Kotzebue,2026-05-01,2026,5,pce_eligible_community_kwh,11702,outlier_check,156752,NA,156752,134300,NA,NA,NA,FALSE
-A3321301226225003_pce_eligible_community_kwh,A3321301226225003,332130,Kotzebue,2026-06-01,2026,6,pce_eligible_community_kwh,10965,outlier_check,156752,NA,156752,130886,NA,NA,NA,FALSE
+A3321300726225003_pce_eligible_community_kwh,A3321300726225003,332130,Kotzebue,2026-01-01,2026,1,pce_eligible_community_kwh,11684,outlier_check,156752,NA,156752,149828,NA,raw_value,NA,TRUE
+A3321300826225003_pce_eligible_community_kwh,A3321300826225003,332130,Kotzebue,2026-02-01,2026,2,pce_eligible_community_kwh,11603,outlier_check,156752,NA,156752,156738,NA,raw_value,NA,TRUE
+A3321300926225003_pce_eligible_community_kwh,A3321300926225003,332130,Kotzebue,2026-03-01,2026,3,pce_eligible_community_kwh,11601,outlier_check,156752,NA,156752,137428,NA,raw_value,NA,TRUE
+A3321301026225003_pce_eligible_community_kwh,A3321301026225003,332130,Kotzebue,2026-04-01,2026,4,pce_eligible_community_kwh,11600,outlier_check,156752,NA,156752,145706,NA,raw_value,NA,TRUE
+A3321301126225003_pce_eligible_community_kwh,A3321301126225003,332130,Kotzebue,2026-05-01,2026,5,pce_eligible_community_kwh,11702,outlier_check,156752,NA,156752,134300,NA,raw_value,NA,TRUE
+A3321301226225003_pce_eligible_community_kwh,A3321301226225003,332130,Kotzebue,2026-06-01,2026,6,pce_eligible_community_kwh,10965,outlier_check,156752,NA,156752,130886,NA,raw_value,NA,TRUE
 A3321301226225003_peak_consumption_kw,A3321301226225003,332130,Kotzebue,2026-06-01,2026,6,peak_consumption_kw,0,outlier_check,2885,3102,2885,2600,NA,avg_same_month_other_years,NA,TRUE
 A3321300127225003_pce_eligible_community_kwh,A3321300127225003,332130,Kotzebue,2026-07-01,2026,7,pce_eligible_community_kwh,0,outlier_check,156752,NA,156752,122032,NA,NA,NA,FALSE
 A3321300127225003_peak_consumption_kw,A3321300127225003,332130,Kotzebue,2026-07-01,2026,7,peak_consumption_kw,0,outlier_check,2885,3102,2885,2796,NA,NA,NA,FALSE
@@ -4683,7 +4683,7 @@ A3314400726225003_commercial_sold_to,A3314400726225003,331440,Marshall,2026-01-0
 A3314400726225003_most_recent_fuel_purch_price,A3314400726225003,331440,Marshall,2026-01-01,2026,1,most_recent_fuel_purch_price,0,quality_check,3.5534,NA,4,3,NA,carry_forward,NA,TRUE
 A3314400826225003_commercial_sold_to,A3314400826225003,331440,Marshall,2026-02-01,2026,2,commercial_sold_to,25130,outlier_check,11494,NA,11494,6704,NA,raw_value,NA,TRUE
 A3314400826225003_most_recent_fuel_purch_price,A3314400826225003,331440,Marshall,2026-02-01,2026,2,most_recent_fuel_purch_price,0,quality_check,3.5534,NA,4,3,NA,carry_forward,NA,TRUE
-A3314400926225003_pce_eligible_community_kwh,A3314400926225003,331440,Marshall,2026-03-01,2026,3,pce_eligible_community_kwh,269,outlier_check,8991,8343,8754,8768,NA,NA,NA,FALSE
+A3314400926225003_pce_eligible_community_kwh,A3314400926225003,331440,Marshall,2026-03-01,2026,3,pce_eligible_community_kwh,269,outlier_check,8991,8343,8754,8768,NA,avg_preceding_proceeding,NA,TRUE
 A3314400926225003_commercial_sold_to,A3314400926225003,331440,Marshall,2026-03-01,2026,3,commercial_sold_to,26594,outlier_check,11494,NA,11494,7551,NA,raw_value,NA,TRUE
 A3314400926225003_most_recent_fuel_purch_price,A3314400926225003,331440,Marshall,2026-03-01,2026,3,most_recent_fuel_purch_price,0,quality_check,3.5534,NA,4,3,NA,carry_forward,NA,TRUE
 A3314401026225003_commercial_sold_to,A3314401026225003,331440,Marshall,2026-04-01,2026,4,commercial_sold_to,22455,outlier_check,11494,NA,11494,8114,NA,raw_value,NA,TRUE
@@ -4716,7 +4716,7 @@ A3314500416225003_commercial_sold_to,A3314500416225003,331450,Mekoryuk,2015-10-0
 A3314500516225003_commercial_sold_to,A3314500516225003,331450,Mekoryuk,2015-11-01,2015,11,commercial_sold_to,15075,outlier_check,11685,11133,11685,8383,NA,raw_value,NA,TRUE
 A3314500616225003_commercial_sold_to,A3314500616225003,331450,Mekoryuk,2015-12-01,2015,12,commercial_sold_to,16367,outlier_check,11685,11133,11685,9034,NA,raw_value,NA,TRUE
 A3314500716225003_commercial_sold_to,A3314500716225003,331450,Mekoryuk,2016-01-01,2016,1,commercial_sold_to,16310,outlier_check,11685,9445,10074,8838,NA,raw_value,NA,TRUE
-A3314500717225003_pce_eligible_community_kwh,A3314500717225003,331450,Mekoryuk,2017-01-01,2017,1,pce_eligible_community_kwh,6393,outlier_check,5351,4195,5324,4736,NA,NA,NA,FALSE
+A3314500717225003_pce_eligible_community_kwh,A3314500717225003,331450,Mekoryuk,2017-01-01,2017,1,pce_eligible_community_kwh,6393,outlier_check,5351,4195,5324,4736,NA,raw_value,NA,TRUE
 A3314500118225003_most_recent_fuel_purch_price,A3314500118225003,331450,Mekoryuk,2017-07-01,2017,7,most_recent_fuel_purch_price,0,quality_check,3.51,4,4,4,NA,carry_forward,NA,TRUE
 A3314500218225003_most_recent_fuel_purch_price,A3314500218225003,331450,Mekoryuk,2017-08-01,2017,8,most_recent_fuel_purch_price,0,quality_check,3.51,4,4,4,NA,carry_forward,NA,TRUE
 A3314500318225003_most_recent_fuel_purch_price,A3314500318225003,331450,Mekoryuk,2017-09-01,2017,9,most_recent_fuel_purch_price,0,quality_check,3.51,4,4,3,NA,carry_forward,NA,TRUE
@@ -4767,7 +4767,7 @@ A3314500626225003_most_recent_fuel_purch_price,A3314500626225003,331450,Mekoryuk
 A3314500726225003_commercial_sold_to,A3314500726225003,331450,Mekoryuk,2026-01-01,2026,1,commercial_sold_to,14614,outlier_check,11343,10797,11873,8838,NA,raw_value,NA,TRUE
 A3314500726225003_most_recent_fuel_purch_price,A3314500726225003,331450,Mekoryuk,2026-01-01,2026,1,most_recent_fuel_purch_price,0,quality_check,4.1026,NA,4,4,NA,carry_forward,NA,TRUE
 A3314500826225003_most_recent_fuel_purch_price,A3314500826225003,331450,Mekoryuk,2026-02-01,2026,2,most_recent_fuel_purch_price,0,quality_check,4.1026,NA,4,4,NA,carry_forward,NA,TRUE
-A3314500926225003_pce_eligible_community_kwh,A3314500926225003,331450,Mekoryuk,2026-03-01,2026,3,pce_eligible_community_kwh,750,outlier_check,4629,4420,4498,4466,NA,NA,NA,FALSE
+A3314500926225003_pce_eligible_community_kwh,A3314500926225003,331450,Mekoryuk,2026-03-01,2026,3,pce_eligible_community_kwh,750,outlier_check,4629,4420,4498,4466,NA,avg_preceding_proceeding,NA,TRUE
 A3314500926225003_commercial_sold_to,A3314500926225003,331450,Mekoryuk,2026-03-01,2026,3,commercial_sold_to,13812,outlier_check,12403,10797,11846,8286,NA,raw_value,NA,TRUE
 A3314500926225003_most_recent_fuel_purch_price,A3314500926225003,331450,Mekoryuk,2026-03-01,2026,3,most_recent_fuel_purch_price,0,quality_check,4.1026,NA,4,4,NA,carry_forward,NA,TRUE
 A3314501026225003_most_recent_fuel_purch_price,A3314501026225003,331450,Mekoryuk,2026-04-01,2026,4,most_recent_fuel_purch_price,0,quality_check,4.1026,NA,4,4,NA,carry_forward,NA,TRUE
@@ -4847,8 +4847,8 @@ A3314600626225003_powerhouse_consumption_kwh,A3314600626225003,331460,Minto,2025
 A3314600626225003_commercial_sold_to,A3314600626225003,331460,Minto,2025-12-01,2025,12,commercial_sold_to,17286,outlier_check,0,0,0,775,NA,raw_value,NA,TRUE
 A3314600626225003_govt_facil_sold_to,A3314600626225003,331460,Minto,2025-12-01,2025,12,govt_facil_sold_to,23518,outlier_check,13570,16261,13570,9899,NA,raw_value,NA,TRUE
 A3314600626225003_most_recent_fuel_purch_price,A3314600626225003,331460,Minto,2025-12-01,2025,12,most_recent_fuel_purch_price,0,quality_check,2.9135,3,3,3,NA,carry_forward,NA,TRUE
-A3314600726225003_pce_eligible_residential_kwh,A3314600726225003,331460,Minto,2026-01-01,2026,1,pce_eligible_residential_kwh,0,outlier_check,36456,31401,35510,26217,NA,NA,NA,FALSE
-A3314600726225003_pce_eligible_community_kwh,A3314600726225003,331460,Minto,2026-01-01,2026,1,pce_eligible_community_kwh,8826,outlier_check,2635,2657,2650,3421,NA,NA,NA,FALSE
+A3314600726225003_pce_eligible_residential_kwh,A3314600726225003,331460,Minto,2026-01-01,2026,1,pce_eligible_residential_kwh,0,outlier_check,36456,31401,35510,26217,NA,avg_preceding_proceeding,NA,TRUE
+A3314600726225003_pce_eligible_community_kwh,A3314600726225003,331460,Minto,2026-01-01,2026,1,pce_eligible_community_kwh,8826,outlier_check,2635,2657,2650,3421,NA,avg_preceding_proceeding,NA,TRUE
 A3314600726225003_powerhouse_consumption_kwh,A3314600726225003,331460,Minto,2026-01-01,2026,1,powerhouse_consumption_kwh,6045,outlier_check,3820,3692,3548,1219,NA,raw_value,NA,TRUE
 A3314600726225003_commercial_sold_to,A3314600726225003,331460,Minto,2026-01-01,2026,1,commercial_sold_to,14614,outlier_check,0,0,0,900,NA,raw_value,NA,TRUE
 A3314600726225003_govt_facil_sold_to,A3314600726225003,331460,Minto,2026-01-01,2026,1,govt_facil_sold_to,25339,outlier_check,13570,10225,13570,11156,NA,raw_value,NA,TRUE
@@ -4928,40 +4928,40 @@ A3314701126225003_residential_sold_to,A3314701126225003,331470,Mountain Village,
 A3314701126225003_commercial_sold_to,A3314701126225003,331470,Mountain Village,2026-05-01,2026,5,commercial_sold_to,0,outlier_check,39373,36554,36554,30356,NA,avg_same_month_other_years,NA,TRUE
 A3314701126225003_most_recent_fuel_purch_price,A3314701126225003,331470,Mountain Village,2026-05-01,2026,5,most_recent_fuel_purch_price,0,quality_check,3.7252,NA,4,3,NA,carry_forward,NA,TRUE
 A3314701226225003_most_recent_fuel_purch_price,A3314701226225003,331470,Mountain Village,2026-06-01,2026,6,most_recent_fuel_purch_price,0,quality_check,3.7252,NA,4,3,NA,carry_forward,NA,TRUE
-A3322800616225003_pce_eligible_community_kwh,A3322800616225003,332280,"Naknek, South Naknek, King Salmon",2015-12-01,2015,12,pce_eligible_community_kwh,65940,outlier_check,NA,NA,NA,0,NA,NA,NA,FALSE
-A3322800716225003_pce_eligible_community_kwh,A3322800716225003,332280,"Naknek, South Naknek, King Salmon",2016-01-01,2016,1,pce_eligible_community_kwh,65940,outlier_check,NA,0,NA,0,NA,NA,NA,FALSE
-A3322800816225003_pce_eligible_community_kwh,A3322800816225003,332280,"Naknek, South Naknek, King Salmon",2016-02-01,2016,2,pce_eligible_community_kwh,65940,outlier_check,NA,0,NA,0,NA,NA,NA,FALSE
-A3322800916225003_pce_eligible_community_kwh,A3322800916225003,332280,"Naknek, South Naknek, King Salmon",2016-03-01,2016,3,pce_eligible_community_kwh,65940,outlier_check,NA,0,NA,0,NA,NA,NA,FALSE
-A3322801016225003_pce_eligible_community_kwh,A3322801016225003,332280,"Naknek, South Naknek, King Salmon",2016-04-01,2016,4,pce_eligible_community_kwh,65940,outlier_check,NA,0,NA,0,NA,NA,NA,FALSE
+A3322800616225003_pce_eligible_community_kwh,A3322800616225003,332280,"Naknek, South Naknek, King Salmon",2015-12-01,2015,12,pce_eligible_community_kwh,65940,outlier_check,NA,NA,NA,0,NA,raw_value,NA,TRUE
+A3322800716225003_pce_eligible_community_kwh,A3322800716225003,332280,"Naknek, South Naknek, King Salmon",2016-01-01,2016,1,pce_eligible_community_kwh,65940,outlier_check,NA,0,NA,0,NA,raw_value,NA,TRUE
+A3322800816225003_pce_eligible_community_kwh,A3322800816225003,332280,"Naknek, South Naknek, King Salmon",2016-02-01,2016,2,pce_eligible_community_kwh,65940,outlier_check,NA,0,NA,0,NA,raw_value,NA,TRUE
+A3322800916225003_pce_eligible_community_kwh,A3322800916225003,332280,"Naknek, South Naknek, King Salmon",2016-03-01,2016,3,pce_eligible_community_kwh,65940,outlier_check,NA,0,NA,0,NA,raw_value,NA,TRUE
+A3322801016225003_pce_eligible_community_kwh,A3322801016225003,332280,"Naknek, South Naknek, King Salmon",2016-04-01,2016,4,pce_eligible_community_kwh,65940,outlier_check,NA,0,NA,0,NA,raw_value,NA,TRUE
 A3322801016225003_peak_consumption_kw,A3322801016225003,332280,"Naknek, South Naknek, King Salmon",2016-04-01,2016,4,peak_consumption_kw,6645,outlier_check,1860,2250,2878,2410,NA,raw_value,NA,TRUE
-A3322801116225003_pce_eligible_community_kwh,A3322801116225003,332280,"Naknek, South Naknek, King Salmon",2016-05-01,2016,5,pce_eligible_community_kwh,65940,outlier_check,NA,0,0,0,NA,NA,NA,FALSE
+A3322801116225003_pce_eligible_community_kwh,A3322801116225003,332280,"Naknek, South Naknek, King Salmon",2016-05-01,2016,5,pce_eligible_community_kwh,65940,outlier_check,NA,0,0,0,NA,raw_value,NA,TRUE
 A3322801216225003_peak_consumption_kw,A3322801216225003,332280,"Naknek, South Naknek, King Salmon",2016-06-01,2016,6,peak_consumption_kw,7200,outlier_check,3897,2250,3897,1806,NA,raw_value,NA,TRUE
-A3322800117225003_pce_eligible_community_kwh,A3322800117225003,332280,"Naknek, South Naknek, King Salmon",2016-07-01,2016,7,pce_eligible_community_kwh,62090,outlier_check,0,0,0,0,NA,NA,NA,FALSE
+A3322800117225003_pce_eligible_community_kwh,A3322800117225003,332280,"Naknek, South Naknek, King Salmon",2016-07-01,2016,7,pce_eligible_community_kwh,62090,outlier_check,0,0,0,0,NA,raw_value,NA,TRUE
 A3322800117225003_fuel_used_gallons,A3322800117225003,332280,"Naknek, South Naknek, King Salmon",2016-07-01,2016,7,fuel_used_gallons,432464,outlier_check,154261,95907,141521,NA,NA,raw_value,NA,TRUE
 A3322800117225003_diesel_kwh_generated,A3322800117225003,332280,"Naknek, South Naknek, King Salmon",2016-07-01,2016,7,diesel_kwh_generated,6588791,outlier_check,2330873,1408820,1890044,NA,NA,raw_value,NA,TRUE
 A3322800117225003_powerhouse_consumption_kwh,A3322800117225003,332280,"Naknek, South Naknek, King Salmon",2016-07-01,2016,7,powerhouse_consumption_kwh,108860,outlier_check,78441,48414,66698,61721,NA,raw_value,NA,TRUE
 A3322800117225003_peak_consumption_kw,A3322800117225003,332280,"Naknek, South Naknek, King Salmon",2016-07-01,2016,7,peak_consumption_kw,13200,outlier_check,3897,2250,3566,NA,NA,raw_value,NA,TRUE
 A3322800117225003_commercial_sold_to,A3322800117225003,332280,"Naknek, South Naknek, King Salmon",2016-07-01,2016,7,commercial_sold_to,5156780,outlier_check,1558228,661615,1139372,NA,NA,raw_value,NA,TRUE
 A3322800117225003_fuel_cost,A3322800117225003,332280,"Naknek, South Naknek, King Salmon",2016-07-01,2016,7,fuel_cost,974384.64,outlier_check,379374.08,227986,334765,822557,NA,raw_value,NA,TRUE
-A3322800217225003_pce_eligible_community_kwh,A3322800217225003,332280,"Naknek, South Naknek, King Salmon",2016-08-01,2016,8,pce_eligible_community_kwh,62090,outlier_check,0,0,0,0,NA,NA,NA,FALSE
+A3322800217225003_pce_eligible_community_kwh,A3322800217225003,332280,"Naknek, South Naknek, King Salmon",2016-08-01,2016,8,pce_eligible_community_kwh,62090,outlier_check,0,0,0,0,NA,raw_value,NA,TRUE
 A3322801017225003_peak_consumption_kw,A3322801017225003,332280,"Naknek, South Naknek, King Salmon",2017-04-01,2017,4,peak_consumption_kw,6050,outlier_check,2163,1868,1082,2410,NA,raw_value,NA,TRUE
 A3322801117225003_fuel_used_gallons,A3322801117225003,332280,"Naknek, South Naknek, King Salmon",2017-05-01,2017,5,fuel_used_gallons,181332,outlier_check,124555,84559,124555,131478,NA,raw_value,NA,TRUE
 A3322801117225003_commercial_sold_to,A3322801117225003,332280,"Naknek, South Naknek, King Salmon",2017-05-01,2017,5,commercial_sold_to,1673035,outlier_check,1013324,486887,1013324,1125216,NA,raw_value,NA,TRUE
-A3322801217225003_pce_eligible_community_kwh,A3322801217225003,332280,"Naknek, South Naknek, King Salmon",2017-06-01,2017,6,pce_eligible_community_kwh,62090,outlier_check,0,0,0,0,NA,NA,NA,FALSE
+A3322801217225003_pce_eligible_community_kwh,A3322801217225003,332280,"Naknek, South Naknek, King Salmon",2017-06-01,2017,6,pce_eligible_community_kwh,62090,outlier_check,0,0,0,0,NA,raw_value,NA,TRUE
 A3322801217225003_fuel_used_gallons,A3322801217225003,332280,"Naknek, South Naknek, King Salmon",2017-06-01,2017,6,fuel_used_gallons,237010,outlier_check,124555,84559,124555,161958,NA,raw_value,NA,TRUE
 A3322801217225003_diesel_kwh_generated,A3322801217225003,332280,"Naknek, South Naknek, King Salmon",2017-06-01,2017,6,diesel_kwh_generated,2885697,outlier_check,2408881,1324556,2408881,2404374,NA,raw_value,NA,TRUE
 A3322801217225003_peak_consumption_kw,A3322801217225003,332280,"Naknek, South Naknek, King Salmon",2017-06-01,2017,6,peak_consumption_kw,10200,outlier_check,0,1868,0,1806,NA,raw_value,NA,TRUE
 A3322801217225003_commercial_sold_to,A3322801217225003,332280,"Naknek, South Naknek, King Salmon",2017-06-01,2017,6,commercial_sold_to,2094632,outlier_check,1013324,486887,1013324,1548154,NA,raw_value,NA,TRUE
-A3322800118225003_pce_eligible_community_kwh,A3322800118225003,332280,"Naknek, South Naknek, King Salmon",2017-07-01,2017,7,pce_eligible_community_kwh,61180,outlier_check,0,0,0,0,NA,NA,NA,FALSE
+A3322800118225003_pce_eligible_community_kwh,A3322800118225003,332280,"Naknek, South Naknek, King Salmon",2017-07-01,2017,7,pce_eligible_community_kwh,61180,outlier_check,0,0,0,0,NA,raw_value,NA,TRUE
 A3322800118225003_fuel_used_gallons,A3322800118225003,332280,"Naknek, South Naknek, King Salmon",2017-07-01,2017,7,fuel_used_gallons,435405,outlier_check,124555,84559,113272,NA,NA,raw_value,NA,TRUE
 A3322800118225003_diesel_kwh_generated,A3322800118225003,332280,"Naknek, South Naknek, King Salmon",2017-07-01,2017,7,diesel_kwh_generated,6238533,outlier_check,2408881,1324556,1958408,NA,NA,raw_value,NA,TRUE
 A3322800118225003_powerhouse_consumption_kwh,A3322800118225003,332280,"Naknek, South Naknek, King Salmon",2017-07-01,2017,7,powerhouse_consumption_kwh,97764,outlier_check,75930,46091,65213,61721,NA,raw_value,NA,TRUE
 A3322800118225003_peak_consumption_kw,A3322800118225003,332280,"Naknek, South Naknek, King Salmon",2017-07-01,2017,7,peak_consumption_kw,13400,outlier_check,0,1868,2010,NA,NA,raw_value,NA,TRUE
 A3322800118225003_commercial_sold_to,A3322800118225003,332280,"Naknek, South Naknek, King Salmon",2017-07-01,2017,7,commercial_sold_to,5380356,outlier_check,1013324,486887,930070,NA,NA,raw_value,NA,TRUE
-A3322800218225003_pce_eligible_community_kwh,A3322800218225003,332280,"Naknek, South Naknek, King Salmon",2017-08-01,2017,8,pce_eligible_community_kwh,61180,outlier_check,0,0,0,0,NA,NA,NA,FALSE
-A3322800318225003_pce_eligible_community_kwh,A3322800318225003,332280,"Naknek, South Naknek, King Salmon",2017-09-01,2017,9,pce_eligible_community_kwh,61180,outlier_check,0,0,0,0,NA,NA,NA,FALSE
-A3322800418225003_pce_eligible_community_kwh,A3322800418225003,332280,"Naknek, South Naknek, King Salmon",2017-10-01,2017,10,pce_eligible_community_kwh,61180,outlier_check,0,0,0,0,NA,NA,NA,FALSE
-A3322800518225003_pce_eligible_community_kwh,A3322800518225003,332280,"Naknek, South Naknek, King Salmon",2017-11-01,2017,11,pce_eligible_community_kwh,61180,outlier_check,0,0,0,0,NA,NA,NA,FALSE
+A3322800218225003_pce_eligible_community_kwh,A3322800218225003,332280,"Naknek, South Naknek, King Salmon",2017-08-01,2017,8,pce_eligible_community_kwh,61180,outlier_check,0,0,0,0,NA,raw_value,NA,TRUE
+A3322800318225003_pce_eligible_community_kwh,A3322800318225003,332280,"Naknek, South Naknek, King Salmon",2017-09-01,2017,9,pce_eligible_community_kwh,61180,outlier_check,0,0,0,0,NA,raw_value,NA,TRUE
+A3322800418225003_pce_eligible_community_kwh,A3322800418225003,332280,"Naknek, South Naknek, King Salmon",2017-10-01,2017,10,pce_eligible_community_kwh,61180,outlier_check,0,0,0,0,NA,raw_value,NA,TRUE
+A3322800518225003_pce_eligible_community_kwh,A3322800518225003,332280,"Naknek, South Naknek, King Salmon",2017-11-01,2017,11,pce_eligible_community_kwh,61180,outlier_check,0,0,0,0,NA,raw_value,NA,TRUE
 A3322801018225003_peak_consumption_kw,A3322801018225003,332280,"Naknek, South Naknek, King Salmon",2018-04-01,2018,4,peak_consumption_kw,7300,outlier_check,1820,2087,1820,2410,NA,raw_value,NA,TRUE
 A3322801118225003_diesel_kwh_generated,A3322801118225003,332280,"Naknek, South Naknek, King Salmon",2018-05-01,2018,5,diesel_kwh_generated,2668584,outlier_check,2043959,1332634,2043959,1900760,NA,raw_value,NA,TRUE
 A3322801118225003_peak_consumption_kw,A3322801118225003,332280,"Naknek, South Naknek, King Salmon",2018-05-01,2018,5,peak_consumption_kw,7255,outlier_check,1820,2087,1820,2868,NA,raw_value,NA,TRUE
@@ -4976,90 +4976,90 @@ A3322800119225003_peak_consumption_kw,A3322800119225003,332280,"Naknek, South Na
 A3322800119225003_commercial_sold_to,A3322800119225003,332280,"Naknek, South Naknek, King Salmon",2018-07-01,2018,7,commercial_sold_to,6490660,outlier_check,1304966,590537,1093672,NA,NA,raw_value,NA,TRUE
 A3322800119225003_fuel_cost,A3322800119225003,332280,"Naknek, South Naknek, King Salmon",2018-07-01,2018,7,fuel_cost,967617.66,outlier_check,405094.5,214834,304903,822557,NA,raw_value,NA,TRUE
 A3322800219225003_peak_consumption_kw,A3322800219225003,332280,"Naknek, South Naknek, King Salmon",2018-08-01,2018,8,peak_consumption_kw,5040,outlier_check,1820,2087,1970,3377,NA,raw_value,NA,TRUE
-A3322800719225003_pce_eligible_community_kwh,A3322800719225003,332280,"Naknek, South Naknek, King Salmon",2019-01-01,2019,1,pce_eligible_community_kwh,62090,outlier_check,0,0,0,0,NA,NA,NA,FALSE
-A3322800819225003_pce_eligible_community_kwh,A3322800819225003,332280,"Naknek, South Naknek, King Salmon",2019-02-01,2019,2,pce_eligible_community_kwh,62090,outlier_check,0,0,0,0,NA,NA,NA,FALSE
+A3322800719225003_pce_eligible_community_kwh,A3322800719225003,332280,"Naknek, South Naknek, King Salmon",2019-01-01,2019,1,pce_eligible_community_kwh,62090,outlier_check,0,0,0,0,NA,raw_value,NA,TRUE
+A3322800819225003_pce_eligible_community_kwh,A3322800819225003,332280,"Naknek, South Naknek, King Salmon",2019-02-01,2019,2,pce_eligible_community_kwh,62090,outlier_check,0,0,0,0,NA,raw_value,NA,TRUE
 A3322801019225003_diesel_kwh_generated,A3322801019225003,332280,"Naknek, South Naknek, King Salmon",2019-04-01,2019,4,diesel_kwh_generated,2727741,outlier_check,1326535,1375261,1600181,1447821,NA,raw_value,NA,TRUE
 A3322801019225003_peak_consumption_kw,A3322801019225003,332280,"Naknek, South Naknek, King Salmon",2019-04-01,2019,4,peak_consumption_kw,7161,outlier_check,2186,2410,2898,2410,NA,raw_value,NA,TRUE
 A3322801019225003_commercial_sold_to,A3322801019225003,332280,"Naknek, South Naknek, King Salmon",2019-04-01,2019,4,commercial_sold_to,2012193,outlier_check,519478,603024,778923,694746,NA,raw_value,NA,TRUE
-A3322801119225003_pce_eligible_community_kwh,A3322801119225003,332280,"Naknek, South Naknek, King Salmon",2019-05-01,2019,5,pce_eligible_community_kwh,62090,outlier_check,0,0,0,0,NA,NA,NA,FALSE
-A3322801219225003_pce_eligible_community_kwh,A3322801219225003,332280,"Naknek, South Naknek, King Salmon",2019-06-01,2019,6,pce_eligible_community_kwh,62090,outlier_check,0,0,0,0,NA,NA,NA,FALSE
+A3322801119225003_pce_eligible_community_kwh,A3322801119225003,332280,"Naknek, South Naknek, King Salmon",2019-05-01,2019,5,pce_eligible_community_kwh,62090,outlier_check,0,0,0,0,NA,raw_value,NA,TRUE
+A3322801219225003_pce_eligible_community_kwh,A3322801219225003,332280,"Naknek, South Naknek, King Salmon",2019-06-01,2019,6,pce_eligible_community_kwh,62090,outlier_check,0,0,0,0,NA,raw_value,NA,TRUE
 A3322801219225003_fuel_used_gallons,A3322801219225003,332280,"Naknek, South Naknek, King Salmon",2019-06-01,2019,6,fuel_used_gallons,257699,outlier_check,123364,100874,123364,161958,NA,raw_value,NA,TRUE
 A3322801219225003_diesel_kwh_generated,A3322801219225003,332280,"Naknek, South Naknek, King Salmon",2019-06-01,2019,6,diesel_kwh_generated,3819828,outlier_check,1873827,1375261,1873827,2404374,NA,raw_value,NA,TRUE
 A3322801219225003_commercial_sold_to,A3322801219225003,332280,"Naknek, South Naknek, King Salmon",2019-06-01,2019,6,commercial_sold_to,2902947,outlier_check,1038368,603024,1038368,1548154,NA,raw_value,NA,TRUE
-A3322800120225003_pce_eligible_community_kwh,A3322800120225003,332280,"Naknek, South Naknek, King Salmon",2019-07-01,2019,7,pce_eligible_community_kwh,61530,outlier_check,0,0,0,0,NA,NA,NA,FALSE
+A3322800120225003_pce_eligible_community_kwh,A3322800120225003,332280,"Naknek, South Naknek, King Salmon",2019-07-01,2019,7,pce_eligible_community_kwh,61530,outlier_check,0,0,0,0,NA,raw_value,NA,TRUE
 A3322800120225003_fuel_used_gallons,A3322800120225003,332280,"Naknek, South Naknek, King Salmon",2019-07-01,2019,7,fuel_used_gallons,459564,outlier_check,123364,100874,117728,NA,NA,raw_value,NA,TRUE
 A3322800120225003_diesel_kwh_generated,A3322800120225003,332280,"Naknek, South Naknek, King Salmon",2019-07-01,2019,7,diesel_kwh_generated,6864486,outlier_check,1873827,1375261,1772798,NA,NA,raw_value,NA,TRUE
 A3322800120225003_peak_consumption_kw,A3322800120225003,332280,"Naknek, South Naknek, King Salmon",2019-07-01,2019,7,peak_consumption_kw,14700,outlier_check,3611,2410,3638,NA,NA,raw_value,NA,TRUE
 A3322800120225003_commercial_sold_to,A3322800120225003,332280,"Naknek, South Naknek, King Salmon",2019-07-01,2019,7,commercial_sold_to,5833245,outlier_check,1038368,603024,1025643,NA,NA,raw_value,NA,TRUE
 A3322800120225003_commercial_customers,A3322800120225003,332280,"Naknek, South Naknek, King Salmon",2019-07-01,2019,7,commercial_customers,402,outlier_check,303,287,306,296,NA,NA,NA,FALSE
 A3322800120225003_fuel_cost,A3322800120225003,332280,"Naknek, South Naknek, King Salmon",2019-07-01,2019,7,fuel_cost,1105802.9,outlier_check,585337.51,264333,427528,822557,NA,raw_value,NA,TRUE
-A3322800220225003_pce_eligible_community_kwh,A3322800220225003,332280,"Naknek, South Naknek, King Salmon",2019-08-01,2019,8,pce_eligible_community_kwh,61530,outlier_check,0,0,0,0,NA,NA,NA,FALSE
-A3322800320225003_pce_eligible_community_kwh,A3322800320225003,332280,"Naknek, South Naknek, King Salmon",2019-09-01,2019,9,pce_eligible_community_kwh,61530,outlier_check,0,0,0,0,NA,NA,NA,FALSE
-A3322800420225003_pce_eligible_community_kwh,A3322800420225003,332280,"Naknek, South Naknek, King Salmon",2019-10-01,2019,10,pce_eligible_community_kwh,61530,outlier_check,0,0,0,0,NA,NA,NA,FALSE
-A3322800720225003_pce_eligible_community_kwh,A3322800720225003,332280,"Naknek, South Naknek, King Salmon",2020-01-01,2020,1,pce_eligible_community_kwh,61530,outlier_check,0,0,0,0,NA,NA,NA,FALSE
-A3322800820225003_pce_eligible_community_kwh,A3322800820225003,332280,"Naknek, South Naknek, King Salmon",2020-02-01,2020,2,pce_eligible_community_kwh,61530,outlier_check,0,0,0,0,NA,NA,NA,FALSE
-A3322800920225003_pce_eligible_community_kwh,A3322800920225003,332280,"Naknek, South Naknek, King Salmon",2020-03-01,2020,3,pce_eligible_community_kwh,61530,outlier_check,0,0,0,0,NA,NA,NA,FALSE
-A3322801020225003_pce_eligible_community_kwh,A3322801020225003,332280,"Naknek, South Naknek, King Salmon",2020-04-01,2020,4,pce_eligible_community_kwh,61530,outlier_check,0,0,0,0,NA,NA,NA,FALSE
-A3322801120225003_pce_eligible_community_kwh,A3322801120225003,332280,"Naknek, South Naknek, King Salmon",2020-05-01,2020,5,pce_eligible_community_kwh,61530,outlier_check,0,0,0,0,NA,NA,NA,FALSE
-A3322801220225003_pce_eligible_community_kwh,A3322801220225003,332280,"Naknek, South Naknek, King Salmon",2020-06-01,2020,6,pce_eligible_community_kwh,61530,outlier_check,0,0,0,0,NA,NA,NA,FALSE
-A3322800121225003_pce_eligible_community_kwh,A3322800121225003,332280,"Naknek, South Naknek, King Salmon",2020-07-01,2020,7,pce_eligible_community_kwh,60830,outlier_check,0,0,0,0,NA,NA,NA,FALSE
+A3322800220225003_pce_eligible_community_kwh,A3322800220225003,332280,"Naknek, South Naknek, King Salmon",2019-08-01,2019,8,pce_eligible_community_kwh,61530,outlier_check,0,0,0,0,NA,raw_value,NA,TRUE
+A3322800320225003_pce_eligible_community_kwh,A3322800320225003,332280,"Naknek, South Naknek, King Salmon",2019-09-01,2019,9,pce_eligible_community_kwh,61530,outlier_check,0,0,0,0,NA,raw_value,NA,TRUE
+A3322800420225003_pce_eligible_community_kwh,A3322800420225003,332280,"Naknek, South Naknek, King Salmon",2019-10-01,2019,10,pce_eligible_community_kwh,61530,outlier_check,0,0,0,0,NA,raw_value,NA,TRUE
+A3322800720225003_pce_eligible_community_kwh,A3322800720225003,332280,"Naknek, South Naknek, King Salmon",2020-01-01,2020,1,pce_eligible_community_kwh,61530,outlier_check,0,0,0,0,NA,raw_value,NA,TRUE
+A3322800820225003_pce_eligible_community_kwh,A3322800820225003,332280,"Naknek, South Naknek, King Salmon",2020-02-01,2020,2,pce_eligible_community_kwh,61530,outlier_check,0,0,0,0,NA,raw_value,NA,TRUE
+A3322800920225003_pce_eligible_community_kwh,A3322800920225003,332280,"Naknek, South Naknek, King Salmon",2020-03-01,2020,3,pce_eligible_community_kwh,61530,outlier_check,0,0,0,0,NA,raw_value,NA,TRUE
+A3322801020225003_pce_eligible_community_kwh,A3322801020225003,332280,"Naknek, South Naknek, King Salmon",2020-04-01,2020,4,pce_eligible_community_kwh,61530,outlier_check,0,0,0,0,NA,raw_value,NA,TRUE
+A3322801120225003_pce_eligible_community_kwh,A3322801120225003,332280,"Naknek, South Naknek, King Salmon",2020-05-01,2020,5,pce_eligible_community_kwh,61530,outlier_check,0,0,0,0,NA,raw_value,NA,TRUE
+A3322801220225003_pce_eligible_community_kwh,A3322801220225003,332280,"Naknek, South Naknek, King Salmon",2020-06-01,2020,6,pce_eligible_community_kwh,61530,outlier_check,0,0,0,0,NA,raw_value,NA,TRUE
+A3322800121225003_pce_eligible_community_kwh,A3322800121225003,332280,"Naknek, South Naknek, King Salmon",2020-07-01,2020,7,pce_eligible_community_kwh,60830,outlier_check,0,0,0,0,NA,raw_value,NA,TRUE
 A3322800121225003_fuel_used_gallons,A3322800121225003,332280,"Naknek, South Naknek, King Salmon",2020-07-01,2020,7,fuel_used_gallons,441369,outlier_check,169656,91748,130800,NA,NA,raw_value,NA,TRUE
 A3322800121225003_diesel_kwh_generated,A3322800121225003,332280,"Naknek, South Naknek, King Salmon",2020-07-01,2020,7,diesel_kwh_generated,6636216,outlier_check,2477876,1343405,1931747,NA,NA,raw_value,NA,TRUE
 A3322800121225003_peak_consumption_kw,A3322800121225003,332280,"Naknek, South Naknek, King Salmon",2020-07-01,2020,7,peak_consumption_kw,13316,outlier_check,0,1925,0,NA,NA,raw_value,NA,TRUE
 A3322800121225003_commercial_sold_to,A3322800121225003,332280,"Naknek, South Naknek, King Salmon",2020-07-01,2020,7,commercial_sold_to,5758701,outlier_check,1538080,540851,1137953,NA,NA,raw_value,NA,TRUE
 A3322800121225003_fuel_cost,A3322800121225003,332280,"Naknek, South Naknek, King Salmon",2020-07-01,2020,7,fuel_cost,1005615.13,outlier_check,466282.55,213194,337885,822557,NA,raw_value,NA,TRUE
-A3322800221225003_pce_eligible_community_kwh,A3322800221225003,332280,"Naknek, South Naknek, King Salmon",2020-08-01,2020,8,pce_eligible_community_kwh,60830,outlier_check,0,0,0,0,NA,NA,NA,FALSE
+A3322800221225003_pce_eligible_community_kwh,A3322800221225003,332280,"Naknek, South Naknek, King Salmon",2020-08-01,2020,8,pce_eligible_community_kwh,60830,outlier_check,0,0,0,0,NA,raw_value,NA,TRUE
 A3322800221225003_peak_consumption_kw,A3322800221225003,332280,"Naknek, South Naknek, King Salmon",2020-08-01,2020,8,peak_consumption_kw,4683,outlier_check,0,1925,868,3377,NA,raw_value,NA,TRUE
-A3322800321225003_pce_eligible_community_kwh,A3322800321225003,332280,"Naknek, South Naknek, King Salmon",2020-09-01,2020,9,pce_eligible_community_kwh,60830,outlier_check,0,0,0,0,NA,NA,NA,FALSE
-A3322800721225003_pce_eligible_community_kwh,A3322800721225003,332280,"Naknek, South Naknek, King Salmon",2021-01-01,2021,1,pce_eligible_community_kwh,60830,outlier_check,0,NA,0,0,NA,NA,NA,FALSE
-A3322800821225003_pce_eligible_community_kwh,A3322800821225003,332280,"Naknek, South Naknek, King Salmon",2021-02-01,2021,2,pce_eligible_community_kwh,60830,outlier_check,0,NA,0,0,NA,NA,NA,FALSE
-A3322800921225003_pce_eligible_community_kwh,A3322800921225003,332280,"Naknek, South Naknek, King Salmon",2021-03-01,2021,3,pce_eligible_community_kwh,60830,outlier_check,0,NA,0,0,NA,NA,NA,FALSE
-A3322801021225003_pce_eligible_community_kwh,A3322801021225003,332280,"Naknek, South Naknek, King Salmon",2021-04-01,2021,4,pce_eligible_community_kwh,60830,outlier_check,0,NA,0,0,NA,NA,NA,FALSE
-A3322801121225003_pce_eligible_community_kwh,A3322801121225003,332280,"Naknek, South Naknek, King Salmon",2021-05-01,2021,5,pce_eligible_community_kwh,60830,outlier_check,0,NA,0,0,NA,NA,NA,FALSE
+A3322800321225003_pce_eligible_community_kwh,A3322800321225003,332280,"Naknek, South Naknek, King Salmon",2020-09-01,2020,9,pce_eligible_community_kwh,60830,outlier_check,0,0,0,0,NA,raw_value,NA,TRUE
+A3322800721225003_pce_eligible_community_kwh,A3322800721225003,332280,"Naknek, South Naknek, King Salmon",2021-01-01,2021,1,pce_eligible_community_kwh,60830,outlier_check,0,NA,0,0,NA,raw_value,NA,TRUE
+A3322800821225003_pce_eligible_community_kwh,A3322800821225003,332280,"Naknek, South Naknek, King Salmon",2021-02-01,2021,2,pce_eligible_community_kwh,60830,outlier_check,0,NA,0,0,NA,raw_value,NA,TRUE
+A3322800921225003_pce_eligible_community_kwh,A3322800921225003,332280,"Naknek, South Naknek, King Salmon",2021-03-01,2021,3,pce_eligible_community_kwh,60830,outlier_check,0,NA,0,0,NA,raw_value,NA,TRUE
+A3322801021225003_pce_eligible_community_kwh,A3322801021225003,332280,"Naknek, South Naknek, King Salmon",2021-04-01,2021,4,pce_eligible_community_kwh,60830,outlier_check,0,NA,0,0,NA,raw_value,NA,TRUE
+A3322801121225003_pce_eligible_community_kwh,A3322801121225003,332280,"Naknek, South Naknek, King Salmon",2021-05-01,2021,5,pce_eligible_community_kwh,60830,outlier_check,0,NA,0,0,NA,raw_value,NA,TRUE
 A3322801121225003_fuel_used_gallons,A3322801121225003,332280,"Naknek, South Naknek, King Salmon",2021-05-01,2021,5,fuel_used_gallons,198364,outlier_check,98155,89203,98155,131478,NA,raw_value,NA,TRUE
 A3322801121225003_diesel_kwh_generated,A3322801121225003,332280,"Naknek, South Naknek, King Salmon",2021-05-01,2021,5,diesel_kwh_generated,3042663,outlier_check,1495150,1273366,1495150,1900760,NA,raw_value,NA,TRUE
 A3322801121225003_peak_consumption_kw,A3322801121225003,332280,"Naknek, South Naknek, King Salmon",2021-05-01,2021,5,peak_consumption_kw,7230,outlier_check,3210,2347,3210,2868,NA,raw_value,NA,TRUE
 A3322801121225003_commercial_sold_to,A3322801121225003,332280,"Naknek, South Naknek, King Salmon",2021-05-01,2021,5,commercial_sold_to,2083113,outlier_check,600446,442255,600446,1125216,NA,raw_value,NA,TRUE
-A3322801221225003_pce_eligible_community_kwh,A3322801221225003,332280,"Naknek, South Naknek, King Salmon",2021-06-01,2021,6,pce_eligible_community_kwh,60830,outlier_check,0,NA,0,0,NA,NA,NA,FALSE
+A3322801221225003_pce_eligible_community_kwh,A3322801221225003,332280,"Naknek, South Naknek, King Salmon",2021-06-01,2021,6,pce_eligible_community_kwh,60830,outlier_check,0,NA,0,0,NA,raw_value,NA,TRUE
 A3322801221225003_fuel_used_gallons,A3322801221225003,332280,"Naknek, South Naknek, King Salmon",2021-06-01,2021,6,fuel_used_gallons,187598,outlier_check,98155,89203,98155,161958,NA,raw_value,NA,TRUE
 A3322801221225003_diesel_kwh_generated,A3322801221225003,332280,"Naknek, South Naknek, King Salmon",2021-06-01,2021,6,diesel_kwh_generated,2938526,outlier_check,1495150,1273366,1495150,2404374,NA,raw_value,NA,TRUE
 A3322801221225003_peak_consumption_kw,A3322801221225003,332280,"Naknek, South Naknek, King Salmon",2021-06-01,2021,6,peak_consumption_kw,8590,outlier_check,3210,2347,3210,1806,NA,raw_value,NA,TRUE
 A3322801221225003_commercial_sold_to,A3322801221225003,332280,"Naknek, South Naknek, King Salmon",2021-06-01,2021,6,commercial_sold_to,2137414,outlier_check,600446,442255,600446,1548154,NA,raw_value,NA,TRUE
-A3322800122225003_pce_eligible_community_kwh,A3322800122225003,332280,"Naknek, South Naknek, King Salmon",2021-07-01,2021,7,pce_eligible_community_kwh,60760,outlier_check,0,NA,0,0,NA,NA,NA,FALSE
+A3322800122225003_pce_eligible_community_kwh,A3322800122225003,332280,"Naknek, South Naknek, King Salmon",2021-07-01,2021,7,pce_eligible_community_kwh,60760,outlier_check,0,NA,0,0,NA,raw_value,NA,TRUE
 A3322800122225003_fuel_used_gallons,A3322800122225003,332280,"Naknek, South Naknek, King Salmon",2021-07-01,2021,7,fuel_used_gallons,428071,outlier_check,98155,89203,97392,NA,NA,raw_value,NA,TRUE
 A3322800122225003_diesel_kwh_generated,A3322800122225003,332280,"Naknek, South Naknek, King Salmon",2021-07-01,2021,7,diesel_kwh_generated,6887477,outlier_check,1495150,1273366,1474440,NA,NA,raw_value,NA,TRUE
 A3322800122225003_peak_consumption_kw,A3322800122225003,332280,"Naknek, South Naknek, King Salmon",2021-07-01,2021,7,peak_consumption_kw,13969,outlier_check,3210,2347,2870,NA,NA,raw_value,NA,TRUE
 A3322800122225003_commercial_sold_to,A3322800122225003,332280,"Naknek, South Naknek, King Salmon",2021-07-01,2021,7,commercial_sold_to,5332894,outlier_check,600446,442255,701206,NA,NA,raw_value,NA,TRUE
-A3322800222225003_pce_eligible_community_kwh,A3322800222225003,332280,"Naknek, South Naknek, King Salmon",2021-08-01,2021,8,pce_eligible_community_kwh,60760,outlier_check,0,NA,0,0,NA,NA,NA,FALSE
-A3322800322225003_pce_eligible_community_kwh,A3322800322225003,332280,"Naknek, South Naknek, King Salmon",2021-09-01,2021,9,pce_eligible_community_kwh,60760,outlier_check,0,NA,0,0,NA,NA,NA,FALSE
-A3322800422225003_pce_eligible_community_kwh,A3322800422225003,332280,"Naknek, South Naknek, King Salmon",2021-10-01,2021,10,pce_eligible_community_kwh,60760,outlier_check,0,NA,0,0,NA,NA,NA,FALSE
-A3322800522225003_pce_eligible_community_kwh,A3322800522225003,332280,"Naknek, South Naknek, King Salmon",2021-11-01,2021,11,pce_eligible_community_kwh,60760,outlier_check,0,NA,0,0,NA,NA,NA,FALSE
-A3322800622225003_pce_eligible_community_kwh,A3322800622225003,332280,"Naknek, South Naknek, King Salmon",2021-12-01,2021,12,pce_eligible_community_kwh,43910,outlier_check,0,NA,0,0,NA,NA,NA,FALSE
-A3322800722225003_pce_eligible_community_kwh,A3322800722225003,332280,"Naknek, South Naknek, King Salmon",2022-01-01,2022,1,pce_eligible_community_kwh,43879,outlier_check,0,0,0,0,NA,NA,NA,FALSE
-A3322800822225003_pce_eligible_community_kwh,A3322800822225003,332280,"Naknek, South Naknek, King Salmon",2022-02-01,2022,2,pce_eligible_community_kwh,44889,outlier_check,0,0,0,0,NA,NA,NA,FALSE
-A3322800922225003_pce_eligible_community_kwh,A3322800922225003,332280,"Naknek, South Naknek, King Salmon",2022-03-01,2022,3,pce_eligible_community_kwh,44603,outlier_check,0,0,0,0,NA,NA,NA,FALSE
-A3322801022225003_pce_eligible_community_kwh,A3322801022225003,332280,"Naknek, South Naknek, King Salmon",2022-04-01,2022,4,pce_eligible_community_kwh,46303,outlier_check,0,0,0,0,NA,NA,NA,FALSE
+A3322800222225003_pce_eligible_community_kwh,A3322800222225003,332280,"Naknek, South Naknek, King Salmon",2021-08-01,2021,8,pce_eligible_community_kwh,60760,outlier_check,0,NA,0,0,NA,raw_value,NA,TRUE
+A3322800322225003_pce_eligible_community_kwh,A3322800322225003,332280,"Naknek, South Naknek, King Salmon",2021-09-01,2021,9,pce_eligible_community_kwh,60760,outlier_check,0,NA,0,0,NA,raw_value,NA,TRUE
+A3322800422225003_pce_eligible_community_kwh,A3322800422225003,332280,"Naknek, South Naknek, King Salmon",2021-10-01,2021,10,pce_eligible_community_kwh,60760,outlier_check,0,NA,0,0,NA,raw_value,NA,TRUE
+A3322800522225003_pce_eligible_community_kwh,A3322800522225003,332280,"Naknek, South Naknek, King Salmon",2021-11-01,2021,11,pce_eligible_community_kwh,60760,outlier_check,0,NA,0,0,NA,raw_value,NA,TRUE
+A3322800622225003_pce_eligible_community_kwh,A3322800622225003,332280,"Naknek, South Naknek, King Salmon",2021-12-01,2021,12,pce_eligible_community_kwh,43910,outlier_check,0,NA,0,0,NA,raw_value,NA,TRUE
+A3322800722225003_pce_eligible_community_kwh,A3322800722225003,332280,"Naknek, South Naknek, King Salmon",2022-01-01,2022,1,pce_eligible_community_kwh,43879,outlier_check,0,0,0,0,NA,raw_value,NA,TRUE
+A3322800822225003_pce_eligible_community_kwh,A3322800822225003,332280,"Naknek, South Naknek, King Salmon",2022-02-01,2022,2,pce_eligible_community_kwh,44889,outlier_check,0,0,0,0,NA,raw_value,NA,TRUE
+A3322800922225003_pce_eligible_community_kwh,A3322800922225003,332280,"Naknek, South Naknek, King Salmon",2022-03-01,2022,3,pce_eligible_community_kwh,44603,outlier_check,0,0,0,0,NA,raw_value,NA,TRUE
+A3322801022225003_pce_eligible_community_kwh,A3322801022225003,332280,"Naknek, South Naknek, King Salmon",2022-04-01,2022,4,pce_eligible_community_kwh,46303,outlier_check,0,0,0,0,NA,raw_value,NA,TRUE
 A3322801022225003_peak_consumption_kw,A3322801022225003,332280,"Naknek, South Naknek, King Salmon",2022-04-01,2022,4,peak_consumption_kw,5635,outlier_check,1820,2077,1820,2410,NA,raw_value,NA,TRUE
-A3322801122225003_pce_eligible_community_kwh,A3322801122225003,332280,"Naknek, South Naknek, King Salmon",2022-05-01,2022,5,pce_eligible_community_kwh,47643,outlier_check,0,0,0,0,NA,NA,NA,FALSE
+A3322801122225003_pce_eligible_community_kwh,A3322801122225003,332280,"Naknek, South Naknek, King Salmon",2022-05-01,2022,5,pce_eligible_community_kwh,47643,outlier_check,0,0,0,0,NA,raw_value,NA,TRUE
 A3322801122225003_fuel_used_gallons,A3322801122225003,332280,"Naknek, South Naknek, King Salmon",2022-05-01,2022,5,fuel_used_gallons,187008,outlier_check,96646,86042,96646,131478,NA,raw_value,NA,TRUE
 A3322801122225003_diesel_kwh_generated,A3322801122225003,332280,"Naknek, South Naknek, King Salmon",2022-05-01,2022,5,diesel_kwh_generated,2694528,outlier_check,1281051,1228566,1281051,1900760,NA,raw_value,NA,TRUE
 A3322801122225003_peak_consumption_kw,A3322801122225003,332280,"Naknek, South Naknek, King Salmon",2022-05-01,2022,5,peak_consumption_kw,7866,outlier_check,1820,2077,1820,2868,NA,raw_value,NA,TRUE
 A3322801122225003_commercial_sold_to,A3322801122225003,332280,"Naknek, South Naknek, King Salmon",2022-05-01,2022,5,commercial_sold_to,2010209,outlier_check,597128,475368,597128,1125216,NA,raw_value,NA,TRUE
-A3322801222225003_pce_eligible_community_kwh,A3322801222225003,332280,"Naknek, South Naknek, King Salmon",2022-06-01,2022,6,pce_eligible_community_kwh,49108,outlier_check,0,0,0,0,NA,NA,NA,FALSE
+A3322801222225003_pce_eligible_community_kwh,A3322801222225003,332280,"Naknek, South Naknek, King Salmon",2022-06-01,2022,6,pce_eligible_community_kwh,49108,outlier_check,0,0,0,0,NA,raw_value,NA,TRUE
 A3322801222225003_fuel_used_gallons,A3322801222225003,332280,"Naknek, South Naknek, King Salmon",2022-06-01,2022,6,fuel_used_gallons,231084,outlier_check,96646,86042,96646,161958,NA,raw_value,NA,TRUE
 A3322801222225003_diesel_kwh_generated,A3322801222225003,332280,"Naknek, South Naknek, King Salmon",2022-06-01,2022,6,diesel_kwh_generated,3621456,outlier_check,1281051,1228566,1281051,2404374,NA,raw_value,NA,TRUE
 A3322801222225003_peak_consumption_kw,A3322801222225003,332280,"Naknek, South Naknek, King Salmon",2022-06-01,2022,6,peak_consumption_kw,12600,outlier_check,1820,2077,1820,1806,NA,raw_value,NA,TRUE
 A3322801222225003_commercial_sold_to,A3322801222225003,332280,"Naknek, South Naknek, King Salmon",2022-06-01,2022,6,commercial_sold_to,2473571,outlier_check,597128,475368,597128,1548154,NA,raw_value,NA,TRUE
-A3322800123225003_pce_eligible_community_kwh,A3322800123225003,332280,"Naknek, South Naknek, King Salmon",2022-07-01,2022,7,pce_eligible_community_kwh,57540,outlier_check,0,0,0,0,NA,NA,NA,FALSE
+A3322800123225003_pce_eligible_community_kwh,A3322800123225003,332280,"Naknek, South Naknek, King Salmon",2022-07-01,2022,7,pce_eligible_community_kwh,57540,outlier_check,0,0,0,0,NA,raw_value,NA,TRUE
 A3322800123225003_fuel_used_gallons,A3322800123225003,332280,"Naknek, South Naknek, King Salmon",2022-07-01,2022,7,fuel_used_gallons,417269,outlier_check,96646,86042,102864,NA,NA,raw_value,NA,TRUE
 A3322800123225003_diesel_kwh_generated,A3322800123225003,332280,"Naknek, South Naknek, King Salmon",2022-07-01,2022,7,diesel_kwh_generated,6230067,outlier_check,1281051,1228566,1446310,NA,NA,raw_value,NA,TRUE
 A3322800123225003_peak_consumption_kw,A3322800123225003,332280,"Naknek, South Naknek, King Salmon",2022-07-01,2022,7,peak_consumption_kw,12300,outlier_check,1820,2077,2003,NA,NA,raw_value,NA,TRUE
 A3322800123225003_commercial_sold_to,A3322800123225003,332280,"Naknek, South Naknek, King Salmon",2022-07-01,2022,7,commercial_sold_to,5459371,outlier_check,597128,475368,770483,NA,NA,raw_value,NA,TRUE
 A3322800123225003_fuel_cost,A3322800123225003,332280,"Naknek, South Naknek, King Salmon",2022-07-01,2022,7,fuel_cost,874220.28,outlier_check,484144.09,256187,356340,822557,NA,raw_value,NA,TRUE
-A3322800223225003_pce_eligible_community_kwh,A3322800223225003,332280,"Naknek, South Naknek, King Salmon",2022-08-01,2022,8,pce_eligible_community_kwh,57540,outlier_check,0,0,0,0,NA,NA,NA,FALSE
-A3322800323225003_pce_eligible_community_kwh,A3322800323225003,332280,"Naknek, South Naknek, King Salmon",2022-09-01,2022,9,pce_eligible_community_kwh,57540,outlier_check,0,0,0,0,NA,NA,NA,FALSE
-A3322800423225003_pce_eligible_community_kwh,A3322800423225003,332280,"Naknek, South Naknek, King Salmon",2022-10-01,2022,10,pce_eligible_community_kwh,57540,outlier_check,0,0,0,0,NA,NA,NA,FALSE
-A3322800523225003_pce_eligible_community_kwh,A3322800523225003,332280,"Naknek, South Naknek, King Salmon",2022-11-01,2022,11,pce_eligible_community_kwh,53217,outlier_check,0,0,0,0,NA,NA,NA,FALSE
+A3322800223225003_pce_eligible_community_kwh,A3322800223225003,332280,"Naknek, South Naknek, King Salmon",2022-08-01,2022,8,pce_eligible_community_kwh,57540,outlier_check,0,0,0,0,NA,raw_value,NA,TRUE
+A3322800323225003_pce_eligible_community_kwh,A3322800323225003,332280,"Naknek, South Naknek, King Salmon",2022-09-01,2022,9,pce_eligible_community_kwh,57540,outlier_check,0,0,0,0,NA,raw_value,NA,TRUE
+A3322800423225003_pce_eligible_community_kwh,A3322800423225003,332280,"Naknek, South Naknek, King Salmon",2022-10-01,2022,10,pce_eligible_community_kwh,57540,outlier_check,0,0,0,0,NA,raw_value,NA,TRUE
+A3322800523225003_pce_eligible_community_kwh,A3322800523225003,332280,"Naknek, South Naknek, King Salmon",2022-11-01,2022,11,pce_eligible_community_kwh,53217,outlier_check,0,0,0,0,NA,raw_value,NA,TRUE
 A3322801223225003_fuel_used_gallons,A3322801223225003,332280,"Naknek, South Naknek, King Salmon",2023-06-01,2023,6,fuel_used_gallons,227885,outlier_check,127050,89839,127050,161958,NA,raw_value,NA,TRUE
 A3322801223225003_diesel_kwh_generated,A3322801223225003,332280,"Naknek, South Naknek, King Salmon",2023-06-01,2023,6,diesel_kwh_generated,2951793,outlier_check,1930820,1276050,1930820,2404374,NA,raw_value,NA,TRUE
 A3322801223225003_peak_consumption_kw,A3322801223225003,332280,"Naknek, South Naknek, King Salmon",2023-06-01,2023,6,peak_consumption_kw,11926,outlier_check,3968,2256,3968,1806,NA,raw_value,NA,TRUE
@@ -5160,7 +5160,7 @@ A3322900918225003_most_recent_fuel_purch_price,A3322900918225003,332290,Napakiak
 A3322901018225003_most_recent_fuel_purch_price,A3322901018225003,332290,Napakiak,2018-04-01,2018,4,most_recent_fuel_purch_price,0.275,quality_check,NA,NA,NA,1,NA,carry_forward,NA,TRUE
 A3322901118225003_most_recent_fuel_purch_price,A3322901118225003,332290,Napakiak,2018-05-01,2018,5,most_recent_fuel_purch_price,0.275,quality_check,NA,NA,NA,1,NA,carry_forward,NA,TRUE
 A3322901218225003_most_recent_fuel_purch_price,A3322901218225003,332290,Napakiak,2018-06-01,2018,6,most_recent_fuel_purch_price,0.2986,quality_check,NA,NA,NA,1,NA,carry_forward,NA,TRUE
-A3322900119225003_pce_eligible_community_kwh,A3322900119225003,332290,Napakiak,2018-07-01,2018,7,pce_eligible_community_kwh,0,outlier_check,2216,3071,2440,2593,NA,NA,NA,FALSE
+A3322900119225003_pce_eligible_community_kwh,A3322900119225003,332290,Napakiak,2018-07-01,2018,7,pce_eligible_community_kwh,0,outlier_check,2216,3071,2440,2593,NA,avg_preceding_proceeding,NA,TRUE
 A3322900119225003_most_recent_fuel_purch_price,A3322900119225003,332290,Napakiak,2018-07-01,2018,7,most_recent_fuel_purch_price,0.2986,quality_check,NA,NA,NA,NA,NA,carry_forward,NA,TRUE
 A3322900219225003_most_recent_fuel_purch_price,A3322900219225003,332290,Napakiak,2018-08-01,2018,8,most_recent_fuel_purch_price,0.2986,quality_check,NA,NA,NA,NA,NA,carry_forward,NA,TRUE
 A3322900319225003_most_recent_fuel_purch_price,A3322900319225003,332290,Napakiak,2018-09-01,2018,9,most_recent_fuel_purch_price,0.2986,quality_check,NA,NA,NA,NA,NA,carry_forward,NA,TRUE
@@ -5297,14 +5297,14 @@ A3323200716225003_fuel_cost,A3323200716225003,332320,Nelson Lagoon,2016-01-01,20
 A3323200816225003_powerhouse_consumption_kwh,A3323200816225003,332320,Nelson Lagoon,2016-02-01,2016,2,powerhouse_consumption_kwh,5229,outlier_check,1974,1764,1950,1052,NA,raw_value,NA,TRUE
 A3323200217225003_powerhouse_consumption_kwh,A3323200217225003,332320,Nelson Lagoon,2016-08-01,2016,8,powerhouse_consumption_kwh,3446,outlier_check,1856,1764,2038,1578,NA,NA,NA,FALSE
 A3323200618225003_fuel_used_gallons,A3323200618225003,332320,Nelson Lagoon,2017-12-01,2017,12,fuel_used_gallons,4253,outlier_check,2349,2321,2280,2478,NA,raw_value,NA,TRUE
-A3323200120225003_pce_eligible_community_kwh,A3323200120225003,332320,Nelson Lagoon,2019-07-01,2019,7,pce_eligible_community_kwh,0,outlier_check,1782,2056,1782,1649,NA,NA,NA,FALSE
-A3323200220225003_pce_eligible_community_kwh,A3323200220225003,332320,Nelson Lagoon,2019-08-01,2019,8,pce_eligible_community_kwh,0,outlier_check,1782,2056,1782,1819,NA,NA,NA,FALSE
-A3323200320225003_pce_eligible_community_kwh,A3323200320225003,332320,Nelson Lagoon,2019-09-01,2019,9,pce_eligible_community_kwh,0,outlier_check,1782,2056,1782,1681,NA,NA,NA,FALSE
-A3323200420225003_pce_eligible_community_kwh,A3323200420225003,332320,Nelson Lagoon,2019-10-01,2019,10,pce_eligible_community_kwh,0,outlier_check,1782,2056,1782,1958,NA,NA,NA,FALSE
-A3323200520225003_pce_eligible_community_kwh,A3323200520225003,332320,Nelson Lagoon,2019-11-01,2019,11,pce_eligible_community_kwh,0,outlier_check,1782,2056,2011,2152,NA,NA,NA,FALSE
+A3323200120225003_pce_eligible_community_kwh,A3323200120225003,332320,Nelson Lagoon,2019-07-01,2019,7,pce_eligible_community_kwh,0,outlier_check,1782,2056,1782,1649,NA,avg_same_month_other_years,NA,TRUE
+A3323200220225003_pce_eligible_community_kwh,A3323200220225003,332320,Nelson Lagoon,2019-08-01,2019,8,pce_eligible_community_kwh,0,outlier_check,1782,2056,1782,1819,NA,avg_same_month_other_years,NA,TRUE
+A3323200320225003_pce_eligible_community_kwh,A3323200320225003,332320,Nelson Lagoon,2019-09-01,2019,9,pce_eligible_community_kwh,0,outlier_check,1782,2056,1782,1681,NA,avg_same_month_other_years,NA,TRUE
+A3323200420225003_pce_eligible_community_kwh,A3323200420225003,332320,Nelson Lagoon,2019-10-01,2019,10,pce_eligible_community_kwh,0,outlier_check,1782,2056,1782,1958,NA,avg_same_month_other_years,NA,TRUE
+A3323200520225003_pce_eligible_community_kwh,A3323200520225003,332320,Nelson Lagoon,2019-11-01,2019,11,pce_eligible_community_kwh,0,outlier_check,1782,2056,2011,2152,NA,avg_same_month_other_years,NA,TRUE
 A3323200920225003_fuel_used_gallons,A3323200920225003,332320,Nelson Lagoon,2020-03-01,2020,3,fuel_used_gallons,6690,outlier_check,2255,2140,2255,2224,NA,raw_value,NA,TRUE
 A3323201020225003_fuel_used_gallons,A3323201020225003,332320,Nelson Lagoon,2020-04-01,2020,4,fuel_used_gallons,8677,outlier_check,2255,2140,2162,2231,NA,raw_value,NA,TRUE
-A3323200221225003_pce_eligible_community_kwh,A3323200221225003,332320,Nelson Lagoon,2020-08-01,2020,8,pce_eligible_community_kwh,0,outlier_check,1405,1960,1664,1819,NA,NA,NA,FALSE
+A3323200221225003_pce_eligible_community_kwh,A3323200221225003,332320,Nelson Lagoon,2020-08-01,2020,8,pce_eligible_community_kwh,0,outlier_check,1405,1960,1664,1819,NA,avg_same_month_other_years,NA,TRUE
 A3323201021225003_peak_consumption_kw,A3323201021225003,332320,Nelson Lagoon,2021-04-01,2021,4,peak_consumption_kw,7202,outlier_check,0,0,0,247,NA,raw_value,NA,TRUE
 A3323201121225003_peak_consumption_kw,A3323201121225003,332320,Nelson Lagoon,2021-05-01,2021,5,peak_consumption_kw,7202,outlier_check,0,0,0,250,NA,raw_value,NA,TRUE
 A3323201221225003_peak_consumption_kw,A3323201221225003,332320,Nelson Lagoon,2021-06-01,2021,6,peak_consumption_kw,7202,outlier_check,0,0,0,256,NA,raw_value,NA,TRUE
@@ -5648,7 +5648,7 @@ A3314900326225003_most_recent_fuel_purch_price,A3314900326225003,331490,Nightmut
 A3314900426225003_most_recent_fuel_purch_price,A3314900426225003,331490,Nightmute,2025-10-01,2025,10,most_recent_fuel_purch_price,0,quality_check,4.0062,4,4,4,NA,carry_forward,NA,TRUE
 A3314900526225003_most_recent_fuel_purch_price,A3314900526225003,331490,Nightmute,2025-11-01,2025,11,most_recent_fuel_purch_price,0,quality_check,4.0062,4,4,4,NA,carry_forward,NA,TRUE
 A3314900626225003_most_recent_fuel_purch_price,A3314900626225003,331490,Nightmute,2025-12-01,2025,12,most_recent_fuel_purch_price,0,quality_check,4.0062,4,4,4,NA,carry_forward,NA,TRUE
-A3314900726225003_pce_eligible_residential_kwh,A3314900726225003,331490,Nightmute,2026-01-01,2026,1,pce_eligible_residential_kwh,0,outlier_check,24688,22289,24278,24540,NA,NA,NA,FALSE
+A3314900726225003_pce_eligible_residential_kwh,A3314900726225003,331490,Nightmute,2026-01-01,2026,1,pce_eligible_residential_kwh,0,outlier_check,24688,22289,24278,24540,NA,avg_preceding_proceeding,NA,TRUE
 A3314900726225003_residential_sold_to,A3314900726225003,331490,Nightmute,2026-01-01,2026,1,residential_sold_to,66990,outlier_check,24503,30303,24348,30552,NA,raw_value,NA,TRUE
 A3314900726225003_commercial_sold_to,A3314900726225003,331490,Nightmute,2026-01-01,2026,1,commercial_sold_to,26393,outlier_check,5426,3729,5412,2944,NA,raw_value,NA,TRUE
 A3314900726225003_residential_customers,A3314900726225003,331490,Nightmute,2026-01-01,2026,1,residential_customers,106,outlier_check,55,55,56,54,56,manual_override,NA,TRUE
@@ -5789,7 +5789,7 @@ A3315000223225003_most_recent_fuel_purch_price,A3315000223225003,331500,Noatak,2
 A3315000623225003_fuel_used_gallons,A3315000623225003,331500,Noatak,2022-12-01,2022,12,fuel_used_gallons,-3114,outlier_check,13030,11699,14360,12001,NA,avg_preceding_proceeding,NA,TRUE
 A3315000623225003_fuel_cost,A3315000623225003,331500,Noatak,2022-12-01,2022,12,fuel_cost,-33356.85,outlier_check,139574.75,113607,154154,50355,NA,avg_preceding_proceeding,NA,TRUE
 A3315000723225003_pce_eligible_residential_kwh,A3315000723225003,331500,Noatak,2023-01-01,2023,1,pce_eligible_residential_kwh,74857,outlier_check,69780,61628,67926,57871,NA,raw_value,NA,TRUE
-A3315000723225003_pce_eligible_community_kwh,A3315000723225003,331500,Noatak,2023-01-01,2023,1,pce_eligible_community_kwh,21515,outlier_check,4173,4374,4534,4048,NA,NA,NA,FALSE
+A3315000723225003_pce_eligible_community_kwh,A3315000723225003,331500,Noatak,2023-01-01,2023,1,pce_eligible_community_kwh,21515,outlier_check,4173,4374,4534,4048,NA,avg_preceding_proceeding,NA,TRUE
 A3315000823225003_fuel_used_gallons,A3315000823225003,331500,Noatak,2023-02-01,2023,2,fuel_used_gallons,954,outlier_check,15691,12555,14200,13380,NA,avg_preceding_proceeding,NA,TRUE
 A3315001223225003_fuel_used_gallons,A3315001223225003,331500,Noatak,2023-06-01,2023,6,fuel_used_gallons,0,outlier_check,11756,12555,10848,8935,NA,avg_preceding_proceeding,NA,TRUE
 A3315000324225003_powerhouse_consumption_kwh,A3315000324225003,331500,Noatak,2023-09-01,2023,9,powerhouse_consumption_kwh,16994,outlier_check,4234,4561,6552,4540,NA,raw_value,NA,TRUE
@@ -5804,27 +5804,27 @@ A3315000126225003_powerhouse_consumption_kwh,A3315000126225003,331500,Noatak,202
 A3315000226225003_powerhouse_consumption_kwh,A3315000226225003,331500,Noatak,2025-08-01,2025,8,powerhouse_consumption_kwh,10100,outlier_check,6349,6299,7401,4352,NA,raw_value,NA,TRUE
 A3315000326225003_most_recent_fuel_purch_price,A3315000326225003,331500,Noatak,2025-09-01,2025,9,most_recent_fuel_purch_price,0,quality_check,10.647,11,11,8,NA,carry_forward,NA,TRUE
 A3315000426225003_most_recent_fuel_purch_price,A3315000426225003,331500,Noatak,2025-10-01,2025,10,most_recent_fuel_purch_price,0,quality_check,10.647,11,11,8,NA,carry_forward,NA,TRUE
-A3315000526225003_pce_eligible_community_kwh,A3315000526225003,331500,Noatak,2025-11-01,2025,11,pce_eligible_community_kwh,6959,outlier_check,6506,6051,6506,4000,NA,NA,NA,FALSE
+A3315000526225003_pce_eligible_community_kwh,A3315000526225003,331500,Noatak,2025-11-01,2025,11,pce_eligible_community_kwh,6959,outlier_check,6506,6051,6506,4000,NA,raw_value,NA,TRUE
 A3315000526225003_commercial_sold_to,A3315000526225003,331500,Noatak,2025-11-01,2025,11,commercial_sold_to,20925,outlier_check,10922,11137,10922,10932,NA,raw_value,NA,TRUE
 A3315000526225003_most_recent_fuel_purch_price,A3315000526225003,331500,Noatak,2025-11-01,2025,11,most_recent_fuel_purch_price,0,quality_check,10.647,11,11,8,NA,carry_forward,NA,TRUE
-A3315000626225003_pce_eligible_community_kwh,A3315000626225003,331500,Noatak,2025-12-01,2025,12,pce_eligible_community_kwh,7197,outlier_check,6506,6051,6506,4023,NA,NA,NA,FALSE
+A3315000626225003_pce_eligible_community_kwh,A3315000626225003,331500,Noatak,2025-12-01,2025,12,pce_eligible_community_kwh,7197,outlier_check,6506,6051,6506,4023,NA,raw_value,NA,TRUE
 A3315000626225003_commercial_sold_to,A3315000626225003,331500,Noatak,2025-12-01,2025,12,commercial_sold_to,24044,outlier_check,10922,11137,10922,11724,NA,raw_value,NA,TRUE
 A3315000626225003_most_recent_fuel_purch_price,A3315000626225003,331500,Noatak,2025-12-01,2025,12,most_recent_fuel_purch_price,0,quality_check,10.647,11,11,8,NA,carry_forward,NA,TRUE
-A3315000726225003_pce_eligible_residential_kwh,A3315000726225003,331500,Noatak,2026-01-01,2026,1,pce_eligible_residential_kwh,0,outlier_check,64370,59208,64194,57871,NA,NA,NA,FALSE
-A3315000726225003_pce_eligible_community_kwh,A3315000726225003,331500,Noatak,2026-01-01,2026,1,pce_eligible_community_kwh,17877,outlier_check,6506,5450,6506,4048,NA,NA,NA,FALSE
+A3315000726225003_pce_eligible_residential_kwh,A3315000726225003,331500,Noatak,2026-01-01,2026,1,pce_eligible_residential_kwh,0,outlier_check,64370,59208,64194,57871,NA,avg_preceding_proceeding,NA,TRUE
+A3315000726225003_pce_eligible_community_kwh,A3315000726225003,331500,Noatak,2026-01-01,2026,1,pce_eligible_community_kwh,17877,outlier_check,6506,5450,6506,4048,7877,manual_override,Assume typo in leading digit,TRUE
 A3315000726225003_commercial_sold_to,A3315000726225003,331500,Noatak,2026-01-01,2026,1,commercial_sold_to,5640,outlier_check,10922,NA,10922,11836,NA,avg_preceding_proceeding,NA,TRUE
 A3315000726225003_residential_customers,A3315000726225003,331500,Noatak,2026-01-01,2026,1,residential_customers,55,outlier_check,111,109,111,120,NA,avg_same_month_other_years,NA,TRUE
 A3315000726225003_most_recent_fuel_purch_price,A3315000726225003,331500,Noatak,2026-01-01,2026,1,most_recent_fuel_purch_price,0,quality_check,10.647,NA,11,8,NA,carry_forward,NA,TRUE
-A3315000826225003_pce_eligible_community_kwh,A3315000826225003,331500,Noatak,2026-02-01,2026,2,pce_eligible_community_kwh,7896,outlier_check,6506,5450,6506,4281,NA,NA,NA,FALSE
+A3315000826225003_pce_eligible_community_kwh,A3315000826225003,331500,Noatak,2026-02-01,2026,2,pce_eligible_community_kwh,7896,outlier_check,6506,5450,6506,4281,NA,raw_value,NA,TRUE
 A3315000826225003_commercial_sold_to,A3315000826225003,331500,Noatak,2026-02-01,2026,2,commercial_sold_to,21336,outlier_check,10922,NA,10922,10652,NA,raw_value,NA,TRUE
 A3315000826225003_most_recent_fuel_purch_price,A3315000826225003,331500,Noatak,2026-02-01,2026,2,most_recent_fuel_purch_price,0,quality_check,10.647,NA,11,8,NA,carry_forward,NA,TRUE
-A3315000926225003_pce_eligible_community_kwh,A3315000926225003,331500,Noatak,2026-03-01,2026,3,pce_eligible_community_kwh,7536,outlier_check,6506,5450,6506,4246,NA,NA,NA,FALSE
+A3315000926225003_pce_eligible_community_kwh,A3315000926225003,331500,Noatak,2026-03-01,2026,3,pce_eligible_community_kwh,7536,outlier_check,6506,5450,6506,4246,NA,raw_value,NA,TRUE
 A3315000926225003_commercial_sold_to,A3315000926225003,331500,Noatak,2026-03-01,2026,3,commercial_sold_to,26907,outlier_check,10922,NA,10922,11106,NA,raw_value,NA,TRUE
 A3315000926225003_most_recent_fuel_purch_price,A3315000926225003,331500,Noatak,2026-03-01,2026,3,most_recent_fuel_purch_price,0,quality_check,10.647,NA,11,8,NA,carry_forward,NA,TRUE
-A3315001026225003_pce_eligible_community_kwh,A3315001026225003,331500,Noatak,2026-04-01,2026,4,pce_eligible_community_kwh,7350,outlier_check,6506,5450,6506,4224,NA,NA,NA,FALSE
+A3315001026225003_pce_eligible_community_kwh,A3315001026225003,331500,Noatak,2026-04-01,2026,4,pce_eligible_community_kwh,7350,outlier_check,6506,5450,6506,4224,NA,raw_value,NA,TRUE
 A3315001026225003_commercial_sold_to,A3315001026225003,331500,Noatak,2026-04-01,2026,4,commercial_sold_to,20731,outlier_check,10922,NA,10922,10766,NA,raw_value,NA,TRUE
 A3315001026225003_most_recent_fuel_purch_price,A3315001026225003,331500,Noatak,2026-04-01,2026,4,most_recent_fuel_purch_price,0,quality_check,10.647,NA,11,8,NA,carry_forward,NA,TRUE
-A3315001126225003_pce_eligible_community_kwh,A3315001126225003,331500,Noatak,2026-05-01,2026,5,pce_eligible_community_kwh,6927,outlier_check,6506,5450,5978,3899,NA,NA,NA,FALSE
+A3315001126225003_pce_eligible_community_kwh,A3315001126225003,331500,Noatak,2026-05-01,2026,5,pce_eligible_community_kwh,6927,outlier_check,6506,5450,5978,3899,NA,raw_value,NA,TRUE
 A3315001126225003_residential_sold_to,A3315001126225003,331500,Noatak,2026-05-01,2026,5,residential_sold_to,0,outlier_check,64288,60123,58606,59924,NA,avg_same_month_other_years,NA,TRUE
 A3315001126225003_commercial_sold_to,A3315001126225003,331500,Noatak,2026-05-01,2026,5,commercial_sold_to,0,outlier_check,10922,NA,10922,10097,NA,avg_same_month_other_years,NA,TRUE
 A3315001126225003_most_recent_fuel_purch_price,A3315001126225003,331500,Noatak,2026-05-01,2026,5,most_recent_fuel_purch_price,0,quality_check,10.647,NA,11,8,NA,carry_forward,NA,TRUE
@@ -5898,7 +5898,7 @@ A3315101026225003_most_recent_fuel_purch_price,A3315101026225003,331510,Noorvik,
 A3315101126225003_commercial_sold_to,A3315101126225003,331510,Noorvik,2026-05-01,2026,5,commercial_sold_to,0,outlier_check,21348,18930,18930,11178,NA,avg_same_month_other_years,NA,TRUE
 A3315101126225003_most_recent_fuel_purch_price,A3315101126225003,331510,Noorvik,2026-05-01,2026,5,most_recent_fuel_purch_price,0,quality_check,4.7348,NA,5,4,NA,carry_forward,NA,TRUE
 A3315101226225003_most_recent_fuel_purch_price,A3315101226225003,331510,Noorvik,2026-06-01,2026,6,most_recent_fuel_purch_price,0,quality_check,4.7348,NA,5,4,NA,carry_forward,NA,TRUE
-A3311800618225003_pce_eligible_residential_kwh,A3311800618225003,331180,"Northway, Northway Village, Northway Junction",2017-12-01,2017,12,pce_eligible_residential_kwh,0,outlier_check,23569,22447,24624,28462,NA,NA,NA,FALSE
+A3311800618225003_pce_eligible_residential_kwh,A3311800618225003,331180,"Northway, Northway Village, Northway Junction",2017-12-01,2017,12,pce_eligible_residential_kwh,0,outlier_check,23569,22447,24624,28462,NA,avg_preceding_proceeding,NA,TRUE
 A3311800618225003_residential_rate,A3311800618225003,331180,"Northway, Northway Village, Northway Junction",2017-12-01,2017,12,residential_rate,0,quality_check,0.597,1,1,1,NA,carry_forward,NA,TRUE
 A3311800919225003_peak_consumption_kw,A3311800919225003,331180,"Northway, Northway Village, Northway Junction",2019-03-01,2019,3,peak_consumption_kw,412,outlier_check,201,184,191,194,NA,raw_value,NA,TRUE
 A3311800621225003_govt_facil_sold_to,A3311800621225003,331180,"Northway, Northway Village, Northway Junction",2020-12-01,2020,12,govt_facil_sold_to,0,outlier_check,25294,22668,25212,27370,NA,avg_preceding_proceeding,NA,TRUE
@@ -6516,7 +6516,7 @@ A3315600326225003_most_recent_fuel_purch_price,A3315600326225003,331560,Pitkas P
 A3315600426225003_most_recent_fuel_purch_price,A3315600426225003,331560,Pitkas Point,2025-10-01,2025,10,most_recent_fuel_purch_price,0,quality_check,3.7252,4,4,3,NA,carry_forward,NA,TRUE
 A3315600526225003_most_recent_fuel_purch_price,A3315600526225003,331560,Pitkas Point,2025-11-01,2025,11,most_recent_fuel_purch_price,0,quality_check,3.7252,4,4,3,NA,carry_forward,NA,TRUE
 A3315600626225003_most_recent_fuel_purch_price,A3315600626225003,331560,Pitkas Point,2025-12-01,2025,12,most_recent_fuel_purch_price,0,quality_check,3.7252,4,4,3,NA,carry_forward,NA,TRUE
-A3315600726225003_pce_eligible_residential_kwh,A3315600726225003,331560,Pitkas Point,2026-01-01,2026,1,pce_eligible_residential_kwh,0,outlier_check,11963,10886,11784,11658,NA,NA,NA,FALSE
+A3315600726225003_pce_eligible_residential_kwh,A3315600726225003,331560,Pitkas Point,2026-01-01,2026,1,pce_eligible_residential_kwh,0,outlier_check,11963,10886,11784,11658,NA,avg_preceding_proceeding,NA,TRUE
 A3315600726225003_residential_sold_to,A3315600726225003,331560,Pitkas Point,2026-01-01,2026,1,residential_sold_to,66768,outlier_check,13782,13260,13226,14219,NA,avg_preceding_proceeding,NA,TRUE
 A3315600726225003_commercial_sold_to,A3315600726225003,331560,Pitkas Point,2026-01-01,2026,1,commercial_sold_to,23198,outlier_check,3474,2565,3398,749,NA,avg_preceding_proceeding,NA,TRUE
 A3315600726225003_govt_facil_sold_to,A3315600726225003,331560,Pitkas Point,2026-01-01,2026,1,govt_facil_sold_to,65702,outlier_check,0,0,0,0,NA,carry_forward,NA,TRUE
@@ -6940,9 +6940,9 @@ A3316600623225003_fuel_used_gallons,A3316600623225003,331660,"Saint Mary's, Andr
 A3316600623225003_fuel_cost,A3316600623225003,331660,"Saint Mary's, Andreafsky",2022-12-01,2022,12,fuel_cost,1034316.19,outlier_check,83380.67,77958,102526,60136,NA,avg_preceding_proceeding,NA,TRUE
 A3316600723225003_powerhouse_consumption_kwh,A3316600723225003,331660,"Saint Mary's, Andreafsky",2023-01-01,2023,1,powerhouse_consumption_kwh,91390,outlier_check,14050,38552,25184,9645,NA,raw_value,NA,TRUE
 A3316600823225003_residential_rate,A3316600823225003,331660,"Saint Mary's, Andreafsky",2023-02-01,2023,2,residential_rate,0,quality_check,0.5863,1,1,1,NA,carry_forward,NA,TRUE
-A3316601223225003_pce_eligible_community_kwh,A3316601223225003,331660,"Saint Mary's, Andreafsky",2023-06-01,2023,6,pce_eligible_community_kwh,36012,outlier_check,8596,8447,8007,7543,NA,NA,NA,FALSE
+A3316601223225003_pce_eligible_community_kwh,A3316601223225003,331660,"Saint Mary's, Andreafsky",2023-06-01,2023,6,pce_eligible_community_kwh,36012,outlier_check,8596,8447,8007,7543,NA,avg_preceding_proceeding,NA,TRUE
 A3316600724225003_powerhouse_consumption_kwh,A3316600724225003,331660,"Saint Mary's, Andreafsky",2024-01-01,2024,1,powerhouse_consumption_kwh,73444,outlier_check,41795,42266,37796,9645,NA,raw_value,NA,TRUE
-A3316600225225003_pce_eligible_community_kwh,A3316600225225003,331660,"Saint Mary's, Andreafsky",2024-08-01,2024,8,pce_eligible_community_kwh,0,outlier_check,7181,8500,7628,7557,NA,NA,NA,FALSE
+A3316600225225003_pce_eligible_community_kwh,A3316600225225003,331660,"Saint Mary's, Andreafsky",2024-08-01,2024,8,pce_eligible_community_kwh,0,outlier_check,7181,8500,7628,7557,NA,avg_preceding_proceeding,NA,TRUE
 A3316600625225003_powerhouse_consumption_kwh,A3316600625225003,331660,"Saint Mary's, Andreafsky",2024-12-01,2024,12,powerhouse_consumption_kwh,79623,outlier_check,48458,42266,48458,18986,NA,raw_value,NA,TRUE
 A3316600725225003_diesel_kwh_generated,A3316600725225003,331660,"Saint Mary's, Andreafsky",2025-01-01,2025,1,diesel_kwh_generated,682368,outlier_check,632354,471124,606076,326713,NA,raw_value,NA,TRUE
 A3316600725225003_powerhouse_consumption_kwh,A3316600725225003,331660,"Saint Mary's, Andreafsky",2025-01-01,2025,1,powerhouse_consumption_kwh,75635,outlier_check,48458,29545,43600,9645,NA,raw_value,NA,TRUE
@@ -6952,8 +6952,8 @@ A3316600526225003_commercial_sold_to,A3316600526225003,331660,"Saint Mary's, And
 A3316600526225003_most_recent_fuel_purch_price,A3316600526225003,331660,"Saint Mary's, Andreafsky",2025-11-01,2025,11,most_recent_fuel_purch_price,0,quality_check,3.7252,4,4,3,NA,carry_forward,NA,TRUE
 A3316600626225003_commercial_sold_to,A3316600626225003,331660,"Saint Mary's, Andreafsky",2025-12-01,2025,12,commercial_sold_to,55705,outlier_check,33644,33305,33644,33407,NA,raw_value,NA,TRUE
 A3316600626225003_most_recent_fuel_purch_price,A3316600626225003,331660,"Saint Mary's, Andreafsky",2025-12-01,2025,12,most_recent_fuel_purch_price,0,quality_check,3.7252,4,4,3,NA,carry_forward,NA,TRUE
-A3316600726225003_pce_eligible_residential_kwh,A3316600726225003,331660,"Saint Mary's, Andreafsky",2026-01-01,2026,1,pce_eligible_residential_kwh,0,outlier_check,68118,64609,68370,67196,NA,NA,NA,FALSE
-A3316600726225003_pce_eligible_community_kwh,A3316600726225003,331660,"Saint Mary's, Andreafsky",2026-01-01,2026,1,pce_eligible_community_kwh,28488,outlier_check,8546,7982,8449,9381,NA,NA,NA,FALSE
+A3316600726225003_pce_eligible_residential_kwh,A3316600726225003,331660,"Saint Mary's, Andreafsky",2026-01-01,2026,1,pce_eligible_residential_kwh,0,outlier_check,68118,64609,68370,67196,NA,avg_preceding_proceeding,NA,TRUE
+A3316600726225003_pce_eligible_community_kwh,A3316600726225003,331660,"Saint Mary's, Andreafsky",2026-01-01,2026,1,pce_eligible_community_kwh,28488,outlier_check,8546,7982,8449,9381,NA,avg_preceding_proceeding,NA,TRUE
 A3316600726225003_diesel_kwh_generated,A3316600726225003,331660,"Saint Mary's, Andreafsky",2026-01-01,2026,1,diesel_kwh_generated,664153,outlier_check,545550,506271,561309,326713,NA,raw_value,NA,TRUE
 A3316600726225003_commercial_sold_to,A3316600726225003,331660,"Saint Mary's, Andreafsky",2026-01-01,2026,1,commercial_sold_to,15610,outlier_check,33644,51120,33644,33863,NA,raw_value,NA,TRUE
 A3316600726225003_residential_customers,A3316600726225003,331660,"Saint Mary's, Andreafsky",2026-01-01,2026,1,residential_customers,60,outlier_check,178,176,178,175,NA,carry_forward,NA,TRUE
@@ -7116,7 +7116,7 @@ A3325601020225003_total_kwh_purchased,A3325601020225003,332560,Saint Paul,2020-0
 A3325600521225003_total_kwh_purchased,A3325600521225003,332560,Saint Paul,2020-11-01,2020,11,total_kwh_purchased,25398,outlier_check,7220,4073,7220,0,NA,raw_value,NA,TRUE
 A3325600621225003_total_kwh_purchased,A3325600621225003,332560,Saint Paul,2020-12-01,2020,12,total_kwh_purchased,17240,outlier_check,7220,4073,7220,0,NA,raw_value,NA,TRUE
 A3325600721225003_total_kwh_purchased,A3325600721225003,332560,Saint Paul,2021-01-01,2021,1,total_kwh_purchased,27543,outlier_check,7220,0,3610,0,NA,raw_value,NA,TRUE
-A3325600123225003_pce_eligible_community_kwh,A3325600123225003,332560,Saint Paul,2022-07-01,2022,7,pce_eligible_community_kwh,27370,outlier_check,0,0,0,0,NA,NA,NA,FALSE
+A3325600123225003_pce_eligible_community_kwh,A3325600123225003,332560,Saint Paul,2022-07-01,2022,7,pce_eligible_community_kwh,27370,outlier_check,0,0,0,0,NA,avg_preceding_proceeding,NA,TRUE
 A3325601023225003_residential_rate,A3325601023225003,332560,Saint Paul,2023-04-01,2023,4,residential_rate,57,outlier_check,0.57,1,1,0,NA,carry_forward,NA,TRUE
 A3325601023225003_effective_residential_rate,A3325601023225003,332560,Saint Paul,2023-04-01,2023,4,effective_residential_rate,56.6258,outlier_check,0.19579999999999995,0,0,0,NA,carry_forward,NA,TRUE
 A3325600625225003_fuel_used_gallons,A3325600625225003,332560,Saint Paul,2024-12-01,2024,12,fuel_used_gallons,28791,outlier_check,27041,22476,27041,20723,NA,raw_value,NA,TRUE
@@ -7345,14 +7345,14 @@ A3316100616225003_commercial_sold_to,A3316100616225003,331610,Selawik,2015-12-01
 A3316100716225003_wind_kwh_generated,A3316100716225003,331610,Selawik,2016-01-01,2016,1,wind_kwh_generated,34826,outlier_check,4167,1340,4167,59,NA,raw_value,NA,TRUE
 A3316100716225003_commercial_sold_to,A3316100716225003,331610,Selawik,2016-01-01,2016,1,commercial_sold_to,63290,outlier_check,28882,23323,26140,23470,NA,raw_value,NA,TRUE
 A3316100816225003_wind_kwh_generated,A3316100816225003,331610,Selawik,2016-02-01,2016,2,wind_kwh_generated,8388,outlier_check,4167,1340,2410,0,NA,raw_value,NA,TRUE
-A3316100916225003_pce_eligible_community_kwh,A3316100916225003,331610,Selawik,2016-03-01,2016,3,pce_eligible_community_kwh,11828,outlier_check,10318,8544,10316,7531,NA,NA,NA,FALSE
+A3316100916225003_pce_eligible_community_kwh,A3316100916225003,331610,Selawik,2016-03-01,2016,3,pce_eligible_community_kwh,11828,outlier_check,10318,8544,10316,7531,NA,raw_value,NA,TRUE
 A3316101016225003_wind_kwh_generated,A3316101016225003,331610,Selawik,2016-04-01,2016,4,wind_kwh_generated,8659,outlier_check,654,1340,1864,286,NA,raw_value,NA,TRUE
 A3316100217225003_residential_customers,A3316100217225003,331610,Selawik,2016-08-01,2016,8,residential_customers,30,outlier_check,166,175,169,164,168,manual_override,NA,TRUE
 A3316100417225003_residential_customers,A3316100417225003,331610,Selawik,2016-10-01,2016,10,residential_customers,31,outlier_check,172,175,172,168,172,manual_override,NA,TRUE
 A3316100517225003_residential_customers,A3316100517225003,331610,Selawik,2016-11-01,2016,11,residential_customers,30,outlier_check,172,175,174,168,173,manual_override,NA,TRUE
 A3316100717225003_residential_customers,A3316100717225003,331610,Selawik,2017-01-01,2017,1,residential_customers,29,outlier_check,175,165,175,169,174,manual_override,NA,TRUE
 A3316100817225003_residential_customers,A3316100817225003,331610,Selawik,2017-02-01,2017,2,residential_customers,29,outlier_check,175,165,174,168,174,manual_override,NA,TRUE
-A3316100917225003_pce_eligible_community_kwh,A3316100917225003,331610,Selawik,2017-03-01,2017,3,pce_eligible_community_kwh,12058,outlier_check,9270,7394,9005,7531,NA,NA,NA,FALSE
+A3316100917225003_pce_eligible_community_kwh,A3316100917225003,331610,Selawik,2017-03-01,2017,3,pce_eligible_community_kwh,12058,outlier_check,9270,7394,9005,7531,NA,raw_value,NA,TRUE
 A3316100118225003_most_recent_fuel_purch_price,A3316100118225003,331610,Selawik,2017-07-01,2017,7,most_recent_fuel_purch_price,0,quality_check,2.99,3,3,4,NA,carry_forward,NA,TRUE
 A3316100218225003_most_recent_fuel_purch_price,A3316100218225003,331610,Selawik,2017-08-01,2017,8,most_recent_fuel_purch_price,0,quality_check,2.99,3,3,4,NA,carry_forward,NA,TRUE
 A3316100318225003_most_recent_fuel_purch_price,A3316100318225003,331610,Selawik,2017-09-01,2017,9,most_recent_fuel_purch_price,0,quality_check,2.99,3,3,4,NA,carry_forward,NA,TRUE
@@ -7661,7 +7661,7 @@ A3316500123225003_most_recent_fuel_purch_price,A3316500123225003,331650,Shungnak
 A3316500223225003_most_recent_fuel_purch_price,A3316500223225003,331650,Shungnak,2022-08-01,2022,8,most_recent_fuel_purch_price,0,quality_check,5.6056,7,6,6,NA,carry_forward,NA,TRUE
 A3316500623225003_fuel_used_gallons,A3316500623225003,331650,Shungnak,2022-12-01,2022,12,fuel_used_gallons,23885,outlier_check,11759,9533,12926,11695,NA,raw_value,NA,TRUE
 A3316500623225003_fuel_cost,A3316500623225003,331650,Shungnak,2022-12-01,2022,12,fuel_cost,240297.96,outlier_check,117729.93,70741,129751,53713,NA,avg_preceding_proceeding,NA,TRUE
-A3316500723225003_pce_eligible_community_kwh,A3316500723225003,331650,Shungnak,2023-01-01,2023,1,pce_eligible_community_kwh,15933,outlier_check,3521,3560,3480,3796,NA,NA,NA,FALSE
+A3316500723225003_pce_eligible_community_kwh,A3316500723225003,331650,Shungnak,2023-01-01,2023,1,pce_eligible_community_kwh,15933,outlier_check,3521,3560,3480,3796,NA,avg_preceding_proceeding,NA,TRUE
 A3316500224225003_commercial_sold_to,A3316500224225003,331650,Shungnak,2023-08-01,2023,8,commercial_sold_to,3527,outlier_check,5871,7170,5871,7888,NA,raw_value,NA,TRUE
 A3316500324225003_commercial_sold_to,A3316500324225003,331650,Shungnak,2023-09-01,2023,9,commercial_sold_to,3084,outlier_check,5871,7170,5871,7800,NA,raw_value,NA,TRUE
 A3316500424225003_commercial_sold_to,A3316500424225003,331650,Shungnak,2023-10-01,2023,10,commercial_sold_to,3401,outlier_check,5871,7170,5871,7824,NA,raw_value,NA,TRUE
@@ -7674,8 +7674,8 @@ A3316500526225003_commercial_sold_to,A3316500526225003,331650,Shungnak,2025-11-0
 A3316500526225003_most_recent_fuel_purch_price,A3316500526225003,331650,Shungnak,2025-11-01,2025,11,most_recent_fuel_purch_price,0,quality_check,7.3519,9,7,6,NA,carry_forward,NA,TRUE
 A3316500626225003_commercial_sold_to,A3316500626225003,331650,Shungnak,2025-12-01,2025,12,commercial_sold_to,15975,outlier_check,7918,7814,7918,7548,NA,raw_value,NA,TRUE
 A3316500626225003_most_recent_fuel_purch_price,A3316500626225003,331650,Shungnak,2025-12-01,2025,12,most_recent_fuel_purch_price,0,quality_check,7.3519,9,7,6,NA,carry_forward,NA,TRUE
-A3316500726225003_pce_eligible_residential_kwh,A3316500726225003,331650,Shungnak,2026-01-01,2026,1,pce_eligible_residential_kwh,0,outlier_check,35067,27786,33930,28476,NA,NA,NA,FALSE
-A3316500726225003_pce_eligible_community_kwh,A3316500726225003,331650,Shungnak,2026-01-01,2026,1,pce_eligible_community_kwh,9896,outlier_check,3800,3409,3718,3796,NA,NA,NA,FALSE
+A3316500726225003_pce_eligible_residential_kwh,A3316500726225003,331650,Shungnak,2026-01-01,2026,1,pce_eligible_residential_kwh,0,outlier_check,35067,27786,33930,28476,NA,avg_preceding_proceeding,NA,TRUE
+A3316500726225003_pce_eligible_community_kwh,A3316500726225003,331650,Shungnak,2026-01-01,2026,1,pce_eligible_community_kwh,9896,outlier_check,3800,3409,3718,3796,NA,avg_preceding_proceeding,NA,TRUE
 A3316500726225003_residential_sold_to,A3316500726225003,331650,Shungnak,2026-01-01,2026,1,residential_sold_to,75133,outlier_check,47391,27683,45456,44688,NA,raw_value,NA,TRUE
 A3316500726225003_commercial_sold_to,A3316500726225003,331650,Shungnak,2026-01-01,2026,1,commercial_sold_to,41080,outlier_check,7918,8315,7918,7939,NA,raw_value,NA,TRUE
 A3316500726225003_govt_facil_sold_to,A3316500726225003,331650,Shungnak,2026-01-01,2026,1,govt_facil_sold_to,48562,outlier_check,25608,14702,24365,23822,NA,raw_value,NA,TRUE
@@ -8151,7 +8151,7 @@ A3316900223225003_most_recent_fuel_purch_price,A3316900223225003,331690,Togiak,2
 A3316901223225003_fuel_used_gallons,A3316901223225003,331690,Togiak,2023-06-01,2023,6,fuel_used_gallons,0,outlier_check,18882,17854,20448,16525,NA,avg_preceding_proceeding,NA,TRUE
 A3316900124225003_commercial_sold_to,A3316900124225003,331690,Togiak,2023-07-01,2023,7,commercial_sold_to,100089,outlier_check,52757,31467,56256,25167,NA,raw_value,NA,TRUE
 A3316900924225003_powerhouse_consumption_kwh,A3316900924225003,331690,Togiak,2024-03-01,2024,3,powerhouse_consumption_kwh,14403,outlier_check,6521,5453,6080,4595,NA,raw_value,NA,TRUE
-A3316900125225003_pce_eligible_community_kwh,A3316900125225003,331690,Togiak,2024-07-01,2024,7,pce_eligible_community_kwh,5646,outlier_check,11893,10810,10190,10652,NA,NA,NA,FALSE
+A3316900125225003_pce_eligible_community_kwh,A3316900125225003,331690,Togiak,2024-07-01,2024,7,pce_eligible_community_kwh,5646,outlier_check,11893,10810,10190,10652,NA,avg_preceding_proceeding,NA,TRUE
 A3316901125225003_fuel_used_gallons,A3316901125225003,331690,Togiak,2025-05-01,2025,5,fuel_used_gallons,0,outlier_check,17395,17631,16208,16744,NA,avg_preceding_proceeding,NA,TRUE
 A3316900326225003_most_recent_fuel_purch_price,A3316900326225003,331690,Togiak,2025-09-01,2025,9,most_recent_fuel_purch_price,0,quality_check,4.4255,4,4,3,NA,carry_forward,NA,TRUE
 A3316900426225003_most_recent_fuel_purch_price,A3316900426225003,331690,Togiak,2025-10-01,2025,10,most_recent_fuel_purch_price,0,quality_check,4.4255,4,4,3,NA,carry_forward,NA,TRUE
@@ -8414,10 +8414,10 @@ A3327300222225003_total_kwh_purchased,A3327300222225003,332730,Twin Hills,2021-0
 A3327300322225003_total_kwh_purchased,A3327300322225003,332730,Twin Hills,2021-09-01,2021,9,total_kwh_purchased,22216,outlier_check,0,NA,0,0,NA,raw_value,NA,TRUE
 A3327300422225003_total_kwh_purchased,A3327300422225003,332730,Twin Hills,2021-10-01,2021,10,total_kwh_purchased,24213,outlier_check,0,NA,0,0,NA,raw_value,NA,TRUE
 A3327300522225003_total_kwh_purchased,A3327300522225003,332730,Twin Hills,2021-11-01,2021,11,total_kwh_purchased,32914,outlier_check,0,NA,0,0,NA,raw_value,NA,TRUE
-A3327300622225003_pce_eligible_community_kwh,A3327300622225003,332730,Twin Hills,2021-12-01,2021,12,pce_eligible_community_kwh,4775,outlier_check,3425,2249,3722,3000,NA,NA,NA,FALSE
+A3327300622225003_pce_eligible_community_kwh,A3327300622225003,332730,Twin Hills,2021-12-01,2021,12,pce_eligible_community_kwh,4775,outlier_check,3425,2249,3722,3000,NA,raw_value,NA,TRUE
 A3327300622225003_total_kwh_purchased,A3327300622225003,332730,Twin Hills,2021-12-01,2021,12,total_kwh_purchased,35189,outlier_check,0,NA,0,0,NA,raw_value,NA,TRUE
 A3327300722225003_total_kwh_purchased,A3327300722225003,332730,Twin Hills,2022-01-01,2022,1,total_kwh_purchased,38064,outlier_check,0,NA,0,0,NA,raw_value,NA,TRUE
-A3327300822225003_pce_eligible_community_kwh,A3327300822225003,332730,Twin Hills,2022-02-01,2022,2,pce_eligible_community_kwh,6720,outlier_check,4020,2465,3398,2643,NA,NA,NA,FALSE
+A3327300822225003_pce_eligible_community_kwh,A3327300822225003,332730,Twin Hills,2022-02-01,2022,2,pce_eligible_community_kwh,6720,outlier_check,4020,2465,3398,2643,NA,raw_value,NA,TRUE
 A3327300822225003_total_kwh_purchased,A3327300822225003,332730,Twin Hills,2022-02-01,2022,2,total_kwh_purchased,34474,outlier_check,0,NA,0,0,NA,raw_value,NA,TRUE
 A3327300922225003_total_kwh_purchased,A3327300922225003,332730,Twin Hills,2022-03-01,2022,3,total_kwh_purchased,33926,outlier_check,0,NA,0,0,NA,raw_value,NA,TRUE
 A3327300922225003_residential_sold_to,A3327300922225003,332730,Twin Hills,2022-03-01,2022,3,residential_sold_to,20548,outlier_check,16391,11523,13914,10979,NA,raw_value,NA,TRUE
@@ -8482,7 +8482,7 @@ A3327300526225003_govt_facil_sold_to,A3327300526225003,332730,Twin Hills,2025-11
 A3327300526225003_most_recent_fuel_purch_price,A3327300526225003,332730,Twin Hills,2025-11-01,2025,11,most_recent_fuel_purch_price,0,quality_check,4.4255,4,4,3,NA,carry_forward,NA,TRUE
 A3327300626225003_govt_facil_sold_to,A3327300626225003,332730,Twin Hills,2025-12-01,2025,12,govt_facil_sold_to,7754,outlier_check,4108,NA,4108,1288,NA,raw_value,NA,TRUE
 A3327300626225003_most_recent_fuel_purch_price,A3327300626225003,332730,Twin Hills,2025-12-01,2025,12,most_recent_fuel_purch_price,0,quality_check,4.4255,4,4,3,NA,carry_forward,NA,TRUE
-A3327300726225003_pce_eligible_residential_kwh,A3327300726225003,332730,Twin Hills,2026-01-01,2026,1,pce_eligible_residential_kwh,0,outlier_check,11934,10951,11291,9762,NA,NA,NA,FALSE
+A3327300726225003_pce_eligible_residential_kwh,A3327300726225003,332730,Twin Hills,2026-01-01,2026,1,pce_eligible_residential_kwh,0,outlier_check,11934,10951,11291,9762,NA,avg_preceding_proceeding,NA,TRUE
 A3327300726225003_residential_sold_to,A3327300726225003,332730,Twin Hills,2026-01-01,2026,1,residential_sold_to,53782,outlier_check,13005,11723,12192,12342,NA,avg_preceding_proceeding,NA,TRUE
 A3327300726225003_govt_facil_sold_to,A3327300726225003,332730,Twin Hills,2026-01-01,2026,1,govt_facil_sold_to,36884,outlier_check,4108,0,4108,1304,NA,avg_preceding_proceeding,NA,TRUE
 A3327300726225003_residential_customers,A3327300726225003,332730,Twin Hills,2026-01-01,2026,1,residential_customers,92,outlier_check,33,32,32,33,NA,avg_preceding_proceeding,NA,TRUE
@@ -8516,26 +8516,26 @@ A3328500926225003_unbilled_sold_to,A3328500926225003,332850,Unalakleet,2026-03-0
 A3328601218225003_govt_facil_sold_to,A3328601218225003,332860,Unalaska,2018-06-01,2018,6,govt_facil_sold_to,45039,outlier_check,24909,25919,24253,25279,NA,raw_value,NA,TRUE
 A3328600120225003_powerhouse_consumption_kwh,A3328600120225003,332860,Unalaska,2019-07-01,2019,7,powerhouse_consumption_kwh,127369,outlier_check,84990,79818,84990,81361,NA,raw_value,NA,TRUE
 A3328600220225003_powerhouse_consumption_kwh,A3328600220225003,332860,Unalaska,2019-08-01,2019,8,powerhouse_consumption_kwh,156709,outlier_check,84990,79818,97364,94065,NA,raw_value,NA,TRUE
-A3328600621225003_pce_eligible_community_kwh,A3328600621225003,332860,Unalaska,2020-12-01,2020,12,pce_eligible_community_kwh,57889,outlier_check,270872,247998,271059,241964,NA,NA,NA,FALSE
+A3328600621225003_pce_eligible_community_kwh,A3328600621225003,332860,Unalaska,2020-12-01,2020,12,pce_eligible_community_kwh,57889,outlier_check,270872,247998,271059,241964,NA,avg_preceding_proceeding,NA,TRUE
 A3328600223225003_fuel_cost,A3328600223225003,332860,Unalaska,2022-08-01,2022,8,fuel_cost,1737028.49,outlier_check,1327489.51,957418,1328049,712555,NA,raw_value,NA,TRUE
-A3328600724225003_pce_eligible_community_kwh,A3328600724225003,332860,Unalaska,2024-01-01,2024,1,pce_eligible_community_kwh,49613,outlier_check,236144,250962,236144,252926,NA,NA,NA,FALSE
-A3328600824225003_pce_eligible_community_kwh,A3328600824225003,332860,Unalaska,2024-02-01,2024,2,pce_eligible_community_kwh,43377,outlier_check,236144,250962,262027,235401,NA,NA,NA,FALSE
-A3328601024225003_pce_eligible_community_kwh,A3328601024225003,332860,Unalaska,2024-04-01,2024,4,pce_eligible_community_kwh,39122,outlier_check,287910,250962,287910,212513,NA,NA,NA,FALSE
-A3328601124225003_pce_eligible_community_kwh,A3328601124225003,332860,Unalaska,2024-05-01,2024,5,pce_eligible_community_kwh,37362,outlier_check,287910,250962,250962,217752,NA,NA,NA,FALSE
-A3328600125225003_pce_eligible_community_kwh,A3328600125225003,332860,Unalaska,2024-07-01,2024,7,pce_eligible_community_kwh,34752,outlier_check,214014,250962,214014,226207,NA,NA,NA,FALSE
-A3328600225225003_pce_eligible_community_kwh,A3328600225225003,332860,Unalaska,2024-08-01,2024,8,pce_eligible_community_kwh,34350,outlier_check,214014,250962,214014,252574,NA,NA,NA,FALSE
-A3328600325225003_pce_eligible_community_kwh,A3328600325225003,332860,Unalaska,2024-09-01,2024,9,pce_eligible_community_kwh,36157,outlier_check,214014,250962,214014,259165,NA,NA,NA,FALSE
-A3328600425225003_pce_eligible_community_kwh,A3328600425225003,332860,Unalaska,2024-10-01,2024,10,pce_eligible_community_kwh,39942,outlier_check,214014,250962,214014,249934,NA,NA,NA,FALSE
-A3328600525225003_pce_eligible_community_kwh,A3328600525225003,332860,Unalaska,2024-11-01,2024,11,pce_eligible_community_kwh,41618,outlier_check,214014,250962,214014,265457,NA,NA,NA,FALSE
-A3328600625225003_pce_eligible_community_kwh,A3328600625225003,332860,Unalaska,2024-12-01,2024,12,pce_eligible_community_kwh,48915,outlier_check,214014,250962,235474,241964,NA,NA,NA,FALSE
-A3328600925225003_pce_eligible_community_kwh,A3328600925225003,332860,Unalaska,2025-03-01,2025,3,pce_eligible_community_kwh,44902,outlier_check,221047,138257,154164,252546,NA,NA,NA,FALSE
-A3328601125225003_pce_eligible_community_kwh,A3328601125225003,332860,Unalaska,2025-05-01,2025,5,pce_eligible_community_kwh,0,outlier_check,87280,138257,84280,217752,NA,NA,NA,FALSE
-A3328600126225003_pce_eligible_community_kwh,A3328600126225003,332860,Unalaska,2025-07-01,2025,7,pce_eligible_community_kwh,0,outlier_check,81280,138257,83900,226207,NA,NA,NA,FALSE
+A3328600724225003_pce_eligible_community_kwh,A3328600724225003,332860,Unalaska,2024-01-01,2024,1,pce_eligible_community_kwh,49613,outlier_check,236144,250962,236144,252926,NA,raw_value,NA,TRUE
+A3328600824225003_pce_eligible_community_kwh,A3328600824225003,332860,Unalaska,2024-02-01,2024,2,pce_eligible_community_kwh,43377,outlier_check,236144,250962,262027,235401,NA,raw_value,NA,TRUE
+A3328601024225003_pce_eligible_community_kwh,A3328601024225003,332860,Unalaska,2024-04-01,2024,4,pce_eligible_community_kwh,39122,outlier_check,287910,250962,287910,212513,NA,raw_value,NA,TRUE
+A3328601124225003_pce_eligible_community_kwh,A3328601124225003,332860,Unalaska,2024-05-01,2024,5,pce_eligible_community_kwh,37362,outlier_check,287910,250962,250962,217752,NA,raw_value,NA,TRUE
+A3328600125225003_pce_eligible_community_kwh,A3328600125225003,332860,Unalaska,2024-07-01,2024,7,pce_eligible_community_kwh,34752,outlier_check,214014,250962,214014,226207,NA,raw_value,NA,TRUE
+A3328600225225003_pce_eligible_community_kwh,A3328600225225003,332860,Unalaska,2024-08-01,2024,8,pce_eligible_community_kwh,34350,outlier_check,214014,250962,214014,252574,NA,raw_value,NA,TRUE
+A3328600325225003_pce_eligible_community_kwh,A3328600325225003,332860,Unalaska,2024-09-01,2024,9,pce_eligible_community_kwh,36157,outlier_check,214014,250962,214014,259165,NA,raw_value,NA,TRUE
+A3328600425225003_pce_eligible_community_kwh,A3328600425225003,332860,Unalaska,2024-10-01,2024,10,pce_eligible_community_kwh,39942,outlier_check,214014,250962,214014,249934,NA,raw_value,NA,TRUE
+A3328600525225003_pce_eligible_community_kwh,A3328600525225003,332860,Unalaska,2024-11-01,2024,11,pce_eligible_community_kwh,41618,outlier_check,214014,250962,214014,265457,NA,raw_value,NA,TRUE
+A3328600625225003_pce_eligible_community_kwh,A3328600625225003,332860,Unalaska,2024-12-01,2024,12,pce_eligible_community_kwh,48915,outlier_check,214014,250962,235474,241964,NA,raw_value,NA,TRUE
+A3328600925225003_pce_eligible_community_kwh,A3328600925225003,332860,Unalaska,2025-03-01,2025,3,pce_eligible_community_kwh,44902,outlier_check,221047,138257,154164,252546,NA,raw_value,NA,TRUE
+A3328601125225003_pce_eligible_community_kwh,A3328601125225003,332860,Unalaska,2025-05-01,2025,5,pce_eligible_community_kwh,0,outlier_check,87280,138257,84280,217752,NA,avg_preceding_proceeding,NA,TRUE
+A3328600126225003_pce_eligible_community_kwh,A3328600126225003,332860,Unalaska,2025-07-01,2025,7,pce_eligible_community_kwh,0,outlier_check,81280,138257,83900,226207,NA,avg_preceding_proceeding,NA,TRUE
 A3328600226225003_residential_rate,A3328600226225003,332860,Unalaska,2025-08-01,2025,8,residential_rate,99.99,outlier_check,0.4735,0,0,0,NA,carry_forward,NA,TRUE
 A3328600226225003_effective_residential_rate,A3328600226225003,332860,Unalaska,2025-08-01,2025,8,effective_residential_rate,99.7377,outlier_check,0.251,0,0,0,NA,carry_forward,NA,TRUE
-A3328600326225003_pce_eligible_community_kwh,A3328600326225003,332860,Unalaska,2025-09-01,2025,9,pce_eligible_community_kwh,0,outlier_check,86520,138257,86520,259165,NA,NA,NA,FALSE
-A3328600426225003_pce_eligible_community_kwh,A3328600426225003,332860,Unalaska,2025-10-01,2025,10,pce_eligible_community_kwh,0,outlier_check,86520,138257,86520,249934,NA,NA,NA,FALSE
-A3328600526225003_pce_eligible_community_kwh,A3328600526225003,332860,Unalaska,2025-11-01,2025,11,pce_eligible_community_kwh,0,outlier_check,86520,138257,91500,265457,NA,NA,NA,FALSE
+A3328600326225003_pce_eligible_community_kwh,A3328600326225003,332860,Unalaska,2025-09-01,2025,9,pce_eligible_community_kwh,0,outlier_check,86520,138257,86520,259165,NA,avg_preceding_proceeding,NA,TRUE
+A3328600426225003_pce_eligible_community_kwh,A3328600426225003,332860,Unalaska,2025-10-01,2025,10,pce_eligible_community_kwh,0,outlier_check,86520,138257,86520,249934,NA,avg_preceding_proceeding,NA,TRUE
+A3328600526225003_pce_eligible_community_kwh,A3328600526225003,332860,Unalaska,2025-11-01,2025,11,pce_eligible_community_kwh,0,outlier_check,86520,138257,91500,265457,NA,avg_preceding_proceeding,NA,TRUE
 A3328600127225003_pce_eligible_community_kwh,A3328600127225003,332860,Unalaska,2026-07-01,2026,7,pce_eligible_community_kwh,34775,outlier_check,86480,94413,86480,226207,NA,NA,NA,FALSE
 A3328600227225003_pce_eligible_community_kwh,A3328600227225003,332860,Unalaska,2026-08-01,2026,8,pce_eligible_community_kwh,0,outlier_check,86480,94413,86480,252574,NA,NA,NA,FALSE
 A3328800416225003_govt_facil_sold_to,A3328800416225003,332880,Venetie,2015-10-01,2015,10,govt_facil_sold_to,2291,outlier_check,1145,820,972,595,NA,raw_value,NA,TRUE
@@ -8553,21 +8553,21 @@ A3324100218225003_peak_consumption_kw,A3324100218225003,332410,Wainwright,2017-0
 A3324100418225003_residential_rate,A3324100418225003,332410,Wainwright,2017-10-01,2017,10,residential_rate,0,quality_check,0.2028,0,0,0,NA,carry_forward,NA,TRUE
 A3324100718225003_peak_consumption_kw,A3324100718225003,332410,Wainwright,2018-01-01,2018,1,peak_consumption_kw,7847,outlier_check,1137,1044,1155,1195,NA,avg_preceding_proceeding,NA,TRUE
 A3324100725225003_fuel_cost,A3324100725225003,332410,Wainwright,2025-01-01,2025,1,fuel_cost,304449.2,outlier_check,289690.61,214124,279134,183115,NA,raw_value,NA,TRUE
-A3317300116225003_pce_eligible_community_kwh,A3317300116225003,331730,Wales,2015-07-01,2015,7,pce_eligible_community_kwh,3206,outlier_check,NA,1898,NA,1961,NA,NA,NA,FALSE
+A3317300116225003_pce_eligible_community_kwh,A3317300116225003,331730,Wales,2015-07-01,2015,7,pce_eligible_community_kwh,3206,outlier_check,NA,1898,NA,1961,NA,raw_value,NA,TRUE
 A3317300116225003_commercial_sold_to,A3317300116225003,331730,Wales,2015-07-01,2015,7,commercial_sold_to,10225,outlier_check,NA,NA,NA,4200,NA,raw_value,NA,TRUE
-A3317300216225003_pce_eligible_community_kwh,A3317300216225003,331730,Wales,2015-08-01,2015,8,pce_eligible_community_kwh,3546,outlier_check,NA,1898,1855,1959,NA,NA,NA,FALSE
+A3317300216225003_pce_eligible_community_kwh,A3317300216225003,331730,Wales,2015-08-01,2015,8,pce_eligible_community_kwh,3546,outlier_check,NA,1898,1855,1959,NA,raw_value,NA,TRUE
 A3317300216225003_commercial_sold_to,A3317300216225003,331730,Wales,2015-08-01,2015,8,commercial_sold_to,11040,outlier_check,NA,NA,NA,4116,NA,raw_value,NA,TRUE
 A3317300316225003_commercial_sold_to,A3317300316225003,331730,Wales,2015-09-01,2015,9,commercial_sold_to,12591,outlier_check,NA,NA,NA,4310,NA,raw_value,NA,TRUE
 A3317300416225003_commercial_sold_to,A3317300416225003,331730,Wales,2015-10-01,2015,10,commercial_sold_to,12241,outlier_check,NA,NA,NA,4553,NA,raw_value,NA,TRUE
 A3317300516225003_commercial_sold_to,A3317300516225003,331730,Wales,2015-11-01,2015,11,commercial_sold_to,12089,outlier_check,NA,NA,NA,4499,NA,raw_value,NA,TRUE
 A3317300616225003_commercial_sold_to,A3317300616225003,331730,Wales,2015-12-01,2015,12,commercial_sold_to,13596,outlier_check,NA,NA,NA,4000,NA,raw_value,NA,TRUE
 A3317300716225003_commercial_sold_to,A3317300716225003,331730,Wales,2016-01-01,2016,1,commercial_sold_to,15498,outlier_check,NA,4091,4254,4451,NA,raw_value,NA,TRUE
-A3317300217225003_pce_eligible_community_kwh,A3317300217225003,331730,Wales,2016-08-01,2016,8,pce_eligible_community_kwh,2670,outlier_check,1969,1964,1968,1959,NA,NA,NA,FALSE
+A3317300217225003_pce_eligible_community_kwh,A3317300217225003,331730,Wales,2016-08-01,2016,8,pce_eligible_community_kwh,2670,outlier_check,1969,1964,1968,1959,NA,raw_value,NA,TRUE
 A3317300217225003_residential_customers,A3317300217225003,331730,Wales,2016-08-01,2016,8,residential_customers,145,outlier_check,47,49,48,39,NA,avg_preceding_proceeding,NA,TRUE
-A3317300417225003_pce_eligible_community_kwh,A3317300417225003,331730,Wales,2016-10-01,2016,10,pce_eligible_community_kwh,2661,outlier_check,1967,1964,1962,1970,NA,NA,NA,FALSE
+A3317300417225003_pce_eligible_community_kwh,A3317300417225003,331730,Wales,2016-10-01,2016,10,pce_eligible_community_kwh,2661,outlier_check,1967,1964,1962,1970,NA,raw_value,NA,TRUE
 A3317300617225003_fuel_used_gallons,A3317300617225003,331730,Wales,2016-12-01,2016,12,fuel_used_gallons,-85,outlier_check,4267,4169,4454,4397,NA,avg_preceding_proceeding,NA,TRUE
 A3317300118225003_most_recent_fuel_purch_price,A3317300118225003,331730,Wales,2017-07-01,2017,7,most_recent_fuel_purch_price,0,quality_check,2.66,3,3,4,NA,carry_forward,NA,TRUE
-A3317300218225003_pce_eligible_community_kwh,A3317300218225003,331730,Wales,2017-08-01,2017,8,pce_eligible_community_kwh,2499,outlier_check,1996,1954,2006,1959,NA,NA,NA,FALSE
+A3317300218225003_pce_eligible_community_kwh,A3317300218225003,331730,Wales,2017-08-01,2017,8,pce_eligible_community_kwh,2499,outlier_check,1996,1954,2006,1959,NA,raw_value,NA,TRUE
 A3317300218225003_most_recent_fuel_purch_price,A3317300218225003,331730,Wales,2017-08-01,2017,8,most_recent_fuel_purch_price,0,quality_check,2.66,3,3,4,NA,carry_forward,NA,TRUE
 A3317300318225003_most_recent_fuel_purch_price,A3317300318225003,331730,Wales,2017-09-01,2017,9,most_recent_fuel_purch_price,0,quality_check,2.66,3,3,4,NA,carry_forward,NA,TRUE
 A3317300418225003_most_recent_fuel_purch_price,A3317300418225003,331730,Wales,2017-10-01,2017,10,most_recent_fuel_purch_price,0,quality_check,2.66,3,3,4,NA,carry_forward,NA,TRUE
@@ -8579,18 +8579,18 @@ A3317300918225003_most_recent_fuel_purch_price,A3317300918225003,331730,Wales,20
 A3317301018225003_most_recent_fuel_purch_price,A3317301018225003,331730,Wales,2018-04-01,2018,4,most_recent_fuel_purch_price,0,quality_check,2.66,3,3,4,NA,carry_forward,NA,TRUE
 A3317301118225003_most_recent_fuel_purch_price,A3317301118225003,331730,Wales,2018-05-01,2018,5,most_recent_fuel_purch_price,0,quality_check,2.66,3,3,4,NA,carry_forward,NA,TRUE
 A3317301218225003_most_recent_fuel_purch_price,A3317301218225003,331730,Wales,2018-06-01,2018,6,most_recent_fuel_purch_price,0,quality_check,2.66,3,3,4,NA,carry_forward,NA,TRUE
-A3317300119225003_pce_eligible_community_kwh,A3317300119225003,331730,Wales,2018-07-01,2018,7,pce_eligible_community_kwh,2636,outlier_check,2044,1953,1992,1961,NA,NA,NA,FALSE
-A3317300320225003_pce_eligible_community_kwh,A3317300320225003,331730,Wales,2019-09-01,2019,9,pce_eligible_community_kwh,2572,outlier_check,1865,1959,1921,2036,NA,NA,NA,FALSE
+A3317300119225003_pce_eligible_community_kwh,A3317300119225003,331730,Wales,2018-07-01,2018,7,pce_eligible_community_kwh,2636,outlier_check,2044,1953,1992,1961,NA,raw_value,NA,TRUE
+A3317300320225003_pce_eligible_community_kwh,A3317300320225003,331730,Wales,2019-09-01,2019,9,pce_eligible_community_kwh,2572,outlier_check,1865,1959,1921,2036,NA,raw_value,NA,TRUE
 A3317300620225003_fuel_used_gallons,A3317300620225003,331730,Wales,2019-12-01,2019,12,fuel_used_gallons,-1464,outlier_check,4411,4207,4940,4397,NA,avg_preceding_proceeding,NA,TRUE
 A3317300121225003_most_recent_fuel_purch_price,A3317300121225003,331730,Wales,2020-07-01,2020,7,most_recent_fuel_purch_price,0,quality_check,3.3379,3,3,4,NA,carry_forward,NA,TRUE
-A3317300221225003_pce_eligible_community_kwh,A3317300221225003,331730,Wales,2020-08-01,2020,8,pce_eligible_community_kwh,2297,outlier_check,1999,1999,2018,1959,NA,NA,NA,FALSE
+A3317300221225003_pce_eligible_community_kwh,A3317300221225003,331730,Wales,2020-08-01,2020,8,pce_eligible_community_kwh,2297,outlier_check,1999,1999,2018,1959,NA,raw_value,NA,TRUE
 A3317300221225003_most_recent_fuel_purch_price,A3317300221225003,331730,Wales,2020-08-01,2020,8,most_recent_fuel_purch_price,0,quality_check,3.3379,3,3,4,NA,carry_forward,NA,TRUE
 A3317300321225003_most_recent_fuel_purch_price,A3317300321225003,331730,Wales,2020-09-01,2020,9,most_recent_fuel_purch_price,0,quality_check,3.3379,3,3,4,NA,carry_forward,NA,TRUE
-A3317300421225003_pce_eligible_community_kwh,A3317300421225003,331730,Wales,2020-10-01,2020,10,pce_eligible_community_kwh,2465,outlier_check,2036,1999,2036,1970,NA,NA,NA,FALSE
+A3317300421225003_pce_eligible_community_kwh,A3317300421225003,331730,Wales,2020-10-01,2020,10,pce_eligible_community_kwh,2465,outlier_check,2036,1999,2036,1970,NA,raw_value,NA,TRUE
 A3317300421225003_most_recent_fuel_purch_price,A3317300421225003,331730,Wales,2020-10-01,2020,10,most_recent_fuel_purch_price,0,quality_check,3.3379,3,3,4,NA,carry_forward,NA,TRUE
-A3317300521225003_pce_eligible_community_kwh,A3317300521225003,331730,Wales,2020-11-01,2020,11,pce_eligible_community_kwh,2743,outlier_check,2036,1999,2036,1944,NA,NA,NA,FALSE
+A3317300521225003_pce_eligible_community_kwh,A3317300521225003,331730,Wales,2020-11-01,2020,11,pce_eligible_community_kwh,2743,outlier_check,2036,1999,2036,1944,NA,raw_value,NA,TRUE
 A3317300521225003_most_recent_fuel_purch_price,A3317300521225003,331730,Wales,2020-11-01,2020,11,most_recent_fuel_purch_price,0,quality_check,3.3379,3,3,4,NA,carry_forward,NA,TRUE
-A3317300621225003_pce_eligible_community_kwh,A3317300621225003,331730,Wales,2020-12-01,2020,12,pce_eligible_community_kwh,2363,outlier_check,2036,1999,2008,1942,NA,NA,NA,FALSE
+A3317300621225003_pce_eligible_community_kwh,A3317300621225003,331730,Wales,2020-12-01,2020,12,pce_eligible_community_kwh,2363,outlier_check,2036,1999,2008,1942,NA,raw_value,NA,TRUE
 A3317300621225003_most_recent_fuel_purch_price,A3317300621225003,331730,Wales,2020-12-01,2020,12,most_recent_fuel_purch_price,0,quality_check,3.3379,3,3,4,NA,carry_forward,NA,TRUE
 A3317300721225003_most_recent_fuel_purch_price,A3317300721225003,331730,Wales,2021-01-01,2021,1,most_recent_fuel_purch_price,0,quality_check,3.3379,NA,3,4,NA,carry_forward,NA,TRUE
 A3317300821225003_most_recent_fuel_purch_price,A3317300821225003,331730,Wales,2021-02-01,2021,2,most_recent_fuel_purch_price,0,quality_check,3.3379,NA,3,4,NA,carry_forward,NA,TRUE
@@ -8598,7 +8598,7 @@ A3317300921225003_most_recent_fuel_purch_price,A3317300921225003,331730,Wales,20
 A3317301021225003_most_recent_fuel_purch_price,A3317301021225003,331730,Wales,2021-04-01,2021,4,most_recent_fuel_purch_price,0,quality_check,3.3379,NA,3,4,NA,carry_forward,NA,TRUE
 A3317301121225003_most_recent_fuel_purch_price,A3317301121225003,331730,Wales,2021-05-01,2021,5,most_recent_fuel_purch_price,0,quality_check,3.3379,NA,3,4,NA,carry_forward,NA,TRUE
 A3317301221225003_most_recent_fuel_purch_price,A3317301221225003,331730,Wales,2021-06-01,2021,6,most_recent_fuel_purch_price,0,quality_check,3.3379,NA,3,4,NA,carry_forward,NA,TRUE
-A3317300122225003_pce_eligible_community_kwh,A3317300122225003,331730,Wales,2021-07-01,2021,7,pce_eligible_community_kwh,2405,outlier_check,2023,2001,2022,1961,NA,NA,NA,FALSE
+A3317300122225003_pce_eligible_community_kwh,A3317300122225003,331730,Wales,2021-07-01,2021,7,pce_eligible_community_kwh,2405,outlier_check,2023,2001,2022,1961,NA,raw_value,NA,TRUE
 A3317300122225003_most_recent_fuel_purch_price,A3317300122225003,331730,Wales,2021-07-01,2021,7,most_recent_fuel_purch_price,0,quality_check,3.3379,NA,3,4,NA,carry_forward,NA,TRUE
 A3317300222225003_most_recent_fuel_purch_price,A3317300222225003,331730,Wales,2021-08-01,2021,8,most_recent_fuel_purch_price,0,quality_check,3.3379,NA,3,4,NA,carry_forward,NA,TRUE
 A3317300322225003_most_recent_fuel_purch_price,A3317300322225003,331730,Wales,2021-09-01,2021,9,most_recent_fuel_purch_price,0,quality_check,3.3379,NA,3,4,NA,carry_forward,NA,TRUE
@@ -8615,24 +8615,24 @@ A3317300123225003_most_recent_fuel_purch_price,A3317300123225003,331730,Wales,20
 A3317300223225003_most_recent_fuel_purch_price,A3317300223225003,331730,Wales,2022-08-01,2022,8,most_recent_fuel_purch_price,0,quality_check,3.3379,3,3,4,NA,carry_forward,NA,TRUE
 A3317300423225003_com_facil_sold_to,A3317300423225003,331730,Wales,2022-10-01,2022,10,com_facil_sold_to,33983,outlier_check,20756,14260,20756,10596,NA,raw_value,NA,TRUE
 A3317300523225003_com_facil_sold_to,A3317300523225003,331730,Wales,2022-11-01,2022,11,com_facil_sold_to,39621,outlier_check,20756,14260,20756,10573,NA,raw_value,NA,TRUE
-A3317300623225003_pce_eligible_community_kwh,A3317300623225003,331730,Wales,2022-12-01,2022,12,pce_eligible_community_kwh,2550,outlier_check,2023,2030,2023,1942,NA,NA,NA,FALSE
+A3317300623225003_pce_eligible_community_kwh,A3317300623225003,331730,Wales,2022-12-01,2022,12,pce_eligible_community_kwh,2550,outlier_check,2023,2030,2023,1942,NA,raw_value,NA,TRUE
 A3317300623225003_fuel_used_gallons,A3317300623225003,331730,Wales,2022-12-01,2022,12,fuel_used_gallons,-6502,outlier_check,6080,5019,6356,4397,NA,avg_preceding_proceeding,NA,TRUE
 A3317300623225003_com_facil_sold_to,A3317300623225003,331730,Wales,2022-12-01,2022,12,com_facil_sold_to,27159,outlier_check,20756,14260,20756,11577,NA,raw_value,NA,TRUE
 A3317300623225003_fuel_cost,A3317300623225003,331730,Wales,2022-12-01,2022,12,fuel_cost,-25989.15,outlier_check,24301.76,16817,26622,5529,NA,avg_preceding_proceeding,NA,TRUE
-A3317300723225003_pce_eligible_community_kwh,A3317300723225003,331730,Wales,2023-01-01,2023,1,pce_eligible_community_kwh,2445,outlier_check,2023,2032,2023,1941,NA,NA,NA,FALSE
+A3317300723225003_pce_eligible_community_kwh,A3317300723225003,331730,Wales,2023-01-01,2023,1,pce_eligible_community_kwh,2445,outlier_check,2023,2032,2023,1941,NA,raw_value,NA,TRUE
 A3317300723225003_com_facil_sold_to,A3317300723225003,331730,Wales,2023-01-01,2023,1,com_facil_sold_to,28653,outlier_check,20756,20666,21990,11960,NA,raw_value,NA,TRUE
-A3317300823225003_pce_eligible_community_kwh,A3317300823225003,331730,Wales,2023-02-01,2023,2,pce_eligible_community_kwh,2347,outlier_check,2023,2032,1986,1954,NA,NA,NA,FALSE
+A3317300823225003_pce_eligible_community_kwh,A3317300823225003,331730,Wales,2023-02-01,2023,2,pce_eligible_community_kwh,2347,outlier_check,2023,2032,1986,1954,NA,raw_value,NA,TRUE
 A3317300923225003_fuel_used_gallons,A3317300923225003,331730,Wales,2023-03-01,2023,3,fuel_used_gallons,0,outlier_check,2456,5782,4282,5635,NA,avg_same_month_other_years,NA,TRUE
 A3317300923225003_diesel_kwh_generated,A3317300923225003,331730,Wales,2023-03-01,2023,3,diesel_kwh_generated,0,outlier_check,65311,74982,69542,71503,NA,avg_preceding_proceeding,NA,TRUE
 A3317300923225003_residential_sold_to,A3317300923225003,331730,Wales,2023-03-01,2023,3,residential_sold_to,41445,outlier_check,18193,13512,15890,18812,NA,avg_same_month_other_years,NA,TRUE
 A3317300923225003_residential_customers,A3317300923225003,331730,Wales,2023-03-01,2023,3,residential_customers,93,outlier_check,34,31,34,39,NA,avg_preceding_proceeding,NA,TRUE
 A3317301023225003_com_facil_sold_to,A3317301023225003,331730,Wales,2023-04-01,2023,4,com_facil_sold_to,35269,outlier_check,18107,20666,18107,12157,NA,raw_value,NA,TRUE
 A3317301123225003_com_facil_sold_to,A3317301123225003,331730,Wales,2023-05-01,2023,5,com_facil_sold_to,40363,outlier_check,18107,20666,18107,11731,NA,raw_value,NA,TRUE
-A3317301223225003_pce_eligible_community_kwh,A3317301223225003,331730,Wales,2023-06-01,2023,6,pce_eligible_community_kwh,2292,outlier_check,2125,2032,2132,1973,NA,NA,NA,FALSE
+A3317301223225003_pce_eligible_community_kwh,A3317301223225003,331730,Wales,2023-06-01,2023,6,pce_eligible_community_kwh,2292,outlier_check,2125,2032,2132,1973,NA,raw_value,NA,TRUE
 A3317301223225003_fuel_used_gallons,A3317301223225003,331730,Wales,2023-06-01,2023,6,fuel_used_gallons,0,outlier_check,6343,5782,5498,3973,NA,avg_preceding_proceeding,NA,TRUE
 A3317301223225003_com_facil_sold_to,A3317301223225003,331730,Wales,2023-06-01,2023,6,com_facil_sold_to,29125,outlier_check,18107,20666,18107,11141,NA,raw_value,NA,TRUE
 A3317300124225003_com_facil_sold_to,A3317300124225003,331730,Wales,2023-07-01,2023,7,com_facil_sold_to,24356,outlier_check,18107,20666,18107,11937,NA,raw_value,NA,TRUE
-A3317300224225003_pce_eligible_community_kwh,A3317300224225003,331730,Wales,2023-08-01,2023,8,pce_eligible_community_kwh,2329,outlier_check,2138,2032,2148,1959,NA,NA,NA,FALSE
+A3317300224225003_pce_eligible_community_kwh,A3317300224225003,331730,Wales,2023-08-01,2023,8,pce_eligible_community_kwh,2329,outlier_check,2138,2032,2148,1959,NA,raw_value,NA,TRUE
 A3317300224225003_com_facil_sold_to,A3317300224225003,331730,Wales,2023-08-01,2023,8,com_facil_sold_to,27088,outlier_check,18107,20666,18107,11339,NA,raw_value,NA,TRUE
 A3317300324225003_com_facil_sold_to,A3317300324225003,331730,Wales,2023-09-01,2023,9,com_facil_sold_to,34280,outlier_check,18107,20666,18107,11840,NA,raw_value,NA,TRUE
 A3317300424225003_com_facil_sold_to,A3317300424225003,331730,Wales,2023-10-01,2023,10,com_facil_sold_to,41267,outlier_check,18107,20666,18107,10596,NA,raw_value,NA,TRUE
@@ -8643,19 +8643,19 @@ A3317300724225003_pce_eligible_residential_kwh,A3317300724225003,331730,Wales,20
 A3317300724225003_amount,A3317300724225003,331730,Wales,2024-01-01,2024,1,amount,17081.05,outlier_check,6328.22,7158,6988,7277,NA,avg_preceding_proceeding,NA,TRUE
 A3317300724225003_com_facil_sold_to,A3317300724225003,331730,Wales,2024-01-01,2024,1,com_facil_sold_to,53341,outlier_check,18107,17741,18107,11960,NA,raw_value,NA,TRUE
 A3317300724225003_fuel_cost,A3317300724225003,331730,Wales,2024-01-01,2024,1,fuel_cost,43711.06,outlier_check,15301.02,19942,15301,16319,NA,raw_value,NA,TRUE
-A3317300824225003_pce_eligible_community_kwh,A3317300824225003,331730,Wales,2024-02-01,2024,2,pce_eligible_community_kwh,2700,outlier_check,1821,1888,1886,1954,NA,NA,NA,FALSE
+A3317300824225003_pce_eligible_community_kwh,A3317300824225003,331730,Wales,2024-02-01,2024,2,pce_eligible_community_kwh,2700,outlier_check,1821,1888,1886,1954,NA,raw_value,NA,TRUE
 A3317300824225003_com_facil_sold_to,A3317300824225003,331730,Wales,2024-02-01,2024,2,com_facil_sold_to,45691,outlier_check,18107,17741,18107,13846,NA,raw_value,NA,TRUE
 A3317300824225003_fuel_cost,A3317300824225003,331730,Wales,2024-02-01,2024,2,fuel_cost,38424.96,outlier_check,15301.02,19942,15301,12824,NA,raw_value,NA,TRUE
 A3317300924225003_powerhouse_consumption_kwh,A3317300924225003,331730,Wales,2024-03-01,2024,3,powerhouse_consumption_kwh,7927,outlier_check,5707,3571,4674,2177,NA,raw_value,NA,TRUE
 A3317300924225003_com_facil_sold_to,A3317300924225003,331730,Wales,2024-03-01,2024,3,com_facil_sold_to,46709,outlier_check,18107,17741,18107,13692,NA,raw_value,NA,TRUE
 A3317300924225003_fuel_cost,A3317300924225003,331730,Wales,2024-03-01,2024,3,fuel_cost,42819,outlier_check,15301.02,19942,15301,13256,NA,raw_value,NA,TRUE
-A3317301024225003_pce_eligible_community_kwh,A3317301024225003,331730,Wales,2024-04-01,2024,4,pce_eligible_community_kwh,2700,outlier_check,1951,1888,1951,1965,NA,NA,NA,FALSE
+A3317301024225003_pce_eligible_community_kwh,A3317301024225003,331730,Wales,2024-04-01,2024,4,pce_eligible_community_kwh,2700,outlier_check,1951,1888,1951,1965,NA,raw_value,NA,TRUE
 A3317301024225003_com_facil_sold_to,A3317301024225003,331730,Wales,2024-04-01,2024,4,com_facil_sold_to,46954,outlier_check,18107,17741,18107,12157,NA,raw_value,NA,TRUE
 A3317301024225003_fuel_cost,A3317301024225003,331730,Wales,2024-04-01,2024,4,fuel_cost,39531.11,outlier_check,15301.02,19942,15301,15224,NA,raw_value,NA,TRUE
-A3317301124225003_pce_eligible_community_kwh,A3317301124225003,331730,Wales,2024-05-01,2024,5,pce_eligible_community_kwh,2700,outlier_check,1951,1888,1898,1954,NA,NA,NA,FALSE
+A3317301124225003_pce_eligible_community_kwh,A3317301124225003,331730,Wales,2024-05-01,2024,5,pce_eligible_community_kwh,2700,outlier_check,1951,1888,1898,1954,NA,raw_value,NA,TRUE
 A3317301124225003_com_facil_sold_to,A3317301124225003,331730,Wales,2024-05-01,2024,5,com_facil_sold_to,44917,outlier_check,18107,17741,18416,11731,NA,raw_value,NA,TRUE
 A3317301124225003_fuel_cost,A3317301124225003,331730,Wales,2024-05-01,2024,5,fuel_cost,35967.96,outlier_check,15301.02,19942,23550,12340,NA,raw_value,NA,TRUE
-A3317300125225003_pce_eligible_community_kwh,A3317300125225003,331730,Wales,2024-07-01,2024,7,pce_eligible_community_kwh,2461,outlier_check,1846,1888,1846,1961,NA,NA,NA,FALSE
+A3317300125225003_pce_eligible_community_kwh,A3317300125225003,331730,Wales,2024-07-01,2024,7,pce_eligible_community_kwh,2461,outlier_check,1846,1888,1846,1961,NA,raw_value,NA,TRUE
 A3317300225225003_pce_eligible_community_kwh,A3317300225225003,331730,Wales,2024-08-01,2024,8,pce_eligible_community_kwh,1653,outlier_check,1846,1888,1858,1959,NA,NA,NA,FALSE
 A3317300625225003_commercial_sold_to,A3317300625225003,331730,Wales,2024-12-01,2024,12,commercial_sold_to,10708,outlier_check,9442,8718,9442,4000,NA,raw_value,NA,TRUE
 A3317300725225003_commercial_sold_to,A3317300725225003,331730,Wales,2025-01-01,2025,1,commercial_sold_to,11658,outlier_check,9442,7216,9442,4451,NA,raw_value,NA,TRUE
@@ -8663,7 +8663,7 @@ A3317300825225003_commercial_sold_to,A3317300825225003,331730,Wales,2025-02-01,2
 A3317300925225003_commercial_sold_to,A3317300925225003,331730,Wales,2025-03-01,2025,3,commercial_sold_to,12559,outlier_check,9442,7216,9442,4080,NA,raw_value,NA,TRUE
 A3317301025225003_commercial_sold_to,A3317301025225003,331730,Wales,2025-04-01,2025,4,commercial_sold_to,10533,outlier_check,9442,7216,7690,4146,NA,raw_value,NA,TRUE
 A3317301125225003_fuel_used_gallons,A3317301125225003,331730,Wales,2025-05-01,2025,5,fuel_used_gallons,0,outlier_check,5302,5071,4662,4802,NA,avg_preceding_proceeding,NA,TRUE
-A3317300226225003_pce_eligible_community_kwh,A3317300226225003,331730,Wales,2025-08-01,2025,8,pce_eligible_community_kwh,1243,outlier_check,1721,1898,1836,1959,NA,NA,NA,FALSE
+A3317300226225003_pce_eligible_community_kwh,A3317300226225003,331730,Wales,2025-08-01,2025,8,pce_eligible_community_kwh,1243,outlier_check,1721,1898,1836,1959,NA,avg_preceding_proceeding,NA,TRUE
 A3317300226225003_commercial_sold_to,A3317300226225003,331730,Wales,2025-08-01,2025,8,commercial_sold_to,11646,outlier_check,6706,7216,6706,4116,NA,raw_value,NA,TRUE
 A3317300326225003_powerhouse_consumption_kwh,A3317300326225003,331730,Wales,2025-09-01,2025,9,powerhouse_consumption_kwh,6434,outlier_check,5472,3710,5472,2439,NA,raw_value,NA,TRUE
 A3317300326225003_commercial_sold_to,A3317300326225003,331730,Wales,2025-09-01,2025,9,commercial_sold_to,11474,outlier_check,6706,7216,6706,4310,NA,raw_value,NA,TRUE
@@ -8736,7 +8736,7 @@ A3312300825225003_com_facil_sold_to,A3312300825225003,331230,Whale Pass,2025-02-
 A3328900919225003_peak_consumption_kw,A3328900919225003,332890,White Mountain,2019-03-01,2019,3,peak_consumption_kw,0,outlier_check,138,138,144,152,NA,avg_preceding_proceeding,NA,TRUE
 A3328900721225003_com_facil_sold_to,A3328900721225003,332890,White Mountain,2021-01-01,2021,1,com_facil_sold_to,18046,outlier_check,10171,8783,10171,10806,NA,raw_value,NA,TRUE
 A3328900626225003_govt_facil_sold_to,A3328900626225003,332890,White Mountain,2025-12-01,2025,12,govt_facil_sold_to,7459,outlier_check,1435,1139,2039,2340,NA,avg_same_month_other_years,NA,TRUE
-A3329000517225003_pce_eligible_residential_kwh,A3329000517225003,332900,Yakutat,2016-11-01,2016,11,pce_eligible_residential_kwh,40509,outlier_check,88834,84937,87650,95428,NA,NA,NA,FALSE
+A3329000517225003_pce_eligible_residential_kwh,A3329000517225003,332900,Yakutat,2016-11-01,2016,11,pce_eligible_residential_kwh,40509,outlier_check,88834,84937,87650,95428,NA,avg_preceding_proceeding,NA,TRUE
 A3329001217225003_most_recent_fuel_purch_price,A3329001217225003,332900,Yakutat,2017-06-01,2017,6,most_recent_fuel_purch_price,0,quality_check,2.5105,3,3,4,NA,carry_forward,NA,TRUE
 A3329000118225003_most_recent_fuel_purch_price,A3329000118225003,332900,Yakutat,2017-07-01,2017,7,most_recent_fuel_purch_price,0,quality_check,2.5105,3,3,3,NA,carry_forward,NA,TRUE
 A3329000218225003_most_recent_fuel_purch_price,A3329000218225003,332900,Yakutat,2017-08-01,2017,8,most_recent_fuel_purch_price,0,quality_check,2.5105,3,3,3,NA,carry_forward,NA,TRUE
