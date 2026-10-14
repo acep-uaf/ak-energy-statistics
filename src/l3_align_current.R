@@ -35,7 +35,8 @@ l3_align_current_pce <- function(
 
   lookup_pce_floor <- read_csv(path_to_lookup_pce_floor, show_col_types=F)
 
-  lookup_interties <- read_csv(path_to_lookup_interties, show_col_types=F)
+  lookup_interties <- read_csv(path_to_lookup_interties, show_col_types=F) %>%
+    filter(current_id == TRUE)
 
   lookup_pce_utility_operators <- read_csv(path_to_lookup_pce_utility_operators, show_col_types=F)
 
