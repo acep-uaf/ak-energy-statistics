@@ -20,7 +20,11 @@ l3_clean_historical <- function(path_in, sheet, path_out) {
       pce_operator_acronym = 'PCE_operator_acronym',
       ak_operator_id = 'AEA Operator ID',
       total_sales = 'Total Sales',
-      checked_for_outliers = cleaned_during_energy_statistics
+      checked_for_outliers = cleaned_during_energy_statistics,
+      imputed_other_2_kwh_generated = other_2_kwh_generated_imputed,
+      imputed_purchased_from = purchased_from_imputed,
+      imputed_total_kwh_purchased = total_kwh_purchased_imputed,
+      imputed_pce_eligible_community_kwh = pce_eligible_community_kwh_imputed
     ) %>%
     select(-c(
       'purchased_power_type', 

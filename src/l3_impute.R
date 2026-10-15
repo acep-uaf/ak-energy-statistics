@@ -39,7 +39,7 @@ l3_impute_columns <- function(path_in, path_overrides, path_out) {
   valid_id <- which(!is.na(row_coords) & !is.na(col_coords) & !is.na(overrides$decided_value))
 
   imputed_matrix <- matrix(
-    "", 
+    "FALSE", 
     nrow = nrow(df), 
     ncol = ncol(df), 
     dimnames = list(NULL, names(df))
