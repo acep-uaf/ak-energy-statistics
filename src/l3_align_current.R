@@ -53,21 +53,23 @@ l3_align_current_pce <- function(
   df_out <- joined_lookups %>%
     add_missing_cols(
       notes = "",
-      pce_community_intertied_to_another_pce_community = "",
 
-      imputed_residential_rate = "",
-      imputed_pce_rate = "",
-      imputed_pro_rata_rate = "",
-      imputed_effective_rate = "",
-      imputed_fuel_price = "",
-      imputed_fuel_cost = "",
-      imputed_nonfuel_expenses = "",
-      imputed_diesel_efficiency = "",
-      imputed_other_customers = "",
-      other_2_kwh_generated_imputed = "",
-      purchased_from_imputed = "",
-      total_kwh_purchased_imputed = "",
-      pce_eligible_community_kwh_imputed = ""
+      imputed_residential_rate = "FALSE",
+      imputed_pce_rate = "FALSE",
+      imputed_pro_rata_rate = "FALSE",
+      imputed_effective_rate = "FALSE",
+      imputed_fuel_price = "FALSE",
+      imputed_fuel_cost = "FALSE",
+      imputed_nonfuel_expenses = "FALSE",
+      imputed_diesel_efficiency = "FALSE",
+      imputed_other_customers = "FALSE",
+      imputed_other_2_kwh_generated = "FALSE",
+      imputed_natural_gas_kwh_generated = "FALSE",
+      imputed_wind_kwh_generated = "FALSE",
+      imputed_solar_kwh_generated = "FALSE",
+      imputed_purchased_from = "FALSE",
+      imputed_total_kwh_purchased = "FALSE",
+      imputed_pce_eligible_community_kwh = "FALSE"
       
 
     ) %>%
@@ -132,7 +134,7 @@ l3_align_current_pce <- function(
       other_customers,
       other_customers_description,
       notes,
-      cleaned_during_energy_statistics,
+      checked_for_outliers,
       imputed_residential_rate,
       imputed_pce_rate,
       imputed_pro_rata_rate,
@@ -144,6 +146,9 @@ l3_align_current_pce <- function(
       imputed_diesel_efficiency,
       imputed_diesel_kwh_generated,
       imputed_hydro_kwh_generated,
+      imputed_natural_gas_kwh_generated,
+      imputed_wind_kwh_generated,
+      imputed_solar_kwh_generated,
       imputed_powerhouse_consumption_kwh,
       imputed_peak_consumption_kw = imputed_peak_consumption_kw, 
       imputed_residential_kwh_sold = imputed_residential_sold_to,
@@ -157,10 +162,10 @@ l3_align_current_pce <- function(
       imputed_government_customers = imputed_govt_facil_customers,
       imputed_unbilled_customers,
       imputed_other_customers,
-      other_2_kwh_generated_imputed,
-      purchased_from_imputed,
-      total_kwh_purchased_imputed,
-      pce_eligible_community_kwh_imputed
+      imputed_other_2_kwh_generated,
+      imputed_purchased_from,
+      imputed_total_kwh_purchased,
+      imputed_pce_eligible_community_kwh
     )
   
   test <- rbind(df_out, df_historical)

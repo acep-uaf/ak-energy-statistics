@@ -1,4 +1,4 @@
-id,identifier,project_code,sales_reporting_name,date,calendar_year,calendar_month,column,raw_value,source,carry_forward,annual_average,avg_preceding_proceeding,avg_same_month_other_years,manual_override,decision,comment,cleaned_during_energy_statistics
+id,identifier,project_code,sales_reporting_name,date,calendar_year,calendar_month,column,raw_value,source,carry_forward,annual_average,avg_preceding_proceeding,avg_same_month_other_years,manual_override,decision,comment,decision_made
 A3310051023225003_diesel_kwh_generated,A3310051023225003,331005,Adak,2023-04-01,2023,4,diesel_kwh_generated,249556,outlier_check,137836,154424,185640,173570,NA,raw_value,NA,TRUE
 A3310050924225003_powerhouse_consumption_kwh,A3310050924225003,331005,Adak,2024-03-01,2024,3,powerhouse_consumption_kwh,77093,outlier_check,47732,33819,47732,26939,NA,raw_value,NA,TRUE
 A3310051024225003_powerhouse_consumption_kwh,A3310051024225003,331005,Adak,2024-04-01,2024,4,powerhouse_consumption_kwh,73471,outlier_check,47732,33819,47732,30111,NA,raw_value,NA,TRUE
