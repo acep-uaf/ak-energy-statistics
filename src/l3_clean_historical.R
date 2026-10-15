@@ -18,14 +18,16 @@ l3_clean_historical <- function(path_in, sheet, path_out) {
       microgrid_id = intertie_id,
       microgrid_name = intertie_name,
       pce_operator_acronym = 'PCE_operator_acronym',
-      aea_operator_id = 'AEA Operator ID',
+      ak_operator_id = 'AEA Operator ID',
       total_sales = 'Total Sales'
     ) %>%
     select(-c(
       'purchased_power_type', 
       'purchased_power_price_per_kwh', 
       'sales_for_resale_kwh_sold',
-      'imputed_sales_for_resale_kwh_sold'
+      'imputed_sales_for_resale_kwh_sold',
+      'pce_community_intertied_to_another_pce_community',
+      'year_of_intertie'
     ))
 
   dir_create(dirname(path_out))
