@@ -26,6 +26,12 @@ l3_clean_historical <- function(path_in, sheet, path_out) {
       imputed_total_kwh_purchased = total_kwh_purchased_imputed,
       imputed_pce_eligible_community_kwh = pce_eligible_community_kwh_imputed
     ) %>%
+    mutate(
+      imputed_natural_gas_kwh_generated = "FALSE",
+      imputed_wind_kwh_generated = "FALSE",
+      imputed_solar_kwh_generated = "FALSE",
+      .after = imputed_hydro_kwh_generated
+    ) %>%
     select(-c(
       'purchased_power_type', 
       'purchased_power_price_per_kwh', 
