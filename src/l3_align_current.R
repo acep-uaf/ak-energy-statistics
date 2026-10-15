@@ -132,7 +132,7 @@ l3_align_current_pce <- function(
       other_customers,
       other_customers_description,
       notes,
-      cleaned_during_energy_statistics,
+      checked_for_outliers,
       imputed_residential_rate,
       imputed_pce_rate,
       imputed_pro_rata_rate,

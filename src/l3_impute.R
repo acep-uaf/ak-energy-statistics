@@ -21,17 +21,17 @@ l3_impute_columns <- function(path_in, path_overrides, path_out) {
       column,
       decision,
       decided_value,
-      cleaned_during_energy_statistics,
+      decision_made,
       comment
     )
 
   df <- read_csv(path_in, col_types = cols(.default = col_character()), show_col_types = FALSE)
 
   flagged_ids <- overrides %>% 
-    filter(cleaned_during_energy_statistics == TRUE) %>% 
+    filter(decision_made == TRUE) %>% 
     pull(identifier)
 
-  df$cleaned_during_energy_statistics <- df$identifier %in% flagged_ids
+  df$checked_for_outliers <- TRUE
 
   row_coords <- match(overrides$identifier, df$identifier)
   col_coords <- match(overrides$column, names(df))
